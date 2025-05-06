@@ -1,0 +1,73 @@
+@import '../../../styles/colors';
+
+// Styles created for inline elements. Prefer styled-components but cannot be used for inline elements.
+.line-chart {
+    &-tooltip {
+        background: $color_white;
+        padding: 4px 6px;
+        border-radius: 9px;
+        width: fit-content;
+        position: absolute;
+        z-index: 1000;
+        outline: none;
+    }
+
+    &-price-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+        color: $color_mine-shaft;
+        outline: none;
+    }
+
+    &-time-text {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        color: $color_silver_chalice;
+        margin-left: 4px;
+        outline: none;
+    }
+
+    &-dashed-line {
+        position: absolute;
+        height: 68vh;
+        background-image: linear-gradient(to top, $color_gray 4px, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 1px 8px;
+        background-repeat: repeat-y;
+        width: 10px;
+        z-index: 2;
+        top: 28px;
+        outline: none;
+    }
+
+    &-circle {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        border: 1.5px solid;
+        z-index: 3;
+        outline: none;
+    }
+
+    &-xAxisValue {
+        position: absolute;
+        z-index: 3;
+        outline: none;
+        color: $color_gray;
+        font-size: 10px;
+        line-height: 6px;
+        display: block;
+    }
+
+    &-overlay {
+        right: 0px;
+        top: 0;
+        pointer-events: none;
+        outline: none;
+    }
+}

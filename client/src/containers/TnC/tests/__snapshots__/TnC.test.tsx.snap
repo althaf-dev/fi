@@ -1,0 +1,819 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render TnC component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ckMVTt dYOwIC"
+  >
+    <div
+      class="sc-fbPSWO bwNDJV"
+    >
+      <div
+        class="sc-ktCSKO JsBAF sc-gYMRRK gIJoSD"
+      >
+        <div
+          class="sc-bGWzfD cxgLXy"
+        >
+          <div
+            class="sc-IIEeM dcNKjL"
+          >
+            <h1
+              class="sc-papXJ fEfRcZ sc-gGnURB gzxXgY"
+              color="WHITE"
+            >
+              Terms of Waitlist
+            </h1>
+            <div
+              class="sc-eCYdqJ jVNGkM sc-iuStju jPsvXh"
+              color="SILVER_2"
+            >
+              Epifi Technologies Private Limited (epiFi or Company) is a fintech company providing financial solutions and services. We believe that our customers (You) deserve a ‘No Shenanigans’ approach to their personal data. By and large, these terms have minimised the usage of legal jargon – unless absolutely required on a lawful basis, and explains how we treat your information.
+            </div>
+          </div>
+          <div
+            class="sc-fytwQQ cTtcGf"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr eoDeNX"
+              loading="lazy"
+              src="personfeet-mobile-poster.webp"
+              width="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gFGZVQ ebEOJr"
+    >
+      <div
+        class="sc-bcSJjp sc-hrzOVh jshUfF byGejg"
+      >
+        <div
+          class="sc-hCDzWh bXfKDn"
+        >
+          <div
+            class="sc-eCYdqJ rrltT sc-cBQgDv bxeyxi"
+            color="MINE_SHAFT"
+          >
+            1. What all information would be collected?
+          </div>
+          <div
+            class="sc-eCYdqJ fcSnPF sc-cBQgDv bxeyxi"
+            color="FOREST_GREEN"
+          >
+            2. Why do we need this information?
+          </div>
+          <div
+            class="sc-eCYdqJ fcSnPF sc-cBQgDv bxeyxi"
+            color="FOREST_GREEN"
+          >
+            3. What happens to my data?
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-eBxihg RLLwy"
+      />
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY sc-jUtGcO fkwvct dJQoDJ"
+            >
+              What all information would be collected? 📁
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-cBQgDv bxeyxi"
+              color="SUVA_GREY"
+            >
+              A user on the waitlist would be required to provide her/his :
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-cBQgDv bxeyxi"
+              color="SUVA_GREY"
+            >
+              • Name, age, address etc. (biographical information);
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-cBQgDv bxeyxi"
+              color="SUVA_GREY"
+            >
+              • Mobile number;
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-cBQgDv bxeyxi"
+              color="SUVA_GREY"
+            >
+              • Provident fund account number (Universal Account Number);
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-cBQgDv bxeyxi"
+              color="SUVA_GREY"
+            >
+              • Official email account (email id provided by the employer).
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-eBxihg RLLwy"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY fkwvct"
+            >
+              Why do we need this information?
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-eCDnqH ePKvEV"
+              color="SUVA_GREY"
+            >
+              It helps create a hyper-personalised experience for users on the Fi app.
+            </div>
+          </div>
+          <div
+            class="sc-hCDzWh sc-keNpes bXfKDn Buvsw"
+          >
+            <div
+              class="sc-hFvvYD hiPBUW"
+            >
+              <div
+                class="sc-eCYdqJ laOBpw"
+                color="TUNDORA_2"
+              >
+                Official email address: In a scenario, where we cannot obtain information regarding your Provident Fund account, we will authenticate your employment status via your official email id.
+              </div>
+            </div>
+            <div
+              class="middle"
+            >
+              <div
+                class="sc-hFvvYD hiPBUW"
+              >
+                <div
+                  class="sc-eCYdqJ laOBpw"
+                  color="TUNDORA_2"
+                >
+                  Provident Fund details: This Universal Account Number assists us by confirming your employment status. And later on, we utilise this info to provide unique experiences. For example: We can (eventually) provide you with investment options that suit your investment appetite. To do this, we extract details from your Provident Fund account regarding your current employer. However, rest assured that we will not contact your employer in any way whatsoever!
+                </div>
+              </div>
+              <div
+                class="sc-hFvvYD hiPBUW"
+              >
+                <div
+                  class="sc-eCYdqJ laOBpw"
+                  color="TUNDORA_2"
+                >
+                  General biographical information: Collected to get to know you better.
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-hFvvYD hiPBUW"
+            >
+              <div
+                class="sc-eCYdqJ laOBpw"
+                color="TUNDORA_2"
+              >
+                Mobile number: Helps our authentication process – which begins by sending an OTP on your number. It also allows us to verify your Provident Fund account.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-eBxihg RLLwy"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY sc-lcoedz fkwvct hJBKda"
+            >
+              What happens to my data? 💾
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-eMWWsl sc-feINqK fDozZp lmieCV"
+              color="SUVA_GREY"
+            >
+              As explained earlier, we collect your data to curate a secure, smooth, and personalised experience on the Fi app. This data shall be stored and used to provide you with Fi's services. All data-related activities occur within the guidelines specified in our Privacy Policy available at 
+              <a
+                href="/"
+                target="_blank"
+              >
+                <span
+                  class="sc-fpcwso dfKajp"
+                  color="FOREST_GREEN"
+                >
+                  https://fi.money.
+                </span>
+              </a>
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-eMWWsl sc-feINqK fDozZp lmieCV"
+              color="SUVA_GREY"
+            >
+              For a deeper look at the terms defined in our easy-to-read Privacy Policy, check out  
+              <a
+                href="/privacy"
+                target="_blank"
+              >
+                <span
+                  class="sc-fpcwso dfKajp"
+                  color="FOREST_GREEN"
+                >
+                  https://fi.money/privacy
+                </span>
+              </a>
+            </div>
+            <div
+              class="sc-eCYdqJ iidbqz sc-eMWWsl sc-feINqK fDozZp lmieCV"
+              color="SUVA_GREY"
+            >
+              If you have any further questions about our waitlist, please feel free to go through our FAQ's listed at
+              <a
+                href="/FAQs"
+                target="_blank"
+              >
+                <span
+                  class="sc-fpcwso dfKajp"
+                  color="FOREST_GREEN"
+                >
+                  https://fi.money/FAQs.
+                </span>
+              </a>
+              .
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-cwpsFg KVyBC"
+    >
+      <div
+        class="sc-dkSuNL eCmbdT"
+      >
+        <div
+          class="sc-bczRLJ sc-kngDgl sc-gJwTLC cFvSHK TlBtU jWiOvF"
+        >
+          <div
+            class="sc-fxvKuh iLEuH"
+          >
+            <div
+              class="sc-iJkHyd dEepvI"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ bnCuWB"
+                  color="FI_GREEN"
+                >
+                  Your Privacy.
+                  <br />
+                  Minus the jargon.
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="sc-iJkHyd ejKlTU"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ cMbRGg"
+                  color="FI_PINK"
+                >
+                  No Hidden
+                  <br />
+                  Fees!
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <a
+              href="https://jobs.lever.co/epifi"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div
+                class="sc-iJkHyd ejKlTU"
+              >
+                <div>
+                  <div
+                    class="sc-eCYdqJ jdNfrJ"
+                    color="FI_LIGHT_BLUE"
+                  >
+                    Join the
+                    <br />
+                    team.
+                  </div>
+                </div>
+                <div
+                  class="sc-iWajrY czNAel"
+                >
+                  <span
+                    class="sc-ftvSup gsYrLz"
+                    color="WHITE"
+                  >
+                    <img
+                      alt="arrow"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="eager"
+                      src="top-right-arrow.svg"
+                    />
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="sc-jKDlA-D bKqmIr"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="footer-logo.svg"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ sc-bTMaZy cFvSHK yQEXi"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-tQuYZ cFvSHK lewnTt ferVki"
+            >
+              <div
+                class="sc-dSuTWQ kPVxin"
+              >
+                <div
+                  class="sc-eCYdqJ fzRvzi"
+                  color="TEXT_GREY_1"
+                >
+                  Pronounced 
+                  <span
+                    class="sc-ftvSup gOxMIH"
+                    color="WHITE"
+                  >
+                     Fī(-ē) 
+                  </span>
+                  and sounds like
+                  <div
+                    class="sc-kjEcyX ikirKI"
+                  >
+                    <img
+                      alt="volume"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="volume-active.svg"
+                    />
+                  </div>
+                  <audio
+                    class="sc-cLFqLo jDIWhf"
+                  >
+                    <source
+                      src="FiAudio.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-cHPgQl cFvSHK TlBtU bYzimd"
+              >
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    hi
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="hifi.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    sky
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="sky.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    tie
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="tie.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    fly
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="fly.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-bczRLJ sc-gHLcSH cFvSHK kEhzMq"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+              <div
+                class="sc-bczRLJ sc-djUGQo cFvSHK cHDGYA"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <a
+                    href="/blog"
+                  >
+                    Blog
+                  </a>
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-bczRLJ sc-hZFzCs cFvSHK gaLYiB"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-hjQCSK cFvSHK lewnTt kMduYt"
+            >
+              <div
+                class="sc-eCYdqJ hdRMJn sc-bSakgD jyOxpN"
+                color="TEXT_GREY_1"
+              >
+                Contact Fi Money customer care
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-jvLaUc cFvSHK TlBtU kjFwxX"
+              >
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    080-47485490
+                  </div>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <a
+                    href="mailto:help@fi.care"
+                  >
+                    <div
+                      class="sc-eXBvqI gyNIoe"
+                    >
+                      help@fi.care
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    In-app chat
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ cFvSHK"
+              >
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.instagram.com/bankonfi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="instagram"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="instagram-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.twitter.com/Bank_on_Fi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="twitter"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="twitter-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.linkedin.com/company/epifi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="linkedin"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="linkedin-white.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-jmnVvD cFvSHK dGHkGt"
+              >
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <a
+                    href="https://www.federalbank.co.in/our-commitments"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Partner Bank Codes & Policies
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-hZgfyJ eWgCsw"
+            >
+              <div
+                class="sc-bczRLJ sc-hKpBwk cFvSHK loyOHF"
+              >
+                <p
+                  class="sc-evZas igfRis sc-ewDcJz jtYAuB"
+                  color="GREY_2"
+                >
+                  Fi is a money management platform that re-imagines the banking experience in India. The Fi account, in partnership with Federal Bank, is a digital bank account that gives you the fastest way to open a bank account online.
+                </p>
+                <p
+                  class="sc-evZas igfRis sc-ehMyHa bxRvfH"
+                  color="GREY_2"
+                >
+                  You can do everything from the Fi App, including p2p payments, fund transfers, bill payments, and more, with features to automate every action. You also get a Fi-Federal co-branded Debit Card, spends insights and tools to grow your investment and earn rewards.
+                </p>
+              </div>
+              <div
+                class="sc-eCYdqJ iPRnVa sc-djvmMF bnhvWu"
+                color="GREY_2"
+              >
+                Disclaimer: You may have noticed some brand logos used on this website to indicate where you, as a user, may or may not have spent money. We don’t endorse these brands. Nor do these brands endorse us. The logos of the specific brands are owned by them.
+              </div>
+              <div
+                class="sc-cUEIKg egtcEd"
+              >
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Wealth Pvt. Ltd. 2022
+                </div>
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Technologies Pvt. Ltd. 2022
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-eKBdFk iPGhao"
+    />
+    <div
+      class="sc-jOhDuK sc-hlnMnd vEAce fyIvxi"
+    >
+      <div
+        class="sc-bUbCnL iygcBD"
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+          id="footer_playstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-kIKDeO fjNkXd"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="play-store_black.png"
+            />
+          </div>
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+          id="footer_appstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-hNKHps cvMsDD"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="app-store_black.png"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    transition: all 0.5s linear;
+    visibility: hidden;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+// to hide default arrows when input is set to number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

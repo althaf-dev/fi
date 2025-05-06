@@ -1,0 +1,7319 @@
+/* eslint-disable max-len */
+import React from 'react';
+
+import { htmlSanitization } from '../../utils';
+
+const p2pLenderRegistrationAgreementHtmlTemplate = `
+<style type="text/css">
+    p, h1, span, li, ol, a {
+        font-size: 12px !important;
+    }
+
+    p, h1, span, a {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    li {
+        margin-left: 40px !important;
+        padding-left: 0px !important;
+        line-height: 1.5 !important;
+    }
+
+
+    ol.lst-kix_list_7-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_2-1>li {
+        counter-increment: lst-ctn-kix_list_2-1
+    }
+
+    ol.lst-kix_list_9-0.start {
+        counter-reset: lst-ctn-kix_list_9-0 0
+    }
+
+    .lst-kix_list_6-1>li {
+        counter-increment: lst-ctn-kix_list_6-1
+    }
+
+    ul.lst-kix_list_9-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_9-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_9-1 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_9-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_9-7 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_13-0>li {
+        counter-increment: lst-ctn-kix_list_13-0
+    }
+
+    ul.lst-kix_list_9-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_9-5 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_5-0>li {
+        counter-increment: lst-ctn-kix_list_5-0
+    }
+
+    .lst-kix_list_9-0>li {
+        counter-increment: lst-ctn-kix_list_9-0
+    }
+
+    ul.lst-kix_list_9-6 {
+        list-style-type: none
+    }
+
+    li.li-bullet-73:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    ol.lst-kix_list_12-0.start {
+        counter-reset: lst-ctn-kix_list_12-0 0
+    }
+
+    li.li-bullet-80:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-84:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-77:before {
+        margin-left: -27.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.9pt
+    }
+
+    .lst-kix_list_5-0>li:before {
+        content: "("counter(lst-ctn-kix_list_5-0, upper-roman) ") "
+    }
+
+    ol.lst-kix_list_6-0 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_6-1 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_5-3>li:before {
+        
+    }
+
+    .lst-kix_list_5-2>li:before {
+        
+    }
+
+    .lst-kix_list_5-1>li:before {
+        
+    }
+
+    li.li-bullet-88:before {
+        margin-left: -18.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.2pt
+    }
+
+    .lst-kix_list_5-7>li:before {
+        
+    }
+
+    ul.lst-kix_list_8-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_8-5 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_5-6>li:before {
+        
+    }
+
+    .lst-kix_list_5-8>li:before {
+        
+    }
+
+    ul.lst-kix_list_8-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_8-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_8-8 {
+        list-style-type: none
+    }
+
+    li.li-bullet-13:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ul.lst-kix_list_8-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_8-7 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_5-4>li:before {
+        
+    }
+
+    .lst-kix_list_5-5>li:before {
+        
+    }
+
+    ul.lst-kix_list_8-1 {
+        list-style-type: none
+    }
+
+    li.li-bullet-36:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_6-1>li:before {
+        content: "("counter(lst-ctn-kix_list_6-1, upper-roman) ") "
+    }
+
+    .lst-kix_list_6-3>li:before {
+        
+    }
+
+    li.li-bullet-43:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    .lst-kix_list_6-0>li:before {
+        content: "("counter(lst-ctn-kix_list_6-0, lower-latin) ") "
+    }
+
+    .lst-kix_list_6-4>li:before {
+        
+    }
+
+    li.li-bullet-32:before {
+        margin-left: -21pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21pt
+    }
+
+    li.li-bullet-21:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    li.li-bullet-25:before {
+        margin-left: -21pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21pt
+    }
+
+    li.li-bullet-29:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    .lst-kix_list_6-2>li:before {
+        
+    }
+
+    .lst-kix_list_6-8>li:before {
+        
+    }
+
+    li.li-bullet-47:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    .lst-kix_list_6-5>li:before {
+        
+    }
+
+    .lst-kix_list_6-7>li:before {
+        
+    }
+
+    li.li-bullet-50:before {
+        margin-left: -18.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.2pt
+    }
+
+    li.li-bullet-54:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-58:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    .lst-kix_list_6-6>li:before {
+        
+    }
+
+    li.li-bullet-115:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_7-4>li:before {
+        
+    }
+
+    .lst-kix_list_7-6>li:before {
+        
+    }
+
+    li.li-bullet-99:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_7-2>li:before {
+        
+    }
+
+    li.li-bullet-96:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    .lst-kix_list_13-7>li:before {
+        
+    }
+
+    ol.lst-kix_list_3-0.start {
+        counter-reset: lst-ctn-kix_list_3-0 0
+    }
+
+    .lst-kix_list_7-8>li:before {
+        
+    }
+
+    ol.lst-kix_list_9-0 {
+        list-style-type: none
+    }
+
+    li.li-bullet-110:before {
+        margin-left: -18.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.2pt
+    }
+
+    li.li-bullet-24:before {
+        margin-left: -21pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21pt
+    }
+
+    li.li-bullet-91:before {
+        margin-left: -21.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.2pt
+    }
+
+    .lst-kix_list_4-1>li:before {
+        
+    }
+
+    .lst-kix_list_4-3>li:before {
+        
+    }
+
+    .lst-kix_list_4-5>li:before {
+        
+    }
+
+    li.li-bullet-66:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    ol.lst-kix_list_1-1.start {
+        counter-reset: lst-ctn-kix_list_1-1 0
+    }
+
+    li.li-bullet-55:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    li.li-bullet-107:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    .lst-kix_list_12-3>li:before {
+        content: "("counter(lst-ctn-kix_list_12-3, upper-roman) ") "
+    }
+
+    .lst-kix_list_12-1>li:before {
+        content: "("counter(lst-ctn-kix_list_12-1, lower-latin) ") "
+    }
+
+    li.li-bullet-104:before {
+        margin-left: -21.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.8pt
+    }
+
+    ol.lst-kix_list_8-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_13-3>li:before {
+        
+    }
+
+    li.li-bullet-4:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    li.li-bullet-85:before {
+        margin-left: -27.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.9pt
+    }
+
+    .lst-kix_list_13-5>li:before {
+        
+    }
+
+    .lst-kix_list_12-5>li:before {
+        
+    }
+
+    ol.lst-kix_list_12-2.start {
+        counter-reset: lst-ctn-kix_list_12-2 0
+    }
+
+    .lst-kix_list_12-7>li:before {
+        
+    }
+
+    ol.lst-kix_list_6-0.start {
+        counter-reset: lst-ctn-kix_list_6-0 6
+    }
+
+    .lst-kix_list_13-1>li:before {
+        
+    }
+
+    ol.lst-kix_list_3-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_1-1>li {
+        counter-increment: lst-ctn-kix_list_1-1
+    }
+
+    .lst-kix_list_3-0>li:before {
+        content: "("counter(lst-ctn-kix_list_3-0, upper-roman) ") "
+    }
+
+    ul.lst-kix_list_5-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_5-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_5-5 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_11-0 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_5-6 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_4-0>li {
+        counter-increment: lst-ctn-kix_list_4-0
+    }
+
+    .lst-kix_list_8-0>li {
+        counter-increment: lst-ctn-kix_list_8-0
+    }
+
+    .lst-kix_list_10-0>li {
+        counter-increment: lst-ctn-kix_list_10-0
+    }
+
+    .lst-kix_list_3-4>li:before {
+        
+    }
+
+    ul.lst-kix_list_5-3 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_3-3>li:before {
+        
+    }
+
+    ul.lst-kix_list_5-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_5-1 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_8-0>li:before {
+        content: "("counter(lst-ctn-kix_list_8-0, lower-roman) ") "
+    }
+
+    ul.lst-kix_list_5-2 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_8-7>li:before {
+        
+    }
+
+    li.li-bullet-44:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    li.li-bullet-35:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_3-8>li:before {
+        
+    }
+
+    li.li-bullet-46:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    .lst-kix_list_8-3>li:before {
+        
+    }
+
+    ul.lst-kix_list_13-5 {
+        list-style-type: none
+    }
+
+    li.li-bullet-39:before {
+        margin-left: -18.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.2pt
+    }
+
+    ul.lst-kix_list_13-4 {
+        list-style-type: none
+    }
+
+    li.li-bullet-33:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    ul.lst-kix_list_13-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_13-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_13-1 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_3-7>li:before {
+        
+    }
+
+    .lst-kix_list_8-4>li:before {
+        
+    }
+
+    ul.lst-kix_list_13-8 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_11-1>li:before {
+        
+    }
+
+    ul.lst-kix_list_13-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_13-6 {
+        list-style-type: none
+    }
+
+    li.li-bullet-40:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_11-0>li:before {
+        content: "("counter(lst-ctn-kix_list_11-0, upper-roman) ") "
+    }
+
+    .lst-kix_list_8-8>li:before {
+        
+    }
+
+    ol.lst-kix_list_2-0 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_2-1 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_4-8>li:before {
+        
+    }
+
+    .lst-kix_list_4-7>li:before {
+        
+    }
+
+    ol.lst-kix_list_12-1 {
+        list-style-type: none
+    }
+
+    li.li-bullet-7:before {
+        margin-left: -15.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 15.8pt
+    }
+
+    ol.lst-kix_list_12-2 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_12-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-7 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_12-0 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-1 {
+        list-style-type: none
+    }
+
+    li.li-bullet-102:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    ul.lst-kix_list_4-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_4-3 {
+        list-style-type: none
+    }
+
+    li.li-bullet-61:before {
+        margin-left: -21.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.8pt
+    }
+
+    li.li-bullet-18:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    li.li-bullet-72:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    li.li-bullet-90:before {
+        margin-left: -21pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21pt
+    }
+
+    ul.lst-kix_list_12-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_12-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_12-4 {
+        list-style-type: none
+    }
+
+    li.li-bullet-83:before {
+        margin-left: -27.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.9pt
+    }
+
+    ul.lst-kix_list_12-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_12-7 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_8-0.start {
+        counter-reset: lst-ctn-kix_list_8-0 0
+    }
+
+    .lst-kix_list_7-0>li:before {
+        content: "("counter(lst-ctn-kix_list_7-0, upper-roman) ") "
+    }
+
+    ol.lst-kix_list_5-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_2-4>li:before {
+        
+    }
+
+    .lst-kix_list_2-8>li:before {
+        
+    }
+
+    ol.lst-kix_list_13-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_7-3>li:before {
+        
+    }
+
+    li.li-bullet-94:before {
+        margin-left: -21.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.2pt
+    }
+
+    ul.lst-kix_list_7-5 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_10-0>li:before {
+        content: "("counter(lst-ctn-kix_list_10-0, upper-roman) ") "
+    }
+
+    ul.lst-kix_list_7-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_7-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_7-4 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_13-8>li:before {
+        
+    }
+
+    li.li-bullet-95:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    ul.lst-kix_list_7-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_7-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_7-1 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_7-2 {
+        list-style-type: none
+    }
+
+    li.li-bullet-114:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_7-7>li:before {
+        
+    }
+
+    li.li-bullet-62:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    li.li-bullet-17:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    .lst-kix_list_10-4>li:before {
+        
+    }
+
+    .lst-kix_list_10-8>li:before {
+        
+    }
+
+    .lst-kix_list_4-0>li:before {
+        content: "("counter(lst-ctn-kix_list_4-0, upper-roman) ") "
+    }
+
+    li.li-bullet-3:before {
+        margin-left: -12pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 12pt
+    }
+
+    li.li-bullet-28:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    .lst-kix_list_4-4>li:before {
+        
+    }
+
+    .lst-kix_list_9-3>li:before {
+        
+    }
+
+    ol.lst-kix_list_7-0.start {
+        counter-reset: lst-ctn-kix_list_7-0 0
+    }
+
+    li.li-bullet-51:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    ol.lst-kix_list_4-0 {
+        list-style-type: none
+    }
+
+    li.li-bullet-108:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    .lst-kix_list_9-7>li:before {
+        
+    }
+
+    li.li-bullet-89:before {
+        margin-left: -21.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.2pt
+    }
+
+    li.li-bullet-8:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    .lst-kix_list_11-4>li:before {
+        
+    }
+
+    .lst-kix_list_12-4>li:before {
+        
+    }
+
+    ul.lst-kix_list_6-6 {
+        list-style-type: none
+    }
+
+    li.li-bullet-12:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ul.lst-kix_list_6-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_6-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_6-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_6-8 {
+        list-style-type: none
+    }
+
+    li.li-bullet-103:before {
+        margin-left: -21pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21pt
+    }
+
+    .lst-kix_list_1-0>li:before {
+        content: ""counter(lst-ctn-kix_list_1-0, decimal) ". "
+    }
+
+    ul.lst-kix_list_6-2 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_11-8>li:before {
+        
+    }
+
+    .lst-kix_list_12-3>li {
+        counter-increment: lst-ctn-kix_list_12-3
+    }
+
+    ul.lst-kix_list_6-3 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_2-0.start {
+        counter-reset: lst-ctn-kix_list_2-0 0
+    }
+
+    .lst-kix_list_12-0>li:before {
+        content: ""counter(lst-ctn-kix_list_12-0, decimal) ". "
+    }
+
+    li.li-bullet-45:before {
+        margin-left: -18.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.2pt
+    }
+
+    .lst-kix_list_1-4>li:before {
+        
+    }
+
+    .lst-kix_list_13-0>li:before {
+        content: ""counter(lst-ctn-kix_list_13-0, decimal) ". "
+    }
+
+    li.li-bullet-34:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ol.lst-kix_list_13-0.start {
+        counter-reset: lst-ctn-kix_list_13-0 0
+    }
+
+    .lst-kix_list_13-4>li:before {
+        
+    }
+
+    li.li-bullet-23:before {
+        margin-left: -16.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 16.1pt
+    }
+
+    li.li-bullet-78:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-67:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    .lst-kix_list_2-0>li:before {
+        content: ""counter(lst-ctn-kix_list_2-0, lower-roman) ". "
+    }
+
+    ol.lst-kix_list_2-1.start {
+        counter-reset: lst-ctn-kix_list_2-1 0
+    }
+
+    .lst-kix_list_1-8>li:before {
+        
+    }
+
+    .lst-kix_list_12-8>li:before {
+        
+    }
+
+    li.li-bullet-56:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    .lst-kix_list_7-0>li {
+        counter-increment: lst-ctn-kix_list_7-0
+    }
+
+    .lst-kix_list_11-0>li {
+        counter-increment: lst-ctn-kix_list_11-0
+    }
+
+    ul.lst-kix_list_1-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-8 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_1-6 {
+        list-style-type: none
+    }
+
+    li.li-bullet-71:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    li.li-bullet-82:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-75:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-79:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-105:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    li.li-bullet-6:before {
+        margin-left: -15.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 15.8pt
+    }
+
+    li.li-bullet-101:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    li.li-bullet-109:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    .lst-kix_list_12-1>li {
+        counter-increment: lst-ctn-kix_list_12-1
+    }
+
+    ol.lst-kix_list_1-0.start {
+        counter-reset: lst-ctn-kix_list_1-0 0
+    }
+
+    .lst-kix_list_3-0>li {
+        counter-increment: lst-ctn-kix_list_3-0
+    }
+
+    ol.lst-kix_list_4-0.start {
+        counter-reset: lst-ctn-kix_list_4-0 0
+    }
+
+    li.li-bullet-2:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    .lst-kix_list_2-7>li:before {
+        
+    }
+
+    ol.lst-kix_list_1-0 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_2-5>li:before {
+        
+    }
+
+    ol.lst-kix_list_1-1 {
+        list-style-type: none
+    }
+
+    li.li-bullet-98:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-93:before {
+        margin-left: -21.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.2pt
+    }
+
+    ul.lst-kix_list_3-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_3-8 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_10-1>li:before {
+        content: ""counter(lst-ctn-kix_list_10-1, upper-latin) ". "
+    }
+
+    ul.lst-kix_list_3-1 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_3-2 {
+        list-style-type: none
+    }
+
+    li.li-bullet-113:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    ul.lst-kix_list_3-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_3-6 {
+        list-style-type: none
+    }
+
+    li.li-bullet-112:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    ul.lst-kix_list_3-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_3-4 {
+        list-style-type: none
+    }
+
+    li.li-bullet-19:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    .lst-kix_list_10-7>li:before {
+        
+    }
+
+    li.li-bullet-60:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    .lst-kix_list_10-5>li:before {
+        
+    }
+
+    li.li-bullet-1:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    .lst-kix_list_10-3>li:before {
+        
+    }
+
+    ul.lst-kix_list_11-7 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_11-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_11-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_11-4 {
+        list-style-type: none
+    }
+
+    li.li-bullet-22:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ul.lst-kix_list_11-3 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_11-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_11-1 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_9-2>li:before {
+        
+    }
+
+    li.li-bullet-68:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    ul.lst-kix_list_11-8 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_9-0>li:before {
+        content: "("counter(lst-ctn-kix_list_9-0, upper-roman) ") "
+    }
+
+    li.li-bullet-57:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_9-6>li:before {
+        
+    }
+
+    li.li-bullet-9:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    .lst-kix_list_9-4>li:before {
+        
+    }
+
+    .lst-kix_list_11-3>li:before {
+        
+    }
+
+    ol.lst-kix_list_10-0 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_10-1 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_2-8 {
+        list-style-type: none
+    }
+
+    ol.lst-kix_list_12-1.start {
+        counter-reset: lst-ctn-kix_list_12-1 0
+    }
+
+    li.li-bullet-11:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    .lst-kix_list_11-5>li:before {
+        
+    }
+
+    ol.lst-kix_list_6-1.start {
+        counter-reset: lst-ctn-kix_list_6-1 0
+    }
+
+    ul.lst-kix_list_2-2 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_2-3 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_9-8>li:before {
+        
+    }
+
+    ul.lst-kix_list_2-6 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_1-1>li:before {
+        content: ""counter(lst-ctn-kix_list_1-1, lower-latin) ". "
+    }
+
+    ul.lst-kix_list_2-7 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_11-7>li:before {
+        
+    }
+
+    ul.lst-kix_list_2-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_2-5 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_1-3>li:before {
+        
+    }
+
+    li.li-bullet-38:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-63:before {
+        margin-left: -21.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.8pt
+    }
+
+    ul.lst-kix_list_10-8 {
+        list-style-type: none
+    }
+
+    li.li-bullet-16:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ul.lst-kix_list_10-7 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_1-7>li:before {
+        
+    }
+
+    li.li-bullet-74:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ul.lst-kix_list_10-6 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_10-5 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_10-4 {
+        list-style-type: none
+    }
+
+    ul.lst-kix_list_10-3 {
+        list-style-type: none
+    }
+
+    .lst-kix_list_1-5>li:before {
+        
+    }
+
+    ul.lst-kix_list_10-2 {
+        list-style-type: none
+    }
+
+    li.li-bullet-27:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    li.li-bullet-30:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    .lst-kix_list_2-1>li:before {
+        content: "("counter(lst-ctn-kix_list_2-1, upper-roman) ") "
+    }
+
+    li.li-bullet-41:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_2-3>li:before {
+        
+    }
+
+    li.li-bullet-49:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-52:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_3-1>li:before {
+        
+    }
+
+    .lst-kix_list_3-2>li:before {
+        
+    }
+
+    .lst-kix_list_8-1>li:before {
+        
+    }
+
+    .lst-kix_list_8-2>li:before {
+        
+    }
+
+    .lst-kix_list_6-0>li {
+        counter-increment: lst-ctn-kix_list_6-0
+    }
+
+    .lst-kix_list_3-5>li:before {
+        
+    }
+
+    .lst-kix_list_12-0>li {
+        counter-increment: lst-ctn-kix_list_12-0
+    }
+
+    ol.lst-kix_list_12-3.start {
+        counter-reset: lst-ctn-kix_list_12-3 0
+    }
+
+    li.li-bullet-37:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_8-5>li:before {
+        
+    }
+
+    li.li-bullet-42:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    .lst-kix_list_8-6>li:before {
+        
+    }
+
+    .lst-kix_list_2-0>li {
+        counter-increment: lst-ctn-kix_list_2-0
+    }
+
+    .lst-kix_list_3-6>li:before {
+        
+    }
+
+    li.li-bullet-31:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    ol.lst-kix_list_5-0.start {
+        counter-reset: lst-ctn-kix_list_5-0 0
+    }
+
+    .lst-kix_list_11-2>li:before {
+        
+    }
+
+    li.li-bullet-48:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    li.li-bullet-106:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    ol.lst-kix_list_10-1.start {
+        counter-reset: lst-ctn-kix_list_10-1 0
+    }
+
+    li.li-bullet-87:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-10:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    li.li-bullet-14:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    ol.lst-kix_list_11-0.start {
+        counter-reset: lst-ctn-kix_list_11-0 5
+    }
+
+    li.li-bullet-69:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    li.li-bullet-76:before {
+        margin-left: -27.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.8pt
+    }
+
+    li.li-bullet-65:before {
+        margin-left: -21.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.8pt
+    }
+
+    .lst-kix_list_2-6>li:before {
+        
+    }
+
+    .lst-kix_list_7-1>li:before {
+        
+    }
+
+    .lst-kix_list_7-5>li:before {
+        
+    }
+
+    li.li-bullet-97:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    li.li-bullet-20:before {
+        margin-left: -21.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.1pt
+    }
+
+    .lst-kix_list_13-6>li:before {
+        
+    }
+
+    li.li-bullet-92:before {
+        margin-left: -21.2pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.2pt
+    }
+
+    li.li-bullet-111:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-53:before {
+        margin-left: -28.7pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.7pt
+    }
+
+    ol.lst-kix_list_10-0.start {
+        counter-reset: lst-ctn-kix_list_10-0 0
+    }
+
+    li.li-bullet-15:before {
+        margin-left: -13.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 13.6pt
+    }
+
+    .lst-kix_list_10-2>li:before {
+        
+    }
+
+    li.li-bullet-26:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    .lst-kix_list_4-2>li:before {
+        
+    }
+
+    .lst-kix_list_4-6>li:before {
+        
+    }
+
+    li.li-bullet-64:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    li.li-bullet-59:before {
+        margin-left: -21.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 21.9pt
+    }
+
+    .lst-kix_list_10-6>li:before {
+        
+    }
+
+    .lst-kix_list_9-1>li:before {
+        
+    }
+
+    .lst-kix_list_12-2>li {
+        counter-increment: lst-ctn-kix_list_12-2
+    }
+
+    .lst-kix_list_9-5>li:before {
+        
+    }
+
+    li.li-bullet-86:before {
+        margin-left: -18.1pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18.1pt
+    }
+
+    li.li-bullet-5:before {
+        margin-left: -15.8pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 15.8pt
+    }
+
+    li.li-bullet-100:before {
+        margin-left: -28.6pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 28.6pt
+    }
+
+    .lst-kix_list_12-2>li:before {
+        content: "("counter(lst-ctn-kix_list_12-2, lower-roman) ") "
+    }
+
+    .lst-kix_list_11-6>li:before {
+        
+    }
+
+    .lst-kix_list_1-2>li:before {
+        
+    }
+
+    li.li-bullet-70:before {
+        margin-left: -14.3pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 14.3pt
+    }
+
+    .lst-kix_list_10-1>li {
+        counter-increment: lst-ctn-kix_list_10-1
+    }
+
+    .lst-kix_list_1-0>li {
+        counter-increment: lst-ctn-kix_list_1-0
+    }
+
+    .lst-kix_list_1-6>li:before {
+        
+    }
+
+    li.li-bullet-0:before {
+        margin-left: -18pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18pt
+    }
+
+    li.li-bullet-81:before {
+        margin-left: -27.9pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 27.9pt
+    }
+
+    .lst-kix_list_12-6>li:before {
+        
+    }
+
+    .lst-kix_list_2-2>li:before {
+        
+    }
+
+    .lst-kix_list_13-2>li:before {
+        
+    }
+
+    ol {
+        margin: 0;
+        padding: 0
+    }
+
+    table td,
+    table th {
+        padding: 0
+    }
+
+    .c214 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        background-color: #d9d9d9;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 98.3pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c25 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 317.7pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c342 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 317.7pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c118 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1.5pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 354.9pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c168 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 164.4pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c22 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 113.4pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c64 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 0pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 317.7pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c176 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 169pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c297 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 0pt;
+        width: 317.7pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c82 {
+        border-right-style: solid;
+        border-bottom-color: #000000;
+        border-top-width: 1pt;
+        border-right-width: 1pt;
+        border-left-color: #000000;
+        vertical-align: top;
+        border-right-color: #000000;
+        border-left-width: 1pt;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-width: 1pt;
+        width: 28.6pt;
+        border-top-color: #000000;
+        border-bottom-style: solid
+    }
+
+    .c36 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c120 {
+        margin-left: 68.7pt;
+        padding-top: 0.3pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c230 {
+        margin-left: 76.1pt;
+        padding-top: 4.8pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c208 {
+        margin-left: 82.8pt;
+        padding-top: 1.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c55 {
+        margin-left: 97.2pt;
+        padding-top: 0pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 57.5pt
+    }
+
+    .c65 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 14pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c195 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c336 {
+        margin-left: 68.7pt;
+        padding-top: 0.4pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c92 {
+        margin-left: 103.8pt;
+        padding-top: 0.3pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c326 {
+        margin-left: 68.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c6 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c198 {
+        margin-left: 76.1pt;
+        padding-top: 4.8pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c160 {
+        margin-left: 76.1pt;
+        padding-top: 0.2pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0291666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c152 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c283 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c37 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c141 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c143 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c310 {
+        margin-left: 40.9pt;
+        padding-top: 5.3pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c190 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c228 {
+        margin-left: 76.1pt;
+        padding-top: 0.3pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c235 {
+        margin-left: 68.7pt;
+        padding-top: 0.2pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c155 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c154 {
+        margin-left: 97.1pt;
+        padding-top: 0pt;
+        padding-left: 3.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c203 {
+        margin-left: 83.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c50 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 7pt;
+        font-family: "Times New Roman";
+        font-style: normal
+    }
+
+    .c44 {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c144 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 8.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c91 {
+        margin-left: 103.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c13 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c338 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c308 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9666666666666667;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c313 {
+        margin-left: 65pt;
+        padding-top: 0pt;
+        text-indent: -14.3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 15.3pt
+    }
+
+    .c256 {
+        margin-left: 76.1pt;
+        padding-top: 4.9pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c100 {
+        margin-left: 42.4pt;
+        padding-top: 4.7pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.4583333333333333;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c122 {
+        margin-left: 103.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c9 {
+        margin-left: 68.7pt;
+        padding-top: 8.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 5.8pt
+    }
+
+    .c48 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 8pt;
+        font-family: "Times New Roman";
+        font-style: normal
+    }
+
+    .c114 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c125 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 6pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c332 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c172 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c74 {
+        margin-left: 68.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0291666666666666;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c271 {
+        margin-left: 111.4pt;
+        padding-top: 0.1pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c316 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c142 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c187 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c339 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c287 {
+        margin-left: 97.1pt;
+        padding-top: 0.1pt;
+        padding-left: 3.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c165 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9666666666666667;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c1 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 8.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c112 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c42 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 10pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c303 {
+        margin-left: 97.1pt;
+        padding-top: 0.2pt;
+        padding-left: 3.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c260 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c236 {
+        margin-left: 68.7pt;
+        padding-top: 0.2pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c251 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c60 {
+        color: #212121;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c116 {
+        margin-left: 76.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c259 {
+        margin-left: 68.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c140 {
+        margin-left: 103.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c273 {
+        margin-left: 76.1pt;
+        padding-top: 0.3pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c327 {
+        margin-left: 76.1pt;
+        padding-top: 2pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9500000000000001;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c301 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c289 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c202 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c254 {
+        margin-left: 68.7pt;
+        padding-top: 4.8pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c312 {
+        margin-left: 68.7pt;
+        padding-top: 1.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c7 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c173 {
+        color: #1f1f1f;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c302 {
+        margin-left: 83.7pt;
+        padding-top: 0.2pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c31 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 4.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c90 {
+        margin-left: 125pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c209 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.7pt
+    }
+
+    .c40 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c157 {
+        margin-left: 103.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c103 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 5.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c58 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 8pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c111 {
+        margin-left: 82.8pt;
+        padding-top: 4.8pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c265 {
+        margin-left: 97.1pt;
+        padding-top: 0.1pt;
+        padding-left: 9.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c350 {
+        margin-left: 68.7pt;
+        padding-top: 0.3pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c239 {
+        margin-left: 125pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c331 {
+        margin-left: 42.4pt;
+        padding-top: 5.3pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.4583333333333333;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c79 {
+        margin-left: 42.4pt;
+        padding-top: 0.1pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c70 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 5.8pt
+    }
+
+    .c127 {
+        margin-left: 103.8pt;
+        padding-top: 0.5pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c169 {
+        margin-left: 42.4pt;
+        padding-top: 8.2pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5083333333333335;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c80 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c249 {
+        margin-left: 97.1pt;
+        padding-top: 7.8pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c134 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c231 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c199 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.3;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c196 {
+        margin-left: 89.7pt;
+        padding-top: 0pt;
+        padding-left: 3.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c177 {
+        margin-left: 105.4pt;
+        padding-top: 0.2pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c276 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c179 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c240 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c8 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c300 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c189 {
+        margin-left: 76.8pt;
+        padding-top: 0.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c343 {
+        margin-left: 105.4pt;
+        padding-top: 0.2pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c57 {
+        margin-left: 42.4pt;
+        padding-top: 4.8pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.4791666666666667;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c373 {
+        margin-left: 125pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c133 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c269 {
+        margin-left: 97.1pt;
+        padding-top: 0pt;
+        padding-left: 9.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c321 {
+        margin-left: 76.1pt;
+        padding-top: 0.2pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c170 {
+        margin-left: 82.8pt;
+        padding-top: 0.9pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c86 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c258 {
+        margin-left: 96.4pt;
+        padding-top: 0pt;
+        padding-left: 3.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c304 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c270 {
+        margin-left: 111.4pt;
+        padding-top: 0pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c178 {
+        margin-left: 103.8pt;
+        padding-top: 0.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c171 {
+        margin-left: 40.9pt;
+        padding-top: 0.1pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c131 {
+        margin-left: 83.7pt;
+        padding-top: 0.6pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.8pt
+    }
+
+    .c334 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c56 {
+        margin-left: 42.4pt;
+        padding-top: 0.2pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5083333333333335;
+        text-align: justify;
+        margin-right: 6.7pt
+    }
+
+    .c351 {
+        margin-left: 40.1pt;
+        padding-top: 9.7pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c281 {
+        margin-left: 82.8pt;
+        padding-top: 0.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c309 {
+        margin-left: 111.4pt;
+        padding-top: 4.8pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c183 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 13pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c83 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c10 {
+        margin-left: 96.4pt;
+        padding-top: 0.1pt;
+        padding-left: 3.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c370 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c298 {
+        margin-left: 103.8pt;
+        padding-top: 0.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c299 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c102 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c2 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c78 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c98 {
+        margin-left: 68.7pt;
+        padding-top: 0.3pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: justify;
+        margin-right: 6.6pt
+    }
+
+    .c107 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c145 {
+        margin-left: 76.1pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c320 {
+        margin-left: 97.1pt;
+        padding-top: 0.3pt;
+        padding-left: 9.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c207 {
+        margin-left: 97.1pt;
+        padding-top: 0.2pt;
+        padding-left: 9.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c101 {
+        margin-left: 97.1pt;
+        padding-top: 0.2pt;
+        padding-left: 3.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c242 {
+        margin-left: 111.4pt;
+        padding-top: 0pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 34pt
+    }
+
+    .c238 {
+        margin-left: 86pt;
+        padding-top: 0pt;
+        text-indent: -21.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c93 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 27.1pt
+    }
+
+    .c150 {
+        padding-top: 1.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: left;
+    }
+
+    .c53 {
+        margin-left: 68.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c280 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c117 {
+        margin-left: 83pt;
+        padding-top: 0.2pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c43 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 8pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c188 {
+        margin-left: 82.8pt;
+        padding-top: 0.1pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c284 {
+        margin-left: 40.9pt;
+        padding-top: 4.8pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5083333333333335;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c115 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12.5pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c253 {
+        margin-left: 40.1pt;
+        padding-top: 0pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c27 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: italic
+    }
+
+    .c21 {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 10pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c39 {
+        margin-left: 76.1pt;
+        padding-top: 5.2pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c262 {
+        margin-left: 97.1pt;
+        padding-top: 0.3pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c26 {
+        margin-left: 76.1pt;
+        padding-top: 4.8pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9791666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c220 {
+        margin-left: 76.1pt;
+        padding-top: 4.8pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c357 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c34 {
+        margin-left: 89.7pt;
+        padding-top: 0pt;
+        padding-left: 3.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c358 {
+        margin-left: 40.1pt;
+        padding-top: 0.1pt;
+        padding-left: 10.6pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c226 {
+        margin-left: 76.8pt;
+        padding-top: 4pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c61 {
+        margin-left: 96.4pt;
+        padding-top: 0.3pt;
+        padding-left: 3.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c153 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 1pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c28 {
+        margin-left: 76.1pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c184 {
+        margin-left: 83.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c294 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c167 {
+        margin-left: 97.2pt;
+        padding-top: 0pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: justify
+    }
+
+    .c354 {
+        margin-left: 97.2pt;
+        padding-top: 0pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 0.8083333333333332;
+        text-align: justify
+    }
+
+    .c138 {
+        margin-left: 96.3pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8458333333333333;
+        text-align: justify
+    }
+
+    .c211 {
+        margin-left: 68.7pt;
+        padding-top: 0.6pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c182 {
+        margin-left: 11.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 1.1pt
+    }
+
+    .c361 {
+        margin-left: 42.4pt;
+        padding-top: 5pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 6.6pt
+    }
+
+    .c272 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c227 {
+        margin-left: 7.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7041666666666666;
+        text-align: center;
+        margin-right: 6pt
+    }
+
+    .c229 {
+        margin-left: 76pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c223 {
+        margin-left: 76pt;
+        padding-top: 0.1pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c374 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8083333333333332;
+        text-align: left;
+        margin-right: 1.1pt
+    }
+
+    .c371 {
+        margin-left: 50.7pt;
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c17 {
+        margin-left: 40pt;
+        padding-top: 0pt;
+        padding-left: 10.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c345 {
+        margin-left: 42.2pt;
+        padding-top: 0pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.7999999999999999;
+        text-align: justify
+    }
+
+    .c224 {
+        margin-left: 100.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c194 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.8166666666666668;
+        text-align: justify
+    }
+
+    .c368 {
+        margin-left: 103.9pt;
+        padding-top: 0pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c174 {
+        margin-left: 50.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c201 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: center;
+    }
+
+    .c353 {
+        margin-left: 65pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c158 {
+        margin-left: 50.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.7pt
+    }
+
+    .c146 {
+        color: #000000;
+        font-weight: 400;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c330 {
+        margin-left: 22.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 8.9pt
+    }
+
+    .c305 {
+        margin-left: 68.7pt;
+        padding-top: 0.1pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c69 {
+        margin-left: 97.2pt;
+        padding-top: 0.7pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c149 {
+        margin-left: 11.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 1pt
+    }
+
+    .c277 {
+        margin-left: 50.7pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c186 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c333 {
+        margin-left: 82.9pt;
+        padding-top: 0pt;
+        padding-left: -1.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: left
+    }
+
+    .c246 {
+        margin-left: 136.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: center;
+        margin-right: 136.4pt
+    }
+
+    .c14 {
+        color: #000000;
+        font-weight: 700;
+        vertical-align: baseline;
+        font-size: 9pt;
+        font-family: 'Inter';
+        font-style: normal
+    }
+
+    .c307 {
+        margin-left: 68.7pt;
+        padding-top: 4.7pt;
+        padding-left: 3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c317 {
+        margin-left: 22.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c237 {
+        margin-left: 21.4pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.5166666666666666;
+        text-align: justify;
+        margin-right: 6.1pt
+    }
+
+    .c293 {
+        margin-left: 76pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.8083333333333332;
+        text-align: justify
+    }
+
+    .c88 {
+        margin-left: 82.8pt;
+        padding-top: 8.9pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.8541666666666666;
+        text-align: justify
+    }
+
+    .c219 {
+        margin-left: 97.2pt;
+        padding-top: 0pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c225 {
+        margin-left: 107pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c75 {
+        margin-left: 71.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c84 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.775;
+        text-align: justify
+    }
+
+    .c232 {
+        margin-left: 22.1pt;
+        padding-top: 4.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.3pt
+    }
+
+    .c18 {
+        margin-left: 40pt;
+        padding-top: 0.1pt;
+        padding-left: 10.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c119 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c275 {
+        margin-left: 82.8pt;
+        padding-top: 4.7pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c335 {
+        margin-left: 97.2pt;
+        padding-top: 0.3pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c322 {
+        margin-left: 111.4pt;
+        padding-top: 0pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 0.8083333333333332;
+        text-align: justify
+    }
+
+    .c204 {
+        margin-left: 168.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: center;
+        margin-right: 143.7pt
+    }
+
+    .c52 {
+        margin-left: 40.8pt;
+        padding-top: 0pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.8041666666666667;
+        text-align: justify
+    }
+
+    .c164 {
+        margin-left: 65pt;
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.4pt
+    }
+
+    .c241 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.8416666666666667;
+        text-align: justify
+    }
+
+    .c66 {
+        margin-left: 65pt;
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.8pt
+    }
+
+    .c3 {
+        margin-left: 82.9pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c192 {
+        margin-left: 96.3pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c263 {
+        margin-left: 82.9pt;
+        padding-top: 0pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c278 {
+        margin-left: 82.9pt;
+        padding-top: 0pt;
+        padding-left: -6pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: justify
+    }
+
+    .c274 {
+        margin-left: 51.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c286 {
+        margin-left: 97.2pt;
+        padding-top: 0pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c41 {
+        margin-left: 97.2pt;
+        padding-top: 0.8pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c363 {
+        margin-left: 83.7pt;
+        padding-top: 0.2pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c324 {
+        margin-left: 50.7pt;
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c87 {
+        margin-left: 104.6pt;
+        padding-top: 0.6pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c46 {
+        margin-left: 40.8pt;
+        padding-top: 4.7pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c77 {
+        margin-left: 65pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.7pt
+    }
+
+    .c162 {
+        margin-left: 40pt;
+        padding-top: 0pt;
+        padding-left: 10.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c311 {
+        margin-left: 42.2pt;
+        padding-top: 0pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.8041666666666667;
+        text-align: justify
+    }
+
+    .c267 {
+        margin-left: 50.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c130 {
+        margin-left: 40.8pt;
+        padding-top: 0.1pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c191 {
+        margin-left: 80.7pt;
+        padding-top: 0pt;
+        padding-left: -2.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: justify
+    }
+
+    .c38 {
+        margin-left: 86pt;
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c268 {
+        margin-left: 42.2pt;
+        padding-top: 1.4pt;
+        padding-left: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c364 {
+        margin-left: 86pt;
+        padding-top: 0.3pt;
+        padding-bottom: 0pt;
+        line-height: 0.9874999999999999;
+        text-align: justify;
+        margin-right: 6.5pt
+    }
+
+    .c163 {
+        margin-left: 40pt;
+        padding-top: 4.8pt;
+        padding-left: 10.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c24 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c29 {
+        margin-left: 96.3pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.775;
+        text-align: justify
+    }
+
+    .c366 {
+        margin-left: 76pt;
+        padding-top: 0pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.7833333333333333;
+        text-align: justify
+    }
+
+    .c128 {
+        margin-left: 96.3pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8250000000000001;
+        text-align: justify
+    }
+
+    .c295 {
+        margin-left: 7.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: center;
+        margin-right: 5.9pt
+    }
+
+    .c245 {
+        margin-left: 82.8pt;
+        padding-top: 0pt;
+        padding-left: 3.1pt;
+        padding-bottom: 0pt;
+        line-height: 0.7833333333333333;
+        text-align: justify
+    }
+
+    .c94 {
+        margin-left: 80.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: justify
+    }
+
+    .c261 {
+        margin-left: 51.4pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c156 {
+        margin-left: 68.7pt;
+        padding-top: 4.7pt;
+        padding-left: -4.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c113 {
+        margin-left: 80.7pt;
+        padding-top: 0pt;
+        padding-left: -2.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.8708333333333332;
+        text-align: justify
+    }
+
+    .c341 {
+        margin-left: 96.3pt;
+        padding-top: 0.5pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8416666666666667;
+        text-align: justify
+    }
+
+    .c365 {
+        margin-left: 97.2pt;
+        padding-top: 0.1pt;
+        padding-left: 9.8pt;
+        padding-bottom: 0pt;
+        line-height: 0.8291666666666666;
+        text-align: justify
+    }
+
+    .c215 {
+        margin-left: 50.7pt;
+        padding-top: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c325 {
+        margin-left: 22.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        margin-right: 6pt
+    }
+
+    .c248 {
+        margin-left: 168.4pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: center;
+        margin-right: 140.8pt
+    }
+
+    .c349 {
+        margin-left: 68.7pt;
+        padding-top: 0pt;
+        padding-left: -3.7pt;
+        padding-bottom: 0pt;
+        line-height: 0.8125;
+        text-align: justify
+    }
+
+    .c106 {
+        margin-left: 80.7pt;
+        padding-top: 2.2pt;
+        padding-left: -2.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.8416666666666667;
+        text-align: justify
+    }
+
+    .c109 {
+        margin-left: 76pt;
+        padding-top: 4.7pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c360 {
+        margin-left: 76pt;
+        padding-top: 8.9pt;
+        padding-left: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c175 {
+        margin-left: 96.3pt;
+        padding-top: 0pt;
+        padding-left: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 0.8166666666666668;
+        text-align: justify
+    }
+
+    .c257 {
+        margin-left: 65pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify;
+        margin-right: 6.2pt
+    }
+
+    .c72 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0166666666666666;
+        text-align: justify;
+        height: 11pt
+    }
+
+    .c132 {
+        margin-left: 33pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: left
+    }
+
+    .c212 {
+        margin-left: 191.2pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c0 {
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c362 {
+        margin-left: 9pt;
+        padding-top: 4.3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c213 {
+        margin-left: 9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: left
+    }
+
+    .c81 {
+        margin-left: 14.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: left
+    }
+
+    .c318 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c347 {
+        margin-left: 42.4pt;
+        padding-top: 5.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c105 {
+        margin-left: 22.9pt;
+        padding-top: 0.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c151 {
+        margin-left: 22.9pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c356 {
+        margin-left: 22.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.9291666666666667;
+        text-align: left
+    }
+
+    .c54 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c99 {
+        margin-left: 22.9pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c185 {
+        margin-left: 10.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: left
+    }
+
+    .c346 {
+        margin-left: 9pt;
+        padding-top: 4.5pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c76 {
+        margin-left: 14.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7833333333333333;
+        text-align: left
+    }
+
+    .c206 {
+        margin-left: 76.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0083333333333333;
+        text-align: left
+    }
+
+    .c181 {
+        margin-left: 22.9pt;
+        padding-top: 3.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c30 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7875;
+        text-align: left
+    }
+
+    .c12 {
+        padding-top: 0.5pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c35 {
+        padding-top: 0.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c85 {
+        margin-left: 39pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.08333333333333333;
+        text-align: left
+    }
+
+    .c161 {
+        margin-left: 10.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7958333333333334;
+        text-align: left
+    }
+
+    .c139 {
+        margin-left: 15.6pt;
+        padding-top: 0.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c315 {
+        margin-left: 50.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: justify
+    }
+
+    .c217 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: left
+    }
+
+    .c148 {
+        margin-left: 14.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7333333333333334;
+        text-align: left
+    }
+
+    .c96 {
+        padding-top: 0.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c329 {
+        margin-left: 6.7pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c110 {
+        margin-left: 27.4pt;
+        padding-top: 4.7pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c97 {
+        margin-left: 50.7pt;
+        padding-top: 0.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c340 {
+        margin-left: 76.2pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c323 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7833333333333333;
+        text-align: left
+    }
+
+    .c147 {
+        margin-left: 65pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: justify
+    }
+
+    .c221 {
+        margin-left: 11.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8624999999999999;
+        text-align: left
+    }
+
+    .c5 {
+        margin-left: 83.5pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.85;
+        text-align: left
+    }
+
+    .c23 {
+        padding-top: 0.3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c159 {
+        margin-left: 16.6pt;
+        padding-top: 0.6pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c136 {
+        margin-left: 14.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.725;
+        text-align: left
+    }
+
+    .c348 {
+        margin-left: 22.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c243 {
+        margin-left: 100.2pt;
+        padding-top: 0.1pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: justify
+    }
+
+    .c216 {
+        margin-left: 27.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c89 {
+        margin-left: 40.9pt;
+        padding-top: 5.5pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c129 {
+        margin-left: 14.3pt;
+        padding-top: 1.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c121 {
+        margin-left: 9pt;
+        padding-top: 4.8pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c108 {
+        margin-left: 190.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c126 {
+        margin-left: 15.1pt;
+        padding-top: 1.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c15 {
+        margin-left: 10.4pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: left
+    }
+
+    .c218 {
+        margin-left: 16.6pt;
+        padding-top: 1.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c20 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c367 {
+        margin-left: 14.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7958333333333334;
+        text-align: left
+    }
+
+    .c11 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.725;
+        text-align: left
+    }
+
+    .c285 {
+        padding-top: 3.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: right;
+        margin-right: 20.9pt
+    }
+
+    .c71 {
+        margin-left: 76.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.8375;
+        text-align: left
+    }
+
+    .c319 {
+        margin-left: 15.7pt;
+        padding-top: 1.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c68 {
+        margin-left: 16.6pt;
+        padding-top: 1.4pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c288 {
+        margin-left: 22.9pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c337 {
+        margin-left: 11.2pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7041666666666666;
+        text-align: left
+    }
+
+    .c252 {
+        margin-left: 65pt;
+        padding-top: 0.3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c32 {
+        margin-left: 22.9pt;
+        padding-top: 9pt;
+        padding-bottom: 0.9pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c200 {
+        margin-left: 171.9pt;
+        padding-top: 1.9pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c95 {
+        margin-left: 50.7pt;
+        padding-top: 5.2pt;
+        padding-bottom: 0pt;
+        line-height: 0.9375;
+        text-align: left
+    }
+
+    .c137 {
+        margin-left: 22.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c45 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7333333333333334;
+        text-align: left
+    }
+
+    .c123 {
+        margin-left: 6.7pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.7958333333333334;
+        text-align: left
+    }
+
+    .c355 {
+        margin-left: 58.1pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c19 {
+        padding-top: 0.2pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left;
+        height: 11pt
+    }
+
+    .c51 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto
+    }
+
+    .c296 {
+        padding-top: 0.3pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c193 {
+        padding-top: 0.5pt;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        text-align: left
+    }
+
+    .c210 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 0px auto;
+    }
+
+    .c233 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 0.06;
+        text-align: left
+    }
+
+    .c205 {
+        color: #000000;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal
+    }
+
+    .c292 {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-right: auto
+    }
+
+    .c234 {
+        font-weight: 400;
+        font-size: 6pt;
+        font-family: "Times New Roman"
+    }
+
+    .c314 {
+        font-weight: 700;
+        font-size: 9pt;
+        font-family: 'Inter'
+    }
+
+    .c359 {
+        font-weight: 400;
+        font-size: 11.5pt;
+        font-family: 'Inter'
+    }
+
+    .c222 {
+        font-weight: 400;
+        font-size: 10.5pt;
+        font-family: 'Inter'
+    }
+
+    .c250 {
+        font-weight: 700;
+        font-size: 11pt;
+        font-family: 'Inter'
+    }
+
+    .c47 {
+        font-weight: 700;
+        font-size: 9.5pt;
+        font-family: 'Inter'
+    }
+
+    .c264 {
+        font-weight: 700;
+        font-size: 6.5pt;
+        font-family: 'Inter'
+    }
+
+    .c4 {
+        text-decoration-skip-ink: none;
+        -webkit-text-decoration-skip: none;
+        text-decoration: underline
+    }
+
+    .c352 {
+        font-weight: 400;
+        font-size: 6.5pt;
+        font-family: 'Inter'
+    }
+
+    .c266 {
+        font-weight: 700;
+        font-size: 14pt;
+        font-family: 'Inter'
+    }
+
+    .c369 {
+        font-weight: 400;
+        font-size: 5.5pt;
+        font-family: 'Inter'
+    }
+
+    .c291 {
+        font-weight: 400;
+        font-size: 7.5pt;
+        font-family: 'Inter'
+    }
+
+    .c244 {
+        background-color: #ffffff;
+        max-width: 768px;
+        padding: 20px;
+        margin: 0px auto;
+        font-size: 16px !important;
+    }
+
+    .c279 {
+        font-weight: 700;
+        font-size: 13.5pt;
+        font-family: 'Inter'
+    }
+
+    .c67 {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    .c16 {
+        padding: 0;
+        margin: 0
+    }
+
+    .c290 {
+        height: 17.8pt
+    }
+
+    .c282 {
+        height: 30.8pt
+    }
+
+    .c33 {
+        height: 30.6pt
+    }
+
+    .c59 {
+        height: 14.5pt
+    }
+
+    .c372 {
+        height: 12.6pt
+    }
+
+    .c63 {
+        height: 19.4pt
+    }
+
+    .c247 {
+        background-color: #d9d9d9
+    }
+
+    .c328 {
+        height: 20.2pt
+    }
+
+    .c135 {
+        height: 13.4pt
+    }
+
+    .c166 {
+        height: 19.8pt
+    }
+
+    .c73 {
+        height: 10.4pt
+    }
+
+    .c197 {
+        background-color: #808080
+    }
+
+    .c124 {
+        height: 14.2pt
+    }
+
+    .c104 {
+        height: 15.1pt
+    }
+
+    .c49 {
+        height: 10.5pt
+    }
+
+    .c344 {
+        height: 19.9pt
+    }
+
+    .c180 {
+        height: 9.8pt
+    }
+
+    .c255 {
+        height: 151pt
+    }
+
+    .c306 {
+        height: 11.2pt
+    }
+
+    .c62 {
+        height: 9.7pt
+    }
+
+    .title {
+        padding-top: 24pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 36pt;
+        padding-bottom: 6pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+
+    .subtitle {
+        padding-top: 18pt;
+        color: #666666;
+        font-size: 24pt;
+        padding-bottom: 4pt;
+        font-family: "Georgia";
+        line-height: 1.0;
+        page-break-after: avoid;
+        font-style: italic;
+        text-align: left
+    }
+
+    li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: 'Inter'
+    }
+
+    p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: 'Inter'
+    }
+
+    h1 {
+        padding-top: 0pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 9pt;
+        padding-bottom: 0pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        text-align: left
+    }
+
+    h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 18pt;
+        padding-bottom: 4pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+
+    h3 {
+        padding-top: 14pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+
+    h4 {
+        padding-top: 12pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 12pt;
+        padding-bottom: 2pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+
+    h5 {
+        padding-top: 11pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 11pt;
+        padding-bottom: 2pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+
+    h6 {
+        padding-top: 10pt;
+        color: #000000;
+        font-weight: 700;
+        font-size: 10pt;
+        padding-bottom: 2pt;
+        font-family: 'Inter';
+        line-height: 1.0;
+        page-break-after: avoid;
+        text-align: left
+    }
+</style>
+
+<body class="c244" style="font-size: 16px !important;">
+    <div>
+        <div class="c233" style="display: flex;justify-content: space-between;align-items: self-end;"><span
+                style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 74.00px; height: 71.00px;"><img
+                    alt="" src="https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/logos/lender-liquiloans.png"
+                    style="width: 74.00px; height: 71.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span><span
+                style="overflow: hidden;display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 92.13px; height: 26.47px;"><img
+                    alt="" src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/p2p/lender-registration-agreement/assets/images/confidential-logo-v2.png"
+                    style="width: 92.13px; height: 26.47px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                    title=""></span></div>
+    </div>
+    <p style="text-align: center;margin-top: 20px;"><span class="c4 c47">LENDER REGISTRATION AGREEMENT</span></p>
+    <p class="c96"><span class="c43"></span></p>
+    <p class="c232"><span class="c2">THIS </span><span class="c13">LENDER REGISTRATION AGREEMENT (</span><span
+            class="c2">hereinafter referred to as this </span><span class="c13">&ldquo;Agreement&rdquo; </span><span
+            class="c2">and includes any exhibits attached hereto, which may be amended, supplemented or otherwise
+            modified from time to time</span><span class="c13">) </span><span class="c2">is made at the place and on the
+            date as mentioned in Schedule 1, BY and BETWEEN</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c317"><span class="c2">The Person(s), as described in Schedule 1 (hereinafter referred to as the
+        </span><span class="c13">&ldquo;Lender&rdquo; </span><span class="c2">/ &ldquo;</span><span
+            class="c13">you</span><span class="c2">&rdquo; which expression shall be deemed to mean and include his /
+            her / their respective heirs, administrators, executors, legal representatives of the </span><span
+            class="c13">First Part; AND </span><span class="c14 c4">NDX P2P Private Limited</span><span class="c2">, a
+            company incorporated under the provisions of the Companies Act, 2013, having corporate identity number
+            U67200MH2018PTC306270 and its registered office at </span><span class="c60">1st Floor, B-104,
+            &quot;</span><span class="c2">The Qube&quot; having C.T.S. No. 1498, A/2, M.V. Road, Hasan Pada Rd, Mittal
+            Industrial Estate, Marol Andheri (East), Mumbai, Maharashtra </span><span class="c60">400059 </span><span
+            class="c2">(hereinafter referred to as the &lsquo;</span><span class="c13">LiquiLoans</span><span
+            class="c2">&rsquo; / &ldquo;</span><span class="c13">we</span><span class="c2">&rdquo;, which expression
+            shall, unless it be repugnant to the subject or context thereof, shall mean and include its successors,
+            transferees and assigns), of the </span><span class="c13">Second Part</span><span class="c2">. Each is
+            hereinafter referred to individually as </span><span class="c13">&lsquo;Party&rsquo; </span><span
+            class="c2">or collectively as&lsquo;</span><span class="c13">Parties&rsquo;</span><span class="c2">.</span>
+    </p>
+    <p class="c20"><span class="c8"></span></p>
+    <h1 class="c137"><span class="c13">WHEREIN</span></h1>
+    <p class="c12"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_13-0 start" start="1">
+        <li class="c36 li-bullet-0"><span class="c2">LiquiLoans is solely engaged in the business of providing
+                peer-to-peer lending platform for enabling of loan facilitation via online medium or otherwise, to a
+                wide range of participants.</span></li>
+        <li class="c133 li-bullet-0"><span class="c2">LiquiLoans platform enables prospective borrowers and lenders to
+                directly enter into loan transactions with one another as well as carries out risk assessment and
+                provides support services to prospective borrowers and lenders.</span></li>
+        <li class="c155 li-bullet-0"><span class="c2">LiquiLoans&#39; products and services are regulated by the extant
+                guidelines and circulars of Reserve Bank of India (&ldquo;RBI&rdquo;) on peer-to-peer lending.
+                LiquiLoans is registered as NBFC-P2P with the RBI and is entitled to offer its products and services.
+                LiquiLoans is not operating a portfolio management services as defined under the Securities Exchange
+                Board of India (&ldquo;SEBI&rdquo;) regulations and the participants on its platform retain discretion
+                over their funds as described herein.</span></li>
+        <li class="c289 li-bullet-0"><span class="c2">The Lender is engaged in carrying on bonafide activities for
+                livelihood and intends to utilize the platform provided by LiquiLoans to lend certain sums of monies to
+                various persons, from time to time, on the terms and conditions as maybe acceptable to the Lender and
+                the Parties have accordingly agreed to record their understanding and execute these presents.</span>
+        </li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <h1 class="c325"><span class="c13">NOW THEREFORE, IN CONSIDERATION OF THE COVENANTS AND CONDITIONS HEREINAFTER SET
+            FORTH, THE RECEIPT AND SUFFICIENCY OF WHICH IS HEREBY ACKNOWLEDGED, THE PARTIES HERETO AGREE AS
+            FOLLOWS:</span></h1>
+    <p class="c12"><span class="c144"></span></p>
+    <ol class="c16 lst-kix_list_12-0 start" start="1">
+        <li class="c162 li-bullet-1"><span class="c14 c4">Eligibility</span><span class="c2">:</span></li>
+    </ol>
+    <p class="c20"><span class="c2"></span></p>
+    <p class="c95"><span class="c2">The following persons are eligible to register as a member / participant on our
+            website </span><span class="c146 c4"><a class="c67"
+                href="https://www.google.com/url?q=http://www.liquiloans.com/&amp;sa=D&amp;source=editors&amp;ust=1653306672119551&amp;usg=AOvVaw1QErBgz36qCFBf8ygPagHl">www.LiquiLoans.com</a></span><span
+            class="c2">&nbsp;(&ldquo;</span><span class="c13">Website</span><span class="c2">&rdquo;) and use and avail
+            of any of the products and services offered by LiquiLoans:</span></p>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1 start" start="1">
+        <li class="c186 li-bullet-2"><span class="c2">A company / partnership firm / LLP / HUF if:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-2 start" start="1">
+        <li class="c3 li-bullet-2"><span class="c2">it is incorporated under the applicable Indian laws and has its
+                registered office in India;</span></li>
+        <li class="c117 li-bullet-0"><span class="c2">it holds valid charter documents, including but not limited to,
+                its memorandum of association, articles of association and certificate of incorporation;</span></li>
+        <li class="c278 li-bullet-3"><span class="c2">it has a valid operative bank account in India; and</span></li>
+        <li class="c94 li-bullet-2"><span class="c2">it holds a valid Permanent Account Number (PAN) card issued by the
+                Government of India</span></li>
+    </ol>
+    <p class="c96"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="2">
+        <li class="c305 li-bullet-4"><span class="c2">An individualif:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-2 start" start="1">
+        <li class="c106 li-bullet-5"><span class="c2">He/she has a valid identity and residence proof including and not
+                limited to an Aadhar card</span></li>
+        <li class="c113 li-bullet-6"><span class="c2">He/she has a valid operative bank account; and</span></li>
+        <li class="c191 li-bullet-7"><span class="c2">He/she has a valid PAN card issued by the Government of
+                India.</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="2">
+        <li class="c17 li-bullet-8">
+            <h1 style="display:inline"><span class="c4">Registration and Authorisation by the Lender:</span></h1>
+        </li>
+    </ol>
+    <p class="c23"><span class="c103"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="3">
+        <li class="c254 li-bullet-4"><span class="c2">The Lender is clearly aware that a Lender will have to register,
+                by himself / herself / itself or through its authorised representative, with LiquiLoans and create its
+                registration / lender account prior to availing any of the products and/or services offered by
+                LiquiLoans. The Lender confirms that all the information related to registration entered on the Website
+                will be correct, complete and it shall promptlyupdate the information in the event of any change whatsoever. The Lender further confirms that
+            it is aware that this Agreement contains the terms upon which the Lender will participate through the
+            LiquiLoans platform, in the event the Lender is accepted by LiquiLoans as a lender.</span></li>
+    </ol>
+    <p class="c12"><span class="c205 c291"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="4">
+        <li class="c272 li-bullet-2"><span class="c2">The Lender confirms that: (i) they will not click on the
+                &quot;check box&quot; and on the &quot;Submit / Agree&quot; button; or physically sign this Agreement and will not seek to obtain access to or
+            otherwise use the Website in the event, it does not agree or is not willing to be bound by this
+            Agreement.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-1" start="5">
+        <li class="c70 li-bullet-2"><span class="c2">By either clicking a button or checking a box indicating acceptance
+                or by registering on the platform or by executing any document that references this Agreement or by
+                accessing or using the Website, or by accessing any of the products and services offered by LiquiLoans
+                (whether in part or full), the Lender agrees to be bound by the policies and guidelines incorporated by
+                reference in this Agreement and any future amendments and additions hereto as published from time to
+                time by LiquiLoans on its Website or through other various means and modes.</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="6">
+        <li class="c78 li-bullet-2"><span class="c2">LiquiLoans reserves the sole right to make any changes to the terms
+                and conditions contained herein, its terms of use of the Website and/or privacy policy (which is
+                available on the website), as and when deemed necessary or desirable, without prior notification. The
+                Lender hereby expresslyacknowledges and confirms that it will read LiquiLoans&rsquo; terms of use and
+                privacy policy from time to time in order for it to stay informed as to any such changes. If LiquiLoans
+                makes any changes to its terms of use and privacy policy and the Lender continues to use the Website /
+                services, it will be deemed / implied that the Lender has agreed to the revised terms of use and privacy
+                policy. If this Agreement conflicts with any other document, then this Agreement will prevail for the
+                purposes of the services and/or products being provided by LiquiLoans. In case of conflict between the
+                terms and conditions of this Agreement and the contents of the Website (including the Dashboard), the
+                contents of the Website (including the Dashboard) shall prevail.</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="7">
+        <li class="c259 li-bullet-4"><span class="c2">In addition to the registration on the Website, the Lender shall
+                submit all the documents sought by LiquiLoans, or any entity authorised by LiquiLoans, for verification
+                or otherwise, within the timelines specified by LiquiLoans. The Lender hereby agrees and confirms that
+                the information and documents provided by it to LiquiLoans from time to time shall become part of the
+                records of LiquiLoans and LiquiLoans will not be obligated/liable to return the same, either in part or
+                full.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="8">
+        <li class="c78 li-bullet-4"><span class="c2">The Lender agrees and confirms that LiquiLoans may undertake anti
+                money laundering checks and/or any other check in respect of its application and may require relevant
+                information and documents from the Lender as it deems fit, including a declaration in relation to
+                compliance with FATCA, which the Lender agrees and confirms to provide promptly and correctly and shall
+                provide full support and co-operation in undertaking such diligences by LiquiLoans or any other person
+                on its behalf.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="9">
+        <li class="c70 li-bullet-4"><span class="c2">The Lender hereby agrees to receive transaction alerts via Short
+                Message Service (&ldquo;SMS&rdquo;), email or any other mode intimated to the Lender (&ldquo;Messaging
+                Service&rdquo;) by LiquiLoans on any new registrations, loan closures, repayments, offers on loans,
+                requests from borrowers, etc. The Lender confirms that it is availing this service on its own will and
+                there will be no obligation/liability on LiquiLoans in case of any type ofdispute.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="10">
+        <li class="c143 li-bullet-2"><span class="c2">The Lender hereby permits LiquiLoans to access, collect and
+                display any of his publicly available information. The Lender hereby authorises LiquiLoans to obtain,
+                from time to time, his credit information from credit information providers.</span></li>
+    </ol>
+    <p class="c20"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="11">
+        <li class="c165 li-bullet-4"><span class="c2">The Lender confirms and acknowledges that LiquiLoans has the right
+                to reject any application for registration or terminate the registration of the Lender, at its sole and
+                absolute discretion, without assigning any reason whatsoever and without incurring any liability
+                whatsoever.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="12">
+        <li class="c53 li-bullet-4"><span class="c2">Any information and / or instruction received by LiquiLoans from
+                the Lender, or instructed / initiated / requested through the Lender&rsquo;s authorized representatives,
+                and/or from any advisor / intermediary of the Lender (Broker/s, Individual Financial Advisor/s, Wealth
+                Advisor/s, Mutual Fund Advisor/s, Wealth Management Firm/s, Agent/s, Financial Planner/s, Registered
+                Investment Advisor/s, Investment / Advisory Platform/s (Offline / Online), Financial Product Advisor/s, Chartered
+            Accountant/s and any/all of their employees etc.) including from the account of the Lender on the Website or
+            via advisor / intermediary&rsquo;s platform provided by LiquiLoans, shall be deemed to emanate from the
+            Lender, and shall be fully binding on the Lender.</span></li>
+    </ol>
+    <p class="c0"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="3">
+        <li class="c301 li-bullet-9"><span class="c4 c14">Commencement</span><span class="c13">: </span><span
+                class="c2">This Agreement shall come into effect from the date of the acceptance / signatures hereof and
+                shall remain in full force and affect unless terminated otherwise.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="4">
+        <li class="c18 li-bullet-10">
+            <h1 style="display:inline"><span class="c4">Processes of various services of LiquiLoans</span></h1>
+        </li>
+    </ol>
+    <p class="c20"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="13">
+        <li class="c156 li-bullet-11"><span class="c14 c4">Administrator/Trusteeship:</span></li>
+    </ol>
+    <p class="c20"><span class="c144"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="4">
+        <li class="c111 li-bullet-12"><span class="c2">For the purposes hereof, the &quot;Administrator&quot; shall be
+                such person as is appointed by LiquiLoans from time to time to deal with all the funds of the
+                participants. It is further explicitly clarified that the Administrator will not be the borrower for the
+                purposes of the Loan and will purely be providing services for the participants, as described herein and
+                in terms of the RBI regulations. M/s. IDBI Trusteeship Services Limited having its registered office at
+                Asian Building, Ground Floor, 17, R. Kamani Marg, Ballard Estate, Mumbai &ndash; 400 001 is presently
+                the Administrator. Any changes of Administrator will be posted on the Website.</span></li>
+        <li class="c88 li-bullet-13"><span class="c2">By registering with LiquiLoans, you agree and confirm that:</span>
+        </li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-3 start" start="1">
+        <li class="c271 li-bullet-14"><span class="c2">all of your funds will be (a) paid by you from a bank account in
+                India in your name in Indian Rupees; and (b) shall be deposited by you and held in one or more escrow
+                bank accounts operated by the Administrator; and</span></li>
+        <li class="c309 li-bullet-15"><span class="c2">any sums that any borrower repays under a transaction shall be
+                deemed to be directed to be paid to the Administrator in the designated escrow bank account, without the
+                borrower having any further obligation concerning the application of thosemonies.</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="6">
+        <li class="c241 li-bullet-16"><span class="c2">The Administrator shall, at all times, keep:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-3 start" start="1">
+        <li class="c322 li-bullet-17"><span class="c2">the funds of the participants segregated from its own
+                funds;</span></li>
+        <li class="c242 li-bullet-18"><span class="c2">records showing clearly that the participants funds do not belong
+                either to LiquiLoans or itself; and</span></li>
+        <li class="c270 li-bullet-19"><span class="c2">to procure that any funds that are not offered funds or accepted
+                funds are repayable to the concerned participant within seven (7) working days of being so requested by
+                the concerned participant.</span></li>
+    </ol>
+    <p class="c35"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="7">
+        <li class="c304 li-bullet-20"><span class="c2">The Lender agrees and acknowledges that (I) it shall not have any
+                right of recourse against any monies held by the Administrator, save only for any funds attributable to
+                the Lender; and (II) save and except for the Administrator&#39;s compliance hereof, the Administrator
+                will have no further obligation to you and none of your funds held by the Administrator will not earn
+                any interest.</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="8">
+        <li class="c141 li-bullet-21"><span class="c2">In the event that LiquiLoans is unable to continue to operate the
+                Website, then LiquiLoans will procure that, under its agreement with the Administrator, the
+                Administrator will use its reasonable endeavours to provide a basic service to receive payments in
+                respect of then-subsisting transactions, subject to the payment to the Administrator of like fees as
+                would otherwise be payable to LiquiLoans. However, in such circumstances, the Administrator shall not be
+                involved in the creation of any new transactions and, in respect of funds not committed to a
+                transaction, these shall be returned to the relevant participant as soon as is reasonably
+                practicable.</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="9">
+        <li class="c141 li-bullet-22"><span class="c2">LiquiLoans will endeavour to ensure that both: (i) the amount of
+                funds of the Lender that are held by the Administrator and (ii) the identification of funds which are
+                the subject of a particular transaction, in each case as advised by LiquiLoans to the Administrator, are
+                both accessible by the Lender on the Website and are regularly updated on the Website, provided that
+                neither the Administrator nor LiquiLoans shall be liable for any delay in updating such
+                information.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="10">
+        <li class="c283 li-bullet-21"><span class="c2">LiquiLoans will communicate with you from time to time about the
+                amount and status of your funds, based on the books maintained by the Administrator and, unless you
+                raise a written objection within 30 days of being so informed, you will be deemed to have accepted the
+                contents of the advice sent to you.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="11">
+        <li class="c300 li-bullet-12"><span class="c2">In the event that the Administrator is unable to perform its
+                obligations in terms of this Agreement, for any reason whatsoever, then LiquiLoans shall endeavour to
+                appoint an alternative administrator and shall not be responsible for any losses that may be incurred by
+                the participants pending such new appointment.</span></li>
+    </ol>
+    <p class="c23"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="14">
+        <li class="c119 li-bullet-4">
+            <h1 style="display:inline"><span class="c4">Matching of Borrower, Commitments, Listing and Loan
+                    Funding:</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="12">
+        <li class="c111 li-bullet-13"><span class="c13">Listing: </span><span class="c2">From time to time, LiquiLoans
+                may publish on the Website, on a no name basis, profiles of eligible borrowers, together with the
+                proposed loan period, the amount of funding sought by the relevant borrowers (&quot;Target
+                Funding&quot;), the applicable interest rate and other relevant details. The complete details of the
+                relevant borrowers shall be available in the annexure at the time of execution of the transaction. The
+                date upon which the prospective transaction is published on the Website is referred to as the
+                &quot;Offer Date&quot;.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="13">
+        <li class="c141 li-bullet-12"><span class="c13">Lending Transaction: </span><span class="c2">If the Lender
+                wishes to participate in a prospective transaction, then the Lender shall have the opportunity to do so
+                by completing the relevant details on the Website, which will require the Lender to </span><span
+                class="c13">(I) </span><span class="c2">specify the amount of funds that the Lender may wish to commit
+                to that prospective Transaction (&quot;Offered Funds&quot;), which amount must (A) not exceed the funds
+                belonging to the Lender (excluding any fees due to LiquiLoans); (B) be held by the Administrator in
+                cash; (C) not exceed the amount of target funding then outstanding for the prospective transaction, as
+                advised by the Website; and, (D) be a multiple of such amount as LiquiLoans may prescribe from time to
+                time on the Webs ite; and </span><span class="c13">(II) </span><span class="c2">press a
+                &quot;confirm&quot; button provided at the relevant section of the Website
+                (&quot;Confirmation&quot;).</span></li>
+    </ol>
+    <p class="c12"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="14">
+        <li class="c188 li-bullet-12"><span class="c13">Term of Lending: </span><span class="c2">The Lender can lend
+                money for a maximum period of 36 months (3 years) at a time. However, this period is dependent on the
+                terms of the particular Transaction.</span></li>
+        <li class="c333 li-bullet-23">
+            <h1 style="display:inline"><span class="c13">Matching:</span></h1>
+        </li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-3 start" start="1">
+        <li class="c177 li-bullet-24"><span class="c2">Immediately on closing the loan offer, LiquiLoans will liaison
+                between lender and borrower to sign documents, and complete the requisite legal process required to
+                enable the transaction. After completing the legal formalities / documentation between borrower and
+                lender, loan proceeds shall be disbursed by LiquiLoans within a period 5 -7 working days into
+                borrower&rsquo;s designated deposit account.</span></li>
+        <li class="c343 li-bullet-25"><span class="c2">If the lender fails to abide by his commitment towards
+                disbursement of loan, his name will be delisted and he will not be allowed to carry out any transaction
+                in LiquiLoans portal in future.</span></li>
+        <li class="c87 li-bullet-26"><span class="c2">All gains through LiquiLoans are taxable and hence must be filed
+                as per the rules.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-2" start="16">
+        <li class="c263 li-bullet-27">
+            <h1 style="display:inline"><span class="c13">Flow of Funds:</span></h1>
+        </li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-3 start" start="1">
+        <li class="c178 li-bullet-12"><span class="c2">To ensure secure, fast and smooth transfer of funds with every
+                transaction on the Website, LiquiLoans has opened a &ldquo;Disbursement Escrow Account&rdquo; under the
+                trusteeship of the Administrator. The Lender will be required to transfer the amounts he wishes to lend
+                through LiquiLoans, into such Disbursement Escrow Account.</span></li>
+        <li class="c298 li-bullet-28"><span class="c2">Once the loan transaction of the Lender with the particular
+                borrower(s) is confirmed, the Administrator will, on the instructions of LiquiLoans, transfer the
+                relevant amount from the Disbursement Escrow Account directly to the borrower&rsquo;s bank
+                account.</span></li>
+        <li class="c140 li-bullet-29"><span class="c2">LiquiLoans does not have any right to intervene or option to
+                withdraw monies from such Disbursement Escrow Account for its own use. However, LiquiLoans shall have
+                the right to issue instructions to the Administrator for debit to the Disbursement Escrow Account, for
+                the amounts due and payable to it towards its fees, costs, commission, charges, etc. LiquiLoans does not
+                have the right to do any transactions, except for viewing the transactions done through the Disbursement
+                Escrow Account.</span></li>
+        <li class="c127 li-bullet-30"><span class="c2">The Lender shall give instructions, through LiquiLoans, to the
+                Administrator, who in turn will forward such instructions to the escrow bank for execution.</span></li>
+        <li class="c92 li-bullet-12"><span class="c2">The Administrator will independently audit the operations of the
+                Disbursement Escrow Account on a regular basis.</span></li>
+        <li class="c91 li-bullet-13"><span class="c2">To ensure secure, fast and smooth transfer of funds with every
+                transaction on the Website, LiquiLoans has also opened a &ldquo;Borrowers&rsquo; Escrow Account&rdquo;
+                under the trusteeship of the Administrator. The Borrowers will be required to transfer the amounts due
+                and payable by them to the lenders, into such Borrowers&rsquo; Escrow Account. After the loan is
+                disbursed, the borrower will pay the EMIs on or before the stipulated date of every month. If a borrower
+                fails to pay an EMI within a stipulated time, a penalty is levied on the borrower which is payable to
+                the lender. The first EMI shall be payable by cheque or such other mode, as may be decided from time to
+                time. Thereafter, all repayments / EMIs and pre -closure shall be made through an online, automated
+                procedure. Every month the entire EMI amount is collected directly (through auto-debit) from the
+                borrower&rsquo;s account to the Borrowers&rsquo; Escrow account, from where it gets reflected in
+                respective lender&rsquo;s virtual account displayed on the Website.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_11-0 start" start="6">
+        <li class="c157 li-bullet-29"><span class="c2">The Lender shall be eligible to withdraw monies due to him, as
+                displayed in his virtual account and lying to the credit of the Borrowers&rsquo; Escrow Account, by
+                writing to LiquiLoans and the monies will be transferred to his bank account within specified working
+                day(s).</span></li>
+        <li class="c140 li-bullet-31"><span class="c2">Once the Lender has pre-funded the Disbursement Escrow account
+                with the amount he wishes to lend, he can start lending to the borrowers registered with LiquiLoans.
+                Loan listings are made available to the Lender along with relevant financial, credit and personal
+                details of each borrower. The Lender can use this information to make an informed choice and decide to
+                lend to the relevant borrower. Offers are accepted on first come first served basis. The Lender agrees
+                and acknowledges that as per the extant RBI regulations, a person/institution can lend a maximum amount
+                of Rs. 50,00,000/- (Rupees Fifty Lakhs only) through all peer-to- peer lending platforms and the
+                exposure of a single person to any particular borrower on all the peer-to-peer lending platforms cannot
+                exceed an amount of Rs. 50,000/- (Rupees Fifty Thousand only). The Lender agrees and acknowledges to
+                comply with such extant regulatory requirements at all points in time and inform LiquiLoans as and when
+                it breaches any such threshold. The lender investing more than Rs. 10,00,000 across P2P platforms needs
+                to produce a certificate from a practicing Chartered Accountant certifying minimum net-worth of Rs.
+                50,00,000.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <h1 class="c5"><span class="c13">(vi.) Funding:</span></h1>
+    <ol class="c16 lst-kix_list_10-0 start" start="1">
+        <li class="c368 li-bullet-32"><span class="c2">If LiquiLoans shall:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_10-1 start" start="1">
+        <li class="c239 li-bullet-2"><span class="c2">receive confirmations of offered funds for more than 60% but less
+                than 100% of the Target Funding at the end of the offer period for the prospective Transaction, then you
+                agree that such Transaction shall become legally binding on you and the Administrator will be
+                immediately authorised to release the offered funds to the concerned borrower;</span></li>
+        <li class="c90 li-bullet-4"><span class="c2">not receive confirmations of at least 60% of the target funding by
+                the expiry of the offer period, then the offered funds shall not be committed to that Transaction;
+                or</span></li>
+        <li class="c373 li-bullet-33"><span class="c2">receive confirmations of more than 100% of the target funding at
+                any time during the offer period, then LiquiLoans will, endeavour to, but shall not be obliged to,
+                process all confirmations on a first-come-first-served basis.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_10-0" start="2">
+        <li class="c122 li-bullet-13"><span class="c2">Any lender whose offered funds form a part of or the whole of any
+                transaction shall be referred to, in respect of that particular Transaction, as a &quot;Relevant
+                Lender&quot;. Each Relevant Lender shall have been deemed to have made a separate loan to the concerned
+                borrower</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_10-1 start" start="1">
+        <li class="c239 li-bullet-2"><span class="c2">in an amount of the offered funds;</span></li>
+        <li class="c90 li-bullet-4"><span class="c2">for the loan term which shall have been
+            deemed to have commenced on the drawdown date;</span></li>
+        <li class="c373 li-bullet-33"><span class="c2">rat the agreed interest rate; and</span></li>
+        <li class="c373 li-bullet-33"><span class="c2">subject to the
+            borrower terms &amp; conditions. You are recommended to fully acquaint yourself with the borrower terms
+            &amp; conditions before committing any offered funds under this Agreement.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_10-0" start="3">
+        <li class="c157 li-bullet-34"><span class="c2">No Guarantee: LiquiLoans does not provide any guarantee that (A)
+                the Lender will receive a loan request as a result of posting of a listing; or (B) your money will be
+                committed in a borrower&#39;s loan as a result of you confirming an offered fund; or (c) you will
+                receive any rate of return, or any minimum amount of principal or interest or any principal or interest
+                at all;</span></li>
+    </ol>
+    <p class="c12"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="15">
+        <li class="c172 li-bullet-35"><span class="c14 c4">Delayed Funding:</span><span class="c13">&nbsp;</span><span
+                class="c2">Without incurring any liability on any account, whatsoever, LiquiLoans may delay funding of a
+                particular loan (I) if it foresees any discrepancy in the accuracy of the information provided by the
+                borrowers or lenders; or (II) to identify the new lenders, in case of non -commitment of the chosen
+                lenders for the proposed listing; or (III) In case of delay in deposits by the committed lenders.</span>
+        </li>
+    </ol>
+    <p class="c23"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="16">
+        <li class="c37 li-bullet-36"><span class="c14 c4">Cancel Funding / Disbursal:</span><span
+                class="c13">&nbsp;</span><span class="c2">LiquiLoans reserves the right to verify the accuracy of all
+                information provided to LiquiLoans by eligible listed borrowers and eligible listed lenders, in
+                connection with listings and loans, through any of the available modes including by making a tele -call
+                before, during or after the posting of a listing, or before or after the funding/ disbursal of a loan.
+                In case of any suspected fraud or inaccuracies in the information provided to it, LiquiLoans reserves
+                the right to cancel the funding at any point of time before disbursal.</span></li>
+    </ol>
+    <p class="c20"><span class="c2"></span></p>
+    <h1 class="c355"><span>(e ) </span><span class="c4">Transaction Commission:</span></h1>
+    <p class="c12"><span class="c43"></span></p>
+    <ol class="c16 lst-kix_list_9-0 start" start="1">
+        <li class="c275 li-bullet-22"><span class="c2">On completion of disbursement of every loan transaction,
+                LiquiLoans shall be entitled tocharges / fees of a nominal amount, being equivalent to a percentage of the amount lent
+            (excluding GST) with respect to the Lender, for rendering its services. This amount of charges / fees may
+            vary from time to time and will be available / displayed at all points on the Lender&rsquo;s dashboard on
+            the Website, for them to view. The aforesaid charges / fees will be payable to LiquiLoans through such mode,
+            as may be specified from time to time by LiquiLoans and shall be payable in the name of NDX P2P Private
+            Limited.</span></li>
+    </ol>
+    <p class="c35"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_9-0" start="2">
+        <li class="c276 li-bullet-12"><span class="c2">There is no charge or fee for browsing on the Website. LiquiLoans
+                may at its sole discretion introduce new services and modify some or all of the existing Services
+                offered. In such an event LiquiLoans reserves the right to introduce fees for the new Services offered
+                or amend/introduce fees for existing Services, as the case may be. Changes to the Fee policies shall be
+                posted on the Website and such changes shall automatically become effective immediately after they are
+                posted on the Website. Unless otherwise stated, all fees shall be quoted in Indian Rupees and be payable
+                to LiquiLoans within such time as shall be specified by LiquiLoans. The processing fee may vary from one
+                Loan to the other. LiquiLoans allows free registration on its Website following which the User will
+                create a Borrower/Investor Account.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_9-0" start="3">
+        <li class="c190 li-bullet-21"><span class="c2">Lender acknowledges and agrees that LiquiLoans reserves the right
+                to book their Loan Servicing fee at platforms discretion on the cumulative investor portfolio,
+                calculated on accrual basis (if any).</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="5">
+        <li class="c17 li-bullet-8">
+            <h1 style="display:inline"><span class="c4">Repayments:</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="17">
+        <li class="c26 li-bullet-35"><span class="c2">The repayment date for the particular transaction will be due on
+                the settlement date as mentioned in the loan agreement. In case of a holiday, EMI will be collected on
+                the next working day. LiquiLoans collects post-dated cheques and NACH forms from the borrower for the
+                EMI amount from the borrowers for the total repayment amount at the time of loan disbursement.
+                Lender&rsquo;s share of the amount (calculated on pro rata basis) is then transferred to their
+                account.</span></li>
+    </ol>
+    <p class="c19"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="18">
+        <li class="c308 li-bullet-37"><span class="c2">The borrower is charged a late fee of and penal charges per annum
+                calculated on the overdue EMI, as mentioned in its loan agreement, for every day of continuing default
+                if the EMI payment is not received on the date mentioned in the particular agreement.</span></li>
+    </ol>
+    <p class="c0"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="19">
+        <li class="c172 li-bullet-38"><span class="c2">This late fee shall be payable from the date of the default or
+                delay till such date as the EMI along with applicable Interest is repaid by the borrower to the
+                Investor(s). This shall be without prejudice to the Investors&rsquo; other rights available as per the
+                Loan Agreement and/or under law. Provided that the obligation to pay additional interest shall not
+                entitle the borrower to set up a defence that no event of default has occurred.</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="20">
+        <li class="c229 li-bullet-39"><span class="c2">The borrower shall be liable to pay penal charges if any levied
+                by the Bank on account of cheque bouncing, cheque swapping or on return of any cheque issued by the borrower.</span></li>
+    </ol>
+    </p>
+    <p class="c96"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="21">
+        <li class="c114 li-bullet-36"><span class="c2">In the event that the borrower is in arrears of any payment,
+                LiquiLoans is immediately irrevocably authorised by the Lender to refer the matter to a collection
+                agency / law firm / Arbitrator of LiquiLoans&rsquo; choice and, in so acting, LiquiLoans will be the
+                agentfor the Lender.</span></li>
+    </ol>
+    <p class="c23"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="22">
+        <li class="c107 li-bullet-40"><span class="c2">In case a borrower misses an instalment, LiquiLoans will contact
+                the borrower over phone and follow-up on the repayment. In case, the borrower is not reachable over
+                phone, he/she is contacted through e-mail &amp; letter.</span></li>
+    </ol>
+    <p class="c96"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="23">
+        <li class="c80 li-bullet-41"><span class="c2">In consideration of undertaking the process and endeavoring to
+                recover the defaulted amounts and to meet the cost of collection and other expenses, the Lenders agree
+                that LiquiLoans shall have the right to appropriate the late payment fee and the penal charges that may
+                be paid by the borrower.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="24">
+        <li class="c102 li-bullet-41"><span class="c2">In the event that the collection agency referred above is unable
+                to recover any of the claimed sums from the borrower within Ninety (90) days of their appointed date or
+                in case of default of the borrower exceeds half of the offered funds, whichever is later, the lender
+                shall have a right to elect, by intimation in writing to LiquiLoans, that LiquiLoans deliver to the
+                Lender details of the identity and contact details of the relevant borrower and such further or other
+                information collected with regard to the concerned borrower&rsquo;s association with LiquiLoans,
+                along-with the relevant loan documentation and other additional information which are known to
+                LiquiLoans. In such circumstances, LiquiLoans shall have no further responsibility in respect of the
+                matter in so far as it relates to the Lender&#39;s participation in the concerned transaction and the
+                Administrator shall be instructed to remove the concerned transaction from its records in so far as it
+                relates to the Lender, in each case without further claim by the Lender against LiquiLoans or the
+                Administrator.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="25">
+        <li class="c240 li-bullet-42"><span class="c2">LiquiLoans does not guarantee full or partial collection of money
+                from the borrowers. In case, LiquiLoans is able to collect some amount of money, the collection charges
+                for the same are deducted before depositing the money into the lenders account. The collection charges
+                are paid to the collection agencies.</span></li>
+    </ol>
+    <p class="c96"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="6">
+        <li class="c253 li-bullet-43"><span class="c14 c4">Prepayment of Loan</span><span class="c13">: </span><span
+                class="c2">The borrowers may, at any time during the tenure of their loan, prepay the Loan, subject to
+                the conditions mentioned in their respective loan agreement. However, this condition is subject to
+                change, at the sole discretion of LiquiLoans, and can be seen on the Website. These changes may be
+                effective for ongoing Loans as well as new Loans.</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="7">
+        <li class="c358 li-bullet-44"><span class="c14 c4">Auto Invest:</span><span class="c13">&nbsp;</span><span
+                class="c2">The Lender shall be able to utilise the autoinvest feature of the Dashboard / Website / as
+                defined in the agreement in the following manner:</span></li>
+    </ol>
+    <p class="c19"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="26">
+        <li class="c316 li-bullet-42"><span class="c2">Lenders can choose the LiquiLoans autoinvest feature, which
+                allows Lender to select &amp; execute their lending criteria automatically; which is by giving a mandate
+                to LiquiLoans via the Website / Dashboard / as a duly signed document, without any manual
+                intervention.</span></li>
+        <li class="c28 li-bullet-40"><span class="c2">Once the autoinvest feature is accepted in writing / turned ON by
+                the Lender, their offered funds available in Designated Deposit Account are queued up for lending to
+                various transactions in the marketplace of the Website.</span></li>
+        <li class="c338 li-bullet-36"><span class="c2">The autoinvest engine runs daily at a prescheduled frequency and
+                funds loans per autoinvest lending criteria defined by the Lender.</span></li>
+        <li class="c293 li-bullet-45"><span class="c2">The completed transactions shall be regulated by the provisions
+                of this Agreement.</span></li>
+        <li class="c280 li-bullet-35"><span class="c2">Lender is required to accept the autoinvest terms and conditions
+                and input their lending criteria to use the autoinvest feature.</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="8">
+        <li class="c7 li-bullet-9"><span class="c14 c4">Re-Lending:</span><span class="c13">&nbsp;</span><span
+                class="c2">The Lender shall be able to utilise the re-lending feature of the Dashboard / Website / as
+                defined in the agreement in the following manner:</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_8-0 start" start="1">
+        <li class="c203 li-bullet-2"><span class="c2">Lenders can choose the LiquiLoans&rsquo; re-lending feature, which
+                allows the Lender to select &amp; execute their re-lending automatically i.e., utilize the funds from
+                the repayments made by the borrowers, including principal and interest, if any, for further lending on
+                the Web site, without any manual intervention.</span></li>
+        <li class="c302 li-bullet-33"><span class="c2">Once the re-lending feature is turned ON / accepted in writing by
+                the Lender; their funds available is queued up for lending to various transactions in the marketplace of
+                the Website.</span></li>
+        <li class="c184 li-bullet-4"><span class="c2">The re-lending engine runs at a prescheduled frequency and makes
+                disbursements to various new / existing loans</span></li>
+        <li class="c363 li-bullet-46"><span class="c2">The completed transactions shall be regulated by the provisions
+                of this Agreement.</span></li>
+        <li class="c131 li-bullet-47"><span class="c2">Once the re-lending feature is turned on / accepted in writing by
+                the Lender or its authorised representatives; it would be deemed that the Lender has accepted the terms
+                and conditions as may be applicable to said re-lending on the Website.</span></li>
+    </ol>
+    <p class="c96"><span class="c205 c222"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="9">
+        <li class="c163 li-bullet-48">
+            <h1 style="display:inline"><span class="c4">Transfer of rights by Lender</span></h1>
+        </li>
+    </ol>
+    <p class="c20"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="31">
+        <li class="c39 li-bullet-36"><span class="c2">The Lender (&quot;Transferring Lender&quot;) may transfer in whole
+                or in part its rights, title and interest in any transaction (&quot;Transferred Transaction&quot;) to
+                any other lender (&quot;New Lender&quot;) on the Website.</span></li>
+        <li class="c273 li-bullet-49"><span class="c2">The transfer of the transaction will become effective post the
+                consent of both transferring lender and the new lender.</span></li>
+        <li class="c366 li-bullet-50"><span class="c2">Upon transferring a Transaction or part thereof pursuant to this
+                clause, the Transferring Lender transfers to the New Lender all of its rights and obligations under the Transferred
+            Transaction.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-1" start="34">
+        <li class="c321 li-bullet-51"><span class="c2">The New Lender agrees to be bound by the terms of the Transferred
+                Transaction as if it were the original lender to the Transferred Transaction in place of the
+                Transferring Lender.</span></li>
+        <li class="c228 li-bullet-52"><span class="c2">Transferring Lender agrees to release and discharge the borrower
+                from future obligations and liabilities towards itself under the Transferred Transactions, on the basis
+                that the New Lender assumes the future rights and obligations of the Transferring Lender under the
+                Transferred Transaction. Upon such transfer, the borrower of the Transferred Transactions becomes liable
+                to the New Lender.</span></li>
+        <li class="c327 li-bullet-40"><span class="c2">Transfer Fees: At the time of transfer of the Transaction, the
+                Transferring Lender shall pay a transfer fees to LiquiLoans as prescribed byit from time to time.</span>
+        </li>
+        <li class="c160 li-bullet-51"><span class="c2">The Borrower&#39;s rights and obligations under a Transferred
+                Transaction shall not be adversely affected in any way by such transfer.</span></li>
+        <li class="c142 li-bullet-49"><span class="c2">A Lender may also transfer a Transaction to any third party
+                outside the LiquiLoans platform upon obtaining a prior written consent of LiquiLoans.</span></li>
+    </ol>
+    <p class="c19"><span class="c205 c359"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="10">
+        <li class="c18 li-bullet-53">
+            <h1 style="display:inline"><span class="c4">Licence:</span></h1>
+        </li>
+    </ol>
+    <p class="c20"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="39">
+        <li class="c220 li-bullet-49"><span class="c2">LiquiLoans hereby grants you a non-transferable, non-exclusive,
+                revocable, limited license to access and use LiquiLoans&#39; Website during the term of this Agreement
+                solely for the purposes herein. LiquiLoans may, from time to time, update or modify the Website, release
+                new versions of the Website, which may, at LiquiLoans&rsquo; discretion, be included within the license
+                described above. You shall not be permitted to sublicense or transfer any of your rights and/or
+                obligations hereunder including, without limitation, access to the Website. Subject to this Agreement,
+                LiquiLoans may offer to provide the services, solely for your own use, and not for the use or benefit of
+                any third party. Services shall include, but not be limited to, any services LiquiLoans performs for
+                you, any applications or widgets offered by LiquiLoans that you download from the Website or from third
+                party application stores authorized by LiquiLoans, as well as the offering of any materials displayed or
+                performed on or through the Services.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="40">
+        <li class="c251 li-bullet-54"><span class="c2">You shall not directly or indirectly copy or reproduce all or any
+                part of the Website, whether electronically, mechanically or otherwise, in any form including, but not
+                limited to, the copying of presentation, style or organization, uploading, posting, or transmitting any
+                content which constitutes the intellectual property of another party, for which you do not have a right
+                to make available; uploading, posting, or transmitting any material that contains software viruses or
+                any other computer code, files or programs designed to interrupt, destroy or limit the functionality of
+                any computer software or hardware or telecommunications equipment; any action that imposes or may impose
+                (in LiquiLoans&rsquo; sole discretion) an unreasonable or disproportionately large load on
+                LiquiLoans&rsquo; infrastructure; or any use of data mining, robots, or similar data gathering and
+                extraction tools. LiquiLoans reserves its right to prevent or restrict access to the Website. Any
+                unauthorized use by you shall terminate the permission or license granted to you by LiquiLoans. Using
+                this Website and by accepting this Agreement you also agree that you shall not hack or hire some third
+                party to hack the Website or even use any other unauthorized means to access any third- party
+                information without written consent of LiquiLoans. You shall in such an event be liable of a criminal
+                offence and LiquiLoans shall institute appropriate legal proceedings to claim damages. In case any
+                misuse of the Website is carried out by a person or entity based out of India, LiquiLoans reserves the
+                right to institute proceedings in accordance with the laws relating to Intellectual Property Rights. You
+                shall use the Website solely for its intended purposes and shall not use the Website for the benefit of
+                any third party except as specifically contemplated under this User Agreement.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="11">
+        <li class="c260 li-bullet-9"><span class="c14 c4">Content</span><span
+            class="c13">: </span><span class="c2">All content, whether publicly posted or privately transmitted, is the sole
+            responsibility of the person who originated such content. LiquiLoans cannot guarantee the authenticity of
+            any content or data which users may provide about themselves. You acknowledge that all content accessed by
+            you using the Website is at your own risk and you will be solely responsible and liable for any damage or
+            loss to you or any other party resulting therefrom. For purposes of this Agreement, the term
+            &quot;content&quot; includes, without limitation, any location information, recommendations, reviews,
+            videos, audio clips, comments, information, data, text, photographs, software, scripts, graphics, and
+            interactive features generated, provided, or otherwise made accessible by LiquiLoans on or through the
+            Website. Content added, created, uploaded, submitted,distributed, posted or otherwise obtained through the Website by users, is
+            collectively referred to as, &quot;user submissions&quot;. All contents present on the Website are the
+            exclusive property of LiquiLoans. The software, text, images, graphics, video and audio used on the Website
+            belong to LiquiLoans. No material from the Website may be copied, modified, reproduced, republished,
+            uploaded, transmitted, posted or distributed in any form without prior written permission from LiquiLoans,
+            except that LiquiLoans grants you non-exclusive, non-transferable, limited permission to access and display
+            the web pages within the Website, solely on your computer and for your personal, non- commercial use of the
+            Website. This permission is conditioned on (i) you not modifying the content displayed on the Website, (ii)
+            you keeping intact all copyright, trademark and other proprietary notices, (iii) your acceptance of any
+            terms, conditions and notices accompanying the content or otherwise set forth in the Website, (iv) you
+            agreeing to acknowledge of LiquiLoans as the source, citing the uniform resource locator (&quot;URL&quot;)
+            of the page from which the information has been taken.</span>
+        </li>
+    </ol>
+    <p class="c19"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="12">
+        <li class="c17 li-bullet-56">
+            <h1 style="display:inline"><span class="c4">Costs</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="41">
+        <li class="c198 li-bullet-38"><span class="c2">It is a condition of being a participant that you agree (i) to be
+                &nbsp; responsible for all of LiquiLoans&rsquo; costs and disbursements in relation to any Transaction
+                in which you participate to the extent of your participation and (ii) in respect of such Transaction,
+                that any such fees due to LiquiLoans may be deducted from your funds;</span></li>
+    </ol>
+    <p class="c23"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="42">
+        <li class="c145 li-bullet-57"><span class="c2">Details of LiquiLoans&rsquo; costs shall be communicated
+                appropriately to you from time to time and shall be subject to revision by LiquiLoans in its absolute
+                discretion and from time to time. In the event that such revisions are made, LiquiLoans will post a
+                notice of revised costs on its Website / your dashboard prior to such revisions taking effect.</span>
+        </li>
+    </ol>
+    <p class="c12"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="13">
+        <li class="c17 li-bullet-10">
+            <h1 style="display:inline"><span class="c4">Obligations by respective parties:</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="43">
+        <li class="c256 li-bullet-38"><span class="c2">LiquiLoans obligations: After closing a loan transaction,
+                LiquiLoans agrees to liaison between the lenders and borrowers to execute the required legal documents
+                which will bind both the parties till the clearance of all the payments. LiquiLoans agrees to engage the
+                services of a collection agency on behalf of the lender in collecting timely payments from the borrower.
+                LiquiLoans assumes no advisory or fiduciary responsibility with respect to lender in connection with the
+                lending.</span></li>
+    </ol>
+    <p class="c12"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="44">
+        <li class="c223 li-bullet-39"><span class="c2">Lender obligations:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_7-0 start" start="1">
+        <li class="c192 li-bullet-58"><span class="c2">To provide accurate and true information</span></li>
+        <li class="c128 li-bullet-59"><span class="c2">To provide certified true copies for the documents sought</span>
+        </li>
+        <li class="c138 li-bullet-60"><span class="c2">Not to share information that may reveal lender&rsquo;s identity
+                in the loan offers</span></li>
+        <li class="c61 li-bullet-61"><span class="c2">To comply with the provisions of this Agreement, privacy policy
+                and as well any other rules or policies set forth on LiquiLoans&rsquo; Website, any of which may be
+                amended from time to time by LiquiLoans at its sole discretion.</span></li>
+        <li class="c341 li-bullet-62"><span class="c2">To fund the accepted amount to the borrower without
+                anyfailure.</span></li>
+        <li class="c175 li-bullet-59"><span class="c2">To co - operate with LiquiLoans for the information/ documents
+                sought from timeto time.</span></li>
+        <li class="c258 li-bullet-63"><span class="c2">In connection with any loan offers, loans or other transactions
+                involving or potentially involving LiquiLoans, the Lender shall not (i) make any false, misleading or
+                deceptive statements or omissions of material fact; (ii) misrepresent his identity, or describe, present
+                or portray himself as a person other than him (iii) give to or receive from, or offer or agree to give
+                to or receive from, any LiquiLoans lender or other person any fee, bonus, additional interest, kickback
+                or thing of value of any kind, including in exchange for such person&#39;s commitment, recommendation,
+                or offer or agreement to recommend or make a commitment with respect to your listing; (iv) represent
+                himself to any person as a director, officer or employee of LiquiLoans, unless being so (v) post
+                anything abusive, harmful content or pictures; which is defamatory to LiquiLoans.</span></li>
+        <li class="c29 li-bullet-64"><span class="c2">You are aware of the RBI Regulations that a single lender can fund
+                only a maximum of Rs.50,000/- (Rupees Fifty Thousand only) </span><span class="c2">to a borrower
+            across all peer-to-peer lending platforms available in India and that you undertake not to exceed this
+            threshold limit at all times, while you are a participan</span><span class="c2"><a class="c67"
+                href="https://www.google.com/url?q=http://www.liquiloans.com/&amp;sa=D&amp;source=editors&amp;ust=1653306672134452&amp;usg=AOvVaw2XOSY49o-BX5bX4ehrqpB_">t
+                in www.LiquiLoans.co</a></span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_7-0" start="9">
+        <li class="c10 li-bullet-65"><span class="c2">To lend on peer-to-peer lending platforms and have not exceeded
+                the aggregate amount lent / exposure to all borrowers at any point of time across all the peer-to-peer
+                lending platforms available in India prescribed in the RBI Regulations i.e. </span><span class="c13">Rs.
+                50,00,000/- (Rupees FiftyLakhs).</span></li>
+    </ol>
+    <p class="c19"><span class="c144"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="14">
+        <li class="c86 li-bullet-9"><span class="c14 c4">Representations, Warranties and Covenants of the
+                Lender</span><span class="c2">: You represent and warrant that you have all rights to grant such license
+                to us without infringement or violation of any third party rights, including without limitation, any
+                privacy rights, publicity rights, copyrights, contract rights, or any other intellectual property or
+                proprietary rights. You understand that all information publicly posted or privately transmitted through
+                the Website is the sole responsibility of the person from which such content originated; that LiquiLoans
+                will not be liable for any errors or omissions in any content; and that LiquiLoans cannot guarantee the
+                identity of any other users with whom you may interact in the course of using the Website. The Lender
+                hereby represents, warrants and covenants as follows:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-1 start" start="1">
+        <li class="c336 li-bullet-4"><span class="c2">You have read this Agreement and the applicable </span><span
+                class="c2"><a class="c67"
+                    href="https://www.google.com/url?q=https://www.faircent.com/terms-conditions&amp;sa=D&amp;source=editors&amp;ust=1653306672135271&amp;usg=AOvVaw3O72lkmJzVWfFB0VZQR3eJ">terms
+                    and conditions, </a></span><span class="c2">and have fully and completely understood the
+                same.</span></li>
+        <li class="c40 li-bullet-2"><span class="c2">You acknowledge that the LiquiLoans is not engaged in either grant
+                of loan or borrowing any money from any persons in relation to the services.</span></li>
+        <li class="c84 li-bullet-66"><span class="c2">You acknowledge that all loans available on the platform shall
+                first be made available to lenders who have defined their criteria for auto-invest and balance loans which are not
+            subscribed by any lender shall be made available in the market place for other lenders.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_12-1" start="4">
+        <li class="c120 li-bullet-33"><span class="c2">You acknowledge that neither LiquiLoans nor any of its subsidiary
+                or affiliate has any interest in either grant of loan or in borrowing money from a person through the
+                P2P platform.</span></li>
+        <li class="c349 li-bullet-4"><span class="c2">You will honour your commitments and not renege on your loan
+                offers after listing it with us.</span></li>
+        <li class="c349"><span class="c2">You acknowledge that LiquiLoans reserves the right to book their Loan
+            Servicing fee monthly, calculated on accrual basis (if any).</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_6-0 start" start="7">
+        <li class="c357 li-bullet-66"><span class="c2">You will not pester borrowers during the course of or after the
+                completion of the deal. This would include not communicating directly for loan recovery, not pestering
+                about additional details in attempt to personally verify borrower&rsquo;s credentials etc.</span></li>
+        <li class="c312 li-bullet-67"><span class="c2">In case of default in repayment of loan by any Borrower(s), you
+                will deal with recoveries through approved legal advisors. LiquiLoans has a fair mechanism adhering to
+                legal procedures as per the law of the land. However, LiquiLoans is just the facilitator and not an
+                intermediary or holder of the funds, and hence is not responsible for the amounts transacted in the
+                course of a deal.</span></li>
+        <li class="c236 li-bullet-4"><span class="c2">You are responsible for all and any decision that you have taken
+                to lend through LiquiLoans and LiquiLoans does not take any responsibility for that.</span></li>
+        <li class="c350 li-bullet-67"><span class="c2">You acknowledge that the LiquiLoans in no manner warrants or
+                guarantees the performance of a service provider that is providing services with respect to the services
+                being offered by LiquiLoans.</span></li>
+        <li class="c194 li-bullet-46"><span class="c2">You acknowledge that LiquiLoans in no manner warrants and
+                guarantees that the borrower of loan has provided all the required information which is true and correct including its
+            address, phone numbers etc. You acknowledge that it is your responsibility to verify the information about
+            the borrower and LiquiLoans is in no manner liable if the information provided by the borrower is untrue or
+            incorrect.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_6-0" start="12">
+        <li class="c211 li-bullet-4"><span class="c2">You will adhere to all laws relating to income tax and pay its
+                taxes on income so generated</span></li>
+        <li class="c209 li-bullet-68"><span class="c2">You acknowledge that LiquiLoans is not at all responsible for any
+                claim or damage in case either the person who has agreed to take loan has not taken loan or the person
+                who has agreed to repay the loan do not repay the loan or misrepresents about its financial status or
+                commits a fraud or a cheating or any other such illegal act.</span></li>
+        <li class="c98 li-bullet-69"><span class="c2">You acknowledge that you have taken expert advice from a legal
+                consultant or any other expert so required about your status to lend using the services provided by
+                LiquiLoans.</span></li>
+        <li class="c120 li-bullet-69"><span class="c2">LiquiLoans holds the sole and absolute right to de-activate the
+                Lender on its own accord if the Lender is suspected or found to be from competition engaging or trying
+                to engage in any malicious activity or even without any reason.</span></li>
+        <li class="c78 li-bullet-4"><span class="c2">The LiquiLoans services are not available to persons under the age
+                of 18 or of unsound mind or who are declared insolvent or to any persons suspended or removed from the
+                system by LiquiLoans for any reason. The Lender represents that it is of legal age to form a binding
+                contract and is not a person barred from receiving services or goods under the laws as applicable in
+                India. Further, it is more than 18 years of age.</span></li>
+        <li class="c187 li-bullet-70"><span class="c2">The Lender is prohibited from selling, trading, or otherwise
+                transferring their LiquiLoans account to another party, without the express written consent of
+                LiquiLoans. If you do not qualify, you may not use the services provided by LiquiLoans.</span></li>
+        <li class="c84 li-bullet-33"><span class="c2">You agree to provide true, accurate, current and complete
+                information about itself as required to be submitted from time to time. If you provide any information that is untrue,
+            inaccurate, not current or incomplete (or becomes untrue, inaccurate, not current or incomplete), or
+            LiquiLoans has reasonable grounds to suspect that such information is untrue, inaccurate, not current or
+            incomplete, LiquiLoans has the right to suspend or terminate your account and refuse any and all current or
+            future use of the services (or any portion thereof). As LiquiLoans enables borrowers to find lenders and
+            lenders to find borrowers, it considers provision of wrong information willingly an act that would
+            constitute misrepresentation, fraud and cheating. LiquiLoans reserves the right to refuse services,
+            terminate accounts, or remove or edit content in its sole discretion. In the event, LiquiLoans finds that
+            the information shared by you is incorrect or that you are in breach of terms or conditions of the Website
+            or you are in default of your agreements with LiquiLoans, then LiquiLoans may add your name and details in
+            the list of persons who are blacklisted from lending through LiquiLoans.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_6-0" start="19">
+        <li class="c9 li-bullet-71"><span class="c2">By providing information or undertaking communications through
+                LiquiLoans, you shall be deemed to have granted to LiquiLoans a royalty-free, perpetual, irrevocable,
+                non-exclusive license to use, reproduce, modify, publish, edit, translate, distribute, perform, and
+                display the communication alone or as part of other works in any form, media, or technology whether now
+                known or hereafter developed, and to sublicense such rights through multiple tiers of
+                sub-licensees.</span></li>
+        <li class="c53 li-bullet-66"><span class="c2">You acknowledge that you are aware of all your rights, duties and
+                applicability of various laws including not limited to Money Lending Act, Income Tax Act, or any other
+                statute, or law, which may govern the lending and borrowing of monies within your State of residence or
+                from where you ordinarily conduct yourbusiness.</span></li>
+        <li class="c235 li-bullet-46"><span class="c2">You have read and understand LiquiLoans&rsquo; Privacy Policy,
+                the terms of which are posted at the Website and incorporated herein by reference (the &quot;Privacy
+                Policy&quot;), and agree to abide by the Privacy Policy.</span></li>
+        <li class="c74 li-bullet-72"><span class="c2">Every effort has been made to ensure, that the information
+                contained on the Website is correct. However, LiquiLoans makes no warranty as the accuracy,
+                comprehensiveness, or correctness of any of the Service(s) on the Website, and provides all Service(s) on an &quot;as is&quot;
+            basis.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_6-0" start="23">
+        <li class="c326 li-bullet-71"><span class="c2">If you are registered as a lender under any money lenders
+                regulation, you shall disclose the same to LiquiLoans, and provide relevant details as and when required
+                by LiquiLoans. If you fail to disclose the details of your registration or fail to furnish any details,
+                LiquiLoans will have the right to immediately suspend or terminate your membership with it.</span></li>
+        <li class="c332 li-bullet-73"><span class="c2">By accepting these Terms as a prospective Lender, you warrant
+                that you are an &quot;Approved Person&quot;, namely, that you are:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_6-1 start" start="1">
+        <li class="c24 li-bullet-74"><span class="c2">eligible to lend in India and or in the case of a corporation,
+                incorporated in India;</span></li>
+        <li class="c93 li-bullet-30"><span class="c2">a person above the age of eighteen (18) years and/or eligible to
+                contract per Indian Contract Act, 1872;</span></li>
+        <li class="c208 li-bullet-29"><span class="c2">eligible to lend on peer-to-peer lending platforms and have not
+                exceeded the aggregate amount lent / exposure to all borrowers at any point of time across all the
+                peer-to-peer lending platforms available in India prescribed in the RBI Regulations i.e. Rs. 50,00,000/-
+                (Rupees Fifty Lakhs).</span></li>
+        <li class="c170 li-bullet-12"><span class="c2">You are aware of the RBI Regulations that a single lender can
+                fund only a maximum of Rs.50,000/- (Rupees Fifty Thousand only) to a borrower across all peer-to-peer
+                lending platforms available in India and that you undertake not to exceed this threshold limit at all
+                times, while you are a participant </span><span class="c2"><a class="c67"
+                    href="https://www.google.com/url?q=http://www.liquiloans.com/&amp;sa=D&amp;source=editors&amp;ust=1653306672137479&amp;usg=AOvVaw2yVUUOGH2D8js9Kv5sop1b">in
+                    www.LiquiLoans.com </a></span><span class="c2">platform.</span></li>
+        <li class="c281 li-bullet-20"><span class="c2">You are a person who is not involved in activities which fall
+                under the scope of anti -money laundering and counter terrorism financing legislation and regulations;
+                and</span></li>
+        <li class="c245 li-bullet-29"><span class="c2">You are a person who is either a salaried employee, self-employed
+                person, independent professional or is engaged in any other occupation or profession for profit or
+            otherwise but whose business is not that of moneylending nor a person who shall be considered as a money
+            lender as per the various Money Lender&#39;s Regulations in India (save where you are registered under the
+            Money Lending Regulations applicable to the place of your residence/business or are exempt from registration
+            there under);</span></li>
+    </ol>
+    <li style="list-style: none">
+    <p class="c238"><span class="c2">(VII) &nbsp; You are a person who is not prohibited by any applicable laws from
+            participating in any of the products or services offered by LiquiLoans;</span></p>
+            </li>
+    <p class="c19"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="15">
+        <li class="c112 li-bullet-9"><span class="c14 c4">Representation And Warranties of both the Parties:</span><span
+                class="c13">&nbsp;</span><span class="c2">Each of the Parties hereby represent and warrant the following
+                to the other Party (a) it has all the requisite legal power and authority to execute and deliver this
+                Agreement and perform its obligations hereunder; (b) it shall from time to time, use all commercially
+                reasonable efforts to obtain consent(s), approval(s), order(s) or authorization(s) of, and/or
+                registration(s), licenses, declaration(s) or filing(s) with, any court(s), administrative agency(ies) or
+                commission(s) or other governmental authority(ies) or instrumentality(ies), which are required in
+                connection with the execution, delivery or performance of this Agreement and carrying out of their
+                business, other than those which have already been obtained; (c) The contents of this Agreement are in
+                compliance with all applicable statutes, rules, regulations or guidelines laid down by the relevant
+                authorities; (d) Nothing contained in this Agreement is inconsistent with any other policies,
+                obligations, contracts, agreements or instruments that have been executed by either Party internally, or
+                with third-parties; (e) The Parties agree to abide by all laws in performing their obligations and
+                giving effect to the terms of this Agreement; and (f) The authorised representatives of the Parties
+                signing this Agreement are fully authorised in this regard as per prevailing procedures, and the Parties
+                have completed all required corporate actions necessary to execute this Agreement.
+                <br />
+                <br />
+                By participating in the program or otherwise using this Website, you hereby
+                acknowledge and agree that LiquiLoans makes no representation, warranty, covenant or guarantee that any
+                funds you lend to a borrower via the Website will be repaid in whole or in part and (b) loans made via
+                the Website are unsecured and you are solely responsible for making any decisions regarding investments
+                without any influence from LiquiLoans.
+            </span></li>
+    </ol>
+    <p class="c23"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="16">
+        <li class="c17 li-bullet-10">
+            <h1 style="display:inline"><span class="c4">Use of the Website:</span></h1>
+        </li>
+    </ol>
+    <p class="c12"><span class="c43"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="6">
+        <li class="c230 li-bullet-40"><span class="c2">LiquiLoans neither originates nor initiates the transmission nor
+                selects the sender and receiver of the transmission nor selects nor modifies the information contained
+                in the transmission. LiquiLoans has no control over the third-party user generated content.</span></li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="7">
+        <li class="c83 li-bullet-41"><span class="c2">You agree, undertake and confirm that your use of the Website
+                shall be strictly governed by the following binding principles:</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="8">
+        <li class="c142 li-bullet-41"><span class="c2">You shall not host, display, upload, modify, publish, transmit,
+                update or share any information or item that:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_5-0 start" start="1">
+        <li class="c335 li-bullet-75"><span class="c2">belongs to another person and to which you do not have any right
+                to;</span></li>
+        <li class="c219 li-bullet-76"><span class="c2">is grossly harmful, harassing, blasphemous, defamatory, obscene,
+                pornographic,</span></li>
+        <li class="c320 li-bullet-77"><span class="c2">paedophilic, libellous, invasive of another&#39;s privacy,
+                hateful, or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or
+                gambling, or otherwise unlawful in any manner whatever;</span></li>
+        <li class="c69 li-bullet-78"><span class="c2">harms minors in anyway;</span></li>
+        <li class="c286 li-bullet-79"><span class="c2">infringes any patent, trademark, copyright or other proprietary
+                rights;</span></li>
+        <li class="c167 li-bullet-80"><span class="c2">violates any law for the time being in force;</span></li>
+        <li class="c265 li-bullet-81"><span class="c2">deceives or misleads the addressee / Users about the origin of
+                such messages or communicates any information which is grosslyoffensive or menacing in nature;</span>
+        </li>
+        <li class="c365 li-bullet-82"><span class="c2">impersonates anotherperson;</span></li>
+        <li class="c55 li-bullet-78"><span class="c2">contains software viruses or any other computer code, files or
+                programs designed to interrupt, destroy or limit the functionality of any computer resource;</span></li>
+        <li class="c269 li-bullet-83"><span class="c2">threatens the unity, integrity, defence, security or sovereignty
+                of India, friendly relation s with foreign states, or public order or causes incitement to the
+                commission of any cognizable offence or prevents investigation of any offence or is insulting any
+                othernation;</span></li>
+        <li class="c41 li-bullet-84"><span class="c2">shall not be false, inaccurate or misleading;</span></li>
+        <li class="c207 li-bullet-85"><span class="c2">shall not create liability for us or cause us to lose (in whole
+                or in part) the services of our ISPs or other suppliers; and</span></li>
+    </ol>
+    <p class="c0"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="9">
+        <li class="c299 li-bullet-49"><span class="c2">You enable LiquiLoans to use the information you supply us with
+                (&quot;Information&quot;), so that we are not violating any rights you might have in your information,
+                you agree to grant us a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable
+                (through multiple tiers) right to exercise the copyright, publicity, and database rights (but no other
+                rights) you have in your Information, in any media now known or not currently known, with respect to
+                your Information. LiquiLoans will only use your Information in accordance with the User Agreement and
+                LiquiLoans&#39; Privacy Policy.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="10">
+        <li class="c83 li-bullet-35"><span class="c2">As a condition of use, you promise not to use the Service for any
+                purpose that is prohibited by this Agreement. You are responsible for all of your activity in connection
+                with the Service.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="11">
+        <li class="c142 li-bullet-86"><span class="c2">LiquiLoans has no obligation to monitor the Website, content, or
+                user submissions. However, LiquiLoans reserves the right to: (i) remove, suspend, edit or modify any
+                content in its sole discretion, including without limitation any user submissions at any time, without
+                notice to you and for any reason (including, but not limited to, upon receipt of claims or allegations
+                from third parties or authorities relating to such content or if LiquiLoans is concerned that you may
+                have violated this Agreement), or for no reason at all; and (ii) to remove, suspend or block any user
+                submissions from the Website. LiquiLoans also reserves the right to access, read, preserve, and disclose
+                any information as LiquiLoans reasonably believes is necessary to: (i) satisfy any applicable law,
+                regulation, legal process or governmental request; (ii) enforce this Agreement, including investigation
+                of potential violations hereof; (iii) detect, prevent, or otherwise address fraud, security or technical
+                issues; (iv) respond to user support requests; or (v) protect the rights, property or safety of
+                LiquiLoans, its users and the public.</span></li>
+    </ol>
+    <p class="c35"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="12">
+        <li class="c231 li-bullet-87"><span class="c2">The user shall NOT use this Website or any of the microsites to
+                advertise or perform any commercial, religious, political or non-commercial solicitation, including, but
+                not limited to, the solicitation of users of this Website and/or the microsites to become users of other
+                on or offline services directly or indirectly competitive or potentially competitive with
+                LiquiLoans.</span></li>
+        <li class="c360 li-bullet-88"><span class="c2">Without prejudice to the generality of the aforesaid:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_4-0 start" start="1">
+        <li class="c101 li-bullet-89"><span class="c2">details of any potential transaction posted on the Website will
+                not amount to an offer or solicitation of any nature by LiquiLoans.</span></li>
+        <li class="c354 li-bullet-90"><span class="c2">Any information, projection or assumption included on the Website
+                or generated by LiquiLoans is not intended to give you any legal, financial, taxation or other
+            professional advice.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_4-0" start="3">
+        <li class="c287 li-bullet-91"><span class="c2">should you propose to lend any money using the Website, you are
+                strongly advised to obtain appropriate independent, legal, professional advice before proceeding.</span>
+        </li>
+        <li class="c303 li-bullet-92"><span class="c2">no warranties or representations (whether express or implied) are
+                made by LiquiLoans or anyone connected with LiquiLoans (including its officers, agents, employees,
+                affiliates and/or advisers) concerning the completeness, accuracy or reliability of any matter stated on
+                the Website or any other information provided by LiquiLoans to you or to any person in connection with
+                any potential transaction or any LiquiLoans&rsquo; product or service.</span></li>
+        <li class="c154 li-bullet-93"><span class="c2">LiquiLoans is not responsible for any delays or loss of or
+                corruption of data as a result of either the use of the Website by you or your communications over the
+                internet with LiquiLoans, which are entirely at your risk. We will not accept any responsibility for any
+                losses, claims or damages of any kind, whether direct or indirect or special or consequential or
+                otherwise howsoever arising in relation to the foregoing.</span></li>
+        <li class="c154 li-bullet-94"><span class="c2">You understand, confirm and explicitly affirm that you understand
+                the risks associated with any proposed transaction that shall be effected on this Website and that
+                LiquiLoans does not in any manner guarantees any return and there exists a likelihood of loss of the
+                entire principal in case of default by the borrower. LiquiLoans does not provide any assurance for the
+                recovery of loans or any other amounts related thereto.</span></li>
+    </ol>
+    <p class="c23"><span class="c205 c222"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="17">
+        <li class="c195 li-bullet-95"><span class="c14 c4">Restriction on Use</span><span class="c13">: </span><span
+                class="c2">Lender represents himself and no third party. Lender is not authorised or permitted to use
+                LiquiLoans to make offers for someone other than himself. All the transactions carried will be solely by
+                lender from his account. A registered lender may also register &amp; participate as borrower on
+                LiquiLoans portal. However, there will be separate accounts for borrower and lender role. If lender
+                participates on the platform as a borrower, any amount in your funding account are subject to set-off
+                against any delinquent amounts owing on any loans obtained by him as a borrower. However, LiquiLoans
+                reserves the right to decide if a particular lender or borrower can have both accounts at the same
+            time.</span></li>
+    </ol>
+    <p class="c35"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="18">
+        <li class="c162 li-bullet-96"><span class="c14 c4">Ownership</span><span class="c13">: </span><span
+                class="c2">Except for the content submitted by the users, any material, content or logos, marks,software on or part of the Service and all aspects thereof, including all
+            copyrights and other intellectual property or proprietary rights therein, is owned by LiquiLoans or its
+            licensors. You acknowledge that the Website and any underlying technology or software on the Website or used
+            in connection with rendering the Services are proprietary information owned or duly licensed to LiquiLoans,
+            except where it is indicated otherwise. You are prohibited to modify, reproduce, distribute, create
+            derivative works of, publicly display or in any way exploit, any of the content, software, marks, logos,
+            and/or materials available on the Website in whole or in part except as expressly allowed under the Terms of
+            Use. You have no other express or implied rights to use, in any manner whatsoever, the content, software,
+            marks, logos, and/or materials available on the Website.</span>
+        </li>
+    </ol>
+    <p class="c35"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="19">
+        <li class="c162 li-bullet-97">
+            <h1 style="display:inline"><span class="c4">Privacy Policy</span><span class="c2">:</span></h1>
+        </li>
+    </ol>
+    <p class="c20"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="14">
+        <li class="c230 li-bullet-98"><span class="c2">Any personal information collected by LiquiLoans shall not be
+                disclosed to any third party unrelated to the LiquiLoans business unless such a disclosure is authorized
+                or required by law, or you have expressly consented to such a disclosure. However, by executing this
+                Agreement and accepting the terms and conditions as notified from time to time, you grant LiquiLoans an
+                unconditional right to share all or any of your information with LiquiLoans&rsquo; partners, affiliates,
+                employees and agents for the purposes of this Agreement.</span></li>
+    </ol>
+    <p class="c23"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="15">
+        <li class="c251 li-bullet-99"><span class="c2">We do not sell or rent your personal information to third parties
+                for their marketing purposes without your explicit consent and we only use your information as described
+                in the Privacy Policy. We view protection of User&rsquo;s privacy as a very important community
+                principle. We understand clearly that you and your Personal Information is one of our most important
+                assets. Your Information which is stored and processed by us is protected by physical as well as
+                reasonable technological security measures and procedures. If you object to the Privacy Policy in anyway
+                please do not use the Website.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="20">
+        <li class="c179 li-bullet-100"><span class="c14 c4">Cancellation by LiquiLoans</span><span class="c13">:
+            </span><span class="c2">Please note that there may be certain instructions to remit payments or seek
+                rendition of services that LiquiLoans may be unable to accept and will therefore be cancelled.
+                LiquiLoans reserves the right, at its sole discretion, to refuse or cancel any order for any reason.
+                LiquiLoans may also require additional verifications or information before accepting any instruction or
+                registering you as a lender. You may note that negative third -party verification report(s) are crucial
+                factors considered during the funding process. The funding may get rejected at any stage due to lack of
+            </span><span class="c202">i</span><span class="c2">nformation or verifiable information.</span></li>
+        <li class="c351 li-bullet-101"><span class="c14 c4">Fraudulent Transactions</span><span class="c13">:
+            </span><span class="c2">In case of fraudulent use of the services of LiquiLoans by you, then LiquiLoans
+                reserves the right to recover the cost of service(s), collection charges and lawyer fees for using the
+                services fraudulently. Further, LiquiLoans reserves the right to initiate legal proceedings against you
+                for fraudulent use of the services and any other unlawful acts or omissions in breach of this Agreement
+                and the terms and conditions.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="22">
+        <li class="c17 li-bullet-102">
+            <h1 style="display:inline"><span class="c4">Limitation of Liability</span><span class="c13">:</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c13"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="16">
+        <li class="c307 li-bullet-103"><span class="c2">In addition to the other limitations in this Agreement, the
+                Lender specifically confirms that:</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_3-0 start" start="1">
+        <li class="c34 li-bullet-104"><span class="c2">LiquiLoans conducts profiling of borrowers based on information
+                known to it. Whilst LiquiLoans will take reasonable steps to verify such information, (A) LiquiLoans
+                makes no warranty that the profile will accurately reflect any matter relating to the borrower and/or
+                the verac ity of any information that LiquiLoans obtains from the borrower; and (B) LiquiLoans is not
+                making any representation concerning the Transaction and/or any information that it has derived from the
+                borrower and the Lender accepts and confirms that (i) there is a risk that the borrower profile may be
+                incorrect and (ii) it should not solely rely on the screening grade or other information provided by the
+                borrower to LiquiLoans in committing any offered funds and (iii) LiquiLoans shall have no liability in
+                respect of any losses resulting to the Lender from any incorrect or misleading information being given
+                in respect of any transaction.</span></li>
+    </ol>
+    <p class="c19"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_3-0" start="2">
+        <li class="c196 li-bullet-63"><span class="c2">The Lender will be responsible for all legal obligations that may
+                apply anywhere in the world in relation to any transaction in which you participate, including but not
+                limited to any taxation filings and payments to which you may be subject.</span></li>
+    </ol>
+    <p class="c23"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="17">
+        <li class="c294 li-bullet-90"><span class="c2">LiquiLoans, its employees, associates and technology partners,
+                etc make no representations or warranties about the accuracy, reliability, completeness and/or
+                timeliness of any services, portfolio data, monthly factsheets, lender / borrower related data, income
+                tax / legal / compliance related advise, content, information, software, text, graphics, links or
+                communications provided on or through the use of the services or that the provision of the services will
+                be error free and/or uninterrupted. Consequently, LiquiLoans assumes no liability whatsoever for any
+                monetary or other damage suffered by you on account of the delay, failure or interruption of any services,
+            data or other information in connection with the services; and/or any interruption or errors in the
+            provision / operation of the services. You expressly understand and agree that LiquiLoans and its
+            subsidiaries, affiliates, officers, employees, agents, partners and licensors shall not be liable to you for
+            any direct, indirect, incidental, special, consequential or exemplary damages, including, but not limited
+            to, damages for loss of profits, goodwill, use, data or other intangible losses (even if LiquiLoans has been
+            advised of the possibility of such damages), resulting from the services or any related goods and services.
+            The Lender further, with immediate effect, waives any right which had accrued to him from using the services
+            to initiate any legal action against LiquiLoans. The Lender also acknowledge and understands that the
+            credibility of a lender or a borrower as communicated from time to time is based on the information that is
+            provided to LiquiLoans. In case there is a non- disclosure of information to LiquiLoans of the information,
+            and the judgment of LiquiLoans is impaired and the ratings / analysis / underwriting or credibility of a
+            lender or a borrower is not found to be correct, LiquiLoans shall not be responsible for any claims or
+            liabilities. LiquiLoans in any event is not responsible for any default in return of money that is borrowed
+            from the Lender and the Lender shall have exclusive right to initiate proceedings against the defaulter
+            borrower. LiquiLoans is not obliged to provide any information and support to the Lender. However, the
+            Lender shall not make any claim against LiquiLoans and shall conduct an independent due diligence of the
+            borrower before lending to him. This limitation of liability section shall prevail over any conflicting or
+            inconsistent provision contained in any of the documents comprising this Agreement and the terms and
+            conditions updated from time to time.</span></li>
+    </ol>
+    <p class="c12"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="18">
+        <li class="c339 li-bullet-90"><span class="c2">UNDER NO CIRCUMSTANCES SHALL LIQUILOANS, ITS SUBSIDIARIES,
+                EMPLOYEES, OFFICERS, AFFILIATES, DIRECTORS, AGENTS, SUPPLIERS, SHAREHOLDERS, NON EXECUTIVE DIRECTORS OR
+                ITS LICENSORS INVOLVED IN CREATING, PRODUCING, TRANSMITTING OR DISTRIBUTING THE SERVICES, GRANTING OR
+                RECEIVING LOAN FROM A PERSON ASSOCIATED WITH THE LIQUILOANS BE LIABLE FOR ANY DIRECT, INDIRECT,
+                PUNITIVE, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES THAT RESULT FROM EITHER MISREPRESENTATION,
+                FRAUD, COERCION, BREACH OF TRUST, MISAPPROPRIATION, CHEATING OR FOR ANY OTHER SUCH REASON OF ITS END
+                USERS OR OF THIRD PARTIES INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS AND LOSS OF GOODWILL OR LOSS OF
+                INTEREST.</span></li>
+    </ol>
+    <p class="c96"><span class="c205 c222"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="23">
+        <li class="c195 li-bullet-105"><span class="c14 c4">Indemnity</span><span class="c13">: </span><span
+                class="c2">The Lender agrees to indemnify and hold LiquiLoans (and its officers, directors, agents,
+                subsidiaries, holding company, joint ventures, Administrator(s) and employees) harmless from any claim
+                or demand, including attorneys&rsquo; fees, or arising out of or related to your breach of this
+                Agreement, the Website terms of use or your violation of any law or the rights of a third party
+                including but not limited to breach of any warranties, representations or undertakings or in relation to
+                the non-fulfilment of any of your obligations under this Agreement or arising out of violation of any
+                applicable laws, regulations including but not limited to intellectual property rights, payment of
+                statutory dues and taxes, claim of libel, defamation, violation of rights of privacy or publicity, loss
+                of service by other subscribers and infringement of intellectual property or other rights. The
+                provisions of this clause shall survive indefinitely beyond the term of this Agreement, and subsequent
+                to termination for any services used or any benefits accrued before termination of the agreement.</span>
+        </li>
+    </ol>
+    <p class="c20"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="24">
+        <li class="c334 li-bullet-106"><span class="c14 c4">Communication</span><span class="c13">: </span><span
+                class="c2">LiquiLoans is authorised &amp; will communicate with you through any mode using email, SMS,
+                Whatsapp, via the website and telephone or all of them or any other mode. The Lender must mandatorily
+                provide a valid email address and contact telephone and/ or mobile number to LiquiLoans for this
+                purpose. Please note LiquiLoans may not be able to contact the Lender in case your number is part of DNC
+                (Do Not Call) list as generated by TRAI (Telecom Regulatory Authority of India). In this case LiquiLoans
+                requests the Lender to reach out on the defined customer care / investor operations email / mobile no
+                mentioned on the website. When the Lender uses the services or send emails to LiquiLoans, you are
+                communicating with LiquiLoans electronically. You consent to receive communications from LiquiLoans
+                electronically. From time to time, LiquiLoans will also send you marketing material. We use third-party
+                service providers to serve ads on our behalf across the internet. They may collect anonymous information
+                about your interaction with our services. They may also use information about your interactions to
+                target advertisements for goods and services. This anonymous information maybe collected through the use
+                of a pixel tag or any other mode, which is / may be industry standard technology used by most major
+                websites. The Lender agree that all agreements, notices, disclosures and other communications that we
+                provide to you electronically satisfy any / all legal requirements that such communications be in
+                writing.<br />Any notice, communication or documents by a Party to the other Party may be given
+            by personal delivery, courier, registered post, fax or email at the address mentioned in the description of
+            the Parti es. The notice shall be deemed to have been served upon the Party to whom it is meant, upon
+            delivery if delivered by hand; after the expiry of three days if delivered through pre -paid post addressed
+            to the concerned Party; when sent by facsimile upon transmission; and for electronic mail, at the time of
+            being sent. All notices to be delivered to you under this Agreement shall be primarily sent to your latest
+            email address that LiquiLoans has on its records.</span></li>
+    </ol>
+    <p class="c20"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="25">
+        <li class="c253 li-bullet-44"><span class="c14 c4">DISCLAIMER OF WARRANTIES</span><span class="c13">:
+            </span><span class="c2">ALL DETAILS OF THE PARTICIPANTS AND THEIR FINANCIAL STATUS, INCLUDED IN OR AVAILABLE
+                THROUGH THE SERVICES ARE PROVIDED FOR USE WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. LIQUILOANS, ITS SHAREHOLDERS,
+            ITS HOLDING COMPANY, ITS SUBSIDIARIES, AND ITS LICENSORS DO NOT WARRANT THAT THE INFORMATION OR OTHER
+            MATERIAL BY ANY PERSON IS CORRECT INCLUDING HIS FINANCIAL STATUS OR CAPABILITY OR HAS NOT APPROACHED THE
+            OTHER USER OF THE SERVICES WITH A CRIMINAL INTENT TO EITHER CHEAT OR MISAPPROPRIATE OR DENY ANY OTHER USER
+            OF ITS LEGITIMATE CLAIMS. BY PROVIDING ANY CONTENT, REPRESENTATION OR STATEMENT OF YOUR FINANCIAL STATUS OR
+            YOUR PROOF OF RESIDENCE, YOU REPRESENT AND WARRANT THAT YOU HAVE THE LAWFUL RIGHT TO REPRODUCE AND
+            DISTRIBUTE SUCH CONTENT AND THAT THE CONTENT COMPLIES WITH ALL LAWS AND IS TRUE AND AUTHENTIC AND IS NOT IN
+            ANY EVENT PROVIDED TO DEFRAUD OTHER USERS OR CREATE A FALSE IMPRESSION IN THEIR MINDS THAT YOU HAVE A SOUND
+            FINANCIAL STATUS OR ARE REASONABLY COMMITTED TO DELIVER THE COMMITMENTS ON TIME. YOU ALSO REPRESENT THAT YOU
+            HAVE NOT EVER BEEN ACCUSED TO ANY FRAUD, MISREPRESENTATION OR DEFAULT IN YOUR COMMITMENTS, CLAIMS OR MONIES
+            TO ANY THIRD PARTY WHETHER A FINANCIAL INSTITUTION OR NOT. YOU ALSO REPRESENT THAT THERE ARE NO OUTSTANDING
+            DISPUTES IN CONNECTION WITH YOUR MORAL TURPITUDE OR FINANCIAL STATUS. YOU HEREBY REPRESENT AND WARRANT THAT
+            YOU ARE LEGALLY COMPETENT TO EXECUTE, BE BOUND BY AND ADHERE TO TERMS AND CONDITIONS OF THIS AGREEMENT AND
+            THE TERMS AND CONDITIONS NOTIFIED BY LIQUILOANS. YOUR USE OF THE SERVICES IS SOLELY AT YOUR RISK. YOU AGREE
+            THAT LIQUILOANS SHALL HAVE NO RESPONSIBILITY FOR ANY DAMAGES SUFFERED BY YOU IN CONNECTION WITH THE SERVICES
+            OR ANY CONTENT CONTAINED THEREIN OR ANY DAMAGE SUFFERED IN THE EVENT OF DEFAULT OR MISREPRESENTATION BY ANY
+            OTHER USER OF THE SERVICES.</span></li>
+    </ol>
+    <p class="c20"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="26">
+        <li class="c195 li-bullet-101"><span class="c14 c4">Intellectual Property Rights</span><span class="c13">:
+            </span><span class="c2">The trademarks, logos and service marks (&quot;</span><span
+                class="c13">Marks</span><span class="c2">&quot;) displayed in relation to the product &nbsp;&amp;
+                services are the property of LiquiLoans and other affiliate entities of LiquiLoans. The Lender is
+                prohibited from using any Marks for any purpose without the written permission of LiquiLoans or such
+                third party which may own the Marks. All information and content including any software programs
+                available on or through the product &amp; services (&quot;</span><span class="c13">Content</span><span
+                class="c2">&quot;) is protected by copyright. You are prohibited from modifying, copying, distributing,
+                transmitting, displaying, publishing, selling, licensing, creating derivative works or using any content
+                available in respect of the services for commercial or public purposes. Similarly, the LiquiLoans
+                recognises that all the intellectual property associated with the Lender belongs to you, who is the
+                owner of its trademarks, logos and branding and the LiquiLoans acknowledges that the LiquiLoans does not
+                have any right to modify, or claim any right in any of your intellectual properties. The provisions of this clause shall survive
+            indefinitely beyond the term of this Agreement, and subsequent to termination. You hereby grant LiquiLoans a
+            non-exclusive, royalty free, license to use the logos, name and kyc data in its advertising, literature and
+            websites solely in connection with the marketing and sale/resale of product and services and/ or for
+            statutory / regulatory filings.</span></li>
+    </ol>
+    <p class="c35"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="27">
+        <li class="c86 li-bullet-9"><span class="c14 c4">Relationship of Parties</span><span class="c13">: </span><span
+                class="c2">Nothing in this Agreement shall provide the impression that you are an agent or
+                representative of the LiquiLoans, or vice versa. The Parties are independent entities engaging in this
+                Agreement for mutual commercial benefit, and neither Party shall be considered the representative of the
+                other Party, under any circumstances, and neither Party shall be entitled to make any representation,
+                binding or otherwise, or enter into any contract or obligation on behalf of the other Party. Nothing
+                contained herein shall be deemed to create any association, partnership, joint venture or relationship
+                of principal and agent or employer and employee between the Parties. This Agreement is not intended and
+                will not be construed to create any rights in favour of and remedies or liabilities against anythird
+                parties.</span></li>
+    </ol>
+    <p class="c19"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="28">
+        <li class="c260 li-bullet-9"><span class="c14 c4">Dispute Resolution, Governing Law and Jurisdiction</span><span
+                class="c13">: </span><span class="c2">The Parties agree to first mediate any disputes or claims between
+                them in good faith and resolve the disputes amicably and share the cost of mediation equally. In the
+                event that mediation fails, any claim arising out of or relating to this Agreement shall be settled by
+                Arbitration in accordance with the Indian Arbitration and Conciliation Act, 1996. All hearings will be
+                held at Mumbai, India and shall be conducted in English. The LiquiLoans shall appoint a sole arbitrator
+                to preside over the Arbitration proceedings. This Agreement shall be governed by and construed in
+                accordance with the laws of India. The adjudication of any dispute will be the exclusive jurisdiction of
+                the courts of Mumbai, India.</span></li>
+    </ol>
+    <p class="c12"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="29">
+        <li class="c17 li-bullet-96">
+            <h1 style="display:inline"><span class="c4">Term and Termination</span><span class="c13">:</span></h1>
+        </li>
+    </ol>
+    <ol class="c16 lst-kix_list_2-0 start" start="1">
+        <li class="c226 li-bullet-12"><span class="c2">This Agreement shall be valid from the Effective Date and shall
+                remain valid unless terminated earlier in accordance with the terms hereof. This Agreement can be
+                terminated by LiquiLoans without cause upon giving a prior written notice of 30 (thirty) days to the
+                other Party. Either Party may terminate this Agreement forthwith in the event of any breach of the
+                provisions of this Agreement by the other Party, or pursuant to any deficiency in the obligations to be
+                fulfilled in terms of this Agreement or any breach of applicable law if after giving notice of such
+                breach or deficiency, the same is not remedied within 45 (Forty-five) working days from the date of
+                receipt of such notice. No compensation or damages shall be payable by either Party in the event of such
+                termination but such termination shall be subject to the rights and obligations already accrued in
+                favour or against the respective Parties. Furthermore, this Agreement can be terminated without any
+                notice period with the mutual consent of the Parties.</span></li>
+        <li class="c199 li-bullet-107"><span class="c2">Further, LiquiLoans shall have a right to terminate this
+                Agreement or any of its services, including but not limiting to in any of the following
+                circumstances:</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_2-1 start" start="1">
+        <li class="c249 li-bullet-73"><span class="c2">Listing: In the event of any failure to fund the accepted loan
+                offer, LiquiLoans at its sole discretion reserves the right to restrict any further listings from the
+                lender.</span></li>
+        <li class="c262 li-bullet-71"><span class="c2">Registration: LiquiLoans may at its sole discretion, with or
+                without cause, terminate this agreement and registration with LiquiLoans at anytime by giving a notice
+                to the lender.</span></li>
+    </ol>
+    <p class="c12"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_2-0" start="3">
+        <li class="c189 li-bullet-108"><span class="c2">Consequences on termination of registration: Upon termination of
+                this Agreement and registration with LiquiLoans, all the subsisting loans originated through LiquiLoans
+                shall still hold good and will be completed through their term.</span></li>
+    </ol>
+    <p class="c35"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="30">
+        <li class="c86 li-bullet-43"><span class="c14 c4">Grievance officer</span><span class="c13">: </span><span
+                class="c2">In the event you wish to make a complaint regarding any violation of the provisions of this
+                Agreement, you may send a written complaint to the Grievance Officer, who shall handle/ dispose redress
+                the complaint within one (1) month of the receipt of the complaint. The name and contact details of the
+                Grievance Officer are provided on the Website.</span></li>
+    </ol>
+    <p class="c20"><span class="c115"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="31">
+        <li class="c260 li-bullet-9"><span class="c14 c4">Customer Support</span><span
+                class="c13">: </span><span class="c2">LiquiLoans shall provide customer support limited to responding to
+            questions/queries regarding the nature of the Services provided for but not limited &nbsp; to payment,
+            refunds, &nbsp; functionality and feedback. If you have any questions regarding the same you can contact us
+            at:</span></p>
+    <p class="c97"><span class="c2">investo</span><span class="c2"><a class="c67"
+                href="mailto:_ops@liquiloans.com">r_ops@LiquiLoans.com</a></span></li>
+    </ol>
+    <p class="c215"><span class="c2"></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="32">
+        <li class="c7 li-bullet-9"><span class="c14 c4">Contact</span><span class="c13">: </span><span class="c2">If you
+                have any questions about this Agreement or the Privacy Policy of LiquiLoans, or if you want to exercise
+                any of the rights that you are given under this Agreement, you can contact us</span><span class="c2"><a
+                    class="c67" href="mailto:info@liquiloans.com">:</a></span><span class="c2">&nbsp;</span><span
+                class="c2"><a class="c67" href="mailto:info@liquiloans.com">info@LiquiLoans.com</a></span></li>
+    </ol>
+    <p class="c12"><span class="c1"></span></p>
+    <ol class="c16 lst-kix_list_12-0" start="33">
+        <li class="c17 li-bullet-96">
+            <h1 style="display:inline"><span class="c4">Miscellaneous</span><span class="c2">:</span></h1>
+        </li>
+    </ol>
+    <p class="c0"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="19">
+        <li class="c109 li-bullet-110"><span class="c2">You agree and appoint LiquiLoans as the custodian of all the
+                documentation relating to your registration and subsequent loan transactions entered on the Website. LiquiLoans
+            will provide all such documents as necessary upon receiving a written request from you.</span></li>
+    </ol>
+    <p class="c206"><span class="c2"></span></p>
+    <p class="c96"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="20">
+        <li class="c172 li-bullet-41"><span class="c2">Clause headings are inserted for convenience of reference only
+                and shall not be deemed to affect the interpretation or construction of this agreement or of
+                anyclause.</span></li>
+    </ol>
+    <p class="c96"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="21">
+        <li class="c37 li-bullet-111"><span class="c2">LiquiLoans reserves the right at all times to discontinue or
+                modify any of the terms and conditions of its services including this Agreement, as may be deemed
+                necessary or desirable, without prior consent from you. Such changes may include, among other things,
+                the adding of certain fees or charges. We suggest to you, therefore, that you re-read the notice
+                containing our terms and conditions from time to time in order that you stay informed as to any such
+                changes. If we make changes to our terms and conditions and you continue to use our services, you will
+                be deemed to have impliedly agreed to the updated terms and conditions. Any such deletions or
+                modifications shall be effective immediately upon LiquiLoans&#39; intimation thereof. Any use of
+                LiquiLoans services by the Lender after such notification shall be deemed to constitute acceptance by
+                you of such modifications.</span></li>
+    </ol>
+    <p class="c19"><span class="c8"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="22">
+        <li class="c172 li-bullet-112"><span class="c2">The Agreement cannot be assigned (nor any duties hereunder be
+                delegated) by you without the express written consent of LiquiLoans. Provided that LiquiLoans may assign
+                this Agreement to any parent, subsidiary or affiliated entity, or any entity which acquires all or
+                substantially all of its assets or business and shall provide you with ten (10) days written notice of
+                such assignment. Any purported assignment not permitted hereunder shall be void. Further, LiquiLoans may
+                assign any of its responsibilities/obligations to any other person without any prior notice to the
+                Lender at its sole discretion. However, you shall not assign, sub-license or otherwise transfer any of
+                your rights or obligations under these Terms to any other party, unless a written consent is taken from
+                LiquiLoans.</span></li>
+    </ol>
+    <p class="c35"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="23">
+        <li class="c116 li-bullet-16"><span class="c2">Notwithstanding the provisions contained herein, no liability
+                shall attach to any Party including third parties, in the event of its failure to observe the terms
+                hereof, if such failure is caused by reasons of, or on account of, or in consequence of any act of God
+                or act of Government, plague, famine, epidemic, fire, storm, floods, war, mutiny, riot, civil commotion,
+                disturbances, power supply disruption, union action, union strikes, extraordinary failure of equipment,
+                port congestion, Government statute or imposition, road blockage accident of vehicle carrying the
+                materials, transporters&rsquo; strike or any other cause whatsoever beyond the reasonable control of the
+                concerned Party, which would make performance commercially impracticable, whether or not the contingency
+                is of the same class as those listed above.</span></li>
+    </ol>
+    <p class="c23"><span class="c58"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="24">
+        <li class="c6 li-bullet-113"><span class="c2">No failure or delay by the Parties in exercising any right or
+                remedy provided by Applicable Law under or pursuant to this Agreement shall impair such right or remedy
+                or operate or be construed as a waiver or variation of it or preclude its exercise at any subsequent
+                time and no single or partial exercise of any such right or remedy shall preclude any other or further
+                exercise of it or the exercise of such or any other right or remedy.</span></li>
+    </ol>
+    <p class="c20"><span class="c42"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="25">
+        <li class="c370 li-bullet-99"><span class="c2">If any provision or provisions of this Agreement shall be held
+                unenforceable for any reason, then such provision shall be modified to reflect the parties&rsquo;
+                intention. All remaining provisions of this Agreement shall remain in full force and effect for the
+                duration of this Agreement.</span></li>
+    </ol>
+    <p class="c23"><span class="c2"></span></p>
+    <ol class="c16 lst-kix_list_12-1" start="26">
+        <li class="c145 li-bullet-111"><span class="c2">This Agreement, read with the terms and conditions, as notified
+                by LiquiLoans from time to time, constitutes the entire agreement between the Parties on the subject
+                matter hereof and supersedes all previous negotiations, commitments, writings and representations,
+                written or oral thereto.</span></li>
+    </ol>
+    <p class="c20"><span class="c42"></span></p>
+    <p class="c35"><span class="c115"></span></p>
+    <h1 class="c356"><span class="c13">THE PARTIES HERETO HAVE CAUSED THIS AGREEMENT TO BE EXECUTED ON THE DATE AND
+            PLACE HEREINABOVE MENTIONED.</span></h1>
+    <p class="c0"><span class="c205 c279"></span></p>
+    <p class="c137"><span class="c2">Signed, Sealed and Delivered by the within named LiquiLoans</span></p>
+    <p class="c20"><span class="c42"></span></p>
+    <p class="c96"><span class="c2"></span></p>
+    <p class="c137"><span class="c2">Authenticated by the Lender named within Schedule I.</span></p>
+    <br />
+    <br />
+    <h1 style="text-align: right;"><span class="c4">SCHEDULE 1</span></h1>
+    <p class="c12"><span class="c43"></span></p>
+    <p style="text-align: center"><span class="c4 c314">DETAILS OF THE LENDER</span></p>
+    <p class="c23"><span class="c21"></span></p><a id="t.23c59c878dfeeec350f690930edb79eb74866e16"></a><a id="t.0"></a>
+    <table class="c292">
+        <tr class="c135">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c185"><span class="c13">SN</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c132"><span class="c13">Description</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p style="line-height: 0.7875; text-align: center;"><span class="c13">Particular</span></p>
+            </td>
+        </tr>
+        <tr class="c49">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c367"><span class="c2">1</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c123"><span class="c2">Date of Agreement</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c50"></span></p>
+            </td>
+        </tr>
+        <tr class="c180">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c148"><span class="c2">2</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c45"><span class="c2">Place of Agreement</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c205 c234"></span></p>
+            </td>
+        </tr>
+        <tr class="c73">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c76"><span class="c2">3</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c323"><span class="c2">Name</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c50"></span></p>
+            </td>
+        </tr>
+        <tr class="c306">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c81"><span class="c2">4</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c30"><span class="c2">Aadhar Number</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c48"></span></p>
+            </td>
+        </tr>
+        <tr class="c180">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c148"><span class="c2">5</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c45"><span class="c2">PAN Number</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c205 c234"></span></p>
+            </td>
+        </tr>
+        <tr class="c49">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c81"><span class="c2">6</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c30"><span class="c2">Date of Birth</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c50"></span></p>
+            </td>
+        </tr>
+        <tr class="c62">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c136"><span class="c2">7</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c11"><span class="c2">Mobile Number</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c205 c234"></span></p>
+            </td>
+        </tr>
+        <tr class="c49">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c81"><span class="c2">8</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c30"><span class="c2">Alternate Mobile Number</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c50"></span></p>
+            </td>
+        </tr>
+        <tr class="c62">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c136"><span class="c2">9</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c11"><span class="c2">Email Address</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c205 c234"></span></p>
+            </td>
+        </tr>
+        <tr class="c282">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c15"><span class="c2">10</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c217"><span class="c2">Residential Address</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c48"></span></p>
+            </td>
+        </tr>
+        <tr class="c33">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c15"><span class="c2">11</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c217"><span class="c2">Office Address</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c48"></span></p>
+            </td>
+        </tr>
+        <tr class="c328">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c15"><span class="c2">12</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c374"><span
+                        class="c2">Nature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activities
+                        engaged in</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c48"></span></p>
+            </td>
+        </tr>
+        <tr class="c49">
+            <td class="c82" colspan="1" rowspan="1">
+                <p class="c161"><span class="c2">13</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="1">
+                <p class="c123"><span class="c2">Particulars for Notice</span></p>
+            </td>
+            <td class="c25" colspan="1" rowspan="1">
+                <p class="c20"><span class="c50"></span></p>
+            </td>
+        </tr>
+        <tr class="c59">
+            <td class="c82" colspan="1" rowspan="5">
+                <p class="c185"><span class="c2">14</span></p>
+            </td>
+            <td class="c22" colspan="1" rowspan="5">
+                <p class="c30"><span class="c2">Details of the Bank</span></p>
+                <p class="c329"><span class="c2">Account</span></p>
+            </td>
+            <td class="c297" colspan="1" rowspan="1">
+                <p class="c213"><span class="c2">(a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account
+                        Number:</span></p>
+            </td>
+        </tr>
+        <tr class="c344">
+            <td class="c64" colspan="1" rowspan="1">
+                <p class="c121"><span class="c2">(b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account Name:</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="c63">
+            <td class="c64" colspan="1" rowspan="1">
+                <p class="c346"><span class="c2">(c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bank Name:</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="c166">
+            <td class="c64" colspan="1" rowspan="1">
+                <p class="c362"><span class="c2">(d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bank Branch:</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="c290">
+            <td class="c342" colspan="1" rowspan="1">
+                <p class="c121"><span class="c2">(e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IFSC code:</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="c12"><span class="c144"></span></p>
+    <p style="text-align: center"><span class="c21">Sample Fee Options/Schemes</span></p>
+    <p class="c12"><span class="c13"></span></p><a id="t.04a920b7ec0c2c27d91f69209085e899f66994a3"></a><a id="t.1"></a>
+    <table class="c210">
+        <tr class="c104">
+            <td class="c176 c197" colspan="1" rowspan="1">
+                <p class="c319"><span class="c44">Minimum Holding Period (MHP)*</span></p>
+            </td>
+            <td class="c168 c197" colspan="1" rowspan="1">
+                <p class="c68"><span class="c44">Indicative Net Pre-Tax Yields**</span></p>
+            </td>
+        </tr>
+        <tr class="c124">
+            <td class="c176" colspan="1" rowspan="1">
+                <p class="c139"><span class="c2">NIL</span></p>
+            </td>
+            <td class="c168" colspan="1" rowspan="1">
+                <p class="c159"><span class="c2">Upto 10.50% XIRR</span></p>
+            </td>
+        </tr>
+        <tr class="c124">
+            <td class="c176" colspan="1" rowspan="1">
+                <p class="c129"><span class="c2">6 Months</span></p>
+            </td>
+            <td class="c168" colspan="1" rowspan="1">
+                <p class="c218"><span class="c2">Upto 11.50% XIRR</span></p>
+            </td>
+        </tr>
+        <tr class="c124">
+            <td class="c176" colspan="1" rowspan="1">
+                <p class="c126"><span class="c2">12 Months</span></p>
+            </td>
+            <td class="c168" colspan="1" rowspan="1">
+                <p class="c218"><span class="c2">Upto 12.00% XIRR</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c318"><span class="c125">*Minimum period which a lender agrees to hold the loans before listing on the
+            secondary market for sale</span></p>
+    <p class="c150"><span class="c125">** The available fee/scheme options will be visible to lenders on the dashboard.
+            The lender will need to select from the available scheme options on the dashboard while lending on the
+            platform</span></p>
+    <p class="c20"><span class="c21"></span></p>
+    <p class="c20"><span class="c21"></span></p>
+    <p class="c20"><span class="c205 c47"></span></p><a id="t.0d4861d1fabcb71a056ccfc1c96c1e4d87bd1970"></a><a
+        id="t.2"></a>
+    <table class="c51">
+        <tr class="c372">
+            <td class="c214" colspan="1" rowspan="1">
+                <p class="c295"><span class="c27">Fee Type</span></p>
+            </td>
+            <td class="c118 c247" colspan="1" rowspan="1">
+                <p class="c201"><span class="c27">Description</span></p>
+            </td>
+        </tr>
+        <tr class="c255">
+            <td class="c214" colspan="1" rowspan="1">
+                <p class="c227"><span class="c13">Loan Servicing Fee</span></p>
+            </td>
+            <td class="c118" colspan="1" rowspan="1">
+                <p class="c337"><span class="c2">If the lender&rsquo;s portfolio&rsquo;s net pre-tax yield is lower or
+                        equal to the indicative pre -tax</span></p>
+                <p class="c221"><span class="c2">yield (XIRR) scheme selected then LiquiLoans&rsquo; fees will be Zero
+                        i.e. NIL</span></p>
+                <p class="c19"><span class="c144"></span></p>
+                <p class="c149"><span class="c2">If the lender&rsquo;s portfolio&rsquo;s net pre-tax yield is above the
+                        indicative pre-tax yield (XIRR) scheme selected; then LiquiLoans&rsquo; fees will be the
+                        difference of Lender&rsquo;s Actual Portfolio Pre-Tax Yield XIRR Less Indicative Pre-Tax Yield
+                        (XIRR) of the Lender</span></p>
+                <p class="c23"><span class="c43"></span></p>
+                <p class="c182"><span class="c2">Eg: If the Indicative pre-tax yield is 10.50% XIRR and the Lenders
+                        portfolio makes a net pre-tax yield (XIRR) of either lower or equal to Pre-Tax Indicative Net
+                        Yield of 10.5% XIRR, then LiquiLoans&rsquo; fees will be Zero i.e. NIL</span></p>
+                <p class="c23"><span class="c43"></span></p>
+                <p class="c182"><span class="c2">If the Indicative pre-tax yield is 10.50% XIRR and the Lenders
+                        portfolio makes a net pre-tax yield (XIRR) of 12.00% XIRR which is higher than the Pre-Tax
+                        Indicative Net Yield of 10.50% XIRR, then LiquiLoans&rsquo; fees will be 12.00%-10.50% =
+                        1.50%</span></p>
+            </td>
+        </tr>
+    </table>
+    <p class="c72"><span class="c2"></span></p>
+    <p class="c20"><span class="c205 c264"></span></p>
+    <br />
+    <br />
+    <h1 style="text-align: center;"><span class="c13">VOLUNTARY DOCUMENT</span></h1>
+    <p class="c23"><span class="c13"></span></p>
+    <p style="text-align: center;"><span class="c13">AUTO INVEST MANDATE AND FEATURES</span></p>
+    <p class="c20"><span class="c21"></span></p>
+    <p class="c0"><span class="c13"></span></p>
+    <p class="c99"><span class="c2">(In case of Individual) (*)</span></p>
+    <p class="c20"><span class="c58"></span></p>
+    <p class="c330">
+        <span class="c2">I,</span>
+        <span class="c146 c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <br />
+        <span class="c2">&nbsp;residing at </span>
+        <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <br />
+        <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <br />
+        <span class="c2">and having my permanent address at </span>
+        <br />
+        <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <br />
+        <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </p>
+    <p class="c193"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 600.80px; height: 1.20px;"><img
+                alt="" src="images/image6.png"
+                style="width: 600.80px; height: 1.20px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 607.67px; height: 1.33px;"><img
+                alt="" src="images/image5.png"
+                style="width: 607.67px; height: 1.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c151"><span class="c2">OR</span></p>
+    <p class="c20"><span class="c42"></span></p>
+    <p class="c96"><span class="c205 c291"></span></p>
+    <p class="c288"><span class="c2">(In case of Non-Individual) (*)</span></p>
+    <p class="c20"><span class="c42"></span></p>
+    <p class="c32"><span class="c2">We</span>,
+        <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </p>
+    <p class="c85"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 572.00px; height: 0.80px;"><img
+                alt="" src="images/image7.png"
+                style="width: 572.00px; height: 0.80px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c181"><span class="c2">(A Partnership Firm / A Limited Liability Partnership (LLP) / An Association of
+            Person (AOP) / a HUF / a</span></p>
+    <p class="c151"><span class="c2">Company/ a Trust), having office at </span><span
+            class="c146 c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <span class="c4 c146">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <p class="c105"><span class="c2">executed through Mr. /Ms.</span><span
+            class="c146 c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">&amp; Mr. /Ms.
+        </span><span class="c146 c4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <p class="c20"><span class="c183"></span></p>
+    <p class="c237"><span class="c2">(Partners in case of Partnership Firm &amp; LLP / Karta in case of HUF / Trustee(s)
+            in case of a Trust / member(s) in case of AOP / director in case of Company) (hereinafter referred to as
+            &quot;the Lender&quot;) hereby wish to opt for the Auto- Invest Lending Feature/Mechanism; the Re-lending
+            mechanism basis which the platform auto-invests / re- lend my/our funds as per my/our below defined lending
+            criteria.</span></p>
+    <p class="c0"><span class="c183"></span></p>
+    <h1 class="c348"><span class="c4">Auto-Invest Criteria selected by me/us:</span></h1>
+    <p class="c23"><span class="c205 c266"></span></p>
+    <ol class="c16 lst-kix_list_1-0 start" start="1">
+        <li class="c46 li-bullet-40"><span class="c2">Money lent to a single borrower should not exceed INR.
+                50,000</span></li>
+        <li class="c284 li-bullet-0" style="padding-top: 0px !important"><span class="c2">Not more than 50% of total money invested on the platform to be
+                allocated to borrowers who are NTC (New To Credit)</span></li>
+        <li class="c171 li-bullet-0"><span class="c2">Invest in loans which satisfy the other auto-invest criteria as on
+                origination date, if available in the secondary market</span></li>
+        <li class="c52 li-bullet-49"><span class="c173">Invest in diversified set of loans wherein the average credit
+                bureau score of borrowers (Non-NTC) is not below 600 at the time of investment</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_1-0" start="5">
+        <li class="c310 li-bullet-0" style="padding-top: 0px !important"><span class="c2">Maximum allocation to a single borrower at the time of investment
+                to not exceed 20% of portfolio value or INR. 1,000, whichever ishigher</span></li>
+        <li class="c130 li-bullet-98"><span class="c2">Invest in loans with Max. Tenure of Loans of 36 Months</span>
+        </li>
+    </ol>
+    <ol class="c16 lst-kix_list_1-1 start" start="1">
+        <li class="c169 li-bullet-0"><span class="c2">By selecting the above feature, lender understands that the loans
+                meeting the above criteria will automatically be assigned and shown on dashboard depending upon the
+                lender cash available in escrow and lender will have the option to withdraw from specific loans by
+                writing to </span><span class="c2"><a class="c67"
+                    href="mailto:info@liquiloans.com">info@LiquiLoans.com</a></span><span class="c2">&nbsp;within 24
+                hours of assignment or prior to disbursal of funds to the borrower specified bank account whichever is
+                earlier.</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_1-1" start="2">
+        <li class="c57 li-bullet-0" style="padding-top: 0px !important"><span class="c2">The auto-lending feature is accepted by the lender by signing this
+                voluntary document or via the dashboard, and the lender&rsquo;s offered funds available in Disbursement
+                Escrow Account shall be queued up for lending to various transactions in the marketplace of the
+                Website.</span></li>
+        <li class="c56 li-bullet-0"><span class="c2">The lender agrees to the fact that the auto-lending engine shall
+                run at a prescheduled frequency and shall make disbursements under the loans per the autoinvest lending
+                criteria defined by the Lender.</span></li>
+        <li class="c79 li-bullet-0"><span class="c2">The completed transactions shall be regulated by the provisions of
+                this agreement and are applicable for purchase of both primary and secondary loans</span></li>
+        <li class="c345 li-bullet-114"><span class="c2">The auto-lending feature is accepted by the lender by signing
+                this document or via the dashboard; and it will be deemed that the Lender has accepted the auto-lending terms and conditions
+            defined in the lenders agreement</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_1-1" start="6">
+        <li class="c311 li-bullet-115"><span class="c2">By selecting the autoinvest feature or/and signing this
+                document, lender understand that EMIs received from the assigned loans will be re-lent/re-invested as per the auto-invest criteria
+            defined by the lender</span></li>
+    </ol>
+    <ol class="c16 lst-kix_list_1-1" start="7">
+        <li class="c331 li-bullet-0" style="padding-top: 0px !important"><span class="c2">The lender agrees to the fact that the re-lending engine runs at a
+                prescheduled frequency &nbsp;and makes disbursements under the loans per the autoinvest lending criteria
+                defined by the Lender</span></li>
+        <li class="c268 li-bullet-86"><span class="c2">The completed transactions shall be regulated by the provisions
+                of this Agreement.</span></li>
+        <li class="c100 li-bullet-0" style="padding-top: 0px !important"><span class="c2">The re-lending feature is accepted by the lender by signing this
+                document or via the dashboard; and it will be deemed that the Lender has accepted the terms and
+                conditions defined in the lender&rsquo;s agreement</span></li>
+    </ol>
+    <p class="c19"><span class="c65"></span></p>
+    <h1 class="c216"><span class="c13">IN WITNESS WHEREOF, I/us/We hereto have duly accepted the Auto Lending Feature
+            &amp; Re-Lending Feature / Mechanism as of the day and year first above written.</span></h1>
+    <p class="c20"><span class="c21"></span></p>
+    <p class="c23"><span class="c205 c250"></span></p>
+    <p class="c137" id="h.gjdgxs"><span class="c2">Authenticated by the Lender named within Schedule I.</span></p>
+</body>
+
+</html>`;
+
+const P2pLenderRegistrationAgreement = () => (
+    <div style={{
+        maxWidth: '768px',
+        margin: '0px auto',
+        padding: '20px',
+        overflow: 'hidden',
+    }}
+    >
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: htmlSanitization(p2pLenderRegistrationAgreementHtmlTemplate) }} />
+    </div>
+);
+
+export default P2pLenderRegistrationAgreement;

@@ -1,0 +1,41 @@
+@import 'styles/font';
+@import 'styles/base';
+@import 'styles/keyframes';
+@import 'styles/default';
+@import 'styles/transition';
+// Remove it latter
+// @import 'styles/old';
+.scrollbar {
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        width: 24px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 184, 153, 0.2);
+        border: 8px solid transparent;
+        background-clip: padding-box;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -webkit-box-shadow: inset -1px -1px 0px transparent,
+            inset 1px 1px 0px transparent;
+    }
+    &::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+}
+
+.scrollbar-hide {
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

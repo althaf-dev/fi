@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render RewardsTnC component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ckMVTt dYOwIC"
+  >
+    <div
+      class="sc-fbPSWO bwNDJV"
+    >
+      <div
+        class="sc-fYHEnZ jWbBCn"
+      >
+        <div
+          class="sc-cQIpJi hGfYjM"
+        >
+          <img
+            alt="Fi"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="eager"
+            src="logo.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-ktCSKO JsBAF sc-gYMRRK gIJoSD"
+      >
+        <div
+          class="sc-bGWzfD cxgLXy"
+        >
+          <div
+            class="sc-IIEeM dcNKjL"
+          >
+            <h1
+              class="sc-papXJ fEfRcZ sc-gGnURB gzxXgY"
+              color="WHITE"
+            >
+              Rewards
+            </h1>
+            <div
+              class="sc-eCYdqJ jVNGkM sc-iuStju jPsvXh"
+              color="SILVER_2"
+            >
+              The Company has a rewards policy for Users of the Platform. To participate in the rewards programme of the Company (and win rewards) You must agree to these reward specific terms and conditions in addition to the general Terms and Conditions of the Company.
+            </div>
+          </div>
+          <div
+            class="sc-fytwQQ cTtcGf"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr eoDeNX"
+              loading="lazy"
+              src="rewards-poster.webp"
+              width="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gFGZVQ ebEOJr"
+    >
+      <div
+        class="sc-bcSJjp sc-coCPJf jshUfF cnRoei"
+      >
+        <div
+          class="sc-ldZUWu eyOHuY"
+        >
+          <div
+            class="sc-eCYdqJ iidbqz sc-cBQgDv sc-bcnBk bxeyxi kSuXzS"
+            color="SUVA_GREY"
+          >
+            Yes, we have a cool rewards programme. But, it comes with specific stipulations. Including our right to discontinue offers when we choose to, stopping any user from using our Rewards to engage in fraudulent actions, and so on. We urge you to keep on reading, as this policy applies to all the users of the Fi app or Platform. Here's a one-liner description:
+            <br />
+            <br />
+            To participate (and win) in our rewards programme, you must agree to our reward-specific and general
+            <a
+              href="/T&C"
+              target="_blank"
+            >
+              <span
+                class="sc-hcJkSI buNKGU"
+                color="FOREST_GREEN"
+              >
+                 T&Cs.
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="sc-hCDzWh bXfKDn"
+        >
+          <div
+            class="sc-eCYdqJ rrltT sc-cBQgDv bxeyxi"
+            color="MINE_SHAFT"
+          >
+            1. General Terms
+          </div>
+          <div
+            class="sc-eCYdqJ fcSnPF sc-cBQgDv bxeyxi"
+            color="FOREST_GREEN"
+          >
+            2. User and Epifi
+          </div>
+          <div
+            class="sc-eCYdqJ fcSnPF sc-cBQgDv bxeyxi"
+            color="FOREST_GREEN"
+          >
+            3. Eligibility
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-eBxihg RLLwy"
+      />
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY fkwvct"
+            >
+              General Terms 📖
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-fpcwso hprLYW"
+              color="SUVA_GREY"
+            >
+              You agree that your participation in our rewards programme establishes that you've understood and agreed to these reward-specific T&Cs. The reward-specific T&Cs form a binding legal agreement between you and the Company. Having said this, please note that this is a discretionary programme of the Company.
+              <br />
+              At our sole discretion, we reserve the right to disqualify any user who does not meet the offer requirements to discontinue or change any offer or reward programme at any time. Sometimes, for cause, including but not limited to: any misuse of the offer, fraud, suspicious transaction or activity, and under any legal requirement or applicable rules and regulations. We also reserve the right to discontinue or change any offer or reward programme at any time, at our sole discretion.
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-eBxihg RLLwy"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY fkwvct"
+            >
+              User and Epifi 🤝
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-fpcwso hprLYW"
+              color="SUVA_GREY"
+            >
+              User understands that the reward amount for their Smart Deposit is a discretionary sum – which will be given to them by Epifi Technologies Private Limited (Epifi). The sum will be allocated by Epifi exclusively for depositing in their Smart Deposit account (in their name) with Epifi's partner bank.
+              <br />
+              <br />
+              Accordingly, User hereby grants and confirms the existence of the right of lien and set-off for the amount received by the User from Epifi (as a reward) for deposit in their Smart Deposit account. At its sole discretion and without notice to the User, the Company may utilise the amount received by the User, as a reward, towards their Smart Deposit account with Epifi's partner bank.
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-eBxihg RLLwy"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-bcSJjp jshUfF"
+        >
+          <div
+            class="sc-hCDzWh bXfKDn"
+          >
+            <div
+              class="sc-eCYdqJ foTXFJ sc-lbhYTY fkwvct"
+            >
+              Eligibility ✅
+            </div>
+          </div>
+          <div
+            class="sc-ldZUWu eyOHuY"
+          >
+            <div
+              class="sc-eCYdqJ iidbqz sc-jUtGcO sc-eMWWsl cTbcVF fmiDZx"
+              color="SUVA_GREY"
+            >
+              Your eligibility for the Company's rewards programme isn't based on your compliance with these reward-specific T&Cs alone. You must also meet the eligibility criteria for each offer.
+              <br />
+              <br />
+              Each reward's details, and individual eligibility T&Cs, appear on the Offers page of the Platform. Offers provided to a particular user may vary from user-to-user. You agree to read the offer T&Cs applicable to your offer – as provided in your Epifi app or Platform account carefully.
+              <br />
+              <br />
+              Please note that our Platform users residing in the State of Tamil Nadu are not eligible to participate in specific rewards or offers, as per the applicable laws in Tamil Nadu. Thus, users residing in Tamil Nadu are requested not to participate in offers relating to cash backs, etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,381 @@
+{
+    "poster": {
+        "title": "<b>Your Salary Account needs a hike too!</b>",
+        "description": "Don’t settle for an ordinary salary account.<br /> <b>Earn up to ₹1000 as rewards. Open a Salary Account from Fi Money powered by</b>",
+        "top_image": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/fi-white-logo.png",
+        "bottom_image": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+        "poster_image": {
+            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/poster.webp",
+            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/poster.png"
+        },
+        "poster_video": {
+            "mp4_video_src": "",
+            "webm_video_src": ""
+        }
+    },
+    "section": [
+        {
+            "type": "button",
+            "data": {
+                "label": "OPEN FREE SALARY ACCOUNT"
+            }
+        },
+        {
+            "type": "unequal_card_section_with_sub_text",
+            "title": "Why you should get the Fi Money Salary Account",
+            "data": {
+                "left_cards_data": [
+                    {
+                        "title": "Get flat 10% of your salary as rewards every month",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/fi-coins.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/fi-coins.png"
+                        },
+                        "background_color": "#F4E7BF",
+                        "card_type": "large_card",
+                        "cta": "<a href='https://fi.money/FAQs/salary-accounts/general-enquiries/what-benefits-does-the-salary-account-provide' target='_blank'>KNOW MORE</a>"
+                    },
+                    {
+                        "title": "Built-in Health Insurance that covers you for up to ₹20 lakh",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/insurance.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/insurance.png"
+                        },
+                        "background_color": "#DEEEF2",
+                        "card_type": "large_card",
+                        "cta": ""
+                    },
+                    {
+                        "title": "Priority customer support",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/chat-support.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/chat-support.png"
+                        },
+                        "background_color": "#FAD0D0",
+                        "image_alignment": "right_side"
+                    }
+                ],
+                "right_cards_data": [
+                    {
+                        "title": "Debit card offers on top brands",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/achievement.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/achievement.png"
+                        },
+                        "background_color": "#C0DAE0",
+                        "image_alignment": "right_side",
+                        "cta": "<a href='https://fi.money/FAQs/salary-accounts/general-enquiries/how-do-i-get-a-salary-account' target='_blank'>KNOW MORE</a>"
+                    },
+                    {
+                        "title": "Fully digital salary account opening with zero paperwork",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/iPhone-emoji.png",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/iPhone-emoji.webp"
+                        },
+                        "background_color": "#CDC6E8",
+                        "card_type": "large_card",
+                        "cta": "<a href='https://fi.money/FAQs/salary-accounts' target='_blank'>KNOW MORE</a>"
+                    },
+                    {
+                        "title": "Redeem your Fi Coins for rewards like Apple AirPods or Amazon Echo Dot",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/amazon-echo.png",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/amazon-echo.webp"
+                        },
+                        "background_color": "#D9F2CC",
+                        "card_type": "large_card",
+                        "cta": ""
+                    }
+                ]
+            }
+        },
+        {
+            "type": "feature_card",
+            "title": "What is Fi Money?",
+            "data": {
+                "variant": "left_right_card",
+                "list": [
+                    {
+                        "title": "Fi Money partners with Federal Bank, a licensed bank, to create your salary account. You get a free, zero-forex debit card along with your zero-balance account",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/webp/bank-logo.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/bank-logo.png"
+                        }
+                    },
+                    {
+                        "title": "Your money is insured for up to ₹5 Lakh",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/webp/money-insured.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/money-insured.png"
+                        }
+                    },
+                    {
+                        "title": "<div style='position: relative;'>Earn up to 7.25%* on Fixed Deposits<div style='text-align: end; font-size: 12px; font-weight: 500; line-height: 140%; color: #8d8d8d; font-family: Gilroy; position: absolute; right: 0; bottom: -30px;'>*varies as per policy change from banking partner and RBI repo rate</div></div>",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/webp/rocket.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/rocket.png"
+                        }
+                    },
+                    {
+                        "title": "Join 2.3 Million users across India and level up your financial experience with Fi",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/webp/sparkles.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/sparkles.png"
+                        }
+                    },
+                    {
+                        "title": "Fi Money is an app for all things money. Manage your payments, mutual fund investments, and view your balances from your other bank accounts on Fi Money safely and securely.",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/webp/security.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/security.png"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "feature_table",
+            "title": "Compare and see it for yourself",
+            "data": {
+                "has_multiline_text": true,
+                "properties": {
+                    "header": "",
+                    "text_color": "#646464",
+                    "column_data": [
+                        "Zero Balance A/c",
+                        "Personalised physical debit card",
+                        "Interest on FD",
+                        "Real-time spend analysis",
+                        "Debit card with 0 forex charges",
+                        "Joining bonus",
+                        "Monthly rewards",
+                        "Shopping rewards",
+                        "Health Insurance",
+                        "Priority customer support"
+                    ]
+                },
+                "columns": [
+                    {
+                        "header": "Fi Money Salary A/c",
+                        "background_color": "#D9F2CC",
+                        "column_data": [
+                            "✅",
+                            "✅",
+                            "<div style='padding-top: 30px;'>Up to 7.25%*<br/><div style='font-size: 14px; color: #333333; font-weight: 500; line-height: 140%; font-family: Gilroy; padding: 0px 20px;'>*varies as per policy change from banking partner and RBI repo rate</div></div>",
+                            "✅",
+                            "<div style='padding-top: 40px;'>✅<br /><br /><hr style='width: 250px; background-color: #87BA6B; height: 4px'; /></div>",
+                            "<div style='padding-top: 20px;'>Yes, 5000 Fi coins</div>",
+                            "Flat 10% of salary as Fi-Coins",
+                            "Flat 20% of Debit card & 10% of UPI spends as Fi-Coins",
+                            "3X top-up(up to ₹20L)",
+                            "Priority queue and dedicated support with less than 3 hour response time."
+                        ]
+                    }, {
+                        "header": "Top 3 banks A/c",
+                        "text_color": "#8D8D8D",
+                        "column_data": [
+                            "✅",
+                            "✅",
+                            "<span style='color: #8d8d8d;'>Up to 7%</span>",
+                            "❌",
+                            "<div style='color: #8d8d8d; padding-top: 40px;'>No, 3.5% charged<br /><br /><hr style='width: 250px; background-color: #B9B9B9; height: 4px'; /></div>",
+                            "<div style='padding-top: 20px;'>❌</div>",
+                            "❌",
+                            "❌",
+                            "❌",
+                            "❌"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "button",
+            "data": {
+                "url": "https://fi.onelink.me/GvZH/grrfu0kt",
+                "label": "OPEN FREE SALARY ACCOUNT"
+            }
+        },
+        {
+            "type": "coming_soon_card_section",
+            "title": "More you can do with your<br />Fi Money Salary Account",
+            "data": {
+                "list": [
+                    {
+                        "id": 1,
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/zero-commission-mutual-fund.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/zero-commission-mutual-fund.png"
+                        },
+                        "title": "Invest directly into <b>zero commission mutual funds</b> from your salary account",
+                        "cta": "<a href='https://fi.money/features/mutual-funds' target='_blank'>KNOW MORE</a>"
+                    },
+                    {
+                        "id": 2,
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/smart-analysis.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/smart-analysis.png"
+                        },
+                        "title": "Get real-time, <b>smart analysis</b> on your daily spending",
+                        "cta": "<a href='https://fi.money/features/connect-all-your-bank-accounts' target='_blank'>KNOW MORE</a>"
+                    },
+                    {
+                        "id": 3,
+                        "coming_soon": true,
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/us-stocks.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/us-stocks.png"
+                        },
+                        "title": "Invest directly in <b>US stocks</b>"
+                    },
+                    {
+                        "id": 4,
+                        "coming_soon": true,
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/free-credit-card.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/free-credit-card.png"
+                        },
+                        "title": "Get a lifetime <b>free credit card</b>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "single_card_section",
+            "data": {
+                "id": 1,
+                "coming_soon": true,
+                "icon": {
+                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/bill-payments.webp",
+                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/bill-payments.png"
+                },
+                "title": "Make <b>bill payments directly</b> from your Fi Money salary account"
+            }
+        },
+        {
+            "type": "account_opening_section",
+            "title": "How to open an account",
+            "data": {
+                "list": [
+                    {
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-one.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-one.png"
+                        },
+                        "title": "Download the Fi Money app from Google Play Store or Apple App Store"
+                    },
+                    {
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-two.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-two.png"
+                        },
+                        "title": "Login with your Aadhaar linked phone number, & make sure it’s in the phone you’re using"
+                    },
+                    {
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-three.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-three.png"
+                        },
+                        "title": "Enter your official email ID, verify<br />using OTP."
+                    },
+                    {
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-four.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-four.webp"
+                        },
+                        "title": "Register for the Salary Programme & select your company name<br />from the list"
+                    },
+                    {
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-five.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account/cognizant/account-opening-step-five.webp"
+                        },
+                        "title": "Update your account details on the HCM Portal"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "team_section",
+            "title": "Meet the team behind Fi Money",
+            "description": "Our founding team comes from the top tech and financial<br />companies, distilling decades of experience into a single slick app.",
+            "data": {
+                "list": [
+                    {
+                        "fallback_image_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-2.jpg",
+                        "profile_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-2.webp",
+                        "name": "Sujith Narayanan",
+                        "position": "Co-Founder",
+                        "description": "",
+                        "previous_info": "",
+                        "loading_type": "eager",
+                        "social_media_urls": {
+                            "linkedin_url": "https://www.linkedin.com/in/sujithnarayanan/",
+                            "twitter_url": "https://twitter.com/Suji7h"
+                        }
+                    },
+                    {
+                        "fallback_image_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-1.jpg",
+                        "profile_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-1.webp",
+                        "name": "Sumit Gwalani",
+                        "position": "Co-Founder",
+                        "description": "",
+                        "previous_info": "",
+                        "loading_type": "eager",
+                        "social_media_urls": {
+                            "linkedin_url": "https://www.linkedin.com/in/sumit-gwalani/",
+                            "twitter_url": "https://twitter.com/sumitg"
+                        }
+                    },
+                    {
+                        "fallback_image_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-7.jpg",
+                        "profile_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-7.webp",
+                        "name": "Arvind TP",
+                        "position": "Founding Team",
+                        "description": "",
+                        "previous_info": "",
+                        "social_media_urls": {
+                            "linkedin_url": "https://www.linkedin.com/in/tparvind",
+                            "twitter_url": "https://twitter.com/arvindtp"
+                        }
+                    },
+                    {
+                        "fallback_image_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-9.jpg",
+                        "profile_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-9.webp",
+                        "name": "Neeraj Bhope",
+                        "position": "Founding Team",
+                        "description": "",
+                        "previous_info": "",
+                        "social_media_urls": {
+                            "linkedin_url": "https://www.linkedin.com/in/neerajbhope/",
+                            "twitter_url": "https://twitter.com/minus43"
+                        }
+                    },
+                    {
+                        "fallback_image_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-4.jpg",
+                        "profile_url": "https://dza2kd7rioahk.cloudfront.net/assets/team/team-4.webp",
+                        "name": "Prasanna R",
+                        "position": "Founding Team",
+                        "description": "",
+                        "previous_info": "",
+                        "social_media_urls": {
+                            "linkedin_url": "https://www.linkedin.com/in/rprasanna/",
+                            "twitter_url": "https://twitter.com/ranganp"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "fi_card_section",
+            "data": {
+                "icon": {
+                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/headphone.png",
+                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/headphone.png"
+                },
+                "title": "Have questions? Reach out to us at salarysupport@fi.care",
+                "email": "salarysupport@fi.care"
+            }
+        }
+    ]
+}

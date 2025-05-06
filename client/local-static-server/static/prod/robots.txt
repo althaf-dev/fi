@@ -1,0 +1,40 @@
+Sitemap: https://fi.money/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: SearchmetricsBot
+Allow: /
+
+User-agent: SEMrushBot
+Allow: /

@@ -1,0 +1,2223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Teams component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ckMVTt dYOwIC"
+  >
+    <div
+      class="sc-fbPSWO bwNDJV"
+    >
+      <div
+        class="sc-ehmTmK jFzFdk"
+      >
+        <div
+          class="sc-olbas sc-hiMGwR IdaQF bIFTrT"
+        >
+          <div
+            class="sc-lbOyJj lemKKq"
+          >
+            <img
+              alt="Fi"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="eager"
+              src="logo.svg"
+            />
+          </div>
+          <div
+            class="sc-eKszNL dvXZdg"
+          >
+            <div
+              class="sc-eCYdqJ cnGEXz sc-gSAPjG hJBHXF"
+              color="GAINSBORO"
+            >
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                About Us
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Product
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Resources
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <span
+                        class="sc-jgbSNz lamefd"
+                      >
+                        <a
+                          href="/blog"
+                        >
+                          Blog
+                        </a>
+                      </span>
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+            </div>
+            <div
+              class="sc-iAvgwm fvwLWt"
+            >
+              <div
+                class="sc-efBctP fqSSbl"
+              >
+                <div>
+                  <div
+                    class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                  >
+                    <img
+                      alt="logo"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="prodQRCode.png"
+                    />
+                  </div>
+                  <div
+                    class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                    color="MINE_SHAFT"
+                  >
+                    Scan QR to get the Fi app
+                  </div>
+                  <div
+                    class="sc-cOFTSb ecfeHO"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                      id="qrcodescanner_playstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="play-store_black.png"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                      id="qrcodescanner_appstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="app-store_black.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-TRNrF jjodjB"
+      >
+        <div
+          class="sc-jIAOiI drAXQh"
+        >
+          <img
+            alt="Fi"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="eager"
+            src="logo.svg"
+          />
+        </div>
+        <div
+          class="sc-eKszNL dvXZdg"
+        >
+          <div
+            class="sc-eCYdqJ TqLYS sc-gSAPjG hJBHXF"
+            color="SILVER_2"
+          >
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              About Us
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Product
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Resources
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <span
+                      class="sc-jgbSNz lamefd"
+                    >
+                      <a
+                        href="/blog"
+                      >
+                        Blog
+                      </a>
+                    </span>
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+          </div>
+          <div
+            class="sc-iAvgwm fvwLWt"
+          >
+            <div
+              class="sc-efBctP fqSSbl"
+            >
+              <div>
+                <div
+                  class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                >
+                  <img
+                    alt="logo"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="prodQRCode.png"
+                  />
+                </div>
+                <div
+                  class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                  color="MINE_SHAFT"
+                >
+                  Scan QR to get the Fi app
+                </div>
+                <div
+                  class="sc-cOFTSb ecfeHO"
+                >
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                    id="qrcodescanner_playstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="play-store_black.png"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                    id="qrcodescanner_appstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="app-store_black.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-feINqK fjJbXI"
+      >
+        <h1
+          class="sc-papXJ fEfRcZ sc-lcoedz kbPHpI"
+          color="WHITE"
+        >
+          Meet the Team
+        </h1>
+        <h2
+          class="sc-jqUVSM dLgVfB sc-fpcwso"
+          color="SILVER_2"
+        >
+          An eccentric group of individuals, who genuinely believe they can revolutionise money management.
+        </h2>
+      </div>
+    </div>
+    <div
+      class="sc-gFGZVQ ebEOJr"
+    >
+      <div
+        class="sc-bdxVC huYnfM"
+      >
+        <div
+          class="sc-lmHNfd ftyyfz"
+        >
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-1.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Sumit Gwalani"
+              >
+                Sumit Gwalani
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Founding Team,
+                <br />
+                Chess Whiz
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Google
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-2.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Sujith Narayanan"
+              >
+                Sujith Narayanan
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Founding Team,
+                <br />
+                Cocktail Maestro
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Google
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-3.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Priyanka Arora"
+              >
+                Priyanka Arora
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product,
+                <br />
+                Dog Mom
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Matchmove
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-4.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Prasanna R"
+              >
+                Prasanna R
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Founding Team,
+                <br />
+                Weekend Cricketer
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Netflix & Flipkart
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-5.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Maanasa Sridhar"
+              >
+                Maanasa Sridhar
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product,
+                <br />
+                Bookworm
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-PayPal
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-6.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Abhilash KV"
+              >
+                Abhilash KV
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product Design,
+                <br />
+                Urban Farmer
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Samsung
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-7.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Arvind TP"
+              >
+                Arvind TP
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Founding Team,
+                <br />
+                Fitness Maniac
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Google
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-8.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Maithreyi Sairam"
+              >
+                Maithreyi Sairam
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                People and Culture,
+                <br />
+                Gin-thusiast
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-inMobi
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-9.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Neeraj Bhope"
+              >
+                Neeraj Bhope
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Founding Team,
+                <br />
+                Life of the Party
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Google
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-10.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Pruthvi Sabbu"
+              >
+                Pruthvi Sabbu
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Counterstrike Champ
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-AasaanPay
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-11.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Shana Singh"
+              >
+                Shana Singh
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product Design,
+                <br />
+                Tarot Reader
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Instamojo
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-13.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Krithika Ahuja"
+              >
+                Krithika Ahuja
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Finance,
+                <br />
+                Bollywood Buff
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Simpl
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-14.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Mohit Patni"
+              >
+                Mohit Patni
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product,
+                <br />
+                Ginger Tea & Book Lover
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Zeta
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-15.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Aniruddha M"
+              >
+                Aniruddha M
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Gamer
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-redBus & Practo
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-16.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Avinash Sampath"
+              >
+                Avinash Sampath
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Customer Experience,
+                <br />
+                Petrolhead
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Freshmenu
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-17.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Aparna N Leon"
+              >
+                Aparna N Leon
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Marketing,
+                <br />
+                Serial Shopper
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Myntra
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-18.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Raman Kapoor"
+              >
+                Raman Kapoor
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Business Development,
+                <br />
+                Beer o'phile
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Paytm Money
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-19.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Abhishek Anand"
+              >
+                Abhishek Anand
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Sports Nut
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Rivigo
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-22.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Anupama N"
+              >
+                Anupama N
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Product Design,
+                <br />
+                Comicrazy Collector
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-McCann
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-23.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Praneet Battina"
+              >
+                Praneet Battina
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Investment Research,
+                <br />
+                Amatuer Luthier
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-HSBC
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-24.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Saurebh Siyal"
+              >
+                Saurebh Siyal
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Data Science,
+                <br />
+                Globe Trotter
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Capital Float
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-26.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Sneha Chandak"
+              >
+                Sneha Chandak
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Strategy,
+                <br />
+                Day Drummer
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Paytm Money
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-27.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Devesh Kurani"
+              >
+                Devesh Kurani
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Compliance,
+                <br />
+                Snooker Enthusiast
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-OlaMoney & PwC
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-28.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Sathya Raj M B"
+              >
+                Sathya Raj M B
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Customer Experience,
+                <br />
+                Weekend Gamer
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Paytm Money
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-30.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Varun Varman"
+              >
+                Varun Varman
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Company Cook
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Grab
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-31.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Anuj Jindal"
+              >
+                Anuj Jindal
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Badminton Champ
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Dunzo
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-32.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Puneet Malik"
+              >
+                Puneet Malik
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Customer Experience,
+                <br />
+                Shoe Hoarder
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-PhonePe
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-fSUSjI bcAJSG"
+          >
+            <div
+              class="sc-bjuIDw nUYGI"
+            >
+              <img
+                alt="team member"
+                class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                loading="lazy"
+                src="team-33.webp"
+              />
+            </div>
+            <div
+              class="sc-bTmccw hmNXjl"
+            >
+              <div
+                class="sc-eCYdqJ hMIwzM sc-hQRsPl iVekGk"
+                title="Vikas Singh"
+              >
+                Vikas Singh
+              </div>
+              <div
+                class="sc-eCYdqJ gmRWMR sc-fThYeS dWedeH"
+                color="SUVA_GREY"
+              >
+                Tech,
+                <br />
+                Sports Enthusiast
+              </div>
+              <div
+                class="sc-BrFsL imfQqO"
+              >
+                Ex-Ola
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-lbhYTY bQmhPU"
+      >
+        <div
+          class="sc-cBQgDv hvkKXT"
+        >
+          <div
+            class="sc-eCYdqJ cXgCwH sc-gauFBm gbdiWB"
+            color="PATTERNS_BLUE_TWO"
+          >
+            See yourself here?
+          </div>
+          <img
+            alt="team"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="lazy"
+            src="team-desktop-2.webp"
+          />
+          <img
+            alt="team"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="lazy"
+            src="team-desktop.webp"
+          />
+          <div
+            class="sc-jUtGcO dIDXKt"
+          >
+            <div
+              class="sc-eCYdqJ krLjMY sc-eCDnqH loGbox"
+              color="MINE_SHAFT"
+            >
+              Join the team and help us build the future of personal finance
+            </div>
+            <a
+              href="https://jobs.lever.co/epifi"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div
+                class="sc-eCYdqJ gVAJtX sc-keNpes pSLKv"
+                color="GREY_2"
+              >
+                <span>
+                  VIEW OPEN ROLES
+                </span>
+                <div
+                  class="sc-eMWWsl dqFEGv"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="lazy"
+                    src="top-right-arrow-dark.svg"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-iQJPop QWkNh"
+      >
+        <div
+          class="sc-eYmodA cFRFSi"
+        >
+          <h2
+            class="sc-jqUVSM jjtKTA sc-aVUuG iZxAuz"
+          >
+            Fi partners with the best to secure your money
+          </h2>
+          <div
+            class="sc-iJRSss jXAmN"
+          >
+            <div
+              class="sc-bczRLJ sc-dICTr cFvSHK kaCHMr"
+            >
+              <div
+                class="sc-hAGLhy sc-dNezTh gLyUDu gHwDxJ"
+              >
+                <img
+                  alt="Federal Bank"
+                  class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                  loading="lazy"
+                  src="federal.png"
+                />
+              </div>
+              <div
+                class="sc-hAGLhy sc-lkcIho gLyUDu dlpjIn"
+              >
+                <img
+                  alt="VISA"
+                  class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                  loading="lazy"
+                  src="visa.png"
+                />
+              </div>
+              <div
+                class="sc-hAGLhy sc-jwBhTO gLyUDu dtvBkg"
+              >
+                <img
+                  alt="NPCI"
+                  class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                  loading="lazy"
+                  src="npci.png"
+                />
+              </div>
+              <div
+                class="sc-hAGLhy sc-gFCZzz gLyUDu djpgqu"
+              >
+                <img
+                  alt="PCI"
+                  class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                  loading="lazy"
+                  src="pci.png"
+                />
+              </div>
+              <div
+                class="sc-hAGLhy sc-jtJlRs gLyUDu cGMbwa"
+              >
+                <img
+                  alt="PCI"
+                  class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                  loading="lazy"
+                  src="epifi-wealth.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-gCLdxd hZXIIG"
+          >
+            <div
+              class="sc-eCYdqJ dyZMDF sc-iMJOuO ehQZL"
+              color="GREY_3"
+            >
+              <p
+                class="sc-fVLGaz TOOTJ"
+              >
+                Our partner bank hosts your Fi-Federal Savings Account and Visa Debit Card, and follows all security standards, as per RBI regulations.
+              </p>
+              <p
+                class="sc-fVLGaz TOOTJ"
+              >
+                Your money is always safe with our banking partner, Federal Bank and your money is insured upto 
+                <strong>
+                  ₹5 lakh
+                </strong>
+                 as per the RBI’s insurance deposit scheme.
+              </p>
+              <p
+                class="sc-fVLGaz TOOTJ"
+              >
+                Fi itself is not a bank and doesn’t hold or claim to have a banking license.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-cwpsFg KVyBC"
+    >
+      <div
+        class="sc-dkSuNL eCmbdT"
+      >
+        <div
+          class="sc-bczRLJ sc-kngDgl sc-gJwTLC cFvSHK TlBtU jWiOvF"
+        >
+          <div
+            class="sc-fxvKuh iLEuH"
+          >
+            <div
+              class="sc-iJkHyd dEepvI"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ bnCuWB"
+                  color="FI_GREEN"
+                >
+                  Your Privacy.
+                  <br />
+                  Minus the jargon.
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="sc-iJkHyd ejKlTU"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ cMbRGg"
+                  color="FI_PINK"
+                >
+                  No Hidden
+                  <br />
+                  Fees!
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <a
+              href="https://jobs.lever.co/epifi"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div
+                class="sc-iJkHyd ejKlTU"
+              >
+                <div>
+                  <div
+                    class="sc-eCYdqJ jdNfrJ"
+                    color="FI_LIGHT_BLUE"
+                  >
+                    Join the
+                    <br />
+                    team.
+                  </div>
+                </div>
+                <div
+                  class="sc-iWajrY czNAel"
+                >
+                  <span
+                    class="sc-ftvSup gsYrLz"
+                    color="WHITE"
+                  >
+                    <img
+                      alt="arrow"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="eager"
+                      src="top-right-arrow.svg"
+                    />
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="sc-jKDlA-D bKqmIr"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="footer-logo.svg"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ sc-bTMaZy cFvSHK yQEXi"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-tQuYZ cFvSHK lewnTt ferVki"
+            >
+              <div
+                class="sc-dSuTWQ kPVxin"
+              >
+                <div
+                  class="sc-eCYdqJ fzRvzi"
+                  color="TEXT_GREY_1"
+                >
+                  Pronounced 
+                  <span
+                    class="sc-ftvSup gOxMIH"
+                    color="WHITE"
+                  >
+                     Fī(-ē) 
+                  </span>
+                  and sounds like
+                  <div
+                    class="sc-kjEcyX ikirKI"
+                  >
+                    <img
+                      alt="volume"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="volume-active.svg"
+                    />
+                  </div>
+                  <audio
+                    class="sc-cLFqLo jDIWhf"
+                  >
+                    <source
+                      src="FiAudio.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-cHPgQl cFvSHK TlBtU bYzimd"
+              >
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    hi
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="hifi.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    sky
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="sky.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    tie
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="tie.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    fly
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="fly.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-bczRLJ sc-gHLcSH cFvSHK kEhzMq"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+              <div
+                class="sc-bczRLJ sc-djUGQo cFvSHK cHDGYA"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <a
+                    href="/blog"
+                  >
+                    Blog
+                  </a>
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-bczRLJ sc-hZFzCs cFvSHK gaLYiB"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-hjQCSK cFvSHK lewnTt kMduYt"
+            >
+              <div
+                class="sc-eCYdqJ hdRMJn sc-bSakgD jyOxpN"
+                color="TEXT_GREY_1"
+              >
+                Contact Fi Money customer care
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-jvLaUc cFvSHK TlBtU kjFwxX"
+              >
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    080-47485490
+                  </div>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <a
+                    href="mailto:help@fi.care"
+                  >
+                    <div
+                      class="sc-eXBvqI gyNIoe"
+                    >
+                      help@fi.care
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    In-app chat
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ cFvSHK"
+              >
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.instagram.com/bankonfi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="instagram"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="instagram-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.twitter.com/Bank_on_Fi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="twitter"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="twitter-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.linkedin.com/company/epifi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="linkedin"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="linkedin-white.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-jmnVvD cFvSHK dGHkGt"
+              >
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <a
+                    href="https://www.federalbank.co.in/our-commitments"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Partner Bank Codes & Policies
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-hZgfyJ eWgCsw"
+            >
+              <div
+                class="sc-bczRLJ sc-hKpBwk cFvSHK loyOHF"
+              >
+                <p
+                  class="sc-evZas igfRis sc-ewDcJz jtYAuB"
+                  color="GREY_2"
+                >
+                  Fi is a money management platform that re-imagines the banking experience in India. The Fi account, in partnership with Federal Bank, is a digital bank account that gives you the fastest way to open a bank account online.
+                </p>
+                <p
+                  class="sc-evZas igfRis sc-ehMyHa bxRvfH"
+                  color="GREY_2"
+                >
+                  You can do everything from the Fi App, including p2p payments, fund transfers, bill payments, and more, with features to automate every action. You also get a Fi-Federal co-branded Debit Card, spends insights and tools to grow your investment and earn rewards.
+                </p>
+              </div>
+              <div
+                class="sc-eCYdqJ iPRnVa sc-djvmMF bnhvWu"
+                color="GREY_2"
+              >
+                Disclaimer: You may have noticed some brand logos used on this website to indicate where you, as a user, may or may not have spent money. We don’t endorse these brands. Nor do these brands endorse us. The logos of the specific brands are owned by them.
+              </div>
+              <div
+                class="sc-cUEIKg egtcEd"
+              >
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Wealth Pvt. Ltd. 2022
+                </div>
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Technologies Pvt. Ltd. 2022
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-eKBdFk iPGhao"
+    />
+    <div
+      class="sc-jOhDuK sc-hlnMnd vEAce fyIvxi"
+    >
+      <div
+        class="sc-bUbCnL iygcBD"
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+          id="footer_playstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-kIKDeO fjNkXd"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="play-store_black.png"
+            />
+          </div>
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+          id="footer_appstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-hNKHps cvMsDD"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="app-store_black.png"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

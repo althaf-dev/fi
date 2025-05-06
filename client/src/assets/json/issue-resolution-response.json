@@ -1,0 +1,38 @@
+{
+    "yes": {
+        "title": "We hear you!",
+        "description": "Thank you for your confirmation. We are resolving your ticket.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/success-hand.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/success-hand.png"
+    },
+    "no": {
+        "title": "We hear you!",
+        "description": "We're sorry to hear that your payment issue was not resolved. We have raised a dispute and we are looking into this urgently. Note that disputes usually take 5-15 days to process.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-devil.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-devil.png"
+    },
+    "no-p2p": {
+        "title": "We hear you!",
+        "description": "We're sorry to hear that your payment issue was not resolved. You will receive another email from us, please respond to that email with a copy of your beneficiary's statement. We need this to raise a dispute on your behalf.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-devil.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-devil.png"
+    },
+    "already-recorded": {
+        "title": "We've heard you",
+        "description": "Your response has already been recorded before. If you want to change your earlier response, get in touch with Fi care.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.png"
+    },
+    "invalid": {
+        "title": "Sorry, your response could not be recorded!",
+        "description": "Sorry, you responded too late to this email. If your issue is still unresolved, chat with our Fi care team, and we'll sort things out on priority.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.png"
+    },
+    "error": {
+        "title": "Sorry, we could not record your response",
+        "description": "Something went wrong at our end. Please try again or get in touch with our Fi Care team so we can assist you better.",
+        "image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.webp",
+        "fallback_image_src": "https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/issue-resolution/error-facematch.png"
+    }
+}

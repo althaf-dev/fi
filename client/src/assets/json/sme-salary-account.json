@@ -1,0 +1,326 @@
+{
+    "poster": {
+        "title": "Sign up for the Fi Salary Program",
+        "description": "Get an exclusive deal on Keka at ₹4.2K per month. Enrol your team now!",
+        "ctaButtonData": {
+            "btnLabel": "GET THE SALARY ACCOUNT",
+            "btnUrl": "https://invite.fi.money/ZjEQ"
+        },
+        "benefitsData":[
+            {
+                "id": 1,
+                "title": "Benefits up to ₹6 lakh* for your company",
+                "description": "Absolutely FREE!",
+                "icon": "https://dza2kd7rioahk.cloudfront.net/assets/icons/money_100_100.png"
+            },
+            {
+                "id": 2,
+                "title": "₹2L base insurance cover for employees",
+                "description": "You pay ₹0 as an insurance premium",
+                "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/health.png"
+
+            },
+            {
+                "id": 3,
+                "title": "Exclusive discounts on Razorpay X",
+                "description": "Simplify payments for your growing team",
+                "icon": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/rajor-pay.png"
+
+            },
+            {
+                "id": 4,
+                "title": "20 GitHub Enterprise seats",
+                "description": "Empower your Devs with advanced tools",
+                "icon": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/github-v1.png"
+
+            }
+        ]
+    },
+    "section": [
+
+        {
+            "id": 1,
+            "type": "salary_program_section",
+            "data": {
+                "title": "Join the Fi Salary Program"
+            }
+        },
+        {
+            "id": 2,
+            "type": "company_section",
+            "data": {
+                "title": "Loved by employees across 1,800+ companies",
+                "logo": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/salary-corporate-brand.png",
+                "mobileLogo": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/salary-corporate-brand-mobile.png"
+                 }
+         },
+        {
+            "id": 6,
+            "type": "feature_card_section",
+            "data": {
+                "title": "Benefits up to <b>₹6,00,000*</b> for your organisation",
+                "description": "Benefits include:",
+                "finePrint": {
+                    "text": "*T&C Apply",
+                    "font": "pSmallVariantEight",
+                    "color": "GREY_2"
+                },
+                "cardType": "custom_card_sme",
+                "list": [
+                    {
+                        "id": 1,
+                        "backgroundColor": "#FFFFFF",
+                        "imageSrcTag": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/manipal.png",
+                        "title": "2x health</br> insurance top-up"
+                    },
+                    {
+                        "id": 2,
+                        "backgroundColor": "#FFFFFF",
+                        "imageSrcTag": "https://dza2kd7rioahk.cloudfront.net/assets/logos/keka-v2.webp",
+                        "title": "Exclusive discounts</br> on Annual Keka</br> HRMS subscription",
+                        "imageType": "v2"
+                    },
+                    {
+                        "id": 3,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/github.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/github.png"
+                        },
+                        "backgroundColor": "#FFFFFF",
+                        "title": "20 free<br/>GitHub seats"
+                    },
+                    {
+                        "id": 4,
+                        "imageSrcTag": "https://dza2kd7rioahk.cloudfront.net/assets/logos/razorpayX-logo-v2.webp",
+                        "backgroundColor": "#FFFFFF",
+                        "title": "Exclusive discounts<br/> on RazorpayX"
+                    },
+                    {
+                        "id": 5,
+                        "imageSrcTag": "https://dza2kd7rioahk.cloudfront.net/assets/logos/xoxoday-logo.webp",
+                        "backgroundColor": "#FFFFFF",
+                        "title": "6 months</br> subscription</br> on XoXo"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "type": "feature_card_section",
+            "data": {
+                "title": "Each employee gets benefits up to <b>₹30,000*</b> a year",
+                "description": "Benefits available on the Fi app:",
+                "cardType": "small_card",
+                "finePrint": {
+                    "text": "*T&C Apply",
+                    "font": "pSmallVariantEight",
+                    "color": "GREY_2"
+                },
+                "list": [
+                    {
+                        "id": 1,
+                        "title": "Earn 2%<br/>cashback",
+                        "description": "On their  Debit Card<br/>or UPI spends",
+                        "backgroundColor": "#DEEEF2"
+                    },
+                    {
+                        "id": 2,
+                        "title": "2x Health<br/>insurance",
+                        "description": "They can top it up<br/>up to ₹20 Lakhs",
+                        "backgroundColor": "#F4E7BF"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Monthly<br/>vouchers ",
+                        "description": "from<br/>top brands",
+                        "backgroundColor": "#D9F2CC"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "type": "testimonial_section",
+            "data": {
+                "title": "Hear it from our customers",
+                "list": [
+                    {
+                        "id": 1,
+                        "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/quotes-yellow-color.svg",
+                        "content": "I’ve been using the Fi Salary Program for some time now. I recently had to undergo treatment for a medical issue & could use my health insurance provided by Manipal Cigna. The best part was that I did not have to pay this price out of my pocket! :)",
+                        "name": "Megha",
+                        "designation": "Employee at Guru&Jana"
+                    },
+                    {
+                        "id": 2,
+                        "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/quotes-yellow-color.svg",
+                        "content": "My experience with Fi has been phenomenal, I saved almost ₹10,000 on my recent work trip to Singapore! Being a part of the Fi Salary Program, I have to pay zero Forex markup on all international transactions through this Debit Card!",
+                        "name": "Rajnish Kumar",
+                        "designation": "Employee at Keka HR"
+                    },
+                    {
+                        "id": 3,
+                        "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/quotes-yellow-color.svg",
+                        "content": "I like that I can choose to have 2% cashback or Fi-Coins at the end of the cycle. A few months ago, I got 14K Fi-Coins plus Fi-Coins from daily transactions & redeemed them for a ₹500 Amazon voucher, which was great value.",
+                        "name": "Atique",
+                        "designation": "Marketing Professional"
+                    },
+                    {
+                        "id": 4,
+                        "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/quotes-yellow-color.svg",
+                        "content": "I have been using this app for more than a year now & this made me switch to Fi permanently. The features are incredible & the best part is you can manage everything from one place. No more having a UPI app for payments & another bank app for bank stuff. ",
+                        "name": " Nikhil",
+                        "designation": "Designer"
+                    },
+                    {
+                        "id": 5,
+                        "icon": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/quotes-yellow-color.svg",
+                        "content": "A superb banking app for a salaried person, this definitely gives you all basic things right from savings to investment in one single place ! ",
+                        "name": "Tarun Singh",
+                        "designation": "Corporate Employee"
+                    }    
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "type": "right_choice_section",
+            "data": {
+                "title": "More reasons to choose Fi",
+                "subTitle": "Know more about Fi here",
+                "list": [
+                    {
+                        "id": 1,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/hand.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/hand.png"
+                        },
+                        "title": "Built by the best",
+                        "description": "Get decades of finance & tech expertise distilled into one product"
+                    },
+                    {
+                        "id": 2,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/joy.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/joy.png"
+                        },
+                        "title": "Used by over 3 million people",
+                        "description": "Helping millennials get better with their money"
+                    },
+                    {
+                        "id": 3,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/hand.png"
+                        },
+                        "subTitle": "PARTNERED WITH",
+                        "subIcon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo-fed.svg"
+                        },
+                        "description": "Open a zero balance Savings Account "
+                    }
+                ]
+            }
+        },
+       
+        {
+            "id": 9,
+            "type": "salary_benefit_section",
+            "data": {
+                "title": "For all things money",
+                "headerLogo": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo.svg",
+                "cardType": "medium_card",
+                "list": [
+                    {
+                        "id": 1,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/add-Funds.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/add-Funds.png"
+                        },
+                        "description": "Pay, save and invest your money on one app"
+                    },
+                    {
+                        "id": 2,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/link.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/link.png"
+                        },
+                        "description": "Track money across all your bank accounts"
+                    },
+                    {
+                        "id": 3,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/verification.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/verification.png"
+                        },
+                        "description": "Get personalised insights into your spending habits"
+                    },
+                    {
+                        "id": 4,
+                        "icon": {
+                            "imageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/box-cash.webp",
+                            "fallbackImageSrc": "https://dza2kd7rioahk.cloudfront.net/assets/salary-account-b2b/box-cash.png"
+                        },
+                        "description": "Rewards on every spend ever"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": 10,
+            "type": "button_section",
+            "data": {
+                "label": "GET THE SALARY ACCOUNT",
+                "url": "https://invite.fi.money/ZjEQ"
+            }
+        },
+       
+    
+        {
+            "id": 11,
+            "type": "button_section",
+            "data": {
+                "label": "GET THE SALARY ACCOUNT",
+                "url": "https://invite.fi.money/ZjEQ"
+            }
+        },
+        {
+            "id": 13,
+            "type": "contact_section",
+            "data": {
+                "title": "Still not convinced?",
+                "mailId": "salaryprogram@fi.money"
+            }
+        },
+       
+        {
+            "id": 14,
+            "type": "salary_faq_section",
+            "data": {
+                "title": "FAQs",
+                "list": [
+                    {
+                        "id": 1,
+                        "title": "<div>What is the Fi salary program?</div>",
+                        "content": "<div>The Fi salary program is a salary account along with a number of other benefits, specifically designed for receiving regular salary payments from an employer. It offers benefits such as free or discounted services, and convenient features for managing transactions, expense tracking, and investment features.</div>"
+                    },
+                    {
+                        "id": 2,
+                        "title": "<div>How do I get on the Fi salary program?</div>",
+                        "content": "<div>Getting on the Fi salary program is simple.</div><br /><ul style='padding: 0px 30px'><li>Download the app & confirm your employment.</li><br /><li>Ask your company’s HR team to upgrade your salary account to the one offered through Fi.</li><br /></ul>"
+                    },
+                    {
+                        "id": 3,
+                        "title": "<div>What benefits does the Fi salary program provide?</div>",
+                        "content": "<ul style='padding: 0px 30px'><li>Flat 2%* cashback every month on Debit Card and UPI spends</li><br /><li>2X top up on your health insurance</li><br /> <li>20% of Debit Card spends and 10% of UPI spends as Fi-Coin rewards</li><br /> <li>Lifetime-free VISA Debit Card with 0 Forex charges</li><br /> <li>Exclusive vouchers from top brands</li><br /> </li><li>Access to earn up to 10% returns p.a. with Jump & more</li><br /></ul><br/> <a style='-webkit-text-decoration: underline; text-decoration: underline; text-underline-position: under; cursor: pointer; color: #00B899' target='_blank' href='https://fi.money/blog/salary-program-tnc' >T&C Apply<span style='display: inline-block; height: 19px; width: 19px; margin-left: 3px; vertical-align: middle;' ><img style='object-fit: contain; height: 100%; width: 100%; display: block;' src='https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg' alt='arrow' loading='lazy' id=''></span></a>"
+                    },
+                    {
+                        "id": 4,
+                        "title": "<div>Who is eligible for the Fi salary program?</div>",
+                        "content": "<div>You need to meet our eligibility criteria:</div><br /><ul style='padding: 0px 30px'><li>You must be employed with a registered employer and receive a monthly salary.</li><br /><li>Your employer's GST must be registered or recognised by the Ministry of Corporate Affairs and the Employees’ Provident Fund Organisation.</li><br /><li>Completion of full KYC through the Fi app.</li><br /></ul> <br/> <a style='-webkit-text-decoration: underline; text-decoration: underline; text-underline-position: under; cursor: pointer; color: #00B899' target='_blank' href='https://fi.money/blog/salary-program-tnc' >T&C Apply<span style='display: inline-block; height: 19px; width: 19px; margin-left: 3px; vertical-align: middle;' ><img style='object-fit: contain; height: 100%; width: 100%; display: block;' src='https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg' alt='arrow' loading='lazy' id=''></span></a>"
+                    }
+                ]
+            }
+        }
+    ]
+}

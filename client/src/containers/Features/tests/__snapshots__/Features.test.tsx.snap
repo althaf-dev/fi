@@ -1,0 +1,1477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Features component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-eQNgno iceByu"
+  >
+    <div
+      class="sc-kOsxa-d dlpcpL"
+    >
+      <div
+        class="sc-ehmTmK jFzFdk"
+      >
+        <div
+          class="sc-olbas sc-hiMGwR IdaQF bIFTrT"
+        >
+          <div
+            class="sc-lbOyJj lemKKq"
+          >
+            <img
+              alt="Fi"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="eager"
+              src="logo.svg"
+            />
+          </div>
+          <div
+            class="sc-eKszNL dvXZdg"
+          >
+            <div
+              class="sc-eCYdqJ cnGEXz sc-gSAPjG hJBHXF"
+              color="GAINSBORO"
+            >
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                About Us
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Product
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Resources
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <span
+                        class="sc-jgbSNz lamefd"
+                      >
+                        <a
+                          href="/blog"
+                        >
+                          Blog
+                        </a>
+                      </span>
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+            </div>
+            <div
+              class="sc-iAvgwm fvwLWt"
+            >
+              <div
+                class="sc-efBctP fqSSbl"
+              >
+                <div>
+                  <div
+                    class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                  >
+                    <img
+                      alt="logo"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="prodQRCode.png"
+                    />
+                  </div>
+                  <div
+                    class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                    color="MINE_SHAFT"
+                  >
+                    Scan QR to get the Fi app
+                  </div>
+                  <div
+                    class="sc-cOFTSb ecfeHO"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                      id="qrcodescanner_playstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="play-store_black.png"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                      id="qrcodescanner_appstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="app-store_black.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-TRNrF jjodjB"
+      >
+        <div
+          class="sc-jIAOiI drAXQh"
+        >
+          <img
+            alt="Fi"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="eager"
+            src="logo.svg"
+          />
+        </div>
+        <div
+          class="sc-eKszNL dvXZdg"
+        >
+          <div
+            class="sc-eCYdqJ gVAJtX sc-gSAPjG hJBHXF"
+            color="GREY_2"
+          >
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              About Us
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Product
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Resources
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <span
+                      class="sc-jgbSNz lamefd"
+                    >
+                      <a
+                        href="/blog"
+                      >
+                        Blog
+                      </a>
+                    </span>
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+          </div>
+          <div
+            class="sc-iAvgwm fvwLWt"
+          >
+            <div
+              class="sc-efBctP fqSSbl"
+            >
+              <div>
+                <div
+                  class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                >
+                  <img
+                    alt="logo"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="prodQRCode.png"
+                  />
+                </div>
+                <div
+                  class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                  color="MINE_SHAFT"
+                >
+                  Scan QR to get the Fi app
+                </div>
+                <div
+                  class="sc-cOFTSb ecfeHO"
+                >
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                    id="qrcodescanner_playstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="play-store_black.png"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                    id="qrcodescanner_appstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="app-store_black.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bcSJjp EqXOh"
+      >
+        <div
+          class="sc-eBxihg fhoJvd"
+        >
+          <h1
+            class="sc-papXJ iypaRV sc-hFvvYD cvvJbZ"
+            color="MINE_SHAFT"
+          >
+            Features that make money management smarter
+          </h1>
+          <h2
+            class="sc-jqUVSM cYFaRa sc-ldZUWu bsbUgx"
+            color="GREY_2"
+          >
+            A bunch of intelligent in-app tools that help you know your money, grow your savings, and organise your funds.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gFGZVQ ebEOJr"
+    >
+      <div
+        class="sc-cmYsgE fPjfsz"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Ask.Fi
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Know your spends
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Get personalised insights into your spends across bank accounts & merchants. Try asking - “What’s my balance across savings accounts?”
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Find your way around Fi
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Navigate through the app like a pro. Ask.Fi anything from “Show debit card offers” to “Where can I get my account statement?”
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  The devil is in the details
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Dive into the fine print. Get answers to “What’s my account number”, “What’s my IFSC code” and more in a jiffy!
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Get stuff done
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                You can Ask.Fi to “Pay Priyal”, “Open a Smart Deposit”, or “Download Statement”. One command, and you’re sorted!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                FIT Rules
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Move it without knowing it
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                You know how you want to start saving next month? Well, FIT can help with that procrastination. FIT Rules helps you move money automatically from your savings account to your Jars - you choose how much and how often. Just set up a rule once and watch your savings grow.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Make saving fun
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Save more from day-to-day events. Just make a FIT rule to put aside ₹100 when Kohli hits a 6 or everytime you order in from Zomato.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Treat yourself for being good
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Need a social media detox? It’s easier now with a FIT rule that puts aside ₹50 every time you spend less than an hour on Instagram or Netflix.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Jars
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Save on a whim
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Start just about anywhere! Make a Fi Jar by depositing as little as ₹300 and keep adding when you have some cash to spare.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Save for things that matter
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Organise your savings and set clear goals. iPhone, Maldives Vacay, anything goes. Save for them in separate Jars and watch them all grow.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Easy come, easy grow
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Earn more interest than you’d get in a savings account. Choose from flexible Smart Deposit Jars and long-term Fixed Deposits Jars.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Rewards
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Get rewards for being good
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Save more using FIT rules, make routine payments, and get rewarded for it! Earn much-coveted cash rewards and Fi-Coins.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Redemption is sweet
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Redeem your Fi-Coins to get super cool goodies and gift vouchers. The best part? Choose from a curated catalogue featuring top brands.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Pay
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Pay like you play
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Pay using any mode - UPI and QR scanning, debit card, bank transfers that include NEFT, IMPS, and RTGS, at no extra charge.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  We do the math for you
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Just add account details of the receiver & the amount to be sent, and we’ll choose the best and most secure method of payment for you.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Search, filter and export
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Looking for transactions doesn’t have to be a mind-bender. Choose, filter, and export transactions in a few steps.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Debit Card
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  It’s one loaded card
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Who doesn’t like a good offer! Use the debit card to get cool offers on Amazon, Myntra, Zomato, and many more brands.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  EUR, USD, at no extra charge
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Make international payments minus the pesky fees. With our debit card there’s no Forex markup on international transactions.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  You control your card
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Lost your debit card? Freeze it with just a tap. Found it? Unfreeze it with a tap! Your card’s control is always in your hands.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Mutual Funds
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div
+                class="sc-iyOMks ggTBGa"
+              >
+                <img
+                  alt="image"
+                  class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                  loading="eager"
+                  src="mutual-fund.png"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Up your investing game
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Choose from 100s of mutual funds to invest in. Browse and filter through your funds based on risk, growth, fund type and more. That’s not all, automate your investing using FIT Rules and invest based on conditions chosen by you - like investing each time you shop online.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Filter like pro
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Enjoy using filters on pics? Try them on mutual funds. Pick funds based on fund manager, risk, returns and more.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Collection drops you’ll love
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Why should your wardrobe have all the fun? Enjoy collections on mutual funds, browse through a curated list of funds to suit different needs from beginners to advanced investors
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE cQJDAs"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Connected Accounts
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div
+                class="sc-iyOMks ggTBGa"
+              >
+                <img
+                  alt="image"
+                  class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                  loading="eager"
+                  src="connected-account.png"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  Bank accounts, assemble!
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                You no longer need an app for every savings account you own. Just connect your bank accounts right here on Fi, using RBI’s Account Aggregator. See all your bank balances and transactions on Fi. The data is only yours to share, and is fully encrypted.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Search across your accounts
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Not sure which account you paid from? Use Ask Fi to search across your bank accounts for transactions and find the answers you’ve been looking for.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Know what you’ve been up to
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Get a detailed analysis of how you’ve been spending, saving or investing. See your spending history visualised as graphs, and never be lost for answers again.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-cmYsgE hzlwoL"
+      >
+        <div
+          class="sc-fejtnb fSrOtk"
+        >
+          <div>
+            <div
+              class="sc-lbhYTY eGWYpv"
+            >
+              <div
+                class="sc-eCYdqJ lkLBtR"
+              >
+                Fi Secure
+              </div>
+            </div>
+            <div
+              class="sc-iNFqmR hDSHGk"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO blLwtl"
+                >
+                  As safe as any bank
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-up_dark.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH kTFFPO"
+              >
+                Your safety is serious business. Fi’s banking partner, Federal Bank, follows all the security standards as per RBI guidelines. Your money is also insured up to ₹5 lakh, and your data is protected by our PCI DSS certified security system.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Privacy is a priority
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                We aim for the highest standards of safety, security and confidentiality when using your data to help protect it.
+              </div>
+            </div>
+            <div
+              class="sc-hCDzWh fZDNzk"
+            >
+              <span
+                class="sc-cBQgDv frKTuY"
+              >
+                <span
+                  class="sc-jUtGcO bsZwGr"
+                >
+                  Only at your fingertips
+                </span>
+                <span
+                  class="sc-gauFBm hJashi"
+                >
+                  <img
+                    alt="arrow icon"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="arrow-down_fade.svg"
+                  />
+                </span>
+              </span>
+              <div
+                class="sc-eCDnqH hzQmlk"
+              >
+                Your digital bank account with Fi can only be accessed via your smartphone - rest assured only you have access to your money.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div />
+  </div>
+</DocumentFragment>
+`;

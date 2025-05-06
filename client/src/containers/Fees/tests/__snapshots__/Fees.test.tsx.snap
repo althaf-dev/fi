@@ -1,0 +1,1838 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Fees component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-ckMVTt dYOwIC"
+  >
+    <div
+      class="sc-fbPSWO bwNDJV"
+    >
+      <div
+        class="sc-ehmTmK jFzFdk"
+      >
+        <div
+          class="sc-olbas sc-hiMGwR IdaQF bIFTrT"
+        >
+          <div
+            class="sc-lbOyJj lemKKq"
+          >
+            <img
+              alt="Fi"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="eager"
+              src="logo.svg"
+            />
+          </div>
+          <div
+            class="sc-eKszNL dvXZdg"
+          >
+            <div
+              class="sc-eCYdqJ cnGEXz sc-gSAPjG hJBHXF"
+              color="GAINSBORO"
+            >
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                About Us
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Product
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                Resources
+                <div
+                  class="sc-BeQoi BPuHZ"
+                >
+                  <div
+                    class="sc-kgUAyh gXSeJt"
+                  >
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <span
+                        class="sc-jgbSNz lamefd"
+                      >
+                        <a
+                          href="/blog"
+                        >
+                          Blog
+                        </a>
+                      </span>
+                    </h3>
+                    <h3
+                      class="sc-kDDrLX kUqEAz"
+                      color="CHARCOAL_GREY"
+                    >
+                      <div />
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-iNWwEs eKIqhq"
+              >
+                <div />
+              </div>
+            </div>
+            <div
+              class="sc-iAvgwm fvwLWt"
+            >
+              <div
+                class="sc-efBctP fqSSbl"
+              >
+                <div>
+                  <div
+                    class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                  >
+                    <img
+                      alt="logo"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="prodQRCode.png"
+                    />
+                  </div>
+                  <div
+                    class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                    color="MINE_SHAFT"
+                  >
+                    Scan QR to get the Fi app
+                  </div>
+                  <div
+                    class="sc-cOFTSb ecfeHO"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                      id="qrcodescanner_playstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="play-store_black.png"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                      id="qrcodescanner_appstore_link"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                      >
+                        <img
+                          alt="logo"
+                          class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                          loading="lazy"
+                          src="app-store_black.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-TRNrF jjodjB"
+      >
+        <div
+          class="sc-jIAOiI drAXQh"
+        >
+          <img
+            alt="Fi"
+            class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+            loading="eager"
+            src="logo.svg"
+          />
+        </div>
+        <div
+          class="sc-eKszNL dvXZdg"
+        >
+          <div
+            class="sc-eCYdqJ TqLYS sc-gSAPjG hJBHXF"
+            color="SILVER_2"
+          >
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              About Us
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Product
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              Resources
+              <div
+                class="sc-BeQoi BPuHZ"
+              >
+                <div
+                  class="sc-kgUAyh gXSeJt"
+                >
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <span
+                      class="sc-jgbSNz lamefd"
+                    >
+                      <a
+                        href="/blog"
+                      >
+                        Blog
+                      </a>
+                    </span>
+                  </h3>
+                  <h3
+                    class="sc-kDDrLX kUqEAz"
+                    color="CHARCOAL_GREY"
+                  >
+                    <div />
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-iNWwEs eKIqhq"
+            >
+              <div />
+            </div>
+          </div>
+          <div
+            class="sc-iAvgwm fvwLWt"
+          >
+            <div
+              class="sc-efBctP fqSSbl"
+            >
+              <div>
+                <div
+                  class="sc-iTONeN sc-cTQhss hPlKkv jSgNfZ"
+                >
+                  <img
+                    alt="logo"
+                    class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                    loading="lazy"
+                    src="prodQRCode.png"
+                  />
+                </div>
+                <div
+                  class="sc-eCYdqJ fxZcwK sc-bBXxYQ hMmiBy"
+                  color="MINE_SHAFT"
+                >
+                  Scan QR to get the Fi app
+                </div>
+                <div
+                  class="sc-cOFTSb ecfeHO"
+                >
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+                    id="qrcodescanner_playstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-jOrMOR hPlKkv eVGPt"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="play-store_black.png"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+                    id="qrcodescanner_appstore_link"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-iTONeN sc-dPyBCJ hPlKkv fvEJLU"
+                    >
+                      <img
+                        alt="logo"
+                        class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                        loading="lazy"
+                        src="app-store_black.png"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-ktCSKO JsBAF sc-gYMRRK gIJoSD"
+      >
+        <div
+          class="sc-bGWzfD cxgLXy"
+        >
+          <div
+            class="sc-IIEeM dcNKjL"
+          >
+            <h1
+              class="sc-papXJ fEfRcZ sc-gGnURB gzxXgY"
+              color="WHITE"
+            >
+              Fi Federal Account Fees
+            </h1>
+            <div
+              class="sc-eCYdqJ jVNGkM sc-iuStju jPsvXh"
+              color="SILVER_2"
+            >
+              Fi has reimagined conventional banking’s infrastructure for the digital-first generation. Since we have no physical branches, Fi can reduce banking charges drastically or waive off specific fees entirely. No hidden fees! For all the details on what’s free and what isn’t, here’s a breakdown of our fees 🔎
+            </div>
+          </div>
+          <div
+            class="sc-fytwQQ cTtcGf"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr eoDeNX"
+              loading="lazy"
+              src="panda-mobile-poster.webp"
+              width="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-gFGZVQ ebEOJr"
+    >
+      <div
+        class="sc-bcSJjp jdZMDE"
+      >
+        <h2
+          class="sc-jqUVSM jjtKTA sc-eBxihg cGtMNv"
+          color="MINE_SHAFT"
+        >
+          Things That Matter 🌟
+        </h2>
+        <div
+          class="sc-ldZUWu iQSduz"
+        >
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Who is eligible?
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              We’re currently open only to 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                Working Professionals
+              </span>
+               who reside in India.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Is there a minimum balance?
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                No minimum balance fees here!
+              </span>
+              <br />
+              But if you want to experience what Fi has to truly offer:
+              <br />
+              Consider transacting/saving/depositing atleast ₹20,000 every month 🤝
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              What interest do I earn on my savings account balances?
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                3.05%
+              </span>
+               is the interest rate for Fi-Federal Savings Accounts.
+              <br />
+              Heads up! All banks change these rates (once in a while) based on market conditions, etc.
+              <br />
+              <br />
+              So, for a complete breakdown, head 
+              <a
+                href="https://www.federalbank.co.in/savings-rate"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="sc-eMWWsl csEpgT"
+                  color="FOREST_GREEN"
+                >
+                  here
+                </span>
+              </a>
+              .
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              What about interest rates on Fixed Deposits and Smart Deposits?
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              Our uber-cool deposit rate slider has the answer!
+              <br />
+              Fire up the Fi app & check it out.
+              <br />
+              <br />
+              If you want a detailed overview, go 
+              <a
+                href="https://www.federalbank.co.in/deposit-rate"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="sc-eMWWsl csEpgT"
+                  color="FOREST_GREEN"
+                >
+                  here
+                </span>
+              </a>
+              .
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Account Maintenance
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                0️ fees. 
+              </span>
+              Nothing. Nada.
+              <br />
+              Psst...ever wondered why traditional banks charge you for this?
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Visa Platinum Debit Card
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              On opening a Fi-Federal Savings Account, each user will receive a free VISA Platinum Debit Card. 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                No issuance fees.
+              </span>
+               Zero annual card maintenance charges ✅
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Zero Forex on Debit Cards
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              Paying by debit card abroad? International transactions? Don’t sweat it.
+              <br />
+              We’ve 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                waived off
+              </span>
+               international transaction charges 🌎
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              ATM Transactions
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              Love the feeling of having cash in your wallet? We hear you. Use your Fi Visa Debit Card at any ATM in India.
+              <br />
+              <br />
+              Withdrawals from any Federal Bank ATM are free.
+              <br />
+              At other ATMs 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                = 5 free transactions every month.
+              </span>
+               After that, it’s ₹25 per transaction.
+              <br />
+              For any non-financial transactions at these ATMs (like a Balance Enquiry), it’s ₹11 per transaction 👀
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              International ATM charges
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              You can use your Fi-Federal co-branded Debit Card wherever VISA is accepted 💳
+              <br />
+              When you withdraw cash from an International ATM, we levy a fee of 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹200.
+              </span>
+               For any non-financial transactions at these ATMs (like getting a Mini Statement), there’s a nominal ₹25 charge.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Card Replacements
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              Misplaced your Debit Card? Don’t worry.
+              <br />
+              You can easily get a replacement card for&nbsp;
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹250.
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-eCDnqH fakxCP"
+              color="MINE_SHAFT"
+            >
+              Fuel surcharge
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-keNpes hIFEMh"
+              color="MINE_SHAFT"
+            >
+              For POS transactions at Petrol Pumps, expect a surcharge.
+              <br />
+              It’s 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                2.5% of the transaction amount
+              </span>
+               or 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹10,
+              </span>
+               whichever is higher.
+            </div>
+          </div>
+        </div>
+        <h2
+          class="sc-jqUVSM jjtKTA sc-hFvvYD lclZAB"
+          color="MINE_SHAFT"
+        >
+          All Things Digital 💻
+        </h2>
+        <div
+          class="sc-ldZUWu iQSduz"
+        >
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-feINqK heYxzE"
+              color="MINE_SHAFT"
+            >
+              Payments - NEFT, RTGS Online
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lcoedz cotDEA"
+              color="MINE_SHAFT"
+            >
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                Fee-free
+              </span>
+               transactions!
+              <br />
+              We’re digital – of course, we love online transfers⚡️
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-feINqK heYxzE"
+              color="MINE_SHAFT"
+            >
+              SMS /Email updates/ Mobile Banking/ Internet Banking
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lcoedz cotDEA"
+              color="MINE_SHAFT"
+            >
+              Stay updated, free of charge.
+              <br />
+              Get instant notifications the second you pay or get paid.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-feINqK heYxzE"
+              color="MINE_SHAFT"
+            >
+              Digital Debit Card
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lcoedz cotDEA"
+              color="MINE_SHAFT"
+            >
+              Ordered a Fi Visa Debit Card?
+              <br />
+              Get a free, ready-to-use virtual card. Immediately 💳
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-feINqK heYxzE"
+              color="MINE_SHAFT"
+            >
+              Payments - UPI / IMPS
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lcoedz cotDEA"
+              color="MINE_SHAFT"
+            >
+              Money management made smarter, not harder.
+              <br />
+              Swift money transfers: Hassle-free; 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                zero transaction charges.
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-feINqK heYxzE"
+              color="MINE_SHAFT"
+            >
+              Digital Account Statements
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lcoedz cotDEA"
+              color="MINE_SHAFT"
+            >
+              A free snapshot of the cash in your account! Whenever you want one.
+            </div>
+          </div>
+        </div>
+        <h2
+          class="sc-jqUVSM jjtKTA sc-hFvvYD lclZAB"
+          color="MINE_SHAFT"
+        >
+          Paper & Branch Based: We hope these are few and far between 📝
+        </h2>
+        <div
+          class="sc-hCDzWh bYUPnM"
+        >
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Chequebook
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Since you’re on Fi, there’s very little need for chequebooks. But in case you really want it, here are two things to keep in mind:
+              <br />
+              <br />
+              - Only 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                full-KYC users
+              </span>
+               can send us a chequebook request.
+              <br />
+              - For 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹100,
+              </span>
+               we’ll deliver a chequebook with 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                10 cheque leaves.
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Demand Draft
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Chances that you’ll require a Demand Draft (DD) are slim to none. However, if you need one, just holler!
+              <br />
+              <br />
+              DDs for upto ₹1 lakh per quarter are fee-free 🗞
+              <br />
+              For all DD-related fees, go to page 8 of this 
+              <a
+                href="https://www.federalbank.co.in/documents/10180/81307/Service+charges+and+fees+wef+01st+O[%E2%80%A6]2.pdf/fbfe181e-4e94-2e4f-6a3a-271fc45cf3ef?t=1661780513338"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="sc-bdxVC cuoWsH"
+                  color="FOREST_GREEN"
+                >
+                  document
+                </span>
+              </a>
+              .
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Stop Cheque Payment charges
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Want to stop a cheque from getting processed? Let our Customer Care Centre know, and we can make it happen.
+              <br />
+              <br />
+              The charges for that are 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹100 per cheque.
+              </span>
+              <br />
+              Or ₹500 for a series of three cheques or more.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Physical Signed Account Statement Delivery
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Working on your visa or loan application? You might need a signed banking statement.
+              <br />
+              <br />
+              If you want us to, we’ll sign & deliver 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                one free statement
+              </span>
+               (per month). Need more than one? There’s a ₹100 fee.
+              <br />
+              For every 40 transactions listed, we charge an additional ₹100.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Balance Certificate
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Need to produce a ’Proof of Funds’ document?
+              <br />
+              We can send you an official Balance Certificate 📜
+              <br />
+              <br />
+              In fact, we’ll deliver it to your doorstep.
+              <br />
+              All this for just 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹100!
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Interest Certificate
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              This certificate verifies how much interest you earned.
+              <br />
+              Centred specifically on your savings account & Fixed/Smart deposits.
+              <br />
+              <br />
+              If you need one, we’ll send one for free on a yearly basis. Need more, we charge you 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹100 per interest certificate.
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Other Bank ATMs Transactions decline charges (due to insufficient funds in account)
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              You can check your balance (for free) anytime on the Fi app!
+              <br />
+              So, there’s only a ghost of a chance that this scenario may happen👻
+              <br />
+              <br />
+              Either way, there’s a 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹25 per cash decline
+              </span>
+               at other bank ATMs. So ensure you have sufficient funds before trying to withdraw.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Outward return charges
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              If the cheque bounces -
+              <br />
+              * First time: ₹125;
+              <br />
+              * Second time: ₹250;
+              <br />
+              * Three or more times: ₹500.
+              <br />
+              <br />
+              Note: Every financial quarter (3 months), the fee cycle is reset.
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Inward return charges
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Fi users have the option of submitting cheques as well. In an unlikely scenario, if a cheque gets returned there’s a fee.
+              <br />
+              <br />
+              It’s called an Inward Return Charge, and it’s 
+              <span
+                class="sc-gauFBm kLfGoX"
+              >
+                ₹150.
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv bRjMOl"
+            color="WHITE"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              Collection of cheques (outstation)/Inward LCC
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              Our banking partner is willing to collect cheques from users.
+              <br />
+              There’s a fee involved for processing these cheques.
+              <br />
+              <br />
+              It starts from ₹15 onwards. Read more on page 5 of this 
+              <a
+                href="https://www.federalbank.co.in/documents/10180/81307/Service+charges+and+fees+wef+01st+O[%E2%80%A6]2.pdf/fbfe181e-4e94-2e4f-6a3a-271fc45cf3ef?t=1661780513338"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="sc-bdxVC cuoWsH"
+                  color="FOREST_GREEN"
+                >
+                  document
+                </span>
+              </a>
+              .
+            </div>
+          </div>
+          <div
+            class="sc-cBQgDv cVbVij"
+            color="GAINSBORO"
+          >
+            <div
+              class="sc-eCYdqJ iYAlJq sc-fpcwso ecbMQA"
+              color="MINE_SHAFT"
+            >
+              ECS/NACH
+            </div>
+            <div
+              class="sc-eCYdqJ iYAlJq sc-lmHNfd hdDxFa"
+              color="MINE_SHAFT"
+            >
+              National Automated Clearing House (NACH) & Electronic Clearing Service (ECS).
+              <br />
+              <br />
+              They help complete high-volume, interbank online transfers that are fixed and periodic! Think regular EMIs, loan repayments, and so on. Turn to page 6 of this 
+              <a
+                href="https://www.federalbank.co.in/documents/10180/81307/Service+charges+and+fees+wef+01st+O[%E2%80%A6]2.pdf/fbfe181e-4e94-2e4f-6a3a-271fc45cf3ef?t=1661780513338"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="sc-bdxVC cuoWsH"
+                  color="FOREST_GREEN"
+                >
+                  document
+                </span>
+              </a>
+               for the fees.
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-eCYdqJ iidbqz sc-lbhYTY eJtqGH"
+          color="SUVA_GREY"
+        >
+          The charges mentioned above are specifically for Fi users. To view any other fees, please head to our 
+          <a
+            href="https://www.federalbank.co.in/documents/10180/81307/Service+charges+and+fees+wef+01st+O[%E2%80%A6]2.pdf/fbfe181e-4e94-2e4f-6a3a-271fc45cf3ef?t=1661780513338"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span
+              class="sc-jUtGcO gzNVBw"
+              color="FOREST_GREEN"
+            >
+              banking partner’s fee document
+            </span>
+          </a>
+          .
+        </div>
+        <div
+          class="sc-eCYdqJ iidbqz sc-lbhYTY eJtqGH"
+          color="SUVA_GREY"
+        >
+          Note: The govt requires Goods and Services Tax (GST) on all these charges. So, expect to see an 18% GST additional charge on these fees.
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-cwpsFg KVyBC"
+    >
+      <div
+        class="sc-dkSuNL eCmbdT"
+      >
+        <div
+          class="sc-bczRLJ sc-kngDgl sc-gJwTLC cFvSHK TlBtU jWiOvF"
+        >
+          <div
+            class="sc-fxvKuh iLEuH"
+          >
+            <div
+              class="sc-iJkHyd dEepvI"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ bnCuWB"
+                  color="FI_GREEN"
+                >
+                  Your Privacy.
+                  <br />
+                  Minus the jargon.
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="sc-iJkHyd ejKlTU"
+            >
+              <div>
+                <div
+                  class="sc-eCYdqJ cMbRGg"
+                  color="FI_PINK"
+                >
+                  No Hidden
+                  <br />
+                  Fees!
+                </div>
+              </div>
+              <div
+                class="sc-iWajrY czNAel"
+              >
+                <span
+                  class="sc-ftvSup gsYrLz"
+                  color="WHITE"
+                >
+                  <img
+                    alt="arrow"
+                    class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                    loading="eager"
+                    src="top-right-arrow.svg"
+                  />
+                </span>
+              </div>
+            </div>
+            <a
+              href="https://jobs.lever.co/epifi"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div
+                class="sc-iJkHyd ejKlTU"
+              >
+                <div>
+                  <div
+                    class="sc-eCYdqJ jdNfrJ"
+                    color="FI_LIGHT_BLUE"
+                  >
+                    Join the
+                    <br />
+                    team.
+                  </div>
+                </div>
+                <div
+                  class="sc-iWajrY czNAel"
+                >
+                  <span
+                    class="sc-ftvSup gsYrLz"
+                    color="WHITE"
+                  >
+                    <img
+                      alt="arrow"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="eager"
+                      src="top-right-arrow.svg"
+                    />
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="sc-jKDlA-D bKqmIr"
+          >
+            <img
+              alt="image"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="footer-logo.svg"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ sc-bTMaZy cFvSHK yQEXi"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-tQuYZ cFvSHK lewnTt ferVki"
+            >
+              <div
+                class="sc-dSuTWQ kPVxin"
+              >
+                <div
+                  class="sc-eCYdqJ fzRvzi"
+                  color="TEXT_GREY_1"
+                >
+                  Pronounced 
+                  <span
+                    class="sc-ftvSup gOxMIH"
+                    color="WHITE"
+                  >
+                     Fī(-ē) 
+                  </span>
+                  and sounds like
+                  <div
+                    class="sc-kjEcyX ikirKI"
+                  >
+                    <img
+                      alt="volume"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="volume-active.svg"
+                    />
+                  </div>
+                  <audio
+                    class="sc-cLFqLo jDIWhf"
+                  >
+                    <source
+                      src="FiAudio.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-cHPgQl cFvSHK TlBtU bYzimd"
+              >
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    hi
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="hifi.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    sky
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="sky.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    tie
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="tie.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="sc-fHsOPI jpBIgo"
+                >
+                  <div
+                    class="sc-gkJlnC iforIl"
+                  >
+                    fly
+                  </div>
+                  <div
+                    class="sc-gzzPqb fnEVGI"
+                  >
+                    <img
+                      alt="image"
+                      class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+                      loading="lazy"
+                      src="fly.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-bczRLJ sc-gHLcSH cFvSHK kEhzMq"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+              <div
+                class="sc-bczRLJ sc-djUGQo cFvSHK cHDGYA"
+              >
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <a
+                    href="/blog"
+                  >
+                    Blog
+                  </a>
+                </h3>
+                <h3
+                  class="sc-kDDrLX eMDbJf sc-jhzXDd coOizB"
+                  color="WHITE"
+                >
+                  <div />
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-bczRLJ sc-hZFzCs cFvSHK gaLYiB"
+          >
+            <div
+              class="sc-bczRLJ sc-afnQL sc-hjQCSK cFvSHK lewnTt kMduYt"
+            >
+              <div
+                class="sc-eCYdqJ hdRMJn sc-bSakgD jyOxpN"
+                color="TEXT_GREY_1"
+              >
+                Contact Fi Money customer care
+              </div>
+              <div
+                class="sc-bczRLJ sc-kngDgl sc-jvLaUc cFvSHK TlBtU kjFwxX"
+              >
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    080-47485490
+                  </div>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <a
+                    href="mailto:help@fi.care"
+                  >
+                    <div
+                      class="sc-eXBvqI gyNIoe"
+                    >
+                      help@fi.care
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="sc-fmrZth fmrhOc"
+                >
+                  <div
+                    class="sc-eXBvqI gyNIoe"
+                  >
+                    In-app chat
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ cFvSHK"
+              >
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.instagram.com/bankonfi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="instagram"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="instagram-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.twitter.com/Bank_on_Fi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="twitter"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="twitter-white.svg"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="sc-edUIhV hrYfin"
+                >
+                  <a
+                    href="https://www.linkedin.com/company/epifi"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="linkedin"
+                      class="sc-gsnTZi sc-hKMtZM krIvpr hFZcsr"
+                      loading="lazy"
+                      src="linkedin-white.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="sc-bczRLJ sc-jmnVvD cFvSHK dGHkGt"
+              >
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <div />
+                </div>
+                <div
+                  class="sc-eCYdqJ hdRMJn sc-iXxrte gxfcTv"
+                  color="TEXT_GREY_1"
+                >
+                  <a
+                    href="https://www.federalbank.co.in/our-commitments"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Partner Bank Codes & Policies
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-hZgfyJ eWgCsw"
+            >
+              <div
+                class="sc-bczRLJ sc-hKpBwk cFvSHK loyOHF"
+              >
+                <p
+                  class="sc-evZas igfRis sc-ewDcJz jtYAuB"
+                  color="GREY_2"
+                >
+                  Fi is a money management platform that re-imagines the banking experience in India. The Fi account, in partnership with Federal Bank, is a digital bank account that gives you the fastest way to open a bank account online.
+                </p>
+                <p
+                  class="sc-evZas igfRis sc-ehMyHa bxRvfH"
+                  color="GREY_2"
+                >
+                  You can do everything from the Fi App, including p2p payments, fund transfers, bill payments, and more, with features to automate every action. You also get a Fi-Federal co-branded Debit Cardd, spends insights and tools to grow your investment and earn rewards.
+                </p>
+              </div>
+              <div
+                class="sc-eCYdqJ iPRnVa sc-djvmMF bnhvWu"
+                color="GREY_2"
+              >
+                Disclaimer: You may have noticed some brand logos used on this website to indicate where you, as a user, may or may not have spent money. We don’t endorse these brands. Nor do these brands endorse us. The logos of the specific brands are owned by them.
+              </div>
+              <div
+                class="sc-cUEIKg egtcEd"
+              >
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Wealth Pvt. Ltd. 2022
+                </div>
+                <div
+                  class="sc-eCYdqJ gibgTe sc-kItwNn bBmJvR"
+                  color="TEXT_GREY_1"
+                >
+                  © epiFi Technologies Pvt. Ltd. 2022
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-eKBdFk iPGhao"
+    />
+    <div
+      class="sc-jOhDuK sc-hlnMnd vEAce fyIvxi"
+    >
+      <div
+        class="sc-bUbCnL iygcBD"
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.epifi.paisa&referrer=utm_source%3Dfimoney"
+          id="footer_playstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-kIKDeO fjNkXd"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="play-store_black.png"
+            />
+          </div>
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/fi-money-digital-banking/id1531564767"
+          id="footer_appstore_link"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="sc-hNKHps cvMsDD"
+          >
+            <img
+              alt="logo"
+              class="sc-gsnTZi sc-dkzDqf krIvpr hKVGsE"
+              loading="lazy"
+              src="app-store_black.png"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

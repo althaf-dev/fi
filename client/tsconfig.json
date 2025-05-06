@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "module": "esnext",
+        "target": "es6",
+        "jsx": "react",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
+        "lib": [
+            "dom",
+            "dom.iterable"
+        ],
+        "types": ["jest", "@testing-library/jest-dom", "cypress", "@percy/cypress"]
+    },
+    "include": ["./src", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "module": "CommonJS",
+        "target": "es6",
+        "jsx": "react",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "lib": [
+            "dom",
+            "dom.iterable"
+        ],
+        "types": ["jest", "@testing-library/jest-dom", "cypress", "@percy/cypress", "node"]
+    },
+    "include": ["./src", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
+}
