@@ -1,0 +1,1640 @@
+<!-- @file IDFC Loan Agreement -->
+<!-- This file contains IDFC loan agreement layout in html -->
+<!--
+    To generate the pdf with wkhtmltopdf:
+    wkhtmltopdf --enable-local-file-access --debug-javascript --disable-smart-shrinking --page-size A4 -T 23 -B 17 -L 0 -R 0 --header-html header.html index_be.html --footer-html footer.html ./IDFC_PL_LoanAgreement_KFS.pdf
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Loan Agreement</title>
+    <link rel="stylesheet"
+        href="https://dza2kd7rioahk.cloudfront.net/assets/pdf-templates/loan-aggrement/stylesheets/index.css" />
+    <style>
+        .new-page {
+            page-break-before: always;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+
+
+    <!-- Primary Header Template -->
+    <script id="primary-header-template" type="x-tmpl-mustache">
+        <div class="main">
+            <div class='center fw-bold'>
+                FACILITY TERMS & CONDITIONS
+            </div>
+        </div>
+    </script>
+
+    <!-- About Us -->
+    <script id="about-content-template" type="x-tmpl-mustache">
+        <div class='main'>
+            <p class='description'>
+                This Loan Agreement <span class='fw-bold'>("Agreement")</span> shall govern the terms & conditions of all the Parties to the Agreement
+                and shall bind the following Parties from the date of signing/acceptance of this Agreement.
+            </p>
+
+            <div class='list-container'>
+                <ol type="1">
+                    <li class="list">
+                        IDFC FIRST Bank Ltd, a Company incorporated under the Companies Act, 2013 and a banking company within
+                        the meaning of Banking Regulation Act, 1949, having its registered office at KRM Tower, 7th Floor, No. 1,
+                        Harrington Road, Chetpet, Chennai - 600031, hereinafter referred to as "Bank" (which expression shall
+                        unless repugnant to the context or meaning thereof, shall be deemed to mean and include its successors,
+                        transferees and assigns);
+                    </li>
+                    <li class="list">
+                        Epifi Technologies Pvt. Ltd., a company incorporated under the Companies Act, 2013. Having its registered
+                        office at Salarpuria Sattva Knowledge Court, Survey No. 77, Plot no.9, 06th Floor, Doddenakundi,KR Puram
+                        Hobli Bangalore East Taluk Bangalore KA 560048 IN, hereinafter referred to as 'Partner' (which expression
+                        shall unless repugnant to the context or meaning thereof, shall be deemed
+                        to mean and include	its	assigns	& transferees); and
+                    </li>
+                    <li class="list">
+                        Borrower, an individual, resident of India, whose details are given in Key Fact Sheet (hereinafter referred
+                        to as <span class='fw-bold'>"Borrower",</span> which expression shall, unless repugnant to the context or
+                        meaning thereof include its successors and assigns).
+                        <br><br>
+                        The Bank, Partner and Borrower shall be referred to individually as a "Party" and collectively as the Parties.
+                        The Parties hereby irrevocably and unconditionally agree to abide by the following terms and conditions.
+
+                        <p class='sec-desc'>WHEREAS</p>
+
+                        <ol type="A">
+                            <li class="list">
+                                The Bank is inter alia engaged in the business of providing financial assistance to individuals and
+                                business entities;
+                            </li>
+                            <li class="list">
+                                Partner is inter alia engaged in the business of facilitating distribution of financial products and
+                                services. Further Partner will also assist the Bank with the recollection process as per the terms of
+                                this Agreement;
+                            </li>
+                            <li class="list">
+                                The Borrower is an individual who avails the technology services provided by Partner through the website
+                                and mobile application (<span class='fw-bold'>"Partner App"</span>), and has now enlisted to avail the
+                                financial services and loan products provided by the Bank (<span class='fw-bold'>"Facility"</span>); and
+                            </li>
+                            <li class="list">
+                                The Borrower shall be responsible for ensuring the complete and timely repayment of the loan amount and
+                                applicable interest to the Bank.
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </script>
+
+    <!-- Page Content-->
+    <script id="page-content-template" type="x-tmpl-mustache">
+        <div class='main'>
+            <div class='sec-desc'>
+                <ol type="1">
+                    <li>
+                        <span class='fw-bold'>AMOUNT AND TERMS OF FACILITY</span>
+                        <ol type='a'>
+                            <li class="list">
+                                Subject  to  the  terms  &  conditions and Key Fact Sheet (KFS) prescribed  hereunder,  the  Bank  may  extend  to the
+                                Borrower a loan amount ("Loan Amount") for a period as specified in the KFS ("Term") through Partner
+                                which is acting as a facilitator between the Bank and the Borrower.
+                            </li>
+                            <li class="list">
+                                The Bank shall be entitled to vary at its own discretion to change to limits of facilities (i.e.,
+                                increase/decrease or renew) sanctioned to the Borrower. However, any increase in customer limit
+                                shall be with an explicit consent from the customer.
+                            </li>
+                        </ol>
+                    </li>
+
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>DRAWDOWN</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Facility shall be made available to the Borrower only during the tenure of the Business Agreement
+                                between Bank and Partner and the same is available through the Partner App.
+                            </li>
+                            <li class="list">
+                                For any products the transactions/withdrawal/utilization of the Facilities (in one or more tranches)
+                                will have to be paid by the customer as per the bill generated on Partner's app on or before the due date
+                                mentioned. The rate of interest applicable will be communicated by the Bank and mentioned on the Partner
+                                App & the Key Fact Sheet.
+                            </li>
+                            <li class="list">
+                                In the event any portion of the Loan Amount are remaining due and payable by the Borrower to the Bank,
+                                whether under this Agreement or otherwise, the Bank may, at its sole discretion, reduce the overall limits
+                                and/or adjust such monies against the respective limits and all such adjustments shall be treated as
+                                drawals by the Borrower.
+                            </li>
+                            <li class="list">
+                                The Bank may, in its discretion and subject to no Event of Default or potential event of default having
+                                occurred and at the request of the Borrower, renew or continue the Facilities or any part thereof for
+                                such period and in such terms and in such event all terms as applicable for such Facilities shall mutatis
+                                mutandis apply for the rollover/extended portion of the Facilities.
+                            </li>
+                            <li class="list">
+                                The Bank may, at its discretion, allow drawals by way of temporary facilities for such period as is
+                                permitted by the Bank, reserves its right to suspend such excess drawings without any notice to the Borrower.
+                                In case of an incorrect excess borrowing, the Borrower shall repay all such excess drawings on demand unless
+                                otherwise specified by the Bank. Till repayment of such excess drawings, the excess drawn amounts shall carry
+                                interest at the rate of revised applicable rate of interest, unless a higher rate has been stipulated by the
+                                Bank. All the provisions of the Agreement will extend to cover such excess drawings.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>INTEREST / OTHER CHARGES ETC.</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Borrower shall pay to the Bank interest as applicable determined by the Bank and mentioned in the Key Fact Sheet (KFS)
+                                & the Partner App at the time of taking loan on all outstanding amounts under the Facilities, at
+                                such intervals as stipulated in the Partner app.
+                            </li>
+                            <li class="list">
+                                The Borrower irrevocably acknowledges that any occurrence of breach of terms and conditions
+                                mentioned herein shall be deemed to require reassessment of initial credit parameters of the Borrower
+                                and as a consequence thereof, the Borrower shall, without demur/protest be liable to pay to the
+                                Bank, revised applicable rate of interest (in lieu of the applicable rate of interest) as may be
+                                applicable, from the date of happening/non- happening of the relevant conditions till such conditions
+                                are complied with to the satisfaction of the Bank.
+                            </li>
+                            <li class="list">
+                                The interest rate is subject to variation in consonance with RBI directions, statutory and regulatory
+                                requirements, conditions of money market, availability of loanable funds, internal policy of the Bank, etc.
+                            </li>
+                            <li class="list">
+                                The Borrower shall pay the Bank all charges associated with the product, including processing fee,
+                                cancellation charges, late payment charges and other fee/charges as may be charged by the Bank from time to time.
+                            </li>
+                            <li class="list">
+                                The Borrower shall bear all applicable taxes including GST in connection with the
+                                Agreement herein. In the event of the Borrower failing to pay the monies referred to above,
+                                the Bank shall be at liberty (but shall not be obliged) to pay the same. The Borrower shall
+                                reimburse all sums paid by the Bank in accordance with the provisions contained herein.
+                            </li>
+                            <li class="list">
+                                All payments by the Borrower under the Agreement mentioned herein shall be made free and
+                                clear of and without any deduction of tax or levy, except as required under the Law. Any taxes
+                                or levy so deducted by the Borrower shall be paid within the statutory time frame AND
+                                thereafter within 7 (seven) days of depositing such payment or as provided under Law,
+                                whichever is earlier, deliver to the Bank satisfactory evidence that the tax or levy so deducted
+                                at source has been duly remitted to the appropriate authority.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>COMPUTATION OF INTEREST, COMMISSION AND OTHER CHARGES</span>
+                        <ol type='a'>
+                            <li class="list">
+                                All interest, all commissions, discount and all other charges shall accrue from day to day and when
+                                debited to the relevant account shall be calculated on the daily debit balance of such account and
+                                which shall be computed on the basis of 360 days a year and the actual number of days elapsed.
+                            </li>
+                            <li class="list">
+                                The interest on the Facilities will be charged to accounts, unless specified
+                                otherwise, on a monthly basis (and in case of closure of individual Facility account on the day
+                                of such closure) and payable by the Borrower.
+                            </li>
+                            <li class="list">
+                                The Borrower/s shall pay Charges, non-refundable upfront transaction/processing fees, and other
+                                charges as and when applicable
+                            </li>
+                            <li class="list">
+                                Borrower hereby agrees and confirms that in case wherein the Borrower avails any third-party
+                                services through the Bank then the fees/ charges applicable for the said third party services
+                                shall be deducted from the Loan amount and the Bank shall not be held liable for the services
+                                provided by such third party. It shall be the sole discretion of the Borrower to opt for such
+                                third-party products and services and for any changes/cancellation on booking of such products will
+                                need to be done through relevant third party as per their product T&C. Bank shall not be liable for
+                                any claims and damages arising out of or in relation to third party product and services availed
+                                by the Borrower.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>CONCEPTS & ILLUSTRATIONS ON DUE DATES AND SPECIFICATION OF SMA /NPA CLASSIFICATION DATES</span>
+                        <ol type='a'>
+                            <li class="list">
+                                <span class="fw-bold">Dues</span> shall mean the principal/interest/any charges levied on the loan account which are payable within the period stipulated as per the terms of
+                                sanction of the credit facility.
+                            </li>
+                            <li class="list">
+                                <span class="fw-bold">Overdue</span> shall mean the principal/interest/any charges levied on the loan account which are payable
+                                but have not been paid within the period stipulated as per the terms of sanction of the credit
+                                facility. In other words, any amount due to the bank under any credit facility is 'overdue' if it
+                                is not paid on the due date fixed by the bank.
+                            </li>
+                            <li class="list">
+                                <span class="fw-bold">Non-Performing Asset (NPA) -</span> is a loan or an advance where
+                                <ol type='i'>
+                                    <li class="list">
+                                        interest and /or instalment of principal remains overdue for a period of more than 90 days
+                                        in respect of a term loan.
+                                    </li>
+                                    <li class="list">
+                                        the	account	remains	'out	of	order'	as	indicated	below	in	respect	of  an Overdraft/Cash
+                                        credit (OD/CC).
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                <span class="fw-bold">"First In First Out" (FIFO) -</span> The relevance of ' First in First Out ' (FIFO) is in appropriation
+                                of payments into the borrowal account; The Principle of FIFO i.e., ' First In First Out accounting
+                                method is relevant to arrive at the No of days of overdue for determining the SMA/NPA status.
+                                The FIFO principle assumes that the oldest outstanding dues in the loan account needs to be cleared
+                                first. The FIFO method thus requires that what is due first must be paid by the borrower first. <br />
+                                For example: If in any loan account as on 01.02.2021 there are no overdues and an amount of Rs. X
+                                is due for payment towards principal instalment/interest/charges any payment being credited on or
+                                after 01.02.2021 in the loan account will be used to payoff the dues outstanding on 01.02.2021.
+                                Assuming that nothing is paid/or there is partial payment (Rs Y) of dues during the month of
+                                February, the overdue as on 01.03.2021 will be Rs. X-Y. <br />
+                                Additionally, an amount of Rs Z becomes due as on 01.03.2021. Now any payment partial
+                                payment into the account on or after 01.03.2021 will be first utilized to payoff the partial due
+                                of 01.02,2021(Rs X- Rs Y). If there is more recovery that the Rs. X- Rs.Y then after recovering
+                                dues of 01.02.201, the remaining amount will be treated as recovery towards due of 01.03.2021.
+                            </li>
+
+                            <li class="list">
+                                <span class="fw-bold">Age of Oldest Dues -</span> The age of oldest dues is reckoned in days from the date on which the oldest
+                                payment is due and continues to remain unpaid. In the aforesaid illustration, if the Dues relating
+                                to 1st February 2021 remain unpaid till 01.03.2021, the age of the oldest dues is reckoned as 29
+                                days on 02.03.2021.
+                            </li>
+
+                            <li class="list">
+                                <span class="fw-bold">Classification as Special Mention Account (SMA) and Non-Performing Asset (NPA)</span> – Lending institutions
+                                will recognize the incipient stress in loan accounts, immediately on Default, by classifying them
+                                as Special Mention Accounts (SMA) The basis of classification of SMA /NPA Category shall be as
+                                follows: <br />
+                                <div class="center">
+                                    <table class="border-table">
+                                        <tr>
+                                            <th colspan="2">Loans other than revolving facilities</th>
+                                            <th colspan="2">Loans in the nature of revolving facilities
+                                                like cash credit/overdraft</th>
+                                        </tr>
+                                        <tr>
+                                            <td>SMA Sub-categories</td>
+                                            <td>Basis for classification - Principal or interest payment or any other amount wholly or partly overdue</td>
+                                            <td>SMA Sub-categories</td>
+                                            <td>Basis for classification - Outstanding balance remains continuously  in  excess  of the sanctioned limit or power, whichever is lower, for a period of:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMA-0</td>
+                                            <td></td>
+                                            <td>Upto 30 days</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMA-1</td>
+                                            <td>More than 30 days and upto 60 days</td>
+                                            <td>SMA-1</td>
+                                            <td>More than 30 days and upto 60 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMA-2</td>
+                                            <td>More than 60 days and upto 90 days</td>
+                                            <td>SMA-2</td>
+                                            <td>More than 60 days and upto 90 days</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li class="list">
+                                <p class='sec-desc'><span class="fw-bold">Out of Order</span> - An account shall be treated as ' out of order ' if</p>
+                                <ol type='i'>
+                                    <li class="list">
+                                        the outstanding balance in the CC/OD account remains continuously in excess of the
+                                        sanctioned limit /drawing power for 90 days or
+                                    </li>
+                                    <li class="list">
+                                        the  outstanding  balance  in  the  CC/OD  account  is  less  than  the sanctioned
+                                        limit/drawing power but there are no credits continuously for 90 days or the outstanding
+                                        balance in the CC/OD account is less that the sanctioned limit/drawing power, but credits
+                                        are not enough to cover the interest debited during the precious 90 power, but credits are
+                                        not enough to cover the interest debited during the previous 90 days period.
+                                    </li>
+                                </ol>
+                                <br />
+                                Illustrative movement of an account to SMA category to NPA category based on delay non payment of
+                                dues and subsequent upgradation to Standard category at day end process: <br />
+
+                                <div class="center">
+                                    <table class="border-table">
+                                        <tr>
+                                            <th>Due date of payment</th>
+                                            <th>Payment Date</th>
+                                            <th>Payment covers</th>
+                                            <th>Age of oldest dues in days</th>
+                                            <th>SMA / NPA Categorisation</th>
+                                            <th>SMA since Date/SMA class date</th>
+                                            <th>categorization</th>
+                                            <th>NPA Date</th>
+                                        </tr>
+                                        <tr>
+                                            <td>01.01.2022</td>
+                                            <td>01.01.2022</td>
+                                            <td>Entire dues upto 01.01.2022</td>
+                                            <td></td>
+                                            <td>NIL</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.02.2022</td>
+                                            <td>01.02.2022</td>
+                                            <td>Partly paid dues of 01.02.2022</td>
+                                            <td>1</td>
+                                            <td>SMA-O</td>
+                                            <td>01.02.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.02.2022</td>
+                                            <td>02.02.2022</td>
+                                            <td>Partly paid dues of 01.02.2022</td>
+                                            <td>2</td>
+                                            <td>SMA-O</td>
+                                            <td>01.02.2022</td>
+                                            <td></td>
+                                            <td>NA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.03.2022</td>
+                                            <td></td>
+                                            <td>Dues of 01.02.2022 not fully paid 01.03.2022 is also due at EOD 01.03.2022</td>
+                                            <td>29</td>
+                                            <td>SMA-O</td>
+                                            <td>01.02.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Dues of 01.02.2022 fully paid, Due for 01.03.2022 not paid at EOD 01.03.2022</td>
+                                            <td>1</td>
+                                            <td>SMA-O</td>
+                                            <td>01.03.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>No payment of full dues of 01.02.2022 and 01.03.2022 at EOD 03.03.2022</td>
+                                            <td>31</td>
+                                            <td>SMA-1</td>
+                                            <td>01.02.2022<br/>
+                                                03.03.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Dues of 01.02.2022 fully paid, Due for 01.03.2022 not fully paid at EOD 1.03.2022</td>
+                                            <td>1</td>
+                                            <td>SMA-O</td>
+                                            <td>01.03.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.04.2022</td>
+                                            <td></td>
+                                            <td>No payment of dues of 01 .02.2022, 01 .03.2022 and amount due on 01.4.2022 at EOD 01.04.2022</td>
+                                            <td>60</td>
+                                            <td>SMA-1</td>
+                                            <td>01.02.2022<br/>
+                                                03.03.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>No payment of dues of 01.02.2022 till 01.04.22 at EOD 02.04.2022</td>
+                                            <td>61</td>
+                                            <td>SMA 2</td>
+                                            <td>01 .02.2022
+                                                /
+                                                02.04.2022 </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.05.2022</td>
+                                            <td></td>
+                                            <td>No payment of dues of 01 .02.2022 till 01.05.22 at EOD 01.05.2022</td>
+                                            <td>90</td>
+                                            <td>SMA 2</td>
+                                            <td>01.02.2022/ 02.04.2022</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>No payment of dues of 01.02.2022 till 01.05.2022 at EOD 02.05.2022</td>
+                                            <td>91</td>
+                                            <td>NPA</td>
+                                            <td></td>
+                                            <td>NPA</td>
+                                            <td>02.05.2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.06.2022</td>
+                                            <td>01.06.2022</td>
+                                            <td>Fully Paid dues of 01.02.2022 at EOD 01 .06.2022</td>
+                                            <td>93</td>
+                                            <td>NPA</td>
+                                            <td>NA</td>
+                                            <td></td>
+                                            <td>02.05.2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.07.2022</td>
+                                            <td>01.07.2022</td>
+                                            <td>Paid entire dues of 01 .03.2022 & 01.04.2022 at EOD</td>
+                                            <td>62</td>
+                                            <td>NPA</td>
+                                            <td>NA</td>
+                                            <td>NPA</td>
+                                            <td>02.05.2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01 .08.2022</td>
+                                            <td>01 .08.2022</td>
+                                            <td>Paid entire dues of 01 .05.2022 & 01.06.2022 at EOD 01 .08.2022</td>
+                                            <td>32</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>NPA</td>
+                                            <td>02.05.2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01 .09.2022</td>
+                                            <td>01 .09.2022</td>
+                                            <td>Paid entire dues of 01 .07.2022 & 01.08.2022 at EOD 01 .09.2022</td>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>02.05.2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01.10.2022</td>
+                                            <td>01.10.2022</td>
+                                            <td>Paid entire dues of 01.09.2022 & 01 .10.2022 </td>
+                                            <td>0</td>
+                                            <td>Standard Account with No Overdues</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>STD from 01.10.2022</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                Note- Examples are illustrative and not exhaustive in nature covering common scenarios and that
+                                the IRACP norms and clarifications provided by RBI on the subject will prevail.
+                            </li>
+
+                            <li class="list">
+                                <span class="fw-bold">Amortization Schedule/Repayment Schedule; -</span>
+                                The Amortization Schedule shall be provided separately after the disbursement of loan and shall
+                                consist of details pertaining to exact due dates for repayment of loan, breakup between principal
+                                and interest, in case of loan facilities with moratorium on payment of principal and or interest,
+                                the exact date of commencement of repayment etc., shall also be specified in the said amortization
+                                schedule.
+                            </li>
+
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>REPAYMENT</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Borrower shall make the payment through the Partner App and/or alternate channels enabled by
+                                Partner through a regulated Payment Aggregator/Gateway in the form of Net Banking/Debit Card/UPI
+                                and/or Standing Instruction/ECS/NACH (‘Mandate’) from Borrower owned KYC compliant account. Please
+                                note that Payment Aggregator/Gateway is acting only as a facilitator of the transactions between
+                                the Bank and the Borrower and is collecting the amounts due from the Borrower on behalf of the Bank
+                            </li>
+                            <li class="list">
+                                The Borrower shall repay the Loan Amount availed under this Agreement and interest thereon.
+                                The interest shall be at such rate which has been indicated by the Bank to the Borrower,
+                                through the Partner App, at the time of availing/utilizing the Facility and as also as communicated
+                                to the Borrower thereafter. The interest calculation will start from the date of the confirmation
+                                of the request for availing the facility by the Borrower. The amount together with
+                                other details of the Loan Amount (including rate of interest) shall be also communicated to
+                                the Borrower at his/her registered email/mobile number.
+                            </li>
+                            <li class="list">
+                                The EMI amount due as per the scheduled date shall subsequently be reflected in the statement.
+                                Bank is authorized by the Borrower to debit his/her Bank account as has been intimated to the Borrower.
+                                Upon repayment by the Borrower, the Credit Limit shall be reinstated to the extent of the amount of
+                                principal component of the amount repaid by the Borrower.
+                            </li>
+                            <li class="list">
+                                The Borrower shall be required to pay the entire amount of the EMI for a particular month on
+                                the payment due date, as determined by the Bank and indicated by Partner or the Bank and the
+                                same shall not be permitted to be carried forward/included in the next month. In the event the
+                                payment is not made by the due date as specified, it shall be construed as a default by the
+                                Borrower and the Borrower shall become liable to pay the amount together with the interest as
+                                may be leviable on his Facility and late payment charges, as specified by the Bank.
+                            </li>
+                            <li class="list">
+                                Notwithstanding anything in this Agreement, the Parties agree that the Borrower shall,
+                                at all time, have the right to make repayment to the Bank through Partner App, in whole or
+                                part of the Loan Amount. Charges if any, will be applicable as per the schedule of charges.
+                            </li>
+                            <li class="list">
+                                The Bank may at any time, without assigning any reasons and without notice to the Borrower cancel
+                                the unutilized and/or drawn portion of the Facilities or any part thereof and demand repayment
+                                thereof, and thereupon the principal amount outstanding together with all interest, charges expenses
+                                etc. thereon shall become immediately due and payable by the Borrower to the Bank.
+                            </li>
+                            <li class="list">
+                                If the due date in respect of any amounts payable under the Facilities falls on a day
+                                which is not a business day at the place where the payment is to be made, the immediately
+                                preceding or succeeding business day shall be the Due Date for such payment. The same would be
+                                informed to the Borrower in advance by the Bank through the Partner App.
+                            </li>
+                            <li class="list">
+                                The Borrower agrees that the Loan Amount or part thereof or the instalment amount or any other
+                                amount due to the Bank shall not be recovered from or demanded from Partner on behalf of the
+                                Borrower. For the avoidance of doubt and notwithstanding anything contained in this Agreement,
+                                it is clarified that the Partner or any of its group entities shall not, at any time, be held
+                                responsible for the repayment of any portion or whole portion of the Loan Amount from the
+                                Borrower to the Bank.
+                            </li>
+                            <li class="list">
+                                The Borrower agrees, declares and confirms that, notwithstanding any of the provisions of the
+                                Indian Contract Act, 1872 or any other Law, or any terms and conditions to the contrary contained
+                                in this Agreement, the Bank may, at its absolute discretion, appropriate any payments made by the
+                                Borrower under this terms and conditions or otherwise, towards the dues payable by the
+                                Borrower to the Bank under this Agreement and/or other agreements entered into between the
+                                Borrower and the Bank and in any manner whatsoever.
+                            </li>
+                            <li class="list">
+                                Credit for all payments will be given only on realization or on the relative due date, whichever is later.
+                            </li>
+                        </ol>
+                    </li>
+
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>REPRESENTATIONS AND WARRANTIES </span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Borrower hereby represents, warrants, assures and confirms as applicable to it, that:
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        By clicking on the tab/ button/ checkbox of "Confirm" or any other button/ checkbox of
+                                        similar nature: (i) Borrower confirms that Borrower is eligible under Applicable Law to
+                                        avail the Facility, (ii) Borrower consent to avail and use the Facility as per the
+                                        terms and conditions of these Facility Terms and Conditions; and (iii) Borrower consents
+                                        to receive communications, notices regarding transactional & promotional communication from
+                                        Bank and its business partners, service providers, authorized third parties etc.
+                                        (whether through SMS, WhatsApp, emails, phone calls, automated phone calls or by any other
+                                        means). Electronic communications shall be deemed to have been received by Borrower when
+                                        Bank sends the electronic communication to the email address / mobile number / details provided
+                                        by Borrower or any other third party. Borrower agrees that Borrower will not hold Bank, or its
+                                        business partners/ service providers/ authorized third parties responsible for any such
+                                        communications received from Bank/ its business partners/ service providers/ authorized
+                                        third parties, nor will any such communication amount to spam, unsolicited communication or
+                                        a violation of Borrower registration on the national do not call registry. The Borrower(s)
+                                        have agreed to this Facility Terms and condition by click wrap method or by physically
+                                        consenting as the case may be and the same is construed as express consent under the
+                                        existing laws of India. The Facility terms and conditions set out herein shall be applicable
+                                        to the Facility/Loan provided/ to be provided by the Bank to the Borrower(s).
+                                    </li>
+                                    <li class="list">
+                                        Authorizes the Bank to make any enquiries regarding his application and make any
+                                        queries/verification with any other finance company/bank/credit bureau agencies/account
+                                        aggregator/statutory bodies etc. as may be required or as they may deem fit and shall
+                                        not hold the Bank (or any of its group companies or its/their agents/representatives)
+                                        liable for use/sharing of this information. Except to the extent disclosed to the Bank,
+                                        no director or a relative/near relation (as specified by RBI) of a director of a banking
+                                        company (including the Bank) or a relative/near relation (as specified by RBI) of a
+                                        senior officer of the Bank (as specified by RBI) is the applicant(s), or a partner
+                                        of bank's concern, or of its subsidiary, or its holding company, or a guarantor on its
+                                        behalf, or holds substantial interest in its concern or its subsidiary or
+                                        holding company.
+                                    </li>
+                                    <li class="list">
+                                        Hereby consents to receiving information from Central KYC Registry CERSAI through SMS/Email
+                                        on his registered number/email address. Borrower hereby provides the consent to bank to pull
+                                        his KYC details from CERSAI & PAN details from NSDL/Income Tax Department as and when
+                                        required by the Bank for compliance. Borrower hereby agrees to abide by and be bound
+                                        by all applicable rules/regulations/instruction/guidelines including but not limited
+                                        to those issued by the Reserve Bank of India, including the Foreign Exchange Management
+                                        Act, 1999 and Foreign Account Tax Compliance Act, 2010 (to the extent applicable to India)
+                                        and the Common Reporting Standards (CRS), in force from time to time. Borrower confirms
+                                        having declared his status as per the rules applicable under section 285BA of the Income
+                                        Tax Act, 1961 (the Act) as notified by Central Board of Direct Taxes (CBDT) in this regard
+                                    </li>
+                                    <li class="list">
+                                        Borrower hereby overrides his NDNC registration and gives consent to the Bank or its Authorized
+                                        Agents and third party service providers to use information/data provided by the Borrower to
+                                        contact him through any channel of communication including but not limited to email, telephone,
+                                        SMS, etc. and further authorizes the disclosure of the information contained herein to its
+                                        affiliates or their Authorized Agents or Third Party Service Providers in order to provide
+                                        information and updates to the Borrower on various financial and investment products and offering.
+                                    </li>
+                                    <li class="list">
+                                        Has given complete and correct information and details in the application journey about himself/herself.
+                                    </li>
+                                    <li class="list">
+                                        Acknowledges that Partner is a mere facilitator/intermediary, and the Loan is extended by Bank.
+                                        The Borrower further acknowledges that the Loan amount / disbursement of Loan may flow
+                                        from Partner's or Bank's banking account, in either case Borrower shall be liable to Bank
+                                        to repay the outstanding on Loan account and any disputes on the Loan will be resolved
+                                        between the Borrower and Bank without any recourse to Partner.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower hereby undertakes to keep the Bank informed of any change in the Borrower's
+                                        e-mail ID, Telephone number, Mobile number and Address. The Borrower authorizes the Bank
+                                        to update the contact information change that the Bank may be informed of and hereby
+                                        authorizes the Bank to contact the Borrower at the updated contact details, by post,
+                                        phone, e-mail, SMS/text messaging.
+                                    </li>
+                                    <li class="list">
+                                        The Bank shall also be entitled to communicate in any manner it may deem fit, with the person/s
+                                        or persons whose name is given for reference by the Borrower, with a view to get assistance from
+                                        such person/s in recovering the Loan amount
+                                    </li>
+                                    <li class="list">
+                                        The Borrower hereby represent, warrant, and confirm that the purpose of this Facility is personal
+                                        consumption and also agree and undertake to utilize the Facility only for the above-mentioned purpose
+                                        and that the Facility shall not be used for any of the following purposes:<br />
+                                        <ul>
+                                            <li class="list">
+                                                Illegal & antisocial activity.
+                                            </li>
+                                            <li class="list">
+                                                Purchase of gold in any form including primary gold, gold bullion, gold jewellery,
+                                                gold coins, units of Gold Exchange Traded Funds (ETF) and units of gold Mutual
+                                                Funds.
+                                            </li>
+                                            <li class="list">
+                                                Speculative investment in real estate.
+                                            </li>
+                                            <li class="list">
+                                                Investment in securities, debentures or the stock markets.
+                                            </li>
+                                            <li class="list">
+                                                Money lending activities.
+                                            </li>
+                                            <li class="list">
+                                                Repayment towards any lending products of the Bank.
+                                            </li>
+                                            <li class="list">
+                                                Speculative activity not mentioned above; or
+                                            </li>
+                                            <li class="list">
+                                                Any other activities for which the Facility is not extended.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        the Borrower understands and confirms that if Aadhar OTP based EKYC non-face to face
+                                        KYC method has been used to create an account up to Rs. 60,000 with validity of 12 months
+                                        (or as per the prevailing RBI compliance around the same) here then the borrower has not
+                                        & will not use Aadhar OTP based EKYC non-face to face KYC method to open any other account
+                                        with any third party Regulated Entity (RE) as defined by RBI until and unless the KYC is
+                                        upgraded
+                                    </li>
+                                    <li class="list">
+                                        the Borrower has the power and authority to execute, deliver and perform this terms &
+                                        conditions and the same does not conflict with any Law, constitutional document,
+                                        any other documents to which the Borrower is a party.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower confirms that his/her Nationality is Indian. Any changes in the same the
+                                        Borrower will have to visit the Bank branch to update the same.
+                                    </li>
+                                    <li class="list">
+                                        all accounts and financial statements furnished by the Borrower to the Bank have been
+                                        prepared in accordance with accounting standards and practices in force in India and
+                                        present true and fair financial position of the Borrower.
+                                    </li>
+                                    <li class="list">
+                                        no event or circumstance is outstanding which constitutes a default under any other
+                                        agreement or instrument which is binding on the Borrower or its Affiliates or to which
+                                        its assets are subject, which might have a material adverse effect.
+                                    </li>
+                                    <li class="list">
+                                        All statutory dues and taxes have been paid (save and except as disclosed in writing to the Bank).
+                                    </li>
+                                    <li class="list">
+                                        the information furnished by the Borrower to Partner or the Bank in connection with or
+                                        for obtaining the Loan Amount/Facilities is true, complete, and correct and not misleading
+                                        in any material respect.
+                                    </li>
+                                    <li class="list">
+                                        neither the Borrower, nor any person acting on its behalf, has been engaged in (i)
+                                        corrupt practices, fraudulent practices, collusive practices or coercive practices in
+                                        connection with the Borrowers business and operations, (ii) money laundering or acted in
+                                        breach of any Laws relating to money laundering; or (iii) the financing of terrorism.
+                                    </li>
+                                    <li class="list">
+                                        the Borrower has not committed any breach under any agreement entered into with any
+                                        person for availing any finance facility and neither the Borrower are facing any
+                                        litigation initiated by another financier including banks.
+                                    </li>
+                                    <li class="list">
+                                        the Borrower agrees that the customer grievances around account updations, refunds and
+                                        loan closures will be responded by a designated authority of the bank within defined
+                                        timelines as per bank's policies
+                                    </li>
+                                    <li class="list">
+                                        the Borrower agrees that the loan will be reported in Bureau as a Personal Loan & note
+                                        that it generally takes up to 45-60 days for payment/closure/regularization etc. of the
+                                        facility, to reflect in the bureau.
+                                    </li>
+                                    <li class="list">
+                                        the Borrower hereby agree to abide and be bound by all applicable
+                                        rules/regulations/instruction/guidelines including but not limited to those issued by
+                                        the Reserve Bank of India including the FEMA Regulations 2000 governing EEFC Accounts,
+                                        the Foreign Exchange Management Act, 1999 and Foreign Account Tax Compliance Act, 2010
+                                        (to the extent applicable to India) and the Common Reporting Standards (CRS), in force
+                                        time to time. The Borrower confirms having declared his status as per the rules applicable
+                                        under section 285BA of the Income Tax Act, 1961 (the Act) as notified by Central
+                                        Board of Direct Taxes (CBDT) in this regard. The Borrower confirms that except to the extent
+                                        disclosed to the Bank, no director or a relative (as specified by RBI) of a director of a
+                                        banking company (as specified by RBI) or a relative of a senior officer of the Bank
+                                        (as specified by RBI) is - the applicant(s), or a partner, managing agent, manager, employee,
+                                        director of its concern, or of its subsidiary or its holding company, or a guarantor on
+                                        its behalf, or holds substantial interest in its concern or its subsidiary or holding company.
+                                        <br>
+                                        Country of birth <span class='fw-bold'>India</span> Place of birth <span class='fw-bold'>India</span>
+                                        Country of residence as per tax laws <span class='fw-bold'>India</span> Foreign TIN <span class='fw-bold'>NA</span>
+                                        TIN Issuing country <span class='fw-bold'>India</span>
+                                    </li>
+                                    <li class="list">
+                                        except to the extent disclosed to the Bank: (i) all the Borrower's contracts or
+                                        agreements with, or any commitments to, any affiliates or group companies
+                                        (if applicable) are on arm's length basis; (ii) he/she is not a director or
+                                        specified near relation of a director of a banking company; (iii) he/she is
+                                        not a specified near relation to any senior officer of the Bank.
+                                    </li>
+                                    <li class="list">
+                                        that neither the Borrower nor any other person benefiting in any capacity
+                                        in connection with or from this Agreement and/or any instruments and/or payments
+                                        thereunder is a Specially Designated National (SDN) and/or otherwise sanctioned,
+                                        under the sanctions promulgated/issued by India and/or any other country
+                                        from time to time (collectively, the "Sanctions"). This representation will continue
+                                        to remain valid till the repayment of all amounts under this Agreement and conclusion
+                                        of the underlying transaction pursuant to the Agreement.
+                                    </li>
+                                    <li class="list">
+                                        Agrees to visit the Bank branch for any changes in the information provided by the Borrower through the Partner App.
+                                    </li>
+                                    <li class="list">
+                                        There is no action, suit, proceeding or investigation pending to the knowledge of the Borrower before any court of
+                                        law or any competent authority which might have a material effect on the Borrower financials and/or might put into
+                                        question the validity, enforceability or performance of the Agreement.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower understands and confirms the disbursement of Loan by 'the Bank' shall be subject to compliance of KYC
+                                        documents within 90 days of Application. Notwithstanding anything stated elsewhere in the Application, Agreement
+                                        or otherwise, the Facilities mentioned overleaf will be available solely at the Bank's discretion and subject to
+                                        compliance of all formalities and documentation as may be specified / required by the Bank within the prescribed
+                                        time frame and in absence of the same entire process KYC and documentation must be done afresh.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower shall be liable to perform or fulfil its obligations at all point of time and shall not delay/postpone
+                                        performance, its obligations in whole or in part, even on the ground of any force majeure event such as acts of God,
+                                        floods, cyclones, earthquakes, fires, wars, riots, strikes, orders of governmental or other statutory authorities,
+                                        national emergency, or any other similar causes.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower has no objection for the disclosure by the Bank of all or any such:
+                                        <ol type='a' class='list-container'>
+                                            <li class="list">
+                                                Information, obligations and data relating to the Borrower, Loan, Agreement, Products/assets furnished by the
+                                                Borrower including other credit facility granted/to be granted by the Bank;
+                                            </li>
+                                            <li class="list">
+                                                Information, data relating to default, if any, committed by the Borrower in discharge of its obligations to the
+                                                Credit Information Company (“CIC") or agency authorized by the Reserve Bank of India. CIC and/ or other agency
+                                                so authorized may use and/or process the aforesaid information and data in any manner as deemed fit by them.
+                                                CIC and/or other agencies may furnish for consideration, the processed information and data or products thereof
+                                                prepared by them, to the Bank and other credit guarantors or registered users, as may be specified by RBI
+                                            </li>
+                                            <li class="list">
+                                                In the Event of Default, the Bank shall also be entitled to communicate in any manner it may deem fit, to or
+                                                with any person or persons including guarantors, person giving reference to loan, with a view to procure assistance
+                                                of such person or persons in recovering the defaulted amounts including but not limited to visiting the property
+                                                and/or any place of work of the Borrower.
+                                            </li>
+                                            <li class="list">
+                                                The Borrower agrees that the Bank may be required to disclose Borrower personal and financial information to the
+                                                statutory authorities in connection with any legal process that may be initiated by such authorities in accordance
+                                                with applicable laws.
+                                            </li>
+                                            <li class="list">
+                                                The Bank discourages the Borrower from sending or posting to the Bank's website any information that the Borrower
+                                                considers to be confidential or proprietary. Please note that if the Borrower does send or post any such information
+                                                or material, the Bank will assume that it is not confidential. By sending or posting any information or material, the
+                                                Borrower grant the Bank an unrestricted, irrevocable license to use, reproduce, display, perform, modify, transmit and
+                                                distribute those materials or information, and the Borrower agrees that the Bank is free to use any ideas, concepts,
+                                                know-how or techniques that the Borrower sends or post for any purpose on this website.
+                                            </li>
+                                            <li class="list">
+                                                The Borrower agrees that the Bank may also share Borrower information to provide Borrowers with superior services and
+                                                a range of offers. The Bank may use this information to advise Borrowers about products, services and other marketing
+                                                materials, which the Bank thinks may be of interest to Borrowers. The Bank further reserves the right to disclose the
+                                                information to any third party if the disclosure of the same is for getting any additional service, products which may
+                                                be beneficial to the Borrower, as per the sole assessment and discretion of the Bank.
+                                            </li>
+                                            <li class="list">
+                                                The Bank will limit the collection and use of Borrower information only on a need-to-know basis to deliver better
+                                                service to the Borrowers. The Bank may use and share the information provided by the Borrowers with its Affiliates
+                                                and third parties for providing services and any service- related activities such as collecting subscription fees
+                                                for such services and notifying or contacting the Borrowers regarding any problem with, or the expiration of, such
+                                                services. In this regard, it may be necessary to disclose the Borrower information to one or more agents and
+                                                contractors of the Bank and their sub-contractors, but such agents, contractors, and sub-contractors will be
+                                                required to agree to use the information obtained from the Bank only for the said purposes. The Borrower authorize
+                                                the Bank to exchange, share, part with all information related to the details and transaction history of the Borrower
+                                                to its Affiliates/ other banks/ financial institutions/ credit bureaus/ agencies/ participation in any telecommunication
+                                                or electronic clearing network as may be required by law, customary practice, credit reporting, statistical analysis
+                                                and credit scoring, verification or risk management or any of the aforesaid purposes and shall not hold the Bank
+                                                liable for use or disclosure of this information. The Bank values relationship with Borrower and will at all
+                                                times strive to ensure Borrower's privacy
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="list">
+                                        The Borrower undertakes and declare that if there are any changes in the particulars and information given by Borrower while
+                                        availing the Loan facility, Borrower shall within 30 days from the date of any such change in the particulars and information
+                                        shall disclose the details of such changes to the Bank without withholding the same.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower hereby declares that Borrower is not a Politically Exposed Person (PEP)
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                All representations and warranties of the Borrower contained herein shall survive the execution,
+                                delivery and/or termination of this Agreement and until the Facilities has been repaid in full.
+                            </li>
+                            <li class="list">
+                                The Borrower will be deemed to have renewed each of these representations and warranties every
+                                time it avails the Facilities under this Agreement.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>CONDITIONS PRECEDENT TO DISBURSEMENT</span><br><br>
+                        The Bank shall not be obliged to disburse the Loan Amount unless and until, the Borrower shall have
+                        complied with the disbursement conditions and/or such other conditions as may be stipulated by the
+                        Bank from time to time. Further, the Borrower undertakes that the Loan Amount availed from the Bank
+                        through the Partner App will not be used for any unlawful, illegal and anti-social activity or any
+                        other activity for which this facility is not extended.
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>COVENANTS AND UNDERTAKINGS OF THE BORROWER</span><br><br>
+                        The Borrower undertakes and covenants with Partner and/or the Bank, so long as the Facilities or any part
+                        thereof are outstanding, and until the full and final payment of all money owing hereunder as far as
+                        applicable to it, it shall:
+                        <ol type='a'>
+                            <li class="list">
+                                <span class="fw-bold">Positive Covenants:</span>
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        Notify Partner and the Bank of the occurrence of any event or the existence of any
+                                        circumstances which constitutes or results in any declarations, representations,
+                                        warranty, covenants or condition under this Agreement and/or the other agreement being
+                                        or becoming untrue or incorrect in any respect.
+                                    </li>
+                                    <li class="list">
+                                        Inform Partner and the Bank of any litigation, arbitration or other proceedings, which
+                                        have a Material Adverse Effect, within a period of two Business Days upon the same being
+                                        instituted or threatened by any person whatsoever.
+                                    </li>
+                                    <li class="list">
+                                        Inform Partner and the Bank about any proposed action by the Borrower or action taken by
+                                        any other person under any insolvency/bankruptcy laws against the Borrower.
+                                    </li>
+                                    <li class="list">
+                                        Perform, on request of Partner or the Bank and at the expense of the Borrower, such acts
+                                        as may be necessary to carry out the intent of this Agreement including but not limited to
+                                        executing and delivering such further agreements, undertaking, declarations, assurances and
+                                        writings.
+                                    </li>
+                                    <li class="list">
+                                        Promptly inform Partner and the Bank of any distress or other process of court being taken
+                                        against any of the Borrowers premises and/or property and/or assets.
+                                    </li>
+                                    <li class="list">
+                                        Notify Partner and the Bank of any material loss or damage which the Borrower may suffer
+                                        due to any event, circumstance, or act of God. Further, the Borrower agrees to intimate the
+                                        Bank from time to time, details of insurance claims lodged/ filed and received by the
+                                        Borrower.
+                                    </li>
+                                    <li class="list">
+                                        File all relevant tax returns and pay all its taxes/duties promptly when due.
+                                    </li>
+                                    <li class="list">
+                                        Comply with such other conditions as may be stipulated by the Bank from time to time
+                                        on account of requirement of any Law.
+                                    </li>
+                                    <li class="list">
+                                        If required by Partner or Bank at any time, submit to the Bank the information etc. as
+                                        envisaged under RBI circular No. DBOD.No.BP.BC.94 /08.12.001/2008-09 dated 8th December 2008,
+                                        as amended/replaced from time to time.
+                                    </li>
+                                    <li class="list">
+                                        If required by Partner or Bank at any time, submit to the Bank information regarding its
+                                        Un-hedged Foreign Currency Exposure (UFCE) in such form and manner and at such intervals
+                                        as may be required by the Bank from time to time.
+                                    </li>
+                                    <li class="list">
+                                        Ensure all its assets that are material to the conduct of its business are in good operating
+                                        condition, subject to ordinary wear and tear.
+                                    </li>
+                                    <li class="list">
+                                        Ensure that the transactions entered into pursuant to the Agreement do not violate any
+                                        Sanctions, directly or through persons or entities subject to any Sanctions, which may
+                                        pertain inter alia, to the purpose and/or end use of the Facility, goods manufactured in
+                                        or originated from/through certain countries, shipment from/to/using certain countries,
+                                        ports, vessels, liners and/or due to involvement of certain persons and entities.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                <span class="fw-bold">Negative Covenants:</span><br><br>
+                                The Borrower covenants and undertakes that, so long as the Facilities or any part thereof
+                                are outstanding, and until full and final payment of all moneys owing hereunder, the Borrower
+                                shall not, without the prior written consent of the Bank:
+
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        Contract, create, incur, assume or suffer to exist any indebtedness, except as
+                                        otherwise permitted under this Agreement or prepay any indebtedness;
+                                    </li>
+                                    <li class="list">
+                                        Make any investments whether by way of deposits, loans, or investments in share capital
+                                        or otherwise, in any concern. This provision shall not apply to loans and advances granted
+                                        in the ordinary course of business; and
+                                    </li>
+                                    <li class="list">
+                                        The Borrower shall not file any application for seeking immunity under any Law without
+                                        obtaining prior written consent of the Bank;
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>EVENTS OF DEFAULT AND CONSEQUENCES THEREOF</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The occurrence of any one or more of the following events shall constitute an “Event of Default”
+                                under this Agreement:
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        The Borrower fails to pay/repay any monies in respect of the Facilities on the due dates,
+                                        whether at stated maturity, by acceleration or otherwise;
+                                    </li>
+                                    <li class="list">
+                                        Breach of any statement, representation, warranty or confirmation or covenant made herein
+                                        or Borrowers proposal / application or in this Agreement or otherwise on the part of the
+                                        Borrower/third party;
+                                    </li>
+                                    <li class="list">
+                                        Any other event/material change which prejudicially alters the Banks interest or may
+                                        have Material Adverse Effect including but not limited to nationalization/expropriation
+                                        and/or compulsory acquisition of the Borrower and/or its assets by the authority of
+                                        government;
+                                    </li>
+                                    <li class="list">
+                                        The Borrower is in breach/default of any agreement with any person who has provided loans,
+                                        deposits, advances, guarantees or other financial facilities to the Borrower;
+                                    </li>
+                                    <li class="list">
+                                        Any steps taken by the Borrower under the insolvency or bankruptcy Law.
+                                    </li>
+                                    <li class="list">
+                                        Filing of petitions as against the Borrower under any bankruptcy or insolvency law or
+                                        if the Borrower has taken or suffered to be taken any action for its reorganization or
+                                        if a receiver has been appointed over all or any part of the assets of the Borrower.
+                                    </li>
+                                    <li class="list">
+                                        If any attachment or distress or restraint has been levied on the Borrower's assets or any
+                                        order/certificate has been passed for recovery of dues and such order or judgment is not
+                                        vacated, discharged or stayed for a period of 30 days, and such judgments or orders involve
+                                        in the aggregate a liability which could have a Material Adverse Effect;
+                                    </li>
+                                    <li class="list">
+                                        Any legal, quasi-legal, administrative, arbitration, mediation, conciliation or other
+                                        proceedings, claims, actions or governmental investigations of any nature pending against
+                                        the Borrower in management of the Borrower or any of its assets which individually or in
+                                        the aggregate would, if adversely determined, have a Material Adverse Effect.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower is unable or has admitted in writing its inability to pay any of its
+                                        indebtedness as they mature or when due.
+                                    </li>
+                                    <li class="list">
+                                        Any consent, authorization, approval or the like, or license of or registration with or
+                                        declaration to government or statutory or regulatory authority made by the Borrower for entering
+                                        into this Agreement and/or other Agreement is revoked or terminated and is not in full force and effect.
+                                    </li>
+                                    <li class="list">
+                                        The death, lunacy or other disability of the Borrower.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                Upon occurrence of an Event of Default, the Bank shall be entitled, by a notice, to:
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        declare the Facilities, together with accrued interest and other monies, to be immediately
+                                        due and payable and upon such declaration, the same shall become immediately payable by the
+                                        Borrower
+                                    </li>
+                                    <li class="list">
+                                        declare that all undisbursed portion of the Facilities shall stand cancelled, whereupon
+                                        the same shall be cancelled; and
+                                    </li>
+                                    <li class="list">
+                                        exercise any or all rights and recourses available under this Agreement and/or under
+                                        applicable Law
+                                    </li>
+                                    <li class="list">
+                                        Upon the occurrence of an Event of Default, the Borrower’s outstanding Loan shall forthwith
+                                        become payable to the Bank. The Bank may recall the Loan with additional charges. The Borrower
+                                        undertakes to forthwith surrender to the Bank/ its representatives/agencies, the Product or
+                                        any other product of such value as approved by the Bank. The Bank/its representatives/ agencies
+                                        shall be entitled to take possession and/or dispose the same and adjust the proceeds against
+                                        the total dues. If there is any deficit, the same shall be made good to the Bank by the Borrower.
+                                    </li>
+                                    <li class="list">
+                                        The Bank shall be entitled to take recourse to other legal remedies (civil and criminal) under
+                                        appropriate provisions of the laws.
+                                    </li>
+                                    <li class="list">
+                                        The Borrower shall be liable for payment of additional interest (if any) for delayed payment, all
+                                        legal and other costs and expenses incurred in the exercise of the Bank's remedies, including
+                                        repossession of the Product/ any asset and recovery of Loan amount.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>INDEMNITY</span><br /> <br />
+                        The Borrower hereby agrees to indemnify and keep fully indemnified and hold harmless and save Partner
+                        and/or the Bank against : (a) any claims, losses or damages, costs, charges and expenses including
+                        litigation expenses whatsoever which may be brought or made against or sustained or incurred by Partner
+                        and/or the Bank (and whether paid by Partner/ the Bank or not) or which Partner and/or the Bank may
+                        become liable under or in respect of this Agreement; (b) action or proceedings made or brought
+                        against Partner and/or the Bank; (c) any liability or loss incurred or suffered by it, or agents; (d)
+                        every payment made, obligation, liability, loss and damage, penalties, taxes, etc. whatsoever undertaken
+                        or incurred or suffered by Partner or the Bank (whether directly or indirectly) under or in connection
+                        with and/or arising under this Agreement; and/or (e) against any liability, loss, damages, costs and
+                        expenses (including legal expenses) awarded against or incurred or paid by Partner or the Bank as a result
+                        of or in connection with Partner acting as a facilitator of transactions and agent of the Bank and/or
+                        the Bank granting the Facilities as herein mentioned, without deducting tax in India whether or not such
+                        payment attracts withholding tax in India or requires due certification by a qualified accountant.
+                    </li>
+
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>DISCLOSURE</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Borrower agrees that in addition to any other rights enjoyed by the Bank, in the event
+                                of the Borrower committing any default, the Bank shall be entitled to disclose to the RBI or
+                                any other statutory or regulatory authority or to any other third person, the name/identity of
+                                the Borrower and/or its directors/partners/ trustees and the default committed. In case of default
+                                in payment of any of the indebtedness to the Bank, the Bank or the RBI will have an unqualified
+                                right  to  disclose  or  publish  the  name  of  the  Borrower  and/or  its
+                                directors/partners/trustees as defaulters (including as willful defaulters) in such manner and
+                                through such medium as the Bank and/or the RBI in their absolute discretion may deem fit.
+                                The Borrower further agrees that the Bank may, as it deems appropriate and necessary disclose and
+                                furnish to TransUnion CIBIL Limited (formerly known as Credit Information Bureau (India) Ltd
+                                ("CIBIL") and any other agency authorized in this behalf by RBI all or any of the following:
+
+
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        information and data relating to the Borrower;
+                                    </li>
+                                    <li class="list">
+                                        the information or data relating to the Facilities availed of/to be availed, by the Borrower; and
+                                    </li>
+                                    <li class="list">
+                                        the information and details of the default, if any, committed by the Borrower, in
+                                        discharge of the indebtedness.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                The Borrower agrees and undertakes that:
+                                <ol type='i' class='list-container'>
+                                    <li class="list">
+                                        CIBIL, CRIF, Experian, Equifax and any other agency so authorized may use, process the
+                                        said information and data disclosed by Partner and/or the Bank in the manner as deemed fit
+                                        by them; and
+                                    </li>
+                                    <li class="list">
+                                        CIBIL and any other agency so authorized may furnish for consideration, the
+                                        processed information and data or products thereof obtained by them, to banks/ financial
+                                        institutions and other credit grantors or registered users, as may be specified by the
+                                        RBI in this behalf.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="list">
+                                Partner and/or the Bank may at the risk and cost of the Borrower engage one or more
+                                person(s) to verify any facts or information furnished by, concerning or pertaining to the
+                                Borrower and/or in relation to this Agreement and/or to collect the indebtedness and may furnish
+                                to such person(s) documents, information, facts and figures as the Bank thinks fit and may delegate
+                                to such person(s) the right and authority to perform and execute all acts, deeds, matters and things
+                                connected therewith or incidental thereto as Partner and/or the Bank may think fit. The Bank shall be
+                                entitled to carry inspections at such intervals, as it may deem fit.
+                            </li>
+                            <li class="list">
+                                The Borrower hereby agrees and confirms that Partner and/or the Bank will have the right to
+                                disclose and share any personal information pertaining to the Borrower including, but not limited
+                                to, credit facility/ies, constitution, net worth, shareholding of the Borrower with (i) any other
+                                bank(s)/financial institution(s) in the form and manner prescribed by the RBI; (ii) any agent,
+                                contractor, third party service provider or professional adviser (wherever situated) of the Bank,
+                                for its business purpose, web analytics, data processing, advertising, e-mail distribution,
+                                payment processing, order fulfilment, and other services. ; (iii) any person to (or through)
+                                whom the Bank assigns or transfers or novates (or may potentially assign or transfer or novate)
+                                all or any of its rights or obligations under this Agreement or any other Agreement; (iv) any
+                                person to whom the Bank is required to make disclosure under the requirements of any law,
+                                regulation, guidelines (whether SEBI, RBI etc.) or practice.
+                            </li>
+                        </ol>
+                    </li>
+
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>SET-OFF</span><br /> <br />
+                        In the event of an Event of Default, the Bank may apply all sum(s) from time to time standing to the
+                        credit of any account, whether held singly or jointly, in the name of the Borrower or any other account,
+                        of which the Borrower is the beneficial owner maintained with the Bank, irrespective of the title or
+                        the currency of such account, towards satisfaction of any amount due as well as outstanding under the
+                        Facilities and sign all such documents as may be required to effect such application and the Bank shall
+                        have a paramount right of lien & set off on all securities, documents, title deeds of properties etc.
+                        of the Borrower and all monies which may now or hereafter be payable by the Bank to the Borrower for any
+                        reason or purpose whatsoever. The Bank may at any time and without notice to the Borrower combine or
+                        consolidate all or any of the accounts held in the Borrower’s name or any other account of which the
+                        Borrower is the (sole) beneficial owner with any branch or of the Bank irrespective of the title or the
+                        currency of such account.
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>WAIVER</span><br /> <br />
+                        No delay in exercising or omission to exercise any right, power or remedy accruing to the Bank upon any
+                        default or otherwise under this Agreement or the other Agreement shall impair any such right, power
+                        or remedy or shall be construed to be a waiver thereof or any acquiescence in such default, nor
+                        shall the action or inaction of the Bank in respect of any default or any acquiescence by it in
+                        any default, affect or impair any right, power or remedy of the Bank in respect of any other default.
+                        The rights of Partner and/or the Bank under this Agreement and the other Agreement may be exercised
+                        as often as necessary, are cumulative and not exclusive of their rights under the general law and may
+                        be waived only in writing and specifically and at Partner and/or the Bank’s sole discretion.
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>APPOINTMENT OF THIRD PARTIES BY THE BANK</span>
+                        <ol type='a'>
+                            <li class="list">
+                                The Borrower hereby agrees, aware and accepts that for the better and more effectual doing
+                                and performing of actions related to the Facility, the Bank has appointed Partner as its
+                                "Facility Agent" to do, execute and perform all or such acts or things as the Bank may assign,
+                                authorize or delegate it from time to time.
+                            </li>
+                            <li class="list">
+                                The Borrower accepts that Partner and/or the Bank shall without prejudice to its right to
+                                perform the activities itself or through its officers or employees or other authorized agents,
+                                be entitled, and have full power and authority, to appoint one or more third parties and delegate
+                                to such third party all or any of its functions, rights and powers under this Agreement relating
+                                to the administration of the Loan including the right to collect and receive on behalf of the Bank
+                                all the dues under this Agreement and give valid and effectual receipts and discharge to the
+                                Borrower and to perform and execute all lawful acts, deeds, matters and things connected
+                                herewith or incidental hereto. For the purpose aforesaid or any other purpose which Partner
+                                and/or the Bank at the sole discretion may deem fit, Partner and/or the Bank shall be entitled
+                                to disclose to such third parties all necessary and relevant information pertaining to the Borrower.
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class='sec-desc'>
+                        <span class='fw-bold'>MISCELLANEOUS</span>
+                        <ol type='a'>
+                            <li class="list">
+                                All notices, requests, demands, waivers or other communications under or in connection with this
+                                Agreement shall be given in writing. Any such notice or other communication will be deemed to have
+                                been duly given and being received if: (a) if by personal delivery on the day after such delivery,
+                                (b) if by registered mail, on the third Business Day after the mailing thereof, (c) if by next-day
+                                or overnight mail/courier or delivery, on the day delivered, (d) if sent by email/facsimile,
+                                when sent (on receipt of a confirmation to the correct facsimile number). Provided, however,
+                                that no notice or communication to Partner and/or the Bank shall  be  effective  unless  actually
+                                received  by  Partner  and/or  the  Bank.  Notices  or communication may be made to: (i) the Borrower’s
+                                address or facsimile number or e-mail id,  and  (ii)  Partner’s  and the  Bank’s  address  or
+                                facsimile  number specified  in Key Fact Sheet hereof, or to such other address or facsimile number as may
+                                be designated by the Borrower and Partner and/or the Bank in writing to each other.
+                            </li>
+                            <li class="list">
+                                The Parties agree that this Agreement shall be governed by the laws of India. The Borrower hereby expressly
+                                agrees that all disputes arising out of and/or relating to this Agreement including any transaction document which is:
+                            </li>
+                            <li class="list">
+                                Below the pecuniary jurisdiction limit of the Debt Recovery Tribunals established under Recovery of Debts Due to
+                                Banks and Financial Institutions Act, 1993 (51 of 1993), then such dispute shall be referred to arbitration in
+                                accordance with the provisions of the Arbitration and Conciliation Act, 1996 as may be amended, or its re-enactment,
+                                by a sole arbitrator, appointed by the Bank. The arbitration proceeding shall be conducted in the English language.
+                                The award passed by the arbitrator shall be final and binding on the Parties. The costs of such arbitration shall
+                                be borne by the losing Party or otherwise as determined in the arbitration award. The arbitration proceedings shall
+                                be held either in Delhi/ Mumbai/ Chennai/ Kolkata and/or such other place as may be notified at the sole discretion
+                                of the Bank.
+                            </li>
+                            <li class="list">
+                                Above the pecuniary jurisdiction limit of the Debt Recovery Tribunals established under Recovery of Debts Due to Banks
+                                and Financial Institutions Act, 1993 (51 of 1993), then such dispute shall be referred at the sole discretion of the Bank to:
+                            </li>
+                            <li class="list">
+                                The exclusive jurisdiction of the courts/tribunals of the city in which the Branch/Bank Outlet of the Bank is situated.
+                                Provided that to the extent allowed by law, the Bank shall be entitled to take proceedings relating to a dispute in any
+                                court/tribunal of any place with jurisdiction. Or
+                            </li>
+                            <li class="list">
+                                To arbitration in accordance with the provisions of the Arbitration and Conciliation Act, 1996 as may be amended, or
+                                its re-enactment, by a sole arbitrator, appointed by the Bank. The arbitration proceeding shall be conducted in the English
+                                language. The award passed by the arbitrator shall be final and binding on the Parties. The costs of such arbitration
+                                shall be borne by the losing Party or otherwise as determined in the arbitration award. The arbitration proceedings
+                                shall be held at Delhi/ Mumbai/ Chennai/ Kolkata and/or such other place as may be notified at the sole discretion
+                                of the Bank.
+                            </li>
+                            <li class="list">
+                                Except to the extent disclosed to the Bank: (i) all the Borrower's contracts or agreements with, or any commitments to,
+                                any affiliates or group companies (if applicable) are on arms’ length basis; (ii) (a) where the Borrower is an individual,
+                                he/ she is not a director or specified near relation of a director of a banking company; (b) where the Borrower is a
+                                partnership firm/HUF/limited liability partnership firm, none of the partners or members of the HUF is a director or
+                                specified near relation of a director of a banking company; and (c) where the Borrower is a joint stock company,
+                                none of its directors, is a director or specified near relation of a director of a banking company; iii) (a) where the
+                                Borrower is an individual, that he/ she is not a specified near relation to any senior officer of the Bank, (b) where the
+                                Borrower is a partnership firm/HUF/ limited liability partnership firm, none of the partners or members of the HUF,
+                                is a specified near relation of any senior officer of the Bank, and (c) where the Borrower is a joint stock company,
+                                none of its directors, is a specified near relation of any senior officer of the Bank. The Borrower agrees that the
+                                Bank has an unconditional right to revoke and/or recall the entire loan facility if the disclosure as mentioned in
+                                this clause is found to be false.
+                            </li>
+                            <li class="list">
+                                The entries made in the accounts / account books / records of the Bank maintained in
+                                accordance with its usual practice and in compliance with the statutory requirements and/or
+                                a statement signed by a designated officer of the Bank, shall be final and binding on the Borrower.
+                                Such entries and/or statement shall be prima-facie and conclusive evidence of the existence and
+                                amount of obligations of the Borrower as therein recorded in respect of the Facilities.
+                            </li>
+                            <li class="list">
+                                Subject to the provisions of the Recovery of Debts Due to Banks and Financial Institutions Act,
+                                1993, the Courts/Tribunals in the city where the branch of the Bank is situated shall have
+                                exclusive jurisdiction in relation to this Agreement and all matters arising in connection herewith.
+                                Provided that nothing contained in this Section, shall limit the right of the Bank to take
+                                proceedings in any other Court or Tribunal of competent jurisdiction, nor shall the taking of
+                                proceedings in one or more jurisdictions preclude the taking of proceedings in any other
+                                jurisdiction, whether concurrently or not and the Borrower irrevocably submits to and accepts
+                                for themselves and in respect of their property, generally and unconditionally, the jurisdiction
+                                of such court or tribunal, and the Borrower irrevocably waives any objection it may have now or
+                                in the future to the laying of the venue of any proceedings and any claim that any such proceedings
+                                have been brought in an inconvenient forum.
+
+                            </li>
+                            <li class="list">
+                                The Borrower shall not assign or transfer or novate all or any of its rights, benefits or
+                                obligations under this Agreement and the other Agreement without the approval of the Bank.
+                                The Bank may, at any time, sell, assign or transfer or novate or allow risk participation all
+                                or any of its rights, benefits and obligations under this Agreement and the other Agreement to
+                                any person(s) of the Bank's choice in whole or in part and in such manner and on such terms as
+                                the Bank may decide without any reference to the Borrower. In case the Bank assigns a part of
+                                the disbursed Facility to any person without the consent of the Borrower, such disbursed portion
+                                which has been assigned would constitute a separate and distinct loan and the Borrower shall not
+                                raise any objection or defense under Law, including any objection in terms of Order 2 Rule 2 of
+                                Code of Civil Procedure, 1908 or otherwise. The Borrower shall, unless otherwise notified by
+                                the Bank, continue to make all payments under this Agreement to the Bank and all such payments
+                                when made to the Bank shall constitute a full discharge to the Borrower from all its
+                                liabilities in respect of such payments.
+                            </li>
+                            <li class="list">
+                                Any provision of this Agreement, which is prohibited or unenforceable in any jurisdiction shall,
+                                as to such jurisdiction, be ineffective to the extent of prohibition or unenforceability but
+                                that shall not invalidate the remaining provisions of this Agreement or affect such provision in
+                                any other jurisdiction.
+                            </li>
+                            <li class="list">
+                                The Borrower hereby agrees and confirms that in case any other person providing any financial
+                                assistance to the Borrower imposes any conditions not included herein, or in case any of the
+                                terms offered by the Borrower to such person is more favourable to such person than the terms
+                                stipulated by, or offered to, the Bank, the Borrower shall promptly inform the Bank of such
+                                terms or conditions and such of those terms and conditions as may be considered necessary by the
+                                Bank, in its discretion, shall apply to the Facilities as if the Borrower had specifically agreed
+                                to such terms and conditions, which terms and conditions shall be deemed to have been expressly
+                                incorporated herein.
+                            </li>
+                            <li class="list">
+                                The Facility, this document/other documents, shall be governed by the laws of India. The Borrower
+                                hereto expressly agree that all disputes, differences and/or claim arising out of these presents
+                                including any dispute as to any amount outstanding, or in any way touching or concerning the same
+                                or as to constructions, meaning or effect hereof or as to the right and liabilities of the parties
+                                hereunder may be referred to Arbitration by Bank at its sole discretion, to be held in accordance
+                                with the provisions of the Arbitration and Conciliation Act, 1996 or any statutory amendments
+                                thereof and shall be referred to the arbitration of a sole arbitrator to be nominated by the Bank.
+                                In the event of death, refusal, neglect, inability or incapability of a person so appointed to act
+                                as an arbitrator, the Bank may appoint a new arbitrator. The award of the arbitrator shall be final
+                                and binding on all parties concerned. The arbitration shall be final and binding on all parties
+                                concerned. The arbitration proceedings shall be held at Mumbai or at the discretion of the Bank
+                                and the arbitration shall be conducted in English language.
+                            </li>
+                            <li class="list">
+                                The Borrower is aware that this document is an electronic record in terms of Information Technology
+                                Act, 2000 and rules there under as applicable to electronic records in various statutes as amended
+                                by the Information Technology Act, 2000. This electronic record is generated by a computer system
+                                and does not require any physical signatures.
+                            </li>
+                            <li class="list">
+                                The Borrower is aware that by clicking on the tab/ button/ checkbox of "I Accept" or
+                                any other button/ checkbox of similar nature: (i) Borrower confirms that borrower(s) are eligible
+                                under applicable law to avail the Facility, (ii) Borrower consents to avail and use the Facility as
+                                per the terms and conditions of this Agreement; and (iii) Borrower consents to receive communications,
+                                notices and information from the Bank and its business partners, service providers, authorized
+                                third parties etc.(whether through SMS, WhatsApp, emails, phone calls, automated phone calls or by any other means).
+                            </li>
+                            <li class="list">
+                                Electronic communications shall be deemed to have been received by the Borrower when we send
+                                the electronic communication to the email address / mobile number / details provided by Borrower
+                                or any other third party. Borrower undertakes that he/she will not hold Bank or Banks business
+                                partners/ service providers/ authorized third parties responsible for any such communications
+                                received from the Bank/ its business partners/ service providers/ authorized third parties, nor
+                                will any such communication amount to spam, unsolicited communication, or a violation of Borrower(s)
+                                registration on the national do not call registry.
+                            </li>
+                            <li class="list">
+                                The Borrower understands, acknowledge, and agrees that the Facilities are uncommitted facilities, are
+                                recallable by IDFC Bank on demand and may be cancelled and repudiated in part or in entirely by IDFC Bank at
+                                any time without notice and without giving any reason. Sanction or part disbursal of the facility should not
+                                be construed as giving rise to binding obligation on the part of IDFC FIRST Bank to provide the facility
+                                mentioned aforesaid. The Facility mentioned aforesaid will be available solely at IDFC FIRST Bank's
+                                discretion and IDFC FIRST Bank will not be liable for any action taken by the borrower on the basis of
+                                this sanctioned facility.
+                            </li>
+                            <li class="list">
+                                The Borrower shall have the right to request for revocation of any consents provided to collect any personal data
+                                as a part of the loan application process to either Partner or the Bank with the confirmation from the respective
+                                party on deletion of the said customer data
+                            </li>
+                        </ol>
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+        </div>
+    </script>
+
+    <script id="loan-aggrement-content-template" type="x-tmpl-mustache">
+        <div class="main new-page">
+            <div>
+                <h3 class="text-center"> KEY FACT STATEMENT </h3>
+                <table class="border-table">
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Parameter</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>(i)</td>
+                        <td>Date and Place of Execution of the Agreement</td>
+                        <td>{{ data.place }} and {{ data.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>(ii)</td>
+                        <td>Borrower(s) Details:</td>
+                        <td>{{data.borrowerName}}, {{data.borrowerPhoneNumber}} and {{ data.borrowerAddress }}</td>
+                    </tr>
+                    <tr>
+                        <td>(iii)</td>
+                        <td>Bank's Details: Name and Registered Address</td>
+                        <td>IDFC FIRST Bank Ltd.<br />
+                            KRM Tower, 7th Floor, No. 1, Harrington Road, Chetpet,<br />
+                            Chennai - 600031</td>
+                    </tr>
+                    <tr>
+                        <td>(iv)</td>
+                        <td>Sanctioned Limit (in Rupees)</td>
+                        <td>{{data.sactionedLimit}}</td>
+                    </tr>
+                    <tr>
+                        <td>(v)</td>
+                        <td>Facility Amount (in Rupees)</td>
+                        <td>{{data.facilityAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td>(vi)</td>
+                        <td>Loan Amount (in Rupees)</td>
+                        <td>{{data.loanAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td>(vii)</td>
+                        <td>Total interest charge during the entire tenor of loan (in Rupees)</td>
+                        <td>{{data.totalInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td>(viii)</td>
+                        <td>Processing fees, if any (in Rupees)</td>
+                        <td>{{data.processingFees}}</td>
+                    </tr>
+                    <tr>
+                        <td>(ix)</td>
+                        <td>Net disbursed amount (in Rupees)</td>
+                        <td>{{data.netDisbursedAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td>(x)</td>
+                        <td>Total amount to be paid by borrower</td>
+                        <td>{{data.amountPaidByBorrower}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xi)</td>
+                        <td>Applicable Rate of Interest</td>
+                        <td>{{data.rateOfInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xii)</td>
+                        <td>Annual Percentage Rate - Effective annulaized interest rate (in percentage)
+                            (computed on net disbursed amount using IRR approach and reducing method)</td>
+                        <td>{{data.annualPercentageRate}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xiii)</td>
+                        <td>Tenor of Loan (in months/days)</td>
+                        <td>{{data.tenorOfLoan}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xiv)</td>
+                        <td>Repayment frequency of the borrower</td>
+                        <td>{{data.repaymentFrequency}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xv)</td>
+                        <td>Number of instalments of repayment</td>
+                        <td>{{data.noOfInstallment}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xvi)</td>
+                        <td>Amount of each instalments of repayment (in Rupees)</td>
+                        <td>{{data.amtOfEachInstallment}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xvii)</td>
+                        <td>EMI Start Date</td>
+                        <td>{{data.emiStartDate}}</td>
+                    </tr>
+                    <tr>
+                        <td>(xviii)</td>
+                        <td>Activation Fee (in Rupees)</td>
+                        <td>{{data.activationFees}}</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Details about contingent charges</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(i)</td>
+                        <td>Bounce Charge</td>
+                        <td>{{data.bounceCharge}}</td>
+                    </tr>
+                    <tr>
+                        <td>(ii)</td>
+                        <td>Late Payment Charge</td>
+                        <td>{{data.latePaymentCharge}}</td>
+                    </tr>
+                    <tr>
+                        <td>(iii)</td>
+                        <td>Foreclosure Charge</td>
+                        <td>{{data.foreclosureCharge}}</td>
+                    </tr>
+                    <tr>
+                        <td>(iv)</td>
+                        <td>Overdue Charges</td>
+                        <td>{{data.overdueCharges}}</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Other disclosures</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(i)</td>
+                        <td>Cooling off/look-up period during which borrower shall not be charged any penalty on prepayment of loan</td>
+                        <td>{{data.cooloffPeriod}}</td>
+                    </tr>
+                    <tr>
+                        <td>(ii)</td>
+                        <td>Details of LSP acting as recovery agent and authorized to approach the borrower</td>
+                        <td>Epifi Technologies Pvt. Ltd</td>
+                    </tr>
+                    <tr>
+                        <td>(iii)</td>
+                        <td>
+                            Name, designation, address and phone number of nodal grievance redressal officer
+                        </td>
+                        <td>
+                            Bank:<br/>
+                            Name: Mr. Vipul Raj<br/>
+                            Designation: PNO<br/>
+                            Email ID: nodaldesk@idfcfirstbank.com /pno@idfcfirstbank.com<br/>
+                            Contact: 022-41652700 / 1800-209-9771<br/>
+                            Address: IDFC FIRST Bank Ltd. Building No.2, Raheja Mindspace, MIDC Industrial Area, Shiravane,Juinagar, Nerul, Navi Mumbai 400706, Maharashtra, India<br/>
+                            Privacy Policy: https://www.idfcfirstbank.com/privacy-policy<br/>
+                            Recovery Agencies: https://idfcfr.in/yz85n6<br/>
+                             
+                            Partner:<br/>
+                            Name: Mr. Saurabh S.<br/>
+                            Email ID: grievanceofficer@ficare<br/>
+                            Contact: 080-47485490<br/>
+                            Address: EPIFI TECHNOLOGIES PRIVATE LIMITED, 6TH FLOOR, PLOT NO.9, Salarpuria Sattva Knowledge Court, SURVERY NO.77, Doddanakundi, Bengaluru, Bengaluru Urban, Karnataka, 560048<br/>
+                            Priacy Policy: https://fi.money/privacy<br/>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </script>
+
+
+    <script id="installment-content-template" type="x-tmpl-mustache">
+        <div class="main">
+            <div class="center">
+                <table class="border-table">
+                    <tr>
+                        <th>Instalment Number</th>
+                        <th>EMI Due Date</th>
+                        <th>Outstanding Principal ( in Rupees )</th>
+                        <th>Principal( in Rupees )</th>
+                        <th>Interest( in Rupees )</th>
+                        <th>Installment( in Rupees )</th>
+                    </tr>
+
+
+                    {{#data}}
+                        <tr>
+                            <td>{{instalmentNumber}}</td>
+                            <td>{{emiDueDate}}</td>
+                            <td>{{outstandingPrincipal}}</td>
+                            <td>{{principal}}</td>
+                            <td>{{interest}}</td>
+                            <td>{{installment}}</td>
+                        </tr>
+
+                    {{/data}}
+                </table>
+            </div>
+        </div>
+    </script>
+
+
+    <!-- import mustache.js library -->
+    <script 
+        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

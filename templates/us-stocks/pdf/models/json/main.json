@@ -1,0 +1,49 @@
+{
+    "ADCode": "Sample AD Code",
+    "BRCode": "Sample BR Code",
+    "SolId": "S0001",
+    "DealId": "AABBCDDEFG",
+    "FxRate": "82.23",
+    "FCY": "USD",
+    "Amount": "8223",
+    "CustomerName": "Sample User Name",
+    "ADBranchName": "FEDERAL BANK, KOCHI",
+    "Currency": "USD",
+    "CurrencyAmountInUSD": "100",
+    "ExchangeRate": "82.23",
+    "CurrencyAmountINR": "8223",
+    "ApplicantNameAndAddress": "SAMPLE USER, 71, Vasundhara Sector -15 Ghaziabad, Vasundhra, Ghaziabad, UP, IN. 201012",
+    "CustomerId": "FEDE01012345678",
+    "PanId": "AABBC1122D",
+    "SavingsBankAccountNumber": "123456789123456",
+    "BeneficiaryName": "Alpaca Securities LLC",
+    "BeneficiaryAddress": "Alpaca Securities LLC, 3 East Third Ave, Suite 233, San Mateo, CA 94401, USA",
+    "BeneficiaryAccountNumber": "1636877",
+    "BeneficiaryBankAndBranch": "BMO Harris Bank NA, BMO Harris Bank\n111. W. Monroe Street\nChicago, IL 60603, USA",
+    "BeneficiarySwiftCode": "HATRUS44",
+    "RoutingNumber": "071000288",
+    "IntermediaryBankAndBranch": "FEDERAL BANK, KOCHI",
+    "IntermediaryBankSwiftCode": "HATAME44",
+    "AdditionalRemittanceInformation": "TXNID11223344557676",
+    "SrNo": "1",
+    "WhetherLrs": "YES",
+    "PurposeCode": "S0001",
+    "Description": "Indian portfolio investment abroad - Equity shares",
+    "DeclarationDetail": [
+      {
+        "DeclarationSerialNumber": "1",
+        "DeclarationDate": "13-11-2022",
+        "DeclarationAmount": "100.26",
+        "DeclarationNameAndAddressOfADBranch": "FEDERAL BANK, KOCHI"
+      },
+      {
+        "DeclarationSerialNumber": "2",
+        "DeclarationDate": "14-11-2022",
+        "DeclarationAmount": "400000.88",
+        "DeclarationNameAndAddressOfADBranch": "FEDERAL BANK, KOCHI"
+      }
+    ],
+    "SignatureOfApplicant": "SAMPLE USER SIGNATURE",
+    "DateOfSigningDeclaration": "15-11-2022",
+    "FinancialYear": "17-11-2022"
+}

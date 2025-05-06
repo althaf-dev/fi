@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /FAQs/about-fi/general-info/what%E2%80%99s-the-interest-rate-on-my-savings-account
+Disallow: /FAQs/referrals/referee-rewards/if-i-used-a-friend%E2%80%99s-fi.nite-code-to-sign-up,-what-reward-would-i-get
+Disallow: /app-redirect
+
+Sitemap: https://fi.money/sitemap.xml
+Host: https://fi.money/

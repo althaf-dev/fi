@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Fi - About the team and the financial app of the future",
+    "metaDescription": "Learn about how ex-Google Pay executives are arriving at the future of banking services with a digital-first platform where safety and security are the priority",
+    "canonicalUrl": "/about",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "about",
+                "item": "https://fi.money/about"
+            }
+        ]
+    }
+}

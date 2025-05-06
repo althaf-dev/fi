@@ -1,0 +1,40 @@
+const API_URL = '/api/v1';
+const MIN_KYC_CLOSED_ACCOUNT_URL = `${API_URL}/min-kyc-closed-account`;
+const CREDIT_CARD_ELIGIBILITY_URL = `${API_URL}/eligibility`;
+const CREDIT_CARD_BASE_URL = `${CREDIT_CARD_ELIGIBILITY_URL}`;
+const META_INFO_URL = `${API_URL}/meta-info`;
+const CONSUL_URL = `${API_URL}/consul`;
+const TRAVEL_BUDGET_URL = `${API_URL}/travel`;
+
+/* us stocks api routes */
+const US_STOCKS_ROOT = `${API_URL}/us-stocks`;
+const USS_DETAILS_ENDPOINT = `${US_STOCKS_ROOT}/stocks-details`;
+const USS_COLLECTIONS_ENDPOINT = `${US_STOCKS_ROOT}/collections`;
+const USS_SYMBOL_HISTORICAL_PRICES_ENDPOINT = `${US_STOCKS_ROOT}/symbol-historical-prices`;
+const USS_SYMBOL_UPDATES_ENDPOINT = `${US_STOCKS_ROOT}/symbol-updates`;
+const USS_SYMBOL_DECISION_FACTORS_ENDPOINT = `${US_STOCKS_ROOT}/symbol-decision-factors`;
+const USS_SYMBOL_VALIDATION_ENDPOINT = `${US_STOCKS_ROOT}/symbol-validation`;
+const TRAVEL_DESTINATIONS_URL = `${TRAVEL_BUDGET_URL}/destinations`;
+const TRAVEL_BUDGET_CALCULATOR_URL = `${TRAVEL_BUDGET_URL}/budget-calculator`;
+const FOREX_CALCULATOR_URL = `${TRAVEL_BUDGET_URL}/forex-exchange-rate`;
+const FAQ_CATEGORIES_URL = `${API_URL}/faq/categories`;
+const FAQ_FOLDER_URL = `${API_URL}/faq/category-details`;
+
+export {
+    API_URL,
+    META_INFO_URL,
+    MIN_KYC_CLOSED_ACCOUNT_URL,
+    CREDIT_CARD_BASE_URL,
+    CONSUL_URL,
+    USS_DETAILS_ENDPOINT,
+    USS_COLLECTIONS_ENDPOINT,
+    USS_SYMBOL_HISTORICAL_PRICES_ENDPOINT,
+    USS_SYMBOL_UPDATES_ENDPOINT,
+    USS_SYMBOL_DECISION_FACTORS_ENDPOINT,
+    USS_SYMBOL_VALIDATION_ENDPOINT,
+    TRAVEL_DESTINATIONS_URL,
+    TRAVEL_BUDGET_CALCULATOR_URL,
+    FOREX_CALCULATOR_URL,
+    FAQ_CATEGORIES_URL,
+    FAQ_FOLDER_URL
+};

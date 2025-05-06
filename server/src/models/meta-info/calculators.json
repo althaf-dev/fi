@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Free Fi.money Financial Planning Calculators | Calculate Your Investment, Savings & Future Plan",
+    "metaDescription": "Get free online financial planning calculators for different investment methods. Use our calculators and identify your saving capacity, plan your future better and achieve your life goals with us.",
+    "canonicalUrl": "/calculators",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Calculators",
+                "item": "https://fi.money/calculators"
+            }
+        ]
+    }
+}

@@ -1,0 +1,335 @@
+/*
+* @file styles.css
+* 
+* This file contains styles specific to A2 Form
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+div,
+span {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.page-outer-cr {
+    max-width: 840px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.page-cr {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.heading-title {
+    font-weight: bold;
+}
+
+.h-1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.underscore {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    /* display: flex; */
+    text-decoration: underline;
+    text-underline-offset: 0.29rem;
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+    min-height: 1.2rem;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    padding-bottom: 1px;
+}
+
+.fill-blank {
+    width: 100%;
+    /* height: 100%; */
+    min-height: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+}
+
+.multiline-input {
+    border: none;
+    display: inline;
+    border-bottom: 1px solid black;
+    resize: vertical;
+    width: 100%;
+}
+  
+
+.outer-underscore {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.second-span {
+    display: inline;
+    border-bottom: 1px solid black;
+    min-width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.table-head-red {
+    font-weight: 500;
+    background-color: #F2DBDA;
+}
+
+.annex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h-6 {
+    font-size: 12px;
+}
+
+.footer {
+    border-top: 1px solid grey;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.ptr-10 {
+    padding-top: 10px;
+}
+
+.issue-draft-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+.mw-35 {
+    min-width: 35%;
+}
+
+.dot-underline {
+    border-bottom: 1px dashed black;
+    margin-bottom: 1px;
+}
+
+.normal-a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 
+* Need to add rem to all the pixel places and then change the html's font size to update 
+* font-sizes which are changing by some multiple.
+*/
+
+/* medium screens */
+@media screen and (max-width: 600px) {
+    div, span, th, td {
+        font-size: 10px;
+    }
+    .h-1 {
+        font-size: 11px;
+    }
+    .h-6 {
+        font-size: 6px;
+    }
+    .page-outer-cr {
+        padding: 20px;
+    }
+    .normal-a {
+        font-size: 10px;
+    }
+    .underscore {
+        min-height: 0.9rem;
+        text-underline-offset: 0.24rem;
+    }
+    .fill-blank {
+        min-height: 0.9rem;
+    }
+}
+
+/* small screens */
+@media screen and (max-width: 350px) {
+    div, span, th, td {
+        font-size: 5px;
+    }
+    .h-1 {
+        font-size: 6px;
+    }
+    .h-6 {
+        font-size: 3px;
+    }
+    .page-outer-cr {
+        padding: 20px;
+    }
+    .normal-a {
+        font-size: 5px;
+    }
+    .underscore {
+        min-height: 0.2rem;
+        text-underline-offset: 0.14rem;
+    }
+    .fill-blank {
+        min-height: 0.2rem;
+    }
+}
+
+/* safari (6.1 to 10.0) */
+/* 
+*  added separate style for safari to align borderBottom and textUnderline in 
+*  the same line so that user do not differentiate between the two.
+*  the required design wants underlined content till the end of the line with or without content in it.
+*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    /* large screens */
+    .underscore {
+        text-underline-offset: 0.25rem;
+    }
+
+    /* medium screens */
+    @media screen and (max-width: 600px) {
+        .underscore {
+            text-underline-offset: 0.20rem;
+        }
+    }
+
+    /* small screens */
+    @media screen and (max-width: 350px) {
+        .underscore {
+            text-underline-offset: 0.14rem;
+        }
+    }
+}
+
+/* safari (10.1+) */
+/* 
+*  added separate style for safari to align borderBottom and textUnderline in 
+*  the same line so that user do not differentiate between the two.
+*  the required design wants underlined content till the end of the line with or without content in it.
+*/
+@media not all and (-webkit-min-device-pixel-ratio:0), not all and (-o-min-device-pixel-ratio:0/1), not all and (min-resolution:.001dpcm) { 
+    /* large screens */
+    .underscore {
+        text-underline-offset: 0.25rem;
+    }
+
+    /* medium screens */
+    @media screen and (max-width: 600px) {
+        .underscore {
+            text-underline-offset: 0.20rem;
+        }
+    }
+
+    /* small screens */
+    @media screen and (max-width: 350px) {
+        .underscore {
+            text-underline-offset: 0.12rem;
+        }
+    }
+}
+
+/* firefox devices */
+/* 
+*  added separate style for firefox to align borderBottom and textUnderline in 
+*  the same line so that user do not differentiate between the two.
+*  the required design wants underlined content till the end of the line with or without content in it.
+*/
+@-moz-document url-prefix() {
+    /* normal screens */
+    .underscore {
+        text-underline-offset: 0.22rem;
+        min-height: 0.3rem;
+        padding-bottom: 0px;
+    }
+    .fill-blank {
+        min-height: 0.3rem;
+    }
+
+    /* medium screens */
+    @media screen and (max-width: 600px) {
+        .underscore {
+            text-underline-offset: 0.18rem;
+            min-height: 0.5rem;
+            padding-bottom: 0px;
+        }
+        .fill-blank {
+            min-height: 0.5rem;
+        }
+    }
+
+    /* small screens */
+    @media screen and (max-width: 350px) {
+        .underscore {
+            text-underline-offset: 0.10rem;
+            min-height: 0.3rem;
+            padding-bottom: 0px;
+        }
+        .fill-blank {
+            min-height: 0.3rem;
+        }
+    }
+}  
+  

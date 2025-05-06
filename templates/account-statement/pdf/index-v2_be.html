@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epifi - Credit Card Statement</title>
+    <!-- <link rel="stylesheet" href="./stylesheets/index_v5.css"> -->
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css"
+        rel="preload" />
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/index_v5.css"
+        rel="preload" />
+    <style type="text/css">
+        .issuer-detail.mt-80 {
+            margin-top: 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mr-15 {
+            margin-right: 15px;
+        }
+        .block {
+            display: block;
+        }
+        .hcr-r2 .cr {
+            margin-top: 8px;
+        }
+        .frccwrapper {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .frcc-items {
+            align-self: center;
+            justify-self: center;
+        }
+        .fi-logo {
+            margin-bottom: 5px;
+        }
+        .hrc-r1_v2 {
+            padding: 23px 40px 22px 52px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+    <div id="extra-page"></div>
+    <!-- <div id="debug-page"></div> -->
+
+    <!-- Primary Header Template -->
+    <script id="primary-header-template" type="x-tmpl-mustache">
+            <div class="hcr" id="user-info">
+                <div class="hcr-r1">
+                    <img
+                        class="logo"
+                        src={{{ CreditCardProgramLogo }}}
+                        alt="card-logo"
+                    />
+                    <div class="wr1">
+                        <span class="text-center">
+                            <div class="h1 block">Credit Card Statement</div>
+                            <div class="block">
+                                <span class="l3--v1">{{ FromDate.day }}</span>
+                                <span class="l3--v1">{{ FromDate.month }}</span>
+                                <span class="l3--v1">{{ FromDate.year }}</span>
+                                <span class="l3--v1">&nbsp;to&nbsp;</span>
+                                <span class="l3--v1">{{ ToDate.day }}</span>
+                                <span class="l3--v1">{{ ToDate.month }}</span>
+                                <span class="l3--v1">{{ ToDate.year }}</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wr2 frccwrapper">
+                        <img
+                            class="fi-logo frcc-items mr-15"
+                            src={{{ FiBrandLogo }}}
+                            alt="epifi"
+                        />
+                        <img
+                            class="logo frcc-items"
+                            src={{{ PartnerBankLogo }}}
+                            alt="federal bank"
+                        />
+                    </div>
+                </div>
+                <div class="hcr-r2">
+                    <div class="h1">{{ UserDetails.Name }}</div>
+                    <div class="cr">
+                        <div class='mr-20 address-section'>
+                            <span class="h2">ADDRESS</span>
+                            <div class="l3--v1 lb line-clamp-3 he-50">{{ UserDetails.Address }}</div>
+                        </div>
+                        <div class='mr-20'>
+                            <span class="h2">PHONE NO</span>
+                            <div class="l3--v1 lb">{{ UserDetails.PhoneNumber }}</div>
+                        </div>
+                        <div class='mr-20'>
+                            <span class="h2">EMAIL</span>
+                            <div class="l3--v1 lb">{{ UserDetails.Email }}</div>
+                        </div>
+                        <div class='credit-card-number-block'>
+                            <div class="h2">CREDIT CARD NO</div>
+                            <div class="l4--v1 lb">{{ UserDetails.MaskedCreditCardNumber }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+    <!-- Secondary Header Template -->
+    <script id="secondary-header-template" type="x-tmpl-mustache">
+        <div class="hcr-r1 hrc-r1_v2">
+            <img
+                class="logo"
+                src={{{ CreditCardProgramLogo }}}
+                alt="card-logo"
+            />
+            <div class="wr1">
+                <span class="text-center">
+                    <div class="h1 block">Credit Card Statement</div>
+                    <div class="block">
+                        <span class="l3--v1">{{ FromDate.day }}</span>
+                        <span class="l3--v1">{{ FromDate.month }}</span>
+                        <span class="l3--v1">{{ FromDate.year }}</span>
+                        <span class="l3--v1">&nbsp;to&nbsp;</span>
+                        <span class="l3--v1">{{ ToDate.day }}</span>
+                        <span class="l3--v1">{{ ToDate.month }}</span>
+                        <span class="l3--v1">{{ ToDate.year }}</span>
+                    </div>
+                </span>
+            </div>
+            <div class="wr2 frccwrapper">
+                <img
+                    class="fi-logo frcc-items mr-15"
+                    src={{{ FiBrandLogo }}}
+                    alt="epifi"
+                />
+                <img
+                    class="logo frcc-items"
+                    src={{{ PartnerBankLogo }}}
+                    alt="federal bank"
+                />
+            </div>
+        </div>
+    </script>
+    <!-- Footer Template -->
+    <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr1">
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">5AM - 6PM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">6PM - 5AM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/debit.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Debit</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/credit.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Credit</div>
+                    </div>
+                    <div class="wr l6--v3">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/automated.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Automated</div>
+                    </div>
+                </div>
+                <div class="cr cr2" {{#lastPage}}style="max-height:38px"{{/lastPage}}>
+                    <div class="wr1">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="l6--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="l6--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+    <!-- Content Template -->
+    <script id="content-template" type="x-tmpl-mustache">
+            <div>
+                <div class="{{ Class }}">
+                    {{#HasTxnSummaryData}}
+                    <div class='ju-sb'>
+                        <div class='wd-36_per'>
+                            <div class='mb-30'>
+                                <div class='summary-block bg--light-grey'>
+                                    <div class='card mb-20'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/statement-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>STATEMENT DATE</span>
+                                            <br />
+                                            <span class='h1--v3'>{{ TxnSummaryData.StatementDate }}</span>
+                                        </div>
+                                    </div>
+                                    <div class='card mb-20'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/payment-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>PAYMENT DUE DATE</span>
+                                            <br />
+                                            <span class='h1--v3'>{{ TxnSummaryData.PaymentDueDate }}</span>
+                                        </div>
+                                    </div>
+                                    <div class='card'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/rupees-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>AVAILABLE LIMIT</span>
+                                            <br />
+                                            <span class='h1--v3'>₹{{ TxnSummaryData.AvailableLimit.Amount.units }}.{{TxnSummaryData.AvailableLimit.Amount.decimals}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#hasRewardsSummaryData}}
+                            <div class='mb-24'>
+                                <div class='rewards-block bg--light-grey'>
+                                    <div class='h1--v1 ta-center rewards-block-title'>{{ RewardsSummaryData.title }}</div>
+                                    <div class='top-merchants-section mt-20 mb-20'>
+                                        {{#RewardsSummaryData.merchantWiseRewardInfo}}
+                                        <div class='fl ju-sb'>
+                                            <div class='fl al-ce'>
+                                                <div class='mr-8'>
+                                                    <img src={{ merchantIconUrl }} alt='rewards logo' class='rewards-logo' />
+                                                </div>
+                                                <div class='wd-80' >
+                                                    <span class='h2--v5'>{{ title }}</span>
+                                                </div>
+                                            </div>
+                                            <div class='fl al-ce'>
+                                                <img
+                                                    class="logo mr-4"
+                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                                    alt="fi coins"
+                                                />
+                                                <div class="h2--v2">{{ totalRewardCoinsEarned.units }}</div>
+                                            </div>
+                                        </div>
+                                        {{/RewardsSummaryData.merchantWiseRewardInfo}}
+                                    </div>
+                                    <div class='l6 ta-center'>{{ RewardsSummaryData.bottomText }}</div>
+                                </div>
+                            </div>
+                            {{/hasRewardsSummaryData}}
+                            <div>
+                                <div class='fi-coins-block bg--light-grey'>
+                                    <div class='ta-center h2--v3'>{{ RewardsSummaryData.rewardCoinsSummary.Title }}</div>
+                                    <div class='ju-ce al-ce mb-10 mt-6'>
+                                        <img
+                                            class="logo mr-4"
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                            alt="fi coins"
+                                        />
+                                        <div class="h2--v2">{{ RewardsSummaryData.rewardCoinsSummary.TotalRewardCoinsEarned.units }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#showProTipInReward}}
+                            <div class='pro-tip-v2 bg--light-grey'>
+                                <div>
+                                    <span class='h2--v4'>{{ TipsAndInformationData.Title }}:</span>
+                                    {{#TipsAndInformationData.InformationText}}
+                                    <span class='l6 pro-tip-subtitle'>
+                                        {{Title}}
+                                            {{#TextWithLinkAndValues}}
+                                             <a class='link' href={{Link}} > {{Title}} </a>
+                                        {{/TextWithLinkAndValues}}
+                                    </span>
+                                    <br />
+                                    <br />
+                                    {{/TipsAndInformationData.InformationText}}
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            {{/showProTipInReward}}
+                        </div>
+                        <div class='wd-62_per mb-40'>
+                            <div class="txnsmrywr">
+                                <div class='fl amount-block'>
+                                    <div class='cards mr-20'>
+                                        <div class="l6--v6">
+                                            TOTAL AMOUNT DUE
+                                            <br/>
+                                        </div>
+                                        <div class="h1--v4">₹{{ TxnSummaryData.TotalAmountDue.Amount.units }}.{{ TxnSummaryData.TotalAmountDue.Amount.decimals }}</div>
+                                    </div>
+                                    <div class='cards'>
+                                        <div class="l6--v6">
+                                            MINIMUM AMOUNT DUE
+                                            <br/>
+                                        </div>
+                                        <div class="h1--v4">₹{{ TxnSummaryData.MinAmountDue.Amount.units }}.{{ TxnSummaryData.MinAmountDue.Amount.decimals }}</div>
+                                    </div>
+                                </div>
+                                <div class="l6--v6 mb-20">
+                                    Minimum amount due is 5% of purchases + 100% of active EMIs and all card related charges including any over limit spend. Interest will be applied if your total amount due is not paid.
+                                </div>
+                                <div class='bor-grey'></div>
+                                <div class='mt-20'>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Opening Balance</div>
+                                            <div class="l6">on {{ FromDate.day }} {{ FromDate.monthShortStr }} {{ FromDate.year }}</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.OpeningBalance.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.OpeningBalance.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Spends</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.Spends.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.Spends.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Fees, Taxes and Others</div>
+                                            <div class="l6">Including taxes on fees & charges at 18%</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.Fees.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.Fees.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Repayments & Refunds</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.RepaymentsAndRefunds.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.RepaymentsAndRefunds.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Spend converted to EMI</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.SpendsConvertedToEmi.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.SpendsConvertedToEmi.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#hasRewardsSummaryData}}
+                            <div class='fl al-ce bg--light-grey pro-tip-box'>
+                                <div class='mr-20'>
+                                    <img src={{ TipsAndInformationData.IconUrl }} alt='suggestion' width='24px' height='24px' />
+                                </div>
+                                <div class='wd-90_per'>
+                                    <span class='h2--v4'>{{ TipsAndInformationData.Title }}:</span>
+                                    {{#TipsAndInformationData.InformationText}}
+                                    <span class='l6 pro-tip-subtitle'>
+                                        {{Title}}
+                                            {{#TextWithLinkAndValues}}
+                                             <a class='link' href={{Link}} > {{Title}} </a>
+                                        {{/TextWithLinkAndValues}}
+                                    </span>
+                                    <br />
+                                    <br />
+                                    {{/TipsAndInformationData.InformationText}}
+                                </div>
+                            </div>
+                            {{/hasRewardsSummaryData}}
+                        </div>
+                    </div>
+                    {{/HasTxnSummaryData}}
+                    {{#HasTxns}}
+                    <div id="transaction-Details" class='mb-40' >
+                        <div class="hwr">
+                            <div class="wr1">
+                                <div class="h1--v1">Date</div>
+                                <div class="l6">Day/Night</div>
+                            </div>
+                            <div class="wr2">
+                                <div class="h1--v1">Transaction Details</div>
+                                <div class="l6">Place • Payment Method • Cateogry</div>
+                            </div>
+                            <div class="wr3">
+                                <div class="h1--v1">Fi-Coins</div>
+                            </div>
+                            <div class="wr4">
+                                <div class="h1--v1">Amount</div>
+                            </div>
+                        </div>
+                        {{#RenderRewardsData}}
+                        {{#ExtraRewardsInfo}}
+                        <div class="txnwr">
+                            <div class="cl">
+                                <div class="wr1">
+                                </div>
+                                <div class="wr2">
+                                    <img
+                                        class="rewardlogo mr-4 va-middle"
+                                        src={{ RewardTypeLogo }}
+                                        alt="fi coins"
+                                    />
+                                    <span class="h2--v2 va-middle">{{ Text }}</span>
+                                </div>
+                                <div class="wr3">
+                                    <img
+                                        class="logo mr-4"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                        alt="fi coins"
+                                    />
+                                    <div class="h2--v2">{{ RewardCoinsEarned.units }}</div>
+                                </div>
+                                <div class="wr4">
+                                </div>
+                            </div>
+                        </div>
+                        {{/ExtraRewardsInfo}}
+                        {{/RenderRewardsData}}
+                        {{#firstPagefooter}}
+                          <div class='nxt-page l6--v5' >View all your transactions on the next page</div>
+                        {{/firstPagefooter}}
+                        <div>
+                            {{#TxnData}}
+                                {{^hasPageLengthOne}}
+                                <div class="cwr">
+                                    <div class="wr1 l4">
+                                        {{name}}
+                                    </div>
+                                    <div class="wr2"></div>
+                                </div>
+                                {{/hasPageLengthOne}}
+                                {{^hasPageLengthOne}}
+                                <div class="txnwr">
+                                    {{#data}}
+                                        <div class="cl">
+                                            <div class="wr1">
+                                                {{#IsDayIcon}}
+                                                    <img
+                                                        class="logo"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                                                        alt="day"
+                                                    />
+                                                {{/IsDayIcon}}
+                                                {{#IsNightIcon}}
+                                                    <img
+                                                        class="logo"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                                                        alt="night"
+                                                    />
+                                                {{/IsNightIcon}}
+                                            </div>
+                                            <div class="vertical-bar"></div>
+                                            <div class="wr2">
+                                                <div class="h1--v3">{{ MerchantName }}</div>
+                                                <div class="l6--v5 desc">
+                                                    {{ TxnDescription }}
+                                                </div>
+                                            </div>
+                                            <div class="wr3">
+                                                {{ #hasRewardCoins }}
+                                                    <img
+                                                        class="logo mr-4"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                                        alt="fi coins"
+                                                    />
+                                                    <div class="h2--v2">{{ RewardCoins.units }}</div>
+                                                {{ /hasRewardCoins }}
+
+                                                {{ ^hasRewardCoins }}
+                                                    <div class="h2--v2 ml-4"> - </div>
+                                                {{ /hasRewardCoins }}
+                                            </div>
+
+                                            <div class="wr4">
+                                                <div class="wr">
+                                                    <div class="h2--v2">₹{{ Amount.units }}</div>
+                                                    <div class="h2--v2">.{{ Amount.decimals }}</div>
+                                                </div>
+                                                {{#IsDebit}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/debit.svg"
+                                                        alt="db"
+                                                    />
+                                                {{/IsDebit}}
+                                                {{#IsCredit}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/credit.svg"
+                                                        alt="cr"
+                                                    />
+                                                {{/IsCredit}}
+                                                {{#IsAutomated}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/automated.svg"
+                                                        alt="automated"
+                                                    />
+                                                {{/IsAutomated}}
+                                            </div>
+                                        </div>
+                                    {{/data}}
+                                </div>
+                                {{/hasPageLengthOne}}
+                            {{/TxnData}}
+                        </div>
+                    </div>
+                    {{/HasTxns}}
+                    {{^HasTxns}}
+                        {{ #showNoTxnUi }}
+                            <div class="notxnwr">
+                                <div class="wr1">
+                                    <span class="h1--v3">It looks like you have not made</span>
+                                    <br />
+                                    <span class="h1--v3">any transactions on Fi between</span>
+                                    <br />
+                                    <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                                </div>
+                                <img
+                                    class="logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                                    alt="no-txns"
+                                />
+                            </div>
+                        {{ /showNoTxnUi }}
+                    {{/HasTxns}}
+                    {{#pageLength}}
+                        {{#hasEmiSummary}}
+                        <div class=''>
+                            <div class='title'>EMI Summary</div>
+                            <div class='emi-summary'>
+                                <div class='emi-due bg--light-grey p-20'>
+                                    <div class='h2--v6'>DUE THIS MONTH</div>
+                                    <div class='h1--v1 mt-6' >₹{{ EmiSummary.DueAmount.nanos }}</div>
+                                    <div class='h2--v6 mt-24'>ACTIVE EMIs</div>
+                                    <div class='h1--v1 mt-6' >{{ EmiSummary.NoOfActiveEmi }}</div>
+                                </div>
+                                <div class='emi-detail bg--light-grey p-20'>
+                                    <table class='table' >
+                                        <tr class='table-head' >
+                                            <th class='h2--v6 mt-20 mb-20'>NAME</th>
+                                            <th class='h2--v6 mt-20 mb-20'>INSTALLMENTS</th>
+                                            <th class='h2--v6 mt-20'>MONTHLY INSTALLMENTS</th>
+                                        </tr>
+                                        {{#EmiSummary.EmiDetails}}
+                                        <tr class="mb-40">
+                                            <td class='h1--v1 pt-15'>{{MerchantName}}</td>
+                                            <td class='h1--v1 pt-15'>{{ InstallmentNumber }} of {{TotalInstallment}}</td>
+                                            <td class='h1--v1 pt-15'>₹{{ Amount.nanos }}</td>
+                                        </tr>
+                                        {{/EmiSummary.EmiDetails}}
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        {{/hasEmiSummary}}
+                    {{/pageLength}}
+                </div>
+            </div>
+        </script>
+    <script id="last-page-template" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                {{#hasFeeBreakDownComponents}}
+                <div class='bor-grey mb-20' ></div>
+                <div class='mb-40'>
+                    <div class='title'>{{FeeBreakDown.Title }}</div>
+                        <div class='bg--light-grey fees-section'>
+                            <div>
+                                {{#FeeBreakDown.FeeBreakDownComponents}}
+                                <div class='fl al-ce ju-sb'>
+                                    <div class='h1--v3'>{{ FeeType }}</div>
+                                    <div class='fl al-ce'>
+                                        {{#isFeeAmountTypePlus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/plus.svg"
+                                            alt="plus minus icon"
+                                            class="plus-minus-icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypePlus}}
+                                        {{#isFeeAmountTypeMinus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/minus.svg"
+                                            alt="plus minus icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypeMinus}}
+                                        <div class='h1--v3'>₹{{ Amount.units }}</div>
+                                    </div>
+                                </div>
+                                {{/FeeBreakDown.FeeBreakDownComponents}}
+                            </div>
+                    </div>
+                </div>
+                <div class='bor-grey mb-20' ></div>
+                {{/hasFeeBreakDownComponents}}
+                <div class='mt-20'>
+                    <div><span class='recommended-block h2--v7'>{{ ContactUsDetails.Title }}</span></div>
+                    <div class='l6--v7 mt-10'>In case your credit card is lost or stolen, freeze or block your card immediately from the <a class='link' href='https://apps.fi.money/home' > Fi app</a> or contact Fi's customer care.</div>
+                    <br>
+                    {{#CustomerCareDetails}}
+                    <div class='mb-24'>
+                        <div><span class='l6--v7'>{{ Title }}</span></div>
+                        {{#TextWithLinkAndValues}}
+                        <div class='l6--v7'>{{Title}}: <a class='link' href="{{Type}}:{{Link}}">{{Value}}</a></div>
+                        {{/TextWithLinkAndValues}}
+                    </div>
+                    {{/CustomerCareDetails}}
+                </div>
+                {{#ContactUsDetails.IssuerDetails}}
+                {{#ContactUsDetails}}
+                    {{{TncSection}}}
+                {{/ContactUsDetails}}
+                <div class='bg--light-grey issuer-detail mt-80' >
+                    <div> <span class='h2--v3 issue-heading'>{{Title}}</span></div>
+                     <div class='issuer-adress' >
+                        <div class='left-issuer-adress l2--v1'>
+                            {{#LeftTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/LeftTextWithLinkAndValues}}
+                        </div>
+                        <div class='right-issuer-adress l2--v1'>
+                            {{#RightTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/RightTextWithLinkAndValues}}
+                        </div>
+                    </div>
+                </div>
+                {{/ContactUsDetails.IssuerDetails}}
+            </div>
+        </script>
+    <script id="last-page-template-overflow-one" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                {{#hasFeeBreakDownComponents}}
+                <div class='bor-grey mb-20' ></div>
+                <div class='mb-40'>
+                    <div class='title'>{{FeeBreakDown.Title }}</div>
+                        <div class='bg--light-grey fees-section'>
+                            <div>
+                                {{#FeeBreakDown.FeeBreakDownComponents}}
+                                <div class='fl al-ce ju-sb'>
+                                    <div class='h1--v3'>{{ FeeType }}</div>
+                                    <div class='fl al-ce'>
+                                        {{#isFeeAmountTypePlus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/plus.svg"
+                                            alt="plus minus icon"
+                                            class="plus-minus-icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypePlus}}
+                                        {{#isFeeAmountTypeMinus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/minus.svg"
+                                            alt="plus minus icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypeMinus}}
+                                        <div class='h1--v3'>₹{{ Amount.units }}</div>
+                                    </div>
+                                </div>
+                                {{/FeeBreakDown.FeeBreakDownComponents}}
+                            </div>
+                    </div>
+                </div>
+            </div>
+            {{/hasFeeBreakDownComponents}}
+        </script>
+    <script id="last-page-template-overflow-two" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                <div class='bor-grey mb-20' ></div>
+                <div class='mt-20'>
+                    <div><span class='recommended-block h2--v7'>{{ ContactUsDetails.Title }}</span></div>
+                    <div class='l6--v7 mt-10'>In case your credit card is lost or stolen, freeze or block your card immediately from the <a class='link' href='https://apps.fi.money/home' >Fi app</a> or contact Fi's customer care.</div>
+                    <br>
+                    {{#CustomerCareDetails}}
+                    <div class='mb-24'>
+                        <div><span class='l6--v7'>{{ Title }}</span></div>
+                        {{#TextWithLinkAndValues}}
+                        <div class='l6--v7'>{{Title}}: <a class='link' href="{{Type}}:{{Link}}">{{Value}}</a></div>
+                        {{/TextWithLinkAndValues}}
+                    </div>
+                    {{/CustomerCareDetails}}
+                </div>
+                {{#ContactUsDetails.IssuerDetails}}
+                {{#ContactUsDetails}}
+                    <div class='l3' >{{PostalAddress}}</div>
+                    <br>
+                    <div class='l3' >To know more, read Federal Bank's  <a class='link' href='https://fi.money/credit-card/important-T&Cs' >Most Important Terms & Conditions</a> ,<a href='https://fi.money/credit-card/key-fact-statement' class='link' > Key Fact Statement <a> and <a class='link' href='https://fi.money/credit-card/T&Cs' > Terms & Conditions </a>.</div>
+                {{/ContactUsDetails}}
+                <div class='bg--light-grey issuer-detail mt-80' >
+                    <div> <span class='h2--v3 issue-heading'>{{Title}}</span></div>
+                     <div class='issuer-adress' >
+                        <div class='left-issuer-adress l2--v1'>
+                            {{#LeftTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/LeftTextWithLinkAndValues}}
+                        </div>
+                        <div class='right-issuer-adress l2--v1'>
+                            {{#RightTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/RightTextWithLinkAndValues}}
+                        </div>
+                    </div>
+                </div>
+                {{/ContactUsDetails.IssuerDetails}}
+            </div>
+        </script>
+    <script id="debug-page-template" type="x-tmpl-mustache">
+            {{#messages}}
+                <div>{{value}}</div>
+            {{/messages}}
+        </script>
+
+    <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+    <script>
+        /**
+     * Returns the month string label
+     * @example
+     * getMonthStr(1)
+     * returns "January"
+     *
+     * @param {number} month number with 1 to 12
+     * @returns {string} Returns the month string label
+     */
+        function getMonthStr(month, shortStr) {
+            var monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var shortStrMonthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            if (shortStr) {
+                return shortStrMonthList[month - 1];
+            }
+
+            return monthList[month - 1];
+        }
+
+        /**
+         * Returns the formatted amount
+         * @example
+         * getFormattedAmount({ units: 1000000, Nanos: 250000000 })
+         * returns { units: 10,00,000, decimals: 25 }
+         *
+         * @param {object} amount object with units and units
+         * @returns {object} Returns the formatted amount
+         */
+        /*
+        function getFormattedAmount(amount) {
+            if (!amount) return {};
+        
+            var nanos = amount.units;
+            nanos = (nanos / 1e9).toFixed(2).slice(-2);
+        
+            return {
+                units: amount.units.toLocaleString("en-IN"),
+                decimals: nanos
+            };
+        }
+        */
+        function getFormattedAmount(amount) {
+            if (!amount) return {};
+            var nanos = "00";
+
+            if (amount.nanos) {
+                nanos = amount.nanos;
+                nanos = (nanos / 1e9).toFixed(2).slice(-2);
+            }
+
+            var modifiedUnits = "0";
+
+            if (amount.units) {
+                modifiedUnits = amount.units.toString();
+                modifiedUnits = modifiedUnits.replace(/\B(?=(\d{2})*(\d{3})(?!\d))/g, ",");
+            }
+
+            return {
+                units: modifiedUnits,
+                decimals: nanos
+            };
+        }
+
+        /**
+         * Returns the hour 12 str - am/pm
+         * @example
+         * getFormattedHour12(1605917420)
+         * returns "am"
+         *
+         * @param {number} ts seconds
+         * @returns {string} Returns the hour 12 str - am/pm
+         */
+        /*
+        function getFormattedHour12(ts) {
+            var d = new Date(ts * 1000);
+            var hour12 = d.toLocaleTimeString([], { timeZone: "IST", hour12: true }).slice(-2);
+        
+            return hour12;
+        }
+        */
+        function getFormattedHour12(ts) {
+            var d = new Date(ts * 1000);
+            var hours = d.getHours();
+
+            if (hours >= 12) {
+                return "pm";
+            }
+
+            return "am";
+        }
+
+        /**
+         * Returns the 2-digit hours
+         * @example
+         * getFormattedHours(1605917420)
+         * returns "05"
+         *
+         * @param {number} ts seconds
+         * @returns {string} Returns the 2-digit hours
+         */
+        /*
+        function getFormattedHours(ts) {
+            var d = new Date(ts * 1000);
+            var hours = d.toLocaleTimeString([], { timeZone: "IST", hour12: true, hour: "2-digit" }).slice(0, 2);
+        
+            return hours;
+        }
+        */
+
+        function getFormattedHours(ts) {
+            var d = new Date(ts * 1000);
+            var hours = d.getHours();
+
+            if (hours >= 12) {
+                hours = hours - 12;
+            }
+
+            return addPrefixZero(hours);
+        }
+
+        // add zero for numbers less than 10
+        function addPrefixZero(str) {
+            var modifiedStr = ("0" + str).slice(-2);
+
+            return modifiedStr;
+        }
+
+        /**
+         * Returns the formatted date & month str
+         * @example
+         * getFormattedDateAndMonth(1605917420)
+         * returns "21 Nov"
+         *
+         * @param {number} ts seconds
+         * @returns {string} Returns the formatted date & month str
+         */
+        function getFormattedDateAndMonth(ts) {
+            var d = new Date(ts * 1000);
+
+            var date = addPrefixZero(d.getDate());
+            var monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            var month = monthList[d.getMonth()];
+            var dateAndMonth = date + " " + month;
+
+            return dateAndMonth;
+        }
+
+        function getIconObj(ts, hasDayIcon, hasNightIcon) {
+            var hours = getFormattedHours(ts);
+            var ampm = getFormattedHour12(ts);
+
+            if (!hasDayIcon && !hasNightIcon) {
+                if ((hours >= "05" && ampm === "am") || (hours < "06" && ampm === "pm")) {
+                    return {
+                        dayIcon: true,
+                        nightIcon: false,
+                    };
+                } else {
+                    return {
+                        dayIcon: false,
+                        nightIcon: true,
+                    };
+                }
+            } else if (!hasDayIcon) {
+                if ((hours >= "05" && ampm === "am") || (hours < "06" && ampm === "pm")) {
+                    return {
+                        dayIcon: true,
+                        nightIcon: false,
+                    };
+                }
+            } else if (!hasNightIcon) {
+                if ((hours >= "06" && ampm === "pm")) {
+                    return {
+                        dayIcon: false,
+                        nightIcon: true,
+                    };
+                }
+            }
+
+            return {
+                dayIcon: false,
+                nightIcon: false,
+            };
+        }
+
+        function sortTxnData(txnData) {
+            var txnDataKeys = Object.keys(txnData);
+
+            var sortedKeys = txnDataKeys.sort(function (a, b) {
+                // Turn your strings into dates, and then subtract them
+                // to get a value that is either negative, positive, or zero.
+                return new Date(txnData[b].timeInMs) - new Date(txnData[a].timeInMs);
+            });
+            console.log(sortedKeys);
+
+            var sortedTxnData = [];
+
+            sortedKeys.forEach(function (item) {
+                sortedTxnData.push({
+                    name: item,
+                    data: txnData[item].data
+                })
+            })
+
+            return sortedTxnData;
+        }
+
+        function isEmptyObject(obj) {
+            // not using check Object.keys(obj).length === 0; as that's valid only for ECMA 5+
+            return JSON.stringify(obj) === '{}';
+        }
+    </script>
+    <script src="scripts/index-v1.js">
+        var init = (function () {
+    // required if we send data as stringified JSON
+    // var statement = '${data}';
+
+    // no txn json
+    // statement = '{"UserDetails":{"Name":"Shreya Khajanchi","PhoneNumber":9999911111,"Email":"superfian@gmail.com","Address":"2nd Floor, D406, Sector 40 NOIDA, UP","MaskedCreditCardNumber":"10010100466777"},"FromDate":{"year":"2020","month":"10","day":"1"},"ToDate":{"year":2020,"month":12,"day":10},"TransactionDetails":[],"TransactionSummary":null}';
+
+    // no txn summary json
+    // statement = '{"UserDetails":{"Name":"Shreya Khajanchi","PhoneNumber":9999911111,"Email":"superfian@gmail.com","Address":"2nd Floor, D406, Sector 40 NOIDA, UP","MaskedCreditCardNumber":"10010100466777"},"FromDate":{"year":"2020","month":"10","day":"1"},"ToDate":{"year":2020,"month":12,"day":10},"TransactionDetails":[{"Amount": {"units": 1000000,"nanos": 500000000},"Date": {"seconds": 1606056420,"nanos": 10},"MerchantName": "ATM Withdrawal","MerchantLocation": "PNB ATM","PaymentMethod": "Debit Card","TransactionType": "AUTOMATED","Category": "Test","RewardCoins": 1200}],"Summary": null}';
+
+    // both txn & txn summary json
+    var statement =JSON.stringify({
+    "UserDetails":
+         {
+             "Name": "Jolly Joseph",
+             "PhoneNumber": 8971743426,
+             "Email": "swarooplokesh123@gmail.com",
+             "Address": "421, Fi Apartments, Bangalore, Karnataka, INDIA - 686502",
+             "MaskedCreditCardNumber": "•••• •••• •••• 4390"
+         },
+    "FiBrandLogo": "https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg",
+    "PartnerBankLogo": "https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/federal-logo_v2.svg",
+    "CreditCardProgramLogo": "https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/simplifi.svg",
+     "FromDate":
+         {
+             "year": 2023,
+             "month": 3,
+             "day": 2
+         },
+     "ToDate":
+         {
+             "year": 2023,
+             "month": 3,
+             "day": 29
+         },
+     "Summary":
+         {
+             "StatementDate":
+                 {
+                     "year": 2023,
+                     "month": 3,
+                     "day": 30
+                 },
+             "PaymentDueDate":
+                 {
+                     "year": 2023,
+                     "month": 4,
+                     "day": 16
+                 },
+             "AvailableLimit":
+                 {
+                     "currency_code": "INR",
+                     "units": 216178,
+                     "nanos": 600000000
+                 },
+             "TotalAmountDue":
+                 {
+                     "currency_code": "INR",
+                     "units": 32046,
+                     "nanos": 400000000
+                 },
+             "MinAmountDue":
+                 {
+                     "currency_code": "INR",
+                     "units": 1602,
+                     "nanos": 320000000
+                 },
+             "OpeningBalance":
+                 {
+                     "currency_code": "INR"
+                 },
+             "Spends":
+                 {
+                     "currency_code": "INR",
+                     "units": 40775
+                 },
+             "Interest": null,
+             "Fees":
+                 {
+                     "currency_code": "INR"
+                 },
+             "RepaymentsAndRefunds":
+                 {
+                     "currency_code": "INR",
+                     "units": 695312222,
+                     "nanos": 600000000
+                 },
+             "SpendsConvertedToEmi":
+                 {
+                     "currency_code": "INR"
+                 }
+         },
+     "TransactionDetails":
+         [
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 250
+                     },
+                 "Date":
+                     {
+                         "seconds": 1679984912
+                     },
+                 "MerchantName": "ABCRESTAURANTCOIMBATORE               IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 15000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1679995217
+                     },
+                 "MerchantName": "555ELECTRONICSTRIVANDRAM              IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 250
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680068096
+                     },
+                 "MerchantName": "",
+                 "MerchantLocation": "",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 1255
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680083723
+                     },
+                 "MerchantName": "555ELECTRONICSTRIVANDRAM              IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 2000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680083815
+                     },
+                 "MerchantName": "555ELECTRONICSTRIVANDRAM              IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 22000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680083956
+                     },
+                 "MerchantName": "555ELECTRONICSTRIVANDRAM              IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 270
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680084007
+                     },
+                 "MerchantName": "ABCRESTAURANTCOIMBATORE               IN",
+                 "MerchantLocation": "IN",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Debit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 100
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 1000,
+                         "nanos": 280000000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680093903
+                     },
+                 "MerchantName": "Others",
+                 "MerchantLocation": "nt",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 2000,
+                         "nanos": 830000000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680094007
+                     },
+                 "MerchantName": "Others",
+                 "MerchantLocation": "nt",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 2000,
+                         "nanos": 830000000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680096809
+                     },
+                 "MerchantName": "Repayment",
+                 "MerchantLocation": "nt",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 200,
+                         "nanos": 830000000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680096820
+                     },
+                 "MerchantName": "Others",
+                 "MerchantLocation": "nt",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 1700,
+                         "nanos": 830000000
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680096830
+                     },
+                 "MerchantName": "Repayment",
+                 "MerchantLocation": "nt",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 270
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680102981
+                     },
+                 "MerchantName": "",
+                 "MerchantLocation": "",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 1255
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680103081
+                     },
+                 "MerchantName": "",
+                 "MerchantLocation": "",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "",
+                 "RewardCoins": 0
+             },
+             {
+                 "Amount":
+                     {
+                         "currency_code": "INR",
+                         "units": 50
+                     },
+                 "Date":
+                     {
+                         "seconds": 1680106034
+                     },
+                 "MerchantName": "Others",
+                 "MerchantLocation": "NK",
+                 "TransactionOrigin": "",
+                 "Category": "",
+                 "TransactionType": "Credit",
+                 "PaymentMethod": "Mobile",
+                 "RewardCoins": 0
+             }
+         ],
+     "RewardsSummary":
+         {
+             "Title": "2x rewards",
+             "MerchantWiseRewardInfo":
+                 [
+    
+                 ],
+             "BottomText": "We don't endorse these brands & vice versa. These brand logos are for representation & information purposes only.",
+             "RewardCoinsSummary":
+                 {
+                     "Title": "FI-COINS EARNED",
+                     "TotalRewardCoinsEarned": 600,
+                     "TotalFiCoinsText": "xyz",
+                     "TotalFiCoins": 100
+                 }
+         },
+     "ExtraRewardsInfo":
+         [
+             {
+                 "Text": "Extra Rewards",
+                 "RewardCoinsEarned": 12000,
+                 "RewardTypeLogo": "https://epifi-icons.s3.ap-south-1.amazonaws.com/credit_card_images/2x_statement_extra_rewards.png"
+             },
+             {
+                 "Text": "Extra Rewards",
+                 "RewardCoinsEarned": 36000,
+                 "RewardTypeLogo": "https://epifi-icons.s3.ap-south-1.amazonaws.com/credit_card_images/5x_statement_extra_rewards.png"
+             }
+         ],
+     "TipsAndInformationSection":
+         {
+             "IconUrl": "https://epifi-icons.s3.ap-south-1.amazonaws.com/credit_card_images/Bulb_4x.png",
+             "Title": "Pro tip",
+             "InformationText":
+                 [
+                     {
+                         "Title": "Want to improve your credit score? Pay your bills before the due date.To reduce late payment charges, pay more than the minimum due.",
+                         "TextWithLinkAndValues": null
+                     },
+                     {
+                         "Title": "Paying only the minimum monthly due would stretch repayment over many months/years. And each time, your interest payments get compounded & pile on your outstanding balance. See a sample calculation for interest applied when only minimum amount due is paid, in the MITC.",
+                         "TextWithLinkAndValues":
+                             [
+                                 {
+                                     "Title": "MITC",
+                                     "Value": "MITC",
+                                     "Link": "https://fi.money/credit-card/important-T&Cs",
+                                     "Type": ""
+                                 }
+                             ]
+                     }
+                 ]
+         },
+     "FeeBreakDown":
+         {
+             "Title": "FEE BREAKDOWN",
+             "FeeBreakDownComponents":
+                 [
+                     {
+                         "FeeType": "Interest charges",
+                         "Amount": { "currency_code": "INR", "units": 100 },
+                         "FeeAmountType": "PLUS"
+                     },
+                     {
+                         "FeeType": "Cash withdrawal fees ",
+                         "Amount": { "currency_code": "INR", "units": 500 },
+                         "FeeAmountType": "MINUS"
+                     },
+                     {
+                         "FeeType": "Interest charges",
+                         "Amount": { "currency_code": "INR", "units": 100 },
+                         "FeeAmountType": "PLUS"
+                     }
+                 ]
+         },
+     "ContactUsDetails":
+         {
+             "Title": "IMPORTANT INFORMATION",
+             "CustomerCareDetails":
+                 [
+                     {
+                         "Title": "In case your credit card is lost or stolen, freeze or block your card immediately from the Fi app or contact Fi's customer care.",
+                         "CustomerCareOrganisation": "Fi app",
+                         "Email": "",
+                         "Phone": "",
+                         "Recommended": false,
+                         "WebText": "",
+                         "WebLinkText": "",
+                         "WebLink": "",
+                         "TextWithLinkAndValues": null
+                     },
+                     {
+                         "Title": "For further assistance on this or any other matters related to your credit card, reach out to Fi's Customer Care:",
+                         "CustomerCareOrganisation": "Fi's Customer Care:",
+                         "Email": "",
+                         "Phone": "",
+                         "Recommended": false,
+                         "WebText": "",
+                         "WebLinkText": "",
+                         "WebLink": "",
+                         "TextWithLinkAndValues":
+                             [
+                                 {
+                                     "Title": "Email",
+                                     "Value": "help@fi.care",
+                                     "Link": "www.google.com",
+                                     "Type": "mailto"
+                                 },
+                                 {
+                                     "Title": "Phone",
+                                     "Value": "08047485490",
+                                     "Link": "",
+                                     "Type": "tel"
+                                 }
+                             ]
+                     },
+                     {
+                         "Title": "For credit card grievances that need to be addressed by Federal Bank's Principal Nodal officer for Grievance Redressal: ",
+                         "CustomerCareOrganisation": "Federal Bank's Principal Nodal officer",
+                         "Email": "support@federalbank.co.in",
+                         "Phone": "",
+                         "Recommended": false,
+                         "WebText": "",
+                         "WebLinkText": "",
+                         "WebLink": "",
+                         "TextWithLinkAndValues":
+                             [
+                                 {
+                                     "Title": "Name",
+                                     "Value": "Ms Shalini Warrier, Executive Director",
+                                     "Link": "",
+                                     "Type": ""
+                                 },
+                                 {
+                                     "Title": "Email",
+                                     "Value": "support@federalbank.co.in",
+                                     "Link": "",
+                                     "Type": ""
+                                 }
+                             ]
+                     }
+                 ],
+             "PostalAddress": "Postal address: CEO's Secretariat, Federal Bank Limited, Federal Towers, Bank Junction, Aluva, Kerala, 6831010.",
+             "TnCSection":
+                 {
+                     "Text": "To know more, read Federal Bank's Most Important Terms & Conditions, Key Fact Statement and Terms & Conditions.",
+                     "TextWithLinkAndValues":
+                         [
+                             {
+                                 "Title": "Most Important Terms & Conditions",
+                                 "Value": "Most Important Terms & Conditions",
+                                 "Link": "https://fi.money/credit-card/T&Cs",
+                                 "Type": ""
+                             },
+                             {
+                                 "Title": "Key Fact Statement",
+                                 "Value": "Key Fact Statement",
+                                 "Link": "https://fi.money/credit-card/key-fact-statement",
+                                 "Type": ""
+                             },
+                             {
+                                 "Title": "Terms & Conditions.",
+                                 "Value": "Terms & Conditions.",
+                                 "Link": "https://fi.money/credit-card/T&Cs",
+                                 "Type": ""
+                             }
+                         ]
+                 },
+             "IssuerDetails":
+                 {
+                     "Title": "ISSUER DETAILS",
+                     "LeftTextWithLinkAndValues":
+                         [
+                             {
+                                 "Title": "The federal Bank Limited",
+                                 "Value": "",
+                                 "Link": ""
+                             },
+                             {
+                                 "Title": "GSTN",
+                                 "Value": "32AABCT0020H3Z3",
+                                 "Link": ""
+                             },
+                             {
+                                 "Title": "Parackal Towers, Thottakkatukara, Aluva,\n\t\tErnakulam, Kerala - 683101",
+                                 "Value": "",
+                                 "Link": ""
+                             }
+                         ],
+                     "RightTextWithLinkAndValues":
+                         [
+                             {
+                                 "Title": "Place Of Service:",
+                                 "Value": "Kerala",
+                                 "Link": ""
+                             },
+                             {
+                                 "Title": "State Code:",
+                                 "Value": "32",
+                                 "Link": ""
+                             },
+                             {
+                                 "Title": "HSN",
+                                 "Value": "- 997114 - Financial and Related Services",
+                                 "Link": ""
+                             }
+                         ]
+                 }
+         },
+     "EmiSummary":
+         {
+             "NoOfActiveEmi": 0,
+             "DueAmount": null,
+             "EmiDetails":
+                 []
+         }
+    })
+
+    var json = JSON.parse(statement);
+
+    if (isEmptyObject(json)) {
+        // print undefined as BE looks for this log and returns error to caller
+        console.log(undefined);
+        return;
+    }
+
+    var fromDateMonth = getMonthStr(json.FromDate.month);
+    var fromDateMonthShortStr = getMonthStr(json.FromDate.month, true);
+    var toDateMonth = getMonthStr(json.ToDate.month);
+    var toDateMonthShortStr = getMonthStr(json.ToDate.month, true);
+
+    json.FromDate.month = fromDateMonth;
+    json.ToDate.month = toDateMonth;
+
+    json.FromDate.monthShortStr = fromDateMonthShortStr;
+    json.ToDate.monthShortStr = toDateMonthShortStr;
+
+    var txnSummaryData = {};
+    var rewardsSummaryData = {};
+    var txnSummaryJSON = json.Summary;
+    var rewardsSummaryJSON = json.RewardsSummary;
+    var tipsAndInformationData = json.TipsAndInformationSection;
+    var extraRewardsInfo = json.ExtraRewardsInfo;
+    var feeBreakDown = json.FeeBreakDown;
+    var customerCareDetails = json.ContactUsDetails.CustomerCareDetails;
+    var hasTxnSummaryData = true;
+    var hasRewardsSummaryData = true;
+    var showProTipInReward = false;
+    var ContactUsDetails = json.ContactUsDetails;
+    var tncSectionDetails = json.ContactUsDetails.TnCSection;
+    var hasFeeBreakDownComponents = feeBreakDown.FeeBreakDownComponents.length > 0 || false
+    var EmiSummary = json.EmiSummary;
+
+    extraRewardsInfo.forEach(function (item) {
+        item.RewardCoinsEarned = getFormattedAmount({ "units": item.RewardCoinsEarned, "nanos": 0 })
+    })
+
+
+    if (Object.keys(txnSummaryJSON).length) {
+        var statementDate = txnSummaryJSON.StatementDate;
+        var paymentDueDate = txnSummaryJSON.PaymentDueDate;
+        var availableLimit = txnSummaryJSON.AvailableLimit;
+        var openingBalance = txnSummaryJSON.OpeningBalance;
+        var spends = txnSummaryJSON.Spends;
+        var interest = txnSummaryJSON.Interest;
+        var fees = txnSummaryJSON.Fees;
+        var repaymentsAndRefunds = txnSummaryJSON.RepaymentsAndRefunds;
+        var spendsConvertedToEmi = txnSummaryJSON.SpendsConvertedToEmi;
+        var totalAmountDue = txnSummaryJSON.TotalAmountDue;
+        var minAmountDue = txnSummaryJSON.MinAmountDue;
+
+        if (statementDate) {
+            var statementMonth = getMonthStr(statementDate.month);
+            txnSummaryData.StatementDate = statementDate.day + ' ' + statementMonth + ' ' + statementDate.year
+        }
+
+        if (paymentDueDate) {
+            var paymentDueMonth = getMonthStr(paymentDueDate.month);
+            txnSummaryData.PaymentDueDate = paymentDueDate.day + ' ' + paymentDueMonth + ' ' + paymentDueDate.year
+        }
+
+        if (availableLimit) {
+            txnSummaryData.AvailableLimit = {
+                Amount: getFormattedAmount(availableLimit)
+            };
+        }
+
+        if (openingBalance) {
+            txnSummaryData.OpeningBalance = {
+                Amount: getFormattedAmount(openingBalance)
+            };
+        }
+
+        if (spends) {
+            txnSummaryData.Spends = {
+                Amount: getFormattedAmount(spends)
+            };
+        }
+
+        if (interest) {
+            txnSummaryData.Interest = {
+                Amount: getFormattedAmount(interest)
+            };
+        }
+
+        if (fees) {
+            txnSummaryData.Fees = {
+                Amount: getFormattedAmount(fees)
+            };
+        }
+
+        if (repaymentsAndRefunds) {
+            txnSummaryData.RepaymentsAndRefunds = {
+                Amount: getFormattedAmount(repaymentsAndRefunds)
+            };
+        }
+
+        if (spendsConvertedToEmi) {
+            txnSummaryData.SpendsConvertedToEmi = {
+                Amount: getFormattedAmount(spendsConvertedToEmi)
+            };
+        }
+
+        if (totalAmountDue) {
+            txnSummaryData.TotalAmountDue = {
+                Amount: getFormattedAmount(totalAmountDue)
+            };
+        }
+
+        if (minAmountDue) {
+            txnSummaryData.MinAmountDue = {
+                Amount: getFormattedAmount(minAmountDue)
+            };
+        }
+    } else {
+        hasTxnSummaryData = false;
+    }
+
+    rewardsSummaryData.title = rewardsSummaryJSON.Title;
+    rewardsSummaryData.bottomText = rewardsSummaryJSON.BottomText;
+    rewardsSummaryData.rewardCoinsSummary = rewardsSummaryJSON.RewardCoinsSummary
+    rewardsSummaryData.rewardCoinsSummary.TotalRewardCoinsEarned = getFormattedAmount({ "units": rewardsSummaryData.rewardCoinsSummary.TotalRewardCoinsEarned })
+
+    if (rewardsSummaryJSON.MerchantWiseRewardInfo.length > 0) {
+
+        var merchantWiseRewardInfo = [];
+
+        rewardsSummaryJSON.MerchantWiseRewardInfo.forEach(function (item) {
+            var modifiedData = {};
+
+            modifiedData.title = item.MerchantDisplayName;
+            modifiedData.merchantIconUrl = item.MerchantIconUrl;
+            modifiedData.totalRewardCoinsEarned = getFormattedAmount({ "units": item.TotalRewardCoinsEarned })
+            modifiedData.amount = getFormattedAmount(item.TotalAmountSpent);
+            merchantWiseRewardInfo.push(modifiedData);
+        })
+
+        rewardsSummaryData.merchantWiseRewardInfo = merchantWiseRewardInfo;
+    } else {
+        hasRewardsSummaryData = false;
+        showProTipInReward = true;
+    }
+
+    feeBreakDown.FeeBreakDownComponents.forEach((function (item) {
+        if (item.FeeAmountType === 'PLUS') {
+            item.isFeeAmountTypePlus = true;
+        } else {
+            item.isFeeAmountTypeMinus = true;
+        }
+    }));
+
+    var txnData = {};
+
+    // format txn details according to the rendered html
+    json.TransactionDetails && json.TransactionDetails.forEach(function (item) {
+        var modifiedItem = {};
+
+        modifiedItem.Amount = getFormattedAmount(item.Amount);
+        item.RewardCoins = getFormattedAmount({ "units": item.RewardCoins })
+
+        modifiedItem.TxnDescription = function () {
+            var str = "";
+
+            if (item.MerchantLocation) {
+                str += item.MerchantLocation;
+            }
+
+            if (item.PaymentMethod) {
+                if (item.MerchantLocation) {
+                    str += " • " + item.PaymentMethod;
+                } else {
+                    str += item.PaymentMethod;
+                }
+            }
+
+            if (item.Category) {
+                if (item.MerchantLocation) {
+                    str += " • " + item.Category;
+                } else if (item.PaymentMethod) {
+                    str += " • " + item.Category;
+                } else {
+                    str += item.Category;
+                }
+            }
+
+            return str;
+        };
+
+        if (item.TransactionType) {
+            var txnType = item.TransactionType.toLowerCase();
+
+            modifiedItem.IsDebit = txnType === "debit";
+            modifiedItem.IsCredit = txnType === "credit";
+            modifiedItem.IsAutomated = txnType === "automated";
+        } else if (item.AmountBadge) {
+            var amountBadge = item.AmountBadge.toLowerCase();
+
+            modifiedItem.IsDebit = amountBadge === "debit";
+            modifiedItem.IsCredit = amountBadge === "credit";
+            modifiedItem.IsAutomated = amountBadge === "automated";
+        }
+
+        modifiedItem.MerchantName = item.MerchantName;
+        modifiedItem.RewardCoins = item.RewardCoins;
+        modifiedItem.hasRewardCoins = !!parseInt(item.RewardCoins.units);
+
+        var tsSeconds = item.Date.seconds + 19800; // offset 5.5 * 60 * 60
+        var dateAndMonth = getFormattedDateAndMonth(tsSeconds);
+        var hasDayIcon = false;
+        var hasNightIcon = false;
+        var iconObj;
+
+        if (txnData[dateAndMonth]) {
+            hasDayIcon = txnData[dateAndMonth].hasDayIcon;
+            hasNightIcon = txnData[dateAndMonth].hasNightIcon;
+        }
+
+        iconObj = getIconObj(tsSeconds, hasDayIcon, hasNightIcon);
+
+        if (iconObj.dayIcon) {
+            hasDayIcon = true;
+            modifiedItem.IsDayIcon = true;
+        } else if (iconObj.nightIcon) {
+            hasNightIcon = true;
+            modifiedItem.IsNightIcon = true;
+        }
+
+        if (!txnData[dateAndMonth]) {
+            txnData[dateAndMonth] = { data: [modifiedItem], hasDayIcon: hasDayIcon, hasNightIcon: hasNightIcon };
+        } else {
+            txnData[dateAndMonth].data.push(modifiedItem);
+            txnData[dateAndMonth].hasDayIcon = hasDayIcon;
+            txnData[dateAndMonth].hasNightIcon = hasNightIcon;
+        }
+        txnData[dateAndMonth].timeInMs = tsSeconds * 1000;
+    });
+
+    // debugger;
+    json.TxnData = sortTxnData(txnData);
+
+    // prepare the page txn data to make it render on the html
+    var pageData = [{ page: 1, data: [{ name: "", data: [] }], hasValidData: true }];
+    var currIdx = 0;
+    var innerIdx = -1;
+    var height = hasTxnSummaryData ? 90 : 684; // total height - 1120, header - 208, footer - 160, txn summary - 662, left content = 684 (1120 - 208 - 160 - 662)
+    var currHeight = 0;
+
+    json.TxnData.forEach(function (item) {
+        innerIdx += 1;
+        currHeight += 40 + 42;
+
+        if (currHeight > height) {
+            currIdx += 1;
+            height = 812; // total height - 1120, header - 80, footer - 160, content top padding & header - 32 + 36, left content = 812 (1120 - 80 - 160 - 32 - 36)
+            innerIdx = 0;
+            currHeight = 40 + 42;
+        }
+
+        if (!pageData[currIdx]) {
+            pageData[currIdx] = { page: currIdx + 1, data: [{ name: "", data: [] }] };
+            pageData[currIdx].hasValidData = true;
+        }
+
+        pageData[currIdx].data[innerIdx] = {
+            name: item.name,
+            data: [item.data[0]]
+        };
+
+        item.data.forEach(function (idata, sidx) {
+            if (sidx !== 0) {
+                currHeight += 54;
+
+                if (currHeight > height) {
+                    currIdx += 1;
+                    height = 812;
+                    innerIdx = 0;
+                    currHeight = 40 + 42;
+                }
+
+                if (!pageData[currIdx]) {
+                    pageData[currIdx] = { page: currIdx + 1, data: [{ name: item.name, data: [] }] };
+                    pageData[currIdx].hasValidData = true;
+                }
+
+                pageData[currIdx].data[innerIdx].data.push(idata);
+            }
+        })
+    });
+
+    ///// Logic to start transaction data from page 2nd ////
+
+    // Removing last data from the page 1st transaction
+    var firstPageTransaction = pageData[0].data.pop();
+
+    // Adding empty object at the place from where we remove the transaction data
+    pageData[0].data.push({ name: '', data: [{}] });
+
+    /**
+     * Checking if date in removeData(firstPageTransaction) transaction is same in other page transaction date
+     */
+    if (pageData.length === 1) {
+        pageData.push({ page: 2, data: [firstPageTransaction], hasValidData: true });
+    } else if (pageData.length > 1) {
+        if (firstPageTransaction.name === pageData[1].data[0].name) {
+            pageData[1].data[0].data.unshift(firstPageTransaction.data[0]);
+        } else {
+            pageData[1].data.unshift(firstPageTransaction);
+
+        }
+    }
+    ///// Logic End ////
+
+    // need to create new page if data is greater than 9
+    var len = pageData.length;
+    var rendered = "";
+    var extrapage = "";
+    var lastPageData = pageData[pageData.length - 1];
+
+    // if (getTransactionsInPage(lastPageData) > 9) {
+    //           extractRemainingTransactionsInPage(pageData, lastPageData, 9);
+    //           len = pageData.length;
+    // }
+
+    // Create new page for EMI summary if it exists
+    var hasEmiSummary = false;
+    var emiSummaryDetails =EmiSummary.EmiDetails;
+
+    if (emiSummaryDetails && emiSummaryDetails.length > 0) {
+        hasEmiSummary = true;
+        var newObj = {};
+        len += 1;
+        newObj.page = len;
+        // even if there is no txn for the current page, do not show the no txn UI
+        newObj.showNoTxnUi = false;
+        newObj.data = [{ name: '', data: [] }];
+        pageData.push(newObj);
+    }
+
+    var renderHeader, contentData;
+
+    pageData.forEach(function (item, idx) {
+        var headerTemplate;
+        var hasTxns = !!item.data[0].data.length;
+        var hasValidData = item.hasValidData;
+        var hasPageLengthOne = item.page === 1;
+
+        var showNoTxnUi = true;
+
+        if (item.showNoTxnUi !== undefined) showNoTxnUi = item.showNoTxnUi;
+
+        contentData = {
+            TxnSummaryData: txnSummaryData,
+            HasTxnSummaryData: hasTxnSummaryData && idx === 0 && hasTxns,
+            TxnData: item.data,
+            HasTxns: hasTxns,
+            showNoTxnUi: showNoTxnUi,
+            FromDate: json.FromDate,
+            ToDate: json.ToDate,
+            RenderRewardsData: item.page === 1,
+            RewardsSummaryData: rewardsSummaryData,
+            hasRewardsSummaryData: hasRewardsSummaryData,
+            TipsAndInformationData: tipsAndInformationData,
+            ExtraRewardsInfo: extraRewardsInfo,
+            FeeBreakDown: feeBreakDown,
+            CustomerCareDetails: customerCareDetails,
+            pageLength: item.page === pageData.length,
+            hasPageLengthOne: hasPageLengthOne,
+            ContactUsDetails: ContactUsDetails,
+            TncSection: getTncText(tncSectionDetails),
+            showProTipInReward: showProTipInReward,
+            EmiSummary: EmiSummary,
+            hasEmiSummary: hasEmiSummary,
+            hasFeeBreakDownComponents: hasFeeBreakDownComponents,
+            firstPagefooter: hasPageLengthOne && showProTipInReward
+        };
+
+        if (idx === 0) {
+            headerTemplate = document.getElementById("primary-header-template").innerHTML;
+            contentData.Class = hasTxnSummaryData ? "ccr" : "ccr ccr--v2";
+        } else {
+            headerTemplate = document.getElementById("secondary-header-template").innerHTML;
+            contentData.Class = "ccr ccr--v1";
+        }
+
+        var contentTemplate = document.getElementById("content-template").innerHTML;
+        var footerTemplate = document.getElementById("footer-template").innerHTML;
+        var extraPageTemplate = document.getElementById("last-page-template").innerHTML;
+
+        renderHeader = Mustache.render(headerTemplate, {
+            UserDetails: json.UserDetails,
+            FromDate: json.FromDate,
+            ToDate: json.ToDate,
+            FiBrandLogo: json.FiBrandLogo,
+            PartnerBankLogo: json.PartnerBankLogo,
+            CreditCardProgramLogo: json.CreditCardProgramLogo,
+        });
+        var renderFooter = Mustache.render(footerTemplate, { Page: item.page, Length: pageData.length + 1 });
+        var renderContent = Mustache.render(contentTemplate, contentData);
+        var renderExtraPageContent = Mustache.render(extraPageTemplate, contentData)
+
+        rendered += renderHeader + renderContent + renderFooter;
+        extrapage = renderHeader + renderExtraPageContent + Mustache.render(footerTemplate, { Page: pageData.length + 1, Length: pageData.length + 1 });
+    });
+
+    document.getElementById("target").innerHTML = rendered;
+    document.getElementById("extra-page").innerHTML = extrapage
+
+
+    var topElement = document.querySelector('#extra-page .issuer-adress');
+    var bottomElement = document.querySelector('#extra-page .fcr').children[0];
+    var footerTemplate = document.getElementById("footer-template").innerHTML;
+    var debugMsgs = [];
+
+    console.log(topElement, bottomElement);
+
+    // debugMsgs.push({
+    //     value : JSON.stringify(topElement) + ' class = ' + document.querySelector('#extra-page .issuer-detail').className
+    // });
+    // debugMsgs.push({
+    //     value : JSON.stringify(bottomElement) + ' class = ' + document.querySelector('#extra-page .fcr').children[0].className
+    // })
+    var bottomsTop = getTopDistance(bottomElement);
+    var topTop = getTopDistance(topElement);
+    var topsBottom = topTop + topElement.offsetHeight;
+    debugMsgs.push({value: JSON.stringify(topElement.getBoundingClientRect())})
+
+    debugMsgs.push({
+        value : '1st -> bottom' + topsBottom
+    })
+    debugMsgs.push({
+        value : '2nd -> top' + bottomsTop
+    })
+    // var heightOfFees = document.querySelector('bg--light-grey.fees-section')
+    if (contentData.FeeBreakDown.FeeBreakDownComponents.length > 3) {// if there is overflow
+
+        var extraPageOverflowTemplate = document.getElementById("last-page-template-overflow-one").innerHTML;
+        var extraPageOneRenderedContent = Mustache.render(extraPageOverflowTemplate, contentData)
+        extrapage = renderHeader + extraPageOneRenderedContent + Mustache.render(footerTemplate, { Page: pageData.length + 1, Length: pageData.length + 1 });
+
+        var extraPageOverflowTemplateTwo = document.getElementById("last-page-template-overflow-two").innerHTML;
+        var extraPageTwoRenderedContent = Mustache.render(extraPageOverflowTemplateTwo, contentData);
+
+        extrapage += renderHeader + extraPageTwoRenderedContent + Mustache.render(footerTemplate, { Page: pageData.length + 2, Length: pageData.length + 2, lastPage : true });
+
+        document.getElementById("extra-page").innerHTML = extrapage
+    }
+
+    // var debugDiv = document.getElementById('debug-page');
+    // var debugTemplate = document.getElementById('debug-page-template').innerHTML;
+    // debugDiv.innerHTML = renderHeader + Mustache.render(debugTemplate, {messages : debugMsgs}) + Mustache.render(footerTemplate, { Page: pageData.length + 3, Length: pageData.length + 3 });;
+
+
+});
+
+var domC = 'DOMContentLoaded'
+var onLoad = 'load'
+
+window.addEventListener(domC, init);
+
+function getTransactionsInPage(currentPageData) {
+    var count = 0;
+    currentPageData.data.forEach( function(dateItem) {
+        count += dateItem.data.length;
+    });
+    return count;
+}
+
+function extractRemainingTransactionsInPage(pageData, currentPageData, fromIndex) {
+    var count = 0;
+    for (var index = 0; index < currentPageData.data.length; index++) {
+        var dateItem = currentPageData.data[index];
+        var updatedCount = count + dateItem.data.length;
+        if (updatedCount >= fromIndex) {
+            var slicedData = dateItem.data.splice( -(updatedCount - fromIndex) );
+            var newPageData = [{
+                name : dateItem.name,
+                data : slicedData
+            }];
+            newPageData = newPageData.concat(currentPageData.data.splice(index + 1));
+            pageData.push({
+                hasValidData : true,
+                page : pageData.length,
+                data : newPageData
+            });
+            break;
+        }
+        count = updatedCount;
+    }
+}
+
+function getTopDistance (elem) {
+
+    // Set our distance placeholder
+    var distance = 0;
+
+    // Loop up the dom
+    do {
+        // Increase our distance counter
+        distance += elem.offsetTop;
+
+        // Set the element to it's parent
+        elem = elem.offsetParent;
+
+    } while (elem);
+    distance = distance < 0 ? 0 : distance;
+    return distance;
+}
+
+function getTncText(tncSectionDetails) {
+    var finalText = tncSectionDetails.Text;
+    if (tncSectionDetails.TextWithLinkAndValues.length > 0) {
+        tncSectionDetails.TextWithLinkAndValues.forEach (function (textWithLinkAndValue) {
+            var linkTemplate = "<a class='link' href='url' >urlText</a>"
+            linkTemplate = linkTemplate.replace("url",textWithLinkAndValue.Link)
+            linkTemplate = linkTemplate.replace("urlText",textWithLinkAndValue.Value)
+            finalText = finalText.replace(textWithLinkAndValue.Title,linkTemplate)
+        })
+    }
+    var tncText = "<div class='l6--v7'>" + finalText + "</div>"
+    console.log(tncText);
+    return tncText;
+}
+
+    </script>
+</body>
+
+</html>

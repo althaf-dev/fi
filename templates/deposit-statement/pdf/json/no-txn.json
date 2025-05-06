@@ -1,0 +1,22 @@
+{
+    "UserDetails":{
+        "Name":"Shreya Khajanchi",
+        "PhoneNumber":9999911111,
+        "Email":"superfian@gmail.com",
+        "Address":"2nd Floor, D406, Sector 40 NOIDA, UP",
+        "AccountNumber":"10010100466777",
+        "IFSC":"FDRL0005555"
+    },
+    "FromDate":{
+        "year":"2020",
+        "month":"10",
+        "day":"1"
+    },
+    "ToDate":{
+        "year":2020,
+        "month":12,
+        "day":10
+    },
+    "TransactionDetails": [],
+    "TransactionSummary": null
+}

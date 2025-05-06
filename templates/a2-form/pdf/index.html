@@ -1,0 +1,362 @@
+<!-- @file A2 Form Version 2 -->
+<!-- This file contains A2 Form version-2's layout in html -->
+<!-- 
+    To generate the pdf with wkhtmltopdf:
+    wkhtmltopdf --debug-javascript --enable-local-file-access --disable-smart-shrinking --page-size A4 -T 10 -B 10 -L 0 -R 0 index.html ./output.pdf
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Form for US Stocks</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+
+    <!-- Primary Content Template -->
+    <script id="first-page-template" type="x-tmpl-mustache">
+         <div class="page-outer-cr">
+             <div class="page-cr">
+                 <div class="annex wd-100">
+                     <div class="h-1"><a href="#19" class="normal-a"><sup>19</sup></a>Annex</div>
+                 </div>
+                 <div class="heading mb-20">
+                     <div class="heading-title">FORM A2</div>
+                     <div>(To be completed by the applicant)</div>
+                 </div>
+ 
+                 <div class="fl mt-10 ju-sb">
+                     <div class="fl-col pr-10 wd-30">
+                         <div>(For payments other than imports and remittances covering intermediary trade)</div>
+                         <div class="mt-20 text-un h-1">Application for Remittance Abroad</div>
+                     </div>
+                     <div class="fl-col">
+                         <div class="fill-blank">
+                             AD Code No.
+                             <div class="underscore">{{ ADCode }}</div>
+                         </div>
+                         <div class="fill-blank mt-10">
+                             Form No.
+                             <div class="underscore"></div>
+                         </div>
+                         <div class="mb-10 wd-100">(To be filled in by the Authorised Dealer)</div>
+ 
+                         <div class="fill-blank mt-10">
+                             <div>Currency</div>
+                             <div class="underscore">{{Currency}}</div>
+                             <div class="ml-10">Amount</div>
+                             <div class="underscore">{{CurrencyAmountInUSD}}</div>
+                             <div class="ml-10">Equivalent to Rs.</div>
+                             <div class="underscore">{{CurrencyAmountINR}}</div>
+                         </div>
+                         <div>(To be completed by the Authorised Dealer)</div>
+                     </div>
+                 </div>
+ 
+                 <div class="fill-blank mt-20">
+                     I/We
+                     <div class="underscore">{{CustomerName}}</div>
+                 </div>
+ 
+                 <div class="fill-blank mt-10">
+                     PAN No. <a href="#20" class="normal-a"><sub class="h-6">20</sub></a>
+                     <div class="underscore">{{PanId}}</div>
+                 </div>
+ 
+                 <div class="fill-blank mt-10">
+                     Address
+                     <div class="underscore">{{ApplicantNameAndAddress}}</div>
+                 </div>
+ 
+                 <div class="mt-10">authorize</div>
+                 <div class="fill-blank">
+                     <div class="underscore">{{ADBranchName}}</div>
+                 </div>
+ 
+                 <div class="fill-blank mt-10">
+                     To debit my Savings Bank/ Current/ RFC/ EEFC A/c. No.
+                     <div class="underscore">{{SavingsBankAccountNumber}}</div>
+                 </div>
+                 <div>together with their charges and</div>
+ 
+                 <div class="mt-20 fl issue-draft-container">
+                     <div>* a) Issue a draft : Beneficiary's </div>
+                     <div class="fl-gr ml-10">
+                         <div class="fill-blank">
+                             Name
+                             <div class="underscore ml-10">{{BeneficiaryName}}</div>
+                         </div>
+                         <div class="fill-blank mt-10">
+                             Address
+                             <div class="underscore ml-10">{{BeneficiaryAddress}}</div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="mt-10">
+                     <div>* b) Effect the foreign exchange remittance directly</div>
+                     <div class="fl-col wd-100 ml-20">
+                         <div class="fill-blank">
+                             <div class="mw-35">1) Beneficiary's Name</div>
+                             <div class="underscore">{{BeneficiaryName}}</div>
+                         </div>
+                         <div class="fill-blank">
+                             <div class="mw-35">2) Name and address of the bank</div>
+                             <div class="underscore">{{BeneficiaryBankAndBranch}}</div>
+                         </div>
+                         <div class="fill-blank">
+                             <div class="mw-35">3) Account No.</div>
+                             <div class="underscore">{{BeneficiaryAccountNumber}}</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="fill-blank mt-10">
+                     <div class="w-fit">* c) Issue travelers cheques for</div>
+                     <div class="underscore"></div>
+                 </div>
+                 <div class="fill-blank mt-10">
+                     <div class="w-fit">* d) Issue foreign currency notes for</div>
+                     <div class="underscore"></div>
+                 </div>
+                 <div class="fill-blank ml-20">
+                     <div class="w-fit">Amount (specify currency)</div>
+                     <div class="underscore"></div>
+                 </div>
+                 <div class="italics mt-10">* (Strike out whichever is not applicable) for the purpose/s indicated below
+                 </div>
+ 
+                 <div style="overflow-x:auto;" class="mt-10">
+                     <table>
+                         <tr>
+                             <th class="table-head-red center">Sr. No.</th>
+                             <th class="table-head-red center">Whether under LRS
+                                 (Yes/No)</th>
+                             <th class="table-head-red center">Purpose Code</th>
+                             <th class="table-head-red center">Description</th>
+                         </tr>
+                         {{#LrsEnquiries}}
+                             <tr>
+                                 <td class="center">{{SrNo}}</td>
+                                 <td class="center">{{WhetherLrs}}</td>
+                                 <td class="center">{{PurposeCode}}</td>
+                                 <td class="center">{{Description}}</td>
+                             </tr>
+                         {{/LrsEnquiries}}
+                         <tr>
+                             <td></td>
+                             <td></td>
+                             <td colspan="2">As per the Annex</td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div class="mt-20">(Remitter should put a tick (√ ) against an appropriate purpose code. In case of doubt/
+                     difficulty, the AD bank should be consulted).</div>
+ 
+                 <div class="mt-20 bor-tp ptr-10">
+                     <div class="h-6" id="19"><sup class="h-6">19</sup> Inserted vide <a
+                             href="https://rbi.org.in/Scripts/NotificationUser.aspx?Id=10276&Mode=0" class="h-6">AP (Dir)
+                             series Circular 50 dated February 11, 2016</a>. Prior to insertion it read as Annex 1, which has
+                         since
+                         been replaced with effect from the same date.</div>
+                     <div class="h-6 mt-10" id="20"><sup class="h-6">20</sup> Modified vide <a
+                             href="https://rbi.org.in/Scripts/NotificationUser.aspx?Id=11309&Mode=0" class="h-6">AP (DIR)
+                             Series Circular No. 32 dated June 19, 2018</a>. Prior to modification, it read “PAN No. (For
+                         remittances exceeding USD 25,000 and for all capital account transactions)”</div>
+                 </div>
+             </div>
+         </div>
+     </script>
+
+    <!-- Second Page Template -->
+    <script id="second-page-template" type="x-tmpl-mustache">
+         <div class="page-outer-cr">
+             <div class="page-cr">
+                 <div class="h-1 mt-10">Declaration</div>
+                 <div class="h-1">(Under FEMA 1999)</div>
+                 <div class="fl mt-10">
+                     <div class="italics">1. </div>
+                     <div class="italics ml-10"># I, <span class="dot-underline">{{CustomerName}}</span>(Name), hereby declare that the total amount of foreign
+                         exchange purchased from or remitted through, all sources in India during the financial
+                         year including this application is within the overall limit of the Liberalised Remittance
+                         Scheme prescribed by the Reserve Bank of India and certify that the source of funds
+                         for making the said remittance belongs to me and the foreign exchange will not be
+                         used for prohibited purposes. </div>
+                 </div>
+ 
+                 <div class="h-1 italics mt-30">Details of the remittances made/transactions effected under the Liberalised
+                     Remittance Scheme in the current financial year (April- March) ..…….. </div>
+ 
+                 <div style="overflow-x:auto;" class="mt-20">
+                     <table>
+                         <tr>
+                             <th class="center">Sl. NO</th>
+                             <th class="center" style="min-width: 100px">Date</th>
+                             <th class="center">Amount</th>
+                             <th class="center">Name and address of AD branch/FFMC through which
+                                 the transaction has been effected</th>
+                         </tr>
+ 
+                         {{#DeclarationDetail}}
+                             <tr>
+                                 <td class="center">{{DeclarationSerialNumber}}</td>
+                                 <td class="center">{{DeclarationDate}}</td>
+                                 <td class="center">{{DeclarationAmount}}</td>
+                                 <td class="center">{{DeclarationNameAndAddressOfADBranch}}</td>
+                             </tr>
+                         {{/DeclarationDetail}}
+                     </table>
+                 </div>
+ 
+                 <div class="fl mt-20">
+                     <div class="italics">2. </div>
+                     <div class="italics ml-10"># The total amount of foreign exchange purchased from or remitted through,
+                         all
+                         sources in India during this calendar year including this application is within USD
+                         $250,000 the annual limit prescribed by
+                         Reserve Bank of India for the said purpose. </div>
+                 </div>
+ 
+                 <div class="fl mt-20">
+                     <div class="italics">3. </div>
+                     <div class="italics ml-10"># Foreign exchange purchased from you is for the purpose indicated above.</div>
+                 </div>
+ 
+                 <div class="mt-20 italics"># (Strike out whichever is not applicable )</div>
+                 <div class="mt-60">{{SignatureOfApplicant}}</div>
+                 <div class="mt-10">Signature of the applicant</div>
+                 <div class="mt-10">({{CustomerName}})</div>
+                 <div class="mt-10">Date: {{DateOfSigningDeclaration}}</div>
+ 
+                 <div class="h-1 mt-30">Certificate by the Authorised Dealer </div>
+                 <div class="mt-20">This is to certify that the remittance is not being made by/ to ineligible entities and
+                     that the
+                     remittance is in conformity with the instructions issued by the Reserve Bank from time to
+                     time under the Scheme. </div>
+ 
+                 <div class="mt-50">Name and designation of the authorised official: </div>
+                 <div class="mt-20">Stamp and seal</div>
+ 
+                 <div class="mt-20">Signature:</div>
+                 <div class="mt-20">Date:</div>
+                 <div class="mt-20">Place:</div>
+             </div>
+         </div>
+     </script>
+
+    <!-- Static content table -->
+    <div class="page-outer-cr">
+        <div class="page-cr">
+            <div class="h-1">Purpose Codes for Reporting under FETERS</div>
+            <div class="mt-20"><span class="h-1">A. Payment Purposes</span> (for use in BOP file)</div>
+        </div>
+
+        <div id="payment-purpose" class="mt-10"></div>
+    </div>
+
+    <!-- import constants for static data -->
+    <script src="./constants.js"></script>
+
+    <!-- appending table from the static data -->
+    <script>
+        (function () {
+            const paymentPurposeTable = document.getElementById('payment-purpose');
+
+            var renderData = '<table>';
+
+            renderData += '<tr>';
+
+            for (var i = 0; i < tableHeader.length; i++) {
+                renderData += '<th>' + tableHeader[i] + '</th>';
+            }
+
+            renderData += '</tr>';
+
+            // Adding rows for each tableData
+            for (var i = 0; i < tableData.length; i++) {
+                renderData += '<tr>';
+                var rowSpanOfGroupNo = 0;
+
+                // Calculating the number of rows occupied by each group number
+                // to account for rowspan for it.
+                for (var j = 0; j < tableData[i].children.length; j++) {
+                    // If there are children then counting and adding it to rowspan
+                    // otherwise adding 1 to rowspan.
+                    if (tableData[i].children[j].children && tableData[i].children[j].children.length > 0) {
+                        rowSpanOfGroupNo += tableData[i].children[j].children.length;
+                    } else {
+                        rowSpanOfGroupNo += 1;
+                    }
+                };
+                renderData += ('<td rowspan="' + rowSpanOfGroupNo + '" class="h-6">' + tableData[i].grno + '</td>');
+
+                // Iterating over every purposeGroup inside group number
+                for (var m = 0; m < tableData[i].children.length; m++) {
+
+                    if (m > 0) {
+                        renderData += '<tr>';
+                    }
+
+                    if (tableData[i].children[m].children && tableData[i].children[m].children.length && tableData[i].children[m].children.length > 0) {
+                        // calculating number of purposes inside each purposeGroup to leave number of rowspan
+                        const rowSpanOfGroupName = tableData[i].children[m].children.length;
+                        renderData += ('<td rowspan="' + rowSpanOfGroupName + '" class="h-6">' + tableData[i].children[m].groupName + '</td>');
+                    } else {
+                        // if there are no purposes inside purposeGroup then spanning it in whole column to consume space
+                        renderData += ('<td colspan="3" class="h-1 h-6">' + tableData[i].children[m].groupName + '</td>');
+                    }
+
+                    // adding purpose code and description for every purposeGroup
+                    for (var k = 0; k < tableData[i].children[m].children.length; k++) {
+                        if (k > 0) {
+                            renderData += '<tr>';
+                        }
+                        renderData += ('<td class="h-6">' + tableData[i].children[m].children[k].code + '</td>');
+                        renderData += ('<td class="h-6">' + tableData[i].children[m].children[k].description + '</td>');
+                        renderData += '</tr>';
+                    };
+
+                };
+            };
+
+            renderData += '</table>';
+
+            paymentPurposeTable.innerHTML = renderData;
+        })();
+    </script>
+
+    <!-- import mustache.js library -->
+    <script
+        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+        </script>
+
+    <!-- fetching and uploading data to html -->
+    <script>
+        (function () {
+            // var data = "${data}";
+            var data = '{"ADCode":"NA","BRCode":"NA","SolId":"5555","DealId":"NA","FxRate":"86.40","FCY":"USD","Amount":"$10.00","CustomerName":"Jolly Joseph Byomkesh Bakshi","ADBranchName":"FEDERAL BANK KOCHI","Currency":"USD","CurrencyAmountInUSD":"$10.00","ExchangeRate":"86.40","CurrencyAmountINR":"342833864.00","ApplicantNameAndAddress":"Jolly Joseph Byomkesh Bakshi 421 Fi Apartments Bangalore Karnataka INDIA - 686502","CustomerId":"2958084093","PanId":"SHUBH1234C","SavingsBankAccountNumber":"4657589000","BeneficiaryName":"Alpaca Securities LLC","BeneficiaryAccountNumber":"1636877","BeneficiaryBankAndBranch":"BMO Harris Bank NA - BMO Harris Bank 111. W. Monroe Street Chicago IL 60603 USA","BeneficiarySwiftCode":"HATRUS44","BeneficiaryAddress":"3 East Third Ave Suite 233 San Mateo CA 94401 USA","AdditionalRemittanceInformation":"Purchase of US Equity","RoutingNumber":"071000288","IntermediaryBankAndBranch":"-","IntermediaryBankSwiftCode":"-","FinancialYear":"21-06-2023","DeclarationDetail":[{"DeclarationSerialNumber":"1","DeclarationDate":"21-06-2023","DeclarationAmount":"342202271864.00","DeclarationNameAndAddressOfADBranch":"FEDERAL BANK KOCHI"}],"SignatureOfApplicant":"signed @ 21.06.2023 17:36:12","DateOfSigningDeclaration":"21-06-2023","LrsEnquiries":[{"SrNo":"1","WhetherLrs":"YES","PurposeCode":"S0001","Description":"Indian portfolio investment abroad - Equity shares"}]}';
+
+            var json = JSON.parse(data);
+
+            // get static html content
+            var primaryContentTemplate = document.getElementById("first-page-template").innerHTML;
+            var secondaryContentTemplate = document.getElementById("second-page-template").innerHTML;
+
+
+            // insert dynamic data in html
+            var renderPrimaryContent = Mustache.render(primaryContentTemplate, json);
+            var renderSecondaryContent = Mustache.render(secondaryContentTemplate, json);
+
+            var rendered = renderPrimaryContent + renderSecondaryContent;
+
+            // inject final content in html
+            document.getElementById("target").innerHTML = rendered;
+        })();
+    </script>
+</body>
+
+</html>

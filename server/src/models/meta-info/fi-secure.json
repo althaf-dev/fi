@@ -1,0 +1,23 @@
+{
+    "metaTitle": "How Security Works on Fi | Fi Money",
+    "metaDescription": "We take security seriously. Here's a breakup of how we approach security at Fi Money",
+    "canonicalUrl": "/Fi-secure",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Fi secure",
+                "item": "https://fi.money/Fi-secure"
+            }
+        ]
+    }
+}

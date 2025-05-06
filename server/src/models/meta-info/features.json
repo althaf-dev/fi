@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Fi - Secure Digital Banking Services in India",
+    "metaDescription": "Fi is a financial app that includes a digital savings bank account and a comprehensive suite of functions to help you manage your money better - track your expenses and manage your funds!",
+    "canonicalUrl": "/features",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "features",
+                "item": "https://fi.money/features"
+            }
+        ]
+    }
+}

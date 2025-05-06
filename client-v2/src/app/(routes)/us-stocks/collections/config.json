@@ -1,0 +1,99 @@
+{
+	"elements" : {
+		"7921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf1",
+				"cb869a56-ee81-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"s69363fa-95a3-11ee-b9d1-0242ac120002",
+				"personal_loan_footer"
+			]
+		},
+		"s69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "Fi partners with<br/>the best to secure<br/>your money",
+			"type" : "Text",
+			"variant": "H1VARIANT_BLACK"
+		},
+		"personal_loan_footer":{
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"ga921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_FOOTER",
+			"children": [	
+				"g921e138-fceb-4f7e-b5de-9539caad317f",
+				"ga921e138-fceb-4f7e-b5de-9539caad317m",
+				"ga921e138-fceb-4f7e-b5de-9539caad317k",
+				"ga921e138-fceb-4f7e-b5de-9539caad31gk",
+				"ga921e138-fceb-4f7e-b5de-9539caad317kf",
+				"ga921e138-fceb-4f7e-b5de-9539caad31gkf"
+			]
+		},
+		"g921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317m": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317k": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},"ga921e138-fceb-4f7e-b5de-9539caad31gk": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317kf": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},"ga921e138-fceb-4f7e-b5de-9539caad31gkf": {
+			"type": "Text",
+			"content": "ISO 27001:2013",
+			"variant": "footer_logo_text"
+		},		
+		"cb869a56-ee81-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f"
+			]
+		},
+		"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f": {
+			"content": "Our partner bank hosts your Savings Account and follows all security standards per applicable regulations.</br></br>Your money is always safe with our banking partner - Federal Bank, is covered under the Deposit Insurance and Credit Guarantee Corporation Scheme. This insures your money up to <b>₹5 lakh</b>.</br></br>Fi itself is not a bank and doesn’t hold or claim to have a banking license.",
+			"type" : "Text",
+			"variant": "h6VARIANT_GREY3"
+		},		
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"7921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		},
+		"7921e138-fceb-4f7e-b5de-9539caad317e1": {
+			"type": "USStockCollections"
+		}
+	},
+	"sections": [
+		
+		"7921e138-fceb-4f7e-b5de-9539caad317e1",
+		"feature_page_body_container"
+	]
+}

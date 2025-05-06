@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epifi - Connected Account Statement</title>
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css" />
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/sbi-bank-statement/assets/css/index.css" />
+    </head>
+
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Header Template -->
+        <script id="primary-header-template" type="x-tmpl-mustache">
+            <div class="hcr">
+                <div class="hcr-r1">
+                    <div class="wr1">
+                        <span class="h1">Account Statement&nbsp;•&nbsp;</span>
+                        <span class="p3--v1">{{ FromDate.day }}</span>
+                        <span class="p3--v1">{{ FromDate.month }}</span>
+                        <span class="p3--v1">{{ FromDate.year }}</span>
+                        <span class="p3--v1">&nbsp;to&nbsp;</span>
+                        <span class="p3--v1">{{ ToDate.day }}</span>
+                        <span class="p3--v1">{{ ToDate.month }}</span>
+                        <span class="p3--v1">{{ ToDate.year }}</span>
+                    </div>
+                </div>
+                <div class="hcr-r2">
+                    <div class="h1--v3 mb-10">{{ UserDetails.Name }}</div>
+                    <div class="cr ju-sb">
+                        <div>
+                            <div class="col1 mb-20">
+                                <div class="mr-100">
+                                    <div class="h1--v4">Bank Name</div>
+                                    <div class="h2--v2">{{ UserDetails.BankName }}</div>
+                                </div>
+                                <div class="mr-100">
+                                    <div class="h1--v4">Branch Name</div>
+                                    <div class="h2--v2">{{ UserDetails.BranchName }}</div>
+                                </div>
+                                <div>
+                                    <div class="h1--v4">MICR Code</div>
+                                    <div class="h2--v2">{{ UserDetails.MICRCode }}</div>
+                                </div>
+                            </div>
+                            <div class="cr">
+                                <div class="h1--v4">
+                                    <div>Closing Balance</div>
+                                    <div class="p5--v4">on {{ ToDate.day }} {{ ToDate.monthShortStr }} {{ ToDate.year }}</div>
+                                    <div class="wr">
+                                        <span class="h2--v2">₹</span>
+                                        <span class="h2--v2">{{ TxnSummaryData.ClosingBalance.Amount.units }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="wr1">
+                                <div class="h2">SAVINGS A/C NO</div>
+                                <div class="l4 lb">{{ UserDetails.AccountNumber }}</div>
+                            </div>
+                            <div>
+                                <div class="h2">IFSC</div>
+                                <div class="p4 lb">{{ UserDetails.IFSC }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Secondary Header Template -->
+        <script id="secondary-header-template" type="x-tmpl-mustache">
+            <div class="hcr--v1">
+                <div class="wr1">
+                    <div class="col1">
+                        <span class="h1--v2">Account No.</span>
+                        <span class="l4--v1">{{ UserDetails.AccountNumber }}</span>
+                    </div>
+                    <div class="col2">
+                        <img
+                            class="fi-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg"
+                            alt="epifi"
+                        />
+                    </div>
+                </div>
+                <div class="wr2">
+                    <div class="col1">
+                        <span class="h1--v2">Account Holder:</span>
+                        <span class="l4--v1">{{ UserDetails.Name }}</span>
+                    </div>
+                    <div class="col2 p3--v1">
+                        <span>{{ FromDate.day }}</span>
+                        <span>{{ FromDate.month }}</span>
+                        <span>{{ FromDate.year }}</span>
+                        <span>&nbsp;to&nbsp;</span>
+                        <span>{{ ToDate.day }}</span>
+                        <span>{{ ToDate.month }}</span>
+                        <span>{{ ToDate.year }}</span>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Footer Template -->
+        <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr2">
+                    <div class="wr1">
+                        <!-- <div class="h2--v1">IN PARTNERSHIP WITH</div> -->
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="p5--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="p5--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+        <!-- Content Template -->
+        <script id="content-template" type="x-tmpl-mustache">
+            <div class="{{ Class }}">
+                {{#HasTxns}}
+                <div class="hwr">
+                    <div class="wr1">
+                        <div class="h1--v1">Date</div>
+                    </div>
+                    <div class="wr2">
+                        <div class="h1--v1">Transaction Details</div>
+                    </div>
+                    <div class="wr3">
+                        <div class="h1--v1">Amount</div>
+                    </div>
+                </div>
+                <div>
+                    {{#TxnData}}
+                        <div class="cwr">
+                            <div class="wr1 l4">
+                                {{name}}
+                            </div>
+                            <div class="wr2"></div>
+                        </div>
+                        <div class="txnwr">
+                            {{#data}}
+                                <div class="cl">
+                                    <div class="wr1">
+                                    </div>
+                                    <div class="wr2">
+                                        <div class="p2">{{ MerchantName }}</div>
+                                    </div>
+                                    <div class="wr3">
+                                        <div class="wr">
+                                            <div class="{{ AmountUnitsClass }}">{{ Amount.units }}</div>
+                                            <div class="{{ AmountDecimalsClass }}">.{{ Amount.decimals }}</div>
+                                        </div>
+                                        {{#IsDebit}}
+                                            (D)
+                                        {{/IsDebit}}
+                                        {{#IsCredit}}
+                                            (C)
+                                        {{/IsCredit}}
+                                        {{#IsUnspecified}}
+                                            (O)
+                                        {{/IsUnspecified}}
+                                    </div>
+                                </div>
+                            {{/data}}
+                        </div>
+                    {{/TxnData}}
+                </div>
+                {{/HasTxns}}
+                {{^HasTxns}}
+                <div class="notxnwr">
+                    <div class="wr1">
+                        <span class="h1--v3">It looks like you have not made</span>
+                        <br />
+                        <span class="h1--v3">any transactions on Fi between</span>
+                        <br />
+                        <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                    </div>
+                    <img
+                        class="logo"
+                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                        alt="no-txns"
+                    />
+                </div>
+                {{/HasTxns}}
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+        <script>
+            /**
+             * Returns the month string label
+             * @example
+             * getMonthStr(1)
+             * returns "January"
+             *
+             * @param {number} month number with 1 to 12
+             * @returns {string} Returns the month string label
+             */
+            function getMonthStr(month, shortStr) {
+                var monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var shortStrMonthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                if (shortStr) {
+                    return shortStrMonthList[month - 1];
+                }
+
+                return monthList[month - 1];
+            }
+
+            /**
+             * Returns the formatted amount
+             * @example
+             * getFormattedAmount({ units: 1000000, Nanos: 250000000 })
+             * returns { units: 10,00,000, decimals: 25 }
+             *
+             * @param {object} amount object with units and units
+             * @returns {object} Returns the formatted amount
+             */
+            function getFormattedAmount(amount) {
+                if (!amount) return {};
+                var nanos = "00";
+
+                if (amount.nanos) {
+                    nanos = amount.nanos;
+                    nanos = (nanos / 1e9).toFixed(2).slice(-2);
+                }
+
+                var modifiedUnits = "0";
+
+                if (amount.units) {
+                    modifiedUnits = amount.units.toString();
+                    modifiedUnits = modifiedUnits.replace(/\B(?=(\d{2})*(\d{3})(?!\d))/g, ",");
+                }
+
+                return {
+                    units: modifiedUnits,
+                    decimals: nanos
+                };
+            }
+
+            // add zero for numbers less than 10
+            function addPrefixZero(str) {
+                var modifiedStr = ("0" + str).slice(-2);
+
+                return modifiedStr;
+            }
+
+            /**
+             * Returns the formatted date & month str
+             * @example
+             * getFormattedDateAndMonth(1605917420)
+             * returns "21 Nov"
+             *
+             * @param {number} ts seconds
+             * @returns {string} Returns the formatted date & month str
+             */
+            function getFormattedDateAndMonth(ts) {
+                var d = new Date(ts * 1000);
+
+                var date = addPrefixZero(d.getDate());
+                var monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                var month = monthList[d.getMonth()];
+                var dateAndMonth = date + " " + month;
+
+                return dateAndMonth;
+            }
+
+            function sortTxnData(txnData) {
+                var txnDataKeys = Object.keys(txnData);
+
+                var sortedKeys = txnDataKeys.sort(function (a, b) {
+                    // Turn your strings into dates, and then subtract them
+                    // to get a value that is either negative, positive, or zero.
+                    return new Date(a) - new Date(b);
+                });
+
+                var sortedTxnData = [];
+
+                sortedKeys.forEach(function (item) {
+                    sortedTxnData.push({
+                        name: item,
+                        data: txnData[item].data
+                    })
+                })
+
+                return sortedTxnData;
+            }
+
+            function isEmptyObject(obj) {
+                // not using check Object.keys(obj).length === 0; as that's valid only for ECMA 5+
+                return JSON.stringify(obj) === '{}';
+            }
+
+            (function () {
+                // required if we send data as stringified JSON
+                // var data = '{"UserDetails":{"Name": "Shreya Khajanchi","AccountNumber": "10010100466777","IFSC": "FDRL0005555","BankName": "HDFC","BranchName": "MOWA","MICRCode": "XXXX-XXXXX-XXXXX"},"FromDate":{"year": "2020","month": "10","day": "1"},"ToDate":{"year": 2020,"month": 12,"day": 10},"TransactionDetails":[{"Amount":{"units": 1000000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605917420,"nanos": 10},"MerchantName": "ATM Withdrawalasdsadadadadadadasdasdsadasdasdasdasdsadasdasdsadasdasdasdasdsadasdsasadas","AmountBadge": "CREDIT"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "ATM Withdrawal","AmountBadge": "DEBIT"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"},{"Amount":{"units": 1000,"nanos": 500000000},"TransactionDateTime":{"seconds": 1605972420,"nanos": 10},"MerchantName": "HDFC bank abcscsdas","AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"}],"TransactionSummary":{"ClosingBalance":{"Amount":{"currencyCode": "INR","units": "77105","nanos": 0}}}}';
+
+                var json = ${data};
+
+                if (isEmptyObject(json)) {
+                    // print undefined as BE looks for this log and returns error to caller
+                    console.log(undefined);
+                    return;
+                }
+
+                var fromDateMonth = getMonthStr(json.FromDate.month);
+                var fromDateMonthShortStr = getMonthStr(json.FromDate.month, true);
+                var toDateMonth = getMonthStr(json.ToDate.month);
+                var toDateMonthShortStr = getMonthStr(json.ToDate.month, true);
+
+                json.FromDate.month = fromDateMonth;
+                json.ToDate.month = toDateMonth;
+
+                json.FromDate.monthShortStr = fromDateMonthShortStr;
+                json.ToDate.monthShortStr = toDateMonthShortStr;
+
+                var txnSummaryData = {};
+                var txnSummaryJSON = json.TransactionSummary;
+
+                if (txnSummaryJSON) {
+                    var closingBalance = txnSummaryJSON.ClosingBalance;
+
+                    if (closingBalance) {
+                        txnSummaryData.ClosingBalance = {
+                            Amount: getFormattedAmount(closingBalance.Amount)
+                        };
+                    }
+                }
+
+                var txnData = {};
+
+                // format txn details according to the rendered html
+                json.TransactionDetails && json.TransactionDetails.forEach(function(item) {
+                    var modifiedItem = {};
+                    
+                    modifiedItem.Amount = getFormattedAmount(item.Amount);
+                    modifiedItem.MerchantName = item.MerchantName;
+
+                    if (item.AmountBadge) {
+                        var amountBadge = item.AmountBadge.toLowerCase();
+
+                        modifiedItem.IsDebit = amountBadge === "debit";
+                        modifiedItem.IsCredit = amountBadge === "credit";
+                        modifiedItem.IsUnspecified = amountBadge === "amount_badge_unspecified";
+                    }
+
+                    var tsSeconds = item.TransactionDateTime.seconds + 19800; // offset 5.5 * 60 * 60
+                    var dateAndMonth = getFormattedDateAndMonth(tsSeconds);
+
+                    if (!txnData[dateAndMonth]) {
+                        txnData[dateAndMonth] = { data: [modifiedItem] };
+                    } else {
+                        txnData[dateAndMonth].data.push(modifiedItem);
+                    }
+                });
+
+                // sort the txn data according to the timestamp
+                json.TxnData = sortTxnData(txnData);
+
+                // prepare the page txn data to make it render on the html
+                var pageData = [{ page: 1, data: [{ name: "", data: []}] }];
+                var currIdx = 0;
+                var innerIdx = -1;
+                var height = 700; // total height - 1120, header - 225, footer - 160, content top & bottom padding - 16 + 32 (1120 - 225 - 80 - 16 - 32)
+                var currHeight = 0;
+
+                json.TxnData.forEach(function(item) {
+                    innerIdx += 1;
+                    currHeight += 40 + 42;
+
+                    if (currHeight > height) {
+                        currIdx += 1;
+                        height = 812; // total height - 1120, header - 80, footer - 160, content top padding & header - 32 + 36 (1120 - 80 - 120 - 32 - 36)
+                        innerIdx = 0;
+                        currHeight = 40 + 42;
+                    }
+
+                    if (!pageData[currIdx]) {
+                        pageData[currIdx] = { page: currIdx + 1, data: [{ name: "", data: []}] };
+                    }
+
+                    pageData[currIdx].data[innerIdx] = {
+                        name: item.name,
+                        data: [item.data[0]]
+                    };
+
+                    item.data.forEach(function(idata, sidx) {
+                        if (sidx !== 0) {
+                            currHeight += 54;
+
+                            if (currHeight > height) {
+                                currIdx += 1;
+                                height = 812;
+                                innerIdx = 0;
+                                currHeight = 40 + 42;
+                            }
+
+                            if (!pageData[currIdx]) {
+                                pageData[currIdx] = { page: currIdx + 1, data: [{ name: item.name, data: []}] };
+                            }
+            
+                            pageData[currIdx].data[innerIdx].data.push(idata);
+                        }
+                    })
+                });
+
+                var len = pageData.length;
+                var rendered = "";
+
+                pageData.forEach(function(item, idx) {
+                    var headerTemplate;
+                    var hasTxns = !!item.data[0].data.length;
+                    var contentData = {
+                        TxnData: item.data,
+                        HasTxns: hasTxns,
+                        FromDate: json.FromDate,
+                        ToDate: json.ToDate,
+                    };
+
+                    if (idx === 0) {
+                        headerTemplate = document.getElementById("primary-header-template").innerHTML;
+                        contentData.Class = "ccr";
+                    } else {
+                        headerTemplate = document.getElementById("secondary-header-template").innerHTML;
+                        contentData.Class = "ccr ccr--v1";
+                    }
+                    
+                    var contentTemplate = document.getElementById("content-template").innerHTML;
+                    var footerTemplate = document.getElementById("footer-template").innerHTML;
+
+                    var renderHeader = Mustache.render(headerTemplate, {
+                        UserDetails: json.UserDetails,
+                        FromDate: json.FromDate,
+                        ToDate: json.ToDate,
+                        TxnSummaryData: txnSummaryData,
+                    });
+                    var renderFooter = Mustache.render(footerTemplate, { Page: item.page, Length: len });
+                    var renderContent = Mustache.render(contentTemplate, contentData);
+
+                    rendered += renderHeader + renderContent + renderFooter;
+                });
+
+                document.getElementById("target").innerHTML = rendered;
+            })();
+        </script>
+    </body>
+
+</html>

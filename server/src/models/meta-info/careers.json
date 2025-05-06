@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Fi Money | Careers | Join us to build the future of fintech",
+    "metaDescription": "Explore open positions at Fi Money and Join the team to help us build the future of personal finance!",
+    "canonicalUrl": "/careers",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "careers",
+                "item": "https://fi.money/careers"
+            }
+        ]
+    }
+}

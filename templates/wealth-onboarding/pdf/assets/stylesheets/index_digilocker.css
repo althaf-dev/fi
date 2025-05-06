@@ -1,0 +1,356 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* Base Style */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dove-gray: #646464;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --silver-chalice: #a4a4a4;
+    --persian-green: #00B899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.title {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.description {
+    color: #333333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.details-box {
+    margin-top: 40px;
+    /* border: 1px solid; */
+}
+
+.label-text {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.value-text {
+    color: #333333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.document-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.document-type--label {
+    border: 1px solid black;
+    width: 180px;
+    padding: 25px 5px;
+}
+
+.document-type--value-wrapper {
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 560px;
+}
+
+.document-type--value {
+    padding: 25px 5px;
+}
+
+.verified-logo-section {
+    padding: 4px;
+    width: 78px;
+    height: 68px;
+    margin-left: 66px;
+}
+
+.verified-logo {
+    width: 70px;
+}
+
+.generationDate-downloadDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.generationDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.generationDate--label {
+    border: 1px solid;
+    width: 180px;
+    padding: 15px 5px;
+}
+
+.generationDate--value {
+    border: 1px solid;
+    width: 190px;
+    text-align: center;
+}
+
+.downloadDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.downloadDate--label {
+    border: 1px solid;
+    width: 115px;
+    padding: 15px 5px;
+}
+
+.downloadDate--value {
+    border: 1px solid;
+    width: 255px;
+    text-align: center;
+}
+
+.masked-aadhaar-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.masked-aadhaar-number--label {
+    border: 1px solid;
+    padding: 15px 5px;
+    width: 180px;
+}
+
+.masked-aadhaar-number--value {
+    border: 1px solid;
+    width: 560px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.masked-aadhaar-number--value-text {
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+}
+
+.personal-details--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.personal-details--left-section {
+    width: 485px;
+}
+
+.personal-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 485px;
+}
+
+.personal-details--label {
+    border: 1px solid;
+    width: 180px;
+    padding: 15px 5px;
+}
+
+.personal-details--value {
+    border: 1px solid;
+    width: 305px;
+    padding: 15px 5px;
+}
+
+.personal-details--right-section {
+    border: 1px solid;
+    width: 255px;
+}
+
+.image-section {
+    border: 1px solid grey;
+    margin: 8px;
+    padding: 8px;
+}
+
+.person-image {
+    width: 220px;
+    height: 270px;
+}
+
+.landmark-locality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.landmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.landmark--label {
+    border: 1px solid;
+    width: 180px;
+    padding: 15px 5px;
+}
+
+.landmark--value {
+    border: 1px solid;
+    width: 190px;
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.locality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.locality--label {
+    border: 1px solid;
+    width: 115px;
+    padding: 15px 5px;
+}
+
+.locality--value {
+    border: 1px solid;
+    width: 255px;
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.city {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.city--label {
+    border: 1px solid;
+    padding: 15px 5px;
+    width: 180px;
+}
+
+.city--value {
+    border: 1px solid;
+    width: 560px;
+    padding: 15px 5px;
+    text-align: left;
+}
+
+.pincode-state {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 740px;
+}
+
+.pincode {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.pincode--label {
+    border: 1px solid;
+    width: 180px;
+    padding: 15px 5px;
+}
+
+.pincode--value {
+    border: 1px solid;
+    width: 190px;
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.state {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 370px;
+}
+
+.state--label {
+    border: 1px solid;
+    width: 115px;
+    padding: 15px 5px;
+}
+
+.state--value {
+    border: 1px solid;
+    width: 255px;
+    text-align: left;
+    padding: 15px 5px;
+}

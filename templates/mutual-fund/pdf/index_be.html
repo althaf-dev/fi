@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Funds</title>
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css" />
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/mutual-fund/assets/css/index.css" />
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+
+    <!-- Primary Header Template -->
+    <script id="primary-header-template" type="x-tmpl-mustache">
+        <div class="main">
+            <div class="center">
+                <img
+                    class="logo-img"
+                    src={{data.filogo}}
+                    alt="Logo"
+                />
+            </div>
+            <hr>
+        </div>
+    </script>
+
+    <!-- Second Page Template -->
+    <script id="second-content-template" type="x-tmpl-mustache">
+        <div class="main">
+            <div class="center">
+                <table>
+                    <tr>
+                        <td class="first-col">Statement</td>
+                        <td>Tax Statement</td>
+                        <td>Date of generation</td>
+                        <td>{{data.generationDate}}
+                    </tr>
+                    <tr>
+                        <td>Financial Year</td>
+                        <td>{{data.financialYear}}</td>
+                        <td>Name</td>
+                        <td>{{data.name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Statement Period</td>
+                        <td>{{data.statementPeriod}}</td>
+                        <td>PAN</td>
+                        <td>{{data.panNumber}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class="description">Investments upto INR 1.5 lakh in ELSS mutual funds are eligible for deduction from
+                total income under Section 80C of the Income Tax Act 1961</p>
+        </div>
+    </script>
+
+    <!-- Third Page Template -->
+    <script id="third-content-template" type="x-tmpl-mustache">
+        <div class="main">
+            <p class="description">List of investments done in Tax saving(ELSS) mutual funds on Fi</p>
+            <div class="center">
+                <table class="border-table">
+                    <tr>
+                        <td class="first-col">Date</td>
+                        <td>Fund name</td>
+                        <td>Amount invested</td>
+                    </tr>
+                    {{#data.investedDetails}}
+                        <tr>
+                            <td>{{date}}</td>
+                            <td>{{fundName}}</td>
+                            <td>{{amountInvested}}</td>
+                        </tr>
+                    {{/data.investedDetails}}
+                    <tr>
+                        <td></td>
+                        <td class="total">Total Invested</td>
+                        <td class="total">{{data.totalInvestedAmount}}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </script>
+    
+    <!-- Footer Template -->
+    <script id="fourth-content-template" type="x-tmpl-mustache">
+        <div class="main">
+            <p class="description sec-desc">Planned investments based on active SIPs in Tax saving(ELSS) funds in this financial year on Fi</p>
+            <div class="center">
+                <table class="border-table">
+                    <tr>
+                        <td class="first-col">Date</td>
+                        <td>Fund name</td>
+                        <td>Amount invested</td>
+                    </tr>
+                    {{#data.investmentdetails}}
+                        <tr>
+                            <td>{{date}}</td>
+                            <td>{{fundName}}</td>
+                            <td>{{amountInvested}}</td>
+                        </tr> 
+
+                    {{/data.investmentdetails}}
+                    <tr>
+                        <td></td>
+                        <td class="total">Total Invested</td>
+                        <td class="total">{{data.totalUpcomingInvestmentAmount}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="center footer ta-center">
+                <span class="vl-middle">Powered by</span>
+                <img
+                    class="logo vl-middle"
+                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/mutual-fund/assets/svgs/epifiwealth.svg"
+                    alt="logo"
+                />
+            </div>
+        </div>
+    </script>
+    
+    <!-- import mustache.js library -->
+    <script
+    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+    <script>
+        (function() {
+            var data = '${data}';
+            data = '{"financialYear": "2022-2023","name": "Jolly Josheph Byomkesh Bakshi","statementPeriod": "2022-2023","panNumber": "ABNO98144","investedDetails": [{"date": "2022-01-01","fundName": "ICICI Index","amountInvested": "1000"}],"upcomingInvestmentDetails": [{"date": "2022-01-01","fundName": "ICICI Index","amountInvested": "1000"}],"totalInvestedAmount": "1000","totalUpcomingInvestmentAmount": "1000","logoImageUrl": "https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg","generationDate": "11-11-2011"}'
+
+            var json = JSON.parse(data);
+            var modifiedJSON = {};
+
+            modifiedJSON.images={
+                filogo: json.logoImageUrl
+            }
+
+            modifiedJSON.userdetails={
+                financialYear: json.financialYear,
+                name: json.name,
+                statementPeriod: json.statementPeriod,
+                panNumber: json.panNumber,
+                generationDate: json.generationDate,
+            }
+
+            modifiedJSON.investedDetails={
+                investedDetails: json.investedDetails,
+                totalInvestedAmount: json.totalInvestedAmount
+            }
+
+            modifiedJSON.upcomingInvestmentDetails={
+                investmentdetails: json.upcomingInvestmentDetails,
+                totalUpcomingInvestmentAmount: json.totalUpcomingInvestmentAmount
+            }
+
+        // get static html content
+        var primaryContentTemplate = document.getElementById("primary-header-template").innerHTML;
+        var secondaryContentTemplate = document.getElementById("second-content-template").innerHTML;
+        var tertiaryContentTemplate = document.getElementById("third-content-template").innerHTML;
+        var fourthContentTemplate = document.getElementById("fourth-content-template").innerHTML;
+
+        // insert dynamic data in html
+        var renderPrimaryContent = Mustache.render(primaryContentTemplate, { data:modifiedJSON.images});
+        var renderSecondaryContent = Mustache.render(secondaryContentTemplate, {data:modifiedJSON.userdetails});
+        var renderTertiaryContent = Mustache.render(tertiaryContentTemplate, {data:modifiedJSON.investedDetails});
+        var renderFooterContent = Mustache.render(fourthContentTemplate, {data:modifiedJSON.upcomingInvestmentDetails});
+
+        var rendered = renderPrimaryContent + renderSecondaryContent + renderTertiaryContent + renderFooterContent;
+
+        // inject final content in html
+        document.getElementById("target").innerHTML = rendered;
+    })();
+
+    </script>
+</body>
+
+</html>

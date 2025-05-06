@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 200;
+    src: url('Radomir-Tinkov-Gilroy-Regular.woff2') format('woff2'),
+        url('Radomir-Tinkov-Gilroy-Regular.woff') format('woff'),
+        url('Radomir-Tinkov-Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    src: url('Radomir-Tinkov-Gilroy-Medium.woff2') format('woff2'),
+        url('Radomir-Tinkov-Gilroy-Medium.woff') format('woff'),
+        url('Radomir-Tinkov-Gilroy-Medium.woff2') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    src: url('Radomir-Tinkov-Gilroy-SemiBold.woff2') format('woff2'),
+        url('Radomir-Tinkov-Gilroy-SemiBold.woff') format('woff'),
+        url('Radomir-Tinkov-Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    src: url('Radomir-Tinkov-Gilroy-Bold.woff2') format('woff2'),
+        url('Radomir-Tinkov-Gilroy-Bold.woff') format('woff'),
+        url('Radomir-Tinkov-Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff'),
+        url('Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff'),
+        url('Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    src: url('Inter-Bold.woff2') format('woff2'),
+        url('Inter-Bold.woff') format('woff'),
+        url('Inter-Bold.ttf') format('truetype');
+}

@@ -1,0 +1,441 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002",
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002" : {
+			"content" : "REWARDS",
+			"type" : "Text",
+			"variant": "PSMALLVARIANTEIGHT_PATTERNS_BLUE_TWO"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Earn rewards for saving",
+			"type"    : "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "Using Fi is rewarding, in more ways than one",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/poster.webp",
+			"variant": "Feature_Page_Banner_Image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c6935324-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"92fae071-c430-452e-8abb-df1e4a9da241"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+
+		"3b0cdb59-fae6-4971-8a38-ce35cc1e6048": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"d031cf4b-51cd-4743-83a5-498aa851664d",
+				"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1"
+			]
+		},
+		"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"6c6e626c-2064-4cd7-9c59-029ec37d7238"
+			]
+		},
+		"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "DIY Filters",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"6c6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "Know exactly what you’re looking for? Use the 60+ filters on the app to find your perfect investment! Filter by risk, expense, fund type, and more.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"d031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/diy-fliters.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/diy-fliters.png",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		
+		"feature_cards_section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_CARDS",
+			"children": [
+				"why_invest_through_fi",
+				"feature_cards_section_row"
+			]
+		},
+		"feature_cards_section_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_1",
+			"children": [
+				"feature_cards_inner_card_wrapper",
+				"feature_cards_inner_card_wrapper1",
+				"feature_cards_inner_card_wrapper2",
+				"feature_cards_inner_card_wrapper3"
+			]
+		},
+		"feature_cards_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image",
+				"feature_cards_innerwrapper_card_text"
+			]
+		},
+		"feature_cards_innerwrapper_card_text": {
+			"content": "Need a wardrobe makeover? Your Card can help! Enjoy flat ₹200 off on Myntra.",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/myntra.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/myntra.webp"
+		},
+
+		"feature_cards_inner_card_wrapper1": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image1",
+				"feature_cards_innerwrapper_card_text1"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1": {
+			"content": "This one’s for all the late-night pizzas and ice cream cravings - get 20% off on Zomato",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image1": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/zomato.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/zomato.webp"
+		},
+
+
+		"feature_cards_inner_card_wrapper2": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2": {
+			"content": "Book flights on travelxp with your Card and get 10% off on flight bookings.",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image2": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/travelxp.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/travelxp.webp"
+		},
+		"feature_cards_inner_card_wrapper3": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image3",
+				"feature_cards_innerwrapper_card_text3"
+			]
+		},
+		"feature_cards_innerwrapper_card_text3": {
+			"content": "Get ready for a sugar rush! 10% off on SUGAR cosmetics",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image3": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/sugar-cosmetics.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/sugar-cosmetics.webp"
+		},
+
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "GET REWARDED WITH FI",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"why_invest_through_fi": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Card Offers"
+		},
+
+		"disclaimer_text_container": {
+			"type": "Row",
+			"variant": "DISCLAIMER_TEXT",
+			"children": [
+				"disclaimer-logo-mf",
+				"disclaimer-text-mf"
+			]
+		},
+		"disclaimer-logo-mf": {
+			"type" : "Image",
+			"variant": "FEATURE_CARDS_INNERWRAPPER_CARD_IMAGE_1",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/disclaimer.svg",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/disclaimer.svg"
+		},
+		"disclaimer-text-mf": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_PORCELAIN",
+			"content": "Offers shown here are for representational purposes only. Actual offer may vary. Check Fi app for updated offer list."
+		},
+		"accordion_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"accordion-title1-row",
+				"c4dee63d-05af-461e-80ad-3648a4272dbc"
+			]
+		},
+		"accordion-title1-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_5",
+			"children": [
+				"accordion-title1"
+			]
+		},
+		"accordion-title1": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_3",
+			"content": "Fi-Coins"
+		},
+		"c4dee63d-05af-461e-80ad-3648a4272dbc": {
+			"type": "Row",
+			"variant": "IMAGETEXTDESCRIPTION__REVERSE_1",
+			"children": [
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386",
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a": {
+			"type": "Column",
+			"variant": "DISPLAY__TITLEANDDESCRIPTION_1",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561": {
+			"type" : "Accordion",
+			"data": [
+				{
+				  "id": 1,
+				  "title": "Give and Take 🎉",
+				  "subtitle": "Fi exclusive goodies, and gift cards from your favourite brands."
+				},
+				{
+					"id": 2,
+					"title": "Ticket, please! 🎟",
+					"subtitle": "Fi-Coins are your ticket to participate in contests to win amazing rewards."
+				}
+			]
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/fi-coins.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/fi-coins.webp",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+
+
+
+
+
+
+
+
+
+		"how_to_win_rewards_section": {
+			"type": "Section",
+			"variant": "WIN_REWARDS",
+			"children": [
+				"win-rewards-text",
+				"win-rewards-col1",
+				"win-rewards-col2",
+				"win-rewards-col3"
+			]
+		},
+		"win-rewards-text": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_4",
+			"content": "How to win rewards on Fi?"
+		},
+		"win-rewards-col1": {
+			"type": "Column",
+			"variant": "FEATURE_HORIZONTAL_CARDS",
+			"children": [
+				"win-rewards-image1",
+				"win-rewards-text1"
+			]
+		},
+		"win-rewards-image1": {
+			"type" : "Image",
+			"variant": "H_CARD_IMAGE_1",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/bags.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/bags.webp"
+		},
+		"win-rewards-text1": {
+			"type": "Text",
+			"variant": "CARD_TEXT_TUNDORA_2",
+			"content": "Pay using UPI & Debit Card & get up to 20% Fi-Coins on every spend*"
+		},
+		"win-rewards-col2": {
+			"type": "Column",
+			"variant": "FEATURE_HORIZONTAL_CARDS",
+			"children": [
+				"win-rewards-image2",
+				"win-rewards-text2"
+			]
+		},
+		"win-rewards-image2": {
+			"type" : "Image",
+			"variant": "H_CARD_IMAGE_1",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/suitcase.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/suitcase.webp"
+		},
+		"win-rewards-text2": {
+			"type": "Text",
+			"variant": "CARD_TEXT_TUNDORA_2",
+			"content": "Join the Fi Salary Program and earn benefits upto Rs 30,000/year*"
+		},
+		"win-rewards-col3": {
+			"type": "Column",
+			"variant": "FEATURE_HORIZONTAL_CARDS",
+			"children": [
+				"win-rewards-image3",
+				"win-rewards-text3"
+			]
+		},
+		"win-rewards-image3": {
+			"type" : "Image",
+			"variant": "H_CARD_IMAGE_1",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/announcement.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/announcement.webp"
+		},
+		"win-rewards-text3": {
+			"type": "Text",
+			"variant": "CARD_TEXT_TUNDORA_2",
+			"content": "Spread the word! Refer your friends and earn up to Rs 1000/referral*"
+		},
+
+		"text-have-more-question-section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"children": [
+				"have_more_questions",
+				"text-link-check-out-our-faq"
+			]
+		},
+		"have_more_questions": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Have more questions?"
+		},
+		"text-link-check-out-our-faq": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_2",
+			"content": "<a href='/FAQs/rewards' style='color: #00B899'>Check out our FAQs.</a>"
+		},
+		"image_text_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"3b0cdb59-fae6-4971-8a38-ce35cc1e6048"
+			]
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"feature_cards_section",
+				"disclaimer_text_container",
+				"feature_page_button_primary_row",
+				"accordion_section",
+				"how_to_win_rewards_section",
+				"text-have-more-question-section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

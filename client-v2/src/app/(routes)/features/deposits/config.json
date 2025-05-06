@@ -1,0 +1,1017 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002",
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"92fae071-c430-452e-8abb-df1e4a9da241",
+				"c69354dc-95a3-11ee-b9d1-0242ac120002",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002" : {
+			"content" : "GROW YOUR MONEY",
+			"type" : "Text",
+			"variant": "PSMALLVARIANTEIGHT__SKY_BLUE_TAG"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Save and earn interest<br> with Deposits",
+			"type"    : "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "Get smart about your goals, or save for the long term with Piggy Banks 2.0, or as we like to call them - Deposits",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da241": {
+			"content": "POWERED BY",
+			"type": "Text",
+			"variant": "CUSTOM_TEXT_FEATURE_PAGE_POWEREDBY_3"
+		},
+		"c69354dc-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/poster-desktop.webp",
+			"variant": "Feature_Page_Banner_Image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c6935324-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"92fae071-c430-452e-8abb-df1e4a9da241"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+
+		"9921e138-fceb-4f7e-b5de-9539caad317et": {
+			"type": "Row",
+			"variant": "POWERED_BY_IMAGE",
+			"children": [
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5t"
+			]
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5t": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79t",
+				"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79tm"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79t": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-desktop.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-desktop.webp",
+			"type": "Image",
+			"variant": "COVERIMAGE_DESKTOP"
+		},
+		"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79tm": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-mobile.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-mobile.webp",
+			"type": "Image",
+			"variant": "COVERIMAGE_MOBILE"
+		},
+
+
+		"9921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf7",
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac120002",
+				"ec2e925a-6acd-4cca-9a51-bf6213912487"
+			]
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "Smart Deposits",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf6213912487": {
+			"content": "Want to save for a Goa vacation? The new iPhone? Or a new house? Jars help you with your customised goal-based savings. These are smart deposits that give you 6.75% p.a. returns on your savings",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits-desktop.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits-desktop.webp",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"3b0cdb59-fae6-4971-8a38-ce35cc1e6048": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"d031cf4b-51cd-4743-83a5-498aa851664d",
+				"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1"
+			]
+		},
+		"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"6c6e626c-2064-4cd7-9c59-029ec37d7238"
+			]
+		},
+		"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "Fixed Deposits",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"6c6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "Take a small step towards your big future goals by saving in FDs. Earn interest up to 7.25% p.a.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"d031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits-desktop.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits-desktop.webp",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"221ffac3-412c-4cbd-ba59-25c8f537a66b": {
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"2044708b-2487-4940-9182-fa0eba6523bf"
+			]
+		},
+		"2044708b-2487-4940-9182-fa0eba6523bf": {
+			"type": "Column",
+			"variant": "",
+			"children": [
+				"a5813ab0-d630-4fb8-be1a-601dff4ef315",
+				"a5813ab0-d630-4fb8-be1a-601dff4ef316"
+			]
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef315": {
+			"content": "Smart Deposits vs Fixed Deposits",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE_MINE_SHAFT_1"
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef316": {
+			"content": "Which saving instrument should you choose - SD or FD? Here’s how they are different.",
+			"type" : "Text",
+			"variant": "PNORMALVARIANT_GREY_4"
+		},
+
+
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "OPEN A DEPOSIT",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+
+		"text-have-more-question-section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"children": [
+				"have_more_questions",
+				"text-link-check-out-our-faq"
+			]
+		},
+		"have_more_questions": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Have more questions?"
+		},
+		"text-link-check-out-our-faq": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_2",
+			"content": "<a href='/FAQs/save' style='color: #00B899'>Check out our FAQs.</a>"
+		},
+		"image_text_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317e",
+				"3b0cdb59-fae6-4971-8a38-ce35cc1e6048"
+			]
+		},
+		"powered_by_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317et"
+			]
+		},
+		"table_section_phone": {
+			"type": "Section",
+			"variant": "DISPLAY_TABLE_PHONE",
+			"children": [
+				"9921e138-fceb-4f7e-phone-9539caad317etr"
+			]
+		},
+		"9921e138-fceb-4f7e-phone-9539caad317etr": {
+			"type": "Row",
+			"variant": "DISPLAY_TABLE_PHONE",
+			"children": [
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc1",
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc2"
+			]
+		},
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-2c-bd3945e70b79t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-2c-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Fixed Deposit"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c129",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c130"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Long-term goals"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "₹1000"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "₹10,00,000"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "-"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t228"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t228": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Yes"
+		},
+
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c129": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c129-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c129-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c129-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "MONTHLY ACCOUNT OPENING LIMIT"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c129-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "20 accounts</br> per month"
+		},
+
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c130": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c130-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c130-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c130-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "YEARLY ACCOUNT OPENING LIMIT"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c130-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "100 accounts</br> per year"
+		},
+		
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-c2-bd3945e70b79t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c"
+			]
+		},
+		"8ca01f9f-3fb5-phone-c2-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Smart Deposit"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c4",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c5",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c6",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c7",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c8",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "IDEAL FOR"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Short-term goals"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3": {
+			"type": "Text",
+			"variant": "TABLE_BORDER",
+			"content": ""
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "OPENING AMOUNT"
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "₹300"
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "MAXIMUM LIMIT</br> PER A/C"
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "₹2,00,000"
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c4": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "FLEXIBLE"
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c5": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "TOP-UP"
+		},
+		"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Yes, even ₹1"
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c6": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "TOP-UP FREQUENCY"
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Possible 24x7"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c7": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "FIT RULE LINKING"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c8": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "INSTANT LIQUIDITY"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9-t1",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c9-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "MONTHLY ACCOUNT</br> OPENING LIMIT"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c9-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "20 accounts</br> per month"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10-t1",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c10-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "YEARLY ACCOUNT</br> OPENING LIMIT"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c10-t2": {
+			"type": "Text",
+			"variant": "H5VARIANT_BLACK_1",
+			"content": "100 accounts</br> per year"
+		},
+
+		"table_section": {
+			"type": "Section",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317etr"
+			]
+		},
+		"9921e138-fceb-4f7e-b5de-9539caad317etr": {
+			"type": "Row",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc",
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc2",
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc3"
+			]
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t2",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t3",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t5",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t6",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t7",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t8",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t9",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t10",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t11"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_HIDDEN_DEPOSIT",
+			"content": "Heading"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Ideal for"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Opening amount"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t4": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Maximum limit per A/C"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t5": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Flexible"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t6": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Top-up"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t7": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Top-up frequency"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t8": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "FIT Rule linking"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t9": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Instant liquidity"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t10": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Monthly account</br> opening limit"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t11": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_DEPOSIT",
+			"content": "Yearly account</br> opening limit"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-c2-bd3945e70b79t1",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79c"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-c2-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Smart Deposit"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79c": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t1",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t2",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t3",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t5",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t6",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t7",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t8",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t9",
+				"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t10"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Short-term goals"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "₹300"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "₹2,00,000"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t4": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t5": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes, even ₹1"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t6": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Possible 24x7"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t7": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t8": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t9": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "20 accounts</br> per month"
+		},
+		"8ca01f9f-3fb5-4ca0-cc1-bd3945e70b79t10": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "100 accounts</br> per year"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-c3-bd3945e70b79t1",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79c"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-c3-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Fixed Deposit"
+		},
+
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79c": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t1",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t2",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t3",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t7",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t8",
+				"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t9"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Long-term goals"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "₹1000"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "₹10,00,000"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t4": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "-"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t5": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes, even ₹1"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t6": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Possible 24x7"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t7": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "Yes"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t8": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "20 accounts</br> per month"
+		},
+		"8ca01f9f-3fb5-4ca0-cc3-bd3945e70b79t9": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_DEPOSIT",
+			"content": "100 accounts</br> per year"
+		},
+		"related_blog_posts": {
+			"type": "Section",
+			"variant": "display_BlogPosts",
+			"children": [
+				"221ffac3-412c-4cbd-ba59-25c8f537a66b"
+			]
+		},
+		"fi_partners_section": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561p",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561p": {
+			"content": "Fi partners with the best to secure your money",
+			"type" : "Text",
+			"variant": "H1VARIANT_BLACK"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images": {
+			"type": "Column",
+			"variant": "FOOTER_TEXT_IMAGE",
+			"children": [
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7q",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7r",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7s",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7t",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7u",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7v"
+			]
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7q": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7r": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7s": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7t": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7u": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7v": {
+			"content": "ISO 27001:2013",
+			"type" : "Text",
+			"variant": "FOOTER_LOGO_TEXT_1"
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p": {
+			"content": "Our partner bank hosts your Savings Account and follows all security standards per applicable regulations. <br> <br>Your money is always safe with our banking partner - Federal Bank, is covered under the Deposit Insurance and Credit Guarantee Corporation Scheme. This insures your money up to <b>₹5 lakh.</b> <br><br> Fi itself is not a bank and doesn’t hold or claim to have a banking license.",
+			"type" : "Text",
+			"variant": "h6VARIANT_GREY3_1"
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [		
+				"image_text_section",
+				"powered_by_section",
+				"feature_page_button_primary_row",
+				"related_blog_posts",
+				"table_section",
+				"table_section_phone",
+				"feature_page_button_primary_row",
+				"text-have-more-question-section",
+				"fi_partners_section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

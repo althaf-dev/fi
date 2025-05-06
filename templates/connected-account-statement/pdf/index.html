@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epifi - Connected Account Statement</title>
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css" />
+        <link rel="stylesheet" href="stylesheets/index.css" />
+    </head>
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Header Template -->
+        <script id="primary-header-template" type="x-tmpl-mustache">
+            <div class="hcr">
+                <div class="hcr-r1">
+                    <div class="wr1">
+                        <span class="h1">Account Statement&nbsp;•&nbsp;</span>
+                        <span class="p3--v1">{{ FromDate.day }}</span>
+                        <span class="p3--v1">{{ FromDate.month }}</span>
+                        <span class="p3--v1">{{ FromDate.year }}</span>
+                        <span class="p3--v1">&nbsp;to&nbsp;</span>
+                        <span class="p3--v1">{{ ToDate.day }}</span>
+                        <span class="p3--v1">{{ ToDate.month }}</span>
+                        <span class="p3--v1">{{ ToDate.year }}</span>
+                    </div>
+                </div>
+                <div class="hcr-r2">
+                    <div class="h1--v3 mb-10">{{ UserDetails.Name }}</div>
+                    <div class="cr ju-sb">
+                        <div>
+                            <div class="col1 mb-20">
+                                <div class="mr-100">
+                                    <div class="h1--v4">Bank Name</div>
+                                    <div class="h2--v2">{{ UserDetails.BankName }}</div>
+                                </div>
+                                <div class="mr-100">
+                                    <div class="h1--v4">Branch Name</div>
+                                    <div class="h2--v2">{{ UserDetails.BranchName }}</div>
+                                </div>
+                                <div>
+                                    <div class="h1--v4">MICR Code</div>
+                                    <div class="h2--v2">{{ UserDetails.MICRCode }}</div>
+                                </div>
+                            </div>
+                            <div class="cr">
+                                <div class="h1--v4">
+                                    <div>Closing Balance</div>
+                                    <div class="p5--v4">on {{ ToDate.day }} {{ ToDate.monthShortStr }} {{ ToDate.year }}</div>
+                                    <div class="wr">
+                                        <span class="h2--v2">₹</span>
+                                        <span class="h2--v2">{{ TxnSummaryData.ClosingBalance.Amount.units }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="wr1">
+                                <div class="h2">SAVINGS A/C NO</div>
+                                <div class="p4 lb">{{ UserDetails.AccountNumber }}</div>
+                            </div>
+                            <div>
+                                <div class="h2">IFSC</div>
+                                <div class="p4 lb">{{ UserDetails.IFSC }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Secondary Header Template -->
+        <script id="secondary-header-template" type="x-tmpl-mustache">
+            <div class="hcr--v1">
+                <div class="wr1">
+                    <div class="col1">
+                        <span class="h1--v2">Account No.</span>
+                        <span class="p4--v1">{{ UserDetails.AccountNumber }}</span>
+                    </div>
+                    <div class="col2">
+                        <img
+                            class="fi-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg"
+                            alt="epifi"
+                        />
+                    </div>
+                </div>
+                <div class="wr2">
+                    <div class="col1">
+                        <span class="h1--v2">Account Holder:</span>
+                        <span class="p4--v1">{{ UserDetails.Name }}</span>
+                    </div>
+                    <div class="col2 p3--v1">
+                        <span>{{ FromDate.day }}</span>
+                        <span>{{ FromDate.month }}</span>
+                        <span>{{ FromDate.year }}</span>
+                        <span>&nbsp;to&nbsp;</span>
+                        <span>{{ ToDate.day }}</span>
+                        <span>{{ ToDate.month }}</span>
+                        <span>{{ ToDate.year }}</span>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Footer Template -->
+        <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr2">
+                    <div class="wr1">
+                        <!-- <div class="h2--v1">IN PARTNERSHIP WITH</div> -->
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="p5--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="p5--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+        <!-- Content Template -->
+        <script id="content-template" type="x-tmpl-mustache">
+            <div class="{{ Class }}">
+                {{#HasTxns}}
+                <div class="hwr">
+                    <div class="wr1">
+                        <div class="h1--v1">Date</div>
+                    </div>
+                    <div class="wr2">
+                        <div class="h1--v1">Transaction Details</div>
+                    </div>
+                    <div class="wr3">
+                        <div class="h1--v1">Amount</div>
+                    </div>
+                </div>
+                <div>
+                    {{#TxnData}}
+                        <div class="cwr">
+                            <div class="wr1 p4">
+                                {{name}}
+                            </div>
+                            <div class="wr2"></div>
+                        </div>
+                        <div class="txnwr">
+                            {{#data}}
+                                <div class="cl">
+                                    <div class="wr1">
+                                    </div>
+                                    <div class="wr2">
+                                        <div class="p2">{{ MerchantName }}</div>
+                                    </div>
+                                    <div class="wr3">
+                                        <div class="wr">
+                                            <div class="{{ AmountUnitsClass }}">{{ Amount.units }}</div>
+                                            <div class="{{ AmountDecimalsClass }}">.{{ Amount.decimals }}</div>
+                                        </div>
+                                        {{#IsDebit}}
+                                            (D)
+                                        {{/IsDebit}}
+                                        {{#IsCredit}}
+                                            (C)
+                                        {{/IsCredit}}
+                                        {{#IsUnspecified}}
+                                            (O)
+                                        {{/IsUnspecified}}
+                                    </div>
+                                </div>
+                            {{/data}}
+                        </div>
+                    {{/TxnData}}
+                </div>
+                {{/HasTxns}}
+                {{^HasTxns}}
+                <div class="notxnwr">
+                    <div class="wr1">
+                        <span class="h1--v3">It looks like you have not made</span>
+                        <br />
+                        <span class="h1--v3">any transactions on Fi between</span>
+                        <br />
+                        <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                    </div>
+                    <img
+                        class="logo"
+                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                        alt="no-txns"
+                    />
+                </div>
+                {{/HasTxns}}
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+        <script src="../../utils/index.js"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

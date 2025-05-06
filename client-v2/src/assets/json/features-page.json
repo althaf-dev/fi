@@ -1,0 +1,1826 @@
+{
+    "ask-fi": {
+        "active_menu": "ASK FI",
+        "poster":{
+            "title": "<div>Ask.Fi</div>",
+            "description": "The coolest financial assistant at your fingertips ",
+            "tag": "<div style='color: #CDC6E8;'>KNOW YOUR MONEY</div>",
+            "show_secure_money_section": true,
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>No more scratching your head over expenses</div>",
+                        "description": "<div>Get insights into your spending across bank accounts & merchants. Just type - “Uber spends in 2022” or “Shopping spends for the month”.</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/expenses.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/expenses.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/offers.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/offers.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Your tour guide across the app</div>",
+                        "description": "<div>Looking for something? Ask.Fi anything from “Show debit card offers” to “Where can I get my account statement?”</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Get straight answers to simple questions</div>",
+                        "description": "<div>Get answers to “What’s my Savings Account number”, “What is my IFSC code”, and more in a jiffy!</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/answers.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/answers.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/quick-links.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/quick-links.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Your wish is our command</div>",
+                        "description": "<div>You can Ask.Fi to “Pay Priyal”, “Open a Smart Deposit”, “Download Statement”, or “Invest in Mutual Funds”. One command and you’re sorted!</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Need help? Ask.Fi to the rescue!</div>",
+                        "description": "<div>Have questions about your account? Ask.Fi anything from “What’s my KYC status“, “How do I order a cheque book“ to “How do I change my card settings?“</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/card-settings.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/ask-fi/card-settings.png"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "Download Fi to know more"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/about-fi' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "connect-all-your-bank-accounts": {
+        "active_menu": "CONNECTED ACCOUNTS",
+        "poster": {
+            "title": "Connected accounts",
+            "description": "Home to all your bank accounts. Yes, all of them!",
+            "tag": " <div style='color: #CDC6E8;'>KNOW YOUR MONEY</div>",
+            "show_secure_money_section": false,
+            "subText": "<style scoped>.pwtext{font-size:24px;} @media( min-width: 1025px){ .pwtext{ font-size: 19px}} @media (min-width: 768px) and (max-width: 1024px) {.pwtext {font-size: 16px; margin-right: 10px}} @media (min-width: 668px) and (max-width: 767px) {.pwtext {font-size: 12px;}} @media (min-width: 375px) and (max-width: 667px) { .pwtext{font-size: 10px;}} @media (max-width:374px) { .pwtext{ font-size: 10px; }}</style><div style=' color: #8D8D8D; font-family: Inter; font-weight:500; font-style: normal;' class='pwtext'>POWERED BY</div>",
+            "multiLogo": "<div style='color: #8D8D8D; align-items:center; display:flex; align-item:center, justifi-content:center;font-family: Inter; font-weight:500; font-style: normal;'> <style scoped> .vtext { font-size: 24px; width: 62px} @media( min-width: 1025px){.vtext{ font-size: 19px; width: 53px}} @media (min-width: 768px) and (max-width: 1024px) {.vtext {font-size: 16px; width:48px}} @media (min-width: 668px) and (max-width: 767px) {.vtext {font-size: 12px; width:32px}} @media (min-width: 375px) and (max-width: 667px) { .vtext{font-size: 10px; width:29px}} @media (max-width:374px) { .vtext{ font-size: 10px;; width: 32px;}}</style><div class='vtext'>VIA</div><style scoped> .onemoneyLogo { margin-bottom: 4px;  margin-right: 10px; width: 119px;} @media( min-width: 1025px){.onemoneyLogo {margin-bottom: 5px;  margin-right: 9px; width:104px;}} @media (min-width: 768px) and (max-width: 1024px){ .onemoneyLogo {margin-top: 2px; width:86px;}} @media (min-width: 668px) and (max-width: 767px) {.onemoneyLogo {margin-top: 2px; margin-right: 7px; width: 70px;}} @media (min-width: 375px) and (max-width: 667px) { .onemoneyLogo{ margin-bottom: 3px; margin-right: 6px; width: 50px;}} @media (max-width:374px) { .onemoneyLogo{ margin-bottom: 3px; margin-right: 7px; width: 57px;}} </style><img alt='onemoney' src='https://dza2kd7rioahk.cloudfront.net/assets/logos/onemoney-logo.webp' class='onemoneyLogo' /><style>.fitext{font-size:24px;} @media( min-width: 1025px){.fitext{font-size:19px}} @media (min-width: 768px) and (max-width: 1024px) {.fitext {font-size: 16px;}} @media (min-width: 668px) and (max-width: 767px) {.fitext {font-size: 12px;}} @media (min-width: 375px) and (max-width: 667px) { .fitext{font-size: 10px}} @media (max-width: 374px) { .fitext{ font-size: 10px; }}</style><div class='fitext' style='font-family: Inter; font-weight:500; font-style: normal;'> & </div> <style scoped> .finvuLogo {margin-top: 4px;  margin-left:12px; width: 72px;} @media( min-width: 1025px){.finvuLogo{margin-top: 4px;  margin-left:10px; width: 61px;}} @media (min-width: 768px) and (max-width: 1024px){ .finvuLogo {margin-top: 2px;  margin-left: 10px; width:51px;}} @media (min-width: 375px) and (max-width: 667px) { .finvuLogo{ margin-top:3px; margin-left:6px; width:35px;}} @media (min-width: 668px) and (max-width: 767px) { .finvuLogo {margin-top:3px; margin-left:7px; width:39px;}} @media (max-width: 374px) { .finvuLogo{ margin-top:4px; margin-left: 7px; width:35px; }}</style><img alt='finvu' src='https://dza2kd7rioahk.cloudfront.net/assets/logos/finvu-logo.webp' class='finvuLogo' /> </div>",
+            "subLogo" :{
+                "image_src": "",
+                "fallback_image_src": "",
+                "html_src": "<style scoped> .sublogo {width:148px; margin-left: 12px;} @media( min-width: 1025px){.sublogo {margin-top: 2px; width: 110px; margin-left: 10px}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 2px; width: 86px; margin-left: 0; }} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-bottom:1px ; width:50px; margin-left: 6px;}}@media (min-width: 668px) and (max-width: 767px) {.sublogo{margin-bottom:0px ; width:65px; margin-left: 6px;}} @media (max-width:374px) { .sublogo{ width: 57px; margin-left: 7px;}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth-logo.webp' class='sublogo'/>"
+            },
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Why connect your accounts?"
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "See all your bank balances in one place",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/bank.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/bank.png"
+                                }
+                            },
+                            {
+                                "title": "See all your transactions on Fi",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/cash-with-wings.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/cash-with-wings.png"
+                                }
+                            },
+                            {
+                                "title": "Get insights to your spending habits",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/magnifying-glass.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/magnifying-glass.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "All your info in one place",
+                        "description": "Connect all your bank accounts to Fi. Accurately view, track, and analyse your balances & spends across bank accounts."
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/accounts.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/accounts.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/fi-secure.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/fi-secure.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "Your data security is serious business ",
+                        "description": "Via the Account Aggregator framework, your data is fetched safely. Plus, all your data is end-to-end encrypted."
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "Informative, but make it fun",
+                        "description": "Food? Clothes? Home-Decor? Where do you tend to spend the most? Let our Analyser get you answers to life’s big questions."
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/categories.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/categories.png"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "Connect your accounts to Fi"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/connected-accounts' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "mutual-funds": {
+        "active_menu": "MUTUAL FUNDS",
+        "poster":{
+            "title": "<div>Zero Commission<br />Mutual Funds</div>",
+            "description": "Invest in direct mutual funds on Fi with daily, weekly, or monthly SIPs. Enjoy 100% flexibility with 0 penalties for missed payments",
+            "tag": " <div style='color: #7FBECE;'>GROW YOUR MONEY</div>",
+            "show_secure_money_section": false,
+            "subText": "<style>.text{font-size:24px;} @media (min-width:1025px) {.text{ font-size:19px}} @media (min-width: 768px) and (max-width: 1024px) {.text {font-size: 15px;}} @media (min-width: 667px) and (max-width:768px){.text{font-size: 15px}} @media (min-width: 375px) and (max-width: 667px) { .text{font-size: 15px}} @media (max-width: 375px){.text {font-size: 14px}}</style><div style='margin-right: 7px; color: #8D8D8D;font-family: Inter; font-weight:500; font-style: normal;' class='text'>POWERED BY</div>",
+            "subLogo_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{margin-top: 1px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 1px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-bottom:-2px ;width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-bottom:-2px ;width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth-logo.webp' class='sublogo'/>",
+            "subLogo" :{
+                "image_src": "",
+                "fallback_image_src": "",
+                "html_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{margin-top: 1px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 1px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-bottom:-2px ;width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-bottom:-2px ;width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth-logo.webp' class='sublogo'/>"
+            },
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Why invest through Fi?</div>"
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Zero\ncommission",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.png"
+                                }
+                            },
+                            {
+                                "title": "No penalties\nfor missed payments",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.png"
+                                }
+                            },
+                            {
+                                "title": "Flexible\nSIPs",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/flexible-sip.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/flexible-sip.png"
+                                }
+                            },
+                            {
+                                "title": "Easy to understand\nFund information",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/eye.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/eye.png"
+                                }
+                            },
+                            {
+                                "title": "Daily &\nWeekly SIPs",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.png"
+                                }
+                            },
+                            {
+                                "title": "One-click set up from\nsavings account",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "INVEST ON FI NOW"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Curated Mutual Fund collections</div>",
+                        "description": "<div>Choose from a range of fund collections that suit every kind of investor, beginner or not.</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/curated-mutual-fund.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/curated-mutual-fund.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/diy-fliters.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/diy-fliters.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>DIY Filters</div>",
+                        "description": "<div>Know exactly what you’re looking for? Use the 60+ filters on the app to find your perfect investment! Filter by risk, expense, fund type, and more.</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Make your own SIPs</div>",
+                        "description": "<div>Let us take care of your recurring investments. Automate your daily, weekly, or monthly investment using FIT rules.</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/own-sip.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/own-sip.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/graph.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/graph.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>The smartest calculator in town</div>",
+                        "description": "<div>Our Mutual Funds calculator tells you how much and how frequently you need to invest to reach your future goals.</div>",
+                        "cta": "<a href='https://fi.money/calculators/mutual-fund-sip-calculator' target='_blank'>CHECK IT OUT</a>"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "INVEST ON FI NOW"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "text",
+                    "data": {
+                        "title": "",
+                        "description": "",
+                        "info_text": "<div>Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully. <br /> Past performance is not an indicator of future returns.</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Blog Posts</div>"
+                    }
+                },
+                "bottom": {
+                    "type": "blog",
+                    "data": {
+                        "list": [
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_one.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_one.png",
+                                "title": "<div>Mutual Funds, their benefits, and how to start one</div>",
+                                "tag": "INVESTMENTS",
+                                "reading_length": "<div>11 min read</div>",
+                                "url": "https://fi.money/blog/posts/mutual-funds-their-benefits-and-how-to-start-one"
+                            },
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_two.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_two.png",
+                                "title": "<div>Stocks Vs Mutual Funds: What's The Difference?</div>",
+                                "tag": "INVESTMENTS",
+                                "reading_length": "<div>11 min read</div>",
+                                "url": "https://fi.money/blog/posts/stocks-vs-mutual-funds-whats-the-difference"
+                            },
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_three.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_three.png",
+                                "title": "<div>What are the different types of mutual funds in India?</div>",
+                                "tag": "INVESTMENTS",
+                                "reading_length": "<div>11 min read</div>",
+                                "url": "https://fi.money/blog/posts/types-of-mutual-funds"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/investments' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "pay-with-fi": {
+        "active_menu": "PAYMENTS",
+        "poster": {
+            "title": "Payments",
+            "description": "We’ve got a buffet of payment modes for you to choose from – this includes UPI, Direct-to-Bank, Debit Card, IMPS, and more. Best part? You get rewarded for making payments on Fi!",
+            "tag": "<div style='color: #F4E7BF;'>PAY WITH FI</div>",
+            "show_secure_money_section": true,
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "Debit Card"
+                },
+                "left": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "0 FOREX charge 🌏",
+                                "content": "Zero Forex on Select Plans. Enjoy international payments at no extra cost."
+                            },
+                            {
+                                "title": "Payments with a Tap ✨",
+                                "content": "Use the ‘Tap and Pay’ feature to make contactless payments."
+                            },
+                            {
+                                "title": "Card offers that you’ll love 💳 ",
+                                "content": "The Debit Card is a heavyweight when it comes to offers."
+                            },
+                            {
+                                "title": "Card controls on your phone 📱",
+                                "content": "Tap and freeze your card from the app, and unfreeze it just as easily. Have trouble sticking to your budget? Set transaction limits for your card from the app as well."
+                            }
+                        ]
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/card-offers.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/card-offers.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "Faster payments using UPI "
+                },
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/scan.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/scan.png"
+                    }
+                },
+                "right": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Scan and Pay ↗️",
+                                "content": "Pay at stores, or send money directly to contacts by scanning and paying using the QR code scanner in your Fi app."
+                            },
+                            {
+                                "title": "Rewards on every spend",
+                                "content": "Earn cashback or Fi-Coins every time you pay using UPI on Fi."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "Bank Transfer"
+                },
+                "left": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Wait no more ⚡️",
+                                "content": "Don’t wait hours to add a beneficiary. Just enter the account number and transfer money directly to the receiver’s bank account."
+                            },
+                            {
+                                "title": "IFSC search on the app 🔎",
+                                "content": "Don’t head out to a different app to look for IFSC codes, just look them up right on the bank transfer page on your Fi app."
+                            },
+                            {
+                                "title": "NEFT, RTGS, IMPS… we’ll do that math 💪",
+                                "content": "Don’t try choosing the payment method. Fi works out the most efficient way of sending money for your beneficiaries."
+                            }
+                        ]
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/bank-transfer.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/bank-transfer.png"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "Make Payments with Fi"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/transactions' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "fit-rules": {
+        "active_menu": "FIT RULES",
+        "poster": {
+            "title": "FIT rules",
+            "description": "An Auto-bot for your finances",
+            "tag": "<div style='color: #D9F2CC;'>AUTOMATE</div>",
+            "show_secure_money_section": true,
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Automate and forget</div>",
+                        "description": "<div>You know how you keep pushing your saving and investing plans to the next month? FIT rules can help you with that procrastination.</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/automate-and-forget.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/automate-and-forget.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/how-does-it-work.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/how-does-it-work.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>How does it work?</div>",
+                        "description": "<div>FIT Rules allow you to automatically move money from your savings account to mutual funds or jars. Just set up a rule once and watch your money grow.</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "AutoInvest"
+                },
+                "left": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Invest the change!",
+                                "content": "Set a rule to round up your transaction amount to the nearest 10s, 50s, or 100s and invest your spare change in gold, equity or debt mutual funds."
+                            },
+                            {
+                                "title": "SIP 2.0",
+                                "content": "Set up an SIP to invest every month, week or even every day."
+                            }
+                        ]
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-invest.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-invest.png"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "AutoSave"
+                },
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-save.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-save.png"
+                    }
+                },
+                "right": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Save as you shop",
+                                "content": "Set a FIT rule to set aside a certain amount every time you shop."
+                            },
+                            {
+                                "title": "Hit your savings out of the park",
+                                "content": "Set FIT rules to put aside savings every time Ronaldo scores a goal or when Kohli hits a 6."
+                            },
+                            {
+                                "title": "Every day good habits",
+                                "content": "Have trouble sticking to a savings routine? Set a FIT rule to save every month, week or day."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "AutoPay"
+                },
+                "left": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Set and forget",
+                                "content": "Set a rule to ‘Pay rent to Sunil on the 1st of every month’ or ‘Pay Amma ₹10,000 every 2 months’"
+                            },
+                            {
+                                "title": "One rule is all it takes",
+                                "content": "Need to make a payment? Let FIT take care of it! Set a rule to 'pay Priya on the 5th' and you're sorted."
+                            }
+                        ]
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-pay.png",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/fit-rules/auto-pay.png"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "Set FIT rules on Fi"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/fit' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "rewards": {
+        "active_menu": "REWARDS",
+        "poster": {
+            "title": "<div>Earn rewards for saving</div>",
+            "description": "Using Fi is rewarding, in more ways than one",
+            "tag": "<div style='color: #D1DAF1;'>REWARDS</div>",
+            "show_secure_money_section": false,
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/poster.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/poster.png"
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Card Offers"
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "variant": "top_bottom_card",
+                        "list": [
+                            {
+                                "title": "Need a wardrobe makeover? Your Card can help! Enjoy flat ₹200 off on Myntra.",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/myntra.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/myntra.png"
+                                }
+                            },
+                            {
+                                "title": "This one’s for all the late-night pizzas and ice cream cravings - get 20% off on Zomato",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/zomato.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/zomato.png"
+                                }
+                            },
+                            {
+                                "title": "Book flights on travelxp with your Card and get 10% off on flight bookings.",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/travelxp.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/travelxp.png"
+                                }
+                            },
+                            {
+                                "title": "Get ready for a sugar rush! 10% off on SUGAR cosmetics",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/sugar-cosmetics.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/sugar-cosmetics.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "disclaimer",
+                    "data": {
+                        "text": "Offers shown here are for representational purposes only. Actual offer may vary. Check Fi app for updated offer list."
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "GET REWARDED WITH FI"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "metadata": {
+                    "title": "Fi-Coins"
+                },
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/fi-coins.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/fi-coins.png"
+                    }
+                },
+                "right": {
+                    "type": "accordions",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Give and Take 🎉",
+                                "content": "Fi exclusive goodies, and gift cards from your favourite brands."
+                            },
+                            {
+                                "title": "Ticket, please! 🎟",
+                                "content": "Fi-Coins are your ticket to participate in contests to win amazing rewards."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "How to win rewards on Fi?"
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "variant": "left_right_card",
+                        "list": [
+                            {
+                                "title": "Pay using UPI & Debit Card & get up to 20% Fi-Coins on every spend*",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/bags.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/bags.png"
+                                }
+                            },
+                            {
+                                "title": "Join the Fi Salary Program and earn benefits upto Rs 30,000/year*",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/suitcase.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/suitcase.png"
+                                }
+                            },
+                            {
+                                "title": "Spread the word! Refer your friends and earn up to Rs 1000/referral*",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/announcement.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/rewards/announcement.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/rewards' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "deposits": {
+        "active_menu": "DEPOSITS",
+        "poster": {
+            "title": "<div>Save and earn interest with Deposits</div>",
+            "description": "Get smart about your goals, or save for the long term with Piggy Banks 2.0, or as we like to call them - Deposits",
+            "tag": "<div style='color: #7FBECE;'>GROW YOUR MONEY</div>",
+            "show_secure_money_section": true,
+            "subText": "<style>.text{font-size:24px;} @media (min-width:1025px) {.text{ font-size:19px}} @media (min-width: 768px) and (max-width: 1024px) {.text {font-size: 15px;}} @media (min-width: 667px) and (max-width:768px){.text{font-size: 15px}} @media (min-width: 375px) and (max-width: 667px) { .text{font-size: 15px}} @media (max-width: 375px){.text {font-size: 14px}}</style><div style='margin-right: 7px; color: #8D8D8D;font-family: Inter; font-weight:500; font-style: normal;' class='text'>POWERED BY</div>",
+            "subLogo_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{ margin-top:5px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 5px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-top: 5px; width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-top: 5px; width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp' class='sublogo'/>",
+            "subLogo" :{
+                "image_src": "",
+                "fallback_image_src": "",
+                "html_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{ margin-top:5px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 5px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-top: 5px; width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-top: 5px; width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp' class='sublogo'/>"
+            },
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/poster-desktop.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/poster-desktop.png",
+                "mobile": {
+                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/deposits.webp",
+                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/deposits.png"
+                }
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Smart Deposits</div>",
+                        "description": "<div>Want to save for a Goa vacation? The new iPhone? Or a new house? Jars help you with your customised goal-based savings. These are smart deposits that give you 6.75% p.a. returns on your savings</div>"
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits-desktop.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits-desktop.png",
+                        "mobile": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/smart-deposits.png"
+                        }
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits-desktop.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits-desktop.png",
+                        "mobile": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/deposits/fixed-deposits.png"
+                        }
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "<div>Fixed Deposits</div>",
+                        "description": "<div>Take a small step towards your big future goals by saving in FDs. Earn interest up to 7.25% p.a.</div>"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "image",
+                    "data": {
+                        "variant": "center_align_image",
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-desktop.webp",
+                        "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-desktop.png",
+                        "mobile": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-mobile.webp",
+                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/powered-by-federal-bank-mobile.png"
+                        }
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "OPEN A DEPOSIT"
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Smart Deposits vs Fixed Deposits",
+                        "description": "Which saving instrument should you choose - SD or FD? Here’s how they are different."
+                    }
+                },
+                "bottom": {
+                    "type": "table",
+                    "data": {
+                        "properties": {
+                            "header": "",
+                            "column_data": [
+                                "Ideal for",
+                                "Opening amount",
+                                "Maximum monthly limit",
+                                "Flexible",
+                                "Top-up",
+                                "Top-up frequency",
+                                "FIT Rule linking",
+                                "Instant liquidity"
+                            ]
+                        },
+                        "columns": [
+                            {
+                                "header": "Smart Deposit",
+                                "column_data": [
+                                    "Short-term goals",
+                                    "₹300",
+                                    "₹50,000",
+                                    "Yes",
+                                    "Yes, even ₹1",
+                                    "Possible 24x7",
+                                    "Yes",
+                                    "Yes"
+                                ]
+                            },{
+                                "header": "Fixed Deposit",
+                                "column_data": [
+                                    "Long-term goals",
+                                    "₹1000",
+                                    "No limits",
+                                    "-",
+                                    "-",
+                                    "-",
+                                    "-",
+                                    "Yes"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "OPEN A DEPOSIT"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/save' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "instant-loans": {
+        "active_menu": "INSTANT LOAN",
+        "poster": {
+            "title": "Apply for an Instant Loan today, get it in minutes",
+            "description": "Get up to ₹5,00,000 instantly, with the interest rate starting from 1% per month.",
+            "tag": "",
+            "show_secure_money_section": true,
+            "subText": "<style>.text{font-size:24px;} @media (min-width:1025px) {.text{ font-size:19px}} @media (min-width: 768px) and (max-width: 1024px) {.text {font-size: 15px;}} @media (min-width: 667px) and (max-width:768px){.text{font-size: 15px}} @media (min-width: 375px) and (max-width: 667px) { .text{font-size: 15px}} @media (max-width: 375px){.text {font-size: 14px}}</style><div style='margin-right: 7px; color: #8D8D8D;font-family: Inter; font-weight:500; font-style: normal;' class='text'>POWERED BY</div>",
+            "subLogo_src": "<style scoped>.sublogo { height: 45px;margin-left: 10px;}@media (min-width: 1025px) {.sublogo {margin-top: 5px;height: 40px;margin-left: 10px;}} @media (min-width: 768px) and (max-width: 1024px) { .sublogo {margin-top: 5px;margin-left: 7px;height: 24px;}}@media (min-width: 667px) and (max-width: 768px) {.sublogo {margin-top: 5px;margin-left: 7px;height: 24px;}}@media (min-width: 375px) and (max-width: 667px) {.sublogo {margin-top: 5px;margin-left: 7px;height: 24px; }}@media (max-width: 375px) {.sublogo {margin-bottom: -2px;margin-left: 7px;height: 24px;}}</style><img class='sublogo' src='http://localhost:800/Downloads/logo%20%281%29.svg'/>",
+            "multiLogo": "<style scoped>.fedLiquiLogo{width:148px;margin-left:20px;}@media(min-width:1025px){.fedLiquiLogo{margin-top:5px;margin-left:20px;width:140px}}@media (min-width:768px) and (max-width:1024px){.fedLiquiLogo{margin-top:5px;margin-left:14px;width:97px}}@media (min-width:667px) and (max-width:768px){.fedLiquiLogo{margin-top:5px;margin-left:14px;width:97px}}@media (min-width:375px) and (max-width:667px){.fedLiquiLogo{margin-top:5px;margin-left:14px;width:97px}}@media (max-width:375px){.fedLiquiLogo{margin-bottom:-2px;margin-left:14px;width:97px}}</style><img class='fedLiquiLogo' src='https://dza2kd7rioahk.cloudfront.net/assets/logos/liquiloans-logo.webp'>",
+            "multiLogoTwo": "<style scoped> .sublogo {height: 45px; margin-left: 10px;} @media (min-width: 1025px) { .sublogo { margin-top: 5px;height: 40px;margin-left: 10px;}}@media (min-width: 768px) and (max-width: 1024px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (min-width: 667px) and (max-width: 768px) {.sublogo {margin-top: 5px;margin-left: 7px;height: 24px; height: 24px;} }@media (min-width: 375px) and (max-width: 667px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (max-width: 375px) {.sublogo {margin-bottom: -2px;margin-left: 7px; height: 24px; }}</style><img class='sublogo' src='https://dza2kd7rioahk.cloudfront.net/assets/svgs/idfc.svg'/>",
+            "multiLogoThird": "<style scoped> .sublogo {height: 45px; margin-left: 10px;} @media (min-width: 1025px) { .sublogo { margin-top: 5px;height: 40px;margin-left: 10px;}}@media (min-width: 768px) and (max-width: 1024px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (min-width: 667px) and (max-width: 768px) {.sublogo {margin-top: 5px;margin-left: 7px;height: 24px; height: 24px;} }@media (min-width: 375px) and (max-width: 667px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (max-width: 375px) {.sublogo {margin-bottom: -2px;margin-left: 7px; height: 24px; }}</style><img class='sublogo' src='https://dza2kd7rioahk.cloudfront.net/assets/pngs/money-view.png'/>",
+            "multiLogoFourth": "<style scoped> .sublogo {height: 45px; margin-left: 10px;} @media (min-width: 1025px) { .sublogo { margin-top: 5px;height: 40px;margin-left: 10px;}}@media (min-width: 768px) and (max-width: 1024px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (min-width: 667px) and (max-width: 768px) {.sublogo {margin-top: 5px;margin-left: 7px;height: 24px; height: 24px;} }@media (min-width: 375px) and (max-width: 667px) {.sublogo {margin-top: 5px;margin-left: 7px; height: 24px;}}@media (max-width: 375px) {.sublogo {margin-bottom: -2px;margin-left: 7px; height: 24px; }}</style><img class='sublogo' src='https://dza2kd7rioahk.cloudfront.net/assets/logos/abfl-logo.png'/>",
+            "subLogo" :{
+                "image_src": "",
+                "fallback_image_src": "",
+                "html_src": "<style scoped>.sublogo{height:45px;margin-left:10px;}@media(min-width:1025px){.sublogo{margin-top:5px;height: 40px;margin-left:10px;}}@media (min-width:768px) and (max-width:1024px){.sublogo{margin-top:5px;margin-left:7px;height:24px;} }@media (min-width: 667px) and (max-width:768px){.sublogo{margin-top: 5px;margin-left: 7px;height: 24px;height: 24px;}}@media (min-width: 375px) and (max-width: 667px) {.sublogo { margin-top: 5px;margin-left: 7px;height: 24px;}}@media (max-width: 375px) {.sublogo {margin-bottom: -2px; margin-left: 7px; height: 24px;}}</style><img class='sublogo' src='https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp'/>" 
+            },
+            "poster_image": {
+                "image_src": "",
+                "fallback_image_src": ""
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/feature-pages/pre-approved-loans/poster.json",
+                "lottie_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/lottie-poster.webp",
+                "lottie_fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/lottie-poster.png"
+            }
+        },
+        "sections": [
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Why choose Fi?",
+                        "description": "Loans don’t have to mean long lines and tons of forms. The loan<br/> arrives directly in your Federal Bank Savings a/c via Fi."
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "variant": "right_align_card",
+                        "list": [
+                            {
+                                "title": "Instant Loan in 5 mins",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/instant-disbursal.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/instant-disbursal.webp"
+                                }
+                            },
+                            {
+                                "title": "Interest rate starting from 1% per month",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/medal.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/medal.png"
+                                }
+                            },
+                            {
+                                "title": "0 pre-closure fees for select lenders",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/pre-clousre-fees.webp",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/pre-clousre-fees.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Instant personal loans,<br />all on your Fi Money app",
+                        "description": "Your instant loan will be issued by our partners — all of whom are regulated entities."
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "image",
+                    "data": {
+                        "variant": "center_align_image",
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/instant-loan-partners-Desktop.png",
+                        "mobile": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/instant-loan-partners-Desktop.png"
+                        }
+                    }
+                }
+            },{
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Uses of Instant Loans"
+                    }
+                },
+                "bottom": {
+                "type": "cards",
+                "data": {
+                     "list": [
+                        {
+                            "title": "Emergency medical needs",
+                            "icon": {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/med.svg"
+                            }
+                        },
+                        {
+                            "title": "Unplanned expenses",
+                            "icon": {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/unExp.svg"
+                            }
+                        },
+                        {
+                            "title": "Wedding costs",
+                            "icon": {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/gift.svg"
+                            }
+                        },
+                        {
+                        "title": "Home renovation",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/home.svg"
+                        }
+                    },
+                    {
+                        "title": "Vehicle expenses",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/setting.svg"
+                        }
+                    },
+                    {
+                        "title": "Travel needs",
+                        "icon": {
+                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/travel.svg"
+                        }
+                    }
+                    ]
+                }
+            }
+        },
+        {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Apply in a few easy steps"
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "variant": "right_align_card",
+                        "is_numbered_card": true,
+                        "list": [
+                            {
+                                "title": "Install the Fi Money app"  
+                            },
+                            {
+                                "title": "Select loan and complete eligibility checks"
+                            },
+                            {
+                                "title": "Enter your loan requirements & finish KYC"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "GET YOUR LOAN NOW"
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Clean, simple, fast.<br />Oh! And paperless!",
+                        "description": "No phone calls, no paperwork. Get your instant personal loan sorted online,<br />with a whole bunch of advantages."
+                    }
+                },
+                "bottom": {
+                    "type": "cards",
+                    "data": {
+                        "list": [
+                            {
+                                "title": "Loan tenure as low as 6 months",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/six.png"
+                                }
+                            },
+                            {
+                                "title": "No hidden charges",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/no-hidden-charges.png",
+                                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/no-hidden-charges.png"
+                                }
+                            },
+                            {
+                                "title": "100% digital",
+                                "icon": {
+                                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/phone.png"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Your loan. Your control.",
+                        "description": "Use this Loan EMI calculator to work out<br />what your EMI payments will look like."
+                    }
+                },
+                "bottom": {
+                    "type": "calculator",
+                    "data": {
+                        "calc_url": "personal-loan-emi-calculator"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "button",
+                    "data": {
+                        "text": "GET YOUR LOAN NOW"
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/loansummary.png"
+                    }
+                },
+                "right": {
+                    "type": "text",
+                    "data": {
+                        "title": "Know your loan inside out 🔍 ",
+                        "description": "See every detail, fine print, and clause. Never feel out of control with your loan."
+                    }
+                }
+            },
+            {
+                "orientation": "left-right",
+                "left": {
+                    "type": "text",
+                    "data": {
+                        "title": "Reminders?<br />You got it 🗓️",
+                        "description": "EMIs can be hard to track, but not on Fi. Use auto-debit rules and never miss a repayment."
+                    }
+                },
+                "right": {
+                    "type": "image",
+                    "data": {
+                        "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/loanEmi.png"
+                    }
+                }
+            },
+            {
+                "orientation": "top-bottom",
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "<div>Need help with<br />research? Start here</div>"
+                    }
+                },
+                "bottom": {
+                    "type": "blog",
+                    "data": {
+                        "list": [
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_one.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_one.png",
+                                "title": "<div>How to Get a Personal Loan On Pan Card & Aadhar card?</div>",
+                                "tag": "",
+                                "reading_length": "<div>5 min read</div>",
+                                "url": "https://fi.money/blog/posts/how-to-get-a-personal-loan-on-pan-card-aadhar-card"
+                            },
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_two.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_two.png",
+                                "title": "<div>Difference Between Loan and Credit Explained</div>",
+                                "tag": "",
+                                "reading_length": "<div>6 min read</div>",
+                                "url": "https://fi.money/blog/posts/difference-between-loan-and-credit-explained"
+                            },
+                            {
+                                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_three.webp",
+                                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/blog-post_three.png",
+                                "title": "<div>Loan on Credit Card - Features, Eligibility and More</div>",
+                                "tag": "",
+                                "reading_length": "<div>6 min read</div>",
+                                "url": "https://fi.money/blog/posts/loan-on-credit-card-features-eligibility-and-more"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/instant-loans' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    },
+    "accounts": {
+        "active_menu": "ACCOUNTS",
+        "poster": {
+            "title": "There's more than one way to use Fi",
+            "description": "Make the most of Fi. Choose your plan based on the benefits you'd like, and upgrade your plans as you go!",
+            "tag": "",
+            "subText": "<style>.text{font-size:24px;} @media (min-width:1025px) {.text{ font-size:19px}} @media (min-width: 768px) and (max-width: 1024px) {.text {font-size: 15px;}} @media (min-width: 667px) and (max-width:768px){.text{font-size: 15px}} @media (min-width: 375px) and (max-width: 667px) { .text{font-size: 15px}} @media (max-width: 375px){.text {font-size: 14px}}</style><div style='margin-right: 7px; color: #8D8D8D;font-family: Inter; font-weight:500; font-style: normal;' class='text'>POWERED BY</div>",
+            "subLogo_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{ margin-top:5px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 5px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-top: 5px; width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-top: 5px; width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp' class='sublogo'/>",
+            "subLogo" :{
+                "image_src": "",
+                "fallback_image_src": "",
+                "html_src": "<style scoped> .sublogo { width: 148px; }@media(min-width:1025px){.sublogo{ margin-top:5px; width: 140px;}} @media (min-width: 768px) and (max-width: 1024px){ .sublogo {margin-top: 5px; width: 97px; }} @media (min-width: 667px) and (max-width:768px){.sublogo{margin-top: 5px; width:97px}} @media (min-width: 375px) and (max-width: 667px) { .sublogo{margin-top: 5px; width:97px}} @media (max-width: 375px){.sublogo{margin-bottom:-2px ;width:97px}}</style><img src='https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp' class='sublogo'/>"
+            },
+            "poster_image": {
+                "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/accounts-landing.webp",
+                "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/accounts-landing.png",
+                "mobile": {
+                    "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/accounts-landing.webp",
+                    "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/accounts-landing.png"
+                }
+            },
+            "poster_video": {
+                "mp4_video_src": "",
+                "webm_video_src": ""
+            },
+            "lottie_data": {
+                "lottie_url": "",
+                "lottie_image_src": "",
+                "lottie_fallback_image_src": ""
+            }
+        },
+        "sections": [
+            {
+                "orientation": "container",
+                "container_heading": "PLUS",
+                "container_subheading": "Packed with the best of everything",
+                "bg_color": "#ECEEF0",
+                "heading_bg_color": "#F7F9FA",
+                "container_id": "#plus",
+                "sections": [
+                    {
+                        "orientation": "top-bottom",
+                        "top": {
+                            "type": "cards",
+                            "data": {
+                                "variant": "top_bottom_card",
+                                "list": [
+                                    {
+                                        "title": "Free virtual debit card",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "2x rewards on all your spends",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Zero forex charges<br/>up to ₹30,000 per month",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Access up to 8% returns via Jump",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "bottom": {
+                            "type": "heading",
+                            "data": {
+                                "title": "Eligibility",
+                                "description": "Upgrade to Plus by maintaining ₹10,000 in your savings account."
+                            }
+                        }
+                    },
+                    {
+                        "orientation": "full",
+                        "full": {
+                            "type": "button",
+                            "data": {
+                                "text": "Upgrade to Plus"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "orientation": "container",
+                "container_heading": "INFINITE",
+                "container_subheading": "One plan. Limitless benefits.",
+                "bg_color": "#ECEEF0",
+                "heading_bg_color": "#F7F9FA",
+                "container_id": "#infinite",
+                "sections": [
+                    {
+                        "orientation": "top-bottom",
+                        "top": {
+                            "type": "cards",
+                            "data": {
+                                "list": [
+                                    {
+                                        "title": "Free physical<br/>debit card",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/diamond.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/diamond.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "2% cash back on UPI & debit card spends (up to ₹500/month)",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/rewind.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/rewind.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Unlimited transactions at  0 Forex charges",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Priority customer support",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/hmu.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/hmu.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Access to 'Jump' to grow your wealth<br/>by up to 9%",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "bottom": {
+                            "type": "heading",
+                            "data": {
+                                "title": "Eligibility",
+                                "description": "Upgrade to Infinite by maintaining ₹50,000 in your savings account."
+                            }
+                        }
+                    },
+                    {
+                        "orientation": "full",
+                        "full": {
+                            "type": "button",
+                            "data": {
+                                "text": "Upgrade to INFINTE"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "orientation": "container",
+                "container_heading": "STANDARD",
+                "container_subheading": "The Plan for everyone",
+                "bg_color": "#ECEEF0",
+                "heading_bg_color": "#F7F9FA",
+                "container_id": "#standard",
+                "sections": [
+                    {
+                        "orientation": "top-bottom",
+                        "top": {
+                            "type": "cards",
+                            "data": {
+                                "variant": "top_bottom_card",
+                                "list": [
+                                    {
+                                        "title": "Free virtual debit card",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Get Fi Coins to redeem on cool rewards",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Zero Balance Account",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/fine.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/fine.svg"
+                                        }
+                                    },
+                                    {
+                                        "title": "Access to 'Jump' to grow your wealth<br/>by up to 7%",
+                                        "icon": {
+                                            "image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+                                            "fallback_image_src": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "bottom": {
+                            "type": "heading",
+                            "data": {
+                                "title": "About Standard Plans",
+                                "description": "If you're a Min KYC account holder, you will only be able to access the 'Standard' Plan. On completing your Video KYC, you will be eligible to upgrade your Plan to 'Plus' or 'Infinite'"
+                            }
+                        }
+                    },
+                    {
+                        "orientation": "full",
+                        "full": {
+                            "type": "button",
+                            "data": {
+                                "text": "UPGRADE INSTANTLY"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "orientation": "top-bottom",
+                "is_mobile_disabled": false,
+                "top": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Not sure which Fi Plan works best for you?",
+                        "description": "Compare the different kinds of Plans that work best for you."
+                    }
+                },
+                "bottom": {
+                    "type": "table",
+                    "data": {
+                        "has_multiline_text": true,
+                        "custom_cell_height": "200px",
+                        "custom_cell_height_mobile": "162px",
+                        "properties": {
+                            "header": "",
+                            "column_data": [
+                                "What it is",
+                                "The rewards*",
+                                "Extra rewards",
+                                "Qualifying critieria",
+                                "Jump investment options",
+                                "Physical debit card issuance fees",
+                                "Physical debit card annual fee",
+                                "Forex charges**",
+                                "Customer support",
+                                "Chequebook"
+                            ]
+                        },
+                        "columns": [
+                            {
+                                "header": "Salary",
+                                "column_data": [
+                                    "The most rewarding salary account",
+                                    "4X Fi-Coins",
+                                    "Salary account rewards",
+                                    "Salary Account with no minimum balance requirement",
+                                    "Jump up to 9%",
+                                    "Waived off",
+                                    "Waived off",
+                                    "Unlimited transactions at 0 Forex charges",
+                                    "Priority customer support",
+                                    "1st chequebook with 10 leaves is free***"
+                                ],
+                                "background_color": "#D9F2CC"
+                            },
+                            {
+                                "header": "Infinite",
+                                "column_data": [
+                                    "Limitless use, premium rewards",
+                                    "4X Fi-Coins",
+                                    "2% cash back on UPI & debit card spends (up to ₹500/month)",
+                                    "₹50,000 minimum balance",
+                                    "Jump up to 9%",
+                                    "Waived off",
+                                    "Waived off",
+                                    "Unlimited transactions at 0 Forex charges",
+                                    "Priority customer support",
+                                    "1st chequebook with 10 leaves is free***"
+                                ]
+                            },
+                            {
+                                "header": "Plus",
+                                "column_data": [
+                                    "Your power account. Get more for less",
+                                    "2X Fi-Coins",
+                                    "None",
+                                    "₹10,000 minimum balance",
+                                    "Jump up to 8%",
+                                    "Current - Free<br>New - ₹499 + GST w.e.f. 8 March 2024",
+                                    "If Last 12 months DC spends is <br>< 25K : ₹199 + GST<br> >= 25K : Waived off",
+                                    "Current - 0 Forex markup up to ₹50K spends every month<br>New - 0 Forex markup up to ₹30K spends every month",
+                                    "Standard Support",
+                                    "1st chequebook with 10 leaves is free**"
+                                ]
+                            },
+                            {
+                                "header": "Standard",
+                                "column_data": [
+                                    "Your everyday zero-balance account",
+                                    "1X Fi-Coins",
+                                    "None",
+                                    "₹0",
+                                    "Jump - up to 7%",
+                                    "Current - ₹199 + GST<br>New - ₹499 + GST w.e.f. 8 March 2024",
+                                    "₹299 + GST",
+                                    "Current - 2.5% + GST<br>New - 3.5% w.e.f. 8 March 2024",
+                                    "Standard Support",
+                                    "₹100 for a chequebook with 10 leaves"
+                                ]
+                            }
+                        ],
+                        "bottom_text": "*1X equals 5% of spends as Fi-Coins for Debit card, and 2.5% of spends as Fi-Coins for UPI merchant spends. <br/><br/> ** 3.5% forex markup will be charged on all international debit card transactions at first. It will be reversed for eligible users within 30 days. All crypto transactions will be charged a 3.5% markup w.e.f. 8 March 2024 instead of the existing 2.5% markup.<br/><br/> ***Cheque Book charges of ₹100 +GST will be collected from the user but reversed within 30 days. <br/><br/> There are no charges or penalties on Fi for not maintaining a minimum balance. We will just change your plan as per the minimum balance & we’ll notify you in the app."
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "description": "For a detailed breakdown of fees, check our super transparent fee structure <a href='/fees' style='color: #00B899'>here</a>"
+                    }
+                }
+            },
+            {
+                "orientation": "full",
+                "full": {
+                    "type": "heading",
+                    "data": {
+                        "title": "Have more questions?",
+                        "description": "<a href='/FAQs/account-info' style='color: #00B899'>Check out our FAQs.</a>"
+                    }
+                }
+            }
+        ]
+    }
+}

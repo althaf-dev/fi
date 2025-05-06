@@ -1,0 +1,128 @@
+[
+    {
+        "calculator_id": "8dd87cfe-e6b4-48f2-9486-00d879a2b847",
+        "url": "fixed-deposit-calculator",
+        "name": "Fixed Deposit Calculator",
+        "description": "Investing in an FD? Find out exactly how much you can earn",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/fixed-deposit-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/fixed-deposit-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "f2e7f4ce-151c-4dd9-9fd9-78ba6f7b3602",
+        "url": "mutual-fund-goal-calculator",
+        "name": "Mutual Fund Goal Calculator",
+        "description": "Investing in mutual funds to meet a goal? Get your math right",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/mutual-fund-goal-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/mutual-fund-goal-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "8dd87cfe-e6b4-48f2-9486-00d879a2b848",
+        "url": "rent-vs-buy-calculator",
+        "name": "Rent vs Buy Calculator",
+        "description": "Put an end to the eternal debate. Make a calculated decision",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/rent-vs-buy-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/rent-vs-buy-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "f20e449c-753a-4bdb-ab12-58eaddf862ce",
+        "url": "mutual-fund-sip-calculator",
+        "name": "Mutual Fund SIP Calculator",
+        "description": "Find out just how much your mutual fund SIPs can yield",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/mutual-fund-sip-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/mutual-fund-sip-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "717da899-bb00-4246-b17a-c1723d9dd5f9",
+        "url": "ppf-calculator",
+        "name": "PPF Calculator",
+        "description": "Tax benefits aside, work out your gains from a PPF investment",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/ppf-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/calculators/icons/ppf-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "385b15ce-5ae0-48a6-871b-4f6b67dfd122",
+        "url": "personal-loan-emi-calculator",
+        "name": "Personal Loan EMI Calculator ",
+        "description": "EMI can be tricky. Budget your repayments with this calculator",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/personal-loan-emi-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/personal-loan-emi-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "8149630e-72a2-44de-aa80-8d20299aa49c",
+        "url": "nps-calculator",
+        "name": "NPS Calculator",
+        "description": "Investing in the NPS? Use this calculator before taking the leap",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/nps-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/nps-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "30f08198-8639-449a-a5f0-fb7eca9bb046",
+        "url": "hra-calculator",
+        "name": "HRA Calculator",
+        "description": "Does your HRA cover your rent expense from a tax perspective?",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/hra-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/hra-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "fc416f60-94c0-47c8-8501-6843284791de",
+        "url": "gratuity-calculator",
+        "name": "Gratuity Calculator",
+        "description": "Been in your job for a while? See how much gratuity you're owed",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/gratutiy-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/gratutiy-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "7d17774a-6b28-42c9-9995-587863f24073",
+        "url": "epf-calculator",
+        "name": "EPF Calculator",
+        "description": "PF grows silently for years. Find out exactly how much it can be",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/epf-calculator/icon.png",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/epf-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "8d28761b-0c3b-4d9f-a4c8-a5291a197a53",
+        "url": "cagr-calculator",
+        "name": "CAGR Calculator",
+        "description": "Trying to see if an investment is worth your while or not? Use this CAGR calculator to make an educated guess.",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/cagr-calculator/icon.webp",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/cagr-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "7e7463ea-0b97-48ed-9d22-ee1e8d572da5",
+        "url": "inflation-calculator",
+        "name": "Inflation Calculator",
+        "description": "Worried about inflation affecting your savings and budget? Use this calculator to see its impact and plan for it.",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/inflation-calculator/icon.webp",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/inflation-calculator/icon.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "6097e0f1-a80f-4c0a-b9c8-a0766c8db3a6",
+        "url": "fire-calculator",
+        "name": "FIRE Calculator",
+        "description": "FIRE stands for ‘Financial Independence, Retire Early’. It’s a lifestyle movement that’s become popular around the world, which aims at cutting down on expenses and building a corpus to achieve financial freedom. Use this calculator to work out how many years of financial freedom you have, at the current rate that you’re saving money.",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/fire-calculator/rocking-chair.webp",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/fire-calculator/rocking-chair.png",
+        "related_calculators": []
+    },
+    {
+        "calculator_id": "411d8448-f949-43fb-b328-cd275f3d17a2",
+        "url": "credit-card-interest-rate-calculator",
+        "name": "Credit Card Interest Rate Calculator",
+        "description": "Calculate how much interest you're paying on your credit card bills if you don’t pay the whole amount.",
+        "icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/credit-card-calculator/icon.webp",
+        "fallback_icon_url": "https://dza2kd7rioahk.cloudfront.net/assets/calculators/credit-card-calculator/icon.png",
+        "related_calculators": []
+    }
+]

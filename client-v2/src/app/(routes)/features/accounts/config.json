@@ -1,0 +1,1526 @@
+{
+	"elements": {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"92fae071-c430-452e-8abb-df1e4a9da241",
+				"c69354dc-95a3-11ee-b9d1-0242ac120002",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content": "There's more than one <br> way to use Fi",
+			"type": "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "Make the most of Fi. Choose your plan based on the benefits you'd like, and upgrade your plans as you go!",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da241": {
+			"content": "POWERED BY",
+			"type": "Text",
+			"variant": "CUSTOM_TEXT_FEATURE_PAGE_POWEREDBY_3"
+		},
+		"c69354dc-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/accounts-landing.webp",
+			"variant": "Feature_Page_Banner_Image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c6935324-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"92fae071-c430-452e-8abb-df1e4a9da241"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"9921e138-fceb-4f7e-b5de-9539caad317e": {
+			"id": "plus",
+			"type": "Row",
+			"variant": "TEXT_WITH_BACKGROUND",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf7"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7": {
+			"type": "Column",
+			"variant": "BACKGROUND_TEXT",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac120002",
+				"ec2e925a-6acd-4cca-9a51-bf6213912487",
+				"feature_cards_section_row",
+				"ec2e925a-6acd-4cca-9a51-bf62139124871",
+				"ec2e925a-6acd-4cca-9a51-bf62139124872",
+				"feature_page_button_primary_row"
+			]
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "PLUS",
+			"type": "Text",
+			"variant": "ROUNDED_BACKGROUND_TEXT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf6213912487": {
+			"content": "Packed with the best of everything",
+			"type": "Text",
+			"variant": "PNORMALVARIANT_GREY_3_1"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf62139124871": {
+			"content": "Eligibility",
+			"type": "Text",
+			"variant": "ELIGIBILITY"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf62139124872": {
+			"content": "Upgrade to Plus by maintaining ₹10,000 in your savings account.",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"feature_cards_section_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_2",
+			"children": [
+				"feature_cards_inner_card_wrapper",
+				"feature_cards_inner_card_wrapper1",
+				"feature_cards_inner_card_wrapper2",
+				"feature_cards_inner_card_wrapper3"
+			]
+		},
+		"feature_cards_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image",
+				"feature_cards_innerwrapper_card_text"
+			]
+		},
+		"feature_cards_innerwrapper_card_text": {
+			"content": "Free virtual debit card",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg"
+		},
+		"feature_cards_inner_card_wrapper1": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image1",
+				"feature_cards_innerwrapper_card_text1"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1": {
+			"content": "2x rewards on all your spends",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image1": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg"
+		},
+		"feature_cards_inner_card_wrapper2": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2": {
+			"content": "Low Forex charges",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image2": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg"
+		},
+		"feature_cards_inner_card_wrapper3": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image3",
+				"feature_cards_innerwrapper_card_text3"
+			]
+		},
+		"feature_cards_innerwrapper_card_text3": {
+			"content": "Access up to 8% returns via Jump",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image3": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+		},
+		"9921e138-fceb-4f7e-b5de-9539caad317e3": {
+			"id": "standard",
+			"type": "Row",
+			"variant": "TEXT_WITH_BACKGROUND",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf73"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf73": {
+			"type": "Column",
+			"variant": "BACKGROUND_TEXT_2",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac1200023",
+				"ec2e925a-6acd-4cca-9a51-bf62139124873",
+				"feature_cards_section_row3",
+				"ec2e925a-6acd-4cca-9a51-bf621391248713",
+				"ec2e925a-6acd-4cca-9a51-bf621391248723",
+				"feature_page_button_primary_row3"
+			]
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac1200023": {
+			"content": "STANDARD",
+			"type": "Text",
+			"variant": "ROUNDED_BACKGROUND_TEXT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf62139124873": {
+			"content": "The Plan for everyone",
+			"type": "Text",
+			"variant": "PNORMALVARIANT_GREY_3_1"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf621391248713": {
+			"content": "About Standard Plans",
+			"type": "Text",
+			"variant": "ELIGIBILITY"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf621391248723": {
+			"content": "If you're a Min KYC account holder, you will only be able to access the 'Standard' Plan. On completing your Video KYC, you will be eligible to upgrade your Plan to 'Plus' or 'Infinite'",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"feature_cards_section_row3": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_2",
+			"children": [
+				"feature_cards_inner_card_wrapper333",
+				"feature_cards_inner_card_wrapper133",
+				"feature_cards_inner_card_wrapper233",
+				"feature_cards_inner_card_wrapper3333"
+			]
+		},
+		"feature_cards_inner_card_wrapper333": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image333",
+				"feature_cards_innerwrapper_card_text333"
+			]
+		},
+		"feature_cards_innerwrapper_card_text333": {
+			"content": "Free virtual debit card",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image333": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/sparkle.svg"
+		},
+		"feature_cards_inner_card_wrapper133": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image133",
+				"feature_cards_innerwrapper_card_text133"
+			]
+		},
+		"feature_cards_innerwrapper_card_text133": {
+			"content": "Get Fi Coins to redeem on cool rewards",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image133": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/gift.svg"
+		},
+		"feature_cards_inner_card_wrapper233": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text233": {
+			"content": "Zero Balance Account",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image233": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/fine.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/fine.svg"
+		},
+		"feature_cards_inner_card_wrapper3333": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image312",
+				"feature_cards_innerwrapper_card_text312"
+			]
+		},
+		"feature_cards_innerwrapper_card_text312": {
+			"content": "Access to 'Jump' to grow your wealth by up to 7%",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image312": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+		},
+		"9921e138-fceb-4f7e-b5de-9539caad317e2": {
+			"id": "infinite",
+			"type": "Row",
+			"variant": "TEXT_WITH_BACKGROUND",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf72"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf72": {
+			"type": "Column",
+			"variant": "BACKGROUND_TEXT_1",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac1200022",
+				"ec2e925a-6acd-4cca-9a51-bf621391248722",
+				"feature-cards-section-row2",
+				"ec2e925a-6acd-4cca-9a51-bf621391248712",
+				"ec2e925a-6acd-4cca-9a51-bf621391248724",
+				"feature_page_button_primary_row2"
+			]
+		},
+		"regular-row-text-with-background": {
+			"id": "Regular",
+			"type": "Row",
+			"variant": "TEXT_WITH_BACKGROUND",
+			"children": [
+				"regular-column-background-text-2"
+			]
+		},
+		"regular-column-background-text-2": {
+			"type": "Column",
+			"variant": "BACKGROUND_TEXT_2",
+			"children": [
+				"regular-text-rounded-background-text",
+				"regular-text-eligibility",
+				"regular-text-normal-variant-grey-3"
+			]
+		},
+		"regular-text-rounded-background-text": {
+			"content": "REGULAR",
+			"type": "Text",
+			"variant": "ROUNDED_BACKGROUND_TEXT"
+		},
+		"regular-text-eligibility": {
+			"content": "About Regular Plan",
+			"type": "Text",
+			"variant": "ELIGIBILITY"
+		},
+		"regular-text-normal-variant-grey-3": {
+			"content": "Maintain an average monthly balance of ₹5,000 to avoid a monthly fee of up to ₹200+GST (capped at ₹1,000+GST per year)",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac1200022": {
+			"content": "INFINITE",
+			"type": "Text",
+			"variant": "ROUNDED_BACKGROUND_TEXT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf621391248722": {
+			"content": "One plan. Limitless benefits.",
+			"type": "Text",
+			"variant": "PNORMALVARIANT_GREY_3_1"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf621391248712": {
+			"content": "Eligibility",
+			"type": "Text",
+			"variant": "ELIGIBILITY"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf621391248724": {
+			"content": "Upgrade to Infinite by maintaining ₹50,000 in your savings account.",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"feature-cards-section-row2": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_2",
+			"children": [
+				"feature_cards_inner_card_wrapper22",
+				"feature_cards_inner_card_wrapper122",
+				"feature_cards_inner_card_wrapper222",
+				"feature_cards_inner_card_wrapper422",
+				"feature_cards_inner_card_wrapper322"
+			]
+		},
+		"feature_cards_inner_card_wrapper22": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image22",
+				"feature_cards_innerwrapper_card_text22"
+			]
+		},
+		"feature_cards_innerwrapper_card_text22": {
+			"content": "Free physical debit card",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image22": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/diamond.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/diamond.svg"
+		},
+		"feature_cards_inner_card_wrapper122": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image122",
+				"feature_cards_innerwrapper_card_text122"
+			]
+		},
+		"feature_cards_innerwrapper_card_text122": {
+			"content": "2% cash back on UPI & debit card spends (up to ₹500/month)",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image122": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/rewind.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/rewind.svg"
+		},
+		"feature_cards_inner_card_wrapper222": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image222",
+				"feature_cards_innerwrapper_card_text222"
+			]
+		},
+		"feature_cards_innerwrapper_card_text222": {
+			"content": "Unlimited transactions at  0 Forex charges",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image222": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/free.svg"
+		},
+		"feature_cards_inner_card_wrapper422": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image422",
+				"feature_cards_innerwrapper_card_text422"
+			]
+		},
+		"feature_cards_innerwrapper_card_text422": {
+			"content": "Priority customer support",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image422": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/hmu.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/hmu.svg"
+		},
+		"feature_cards_inner_card_wrapper322": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image322",
+				"feature_cards_innerwrapper_card_text322"
+			]
+		},
+		"feature_cards_innerwrapper_card_text322": {
+			"content": "Access up to 8% returns via Jump",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image322": {
+			"type": "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/accounts/chart-up.svg"
+		},
+		"221ffac3-412c-4cbd-ba59-25c8f537a66b": {
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"2044708b-2487-4940-9182-fa0eba6523bf"
+			]
+		},
+		"2044708b-2487-4940-9182-fa0eba6523bf": {
+			"type": "Column",
+			"variant": "",
+			"children": [
+				"a5813ab0-d630-4fb8-be1a-601dff4ef315",
+				"a5813ab0-d630-4fb8-be1a-601dff4ef316"
+			]
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef315": {
+			"content": "Not sure which Fi Plan works best for you?",
+			"type": "Text",
+			"variant": "CARDTITLEVARIANTFIVE_MINE_SHAFT_1"
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef316": {
+			"content": "Compare the different kinds of Plans that work best for you.",
+			"type": "Text",
+			"variant": "PNORMALVARIANT_GREY_4"
+		},
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "Upgrade to Plus",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"feature_page_button_primary_row2": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button2"
+			]
+		},
+		"feature_page_button_primary_button2": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "Upgrade to INFINTE",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"feature_page_button_primary_row3": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button3"
+			]
+		},
+		"feature_page_button_primary_button3": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "UPGRADE INSTANTLY",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"text-have-more-question-section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"children": [
+				"a5813ab0-d630-4fb8-be1a-601dff4ef3160",
+				"have_more_questions",
+				"text-link-check-out-our-faq"
+			]
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef3160": {
+			"content": "For a detailed breakdown of fees, check our super transparent fee structure <a href='/fees' style='color: #00B899'> here </a>",
+			"type": "Text",
+			"variant": "FEES_BREAKDOWN"
+		},
+		"have_more_questions": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Have more questions?"
+		},
+		"text-link-check-out-our-faq": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_2",
+			"content": "<a href='/FAQs/account-info' style='color: #00B899'>Check out our FAQs.</a>"
+		},
+		"text_background_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317e",
+				"9921e138-fceb-4f7e-b5de-9539caad317e2",
+				"9921e138-fceb-4f7e-b5de-9539caad317e3",
+				"regular-row-text-with-background"
+			]
+		},
+		"table_section_phone": {
+			"type": "Section",
+			"variant": "DISPLAY_TABLE_PHONE",
+			"children": [
+				"text-link-check-out-our-faq1",
+				"9921e138-fceb-4f7e-phone-9539caad317etr"
+			]
+		},
+		"text-link-check-out-our-faq1": {
+			"type": "Text",
+			"variant": "SCROLL_TO_VIEW",
+			"content": "SCROLL TO VIEW MORE <img src='https://dza2kd7rioahk.cloudfront.net/assets/svgs/left-green-scroll.svg' alt='scroll'>"
+		},
+		"9921e138-fceb-4f7e-phone-9539caad317etr": {
+			"type": "Row",
+			"variant": "DISPLAY_TABLE_PHONE_ACCOUNTS",
+			"children": [
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc",
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc1",
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc2",
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc3",
+				"cb869a56-ee83-43a6-phone-77defbe1f8b5tc4",
+				"regular-column-display-table"
+			]
+		},
+		"regular-column-display-table":{
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"regular-h5-variant-nine-black",
+				"regular-display-table-child-phone-ans"
+			]
+		},
+		"regular-display-table-child-phone-ans":{
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"regular-what-it-is-column-display-table-child-phone",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"regular-the-rewards-display-table-child-phone",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c123",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"regular-criteria-qualifying-table-child-phone",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c125",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"regular-debit-card-issuance-fees-display-table-chile-phone",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"regular-physical-debit-card-annual-fees-display-table-child-phone",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c128",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c9c1-1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c10c1-2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3"
+			]
+		},
+		"regular-criteria-qualifying-table-child-phone": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"regular-criteria-qualifying-answer"
+			]
+		},
+		"regular-criteria-qualifying-answer": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Average minimum balance of ₹5000"
+		},
+		"regular-the-rewards-display-table-child-phone":{
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223-col3"
+			]
+		},
+		"regular-physical-debit-card-annual-fees-display-table-child-phone": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"regular-debit-card-annual-fees-h5-variant"
+			]
+		},
+		"regular-debit-card-annual-fees-h5-variant":{
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "An annual fee of ₹199 is charged for Regular account plan users. Effective March 8, 2025, this fee will increase to ₹299."
+		},
+
+		"regular-what-it-is-column-display-table-child-phone":{
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"what-it-is-diplay-table-regular-ans"
+			]
+		},
+		"regular-debit-card-issuance-fees-display-table-chile-phone":{
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"regular-debit-card-issuance-h5-variant"
+			]
+		},
+		"regular-debit-card-issuance-h5-variant":{
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "A fee of ₹299 is charged for issuing a Debit card"
+		},
+		"what-it-is-diplay-table-regular-ans":{
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Your go-to spending account"
+		},
+		"regular-h5-variant-nine-black":{
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Regular"
+		},
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc4": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-2c-bd3945e70b79t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c4"
+			]
+		},
+		"8ca01f9f-3fb5-phone-2c-bd3945e70b79t3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Standard"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c4": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c12",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c122",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c123",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c124",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c125",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c126",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c128",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c9c1-1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c10c1-2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3"
+			]
+		},
+
+
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c12": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t22-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t22-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Your everyday zero-balance account"
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c122": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t222-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t222-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "1X Fi-Coins"
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c123": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c124": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t224-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c1-t224-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "₹0"
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c125": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c126": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc6-bd3945e70b79c1-t2-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc6-bd3945e70b79c1-t2-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "A fee of ₹299 is charged for issuing a Debit card"
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127-col3t"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127-col3t": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "An annual fee of ₹199 is charged for Regular account plan users. Effective March 8, 2025, this fee will increase to ₹299."
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c128": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127-col3t1"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c127-col3t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "A 3.5% markup will be charged on international spends"
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c9c1-1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc9-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112-col3"
+			]
+		},
+		"8ca01f9fc4-3fb5-phone-cc1-bd3945e70b79c10c1-2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112-col3r"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112-col3r": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "₹100 for a chequebook with 10 leaves"
+		},
+
+
+
+
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-2c-bd3945e70b79t2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-2c-bd3945e70b79t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Plus"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c9c1-1-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c10c1-2-col3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Your power account. Get more for less"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "2X Fi-Coins"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "None"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "₹10,000 minimum balance"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "A fee of ₹299 is charged for issuing a Debit card"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3t"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3t": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "An annual fee of ₹199 is charged for Regular account plan users. Effective March 8, 2025, this fee will increase to ₹299."
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3t1"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127-col3t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "A 3.5% markup will be charged on international spends"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c9c1-1-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc9-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112-col3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112-col3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Standard Support"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c10c1-2-col3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t12"
+			]
+		},
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-2c-bd3945e70b79t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-2c-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Infinite"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c9c1-1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c10c1-2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c12": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t22": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Limitless use, premium rewards"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c122": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t222": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "4X Fi-Coins"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c123": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t223": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "2% cash back on UPI & debit card spends (up to ₹500/month)"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c124": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t224": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "₹50,000 minimum balance"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c125": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c126": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c127": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c128": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c9c1-1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc9-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c10c1-2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t12"
+			]
+		},
+		"cb869a56-ee83-43a6-phone-77defbe1f8b5tc1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE",
+			"children": [
+				"8ca01f9f-3fb5-phone-c2-bd3945e70b79t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c"
+			]
+		},
+		"8ca01f9f-3fb5-phone-c2-bd3945e70b79t1": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK",
+			"content": "Salary"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c2",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c3",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c4",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c5",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c6",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c7",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c8",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "WHAT IT IS"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "The most rewarding salary account"
+		},
+		"8ca01f9f-3fb5-phone-cc1-bd3945e70b79c1-t3": {
+			"type": "Text",
+			"variant": "TABLE_BORDER",
+			"content": ""
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c2": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "THE REWARDS*"
+		},
+		"8ca01f9f-3fb5-phone-cc2-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "4X Fi-Coins"
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c3": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "EXTRA REWARDS"
+		},
+		"8ca01f9f-3fb5-phone-cc3-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Salary account rewards"
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c4": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "QUALIFYING CRITIERIA"
+		},
+		"8ca01f9f-3fb5-phone-cc4-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Salary Account with no minimum balance requirement"
+		},
+		"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c5": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc5-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "JUMP INVESTMENT OPTIONS"
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c6": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "PHYSICAL DEBIT CARD ISSUANCE FEES"
+		},
+		"8ca01f9f-3fb5-phone-cc6-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Waived off"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c7": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "PHYSICAL DEBIT CARD ANNUAL FEE"
+		},
+		"8ca01f9f-3fb5-phone-cc7-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Waived off"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c8": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t2"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "FOREX CHARGES**"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c1-t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Unlimited transactions at 0 Forex charges"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c9": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc9-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc9-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "CUSTOMER SUPPORT"
+		},
+		"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t112": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "Priority customer support"
+		},
+		"8ca01f9f-3fb5-phone-cc8-bd3945e70b79c10": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_CHILD_PHONE_1",
+			"children": [
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t1",
+				"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t12"
+			]
+		},
+		"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t1": {
+			"type": "Text",
+			"variant": "LABEL_GREY_7",
+			"content": "CHEQUEBOOK"
+		},
+		"8ca01f9f-3fb5-phone-cc10-bd3945e70b79c1-t12": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_ACCOUNTS",
+			"content": "1st chequebook with 10 leaves is free***"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5tc": {
+			"type": "Column",
+			"variant": "DISPLAY_TABLE_ACCOUNTS",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t2",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t3",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t4",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t5",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t7",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t8",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t9",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t91",
+				"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t92"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT_HIDDEN",
+			"content": "Heading"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t2": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "What it is"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t3": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "The rewards*"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t4": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Extra rewards"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t5": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Qualifying critieria"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t7": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Physical debit card issuance fees"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t8": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Physical debit card annual fee"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t9": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Forex charges**"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t91": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Customer support"
+		},
+		"8ca01f9f-3fb5-4ca0-c1-bd3945e70b79t92": {
+			"type": "Text",
+			"variant": "H5VARIANTNINE_BLACK_LEFT",
+			"content": "Chequebook"
+		},
+
+		"related_blog_posts": {
+			"type": "Section",
+			"variant": "display_BlogPosts",
+			"children": [
+				"221ffac3-412c-4cbd-ba59-25c8f537a66b"
+			]
+		},
+		"table_description_section": {
+			"type": "Section",
+			"variant": "display_BlogPosts",
+			"children": [
+				"221ffac3-412c-4cbd-ba59-25c8f537a66b1"
+			]
+		},
+		"221ffac3-412c-4cbd-ba59-25c8f537a66b1": {
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"2044708b-2487-4940-9182-fa0eba6523bf1"
+			]
+		},
+		"2044708b-2487-4940-9182-fa0eba6523bf1": {
+			"type": "Column",
+			"variant": "",
+			"children": [
+				"a5813ab0-d630-4fb8-be1a-601dff4ef3161"
+			]
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef3161": {
+			"content": "*1X equals 5% of spends as Fi-Coins for Debit card, and 2.5% of spends as Fi-Coins for UPI merchant spends.<br><br> ** 3.5% forex markup will be charged on all international debit card transactions at first. It will be reversed for eligible users within 30 days. All crypto transactions will be charged a 3.5% markup w.e.f. 8 March 2024 instead of the existing 2.5% markup.<br><br> ***Cheque Book charges of ₹100 +GST will be collected from the user but reversed within 30 days. <br><br> On select plans, there are no charges or penalties on Fi for not maintaining a minimum balance. We will just update your plan as per your account balance & notify you on the app.",
+			"type": "Text",
+			"variant": "PNORMALVARIANT_GREY_4_1"
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"text_background_section",
+				"related_blog_posts",
+				"table_section_phone",
+				"table_description_section",
+				"text-have-more-question-section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

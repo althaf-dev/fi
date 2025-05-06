@@ -1,0 +1,80 @@
+{
+    "UserDetails":
+    {
+        "Name": "Shreya Khajanchi",
+        "AccountNumber": "10010100466777",
+        "IFSC": "FDRL0005555",
+        "BankName": "HDFC",
+        "BranchName": "MOWA",
+        "MICRCode": "XXXX-XXXXX-XXXXX"
+    },
+    "FromDate":
+    {
+        "year": "2020",
+        "month": "10",
+        "day": "1"
+    },
+    "ToDate":
+    {
+        "year": 2020,
+        "month": 12,
+        "day": 10
+    },
+    "TransactionDetails":
+    [
+        {
+            "Amount":
+            {
+                "units": 1000000,
+                "nanos": 500000000
+            },
+            "TransactionDateTime":
+            {
+                "seconds": 1605917420,
+                "nanos": 10
+            },
+            "MerchantName": "ATM Withdrawalasdsadadadadadadasdasdsadasdasdasdasdsadasdasdsadasdasdasdasdsadasdsasadas",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount":
+            {
+                "units": 1000,
+                "nanos": 500000000
+            },
+            "TransactionDateTime":
+            {
+                "seconds": 1605972420,
+                "nanos": 10
+            },
+            "MerchantName": "ATM Withdrawal",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount":
+            {
+                "units": 1000,
+                "nanos": 500000000
+            },
+            "TransactionDateTime":
+            {
+                "seconds": 1605972420,
+                "nanos": 10
+            },
+            "MerchantName": "HDFC bank abcscsdas",
+            "AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"
+        }
+    ],
+    "TransactionSummary":
+    {
+        "ClosingBalance":
+        {
+            "Amount":
+            {
+                "currencyCode": "INR",
+                "units": "77105",
+                "nanos": 0
+            }
+        }
+    }
+}

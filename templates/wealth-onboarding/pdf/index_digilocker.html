@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DigiLocker verified e-Aadhaar</title>
+        <link rel="stylesheet" href="../../assets/fonts/font.css" />
+        <link rel="stylesheet" href="assets/stylesheets/index_digilocker.css" />
+    </head>
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Content Template -->
+        <script id="primary-content-template" type="x-tmpl-mustache">
+            <div class="main">
+                <p class="title">DigiLocker verified e-Aadhaar</p>
+                <p class="description">This document is generated from verified Aadhaar XML obtained from DigiLocker with due user consent and authentication</p>
+
+                <div class="details-box">
+                    <div class="document-type">
+                        <div class="document-type--label border">
+                            <span class="label-text">Document Type</span>
+                        </div>
+                        <div class="document-type--value-wrapper border">
+                            <div class="document-type--value">
+                                <span class="value-text">{{ applicationDetails.type }}</span>
+                            </div>
+                            <div class="verified-logo-section">
+                                <img
+                                    class="verified-logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/wealth-onboarding/assets/images/xml-verified.png"
+                                    alt="verified-logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generationDate-downloadDate">
+                        <div class="generationDate">
+                            <div class="generationDate--label"><span class="label-text">Generation date</span></div>
+                            <div class="generationDate--value"><span class="value-text">{{ applicationDetails.generationDate }}</span></div>
+                        </div>
+                        <div class="downloadDate">
+                            <div class="downloadDate--label"><span class="label-text">Download date</span></div>
+                            <div class="downloadDate--value"><span class="value-text">{{ applicationDetails.downloadDate }}</span></div>
+                        </div>
+                    </div>
+                    <div class="masked-aadhaar-number">
+                        <div class="masked-aadhaar-number--label">
+                            <span class="label-text">Masked Aadhaar number</span>
+                        </div>
+                        <div class="masked-aadhaar-number--value">
+                            <span class="masked-aadhaar-number--value-text">{{ applicationDetails.maskedAadhaarNumber }}</span>
+                        </div>
+                    </div>
+                    <div class="personal-details--wrapper">
+                        <div class="personal-details--left-section">
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Name</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.name }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Date of Birth</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.dateOfBirth }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Gender</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.gender }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">c/o , s/o</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.careOf }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Address</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.address }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-details--right-section">
+                            <div class="image-section">
+                                <img
+                                    class="person-image"
+                                    src="data:image/png;base64,{{ applicationDetails.personImage }}"
+                                    alt="person"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landmark-locality">
+                        <div class="landmark">
+                            <div class="landmark--label"><span class="label-text">Landmark</span></div>
+                            <div class="landmark--value"><span class="value-text">{{ applicationDetails.landmark }}</span></div>
+                        </div>
+                        <div class="locality">
+                            <div class="locality--label"><span class="label-text">Locality</span></div>
+                            <div class="locality--value"><span class="value-text">{{ applicationDetails.locality }}</span></div>
+                        </div>
+                    </div>
+                    <div class="city">
+                        <div class="city--label">
+                            <span class="label-text">City / District</span>
+                        </div>
+                        <div class="city--value">
+                            <span class="value-text">{{ applicationDetails.city }}</span>
+                        </div>
+                    </div>
+                    <div class="pincode-state">
+                        <div class="pincode">
+                            <div class="pincode--label"><span class="label-text">Pin Code</span></div>
+                            <div class="pincode--value"><span class="value-text">{{ applicationDetails.pincode }}</span></div>
+                        </div>
+                        <div class="state">
+                            <div class="state--label"><span class="label-text">State</span></div>
+                            <div class="state--value"><span class="value-text">{{ applicationDetails.state }}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js"></script>
+        <script src="assets/scripts/index_digilocker.js"></script>
+    </body>
+</html>

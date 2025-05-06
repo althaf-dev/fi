@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epifi - Account Statement</title>
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css" />
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/index_v4.css" />
+        <style>
+            .line-clamp-8 {
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+
+            .he-128 {
+                height: 128px;
+            }
+
+            .hcr--v2 {
+                background-color: #333333;
+                height: 260px; /* height of the header in case address is present */
+                overflow: hidden;
+            }
+
+            .ccr--v3 {
+                height: 701px; /* height of the content after subtracting header and footer in case address is present */
+            }
+
+            .ccr--v1 {
+                height: 881px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Header Template -->
+        <script id="primary-header-template" type="x-tmpl-mustache">
+            <!-- dynamic class assignment to accomodate cases of with and without address. Without Addesss :- hcr and With Address :- hcr--v2 -->
+            <div class="{{ Class }}">
+                <div class="hcr-r1">
+                    <div class="wr1">
+                        <span class="h1">Account Statement&nbsp;•&nbsp;</span>
+                        <span class="l3--v1">{{ FromDate.day }}</span>
+                        <span class="l3--v1">{{ FromDate.month }}</span>
+                        <span class="l3--v1">{{ FromDate.year }}</span>
+                        <span class="l3--v1">&nbsp;to&nbsp;</span>
+                        <span class="l3--v1">{{ ToDate.day }}</span>
+                        <span class="l3--v1">{{ ToDate.month }}</span>
+                        <span class="l3--v1">{{ ToDate.year }}</span>
+                    </div>
+                    <div class="wr2">
+                        <img
+                            class="bank-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/federal-logo_v2.svg"
+                            alt="federal bank"
+                        />
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/logo_v2.svg"
+                            alt="epifi"
+                        />
+                    </div>
+                </div>
+                {{#HasUserAddress}}
+                <div class="hcr-r2">
+                    <div class="h1--v1">{{ UserDetails.Name }}</div>
+                    <div class="cr">
+                        <div class="col1">
+                            <div class="wr1">
+                                <img
+                                    class="logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/address.svg"
+                                    alt="address"
+                                />
+                                <div class="l3 lb he-128 line-clamp-8">{{ UserDetails.Address }}</div>
+                            </div>
+                            <div class="wr2">
+                                <div class="wcr1">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/phone.svg"
+                                        alt="phone"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.PhoneNumber }}</div>
+                                </div>
+                                <div class="wcr2">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/mail.svg"
+                                        alt="mail"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.Email }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="wr1">
+                                <div class="h2">SAVINGS A/C NO</div>
+                                <div class="l4 lb">{{ UserDetails.AccountNumber }}</div>
+                            </div>
+                            <div>
+                                <div class="h2">IFSC</div>
+                                <div class="l4 lb">{{ UserDetails.IFSC }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/HasUserAddress}}
+                {{^HasUserAddress}}
+                <div class="hcr-r3">
+                    <!-- <div class="h1--v1">{{ UserDetails.Name }}</div> -->
+                    <div class="cr">
+                        <div class="col1">
+                            <div class="h1--v1">{{ UserDetails.Name }}</div>
+                            <div class="wr2">
+                                <div class="wcr1">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/phone.svg"
+                                        alt="phone"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.PhoneNumber }}</div>
+                                </div>
+                                <div class="wcr2">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/mail.svg"
+                                        alt="mail"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.Email }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="wr1">
+                                <div class="h2">SAVINGS A/C NO</div>
+                                <div class="l4 lb">{{ UserDetails.AccountNumber }}</div>
+                            </div>
+                            <div>
+                                <div class="h2">IFSC</div>
+                                <div class="l4 lb">{{ UserDetails.IFSC }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/HasUserAddress}}
+            </div>
+        </script>
+
+        <!-- Secondary Header Template -->
+        <script id="secondary-header-template" type="x-tmpl-mustache">
+            <div class="hcr--v1">
+                <div class="wr1">
+                    <div class="col1">
+                        <span class="h1--v2">Account No.</span>
+                        <span class="l4--v1">{{ UserDetails.AccountNumber }}</span>
+                    </div>
+                    <div class="col2">
+                        <img
+                            class="bank-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/federal-logo_v2.svg"
+                            alt="federal bank"
+                        />
+                        <img
+                            class="fi-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/logo_v2.svg"
+                            alt="epifi"
+                        />
+                    </div>
+                </div>
+                <div class="wr2">
+                    <div class="col1">
+                        <span class="h1--v2">Account Holder:</span>
+                        <span class="l4--v1">{{ UserDetails.Name }}</span>
+                    </div>
+                    <div class="col2 l3--v1">
+                        <span>{{ FromDate.day }}</span>
+                        <span>{{ FromDate.month }}</span>
+                        <span>{{ FromDate.year }}</span>
+                        <span>&nbsp;to&nbsp;</span>
+                        <span>{{ ToDate.day }}</span>
+                        <span>{{ ToDate.month }}</span>
+                        <span>{{ ToDate.year }}</span>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Footer Template -->
+        <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr1">
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">5AM - 6PM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">6PM - 5AM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/income.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">In</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/expense.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Spent</div>
+                    </div>
+                    <div class="wr l6--v3">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/saving.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Saved</div>
+                    </div>
+                </div>
+                <div class="cr cr2">
+                    <div class="wr1">
+                        <!-- <div class="h2--v1">IN PARTNERSHIP WITH</div> -->
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="l6--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="l6--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+        <!-- Content Template -->
+        <script id="content-template" type="x-tmpl-mustache">
+            <div class="{{ Class }}">
+                {{#HasTxnSummaryData}}
+                <div class="txnsmrywr">
+                    <div class="cr1">
+                        <div class="l4">Opening Balance</div>
+                        <div class="l6--v4">on {{ FromDate.day }} {{ FromDate.monthShortStr }} {{ FromDate.year }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.OpeningBalance.Amount.units }}</div>
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">+</div>
+                    <div class="cr2">
+                        <div class="l4">Money In</div>
+                        <div class="l6--v4">{{ TxnSummaryData.MoneyIn.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.MoneyIn.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/income.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">-</div>
+                    <div class="cr2">
+                        <div class="l4">Spent</div>
+                        <div class="l6--v4">{{ TxnSummaryData.Spent.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.Spent.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/expense.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">=</div>
+                    <div class="cr2">
+                        <div class="l4">Saved</div>
+                        <div class="l6--v4">{{ TxnSummaryData.Saved.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1--v2">₹</div>
+                            <div class="l1--v1">{{ TxnSummaryData.Saved.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/saving.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">+</div>
+                    <div class="cr2">
+                        <div class="l4">Closing Balance</div>
+                        <div class="l6--v4">on {{ ToDate.day }} {{ ToDate.monthShortStr }} {{ ToDate.year }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.ClosingBalance.Amount.units }}</div>
+                        </div>
+                    </div>
+                </div>
+                {{/HasTxnSummaryData}}
+                {{#HasTxns}}
+                <div class="hwr">
+                    <div class="wr1">
+                        <div class="h1--v1">Date</div>
+                        <div class="l6">Day/Night</div>
+                    </div>
+                    <div class="wr2">
+                        <div class="h1--v1">Transaction Details</div>
+                        <div class="l6">Comment • Place • Payment Method</div>
+                    </div>
+                    <div class="wr3">
+                        <div class="h1--v1">Amount</div>
+                    </div>
+                    <div class="wr4">
+                        <div class="h1--v1">Balance</div>
+                    </div>
+                </div>
+                <div>
+                    {{#TxnData}}
+                        <div class="cwr">
+                            <div class="wr1 l4">
+                                {{name}}
+                            </div>
+                            <div class="wr2"></div>
+                        </div>
+                        <div class="txnwr">
+                            {{#data}}
+                                <div class="cl">
+                                    <div class="wr1">
+                                        {{#IsDayIcon}}
+                                            <img
+                                                class="logo"
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                                                alt="day"
+                                            />
+                                        {{/IsDayIcon}}
+                                        {{#IsNightIcon}}
+                                            <img
+                                                class="logo"
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                                                alt="night"
+                                            />
+                                        {{/IsNightIcon}}
+                                    </div>
+                                    <div class="wr2">
+                                        <div class="l2">{{ MerchantName }}</div>
+                                        <div class="l6--v2 desc">
+                                            {{ TxnDescription }}
+                                        </div>
+                                    </div>
+                                    <div class="wr3">
+                                        <div class="wr">
+                                            <div class="{{ AmountUnitsClass }}">{{ Amount.units }}</div>
+                                            <div class="{{ AmountDecimalsClass }}">.{{ Amount.decimals }}</div>
+                                        </div>
+                                        {{#IsExpense}}
+                                            <img
+                                                class="logo"
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/expense.svg"
+                                                alt="db"
+                                            />
+                                        {{/IsExpense}}
+                                        {{#IsIncome}}
+                                            <img
+                                                class="logo"
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/income.svg"
+                                                alt="cr"
+                                            />
+                                        {{/IsIncome}}
+                                        {{#IsSaving}}
+                                            <img
+                                                class="logo"
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/saving.svg"
+                                                alt="save"
+                                            />
+                                        {{/IsSaving}}
+                                    </div>
+                                    <div class="wr4">
+                                        <div class="l2">{{ Balance.units }}.{{ Balance.decimals }}</div>
+                                    </div>
+                                </div>
+                            {{/data}}
+                        </div>
+                    {{/TxnData}}
+                </div>
+                {{/HasTxns}}
+                {{^HasTxns}}
+                <div class="notxnwr">
+                    <div class="wr1">
+                        <span class="h1--v3">It looks like you have not made</span>
+                        <br />
+                        <span class="h1--v3">any transactions on Fi between</span>
+						<br />
+                        <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                    </div>
+                    <img
+                        class="logo"
+                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                        alt="no-txns"
+                    />
+                </div>
+                {{/HasTxns}}
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+        <script>
+            /**
+             * Returns the month string label
+             * @example
+             * getMonthStr(1)
+             * returns "January"
+             *
+             * @param {number} month number with 1 to 12
+             * @returns {string} Returns the month string label
+             */
+            function getMonthStr(month, shortStr) {
+                var monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var shortStrMonthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                if (shortStr) {
+                    return shortStrMonthList[month - 1];
+                }
+
+                return monthList[month - 1];
+            }
+
+            /**
+             * Returns the formatted amount
+             * @example
+             * getFormattedAmount({ units: 1000000, Nanos: 250000000 })
+             * returns { units: 10,00,000, decimals: 25 }
+             *
+             * @param {object} amount object with units and units
+             * @returns {object} Returns the formatted amount
+             */
+            /*
+            function getFormattedAmount(amount) {
+                if (!amount) return {};
+
+                var nanos = amount.units;
+                nanos = (nanos / 1e9).toFixed(2).slice(-2);
+
+                return {
+                    units: amount.units.toLocaleString("en-IN"),
+                    decimals: nanos
+                };
+            }
+            */
+            function getFormattedAmount(amount) {
+                if (!amount) return {};
+                var nanos = "00";
+
+                if (amount.nanos) {
+                    nanos = amount.nanos;
+                    nanos = (nanos / 1e9).toFixed(2).slice(-2);
+                }
+
+                var modifiedUnits = "0";
+
+                if (amount.units) {
+                    modifiedUnits = amount.units.toString();
+                    modifiedUnits = modifiedUnits.replace(/\B(?=(\d{2})*(\d{3})(?!\d))/g, ",");
+                }
+
+                return {
+                    units: modifiedUnits,
+                    decimals: nanos
+                };
+            }
+
+            /**
+             * Returns the hour 12 str - am/pm
+             * @example
+             * getFormattedHour12(1605917420)
+             * returns "am"
+             *
+             * @param {number} ts seconds
+             * @returns {string} Returns the hour 12 str - am/pm
+             */
+            /*
+            function getFormattedHour12(ts) {
+                var d = new Date(ts * 1000);
+                var hour12 = d.toLocaleTimeString([], { timeZone: "IST", hour12: true }).slice(-2);
+
+                return hour12;
+            }
+            */
+            function getFormattedHour12(ts) {
+                var d = new Date(ts * 1000);
+                var hours = d.getHours();
+
+                if (hours >= 12) {
+                    return "pm";
+                }
+
+                return "am";
+            }
+
+            /**
+             * Returns the 2-digit hours
+             * @example
+             * getFormattedHours(1605917420)
+             * returns "05"
+             *
+             * @param {number} ts seconds
+             * @returns {string} Returns the 2-digit hours
+             */
+            /*
+            function getFormattedHours(ts) {
+                var d = new Date(ts * 1000);
+                var hours = d.toLocaleTimeString([], { timeZone: "IST", hour12: true, hour: "2-digit" }).slice(0, 2);
+
+                return hours;
+            }
+            */
+
+            function getFormattedHours(ts) {
+                var d = new Date(ts * 1000);
+                var hours = d.getHours();
+
+                if (hours >= 12) {
+                    hours = hours - 12;
+                }
+
+                return addPrefixZero(hours);
+            }
+
+            // add zero for numbers less than 10
+            function addPrefixZero(str) {
+                var modifiedStr = ("0" + str).slice(-2);
+
+                return modifiedStr;
+            }
+
+            /**
+             * Returns the formatted date & month str
+             * @example
+             * getFormattedDateAndMonth(1605917420)
+             * returns "21 Nov"
+             *
+             * @param {number} ts seconds
+             * @returns {string} Returns the formatted date & month str
+             */
+            function getFormattedDateAndMonth(ts) {
+                var d = new Date(ts * 1000);
+
+                var date = addPrefixZero(d.getDate());
+                var monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                var month = monthList[d.getMonth()];
+                var dateAndMonth = date + " " + month;
+
+                return dateAndMonth;
+            }
+
+            function getIconObj(ts, hasDayIcon, hasNightIcon) {
+                var hours = getFormattedHours(ts);
+                var ampm = getFormattedHour12(ts);
+
+                if (!hasDayIcon && !hasNightIcon) {
+                    if ((hours >= "05" && ampm === "am") || (hours < "06" && ampm === "pm")) {
+                        return {
+                            dayIcon: true,
+                            nightIcon: false,
+                        };
+                    } else {
+                        return {
+                            dayIcon: false,
+                            nightIcon: true,
+                        };
+                    }
+                } else if (!hasDayIcon) {
+                    if ((hours >= "05" && ampm === "am") || (hours < "06" && ampm === "pm")) {
+                        return {
+                            dayIcon: true,
+                            nightIcon: false,
+                        };
+                    }
+                } else if (!hasNightIcon) {
+                    if ((hours >= "06" && ampm === "pm")) {
+                        return {
+                            dayIcon: false,
+                            nightIcon: true,
+                        };
+                    }
+                }
+
+                return {
+                    dayIcon: false,
+                    nightIcon: false,
+                };
+            }
+
+            function sortTxnData(txnData) {
+                var txnDataKeys = Object.keys(txnData);
+
+                var sortedKeys = txnDataKeys.sort(function (a, b) {
+                    // Turn your strings into dates, and then subtract them
+                    // to get a value that is either negative, positive, or zero.
+                    return new Date(a) - new Date(b);
+                });
+
+                var sortedTxnData = [];
+
+                sortedKeys.forEach(function (item) {
+                    sortedTxnData.push({
+                        name: item,
+                        data: txnData[item].data
+                    })
+                })
+
+                return sortedTxnData;
+            }
+
+            function isEmptyObject(obj) {
+                // not using check Object.keys(obj).length === 0; as that's valid only for ECMA 5+
+                return JSON.stringify(obj) === '{}';
+            }
+
+            (function () {
+                // required if we send data as stringified JSON
+                // var statement = '${data}';
+
+                // no txn json
+                // statement = '{"UserDetails":{"Name":"Shreya Khajanchi","PhoneNumber":9999911111,"Email":"superfian@gmail.com","Address":"2nd Floor, D406, Sector 40 NOIDA, UP","AccountNumber":"10010100466777","IFSC":"FDRL0005555"},"FromDate":{"year":"2020","month":"10","day":"1"},"ToDate":{"year":2020,"month":12,"day":10},"TransactionDetails":[],"TransactionSummary":null}';
+
+                // no txn summary json
+                // statement = '{"UserDetails":{"Name":"Shreya Khajanchi","PhoneNumber":9999911111,"Email":"superfian@gmail.com","Address":"2nd Floor, D406, Sector 40 NOIDA, UP","AccountNumber":"10010100466777","IFSC":"FDRL0005555"},"FromDate":{"year":"2020","month":"10","day":"1"},"ToDate":{"year":2020,"month":12,"day":10},"TransactionDetails":[{"Amount":{"units":1000000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1605917420,"nanos":10},"MerchantName":"ATM Withdrawal","Comments":"xyz","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":0},"TransactionDateTime":{"seconds":1605972420,"nanos":10},"MerchantName":"ATM Withdrawal","TransactionType":"SAVINGS"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":250000000},"TransactionDateTime":{"seconds":1605982420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Location":"Federal ATM","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":0},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1605992420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1606056420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1606066420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608501420,"nanos":10},"MerchantName":"ATM Withdrawal","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608512220,"nanos":10},"MerchantName":"ATM Withdrawal","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608526620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608538620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608542220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608553020,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608601420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608612220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608626620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608638620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608642220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653020,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653030,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653040,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653050,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653120,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653720,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653820,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653920,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608753920,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"}],"TransactionSummary":null}';
+
+                // both txn & txn summary json
+                statement = '{"UserDetails":{"Name":"Shreya Khajanchi","PhoneNumber":9999911111,"Email":"superfian.superfian@gmail.com","Address":"Flat Number 06, 16th Floor, B Block, Random Building, Random Sector, Random Rd, Thiruvananthapuram, Kerela Thiruvananthapuram, Kerela Thiruvananthapuram, Kerela Thiruvananthapuram, Kerela Thiruvananthapuram, Kerela Kerela Thiruvananthapuram, Kerela","AccountNumber":"10010100466777","IFSC":"FDRL0005555"},"FromDate":{"year":"2020","month":"10","day":"1"},"ToDate":{"year":2020,"month":12,"day":10},"TransactionDetails":[{"Amount":{"units":1000000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1605917420,"nanos":10},"MerchantName":"ATM Withdrawalasdsadadadadadadasdasdsadasdasdasdasdsadasdasdsadasdasdasdasdsadasdsasadas","Comments":"xyz","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE","AmountBadge":"CREDIT"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":0},"TransactionDateTime":{"seconds":1605972420,"nanos":10},"MerchantName":"ATM Withdrawal","AmountBadge":"SAVINGS"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":250000000},"TransactionDateTime":{"seconds":1605982420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Location":"Federal ATM","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":0},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1605992420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","AmountBadge":"DEBIT"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1606056420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1606066420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608501420,"nanos":10},"MerchantName":"ATM Withdrawal","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608512220,"nanos":10},"MerchantName":"ATM Withdrawal","Location":"PNB ATM","PaymentMethod":"Debit Card","TransactionType":"EXPENSE"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608526620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608538620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608542220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608553020,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608601420,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608612220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608626620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608638620,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608642220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653020,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653030,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653040,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653050,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653120,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653220,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653720,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653820,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608653920,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"},{"Amount":{"units":1000,"nanos":500000000},"Balance":{"units":2000,"nanos":500000000},"TransactionDateTime":{"seconds":1608753920,"nanos":10},"MerchantName":"Pankaj Khurana","PaymentMethod":"IMPS","Comments":"xyz","TransactionType":"INCOME"}],"TransactionSummary":{"MoneyIn":{"Amount":{"currencyCode":"INR","units":"67000","nanos":500000000},"TransactionCount":20,"AmountBadge":"CREDIT"},"Spent":{"Amount":{"currencyCode":"INR","units":"42000","nanos":700000000},"TransactionCount":10,"AmountBadge":"DEBIT"},"Saved":{"Amount":{"currencyCode":"INR","units":"29590","nanos":800000000},"TransactionCount":1,"AmountBadge":"SAVINGS"},"ClosingBalance":{"Amount":{"currencyCode":"INR","units":"77105","nanos":0}},"OpeningBalance":{"Amount":{"currencyCode":"INR","units":"72665","nanos":500000000}}}}';
+
+                var json = JSON.parse(statement);
+
+                if (isEmptyObject(json)) {
+                    // print undefined as BE looks for this log and returns error to caller
+                    console.log(undefined);
+                    return;
+                }
+
+                var fromDateMonth = getMonthStr(json.FromDate.month);
+                var fromDateMonthShortStr = getMonthStr(json.FromDate.month, true);
+                var toDateMonth = getMonthStr(json.ToDate.month);
+                var toDateMonthShortStr = getMonthStr(json.ToDate.month, true);
+
+                json.FromDate.month = fromDateMonth;
+                json.ToDate.month = toDateMonth;
+
+                json.FromDate.monthShortStr = fromDateMonthShortStr;
+                json.ToDate.monthShortStr = toDateMonthShortStr;
+
+                var txnSummaryData = {};
+                var txnSummaryJSON = json.TransactionSummary;
+				var hasTxnSummaryData = true;
+
+                if (txnSummaryJSON) {
+                    var openingBalance = txnSummaryJSON.OpeningBalance;
+                    var closingBalance = txnSummaryJSON.ClosingBalance;
+                    var moneyIn = txnSummaryJSON.MoneyIn;
+                    var spent = txnSummaryJSON.Spent;
+                    var saved = txnSummaryJSON.Saved;
+
+                    if (openingBalance) {
+                        txnSummaryData.OpeningBalance = {
+                            Amount: getFormattedAmount(openingBalance.Amount)
+                        };
+                    }
+
+                    if (closingBalance) {
+                        txnSummaryData.ClosingBalance = {
+                            Amount: getFormattedAmount(closingBalance.Amount)
+                        };
+                    }
+
+                    if (moneyIn) {
+                        txnSummaryData.MoneyIn = {
+                            Amount: getFormattedAmount(moneyIn.Amount),
+                            TransactionLabel: moneyIn.TransactionCount + (moneyIn.TransactionCount > 1 ? " Transactions" : " Transaction") 
+                        };
+                    }
+
+                    if (spent) {
+                        txnSummaryData.Spent = {
+                            Amount: getFormattedAmount(spent.Amount),
+                            TransactionLabel: spent.TransactionCount + (spent.TransactionCount > 1 ? " Transactions" : " Transaction")
+                        };
+                    }
+
+                    if (saved) {
+                        txnSummaryData.Saved = {
+                            Amount: getFormattedAmount(saved.Amount),
+                            TransactionLabel: saved.TransactionCount + (saved.TransactionCount > 1 ? " Transactions" : " Transaction")
+                        };
+                    }
+                } else {
+					hasTxnSummaryData = false;
+				}
+
+                var txnData = {};
+
+                // format txn details according to the rendered html
+                json.TransactionDetails && json.TransactionDetails.forEach(function (item) {
+                    var modifiedItem = {};
+
+                    modifiedItem.Amount = getFormattedAmount(item.Amount);
+                    modifiedItem.Balance = getFormattedAmount(item.Balance);
+
+                    modifiedItem.TxnDescription = function () {
+                        var str = "";
+
+                        if (item.Comments) {
+                            str += item.Comments;
+                        }
+
+                        if (item.Location) {
+                            if (item.Comments) {
+                                str += " • " + item.Location;
+                            } else {
+                                str += item.Location;
+                            }
+                        }
+
+                        if (item.PaymentMethod) {
+                            if (item.Location) {
+                                str += " • " + item.PaymentMethod;
+                            } else if (item.Comments) {
+                                str += " • " + item.PaymentMethod;
+                            } else {
+                                str += item.PaymentMethod;
+                            }
+                        }
+
+                        return str;
+                    };
+
+                    if (item.TransactionType) {
+                        var txnType = item.TransactionType.toLowerCase();
+
+                        modifiedItem.IsExpense = txnType === "expense";
+                        modifiedItem.IsIncome = txnType === "income";
+                        modifiedItem.IsSaving = txnType === "savings";
+                    } else if (item.AmountBadge) {
+                        var amountBadge = item.AmountBadge.toLowerCase();
+
+                        modifiedItem.IsExpense = amountBadge === "debit";
+                        modifiedItem.IsIncome = amountBadge === "credit";
+                        modifiedItem.IsSaving = amountBadge === "savings";
+                    }
+
+                    modifiedItem.MerchantName = item.MerchantName;
+
+                    if (modifiedItem.IsSaving) {
+                        modifiedItem.AmountUnitsClass = "l1--v1";
+                        modifiedItem.AmountDecimalsClass = "l5";
+                    } else {
+                        modifiedItem.AmountUnitsClass = "l1";
+                        modifiedItem.AmountDecimalsClass = "l3";
+                    }
+
+                    var tsSeconds = parseInt(item.TransactionDateTime.seconds, 10) + 19800; // offset 5.5 * 60 * 60
+                    var dateAndMonth = getFormattedDateAndMonth(tsSeconds);
+                    var hasDayIcon = false;
+                    var hasNightIcon = false;
+                    var iconObj;
+
+                    if (txnData[dateAndMonth]) {
+                        hasDayIcon = txnData[dateAndMonth].hasDayIcon;
+                        hasNightIcon = txnData[dateAndMonth].hasNightIcon;
+                    }
+
+                    iconObj = getIconObj(tsSeconds, hasDayIcon, hasNightIcon);
+
+                    if (iconObj.dayIcon) {
+                        hasDayIcon = true;
+                        modifiedItem.IsDayIcon = true;
+                    } else if (iconObj.nightIcon) {
+                        hasNightIcon = true;
+                        modifiedItem.IsNightIcon = true;
+                    }
+
+                    if (!txnData[dateAndMonth]) {
+                        txnData[dateAndMonth] = { data: [modifiedItem], hasDayIcon: hasDayIcon, hasNightIcon: hasNightIcon };
+                    } else {
+                        txnData[dateAndMonth].data.push(modifiedItem);
+                        txnData[dateAndMonth].hasDayIcon = hasDayIcon;
+                        txnData[dateAndMonth].hasNightIcon = hasNightIcon;
+                    }
+                });
+
+                // sort the txn data according to the timestamp
+                json.TxnData = sortTxnData(txnData);
+
+                // prepare the page txn data to make it render on the html
+                var pageData = [{ page: 1, data: [{ name: "", data: [] }] }];
+                var currIdx = 0;
+                var innerIdx = -1;
+                var height = hasTxnSummaryData ? 485 : 644; // total height - 1120, header - 260, footer - 160, txn summary - 142, content top & bottom padding - 16 + 36, left content = 684 (1120 - 260 - 160 - 142 - 16 - 36)
+                var currHeight = 0;
+
+                json.TxnData.forEach(function (item) {
+                    innerIdx += 1;
+                    currHeight += 40 + 42;
+
+                    if (currHeight > height) {
+                        currIdx += 1;
+                        height = 812; // total height - 1120, header - 80, footer - 160, content top padding & header - 32 + 36, left content = 812 (1120 - 80 - 160 - 32 - 36)
+                        innerIdx = 0;
+                        currHeight = 40 + 42;
+                    }
+
+                    if (!pageData[currIdx]) {
+                        pageData[currIdx] = { page: currIdx + 1, data: [{ name: "", data: [] }] };
+                    }
+
+                    pageData[currIdx].data[innerIdx] = {
+                        name: item.name,
+                        data: [item.data[0]]
+                    };
+
+                    item.data.forEach(function (idata, sidx) {
+                        if (sidx !== 0) {
+                            currHeight += 54;
+
+                            if (currHeight > height) {
+                                currIdx += 1;
+                                height = 812;
+                                innerIdx = 0;
+                                currHeight = 40 + 42;
+                            }
+
+                            if (!pageData[currIdx]) {
+                                pageData[currIdx] = { page: currIdx + 1, data: [{ name: item.name, data: [] }] };
+                            }
+
+                            pageData[currIdx].data[innerIdx].data.push(idata);
+                        }
+                    })
+                });
+
+                var len = pageData.length;
+                var rendered = "";
+
+                pageData.forEach(function (item, idx) {
+                    var headerTemplate;
+                    var hasTxns = !!item.data[0].data.length;
+                    var contentData = {
+                        TxnSummaryData: txnSummaryData,
+                        HasTxnSummaryData: hasTxnSummaryData && idx === 0 && hasTxns,
+                        TxnData: item.data,
+                        HasTxns: hasTxns,
+                        FromDate: json.FromDate,
+                        ToDate: json.ToDate,
+                    };
+                    
+                    if (idx === 0) {
+                        headerTemplate = document.getElementById("primary-header-template").innerHTML;
+                        contentData.Class = (hasTxnSummaryData ? "ccr" : "ccr ccr--v2").concat(!!json.UserDetails.Address ? " ccr--v3" : "");
+                    } else {
+                        headerTemplate = document.getElementById("secondary-header-template").innerHTML;
+                        contentData.Class = "ccr ccr--v1";
+                    }
+
+                    var contentTemplate = document.getElementById("content-template").innerHTML;
+                    var footerTemplate = document.getElementById("footer-template").innerHTML;
+
+                    var renderHeader = Mustache.render(headerTemplate, {
+                        Class: !!json.UserDetails.Address ? 'hcr--v2' : 'hcr',
+                        UserDetails: json.UserDetails,
+                        HasUserAddress: !!json.UserDetails.Address,
+                        FromDate: json.FromDate,
+                        ToDate: json.ToDate,
+                    });
+                    var renderFooter = Mustache.render(footerTemplate, { Page: item.page, Length: len });
+                    var renderContent = Mustache.render(contentTemplate, contentData);
+
+                    rendered += renderHeader + renderContent + renderFooter;
+                });
+
+                document.getElementById("target").innerHTML = rendered;
+            })();
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Fi Money | Team | The Makers, thinkers, explorers & dreamers",
+    "metaDescription": "Meet the Team - makers, thinkers, explorers and dreamers at Fi Money. ",
+    "canonicalUrl": "/teams",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "teams",
+                "item": "https://fi.money/teams"
+            }
+        ]
+    }
+}

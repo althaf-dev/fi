@@ -1,0 +1,164 @@
+{
+  "loanId": "LCL03226591",
+  "date": "01 June, 2023",
+  "age": "30 Years",
+  "epiAmount": "12,000",
+  "NACHCharges": "INR 300 + 18% GST",
+  "loanExpiryDate": "01 Aug, 2023",
+  "typeofLoan": "Personal Loan",
+  "typeOfEpi": "epiType",
+  "OriginatingREName": "VALUE MISSING",
+  "PartnerREName": "VALUE MISSING",
+  "REBlendedRateOfInterest": "VALUE MISSING",
+  "RETransferPossible": "Yes",
+  "noOfEpi": "12",
+  "purposeOfLoan": "Personal Use",
+  "name": "Shaik Khaja Pasa",
+  "permenantAddress": "No.V3/3, NGEF Ancillary Industrial Estate, Mahadevapura, Bengaluru, Karnataka 560048",
+  "communicationAddress": "5C, The Address, Muthangari Drive, Westlands, Nairobi.",
+  "address": "C-234, LSJD Colony Decca Road, Bangalore - 560021",
+  "minimumEmiForPrePaymentElibility": "4",
+  "sanctionAmount": "INR 42000",
+  "RECoolingOffPeriod": "3 working days. No  extra  interest/  charges/  penalty  will  be  collected  if  the loan  is  closed  during  the  cooling  off/  free  look-up  period. However,  Processing  fees  (including  18%  GST) collected by Bank during loan disbursal will not be refunded back and  the  same  would  have  to  be  paid  by  the  borrower  for  loan closure.",
+  "REDetailsLSP": "Epifi Technologies Pvt Ltd",
+  "rateOfInterest": "Zero",
+  "typeOfInterest": "Fixed",
+  "aprFee": "1000",
+  "platform": "Fi Money (https://fi.money)",
+  "payableToRE": "VALUE MISSING",
+  "payableToTPE": "VALUE MISSING",
+  "tenure": "24 days",
+  "insuranceCharge": "Zero",
+  "emiStartDate": "05 July, 2023",
+  "emiRepaymentAmount": "INR 20001",
+  "aadharNumber": "1234 5678 9012",
+  "panNumber": "LXSX29346M",
+  "mobile": "8897724011",
+  "dueDate": "23 Sep 2024",
+  "alternateMobile": "9012345678",
+  "scheduleOfDisbursement": "100% upfront",
+  "smaNpaClassificationDate": [],
+  "email": "shaikkhajapasha2022000@gmail.com",
+  "periodicityOfInterestCompounding": "Monthly",
+  "feesAndCharges": [
+    {
+      "sno": "(i)",
+      "title": "Processing Fees",
+      "oneTimeOrRecurring": "One time",
+      "oneTimeOrRecurringAmount": "INR 708 /-",
+      "payableToTPTOneTimeOrRecurring": "One time",
+      "payableToTPTOneTimeOrRecurringAmount": "INR 801 /-"
+    },
+    {
+      "sno": "(ii)",
+      "title": "Insurance Charges",
+      "oneTimeOrRecurring": "Nil 1",
+      "oneTimeOrRecurringAmount": "INR 709 /-",
+      "payableToTPTOneTimeOrRecurring": "One time 2",
+      "payableToTPTOneTimeOrRecurringAmount": "INR 802 /-"
+    },
+    {
+      "sno": "(iii)",
+      "title": "Valuation fees",
+      "oneTimeOrRecurring": "Nil 2",
+      "oneTimeOrRecurringAmount": "INR 710 /-",
+      "payableToTPTOneTimeOrRecurring": "One time 2",
+      "payableToTPTOneTimeOrRecurringAmount": "INR 803 /-"
+    },
+    {
+      "sno": "(iv)",
+      "title": "Broken Period Interest",
+      "oneTimeOrRecurring": "Nil 3",
+      "oneTimeOrRecurringAmount": "INR 711 /-",
+      "payableToTPTOneTimeOrRecurring": "One time 2",
+      "payableToTPTOneTimeOrRecurringAmount": "INR 804 /-"
+    },
+    {
+      "sno": "(v)",
+      "title": "NACH bounce charges",
+      "oneTimeOrRecurring": "Nil 4",
+      "oneTimeOrRecurringAmount": "INR 712 /-",
+      "payableToTPTOneTimeOrRecurring": "One time 2",
+      "payableToTPTOneTimeOrRecurringAmount": "INR 805 /-"
+    }
+  ],
+  "lenderDetails": {
+    "website": "https://www.stockguardians.in/",
+    "registeredAddress": "102/C, Mittal Tower, 210, Nariman Point, Mumbai, MH 400021 IN.",
+    "corporateAddress": "102/C, Mittal Tower, 210, Nariman Point, Mumbai, MH 400021 IN."
+  },
+  "officeAddress": "NA",
+  "bankDetails": {
+    "accountNumber": "55550110850623",
+    "accountHolderName": "SHAIK KHAJA PASHA",
+    "bankName": "FEDERAL BANK",
+    "bankBranch": "EPIFI FEDERAL NEO BANKING",
+    "ifscCode": "FDRL0005555"
+  },
+  "dateOfAgreement": "01 June, 2023",
+  "penalChargesPerDay": "0.1% of overdue amount, per day",
+  "otherPenalCharges": "₹300, mandate bounce charges",
+  "termsOfCreditLineFacility": {
+    "typeOfInterest": "Floating",
+    "purposeOfFacility": "Personal",
+    "loanAmount": "42000",
+    "loanAmountInWords": "Forty Two Thousand Rupees only",
+    "totalInterest": "0",
+    "processingFee": "234.5",
+    "periodInMonths": "2",
+    "netDisbursedAmount": "40000",
+    "totalAmountPaidByBorrower": "42010",
+    "APR": "12%",
+    "numberOfInstallments": "1",
+    "amountEachInstallment": "42100",
+    "coolingOffPeriod": "3 days",
+    "brokenPeriodInterest": "2000"
+  },
+  "grievanceOfficer": {
+    "name": "Mr. Saurabh S",
+    "email": "grievanceofficer@ficare.com",
+    "contact": "399939933993"
+  },
+  "repaymentSchedule": [
+    {
+      "installmentNo": "1",
+      "outstandingPrincipal": "50,000",
+      "principal": "2000",
+      "interest": "200",
+      "installment": "2200"
+    },
+    {
+      "installmentNo": "2",
+      "outstandingPrincipal": "48 ,000",
+      "principal": "2020",
+      "interest": "180",
+      "installment": "2201"
+    }
+  ],
+  "penalChargesTable": [
+    {
+      "sno": "1",
+      "defaultCategory": "SMA 0 (Principal Or interest payment overdue For not more than 30 days)",
+      "penalCharges": "0.1% per day on overdue amount from due date + GST",
+      "additionalPenalCharges": "Nil 1"
+    },
+    {
+      "sno": "2",
+      "defaultCategory": "SMA 1 (Installment or interest payment overdue Between 31-60 days)",
+      "penalCharges": "0.2% per day on overdue amount from due date + GST",
+      "additionalPenalCharges": "Nil 2"
+    },
+    {
+      "sno": "3",
+      "defaultCategory": "SMA 2 (Instalment or interest overdue above 60 days, Till classification as NPA)",
+      "penalCharges": "0.3% per day on overdue amount from due date + GST",
+      "additionalPenalCharges": "Nil 3"
+    },
+    {
+      "sno": "4",
+      "defaultCategory": "NPA (Installment or interest overdue above 90 days)",
+      "penalCharges": "0.4% per day on overdue amount from due date + GST",
+      "additionalPenalCharges": "Nil 4"
+    }
+  ]
+}

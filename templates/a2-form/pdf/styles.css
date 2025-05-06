@@ -1,0 +1,324 @@
+/*
+* @file styles.css
+* 
+* This file contains styles specific to A2 Form
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+div,
+span {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.page-outer-cr {
+    max-width: 840px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.page-cr {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.heading-title {
+    font-weight: bold;
+}
+
+.h-1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.underscore {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    /* display: flex; */
+    /* text-decoration: underline; */
+    text-underline-offset: 0.29rem;
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;
+    /* min-height: 1.2rem; */
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    padding-bottom: 1px;
+}
+
+.w-fit {
+    width: fit-content;
+    min-width: 40%;
+}
+
+.fill-blank {
+    width: 100%;
+    /* height: 100%; */
+    min-height: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+}
+
+.multiline-input {
+    border: none;
+    display: inline;
+    border-bottom: 1px solid black;
+    resize: vertical;
+    width: 100%;
+}
+  
+
+.outer-underscore {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.second-span {
+    display: inline;
+    border-bottom: 1px solid black;
+    min-width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.table-head-red {
+    font-weight: 500;
+    background-color: #F2DBDA;
+}
+
+.annex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h-6 {
+    font-size: 12px;
+}
+
+.footer {
+    border-top: 1px solid grey;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.ptr-10 {
+    padding-top: 10px;
+}
+
+.issue-draft-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+.mw-35 {
+    min-width: 35%;
+}
+
+.dot-underline {
+    border-bottom: 1px dashed black;
+    margin-bottom: 1px;
+}
+
+.normal-a {
+    color: black;
+    text-decoration: none;
+}
+
+td {
+    font-size: 16px;
+}
+  
+/* @file base-styles.css */
+/* This file contains the base styling for all the PDF generating html files. */
+
+/* Margin */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Width */
+.wd-10 {
+    width: 10% !important;
+}
+
+.wd-20 {
+    width: 20% !important;
+}
+
+.wd-30 {
+    width: 30% !important;
+}
+
+.wd-40 {
+    width: 40% !important;
+}
+
+.wd-50 {
+    width: 50% !important;
+}
+
+.wd-100 {
+    width: 100% !important;
+}
+
+/* Flex */
+.fl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fl-gr {
+    flex-grow: 1;
+}
+
+.fl-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.ju-sb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+/* text alignment */
+.text-un {
+    text-decoration: underline;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.end {
+    text-align: end;
+}
+
+.italics {
+    font-style: italic;
+}
+
+/* border */
+.bor-tp {
+    border-top: 1px solid black;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+

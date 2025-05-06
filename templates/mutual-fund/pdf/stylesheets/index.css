@@ -1,0 +1,117 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dove-gray: #646464;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --silver-chalice: #a4a4a4;
+    --persian-green: #00B899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo-img {
+    padding: 25px;
+    height: 90px;
+}
+
+hr {
+    border-color: black;
+    border-width: 0.5px;
+}
+
+table {
+    margin-top: 20px;
+    width: 73%;
+}
+
+tr {
+    line-height: 27px;
+    vertical-align: top;
+}
+
+.border-table, .border-table tr, .border-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 5px;
+}
+
+.first-col {
+    width: 150px;
+}
+
+.sec-desc {
+    margin-top: 45px !important;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 21px;
+    width: 70%;
+    margin-left: 95px;
+}
+
+.footer {
+    font-size: 15px;
+}
+
+.logo {
+    height: 105px;
+}
+
+.vl-middle {
+    vertical-align: middle;
+}
+
+.ta-center {
+    display: block;
+    text-align: center;
+}

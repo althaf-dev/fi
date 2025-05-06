@@ -1,0 +1,1640 @@
+<!-- 
+- @file pl-kfs/pdf/index.html Contains the html body of PL KFS PDF
+- Go to the folder and run following command to generate PDF
+- wkhtmltopdf --debug-javascript --enable-local-file-access --disable-smart-shrinking --page-size A4 -T 30 -B 25 -L 0 -R 0 --header-html header.html index.html --footer-html footer.html ./output.pdf
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epifi - Personal Loan Agreement</title>
+    <style>
+        html {
+            height: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: normal;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .bg--light-grey {
+            background-color: #f5f5f5;
+        }
+
+        .page-outer-cr {
+            max-width: 840px;
+            padding: 40px 70px;
+            margin: 0 auto;
+        }
+
+        .page-cr {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .break-before {
+            page-break-before: always;
+        }
+
+        .line-space {
+            margin: 12px 0px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            padding-left: 10px;
+        }
+
+        .sanction-row-first {
+            width: 30px
+        }
+
+        .sanction-row-second {
+            width: 300px
+        }
+
+        .top-margin-25 {
+            margin-top: 25px;
+        }
+
+        .bottom-margin-25 {
+            margin-bottom: 25px;
+        }
+
+        .bottom-margin-20 {
+            margin-bottom: 20px;
+        }
+
+        .italics {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .sub-heading {
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .font-small {
+            font-size: 14px;
+        }
+
+        ol {
+            list-style-type: none;
+            /* Hide default numbers */
+            counter-reset: list;
+            /* Reset the counter */
+        }
+
+        li::before {
+            content: counter(li);
+            /* Display the counter */
+            counter-increment: li;
+            /* Increment the counter */
+            display: inline-block;
+            width: 20px;
+            /* Adjust as needed */
+            text-align: right;
+            margin-right: 10px;
+            /* Add some space between the number and text */
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .index {
+            height: 100%;
+        }
+
+        .index-content {
+            width: 100px;
+        }
+
+        .index-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .margin-left-5 {
+            margin-left: 5px;
+        }
+
+        .sec-desc {
+            margin-top: 28px !important;
+        }
+
+        .list-container {
+            margin-left: 0;
+            /* Reset the margin for the entire list container */
+            padding-left: 18px;
+            /* Apply padding instead of margin for consistent indentation */
+        }
+
+        .list {
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .list::before {
+            content: counter(list);
+            /* Display the counter */
+            counter-increment: list;
+            /* Increment the counter */
+            position: absolute;
+            top: 0;
+            /* Adjust as needed */
+            left: 0;
+            /* Position the index number */
+            width: 20px;
+            /* Adjust as needed */
+            text-align: right;
+            padding-right: 10px;
+            /* Add some space between the number and text */
+        }
+
+        .list-with-dot>li:before {
+            content: counter(list) ". ";
+        }
+
+        .list-with-lower-alpha-dot>li:before {
+            content: counter(list, lower-alpha) ". ";
+        }
+
+        .list-with-lower-roman-dot>li:before {
+            content: counter(list, lower-roman) ". ";
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .terms-of-credit-col-1 {
+            width: 70px;
+        }
+
+        .terms-of-credit-col-2 {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+
+    <!-- Content Template of first page-->
+    <script id="first-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <h1 class="heading">SANCTION LETTER</h1>
+                <div class="line-space">Loan ID: {{data.loanId}}</div>
+                <div class="line-space">Date: {{data.date}}</div>
+                <div class="line-space">{{data.name}}</div>
+                <div class="line-space">{{data.address}}</div>
+                <div class="line-space">Dear Sir / Madam,</div>
+                <div class="line-space">Please refer to your loan application {{data.loanId}} for a Credit facility (“Facility”) via<span class="bold"> NDX P2P Private
+                    Limited ("LiquiLoans") </span> facilitated through Epifi Technologies Private Limited (“Epifi”)</div>
+                <div class="line-space bottom-margin-25">We are happy to provide the credit facility on the following broad Terms &amp; Conditions.</div>
+
+                <table class="bottom-margin-25">
+                    <tr>
+                        <td class="bold italics sanction-row-first">1</td>
+                        <td class="bold sanction-row-second">Sanction Amount</td>
+                        <td>{{data.sanctionAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">2</td>
+                        <td class="bold">Rate of Interest % p.a.</td>
+                        <td>{{data.rateOfInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">3</td>
+                        <td class="bold">Tenure</td>
+                        <td>{{data.tenure}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">4</td>
+                        <td class="bold">Lender Facilitation charges (inclusive of
+                            GST)</td>
+                        <td>{{data.lenderFacilitationCharge}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">5</td>
+                        <td class="bold">Insurance charges</td>
+                        <td>{{data.insuranceCharge}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">6</td>
+                        <td class="bold">EMI Start/Repayment Date</td>
+                        <td>{{data.emiStartDate}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">7</td>
+                        <td class="bold">EMI/ Repayment Amount</td>
+                        <td>{{data.emiRepaymentAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">8</td>
+                        <td class="bold">Delay Charges (exclusive of GST)</td>
+                        <td>
+                            0.10% of the principal outstanding for each
+                            outstanding day after repayment date
+                            capped to INR 50 / day. Grace period of 3
+                            days. If repayment made within 3 days of
+                            the due date no delay charges, if repayment
+                            made after the grace period then delay
+                            charges will be applicable for the entire
+                            period post due date.
+                            <table class="bottom-margin-25 top-margin-25">
+                                <tr>
+                                    <th>Overdue amount</th>
+                                    <th>Maximum Charges</th>
+                                </tr>
+                                <tr>
+                                    <td>Up to Rs. 100</td>
+                                    <td>NIL</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 101 to 1000</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 1001 to 2500</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 2501 to 5000</td>
+                                    <td>450</td>
+                                </tr>
+                                 <tr>
+                                    <td>Rs. 5001 to 7500</td>
+                                    <td>650</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 7501 to 12500</td>
+                                    <td>950</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 12501 to 20000</td>
+                                    <td>1250</td>
+                                </tr>
+                                <tr>
+                                    <td>Rs. 20001 to 30000</td>
+                                    <td>1750</td>
+                                </tr>
+                                <tr>
+                                    <td>More than Rs. 30000</td>
+                                    <td>2500</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="line-space">
+                    This Sanction Letter may not be construed as a binding commitment on LiquiLoans to disburse the above-
+                    mentioned credit facility unless you have accepted the standard loan terms in a form and manner acceptable
+                    to LiquiLoans and the conditions for disbursal set out therein are fulfilled to LiquiLoans' satisfaction.
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Terms and conditions -->
+    <script id="terms-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before font-small">
+            <div class="page-cr">
+                <h1 class="sub-heading underline">FACILITY AGREEMENT</h1>
+                <p class="line-space">This Credit Facility (“Agreement”) is made and executed on the Execution Date by and
+                    between:</p>
+
+                <p class="line-space bottom-margin-20"><strong>NDX P2P PRIVATE LIMITED [CIN U67200MH2018PTC306270]</strong>,
+                    a company incorporated under
+                    Companies Act, 2013 having its registered office at First Floor, 104- B Wing, The Qube, M.V. Road,
+                    Hasan Pada Rd, Mittal Industrial Estate, Marol Andheri (East), Mumbai, Maharashtra 400059 and
+                    office/branch at address given in <strong>Annexure - 1</strong> (hereinafter referred to as <strong>“LiquiLoans”</strong>) which
+                    expression shall, unless repugnant to the subject or context thereof include its successors,
+                    transferees,
+                    novatees and assigns) of the <strong>FIRST PART</strong>;</p>
+
+                <p class="line-space bottom-margin-20"><strong>AND</strong></p>
+
+                <p class="line-space bottom-margin-20"><strong>The Individual Lenders</strong>, being the persons who have
+                    agreed to grant the Loan to the Borrower
+                    (hereinafter referred to as the <strong>“Individual Lenders or Lenders”</strong>) which expression shall be deemed to
+                    mean and include their respective heirs, assigns, administrators, executors, legal representatives,
+                    successors represented by LiquiLoans as LiquiLoans has been authorized to represent the Lenders and
+                    enter into this Agreement on their behalf in accordance with the terms of the Facility Agreement.</p>
+
+                <p class="line-space bottom-margin-20"><strong>AND</strong></p>
+
+                <p class="line-space">The persons detailed in Schedule 1 to this Agreement (hereinafter
+                    referred to as the <strong>“Borrower”</strong>) which
+                    expression shall be deemed to mean and include his/her/their respective heirs, administrators,
+                    executors,
+                    legal representatives of the <strong>OTHER PART</strong></p>
+
+                <p class="line-space bottom-margin-20">The expressions ‘Lender/s’ and ‘Borrower/s’ shall unless repugnant to
+                    the meaning or context thereof be
+                    deemed to mean and include the respective successors-in-interest and permitted assigns or the heirs,
+                    executors, administrators and legal representatives of the respective parties as the case may be]</p>
+
+                <p class="line-space bottom-margin-20"><strong>WHEREAS</strong></p>
+
+                <ol type="1" class="list-with-dot">
+                    <li class="list">
+                        <div class="line-space">
+                            LiquiLoans is a non-banking financial company registered with the Reserve Bank of India (<strong>“RBI”</strong>)
+                            and is engaged primarily in the business of providing peer to peer lending platform for enabling
+                            of
+                            loan facilitation via online medium or otherwise, to a wide range of participants (<strong>“Platform”</strong>).
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="line-space">
+                            LiquiLoans, at Borrower/s’ request, has agreed to facilitate the Facility/Loan to Borrower/s
+                            from
+                            the Lender upon the following mutually agreed TERMS & CONDITIONS (<strong>“T&C”</strong>)
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="line-space bottom-margin-25">
+                            Based on the representations, assurances and warranties of the Borrower and relying upon the
+                            information / documents provided by the Borrower pursuant to the application form submitted by
+                            the
+                            Borrower, Lender through LiquiLoans has agreed to lend the Facility to the Borrower and
+                            specifically
+                            subject to the T&C contained in this Agreement.
+                        </div>
+                    </li>
+                </ol>
+
+
+                <p class="line-space"><strong>TERMS & CONDITIONS (T&C)</strong></p>
+
+                <p class="line-space"><strong>1. DEFINITIONS & INTERPRETATION</strong></p>
+
+                <p class="line-space"><strong>1.1 DEFINITIONS</strong></p>
+
+                <p class="line-space">In this Agreement unless repugnant to the meaning or context thereof, the following
+                    expressions, shall
+                    have the meaning ascribed thereto:</p>
+
+                <ol type="a" class="list-with-lower-alpha-dot bottom-margin-25">
+                    <li class="list">
+                        <strong>“Agreement”</strong> or <strong>“Financing Documents”</strong> or <strong>“Contract”</strong> means this Agreement, the Sanction
+                        Letter, if any, of LiquiLoans [by whatever name called] and all Annexures and documents/
+                        instruments additional to, supplemental to or amending, modifying or confirming this Agreement in
+                        accordance with this Agreement;
+                    </li>
+                    <li class="list">
+                        <strong>“Annual Percentage Rate”</strong> or <strong>“APR”</strong> means the effective annualized rate charged to the Borrower
+                        representing the all-inclusive costs for availing the Facility. APR shall include processing fee and
+                        any
+                        other fee or charges mentioned under Schedule 2 to the Agreement.
+                    </li>
+                    <li class="list">
+                        <strong>“Available Facility Amount”</strong> means at any point of time the undrawn amount of the Facility
+                    </li>
+                    <li class="list">
+                        <strong>“Availability Period”</strong> shall mean the period within which the Borrower can request a Drawdown from
+                        the Facility as detailed in Schedule 2.
+                    </li>
+                    <li class="list">
+                        <strong>“Borrower's Dues”</strong> means all sums payable by the Borrower in respect of the Facility, including
+                        outstanding Facility, Interest, all other charges including stamp duty, if any, costs and expenses.
+                    </li>
+                    <li class="list">
+                        <strong>“Business Day”</strong> means normal working hours on a day on which scheduled banks are open for
+                        business at the place this Agreement is executed/signed by the Lender.
+                    </li>
+                    <li class="list">
+                        <strong>“Cooling off Period”</strong> shall mean the duration given to Borrower for exiting the Facility, in case the
+                        Borrower decides not to continue with the Facility. The cooling off period is provided under
+                        Schedule
+                        2 to the Agreement.
+                    </li>
+                    <li class="list">
+                        <strong>“Drawdown”</strong> shall mean each drawdown of the Facility within the Availability Period and as per the
+                        terms of the Financing Documents.
+                    </li>
+                    <li class="list">
+                        <strong>"Due Date"</strong> in respect of any payment means the date on or before which any amount is payable by
+                        Borrower.
+                    </li>
+                    <li class="list">
+                        <strong>“Event of Default”</strong> means any of the events as specifically mentioned in Clause 7 of the Agreement.
+                    </li>
+                    <li class="list">
+                        <strong>“Execution Date”</strong> means the date as set out under Schedule 2 to this Agreement on which this
+                        Agreement is executed by the Parties.
+                    </li>
+                    <li class="list">
+                        <strong>“Facility/Loan”</strong> means the Facility/Loan to be lent as in Schedule 2
+                    </li>
+                    <li class="list">
+                        <strong>“Interest”</strong> shall mean interest as in Schedule 2
+                    </li>
+                    <li class="list">
+                        <strong>“Material Adverse Event”</strong> means any event which in LiquiLoans’s opinion would have a material
+                        adverse effect on (i) Borrower's ability to pay the Borrower's Dues or (ii) recoverability of the
+                        Borrower's Dues.
+                    </li>
+                    <li class="list">
+                        <strong>“Overdue Interest Rate”</strong> means the default interest rate as in Schedule 2 which is payable on all
+                        amounts which are not paid on their respective Due Dates.
+                    </li>
+                    <li class="list">
+                        <strong>“Purpose”</strong> means the purpose of utilization of the Loan as per Schedule 2.
+                    </li>
+                    <li class="list">
+                        <strong>“Taxes”</strong> means and includes any taxes including GST, Sales and/or Purchase Tax, stamp duty,
+                        registration fees, duties, cess, octroi, and/or other and/or any other taxes [excluding 'income tax'
+                        or
+                        other charges, whether similar or not collectively "taxes" if any, payable to any government, or to
+                        any other statutory body or authority, which may arise or accrue and/or be levied/demanded in
+                        respect of the transaction/s mentioned in this document.
+                    </li>
+                    <li class="list">
+                        <strong>“LSP”</strong> shall mean the Lending Service Provider as approved and engaged by LiquiLoans.
+                    </li>
+                </ol>
+
+                <p class="line-space"><strong>INTERPRETATION</strong></p>
+
+                <p class="line-space bold">In this Agreement unless repugnant to the meaning or context thereof any
+                    reference to:</p>
+
+                <ol type="a" class="list-with-lower-alpha-dot bottom-margin-25">
+                    <li class="list">
+                        Any law includes all subordinate legislation/rules thereunder (as amended, modified, re-enacted or
+                        consolidated) (whether before or after the date of this Agreement);
+                    </li>
+                    <li class="list">
+                        The singular shall include the plural and vice-versa;
+                    </li>
+                    <li class="list">
+                        The masculine, the feminine and the neuter shall include the other/s;
+                    </li>
+                    <li class="list">
+                        Payment shall include repayment/adjustment/set-off;
+                    </li>
+                    <li class="list">
+                        ‘Writing’ includes any communication by letter, fax, e-mail or WhatsApp or equivalent communication
+                        methods/platforms;
+                    </li>
+                    <li class="list">
+                        Annexures form part of this Agreement and shall have the same force and effect as if expressly set
+                        out in the body of this Agreement, and any reference to this Agreement shall include all annexures.
+                    </li>
+                </ol>
+
+
+                <p class="line-space"><strong>2. DISBURSEMENT</strong></p>
+                <ol type="a" class="list-with-lower-alpha-dot bottom-margin-25">
+                    <li class="list">
+                        The Borrower may at any time during the Availability Period request disbursement of any amount /
+                        Drawdown to the extent of the Available Facility Amount. LiquiLoans shall have the sole and absolute
+                        discretion to allow or reject Drawdown against such request. The Borrower may Drawdown only up
+                        to the Available Facility Amount.
+                    </li>
+                    <li class="list">
+                        Notwithstanding anything to the contrary herein, LiquiLoans shall have the absolute right to cancel
+                        or
+                        refuse any Drawdown at LiquiLoans&#39;s sole discretion, including on account of any change in
+                        credit
+                        evaluation of the Borrower.
+                    </li>
+                    <li class="list">
+                        Disbursement of any Drawdown directly to any vendor for the Purpose shall be treated as having
+                        been disbursed to the Borrower.
+                    </li>
+                    <li class="list">
+                        The Borrower shall pay processing fee along with applicable tax thereof as set out Schedule 2. The
+                        Borrower will accordingly be liable for entire Drawdown including the amount towards the non-
+                        refundable processing fee, along with applicable tax thereof and Interest (if any) thereon.
+                    </li>
+                </ol>
+
+                <p class="bold">3. <span class="underline">COVENANTS, TERMS AND CONDITIONS</span></p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            The Borrower is liable to repay the principal amount(s) and the interest (including default
+                            interest, if any) and any other costs, charges and expenses, as per repayment schedule.
+                        </li>
+                        <li class="list">
+                            The Borrower shall at all times adhere to the terms and conditions set out in this Agreement and
+                            any amendments hereto.
+                        </li>
+                        <li class="list">
+                            LiquiLoans shall have the right to appropriate the amounts paid by the Borrower in such manner,
+                            as the LiquiLoans and/or the Lender may, in its sole discretion deem fit and appropriate.
+                        </li>
+                        <li class="list">
+                            The right of the LiquiLoans to recover the dues from the Borrower shall be exercised either by
+                            the Lender or by LiquiLoans or by their authorized representatives, or any collection agency
+                            appointed for the purpose, and the Borrower hereby agrees to the same.
+                        </li>
+                        <li class="list">
+                            LiquiLoans shall be entitled to absolutely assign to / securitize its receivables from the
+                            Borrower,
+                            without the consent or any reference to the Borrower and the Borrower hereby consents to the
+                            Lender exercising such right.
+                        </li>
+                        <li class="list">
+                            It is clearly understood by the Borrower that the whole or part of the Facility may be either
+                            granted by a single lender or by multiple lenders but this Agreement shall govern all such
+                            Facility
+                            granted by such lenders; and the Borrower shall be liable to each of such lender, in accordance
+                            with the terms of this Agreement, in respect of the number of Facility(s) granted by each such
+                            lender.
+                        </li>
+                        <li class="list">
+                            It is clearly understood by the Borrower that the Borrower shall enjoy the Facility at the sole
+                            and
+                            absolute discretion of the Lender / LiquiLoans and that the Lender / LiquiLoans shall have the
+                            sole and absolute discretion to withdraw the Facility at any point in time, without any
+                            reference to
+                            the Borrower, under intimation to the Borrower. In the eventuality of withdrawal of the
+                            Facility,
+                            the Borrower shall not be able to utilise the unutilized portion of such Facility, immediately
+                            upon
+                            such withdrawal, unless agreed otherwise by the Lender.
+                        </li>
+                        <li class="list">
+                            The Borrower agrees and understands that the term of the Facility shall automatically expire
+                            upon the completion of the term of the Facility, as stated in Schedule 2, unless such term is
+                            extended by the Lender /LiquiLoans, at their sole discretion, in which case the term of the
+                            Facility shall expire upon the completion of such extended term(s). In Borrower agrees and
+                            confirms that he/she shall furnish all the documents and details as may be required by the
+                            Lender/LiquiLoans for consideration of the extension of the term(s) of the Facility.
+                        </li>
+                        <li class="list">
+                            Making all payments on time is the essence of this Agreement. The Borrower acknowledges
+                            having understood the method of computation of repayments and shall not dispute the same.
+                        </li>
+                        <li class="list">
+                            The Borrower understands and agrees to ensure that he shall not borrow an amount exceeding
+                            a maximum of INR 10 Lakhs in aggregate across all peer-to-peer platforms within India.
+                        </li>
+                        <li class="list">
+                            The borrower and lender both understand that the lender is earning up to 12% interest
+                            (APR) on this loan and the Lender, being the person who has agreed to grant the Loan
+                            to the Borrower through LiquiLoans.
+                        </li>
+                        <li class="list">
+                            The Borrower and Lender both understand that the Lender is earning up to interest (APR) as
+                            mentioned in Schedule 2on this loan and the Lender, being the person who has agreed to grant
+                            the Loan to the Borrower through LiquiLoans.
+                        </li>
+                        <li class="list">
+                            Notwithstanding anything to the contrary in this Agreement, all Borrower's Dues, shall become
+                            payable by the Borrower to LiquiLoans/Lenders as and when demanded by LiquiLoans at its sole
+                            discretion and without requirement of any reason being assigned. The Borrower shall pay such
+                            amounts, without any delay or demur, as mentioned in Schedule 2 of such demand.
+                        </li>
+                        <li class="list">
+                            LiquiLoans/Lender shall be entitled to revise the rate of Interest, if so, required under any
+                            applicable law. Any such change as intimated by LiquiLoans to the Borrower will be final and
+                            binding on the Borrower. In case of such revision, the Borrower shall have an option be entitled
+                            to
+                            prepay, within (30) days of such revision, the entire outstanding Facility along with accrued
+                            Interest (if applicable), without any prepayment penalty.
+                        </li>
+                        <li class="list">
+                            In case of delayed payments, without prejudice to all other rights of LiquiLoans/Lender, Lender
+                            shall be entitled to Overdue Interest Rate from the Borrower for the period of delay.
+                        </li>
+                        <li class="list">
+                            The Borrower may pre-pay any Drawdown but only with the prior approval of LiquiLoans and
+                            subject to such conditions and prepayment charges, as stipulated by LiquiLoans.
+                        </li>
+                        <li class="list">
+                            The Borrower shall bear and pay all interest, tax, duties, cess duties and other forms of taxes
+                            including without limitation service tax, value added taxes, whether applicable now or in the
+                            future, payable under any law at any time - If these are incurred/paid by LiquiLoans, these
+                            shall
+                            be recoverable from the Borrower and will carry interest at the rate of Overdue Interest Rate
+                            from
+                            the date of payment till reimbursement/recovery.
+                        </li>
+                        <li class="list">
+                            Notwithstanding anything to the contrary, the amounts repaid by the Borrower shall be
+                            appropriated firstly towards cost, charges, expenses and other monies; secondly towards
+                            Overdue Interest Rate, if any; thirdly towards Interest; and lastly towards repayment of
+                            principal.
+                        </li>
+                        <li class="list">
+                            The Borrower agrees to repay the relevant Borrower's Dues for each Drawdown by way of a
+                            bullet repayment on or before the relevant Due Date.
+                        </li>
+                        <li class="list">
+                            Interest (if applicable), Overdue Interest Rate and all other charges shall accrue from day to
+                            day
+                            and shall be computed on the basis of 365 days a year and the actual number of days elapsed.
+                        </li>
+                        <li class="list">
+                            If the Due Date for any payment is not a Business Day, the amount will be paid by Borrower on
+                            immediately succeeding Business Day.
+                        </li>
+                        <li class="list">
+                            All sums payable by the Borrower shall be paid without any deductions whatsoever. Taxes will be
+                            charged wherever applicable.
+                        </li>
+                        <li class="list">
+                            Borrower understands that the Facility shall be granted to the Borrower through LiquiLoan’s
+                            lending service provider Epifi’s mobile application and agrees that Epifi is only a service
+                            provider
+                            and does not bear any liability in respect of the Facility.
+                        </li>
+                        <li class="list">
+                            Borrower agrees that LiquiLoans shall retrieve/procure Borrower’s KYC data during the journey
+                            through the Central KYC Registry in a manner as permitted under applicable law for the purposes
+                            of KYC due diligence. Borrower hereby provides Borrower’s consent to LiquiLoans to do so.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="bold line-space">4. MODE OF PAYMENT, REPAYMENT AND PREPAYMENT</p>
+                <ol type="a" class="list-with-lower-alpha-dot bottom-margin-25">
+                    <li class="list">
+                        The Borrower shall, as required by LiquiLoans from time to time provide Electronic Clearing System
+                        (Debit Clearing)/ National Automated Clearing House (“NACH”) or any other electronic or other
+                        clearing mandate (collectively referred to as “ECS”) as notified by the RBI for payments. Such ECS
+                        shall be drawn from/issued to such bank and from such location as agreed to by LiquiLoans. The
+                        Borrower/s shall honor all payments without fail on first presentation/Due Dates. ECS provided by
+                        the
+                        Borrower/(s) may be utilized by LiquiLoans for realization of Borrower's Dues. The Borrower hereby
+                        unconditionally and irrevocably authorizes LiquiLoans to take all actions required for such
+                        realization
+                        of such dues. The Borrower shall promptly in any event within (07) days if directed by LiquiLoans,
+                        replace the cheques and/or the ECS and/or other documents executed for payment of Borrower's
+                        Dues as may be required by LiquiLoans its sole discretion and for reasons as specified by LiquiLoans
+                        from time to time.
+                    </li>
+                    <li class="list">
+                        The Borrower shall at all times maintain sufficient funds in the concerned bank account/s for
+                        payment
+                        of the Borrower's Dues on respective Due Dates. Borrower shall not close the bank account/s from
+                        which the ECS have been issued or cancel or issues instructions to the bank or to LiquiLoans to stop
+                        or delay payment and LiquiLoans shall not be bound by any such communication.
+                    </li>
+                    <li class="list">
+                        The Borrower agrees and acknowledges that the ECS have been issued voluntarily in discharge of
+                        the Borrower's Dues and not by way of a security for any purpose whatsoever. The Borrower also
+                        acknowledges that dishonor of any ECS is a criminal offence under the Negotiable Instruments Act,
+                        1881/The Payment and Settlements Act, 2007. The Borrower/s shall be liable to pay dishonour
+                        charges for each ECS dishonour as stipulated in Schedule 2
+                    </li>
+                    <li class="list">
+                        Any dispute or difference of any nature whatsoever shall not entitle the Borrower(s) to withhold or
+                        delay any payment and LiquiLoans shall be entitled to present the PDC/ ECS on the respective Due
+                        Dates.
+                    </li>
+                    <li class="list">
+                        Notwithstanding the issuance of ECS, the Borrower will be solely responsible to ensure timely
+                        payment of dues.
+                    </li>
+                    <li class="list">
+                        The Lender shall have the right and discretion to charge to the Borrower APR as specified in
+                        Schedule 2 for the Facility for a period of time as may be specified and communicated to the Lender,
+                        from time to time.
+                    </li>
+                    <li class="list">
+                        The Borrower hereby confirms that it will not divert his income / inflow to any other bank account
+                        till
+                        such time the dues to the Lender/LiquiLoans are not paid in full.
+                    </li>
+                    <li class="list">
+                        Any dispute or difference of any nature whatsoever shall not entitle the Borrower to withhold or
+                        delay
+                        payment of any EMI amount or other sum.
+                    </li>
+                    <li class="list">
+                        In case, the Borrower fails to repay Outstanding Amount on the relevant Due Date, the Borrower's
+                        loan account shall be classified as Special Mention Account ("SMA") / Non-Performing Asset ("NPA"),
+                        in accordance with the extant RBI regulations. By way of an example, if the Due Date for the Credit
+                        Facility is March 31, 2023 and the Outstanding amounts are not received by the Lender by end of day
+                        on March 31, 2023, Borrower's loan account shall be classified as SMA as on March 31, 2023. If the
+                        said Borrower's loan account continues to remain overdue for another 30 (thirty) continuous days,
+                        the
+                        said loan account shall be classified as SMA -1 on April 30, 2023. If the said loan account
+                        continues
+                        to remain overdue for another 30 (thirty) continuous days, on running day-end process on May 30,
+                        2023, the loan account shall be classified as SMA - 2. If the said loan account continues to remain
+                        overdue for another 30 (thirty) continuous days, on running day-end process on June 29, 2023, the
+                        said loan account will be classified as NPA.
+                    </li>
+                </ol>
+
+                <p class="bold">5. COOLING – OFF PERIOD</p>
+                <p class="line-space bottom-margin-25">The Borrower shall have the option to exit the Facility by paying the
+                    principal and the proportionate APR
+                    without any penalty during the Cooling off Period. Borrowers continuing with the Facility after Cooling
+                    off
+                    Period shall be required to pay the charges and fee as per Schedule 2 to the Agreement.</p>
+
+                <p class="bold line-space">6. BORROWER&#39;S COVENANTS, REPRESENTATION AND WARRANTIES</p>
+                <p><span class="bold line-space">6.1 </span>The Borrower shall:</p>
+                <div class='list-container'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            Observe and perform all its obligations under this Agreement.
+                        </li>
+                        <li class="list">
+                            Immediately deliver to LiquiLoans all documents, including bank account statements as may
+                            be required by LiquiLoans from time to time.
+                        </li>
+                        <li class="list">
+                            Immediately notify LiquiLoans of any litigations or legal proceedings against any Borrower or
+                            Borrowers' own or leased assets.
+                        </li>
+                        <li class="list">
+                            Notify LiquiLoans of any Material Adverse Effect or Event of Default.
+                        </li>
+                        <li class="list">
+                            Notify LiquiLoans in writing of all changes in the location / address of office / residence
+                            /place
+                            of business or any change / resignation / termination / closure of employment/ profession
+                            /business.
+                        </li>
+                        <li class="list">
+                            Not leave India for employment or business or long term stay abroad or permanently without
+                            fully repaying all Borrower's Dues.
+                        </li>
+                        <li class="list">
+                            Provide security, if any, as may be required by LiquiLoans in case of any change in credit
+                            worthiness of any Borrower (as determined by LiquiLoans).
+                        </li>
+                        <li class="list">
+                            Ensure deposit of salary and / or business proceeds in the bank account from which ECS have
+                            been issued to LiquiLoans.
+                        </li>
+                        <li class="list">
+                            Comply at all times with applicable laws, including, Prevention of Money Laundering Act, 2002.
+                        </li>
+                        <li class="list">
+                            Utilize the Loan and each Drawdown only for the Purpose.
+                        </li>
+                    </ol>
+                </div>
+
+                <p class="line-space"><span class="bold">6.2 </span>The Borrower authorizes LiquiLoans and/or its collection
+                    agency to communicate independently with
+                    any bank/financial company/institution where Borrower maintains account/s, now or in future and/or
+                    with any suppliers/ customers/ or any other parties/sources as LiquiLoans may deem necessary, to
+                    obtain details and copies of documents, statements etc., for determining and/or monitoring
+                    Borrower&#39;s
+                    creditworthiness.
+                </p>
+
+                <p class="line-space"><span class="bold">6.3</span> The Borrower/s represent/s and warrant/s as under:</p>
+                <div class='list-container'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            All the information provided by Borrower whether or not relevant for the ascertaining the credit
+                            worthiness of the Borrower is true and correct and not misleading in any manner.
+                        </li>
+                        <li class="list">
+                            The Borrower is capable of and bound to comply with and perform all obligations.
+                        </li>
+                        <li class="list">
+                            That this Agreement is a valid, binding and enforceable in accordance with its terms.
+                        </li>
+                        <li class="list">
+                            The Borrower is not prohibited by any law or order of any court / forum from entering into this
+                            Agreement and performing all obligations.
+                        </li>
+                        <li class="list">
+                            No event has occurred which affects/shall prejudicially effect the interest of LiquiLoans/Lender
+                            or effect the financial conditions of Borrower or ability to perform all obligations.
+                        </li>
+                        <li class="list">
+                            The Borrower is not in default of payment of any taxes or government dues.
+                        </li>
+                        <li class="list">
+                            The Borrower will do all other acts, deeds and things, as required by LiquiLoans to further
+                            protect the interests of LiquiLoans/Lender.
+                        </li>
+                        <li class="list">
+                            No bankruptcy or insolvency proceedings are pending in respect of the Borrower.
+                        </li>
+                    </ol>
+                </div>
+
+                <p class="line-space"><span class="bold">6.4</span> The Borrower expressly consents to LiquiLoans and/or its
+                    lending service provider and collection
+                    agencies to collect, disclose, store and share the information provided by the Borrower or otherwise
+                    procured by LiquiLoans in such manner if it deems fit.</p>
+
+                <p class="line-space"><span class="bold bottom-margin-25">6.5</span> The Borrower expressly consent to LiquiLoans to share
+                    and disclose Borrower&#39;s information with
+                    third-parties only for the purpose of the Facility on a need-to-know basis.</p>
+
+                <p class="line-space bold">7. EVENT OF DEFAULT</p>
+                <p>A. The following acts/events shall each constitute an &quot;Event of Default”:</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="i" class="list-with-lower-roman-dot">
+                        <li class="list">
+                            Non-compliance/breach by the Borrower of any of the terms and conditions of this
+                            Agreement or any other document entered into in respect of the Facility(s) or any other
+                            financial assistance availed of by the Borrower from the Lender and LiquiLoans.
+                        </li>
+                        <li class="list">
+                            Non adherence to the Repayment Schedule.
+                        </li>
+                        <li class="list">
+                            Any filing for insolvency, bankruptcy, winding up, dissolution of the Borrower or inability of
+                            the Borrower to repay his/her debts.
+                        </li>
+                        <li class="list">
+                            Concealment of any material document or information or event by the Borrower.
+                        </li>
+                        <li class="list">
+                            Submission of any forged document or any misrepresentation by the Borrower.
+                        </li>
+                        <li class="list">
+                            Death, mental incapacity or permanent disability of the Borrower.
+                        </li>
+                        <li class="list">
+                            Borrower utilizes the Drawdown for any purpose other than the Purpose.
+                        </li>
+                        <li class="list">
+                            Occurrence of any events, conditions or circumstances (including any change in law) which
+                            in the sole and absolute opinion of LiquiLoans could have a Material Adverse Effect,
+                            including limitation of any proceedings or action for bankruptcy/liquidation/ insolvency of the
+                            Borrower or attachment / restraint of any of Borrower's assets.
+                        </li>
+                        <li class="list">
+                            Any other event which in the sole and absolute opinion / discretion of the Lender would
+                            endanger the repayment of the Facility(s).
+                        </li>
+                        <li class="list">
+                            The decision of LiquiLoans as to whether or not an Event of Default has occurred shall be
+                            final and binding on the Borrower.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="line-space bold">8. CONSEQUENCES OF DEFAULT</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            Upon occurrence of any Event of Default and at any time thereafter, LiquiLoans shall have the
+                            right, but not the obligation to declare all sums outstanding, whether due or not, immediately
+                            repayable and upon the Borrower failing to make the said payments within <span
+                                class="bold">number of days as
+                                per Schedule 2</span> thereof, LiquiLoans may at its sole discretion exercise any other
+                            right or
+                            remedy which may be available to LiquiLoans under law, including seeking any injunctive relief
+                            or attachment against the Borrower or Borrower&#39;s assets.
+                        </li>
+                        <li class="list">
+                            The Borrower shall also be liable for payment of all legal and other costs and expenses
+                            resulting
+                            from the foregoing defaults or the exercise by LiquiLoans of any remedies.
+                        </li>
+                    </ol>
+                </div>
+
+                <p class="line-space bold">9. TERM AND TERMINATION</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            This Agreement shall become effective on execution and shall stand terminated on the date the
+                            Borrower has repaid the Facility in full along with interest, default interest, bank charges and
+                            any
+                            other costs, charges and expenses as mentioned herein, and fulfilled all other obligations under
+                            the Agreement to the satisfaction of the Lender.
+                        </li>
+                        <li class="list">
+                            The Borrower does not have the right to terminate this Agreement in any situation except with
+                            the
+                            written consent of the Lender, by repaying the entire amounts due under this Agreement.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="line-space bold">10. DISCLOSURES</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            The Borrower acknowledges and authorizes LiquiLoans to disclose all information and data
+                            relating to Borrower, default if any, committed by Borrower to such third parties/agencies as
+                            LiquiLoans may deem appropriate and necessary to disclose and/or as authorized by the RBI or
+                            the credit information companies and to or any other equivalent/similar agency/bureau
+                            [collectively &quot;Agencies&quot;]. The Borrower/s also acknowledges and authorizes such
+                            information to
+                            be used, processed by LiquiLoans or these Agencies as they may deem fit. Further in the Event
+                            of Default, LiquiLoans and these agencies shall have unqualified right to disclose or publish
+                            the
+                            name of the Borrower /or its directors/ partners/co- applicants, as applicable, as
+                            &#39;defaulters&#39; in
+                            such manner and through such medium as the LiquiLoans and these Agencies in their absolute
+                            discretion may think fit, including in newspapers, magazines, internet and social media.
+                        </li>
+                        <li class="list">
+                            The Borrower undertakes and covenants that it shall provide all information, including
+                            information
+                            regarding other credit facilities enjoyed by the Borrower, as and when required by the Lender /
+                            LiquiLoans. The Borrower declares that the information furnished to the LiquiLoans from time to
+                            time is and shall be true and correct.
+                        </li>
+                        <li class="list">
+                            The Borrower shall not hold LiquiLoans responsible for sharing and/or disclosing the information
+                            now or in future and also for any consequences suffered by the Borrower by reason thereof
+                            including for usage of information by Agencies. The provisions of this clause shall survive
+                            termination of this Agreement and the repayment of the Borrower&#39;s Dues.
+                        </li>
+                        <li class="list">
+                            The Borrower gives its consent to the LiquiLoans and/or RBI and/or credit information companies
+                            and/ or any other agency authorized in this behalf by RBI or applicable law to publish their
+                            names
+                            as defaulters in such manner and through such medium as the LiquiLoans/ RBI or credit
+                            information companies or any other agency authorized under applicable law or by RBI in their
+                            absolute discretion may think fit. The aforesaid right shall be available to LiquiLoans in
+                            addition to and not in derogation of any other rights available under this Agreement.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="line-space bold">11. MISCELLANEOUS</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            The entries made in records of LiquiLoans shall be conclusive evidence of existence and of the
+                            amount of Borrower&#39;s Dues and any statement of dues furnished by LiquiLoans shall be
+                            accepted by and be binding on the Borrower.
+                        </li>
+                        <li class="list">
+                            The Borrower&#39;s liability for repayment of the Borrower&#39;s Dues shall, in case where more
+                            than one
+                            Borrower have jointly applied for any Facility, be joint and several.
+                        </li>
+                        <li class="list">
+                            The Borrower shall execute all documents and amendments and shall co-operate with LiquiLoans
+                            as required by LiquiLoans (i) to comply with any RBI guidelines/directives or (ii) for giving
+                            LiquiLoans full benefit of rights under this Agreement. Without prejudice to the aforesaid the
+                            Borrower hereby irrevocably consents that on its failure to do so, such changes shall be deemed
+                            to be incorporated in this Agreement and shall be binding on the Borrower.
+                        </li>
+                        <li class="list">
+                            Notwithstanding any suspension or termination of any Facility, all right and remedies of
+                            LiquiLoans shall continue to survive until the receipt by LiquiLoans of the Borrower&#39;s Dues
+                            in full.
+                        </li>
+                        <li class="list">
+                            The Borrower acknowledge that the rate of interest, penal charges, service charges and other
+                            charges payable and or agreed to be paid by the Borrower are reasonable and acceptable.
+                        </li>
+                        <li class="list">
+                            The Borrower expressly recognizes and accepts that LiquiLoans shall without prejudice to its
+                            rights to perform such activities by itself acting through its officers or employees be entitled
+                            and
+                            has full power and authority so to appoint one or more third parties (hereinafter referred to as
+                            <span class="bold">&quot;Service Providers&quot;</span>) as LiquiLoans may select and to delegate to such
+                            party all or any of its
+                            functions, rights and power under this Agreement relating to the sourcing, administration,
+                            monitoring of the Facility and to perform and execute all lawful acts, deeds, matters and things
+                            connected therewith and incidental thereto including sending notices contacting Borrower,
+                            receiving Cash/Cheques/Drafts/ Mandates from the Borrower in favour of LiquiLoans.
+                        </li>
+                        <li class="list">
+                            The Borrower acknowledge that this financing transaction is a relationship of debtor and
+                            creditor
+                            as between Borrower and LiquiLoans and is not in respect of any service rendered/to be
+                            rendered by LiquiLoans. Accordingly, the provisions of the Consumer Protection Act, 1986 shall
+                            not apply to this transaction.
+                        </li>
+                        <li class="list">
+                            The Borrower hereby authorizes LiquiLoans to verify all information and documents including,
+                            income, address proof and identity documents and other such documents containing any and all
+                            information as are submitted for obtaining the Facility and also to retention of the same by
+                            LiquiLoans.
+                        </li>
+                        <li class="list">
+                            The Borrower acknowledges and authorizes LiquiLoans to procure Borrower&#39;s Income Tax PAN
+                            No./copy of Pan Card, other identity proof and Bank Account details, from time to time and to
+                            also
+                            generate / obtain CIBIL, Experian, Hunter reports and such other reports as and when LiquiLoans
+                            may deem fit.
+                        </li>
+                        <li class="list">
+                            In the event of any disagreement or dispute between LiquiLoans and Borrower regarding the
+                            materiality of any matter including of any event occurrence, circumstance, change, fact
+                            information, document, authorization, proceeding, act, omission, claims, breach, default or
+                            otherwise, the opinion of LiquiLoans as to the materiality of any of the foregoing shall be
+                            final and
+                            binding on the Borrower.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="bold line-space">12. UNDERWRITING/DECLARATION</p>
+                <p class="line-space">The Borrower understands and agrees to limit his/her obligations to a maximum of INR 10,00,000/-across
+                    all peer-to-peer platforms within India.
+                </p>
+                <p class="line-space bottom-margin-25">The Borrower has not availed any loans through any other peer to peer lending platforms and any such
+                    loans will be availed with the prior written consent of the Lender.
+                </p>
+
+                <p class="bold line-space">13. SEVERABILITY</p>
+                <p class="bottom-margin-25">
+                    The Borrower(s) acknowledges that each obligation under this Agreement is independent and severable
+                    from the rest. If any obligation is found not enforceable by an arbitrator or court of law, for any reason, the
+                    Borrower shall continue to remain bound by the other obligations. Each of the provision, if prohibited or
+                    unenforceable in any jurisdiction shall not invalidate the remaining provisions of this Agreement.
+                </p>
+
+                <p class="bold line-space">14. GOVERNING LAW AND JURISDICTION</p>
+                <p class="bottom-margin-25">
+                    This Agreement shall be governed and construed in accordance with the substantive laws of India and
+                    the Parties hereto submit to the exclusive jurisdiction of the Courts situate at Mumbai. The Parties
+                    irrevocably waive any objection now or in future, to the laying of the venue of any proceedings in the
+                    courts and tribunals at Mumbai. Nothing contained in this Clause 14 shall limit any right of the
+                    LiquiLoans/Lender to take proceedings in any other court or tribunal of competent jurisdiction, nor shall
+                    the taking of proceedings in one or more jurisdictions preclude the taking of proceedings in any other
+                    jurisdiction whether concurrently or not and the Parties irrevocably submit to and accept for themselves
+                    and in respect of their property, generally and unconditionally, the jurisdiction of such court or tribunal,
+                    and the Parties irrevocably waive any objection they may have now or in the future to the laying of the
+                    venue of any proceedings and any claim that any such proceedings have been brought in an
+                    inconvenient forum.
+                </p>
+
+                <p class="line-space bold">15. NOTICE</p>
+                <p class="line-space">
+                    Any notice or other communication to be given under or in connection with this Agreement (“Notice”) shall
+                    be in the English language in writing and signed by or on behalf of the Party giving it. A Notice may be
+                    delivered personally or sent by email, pre-paid recorded delivery or international courier to the address or
+                    facsimile number provided in this Clause 15. (Notices) Notice shall be deemed to have been received:
+                </p>
+                <div class='list-container line-space'>
+                    <ol type="a" class="list-with-lower-alpha-dot">
+                        <li class="list">
+                            at the time of delivery if delivered personally;
+                        </li>
+                        <li class="list">
+                            at the time of transmission if sent by email without any delivery failure notification (provided the
+                            sender also sends physical copies of such notices to such addresses of the recipient Party);
+                        </li>
+                        <li class="list">
+                            2 (two) Business Days after the time and date of posting if sent by pre-paid registered post with
+                            delivery acknowledged.
+                        </li>
+                    </ol>
+                </div>
+                <p class="line-space">
+                    provided that if receipt of any notice occurs after 6.00 p.m. or is not on a Business Day, deemed receipt of
+                    the Notice shall be 9.00 a.m. on the next Business Day. References to time in this Clause 15 (Notices)
+                    are to local time in the country of the addressee.
+                </p>
+                <p class="line-space">The details of the Parties for the service of Notices are given below:</p>
+                <p class="bold line-space">If to the LSP:</p>
+                <p class="line-space">
+                    Address: Salarpuria Sattva Knowledge Court, Survey No. 77, Plot no.9, 06th Floor, Doddenakundi,KR
+                    Puram Hobli Bangalore East Taluk Bangalore KA 560048 IN
+                </p>
+                <p class="line-space">Email: help@fi.care</p>
+                <p class="line-space bottom-margin-25">Attention: Epifi Technologies Private Limited</p>
+
+
+                <p class="bold line-space">If to the NDX P2P Private Limited (LiquiLoans):</p>
+                <p class="line-space">
+                    Address: First Floor, 104- B Wing, The Qube, M.V. Road, Hasan Pada Rd, Mittal Industrial Estate, Marol
+                    Andheri (East), Mumbai, Maharashtra 400059
+                </p>
+                <p class="line-space">
+                    Email: customercare@liquiloans.com
+                </p>
+                <p class="line-space">
+                    Attention: V. Balamurugan
+                </p>
+                <div class='list-container line-space flex'>
+                    <span>d. </span>
+                    <span>
+                        Party shall notify the other Parties of any change to its details in Clause 15 (Notices) in
+                        accordance with the provisions, provided that such notification shall only be effective on the later
+                        of the date specified in the notification and 5 (five) Business Days after deemed receipt.
+                    </span>
+                </div>
+                
+
+                <div class="bold">16. ASSIGNMENT</div>
+                <p class="line-space">
+                    The Borrower shall not be entitled to transfer or assign all or any right or obligation, obligations or duties
+                    under this Agreement to any person directly or indirectly or create any third-party interest in favour of any
+                    person without the prior written consent of LiquiLoans and subject to proposed assignee complying with
+                    LiquiLoans’s requirements.
+                </p>
+                <p class="line-space bottom-margin-25">
+                    LiquiLoans shall be entitled to sell, transfer, assign or securitise in any manner whatsoever (in whole or in
+                    part and including through grant of participation rights) all or any of its benefits, right, obligation, duties
+                    and / or liabilities under this Agreement, without the prior written consent of, or intimation to the Borrower
+                    in such manner and such terms as LiquiLoans may decide. In the event of such transfer, assignment or
+                    securitization, the Borrower shall perform and be liable to perform their obligation under this Agreement to
+                    such assignee or transferor. In such event, the Borrower shall substitute the remaining ECS in favour of
+                    the proposed transferee/ assignee if called upon to do so by LiquiLoans. Any such action and any such
+                    sale, assignment or transfer shall bind the Borrower to accept such third party as creditor exclusively or
+                    as a joint creditor with LiquiLoans, or as creditor exclusively with the right to LiquiLoans to continue to
+                    exercise all powers hereunder on behalf of such third party and pay over such outstanding and dues to
+                    such third party and/or to LiquiLoans as LiquiLoans may direct.
+                </p>
+
+
+                <div class="bold">17. WAIVER</div>
+                <p class="line-space bottom-margin-25">
+                    Any omission or delay on the part of LiquiLoans in exercising any of its rights, powers or remedy, upon
+                    failure by the Borrower in the due and punctual fulfilment of the obligations of the Borrower hereunder,
+                    shall not be deemed to constitute a waiver by LiquiLoans of any of its rights to require such due,
+                    punctual and full performance by the Borrower.
+                </p>
+
+
+                <div class="bold">18. INDEMNITY</div>
+                <p class="line-space bottom-margin-25">
+                    The Borrower hereby indemnifies, defends and holds LiquiLoans, its employees, representatives and
+                    consultants harmless from time to time and at all times against any liability, claim, loss, judgment,
+                    damage, cost or expense (including, without limitation, reasonable attorney&#39;s fees and expenses) as a
+                    result of or arising out of any failure by the Borrower to observe or perform any of the terms and
+                    conditions and obligations contained in this Agreement or Event of Default or the exercise of any of the
+                    rights by LiquiLoans under this Agreement, including for any enforcement of security or recovery of
+                    Borrower&#39;s Dues.
+                </p>
+
+
+                <div class="bold">19. AUTHORIZATION</div>
+                <p class="line-space bottom-margin-20">
+                    The persons signing this Agreement on behalf of the Parties represent and covenant that they have the
+                    requisite authority to so sign and execute this Agreement on behalf of the Parties for whom they are
+                    signing.
+                </p>
+
+
+                <div class="bold">20. ENTIRE AGREEMENT</div>
+                <p class="line-space bottom-margin-20">
+                    This Agreement, together with the documents executed / exchanged by the Parties in relation to the
+                    Facility, supersede all prior discussions and agreements (whether oral or written, including all
+                    correspondence) between the Parties with respect to, or in relation to the Facility, and this Agreement,
+                    along with the Schedules hereto, together with the documents executed / exchanged by the Parties in
+                    relation to the Facility, contains the sole and entire agreement between the Parties with respect to the
+                    Facility.
+                </p>
+
+                <p class="bold line-space">
+                    IN WITNESS HEREOF, THE PARTIES HERETO HAVE CAUSED THIS AGREEMENT TO BE
+                </p>
+                <p class="bold">
+                    EXECUTED ON THE DATE AND PLACE HEREINABOVE MENTIONED AND THE BORROWE HAS
+                    AGREED TO THIS AGREEMENT BY CLICKING ON ‘I agree to all the details’ BUTTON
+                </p>
+            </div>
+        </div>
+    </script>
+
+    <!-- Schedule 1 -->
+    <script id="schedule-1-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before">
+            <div class="page-cr">
+                <p class="heading underline">SCHEDULE 1</p>
+                <div class="sub-heading underline">Borrower/s' Details</div>
+
+                <table class="bottom-margin-25 w-full font-small">
+                    <tr>
+                        <th class="bold italics sanction-row-first">SN</td>
+                        <th class="bold sanction-row-second">Description</td>
+                        <th>Particular</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">1</td>
+                        <td class="bold">Name</td>
+                        <td>{{data.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">2</td>
+                        <td class="bold">Aadhar Number</td>
+                        <td>{{data.aadharNumber}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">3</td>
+                        <td class="bold">PAN Number</td>
+                        <td>{{data.panNumber}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">4</td>
+                        <td class="bold">Mobile Number</td>
+                        <td>{{data.mobile}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">5</td>
+                        <td class="bold">Alternate Mobile Number</td>
+                        <td>{{data.alternateMobile}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">6</td>
+                        <td class="bold">Email Address</td>
+                        <td>{{data.email}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">7</td>
+                        <td class="bold">Residential Address</td>
+                        <td>{{data.residentialAddress}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">8</td>
+                        <td class="bold">Office Address</td>
+                        <td>{{data.officeAddress}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">9</td>
+                        <td class="bold">Nature of activities engaged in</td>
+                        <td>{{data.activitiesEngaged}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">10</td>
+                        <td class="bold">Particulars for Notice</td>
+                        <td>
+                            <p>Name of Contact Person: {{data.name}}</p>
+                            <p>Address: {{data.address}}</p>
+                            <p>Phone Number: {{data.mobile}}</p>
+                            <p>Fax Number: {{data.fax}}</p>
+                            <p>Email id: {{data.email}}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">11</td>
+                        <td class="bold">Details of the Bank Account</td>
+                        <td>
+                            <p>Account Number: {{data.bankDetails.accountNumber}}</p>
+                            <p>Account Name: {{data.bankDetails.accountHolderName}}</p>
+                            <p>Bank Name: {{data.bankDetails.bankName}}</p>
+                            <p>Bank Branch: {{data.bankDetails.bankBranch}}</p>
+                            <p>IFSC code: {{data.bankDetails.ifscCode}}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">12</td>
+                        <td class="bold">Date of Agreement</td>
+                        <td>
+                            {{data.dateOfAgreement}}
+                        </td>
+                    </tr>
+                </table>
+                <p class="font-small text-center">
+                    By agreeing to initiate the process for availing the Credit Facility(s) through LiquiLoans, the Borrower
+                    hereby explicitly provides its consents to LiquiLoans to access the Borrower’s credit information from the
+                    relevant agencies / authorities.
+                </p>
+            </div>
+        </div>
+    </script>
+
+    <!-- Schedule 2 -->
+    <script id="schedule-2-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before">
+            <div class="page-cr">
+                <h1 class="heading underline">SCHEDULE 2</h1>
+                <div class="sub-heading underline">KEY FACT STATEMENT</div>
+                <div class="sub-heading underline bottom-margin-20">TERMS OF THE CREDIT LINE FACILITY</div>
+
+                <table class="bottom-margin-20 w-full font-small">
+                    <tr>
+                        <td class="bold italics terms-of-credit-col-1">Date</td>
+                        <td class="bold terms-of-credit-col-2 text-center">NDX P2P Private Limited (LiquiLoans)</td>
+                        <td><span class="bold">Borrower Name:</span> {{fullData.name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="bold">S. No.</td>
+                        <th class="bold">Parameter</td>
+                        <th>Details</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(i)</td>
+                        <td class="text-center">Purpose of the Facility</td>
+                        <td class="text-center">{{data.purposeOfFacility}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(ii)</td>
+                        <td>Loan amount (amount disbursed to the borrower) (in INR)</td>
+                        <td class="text-center">{{data.loanAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(iii)</td>
+                        <td>Total interest charge during the entire tenure of the loan (Interest to be paid as a part of EMIs) (in INR)</td>
+                        <td class="text-center">{{data.totalInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(iv)</td>
+                        <td>Other up-front charges (break-up of each component to be given below)(in Rupees)</td>
+                        <td class="text-center">{{data.upFrontCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>a&#41; Processing fees (in INR)</td>
+                        <td class="text-center">{{data.processingFee}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>b&#41; Insurance charges (in INR)</td>
+                        <td class="text-center">{{data.insuranceCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>c&#41; Broken Period Interest (BPI) (in INR)</td>
+                        <td class="text-center">{{data.BPI}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>d&#41; Payment Bounce charges (in INR)</td>
+                        <td class="text-center">{{data.paymentBounceCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>e&#41; Transaction Fees (in INR)</td>
+                        <td class="text-center">{{data.transactionFees}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>f&#41; Documentation Charges (in INR)</td>
+                        <td class="text-center">{{data.documentationCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>g&#41; Others (if any) (in INR)</td>
+                        <td class="text-center">{{data.otherCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(v)</td>
+                        <td>Net disbursed amount ((i)-(iii)) (in INR)</td>
+                        <td class="text-center">{{data.netDisbursedAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(vi)</td>
+                        <td>Total amount to be paid by the borrower (sum of (i), (ii) and (iii)) (in INR)</td>
+                        <td class="text-center">{{data.totalAmountPaidByBorrower}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(vii)</td>
+                        <td>
+                            Annual Percentage Rate (APR) - Effective annualized interest rate (in
+                            percentage) (computed on net disbursed amount using IRR approach
+                            and reducing balance method)
+                        </td>
+                        <td class="text-center">{{data.APR}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(viii)</td>
+                        <td>
+                            Tenure of the Loan (in months)
+                        </td>
+                        <td class="text-center">{{data.tenureOfLoan}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(ix)</td>
+                        <td>
+                            Repayment frequency by the Borrower
+                        </td>
+                        <td class="text-center">{{data.repaymentFrequency}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(x)</td>
+                        <td>
+                            Number of installments of repayment
+                        </td>
+                        <td class="text-center">{{data.numberOfInstallments}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xi)</td>
+                        <td>
+                            Amount of each installment of repayment (in INR)
+                        </td>
+                        <td class="text-center">{{data.amountEachInstallment}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold" colspan="3">DETAILS OF THE CONTINGENT CHARGES</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xii)</td>
+                        <td>
+                            Prepayment charges, if any (Not applicable for MFI)
+                        </td>
+                        <td class="text-center">{{data.prepaymentCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xiii)</td>
+                        <td>
+                            Rate of annualized penal charges in case of delayed payments (if any)
+                        </td>
+                        <td class="text-center">{{data.rateOfAnnualizedPenalCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xiv)</td>
+                        <td>
+                            Rate of annualized other penal charges (if any); (details to be provided)
+                        </td>
+                        <td class="text-center">{{data.rateOfOtherPenalCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xv)</td>
+                        <td>
+                            NACH registration failure charges (in INR)
+                        </td>
+                        <td class="text-center">{{data.NACHFailureCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xvi)</td>
+                        <td>
+                            NACH/e-mandate bounce charges (in INR)
+                        </td>
+                        <td class="text-center">{{data.NACHBounceCharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xvii)</td>
+                        <td>
+                            SOA charges, if applicable (in INR)
+                        </td>
+                        <td class="text-center">{{data.SOACharges}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold" colspan="3">OTHER DISCLOSURES</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xviii)</td>
+                        <td>
+                            Cooling-off/look-off period (The Borrower can within
+                            the cooling-off/lookup period exits the loan by
+                            paying the principal and the proportionate APR
+                            without any penalty.)
+                        </td>
+                        <td class="text-center">{{data.coolingOffPeriod}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xix)</td>
+                        <td>
+                            Date of Disbursement
+                        </td>
+                        <td class="text-center">{{data.dateOfDisbursement}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xx)</td>
+                        <td>
+                            Details of Lending Service Provider (LSP) acting as
+                            recovery agent and authorized to approach the
+                            borrower
+                        </td>
+                        <td class="text-center">Epifi Technologies Private Limited</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">(xxi)</td>
+                        <td>
+                            Name, designation, address and
+                            phone number of nodal grievance
+                            redressal officer designated
+                            specifically to deal with FinTech/
+                            Digital Lending Related Complaints/ Issue
+                        </td>
+                        <td>
+                            <p class="line-space">For Lending Service Provider</p>
+                            <p>Grievance Officer:</p>
+                            <p>{{grievance.name}}</p>
+                            <p>Email: {{grievance.email}}</p>
+                            <p class="bottom-margin-20">Contact: {{grievance.contact}}</p>
+                            <p class="bold bottom-margin-20">For NDX P2P Private Limited (LiquiLoans)</p>
+
+                            <p>Nodal grievance redressal officer of NDX P2P Pvt Ltd</p>
+                            <p>Shweta Jain,</p>
+                            <p>Chief Operating Officer</p>
+                            <p>Contact: +91-022-489-04685</p>
+                            <p>Email ID: customercare@liquiloans.com</p>
+                            <p class="bottom-margin-20">
+                                Address: 1st Floor, B-104, &quot;The Qube&quot;
+                                C.T.S. No. 1498, A/2,M.V. Road, Hasan
+                                Pada Rd, Mittal Industrial Estate, Marol
+                                Andheri (East), Mumbai, Maharashtra
+                                400059
+                            </p>
+
+                            <p>
+                                Grievances portal: https:/
+                                www.liquiloans.com/customer grievances-
+                                redressal- mechanism
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </script>
+
+    <!-- Detailed repayment schedule -->
+    <script id="repayment-schedule" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before">
+            <div class="page-cr">
+                <h1 class="heading">DETAILED REPAYMENT SCHEDULE</h1>
+                <table class="bottom-margin-20 w-full font-small">
+                    <tr>
+                        <th class="text-center bold">Installment No.</th>
+                        <th class="text-center bold">Installment (in Rupees)</th>
+                    </tr>
+                    {{#data.repaymentSchedule}}
+                        <tr>
+                            <td class="text-center">{{index}}</td>
+                            <td class="text-center">{{value}}</td>
+                        </tr>
+                    {{/data.repaymentSchedule}}
+                </table>
+            </div>
+        </div>
+    </script>
+
+    <!-- import mustache.js library -->
+    <script
+        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+        </script>
+    <script>
+        (function () {
+            var data = "${data}";
+            // data = '{"loanId":"LCL03226591","date":"01 June, 2023","name":"Shaik Khaja Pasa","address":"C-234, LSJD Colony Decca Road, Bangalore - 560021","sanctionAmount":"INR 42000","rateOfInterest":"Zero","tenure":"24 days","lenderFacilitationCharge":"INR 1734.6","insuranceCharge":"Zero","emiStartDate":"05 July, 2023","emiRepaymentAmount":"INR 42000","aadharNumber":"ABC","panNumber":"LXSX29346M","mobile":"8897724011","email":"shaikkhajapasha2022000@gmile.com","residentialAddress":"2-3-603/20,PATEL NAGAR HYDERABAD AMBERPET,Other,500013,Other,ANDHRA PRADESH","officeAddress":"NA","activitiesEngaged":"Salaried","bankDetails":{"accountNumber":"55550110850623","accountHolderName":"SHAIK KHAJA PASHA","bankName":"FEDERAL BANK","bankBranch":"EPIFI FEDERAL NEO BANKING","ifscCode":"FDRL0005555"},"dateOfAgreement":"01 June, 2023","termsOfCreditLineFacility":{"purposeOfFacility":"Personal","loanAmount":"42000","totalInterest":"0","upFrontCharges":"1734.6","processingFee":"234.5","insuranceCharges":"0","BPI":"0","paymentBounceCharges":"0","transactionFees":"0","documentationCharges":"0","otherCharges":"0","netDisbursedAmount":"40000","totalAmountPaidByBorrower":"42000","APR":"12%","tenureOfLoan":"1","repaymentFrequency":"1","numberOfInstallments":"1","amountEachInstallment":"42000","prepaymentCharges":"0","rateOfAnnualizedPenalCharges":"0","rateOfOtherPenalCharges":"0","NACHFailureCharges":"0","NACHBounceCharges":"0","SOACharges":"0","coolingOffPeriod":"3 days","dateOfDisbursement":"01 June, 2023"},"grievanceOfficer":{"name":"Mr. Saurabh S","email":"grievanceofficer@ficare","contact":"399939933993"},"repaymentSchedule":["42000","43332"]}';
+
+            var json = JSON.parse(data);
+
+            for (var i = 0; i < json.repaymentSchedule.length; i++) {
+                json.repaymentSchedule[i] = { index: i + 1, value: json.repaymentSchedule[i] };
+            }
+
+            // get static html content
+            var primaryContentTemplate = document.getElementById("first-page-template").innerHTML;
+            var termsContentTemplate = document.getElementById("terms-page-template").innerHTML;
+            var schedule1Template = document.getElementById("schedule-1-template").innerHTML;
+            var schedule2Template = document.getElementById("schedule-2-template").innerHTML;
+            var repaymentScheduleTemplate = document.getElementById("repayment-schedule").innerHTML;
+
+
+            // insert dynamic data in html
+            var renderPrimaryContent = Mustache.render(primaryContentTemplate, { data: json });
+            var renderSecondaryContent = Mustache.render(termsContentTemplate);
+            var renderTertiaryContent = Mustache.render(schedule1Template, { data: json });
+            var renderFourthContent = Mustache.render(schedule2Template, { data: json.termsOfCreditLineFacility, fullData: json, grievance: json.grievanceOfficer });
+            var renderFifthContent = Mustache.render(repaymentScheduleTemplate, { data: json });
+
+            var rendered = renderPrimaryContent + renderSecondaryContent + renderTertiaryContent + renderFourthContent + renderFifthContent;
+
+            // inject final content in html
+            document.getElementById("target").innerHTML = rendered;
+        })();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,915 @@
+{
+	"elements" : {
+		"magnifi_banner_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_WRAPPER",
+            "children": [
+				"magnifi-banner-section-container"
+			]
+		},
+		"magnifi-banner-section-container": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_1",
+            "children": [
+				"magnifi_banner_section_1",
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06zx"
+			]
+		},
+		"magnifi_banner_section_1": {
+			"type": "Row",
+			"variant": "BANNER__GOLDEN",
+            "children": [
+				"banner-section-child-1",
+				"banner-section-child-2"
+			]
+		},
+		"banner-section-child-1": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"id": "magnifi-text-container",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002",
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"banner-section-child-2": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_MAGNIFI_CARD",
+			"id": "magnifi-credit-card",
+			"children": [
+				"c693569e-95a3-11ee-b9d1-0242ac120002",
+				"c693569e-95a3-11ee-b9d1-0242ac120002d"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002" : {
+			"content" : "MagniFi",
+			"type" : "h1",
+			"variant": "H1_GOLD_1",
+			"className": "FadeIn1s",
+			"id": "magnifi-text"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "The Ultimate Weekend Credit Card",
+			"type"    : "Text",
+			"variant": "H11_WHITE",
+			"className": "FadeIn2s",
+			"id": "weekend-text"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "LIFETIME FREE",
+			"type": "Text",
+			"variant": "H3_HONEY",
+			"className": "FadeIn1sForward",
+			"id": "lifetime-text"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-card.png",
+			"variant": "HIGHLIGHT_CREDIT_CARDS_IMAGE",
+			"className": "TransformFadeIn1sForward"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002d": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-card-desktop.png",
+			"variant": "HIGHLIGHT_CREDIT_CARDS_IMAGE_DESKTOP",
+			"className": "TransformFadeIn1sForward"
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06zx": {			
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_2",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06zy"
+			],
+			"id": "magnifi-section-container"
+		},
+		"sticky_footer_bottom": {			
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_2"
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06zy": {			
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_3",
+			"children": [
+				"b3b897a8-d75e-43f8-b04d-ddd08c6b17zx-Issued",
+				"aeba91e0-95a3-11ee-b9d1-0242ac120034-Txt"			
+			]
+		},
+		"b3b897a8-d75e-43f8-b04d-ddd08c6b17zx-Issued": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405qx",
+				"f7013ba4-dca2-4dec-a5be-1be2843405uj"
+			]
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405qx": {
+			"content" : "ISSUED BY",
+			"type"    : "Text",	
+			"variant": "H6_WHITE_2"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405uj": {
+			"type"    : "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-federal-bank.svg",
+			"variant": "FEDERAL_BANK_IMAGE"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120034-Txt": {
+			"content" : "Co-branded partnership with <b> Fi Brand Pvt. Ltd </b>",
+			"type"    : "Text",
+			"variant": "H6_WHITE_3"
+		},
+
+		"highlights-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_DYNAMIC_1",
+			"children": [
+				"cashback-row-container"		
+			]
+		},
+		"cashback-row-container": {
+			"type": "Column",
+			"variant": "REWARDS_CONTAINER",
+            "children": [
+				"c693569e-95a3-11ee-b9d1-0242ac127802",
+				"row-child-container"
+			]
+		},
+		"highlights_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_WRAPPER",
+            "children": [
+				"highlights_section-1"
+			]
+		},
+		"highlights_section-1": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_1",
+            "children": [
+				"highlights-section-container"
+			]
+		},
+		"highlights-section-container": {
+			"type": "Row",
+			"variant": "BANNER__GOLDEN_CASHBACK",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06fg",
+				"highlights-row"
+			]
+		},	
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06fg": {
+			"type" : "Text",
+			"variant": "H2_GOLD",
+			"content": "Weekend offers like no other"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac127802": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/20_off.png",
+			"variant": "WEEKEND_OFFER_IMAGE",
+			"className": "WeekendImage"
+		},
+		"row-child-container": {
+			"type": "Row",
+			"variant": "REWARDS_ROW",
+			"className": "WeekendRow",
+			"children": [
+				"child-1",
+				"child-2"
+			]
+		},
+		"child-1": {
+			"type": "Column",
+			"variant": "CARD_LAYOUT",
+			"children": [
+				"child-01",
+				"child-11",
+				"child-21"
+			]
+		},
+		"child-01": {
+			"type": "Text",
+			"content": "ON WEEKENDS",
+			"variant": "H6_ORANGE_BACKGROUND"
+		},
+		"child-11": {
+			"type": "Text",
+			"content": "4x rewards",
+			"variant": "H1_WHITE_2"
+		},
+		"child-21": {
+			"type": "Text",
+			"content": "on select brands",
+			"variant": "H4_WHITE"
+		},
+		"child-2": {
+			"type": "Column",
+			"variant": "CARD_LAYOUT",
+			"children": [
+				"child-02",
+				"child-12",
+				"child-22"
+			]
+		},
+		"child-02": {
+			"type": "Text",
+			"content": "EVERYDAY",
+			"variant": "H6_ORANGE_BACKGROUND"
+		},
+		"child-12": {
+			"type": "Text",
+			"content": "1x rewards",
+			"variant": "H1_WHITE_2"
+		},
+		"child-22": {
+			"type": "Text",
+			"content": "on all spends",
+			"variant": "H4_WHITE"
+		},
+
+		"cashback_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_WRAPPER",
+            "children": [
+				"cashback-section-container"
+			]
+		},
+		"cashback-section-container": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_2",
+            "children": [
+				"cashback-row"
+			]
+		},
+		"cashback-row": {
+			"type": "Row",
+			"variant": "BANNER__GOLDEN_SPEND",
+			"children": [
+				"cashback-column",
+				"cashback-column2"		
+			]
+		},
+		"cashback-column2": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_1",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b07c4"
+			]
+		},
+		"cashback-column": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_1",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06cb",
+				"c693569e-95a3-11ee-b9d1-0242ac1278cb",
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b07cb",
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b07cc"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b07c4": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-spends-animated.svg",
+			"className": "Cashback5",
+			"variant": "SPEND_IMAGE"
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06cb": {
+			"type" : "Text",
+			"variant": "H1_GOLD_1",
+			"content": "20% off on"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac1278cb": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-brands-new.png",
+			"variant": "CASHBACK_BRAND_IMAGES",
+			"className": "Cashback2"
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b07cb": {
+			"type" : "Text",
+			"variant": "H3_GOLD_2",
+			"content": "Save 20% on food, grocery and entertainment spends",
+			"className": "Cashback3"
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b07cc": {
+			"type" : "PopUpComponent",
+			"baseText": "View details",
+			"headingText": "Weekend offer details",
+			"className": "Cashback4",
+			"data": [
+				{
+				  "textKey": "text1",
+				  "title": "20% off up to ₹100, 2 times a month",
+				  "subtitle": "Valid for min. order value of ₹400",
+				  "imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-food-swiggy.png"
+				},				
+				{
+					"textKey": "text3",
+					"title": "20% off up to ₹100, once a month",
+					"subtitle": "Valid for min. 2 tickets. Min. order value of ₹400",
+					"imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-paytm.png"
+				  },
+				  {
+					"textKey": "text4",
+					"title": "20% off up to ₹100, once a month",
+					"subtitle": "Valid for min. order value of ₹500",
+					"imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-blinkit-icon.png"
+				  }
+			  ]
+		},
+
+
+		"rewards_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_WRAPPER",
+            "children": [
+				"rewards-section-container"
+			]
+		},
+		"rewards-section-container": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_2",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw",
+				"rewards-column"
+			]
+		},
+		"rewards-column": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_1",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw-parent"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw-parent": {
+			"type": "Column",
+			"variant": "CASHBACK_CONTAINER",
+            "children": [
+				"row-child-container-rw",
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw-c2"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw-c2": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_1",
+            "children": [
+				"child-1-rw2",
+				"child-01-rw3"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b06rw": {
+			"type" : "Text",
+			"variant": "H2_GOLD_1",
+			"content": "Wait, there's more!"
+		},
+		"row-child-container-rw": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_1",
+			"className": "RewardsCard1",
+			"children": [
+				"child-1-rw"
+			]
+		},
+		"child-1-rw": {
+			"type": "Column",
+			"variant": "CARD_LAYOUT_1",
+			"children": [
+				"child-01-rw",
+				"child-11-rw",
+				"child-21-rw",
+				"child-31-rw"
+			]
+		},
+		"child-01-rw": {
+			"type": "Text",
+			"content": "4x reward points every weekend on",
+			"variant": "H2_CARD_TITLE"
+		},
+		"child-11-rw": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-logo-rewards.png",
+			"variant": "REWARDS_IMAGE"
+		},
+		"child-21-rw": {
+			"type": "Text",
+			"content": "Flipkart, Uber, Makemytrip and Urban Company",
+			"variant": "H2_CARD_SUB_TITLE"
+		},
+		"child-31-rw": {
+			"type": "Text",
+			"content": "Get 20 Fi-Coins for every ₹100 spent",
+			"variant": "H3_TEXT"
+		},
+		"row-child-container-rw2": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"child-1-rw2"
+			]
+		},
+		"child-1-rw2": {
+			"type": "Column",
+			"variant": "CARD_LAYOUT_2",
+			"className": "RewardsCard2",
+			"children": [
+				"child-01-rw2",
+				"child-11-rw2"
+			]
+		},
+		"child-01-rw2": {
+			"type": "Text",
+			"content": "1x reward points on other spends, every day*, Everyday",
+			"variant": "H2_CARD_TITLE"
+		},
+		"child-11-rw2": {
+			"type": "Text",
+			"content": "",
+			"variant": "H3_GOLD_2"
+		},
+		"row-child-container-rw3": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"child-01-rw3"
+			]
+		},
+		"child-01-rw3": {
+			"type": "Image",
+			"className": "EmiImage",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-emi-new-without-gradient-big.png",
+			"variant": "EMI_IMAGE"
+		},
+
+		"fi_coins_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_WRAPPER",
+            "children": [
+				"fi-coins-section-row"
+			]
+		},
+		"fi-coins-section-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+            "children": [
+				"fi-coins-section-child"
+			]
+		},
+		"fi-coins-section-child": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_2",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002-fi",
+				"aeba91e0-95a3-11ee-b9d1-0242ac120003-fi",
+				"aeba91e0-95a3-11ee-b9d1-0242ac120004-fi"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002-fi": {
+			"type": "Text",
+			"content": "Put your Fi-Coins to use",
+			"variant": "H3_WHITE"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120003-fi": {
+			"type": "Text",
+			"content": "100 Fi-Coins = ₹3",
+			"variant": "H3_GOLD_DYNAMIC"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120004-fi": {
+			"type": "TextImage",
+			"data": [
+				{
+				  "textKey": "text1",
+				  "title": ["Convert to cash"],
+				  "subtitle": ["Turn your Fi-Coins into cash"],
+				  "imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-rupee.png"
+				},
+				{
+				  "textKey": "text2",
+				  "title": ["Vouchers from top","brands"],
+				  "subtitle": ["Redeem Fi-Coins for exclusive","vouchers from brands you love"],
+				  "imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-all-brands.png"
+				},
+				{
+					"textKey": "text3",
+					"title": ["Pay your bill"],
+					"subtitle": ["Use Fi-Coins to pay off your","Credit Card bill"],
+					"imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-lightning.png"
+				  },
+				  {
+					"textKey": "text4",
+					"title": ["Exciting merchandise"],
+					"subtitle": ["Browse our catalogue for rewards","from top brands"],
+					"imageUrl": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/magnifi-merchandise.png"
+				  }
+			  ]
+		},
+        "carousel-section": {
+			"type": "Section",
+			"variant": "CAROUSEL_BANNER__GOLDEN",
+            "children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200021e1",
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e10"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e10": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d761e"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d761e": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_5",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200021ae"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200021e1" : {
+			"content" : "All in a smooth & easy-to-use interface",
+			"type" : "Text",
+			"variant": "HEADING_TEXT"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200021ae" : {
+			"slides" : [
+				{
+					"title": "Control your card from the app",
+					"slide": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-control.svg",
+					"id": "1"
+				},{
+					"title": "Get insights on all your spends",
+					"slide": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-billing-cycle.svg",
+					"id": "2"
+				},{
+					"title": "Change your billing cycle anytime",
+					"slide": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-next-billing.svg",
+					"id": "3"
+				},{
+					"title": "Get reminders to never miss a payment",
+					"slide": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/magnifi-due-days.svg",
+					"id": "4"
+				}
+				    				  
+			],
+
+			"type" : "CarouselVariantOne"
+		},		"accordion-section": {
+			"type": "Section",
+			"variant": "CAROUSEL_BANNER__GOLDEN",
+            "children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e1"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e1": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d761"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d761": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200021",
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200022"
+
+			]
+		},
+		"other_details_section": {
+			"type": "Section",
+			"variant": "BANNER__GOLDEN_SECONDARY",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200001",
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200011"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200001": {
+			"content" : "Other details",
+			"type" : "Text",
+			"variant": "HEADING_TEXT_3"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200011": {
+			"type" : "Row",
+			"variant": "OTHER_DETAILS",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col1",
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col2",
+				"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col3"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col1": {
+			"type" : "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_4",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-1242ac1200011",
+				"aeba91e0-95a3-11ee-image-1242ac1200011"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col2": {
+			"type" : "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_4",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-2242ac1200011",
+				"aeba91e0-95a3-11ee-image-1242ac1200011"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200011-col3": {
+			"type" : "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_4",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-3242ac1200011",
+				"aeba91e0-95a3-11ee-image-1242ac1200011"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-1242ac1200011": {
+			"content" : "<a href='https://fi.money/documents/credit-card/magnifi/important-tnc'>MITC</a>",
+			"type" : "Text",
+			"variant": "OTHER_DETAILS"
+		},
+		"aeba91e0-95a3-11ee-image-1242ac1200011": {
+			"url" : "https://assets-global.website-files.com/61559d56514fd67c50eea39e/61e8ffa41ac7fc5f48f190ec_arrow-new-tab.svg",
+			"type" : "Image",
+			"variant": "OTHER_DETAILS"
+		},
+		"aeba91e0-95a3-11ee-b9d1-2242ac1200011": {
+			"content" : "<a href='https://fi.money/documents/credit-card/tnc'>Terms & Conditions</a>",
+			"type" : "Text",
+			"variant": "OTHER_DETAILS"
+		},
+		"aeba91e0-95a3-11ee-b9d1-3242ac1200011": {
+			"content" : "<a href='https://fi.money/documents/credit-card/magnifi/key-fact-statement'>Key Fact Statement</a>",
+			"type" : "Text",
+			"variant": "OTHER_DETAILS"
+		},
+		"aeba91e0-95a3-11ee-b9d1-4242ac1200011": {
+			"type": "Image",
+			"variant": "OTHER_PRODUCTS_IMAGES",
+			"url": "https://assets-global.website-files.com/61559d56514fd67c50eea39e/61e8ffa41ac7fc5f48f190ec_arrow-new-tab.svg"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200021" : {
+			"content" : "Frequently asked questions",
+			"type" : "Text",
+			"variant": "HEADING_TEXT_2"
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac1200022" : {
+			"numberOfFaq": "5",
+			"totalNumFAQ": "17",
+			"viewMoreText": "VIEW MORE FAQs",
+			"background": "#2D1B0B",
+			"downArrow": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/arrow-white-down.svg",
+			"upArrow": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/arrow-white-up.svg",
+			"magnifi": true,
+			"faqs":[ {
+				 "question": "What is MagniFi Fi-Federal Credit Card and what are the benefits?",
+				 "answer": "<div>The MagniFi Fi-Federal Credit Card is issued by Federal Bank through the Fi app.</div><div>It’s packed with benefits like:</div><br/><ul style='padding-left:2rem; ;'><li>20% cashback on spends across Zomato, Blinkit, BookMyShow on weekends</li><li>4X rewards on spends during weekends on brands like Flipkart, Urban Company, MakeMyTrip and Uber</li><li>1X rewards on all other spends including rent and fuel during weekdays</li><li>Lifetime free card — there are no annual or joining fees</li></ul><br/><div>Here are the details of weekend offers on the MagniFi Fi-Federal Credit Card.</div><br/><ul style='padding-left:2rem; ;'><li>Zomato: 20% cashback of up to ₹100 on min. spends of ₹400 (Applicable twice a month on weekends)</li><li>Blinkit: 20% cashback of up to ₹100 on min. spends of ₹500 (Applicable once a month on weekends)</li><li>BookMyShow: 20% off of up to ₹100 on min. 2 movie tickets (Applicable once a month on weekends)</li></ul>",
+				 "id": "1"
+			  },
+			  {
+				"question": "What are the fees and charges associated with this card?",
+				"answer": "<p>MagniFi Fi-Federal Credit Card is a lifetime free card.</p><p> Here are some charges related to it.</p><br/><p> Joining fee: ₹0</p><p> Annual fee: ₹0</p><p>Forex fee: 3.5%</p><p>Card re-issuance charge: ₹250+GST</P><br/> <p>To know about other fees and charges, tap here.</p>",
+				"id": "2"
+			   },
+			   {
+				"question": "How do I get weekend benefits on this card?",
+				"answer": "<p>Here are all the weekend offers:</p></br><ul style = 'padding-left: 2rem; ;'><li>Zomato: 20% cashback of up to ₹100 on min. spends of ₹400 <p>(Applicable twice a month on weekends)</p></li></br><li>Blinkit: 20% cashback of up to ₹100 on min. spends of ₹500<p>(Applicable once a month on weekends)</p></li></br><li>BookMyShow: 20% off of up to ₹100 on min. 2 movie tickets <p>(Applicable once a month on weekends)</p></li></br><li>4X rewards on spends during weekends on brands like Flipkart, Urban Company, MakeMyTrip and Uber — you can earn 20 Fi-Coins on every ₹100 spent.</li></ul></br><p>Purchases made between Saturday 00:00:00 IST to Sunday 23:59:59 IST will be eligible for rewards and cashback.<p></br></p>The eligible brands may change from time to time and you can check them on the Fi app.</p>",
+				"id": "3"
+			   },
+			   {
+				"question": "Will I need to submit any documentation to get this card?",
+				"answer": "No additional documentation or income proof  would be required to get this credit card. There may be a credit score enquiry to check your eligibility - this is all digital and you are not required to provide any documentations.",
+				"id": "4"
+			   },
+			   {
+				"question": "Will I get EMI facility on this card?",
+				"answer": "We are working to make this facility available across all credit cards on Fi app. Once available, we will let you know.",
+				"id": "5"
+			   },
+			 {
+				 "question": "Can I increase my credit limit?",
+				 "answer": "We are working to unlock this feature soon. Currently, you will not be able to increase your credit limit. Once this feature is available, we’ll let you know.",
+				 "id": "6"
+				},
+			   {
+				 "question": "What’s the maximum cashback & rewards I can earn?",
+				 "answer": "<p>With the 20% weekend cashback & discounts on Zomato, Blinkit, BookMyShow, and Ajio — you can save up to ₹1,000.</p><br/><p>With 4X weekend rewards on Flipkart, Urban Company, MakeMyTrip and Uber — you can earn 20 Fi-Coins on every ₹100 spent.</p><br/><p>On weekdays, you get 1X Fi-Coins on all spends including fuel and rent — that is 5 Fi-Coins on every ₹100 spent.<p> You can earn up to 1,000 Fi-Coins on every transaction.</p> You can redeem them for instant cash transfer to your account, brand gift vouchers, and other exclusive offers. The rewards will be generated 10 days after every billing cycle.</p><br/><p>You will not receive any rewards on spends on wallet reloads, gold purchases, cash advances and card fees & charges.</p>",
+				 "id": "7"
+				},
+			   {
+				 "question": "When will I get my Fi-Coins?",
+				 "answer": "You’ll get the Fi-Coins you earned 10 days after every billing cycle of every month. Let’s say you earn 10,000 Fi-Coins on your January spends — and you receive your statement on 10 February. You’ll then get your Fi-Coins by 20 February.",
+				 "id": "8"
+				},
+			   {
+				 "question": "What are the Interest and fees on late payment of bill?",
+				 "answer": "<p>You have an interest-free period of 48 days. But if you fail to pay within this time, you'll be charged basis an Annual Percentage Rate (APR) of 41.88% p.a. (3.49% per month).</p><br/><span>To know about all charges</span><span><a href='https://fi.money/documents/credit-card/magnifi/key-fact-statement' target='_blank'> tap here.</a></span>",
+				 "id": "9"
+			   },
+			   {
+				 "question": "How do I repay my credit card bill?",
+				 "answer": "<p>Here's how you can pay your Credit Card bill through your Federal Bank Savings Account via Fi: </p><br/><ul style='padding-left:2rem; ;'><li>Go to the credit card bill section</li><li>Choose your repayment amount (total due, minimum due, current outstanding, or enter a custom amount)</li><li>Tap on proceed to pay</li><li>Enter the secure PIN or UPI PIN to complete the payment</li></ul><br/><p>You can also pay with other bill payment apps, or through NEFT, IMPS etc.</p>",
+				 "id": "10"
+				},
+			   {
+				 "question": "What happens to my Fi-Coins if I cancel a transaction?",
+				 "answer": "<p>If a transaction is cancelled, the Fi-Coins earned will be deducted from your Fi-Coin balance</p>",
+				 "id": "11"
+				},
+			   {
+				 "question": "Can I use the MagniFi Fi-Federal Credit Card abroad?",
+				 "answer": "<div><p>Yes, you can use it outside India and make international payments.</p><p>A 3.5% forex fee will be applied on international transactions, in addition to the forex conversion applied on relevant currencies.</p><br/><p>To enable international usage on your Credit Card:</p><br/><ul style='padding-left: 2rem; ;'><li>Go to the Card Controls section of the app</li><li>Tap on Card Usage</li><li>Tap on the toggle Enable International Usage</li><li>Save settings with your PIN</li></ul></div>",
+				 "id": "12"
+				},
+			   {
+				 "question": "Can I get both the MagniFi and SimpliFi Fi-Federal Credit Cards?",
+				 "answer": "Per our partner, Federal Bank policies, you will not be able to get both the cards at the same time. You can get any one of them.",
+				 "id": "13"
+				},
+			   {
+				 "question": "Where do I receive the cashback and other rewards?",
+				 "answer": "<p>You’ll receive the cashback and Fi-Coins you earn as Money-Plants in the Rewards section of the app.</p></br><p> If you already have a Federal Bank Savings Account through Fi, your cashback gets transferred straight to it.</p></br><p>If you don’t have a Savings Account through the Fi app, the cashback will be directly transferred to your credit card.</p>",
+				 "id": "14"
+				},
+			   {
+				 "question": "Do I get access to airport lounges with this card?",
+				 "answer": "<p>No, currently you don’t get any free airport lounge access with the MagniFi Fi-Federal Credit Card.</p><p>If we unlock this offer anytime soon, we’ll let you know.</P>",
+				 "id": "15"
+				},
+			   {
+				 "question": "I want AmpliFi instead of MagniFi, what should I do?",
+				 "answer": "<p>When you apply for a credit card, you'll see the AmpliFi Fi-Federal Credit Card offer. You can choose MagniFi, SimpliFi, or AmpliFi. If you're not eligible for AmpliFi, you'll see other credit card offers automatically.</p><p>But if you've already started applying for MagniFi, write to us at help@fi.care to switch to AmpliFi.</p>",
+				 "id": "16"
+				},
+			   {
+				 "question": "Is there any joining or annual fees on this card?",
+				 "answer": "No, Magnifi Fi-Federal credit card is lifetime free - there is no joining or annual fees on this credit card.",
+				 "id": "17"
+				}],
+			  "type": "FAQs"
+			},	
+			"footer_section": {
+				"type": "Section",
+				"variant": "BANNER__BLACK",
+				"children": [
+					"footer-section-row"
+				]
+			},
+			"footer-section-row": {
+				"type": "Row",
+				"variant": "FOOTER_PRODUCTS",
+				"children": [
+					"footer-section-col01",
+					"footer-section-col11"
+				]
+			},
+			"footer-section-col01": {
+				"type": "Column",
+				"variant": "FOOTER_PRODUCT_SECTION",
+				"children": [
+					"footer-section-text01",
+					"footer-section-img-row"
+				]
+			},
+			"footer-section-text01": {
+				"type": "Text",
+				"content": "Fi partners with the best to secure your payments",
+				"variant": "H1_WHITE_3"
+			},
+			"footer-section-img-row": {
+				"type": "Row",
+				"variant": "FOOTER_PARTNER_IMAGES",
+				"children": [
+					"footer-section-img1",
+					"footer-section-img2",
+					"footer-section-img3"
+				]
+			},
+			"footer-section-img1": {
+				"type": "Image",
+				"variant":"PARTNER_IMAGES",
+				"url": "https://assets-global.website-files.com/61559d56514fd67c50eea39e/641aa9e345baae35904371e4_federal.svg"
+			},
+			"footer-section-img2": {
+				"type": "Image",
+				"variant": "PARTNER_IMAGES",
+				"url": "https://assets-global.website-files.com/61559d56514fd67c50eea39e/641aab492cee3012a2cc9ea8_visa.svg"
+			},
+			"footer-section-img3": {
+				"type": "Image",
+				"variant": "PARTNER_IMAGES",
+				"url": "https://assets-global.website-files.com/61559d56514fd67c50eea39e/641aacfc6b4e1553019a46a5_pci-logo.png"
+			},
+			"footer-section-col11": {
+				"type": "Column",
+				"variant": "PARTNERS_SECTION",
+				"children": [
+					"footer-section-text11"
+				]
+			},
+			"footer-section-text11": {
+				"type": "Text",
+				"content": "Fi Brand Pvt Ltd is partnering with Federal Bank and VISA to provide this co-branded credit card as per applicable regulations. <br><br> Fi itself is not a bank and doesn't hold or claim to have a banking license.",
+				"variant": "H6_GREY_1"
+			},	 
+		"other_products_section": {
+			"type": "Section",
+			"variant": "BANNER__BLACK",
+            "children": [
+				"other-products-section-row"
+			]
+		},
+		"other-products-section-row": {
+			"type": "Column",
+			"variant": "OTHER_PRODUCT_SECTION",
+            "children": [
+				"other-products-section-row1",
+				"other-products-section-row2"
+			]
+		},
+		"other-products-section-row1": {
+			"type": "Text",
+			"content": "Other cards we offer",
+			"variant": "H3_WHITE_2"
+		},
+		"other-products-section-row2": {
+			"type": "Row",
+			"variant": "OTHER_PRODUCTS",
+            "children": [
+				"other-products-section-row2-link",
+				"other-products-section-row1-link"
+			]
+		},
+		"other-products-section-row2-link": {
+			"type": "Link",
+			"url": "https://fi.money/credit-cards/amplifi",
+			"children": [
+				"other-products-section-row12"
+			]
+		},
+		"other-products-section-row1-link": {
+			"type": "Link",
+			"url": "https://fi.money/credit-cards/simplifi",
+			"children": [
+				"other-products-section-row11"
+			]
+		},
+		"other-products-section-row12": {
+			"type": "Column",
+			"variant": "OTHER_PRODUCTS_CARD",
+			"children": [
+				"other-products-section-col21",
+				"other-products-section-col22",
+				"other-products-section-col23"
+			]
+		},
+		"other-products-section-col21": {
+			"type": "Image",
+			"variant": "OTHER_PRODUCTS_IMAGES_MAGNIFI",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/amplifi-card-footer.png"
+		},
+		"other-products-section-col22": {
+			"type": "Text",
+			"variant": "OTHER_PRODUCTS_TEXT",
+			"content": "Know more about"
+		},
+		"other-products-section-col23": {
+			"type": "Image",
+			"variant": "AMPLIFI_TEXT_IMAGES",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/amplifi-text-logo.svg"
+		},
+		"other-products-section-row11": {
+			"type": "Column",
+			"variant": "OTHER_PRODUCTS_CARD",
+			"title": "Know more about",
+			"children": [
+				"other-products-section-col1",
+				"other-products-section-col2",
+				"other-products-section-col3"
+			]
+		},
+		"other-products-section-col1": {
+			"type": "Image",
+			"variant": "OTHER_PRODUCTS_IMAGES_SIMPLIFI",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/pngs/simplifi-credit-card.png"
+		},
+		"other-products-section-col2": {
+			"type": "Text",
+			"variant": "OTHER_PRODUCTS_TEXT",
+			"content": "Know more about"
+		},
+		"other-products-section-col3": {
+			"type": "Image",
+			"variant": "AMPLIFI_TEXT_IMAGES",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/simplifi-text-logo.svg"
+		}
+
+	},
+	"sections": [
+		"magnifi_banner_section",
+		"sticky_footer_bottom",
+		"highlights_section",
+		"cashback_section",
+		"rewards_section",
+		"fi_coins_section",
+		"carousel-section",
+		"other_details_section",
+		"accordion-section",
+		"other_products_section",
+		"footer_section"
+	]
+}

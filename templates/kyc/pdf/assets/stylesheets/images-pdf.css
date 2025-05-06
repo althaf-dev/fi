@@ -1,0 +1,204 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+div,
+span {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+hr {
+    border: 0;
+}
+
+.h-3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+}
+
+.h-4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    font-style: normal;
+    color: grey;
+}
+
+.fs-10 {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fw-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* text alignment */
+.text-ce {
+    text-align: center;
+}
+
+/* border */
+.bor {
+    border: 1px solid black;
+}
+
+/* margin */
+.mtb-20 {
+    margin: 20px 0;
+}
+
+/* padding */
+.p-10 {
+    padding: 10px !important;
+}
+
+/* height */
+.he-1121 {
+    height: 1121px !important;
+}
+
+/* width */
+.wd-100 {
+    width: 100% !important;
+}
+
+/* flex */
+.fl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fl-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.fl-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+.ju-sb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.ju-ce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.ju-fs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+}
+
+.ju-fe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.al-fs {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+}
+
+.al-ce {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.al-fe {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+
+/* general styles */
+.break-before {
+    page-break-before: always;
+}
+
+/* container styles */
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.page-outer-cr {
+    max-width: 840px;
+    padding: 50px;
+    margin: 0 auto;
+    /* width: 793px; */
+    /* height: 1123px; */
+    
+}
+
+.page-cr {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+/* images styles */
+.additional-photograph {
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,165 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* Base Style */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --mercury-solid: #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+.h1 {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.h2 {
+    color: #b9b9b9;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.l1 {
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.l2 {
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.l3 {
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb72 {
+    margin-bottom: 72px;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 412px;
+    background-color: #e5e5e5;
+    padding: 24px 16px;
+}
+
+.main-cr {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 24px 24px 32px;
+    margin-bottom: 16px;
+}
+
+.cr1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-between;
+    width: 364px; */
+}
+
+.cr1 .wr1 {
+    width: 174px;
+}
+
+.photograph {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.signature-photograph {
+    /* border-radius: 28px; */
+    width: 180px;
+    height: 180px;
+}
+
+.additional-photograph {
+    /* border-radius: 28px; */
+    width: 300px;
+    height: 300px;
+}
+
+.officer-signature-photograph {
+    width: 120px;
+    height: 60px;
+}
+
+.break-before {
+    page-break-before: always;
+    padding-top: 24px;
+}

@@ -1,0 +1,67 @@
+@import '../../../styles/colors';
+
+// Styles created for inline elements. Prefer styled-components but cannot be used for inline elements.
+.multi-chart {
+    &-tooltip {
+        background: $color_black;
+        padding: 4px 6px;
+        border-radius: 9px;
+        width: fit-content;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    &-price-text {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        display: inline-block;
+        color: $color_white;
+    }
+
+    &-time-text {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        color: $color_silver_chalice;
+        margin-left: 4px;
+    }
+
+    &-price1-circle {
+        width:8px;
+        height:8px;
+        border-radius:50%;
+        display:inline-block;
+    }
+
+    &-price2-circle {
+        width:8px;
+        height:8px;
+        border-radius:50%;
+        display:inline-block;
+    }
+
+    &-dashed-line {
+        position: absolute;
+        height: 80vh;
+        background-image: linear-gradient(to top, $color_gray 4px, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 1px 1px;
+        background-repeat: repeat-y;
+        width: 10px;
+        z-index: 2;
+        top: 28px;
+        outline: none;
+    }
+
+    &-circle {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        border: 1.5px solid;
+        z-index: 3;
+        outline: none;
+    }
+}

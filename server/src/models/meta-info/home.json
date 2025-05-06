@@ -1,0 +1,51 @@
+{
+    "metaTitle": "Fi.Money - Top Money Management app in India | Track your spends & investments",
+    "metaDescription": "Fi is an Indian financial app with features that help you get better with your money.",
+    "canonicalUrl": "/",
+    "ogTitle": "Fi.Money - Top Money Management app in India | Track your spends & investments",
+    "ogSiteName": "Fi.Money",
+    "ogUrl": "https://fi.money/",
+    "ogDescription": "Fi is an Indian financial app with features that help you get better with your money.",
+    "ogType": "website",
+    "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "twitterCard": "summary",
+    "twitterSite": "@Bank_on_Fi",
+    "twitterTitle": "Fi.Money - Top Money Management app in India | Track your spends & investments",
+    "twitterDescription": "Fi is an Indian financial app with features that help you get better with your money.",
+    "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            }
+        ]
+    },
+    "orgSchema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Fi.Money",
+        "alternateName": "Bank on Fi",
+        "url": "https://fi.money",
+        "logo": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "080-47485490",
+            "contactType": "customer service",
+            "contactOption": "TollFree",
+            "areaServed": "IN",
+            "availableLanguage": ["en","Hindi"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/bankonfi/",
+            "https://twitter.com/Bank_on_Fi",
+            "https://www.instagram.com/bankonfi/",
+            "https://www.linkedin.com/company/epifi/",
+            "https://www.youtube.com/channel/UCpedM3ZjpWyT6sE8P4l1GFw"
+        ]
+    }
+}

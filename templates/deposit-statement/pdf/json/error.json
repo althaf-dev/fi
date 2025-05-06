@@ -1,0 +1,1056 @@
+{
+    "UserDetails": {
+        "Name": "Vivek Kumar Yadav",
+        "Email": "vvivekjnv93@gmail.com",
+        "AccountNumber": "293712131",
+        "IFSC": "FDRL0000555",
+        "Address": "",
+        "PhoneNumber": "9818167419"
+    },
+    "FromDate": {
+        "year": 2021,
+        "month": 10,
+        "day": 1
+    },
+    "ToDate": {
+        "year": 2021,
+        "month": 10,
+        "day": 30
+    },
+    "TransactionDetails": [
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1630898077",
+                "nanos": 0
+            },
+            "MerchantName": "FT IMPS/IFI/124908550500/CASHFREE PAYMENTS IN/BV87",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631274614",
+                "nanos": 0
+            },
+            "MerchantName": "IFN/FBLEPIFI7UpymenPahdC76tUya8A 55550051070111",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631277333",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/3241/INDUSIND BANK LIMITED \\\\INDUSIND BA",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631277369",
+                "nanos": 0
+            },
+            "MerchantName": "BY ATM REV/3241/INDUSIND BANK LIMITED \\\\INDUSIN",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631277572",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/6277/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631626022",
+                "nanos": 0
+            },
+            "MerchantName": "IFN/FBLEPIFIQwGSvffH3HaHjBTpPVpC 55550051070111",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631626078",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/5387/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631781856",
+                "nanos": 0
+            },
+            "MerchantName": "IFN/FBLEPIFIvPS8wGtiBbjBDipdAt8f 55550051070111",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631782050",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/4750/KHANAPADA BR          \\\\KHANAPADA B",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631978651",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126120624732/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631978972",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126158738417/billdesk.prepaid-mobile@/5411",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631979565",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126158888454/swiggyupi@axisbank/Swigg/5814",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1631981869",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126116142335/gpay-11184064756@okbizax/5399",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632279304",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126508427406/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632284102",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/5831/BELTOLA               \\\\BELTOLA",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632295402",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126512173288/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632295636",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126503157651/upiswiggy@icici/UPI/5411",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632305173",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126515356346/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632307005",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126505648755/gpay-11184064756@okbizax/5399",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632317111",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126518346429/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632318313",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/8563/RANGDHALI BUILDING\" H#\\\\RANGDHALI B",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632329523",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126516877914/gpay-11184064756@okbizax/5399",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632382712",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126613489374/jirjarrongphar-1@oksbi/U/0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632382874",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126613542146/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632383066",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/1589/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632383097",
+                "nanos": 0
+            },
+            "MerchantName": "BY ATM REV/1589/HATIGAON BRANCH ATM   \\\\HATIGAO",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632383170",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/2536/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632383201",
+                "nanos": 0
+            },
+            "MerchantName": "BY ATM REV/2536/HATIGAON BRANCH ATM   \\\\HATIGAO",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632383924",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126616853613/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632402302",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126621010812/gpay-11184064756@okbizax/5399",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632407175",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126619683523/jirjarrongphar-1@oksbi/U/0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632409742",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126623402973/7636050462@ybl/UPI/0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632478759",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126731751824/gpay-11184064756@okbizax/5399",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632485251",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126733183448/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632542279",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126809164008/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632542637",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126840091608/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632542757",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126840113094/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632570230",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/126817759952/kinitoswu19@oksbi/UPI/0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632570413",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/1533/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632658614",
+                "nanos": 0
+            },
+            "MerchantName": "IFN/FBLEPIFIMGqcjX1Vz3VfWjMvnr3P 55550051070111",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632658640",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/8304/HATIGAON BRANCH ATM   \\\\HATIGAON BR",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632668740",
+                "nanos": 0
+            },
+            "MerchantName": "UPIOUT/126963623173/billdesk.prepaid-mobile@/5411",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632722334",
+                "nanos": 0
+            },
+            "MerchantName": "UPI IN/127011988671/klirdaprongpharpi@oksbi//0000",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632722746",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/8234/NORTH HAIBORGAON OPP G\\\\NORTH HAIBO",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632741475",
+                "nanos": 0
+            },
+            "MerchantName": "IFN/FBLEPIFIyhr2CWyRUaNmD7Zq6VYM 55550051070111",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "CREDIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632743641",
+                "nanos": 0
+            },
+            "MerchantName": "TO ATM/6079/MAHATMA GANDI ROAD    \\\\MAHATMA GAN",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        },
+        {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "Balance": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionDateTime": {
+                "seconds": "1632880955",
+                "nanos": 0
+            },
+            "MerchantName": "CHRG/ATM DECLINE FEE/126917006",
+            "Location": "",
+            "PaymentMethod": "",
+            "Comments": "",
+            "AmountBadge": "DEBIT"
+        }
+    ],
+    "TransactionSummary": {
+        "OpeningBalance": {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionCount": 0,
+            "AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"
+        },
+        "MoneyIn": {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionCount": 20,
+            "AmountBadge": "CREDIT"
+        },
+        "Spent": {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionCount": 27,
+            "AmountBadge": "DEBIT"
+        },
+        "Saved": {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionCount": 0,
+            "AmountBadge": "SAVINGS"
+        },
+        "ClosingBalance": {
+            "Amount": {
+                "currencyCode": "INR",
+                "units": "0",
+                "nanos": 0
+            },
+            "TransactionCount": 0,
+            "AmountBadge": "AMOUNT_BADGE_UNSPECIFIED"
+        }
+    }
+}

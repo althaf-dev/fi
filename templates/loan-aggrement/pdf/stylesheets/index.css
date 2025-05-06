@@ -1,0 +1,140 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dove-gray: #646464;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --silver-chalice: #a4a4a4;
+    --persian-green: #00B899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.main {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.flex-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+.center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+table {
+    margin-top: 20px;
+    width: 73%;
+}
+
+tr {
+    line-height: 27px;
+    vertical-align: top;
+}
+
+.border-table {
+    width: 100%;
+}
+
+.border-table, .border-table tr, .border-table td,  .border-table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.sec-desc {
+    margin-top: 28px !important;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 21px;
+}
+
+.list {
+    margin-top: 16px;
+    margin-left: 14px;
+}
+
+.list-container {
+    margin-left: 18px;
+}
+
+.list-with-parenthesis {
+    list-style-type:none;
+}
+
+/* Added List with Parenthesis with lower case letter i.e (A) */
+.list-with-parenthesis>li:before {
+    content:"(" counter(lower-alpha-counter, lower-alpha) ") ";
+}
+
+.list-with-parenthesis>li {
+    counter-increment:lower-alpha-counter;
+}
+
+.upper-alpha-list-with-parenthesis {
+    counter-reset: upper-alpha-counter;
+}
+
+.upper-alpha-list-with-parenthesis>li {
+    list-style: none;
+}
+
+/* Added List with Parenthesis with upper case letter i.e (A) */
+.upper-alpha-list-with-parenthesis>li:before {
+    content:"(" counter(upper-alpha-counter, upper-alpha) ") ";
+    counter-increment: list;
+}

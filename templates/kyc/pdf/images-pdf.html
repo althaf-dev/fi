@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epifi - KYC Details</title>
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+    <link rel="stylesheet" href="assets/stylesheets/images-pdf.css" />
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+
+    <!-- Additional variable pages -->
+    <script id="additional-page-template" type="x-tmpl-mustache">
+            {{#images.additionalImages}}
+                <div class="break-before fl-col page-outer-cr he-1121">
+                    <div class="page-cr">
+                        <div class="wd-100 ju-ce al-ce mtb-20">
+                            <img
+                                class="additional-photograph"
+                                src="data:image/png;base64,{{ . }}"
+                                alt="additional photograph"
+                            />
+                        </div>
+                    </div>
+                </div>
+            {{/images.additionalImages}}
+        </script>
+    
+    <!-- import mustache.js library -->
+    <script
+            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+    <script src="assets/scripts/images-pdf.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,740 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Base Style */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dove-gray: #646464;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --silver-chalice: #a4a4a4;
+    --persian-green: #00B899;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+.h0 {
+    color: #000000;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.h1 {
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.h1--v1 {
+    color: #000000;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.h1--v2 {
+    color: #a4a4a4;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.h2 {
+    color: #a4a4a4;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.h2--v1 {
+    color: #b9b9b9;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.l1 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.l1--v1 {
+    color: #00B899;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.l1--v2 {
+    color: #00B899;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.l1--v3 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.l1--v4 {
+    color: #646464;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.l2 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.l2--v1 {
+    color: #646464;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.l3 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.l3--v1 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    /**
+     * 12px required, but its breaking & existing issue
+     * https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2505
+     */
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.l4 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.l4--v1 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.l5 {
+    color: #00B899;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.l6 {
+    color: #646464;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.l6--v1 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.l6--v2 {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.l6--v3 {
+    color: #00B899;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.l6--v4 {
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.fi-logo {
+    width: 19px;
+    height: 16px;
+}
+
+.hcr {
+    background-color: #333333;
+    height: 208px;
+    /* padding: 20px 24px 32px 56px; */
+}
+
+.hcr--v1 {
+    background-color: #333333;
+    height: 80px;
+    padding: 20px 24px 20px 74px;
+}
+
+.hcr-r1 {
+    background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 28px 42px 27px 74px;
+    /* padding: 0 18px 20px; */
+}
+
+.hcr-r1 .wr1 {
+    display: inline-block;
+    width: 500px;
+}
+
+.hcr-r1 .wr2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hcr-r1 .wr2 .bank-logo {
+    width: 67.5px;
+    height: 17px;
+    margin-right: 16px;
+}
+
+.hcr--v1 .wr1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.hcr--v1 .wr1 .col1,
+.hcr--v1 .wr1 .col2,
+.hcr--v1 .wr2 .col1,
+.hcr--v1 .wr2 .col2 {
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; */
+}
+
+.hcr--v1 .wr1 .col1 {
+    display: inline-block;
+    width: 300px;
+}
+
+.hcr--v1 .wr2 .col1 {
+    display: inline-block;
+    width: 300px;
+}
+
+.hcr--v1 .wr1 .col2 .bank-logo {
+    width: 67.5px;
+    height: 17px;
+    margin-right: 16px;
+}
+
+.hcr--v1 .wr2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.spr {
+    border: 1px solid #646464;
+    width: 100%;
+}
+
+.hcr-r2 {
+    background-color: #F5F5F5;
+    padding: 24px 24px 32px 74px;
+}
+
+.hcr-r2 .cr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hcr-r2 .cr .col1 .wr1 {
+    /**
+     * add width to accomodate the pdf size, else content expanding the paper size
+     */
+    width: 161px;
+    /**
+     * reduce margin from 30px
+     */
+    margin-right: 10px;
+}
+
+.hcr-r2 .cr .col1 .wr2 {
+    /* width: 106px; */
+    /**
+     * reduce margin from 30px
+     */
+    margin-right: 60px;
+}
+
+.hcr-r2 .cr .col1 .wr3 {
+    /* width: 198px; */
+}
+
+.hcr-r2 .cr .col1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0.55;
+    -ms-flex: 0.55;
+    flex: 0.55;
+    /* -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; */
+    margin-top: 16px;
+    /**
+     * reduce margin from 60px
+     */
+    /* margin-right: 20px; */
+}
+
+.hcr-r2 .cr .col2 {
+    background-color: #E7E7E7;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0.45;
+    -ms-flex: 0.45;
+    flex: 0.45;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    /* width: 266px; */
+}
+
+.hcr-r2 .cr .col2 .wr1 {
+    margin-right: 20px;
+}
+
+.hcr-r2 .cr .col1 .lb {
+    margin-top: 4px;
+}
+
+.hcr-r2 .cr .col2 .lb {
+    margin-top: 4px;
+}
+
+.ccr {
+    height: 752px;
+    padding: 16px 24px 32px 74px;
+}
+
+.ccr--v1 {
+    height: 880px;
+    padding: 32px 24px 32px 74px;
+}
+
+.ccr--v2 {
+    height: 752px;
+    padding: 32px 24px 32px 74px;
+}
+
+/* txn summary wrapper */
+.ccr .txnsmrywr {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 102px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    padding: 24px 24px 24px 20px;
+}
+
+.ccr .txnsmrywr .cr1 {
+    /* 118px */
+    width: 115px;
+}
+
+.ccr .txnsmrywr .cr2 {
+    /* 110px */
+    width: 105px;
+}
+
+.ccr .txnsmrywr .cr3 {
+    /* 40px */
+    width: 38px;
+}
+
+.ccr .txnsmrywr .wr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8px;
+}
+
+.ccr .txnsmrywr .wr .logo {
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.ccr .hwr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.ccr .hwr .wr1 {
+    width: 70px;
+}
+
+.ccr .hwr .wr2 {
+    /**
+     * reduce width from 400px to accomodate the pdf size, else content expanding the paper size
+     */
+    width: 350px;
+}
+
+.ccr .hwr .wr3 {
+    text-align: right;
+    width: 126px;
+}
+
+.ccr .hwr .wr4 {
+    text-align: right;
+    width: 126px;
+}
+
+.ccr .cwr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.ccr .cwr .wr1 {
+    width: 70px;
+}
+
+.ccr .cwr .wr2 {
+    border: 1px solid #E7E7E7;
+    height: 0px;
+    /**
+     * reduce width from 90% to accomodate the pdf size, else content expanding the paper size
+     */
+    width: 90%;
+}
+
+.ccr .txnwr {
+    padding-right: 20px;
+}
+
+.ccr .notxnwr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.ccr .notxnwr .wr1 {
+    margin-top: 100px;
+    margin-right: 40px;
+}
+
+.ccr .notxnwr .logo {
+    width: 206px;
+    height: 206px;
+}
+
+.ccr .cl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.ccr .cl .wr1 {
+    width: 70px;
+}
+
+.ccr .cl .wr2 {
+    /**
+     * reduce width from 400px to accomodate the pdf size, else content expanding the paper size
+     */
+    width: 350px;
+    word-break: break-all;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.ccr .cl .wr2 .desc {
+    margin-top: 2px;
+}
+
+.ccr .cl .wr3 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 126px;
+}
+
+.ccr .cl .wr3 .wr {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ccr .cl .wr3 .logo {
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+.ccr .cl .wr4 {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 126px;
+}
+
+.txnwr .cl:first-child {
+    margin-top: 12px;
+}
+
+.txnwr .cl:last-child .wr4 .l2 {
+    font-weight: bold;
+}
+
+.fcr {
+    margin-top: 76px;
+}
+
+.fcr .cr {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /**
+     * reduce padding top from 14px to 13px, else content expanding the paper size
+     */
+    padding: 14px 44px 13px 74px;
+}
+
+.fcr .cr1 {
+    background-color: #F5F5F5;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.fcr .cr1 .wr {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fcr .cr1 .wr .legend {
+    /**
+     * add negative margin to center align the scg & content
+     */
+    margin-top: -1px;
+}
+
+.fcr .cr1 .wr .logo {
+    height: 12px;
+    margin-right: 4px;
+}
+
+.fcr .cr2 {
+    background-color: #333333;
+}
+
+.fcr .cr2 .wr1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* margin-top: 1px; */
+}
+
+.fcr .cr2 .wr1 .logo {
+    /* height: 12px; */
+    /* margin-left: 4px; */
+}
+
+.fcr .cr2 .wr2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 14px;
+    /* margin-top: -2px; */
+}
+
+.mr1 {
+    /* margin-left: 4px;
+    margin-right: 40px;
+    margin-top: -1px; */
+    margin-left: 260px;
+    margin-right: 4px;
+}
+
+.mr2 {
+    margin-top: -1px;
+    margin-right: 40px;
+}

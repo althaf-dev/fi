@@ -1,0 +1,2173 @@
+<!-- 
+- @file pl-kfs/pdf/index.html Contains the html body of PL KFS PDF
+- Go to the folder and run following command to generate PDF
+- wkhtmltopdf --debug-javascript --enable-local-file-access --disable-smart-shrinking --page-size A4 -T 25 -B 20 -L 0 -R 0 --header-html header.html index.html ./output.pdf
+- podman run -v $(pwd):/data  wkhtmltopdf:0.12.5 --disable-smart-shrinking --debug-javascript --page-size A4 -T 25 -B 20 -L 0 -R 0 --header-html /data/header.html /data/index.html /data/output.pdf
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fi Loans - Personal Loan Agreement</title>
+  <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css"
+    rel="preload" />
+  <link rel="stylesheet" href="assets/stylesheets/index.css" />
+  <!-- The below code is required to inject the emoji icons in the pdf. removing this block will cause problems in emoji rendering-->
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+    }
+
+    img.emoji {
+      height: 1em;
+      width: 1em;
+      margin: 0 .05em 0 .1em;
+      vertical-align: -0.1em;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+  <script>window.onload = function () { twemoji.parse(document.body); }</script>
+  <!-- End of Emoji rendering support block -->
+</head>
+
+<body>
+  <div id="target">Loading...</div>
+
+  <!-- Content Template of first page-->
+  <script id="first-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <h1 class="heading">SANCTION LETTER</h1>
+                <div class="line-space">Loan ID: {{data.loanId}}</div>
+                <div class="line-space">Date: {{data.date}}</div>
+                <div class="line-space">{{data.name}}</div>
+                <div class="line-space">{{data.address}}</div>
+                <div class="line-space">{{data.email}}</div>
+                <div class="line-space">{{data.mobile}}</div>
+                <div class="line-space">Dear Sir / Madam,</div>
+                <div class="line-space">Thank you for choosing us as your financial partner! With reference to your loan application no. {{data.loanId}}, for a personal loan (<strong>“Loan”</strong>) from Stock Guardians (India) Private Limited (<strong>“Stock Guardians”</strong> or <strong>“Lender”</strong>) .</div>
+                <div class="line-space bottom-margin-25">We are glad to inform you that you have been sanctioned a Personal Loan of {{data.sanctionAmount}} under the following terms and conditions.</div>
+
+                <table class="bottom-margin-25">
+                    <tr>
+                        <td class="bold italics sanction-row-first">1</td>
+                        <td class="bold">Nature of Loan</td>
+                        <td>Personal Loan</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">2</td>
+                        <td class="bold">Purpose of Loan</td>
+                        <td>{{data.termsOfCreditLineFacility.purposeOfFacility}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">3</td>
+                        <td class="bold">Amount in Figures</td>
+                        <td>INR {{data.termsOfCreditLineFacility.loanAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">4</td>
+                        <td class="bold">Amount in Words</td>
+                        <td>{{data.termsOfCreditLineFacility.loanAmountInWords}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">5</td>
+                        <td class="bold">Period (In Months)</td>
+                        <td>{{data.termsOfCreditLineFacility.periodInMonths}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">6</td>
+                        <td class="bold">Repayment Mode</td>
+                        <td>EMI – Equal Monthly Instalment by way of auto debit from operative account</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">7</td>
+                        <td class="bold">Type of Interest (Fixed/Floating)</td>
+                        <td>{{data.typeOfInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">8</td>
+                        <td class="bold">Rate of Interest</td>
+                        <td>{{data.rateOfInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">9</td>
+                        <td class="bold">Installment Amount</td>
+                        <td>INR {{data.termsOfCreditLineFacility.amountEachInstallment}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">10</td>
+                        <td class="bold">No. of Installments</td>
+                        <td>{{data.termsOfCreditLineFacility.numberOfInstallments}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">11</td>
+                        <td class="bold">Processing Fee</td>
+                        <td>INR {{data.termsOfCreditLineFacility.processingFee}} (inclusive of 18% GST)</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">12</td>
+                        <td class="bold">Broken Period Interest</td>
+                        <td>INR {{data.termsOfCreditLineFacility.brokenPeriodInterest}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">13</td>
+                        <td class="bold">Penal Charges</td>
+                        <td>
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td colspan="1" rowspan="1">
+                                  <p>Sr.No</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                  <p>Default category</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                  <p>Penal charges</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                  <p>Additional penal charges</p>
+                                </td>
+                              </tr>
+                              {{#data.penalChargesTable}}
+                                  <tr>
+                                    <td colspan="1" rowspan="1">
+                                      <p>{{sno}}</p>
+                                    </td>
+                                    <td colspan="1" rowspan="1">
+                                      <p>{{defaultCategory}}</p>
+                                    </td>
+                                    <td colspan="1" rowspan="1">
+                                      <p>{{penalCharges}}</p>
+                                    </td>
+                                    <td colspan="1" rowspan="1">
+                                      <p>{{additionalPenalCharges}}</p>
+                                    </td>
+                                  </tr>
+                              {{/data.penalChargesTable}}
+                            </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">14</td>
+                        <td class="bold">Net Disbursed Amount</td>
+                        <td>INR {{data.termsOfCreditLineFacility.netDisbursedAmount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">15</td>
+                        <td class="bold">Total Amount to be paid by Borrower</td>
+                        <td>INR {{data.termsOfCreditLineFacility.totalAmountPaidByBorrower}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">16</td>
+                        <td class="bold">Annual Percentage Rate (%)</td>
+                        <td>{{data.termsOfCreditLineFacility.APR}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bold italics">17</td>
+                        <td class="bold">Cooling-Off/Lookup Period</td>
+                        <td>{{data.termsOfCreditLineFacility.coolingOffPeriod}}</td>
+                    </tr>
+                </table>
+                <p class="line-space bottom-margin-20 text-justify"><strong>Most Important T&Cs:</strong></p>
+                <div class="list-container bottom-margin-25 text-justify">
+                    <ol type="a" class="list-with-dot">
+                        <li class="list">
+                            The Loan is sanctioned at the sole discretion of Stock Guardians (India) Private Limited (hereinafter referred to as "Lender"). The Lender reserves the right to decide your eligibility for the Loan as per its internal policies and guidelines.
+                        </li>
+                        <li class="list">
+                            The loan is availed through the Platform (Fi Money App) based on the information/ documents provided by you.
+                        </li>
+                        <li class="list">
+                            Your availing of the Loan shall be deemed to be your unconditional acceptance of the terms and conditions of the Loan as contained herein and you shall be bound by the same.
+                        </li>
+                        <li class="list">
+                            By availing the loan, you hereby unconditionally agree, confirm, declare and undertake as follows:
+                            <ol type="a" class="list-with-lower-alpha-dot">
+                                <li class="list">
+                                    That you shall utilize the loan only for your genuine lawful personal needs and not otherwise.
+                                    </li>
+                                <li class="list">
+                                    That under no circumstances the proceeds of the loan shall be used for speculative purposes. Interest will be applied on the daily balance outstanding in the account from the date of disbursal of the loan or part thereof. The principal amount under the loan shall always include the interest debited to my loan account at monthly rests cumulatively.
+                                    </li>
+                                <li class="list">
+                                    That you shall repay the Loan as per the Repayment Terms specified herein. You shall keep sufficient credit balance in your Operative Account for servicing the Loan.
+                                </li>
+                                <li class="list">
+                                    NACH Mandate Return Charges at {{data.NACHCharges}} shall be payable in case of dishonour of NACH Mandates. Charges shall also be payable for further presentation of NACH.
+                                </li>
+                                <li class="list">
+                                    That Processing Fees at the rates specified herein shall be paid up front.
+                                </li>
+                                <li class="list">
+                                    Broken period interest will be added to interest of first EMI.
+                                </li>
+                            </ol>
+                            <br>
+                            <ol type="a" class="list-with-lower-roman-brace">
+                                <li class="list">
+                                    If the account is opened before 5th of a month, the period from the date of account opening to 5th of the same month will be the broken period and the interest for this period will be added to the interest of first EMI.
+                                </li>
+                                <li class="list">
+                                    If the account is opened after 5th of a month, the period from the date of account opening to 5th of the next month will be the broken period and the interest for this period will be added to the interest of first EMI.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="list">
+                            The Loan once processed and disbursed cannot be cancelled. The Interest Rate, Processing Fees and Tenure applicable to the Loan confirmed at the time of availing the Loan cannot be changed. However, you can exit the loan during the cooling/look-up period of 3 working days. No  extra  interest/  charges/  penalty  will  be  collected  if  the loan  is  closed  during  the  cooling  off/  free  look-up  period. However,  Processing  fees  (including  18%  GST)  collected by  the Lender  during  loan  disbursal  will  not  be  refunded  back and  the  same  would  have  to  be  paid  by  the  borrower  for  loan closure.
+                        </li>
+                        <li class="list">
+                            The Loan can be pre-closed at any time during the tenure.
+                        </li>
+                        <li class="list">
+                            EMI start date for loans availed between 6th to 25th of a month will be 5th of the next month. (Eg – For Loan’s opened from Jan 6 - Jan 25th, EMI date would be Feb 5th) EMI start date for loans availed between 26th of a month to 5th of next month will be 5th of the month succeeding next month. (Eg - For Loan’s opened between Jan 26th – Feb 5th, EMI date will be Mar 5th)
+                        </li>
+                        <li class="list">
+                            In the event of your default in repaying the Loan together with applicable interest, charges, taxes and costs and/or in adhering to the terms and conditions contained herein,
+                            <ol type="a" class="list-with-lower-alpha-dot">
+                                <li class="list">
+                                    You shall be liable to pay penal charges.
+                                </li>
+                                <li class="list">
+                                    The entire amounts outstanding in the Loan account shall be payable forthwith on demand. However, the Lender may at its sole discretion permit you to continue with the Loan subject to your payment of overdue amounts.
+                                </li>
+                                <li class="list">
+                                    The Lender shall be entitled to report your name to CIBIL/RBI or any other statutory, regulatory or rating agencies.
+                                </li>
+                                <li class="list">
+                                    The Lender shall be entitled to initiate such other legally permissible measures against you for recovering the amounts outstanding under the loan account, in terms of the Lender`s Loan/Debt Collection Policy.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="list">
+                            A loan agreement shall be executed by you by OTP validation.
+                        </li>
+                        <li class="list">
+                            The Lender reserves the right at any time, to add, alter, modify, change or vary all or any of these terms and conditions.
+                        </li>
+                        <li class="list">
+                            You understand that the factors which affect interest rate or risk grading include loan amount, loan tenor, credit history and existing relationship.
+                        </li>
+                        <li class="list">
+                            All disputes, if any, arising out of or in connection with or otherwise relating hereto shall be subject to the exclusive jurisdiction of the competent Courts/Tribunals in Mumbai only.
+                        </li>
+                        <li class="list">
+                            Disputes shall be settled by arbitration in accordance with the provisions of Arbitration & Conciliation Act, 1996 also and the place of jurisdiction for arbitration shall be Mumbai.
+                        </li>
+                        <li class="list">
+                            You agree and declare that the Lender shall have an unqualified right to assign the Loan to any other Bank/Financial Institution/NBFC of Lender`s choice, for which no further consent or concurrence shall be required from your part.
+                        </li>
+                        <li class="list">
+                            The Lender is entitled to recall / withdraw the loan in the event of default and/or to modify any of the terms and conditions applicable for the loan without any prior or subsequent notice to you and the same shall be binding on you.
+                        </li>
+                        <li class="list">
+                            All the details including the amount of the Loan, interest rate, ECS/ NACH Mandate return charges and Representation charges, Penal/Additional charges, Number and Amount of each Instalment, etc. have been stated herein and in the Loan Agreement. All the charges mentioned above and in Loan agreement shall be paid by you without any demur or delay.
+                        </li>
+                        <li class="list">
+                            MITC, Key Facts Statement and the loan agreement cover all the terms and conditions for the loan and these documents supersede all negotiations or prior writings.
+                        </li>
+                        <li class="list">
+                            You have not paid cash to any one for processing this loan. If asked to make any such payments you shall refuse the same and contact the Lender directly. For all payments to any authorised representative of the Lender towards any fee/charges, a valid receipt shall be collected by you.
+                        </li>
+                        <li class="list">
+                            All the Terms and Conditions for the loan, as contained herein as well as those in the loan agreement are accepted by you. In addition to the above, the loan shall also be governed by General Terms and Conditions (GTC), which are published on the Lender’s website (<a href="{{data.lenderDetails.website}}">{{data.lenderDetails.website}}</a>) which you have read and understood.
+                        </li>
+                        <li class="list">
+                            The details of charges applicable for the loan shall be provided in the GTC. The Lender has no obligation to inform either in advance or subsequent to the levy of such charges and/or change in any charges or of introduction of any new charges personally to you.
+                        </li>
+                    </ol>
+                    <br>
+                </div>
+            </div>
+            <div class="page-cr break-before">
+                <p class="line-space bottom-margin-20 text-center"><strong>Key Facts Statement</strong></p>
+                <p class="line-space bottom-margin-20 text-center"><strong>Part 1 (Interest rate and fees/charges)</strong></p>
+                <table class="different-sized-table">
+                    <tbody>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>1</p>
+                        </td>
+                        <td class="bold" colspan="4" rowspan="1">
+                          <p>Loan proposal/ account No.</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>{{data.loanId}}</p>
+                        </td>
+                        <td class="bold" colspan="6" rowspan="1">
+                          <p>Type of Loan</p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p> Personal Loan</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>2</p>
+                        </td>
+                        <td class="bold" colspan="7" rowspan="1">
+                          <p>Sanctioned Loan amount (in Rupees)</p>
+                        </td>
+                        <td colspan="8" rowspan="1">
+                          <p>{{data.termsOfCreditLineFacility.loanAmount}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>3</p>
+                        </td>
+                        <td colspan="7" rowspan="1">
+                          <p class="bold" >Disbursal schedule</p>
+                          <p>(i)        Disbursement in stages or 100% upfront.</p>
+                          <p>(ii)  If it is stage wise, mention the clause of loan agreement having relevant details</p>
+                        </td>
+                        <td colspan="8" rowspan="1">
+                          <p>{{data.scheduleOfDisbursement}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>4</p>
+                        </td>
+                        <td class="bold" colspan="7" rowspan="1">
+                          <p >Loan term (year/months/days)</p>
+                        </td>
+                        <td colspan="8" rowspan="1">
+                          <p> {{data.termsOfCreditLineFacility.periodInMonths}} months</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>5</p>
+                        </td>
+                        <td class="bold" colspan="15" rowspan="1">
+                          <p>Instalment details</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" rowspan="1">
+                          <p>Type of instalments</p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p>Number of EMIs</p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p>EMI (₹)</p>
+                        </td>
+                        <td colspan="6" rowspan="1">
+                          <p>Commencement of repayment, post sanction (First EMI date)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" rowspan="1">
+                          <p> Equated</p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p>{{data.termsOfCreditLineFacility.numberOfInstallments}}</p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p>{{data.emiRepaymentAmount}}</p>
+                        </td>
+                        <td colspan="6" rowspan="1">
+                          <p>{{data.emiStartDate}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>6</p>
+                        </td>
+                        <td class="bold" colspan="10" rowspan="1">
+                          <p>Interest rate (%) and type (fixed or floating or hybrid)</p>
+                        </td>
+                        <td colspan="5" rowspan="1">
+                          <p> {{data.rateOfInterest}} , {{data.typeOfInterest}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>7</p>
+                        </td>
+                        <td class="bold" colspan="15" rowspan="1">
+                          <p>Additional Information in case of Floating rate of interest</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" rowspan="2">
+                          <p>Reference Benchmark</p>
+                        </td>
+                        <td colspan="1" rowspan="2">
+                          <p>Benchmark rate (%) (B)</p>
+                        </td>
+                        <td colspan="2" rowspan="2">
+                          <p>Spread (%) (S)</p>
+                        </td>
+                        <td colspan="2" rowspan="2">
+                          <p>Final rate (%) R = (B) + (S)</p>
+                        </td>
+                        <td colspan="5" rowspan="1">
+                          <p>Reset</p>
+                          <p>periodicity (Months)</p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p>Impact of change in the reference benchmark</p>
+                          <p>(for 25 bps change in 'R', change in:3)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>B</p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p>S</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>EPI (₹)</p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                          <p>No. of EPIs</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                          <p> </p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                          <p></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold" colspan="1" rowspan="1">
+                          <p>8</p>
+                        </td>
+                        <td class="bold" colspan="15" rowspan="1">
+                          <p>Fee/ Charges</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" rowspan="1">
+                          <p> </p>
+                        </td>
+                        <td colspan="5" rowspan="1">
+                          <p>Payable to the RE (A)</p>
+                        </td>
+                        <td colspan="7" rowspan="1">
+                          <p>Payable to a third party through RE (B)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p> </p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p> </p>
+                        </td>
+                        <td colspan="2" rowspan="1">
+                          <p>One-time/ Recurring</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>Amount (in ₹) or</p>
+                          <p>Percentage (%)</p>
+                          <p>as applicable5</p>
+                        </td>
+                        <td colspan="4" rowspan="1">
+                          <p>One- time/Recurring</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>Amount (in ₹) or Percentage (%) as applicable</p>
+                        </td>
+                      </tr>
+                      {{#data.feesAndCharges}}
+                        <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>{{sno}}</p>
+                            </td>
+                            <td colspan="3" rowspan="1">
+                              <p>{{title}}</p>
+                            </td>
+                            <td colspan="2" rowspan="1">
+                              <p>{{oneTimeOrRecurring}}</p>
+                            </td>
+                            <td colspan="3" rowspan="1">
+                              <p>{{oneTimeOrRecurringAmount}}</p>
+                            </td>
+                            <td colspan="4" rowspan="1">
+                              <p>{{payableToTPTOneTimeOrRecurring}}</p>
+                            </td>
+                            <td colspan="3" rowspan="1">
+                              <p>{{payableToTPTOneTimeOrRecurringAmount}}</p>
+                            </td>
+                          </tr>
+                      {{/data.feesAndCharges}}
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>9</p>
+                        </td>
+                        <td class="bold" colspan="5" rowspan="1">
+                          <p>Annual Percentage Rate (APR) (%)</p>
+                        </td>
+                        <td colspan="10" rowspan="1">
+                          <p>{{data.termsOfCreditLineFacility.APR}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold"colspan="1" rowspan="1">
+                          <p>10</p>
+                        </td>
+                        <td class="bold"colspan="15" rowspan="1">
+                          <p>Details of Contingent Charges (in ₹ or %, as applicable)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>(i)</p>
+                        </td>
+                        <td colspan="12" rowspan="1">
+                          <p>Penal charges, if any, in case of delayed payment</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>{{data.penalChargesPerDay}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>(ii)</p>
+                        </td>
+                        <td colspan="12" rowspan="1">
+                          <p>Other penal charges, if any</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p>{{data.otherPenalCharges}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>(iii)</p>
+                        </td>
+                        <td colspan="12" rowspan="1">
+                          <p>Foreclosure charges, if applicable</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p> Nil</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>(iv)</p>
+                        </td>
+                        <td colspan="12" rowspan="1">
+                          <p>Charges for switching of loans from floating to fixed rate and vice versa</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p> Nil</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="1" rowspan="1">
+                          <p>(v)</p>
+                        </td>
+                        <td colspan="12" rowspan="1">
+                          <p>Any other charges (please specify)</p>
+                        </td>
+                        <td colspan="3" rowspan="1">
+                          <p> </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p class="line-space bottom-margin-20 top-margin-60 text-center"><strong>Part 2 (Other qualitative information)</strong></p>
+                <table class="different-sized-table">
+                  <tbody>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>1</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>Clause of Loan agreement relating to engagement of recovery agents</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p> Clause 7.10</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>2</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>Clause of Loan agreement which details grievance redressal mechanism</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p> Clause 7.16</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>3</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>Phone  number  and  email  id of the nodal grievance redressal officer</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p>{{data.grievanceOfficer.contact}}</p>
+                        <p>{{data.grievanceOfficer.name}}</p>
+                        <p>Email ID: {{data.grievanceOfficer.email}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>4</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>Whether the loan is, or in future maybe, subject</p>
+                        <p>to transfer to other REs or securitisation (Yes/ No)</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p>{{data.RETransferPossible}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>5</p>
+                      </td>
+                      <td colspan="5" rowspan="1">
+                        <p>In case of lending under collaborative lending arrangements (e.g., co-lending/ outsourcing),</p>
+                        <p>following additional details may be furnished:</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" rowspan="1">
+                        <p>Name of the originating RE, along</p>
+                        <p>with its funding proportion</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>Name of the partner RE along with its</p>
+                        <p>proportion of funding</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Blended rate of interest</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" rowspan="1">
+                        <p>{{data.OriginatingREName}}</p>
+                      </td>
+                      <td colspan="3" rowspan="1">
+                        <p>{{data.PartnerREName}}</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.REBlendedRateOfInterest}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>6</p>
+                      </td>
+                      <td colspan="5" rowspan="1">
+                        <p>In case of digital loans, following specific disclosures may be furnished:</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" rowspan="1">
+                        <p>(i)  Cooling off/look-up period, in terms of RE's board approved policy, during which borrower shall  not  be  charged  any  penalty  on prepayment of loan</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p>{{data.RECoolingOffPeriod}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" rowspan="1">
+                        <p>(ii)   Details of LSP acting as recovery agent and authorized to approach the borrower</p>
+                      </td>
+                      <td colspan="2" rowspan="1">
+                        <p>{{data.REDetailsLSP}}</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="line-space bottom-margin-20 text-center"><strong>Computation Sheet of Annual Percentage Rate (APR)</strong></p>
+                <table class="different-sized-table">
+                  <tbody>
+                    <tr>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Sr.<br>No.</p>
+                      </td>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Parameters</p>
+                      </td>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Details</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>1</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Sanctioned Loan amount (in Rupees) ( Sl no. 2 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>INR {{data.termsOfCreditLineFacility.loanAmount}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>2</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Loan Term (in years/ months/ days) (Sl No.4 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.periodInMonths}} Months</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>a)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>No. of instalments for payment of principal, in case of non- equated periodic loans</p>
+                      </td>
+                      <td colspan="1" rowspan="1"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>b)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Type of EPI</p>
+                        <p>Amount of each EPI (in Rupees) and</p>
+                        <p>nos. of EPIs (e.g., no. of EMIs in case of monthly instalments)</p>
+                        <p>(Sl No. 5 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.typeOfEpi}}</p>
+                        <p>{{data.epiAmount}}</p>
+                        <p>{{data.noOfEpi}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>c)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>No. of instalments for payment of capitalised interest, if any</p>
+                      </td>
+                      <td colspan="1" rowspan="1"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>d)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Commencement of repayments, post sanction (Sl No. 5 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.emiStartDate}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>3</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Interest rate type (fixed or floating or hybrid) (Sl No. 6 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.typeOfInterest}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>4</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Rate of Interest (Sl No. 6 of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.rateOfInterest}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>5</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Total Interest Amount to be charged during the entire tenor of the loan as per the rate prevailing on sanction date (in Rupees)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.totalInterest}}</p>
+                        <p>The  Total  interest  charged  may  vary  as  the  interest  calculations will be basis The date</p>
+                        <p>Of loan Disbursal. Kindly refer The repayment schedule for the final interest charged amount.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>6</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Fee/ Charges payable (in Rupees)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.aprFee}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>A</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Payable to the RE (Sl No.8A of the KFS template-Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">{{data.payableToRE}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>B</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Payable to third-party routed through RE (Sl No.8B of the KFS template - Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">{{data.payableToTPE}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>7</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Net disbursed amount (1-6) (in Rupees)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.netDisbursedAmount}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>8</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Total amount to be paid by the borrower (sum of 1 and 5) (in Rupees)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.totalAmountPaidByBorrower}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>9</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Annual Percentage rate- Effective annualized interest rate (in percentage) (Sl No.9 of the KFS template-Part 1)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.APR}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>10</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Schedule of disbursement as per terms and conditions</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.scheduleOfDisbursement}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>11</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Due date of payment of instalment and interest</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.dueDate}}</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p class="line-space bottom-margin-20 text-center"><strong>Repayment schedule under Equated Periodic Installment for the Loan </strong></p>
+                <table class="different-sized-table">
+                   <tbody>
+                    <tr>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Installment no</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Outstanding Principal (in rupees)</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Principal (in rupees)</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Interest (in rupees)</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Installment (in rupees)</p>
+                          </td>
+                    </tr>
+                    {{#data.repaymentSchedule}}
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>{{installmentNo}}</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>{{outstandingPrincipal}}</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>{{principal}}</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>{{interest}}</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>{{installment}}</p>
+                          </td>
+                        </tr>
+                    {{/data.repaymentSchedule}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </script>
+
+  <!-- Terms and conditions -->
+  <script id="personal-loan-agreement-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before font-small">
+            <div class="page-cr">
+                <h1 class="sub-heading underline">Personal Loan Agreement</h1>
+                <p class="line-space">THIS Personal Loan Agreement (<strong>"Agreement"</strong>) is made on the Date and at the Place specified in Schedule I</p>
+
+                <p class="line-space bottom-margin-20">BETWEEN</p>
+
+                <p class="line-space bottom-margin-20"><strong>STOCK GUARDIANS (INDIA) PRIVATE LIMITED</strong>,a company
+                incorporated under the provisions of the Companies Act, 1956, and existing under the provisions of Companies Act,
+                2013, having its registered office at {{data.lenderDetails.registeredAddress}} and corporate office at {{data.lenderDetails.corporateAddress}} (hereinafter referred to as ‘SG’ or ‘Lender’,
+                which expression shall, unless repugnant to the context, include its successors and assigns) of the <strong>First Part</strong>;</p>
+
+                <p class="line-space bottom-margin-20"><strong>AND</strong></p>
+
+                <p class="line-space bottom-margin-20">The Borrower whose name and details are mentioned in the Schedule I
+                (hereinafter referred to as "<strong>the Borrower</strong>" which expression shall where the context so admits include his/her/their executors,
+                administrators, successors and assigns).</p>
+
+                <p class="line-space bottom-margin-20">The Lender and Borrower are hereinafter collectively referred to as 'Parties' and individually as 'Party'.</p>
+
+                <p class="line-space">WHEREAS</p>
+
+                <ol type="1" class="list-with-upper-alpha-dot">
+                    <li class="list">
+                        <div class="line-space">
+                            The Lender is a non-banking finance company, inter alia, engaged in the business of providing loans/credit facilities to various customers.
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="line-space">
+                            At the request of the Borrower through the Platform as specified in Schedule I, the Lender, relying upon the representations made and information provided by the Borrower, has agreed to grant the Loan to the Borrower, on the terms and conditions mutually agreed and contained in this Agreement and in other Loan Documents,including but not limited to Key Facts Statement and Sanction Letter, up to the maximum principal amount as mentioned in Schedule I, and for the purpose as mentioned on the Platform, in its sole and absolute discretion.
+                        </div>
+                    </li>
+                </ol>
+
+                <p class="line-space bottom-margin-20">NOW, THEREFORE, in consideration of the foregoing and other good and valid consideration, the receipt and adequacy of which is expressly acknowledged, the Parties hereby agree as follows:</p>
+
+                <p class="line-space"><strong>1. DEFINITIONS & INTERPRETATION</strong></p>
+
+                <p class="line-space">1.1 Definitions</p>
+
+                <p class="line-space">For the purposes of this Agreement, in addition to the terms defined in the description of the Parties: (a) all capitalised words and expressions defined by inclusion in quotation and/or parenthesis anywhere in this Agreement, have the same meanings as ascribed to such words and expressions; (b) words and expressions used herein but not defined shall have the same meaning as assigned to them in General Clauses Act, 1897; and (c) following words and expressions shall have the meaning as set-out in this Clause 1:</p>
+                <p><strong>“Affiliates”</strong> shall mean entities that are related to or associated with the Lender by way of common ownership or control, either directly or indirectly;</p>
+                <p><strong>“Agreement”</strong> means this agreement and the schedules attached, including any modifications or amendments made hereto;</p>
+                <p><strong>“Bounce Charges”</strong> means an amount payable by the Borrower to the Lender as a penalty where ECS or any other Repayment Mode is returned or not honoured;</p>
+                <p><strong>Broken Period Interest”</strong> means (i) in the case of loans disbursed on or before the 5th day of a month, the interest applicable for the period from the date of disbursal upto the 5th of the same month; and (ii) in the case of loans disbursed after the 5th day of a month, the interest to be applied for the period commencing from the date of disbursal till the 4th day of the succeeding month which is specified in Schedule I;</p>
+                <p><strong>“Business Day”</strong> means normal working hours on a day on which scheduled banks are open for business at the place this Agreement is executed/signed by the Lender;</p>
+                <p><strong>“Cooling Off Period”</strong> shall mean shall mean the duration given to Borrower for exiting the Loan, in case the Borrower decides not to continue with the Loan. The cooling off period is provided in the KFS;</p>
+                <p><strong>“Due Date”</strong> with respect to any payment means the date on or before which any amount is payable by the Borrower in terms of the Loan Documents;</p>
+                <p><strong>“EMI”</strong> shall mean Equated Monthly Installments, comprising principal and interest, payable by the Borrower towards the Loan;</p>
+                <p><strong>“Interest Rate”</strong> shall mean the rate of interest in relation to the Loan as specified in the Loan Documents;</p>
+                <p><strong>“KFS”</strong> shall mean the Key Facts Statement issued by the Lender to the Borrower, outlining the key terms of the Loan;</p>
+                <p><strong>“Loan”</strong> shall mean the personal loan provided by the Lender to the Borrower as mentioned in Schedule I;</p>
+                <p><strong>“Loan Document”</strong> shall mean this Agreement, the Sanction Letter, the Key Facts Statement, and any other documents executed in connection with the Loan, including any other agreement or document which the Lender designates as a Loan Document;</p>
+                <p><strong>“LSP”</strong> shall mean the Lending Service Provider as approved and engaged by the Lender;</p>
+                <p><strong>“Monthly Installments”</strong>shall mean the periodic payments made by the Borrower toward the repayment of the Loan, including principal and interest, as set forth in Schedule I;</p>
+                <p><strong>“Outstanding Dues”</strong> shall mean, at any time, all the amounts outstanding and payable or obligations to be performed by the Borrower to the Lender, pursuant to the terms of this Agreement and/or any other Loan Documents, including but not limited to principal amount, interest, all obligations and liabilities of Borrower, costs, liquidated damages, charges, penalties, expenses, fees, and any other expenses incurred by Lender for collection of any amounts due under this Agreement/Loan Documents;</p>
+                <p><strong>“Platform”</strong> shall mean the mobile application or website which was used by the Borrower to apply for the Loan digitally;</p>
+                <p><strong>“Prepayment”</strong> means premature repayment of the loan  as per the terms and conditions laid down by Lender in that behalf and in force at the time of prepayment;</p>
+                <p><strong>“Processing Fees”</strong> shall mean the non-refundable fees charged by the Lender to the Borrower for processing the Loan, as specified in Schedule I;</p>
+                <p><strong>“Repayment”</strong> shall mean the repayment of the principal amount of the loans, interest thereon and/or any other charges, premium, fees and other dues payable in terms of this Agreement, to the Lender;</p>
+                <p><strong>“Repayment Mode”</strong> shall mean the method of payment of Monthly Installments or Outstanding Dues or any payment to the Lender by the Borrower, as may be specified in the Loan Documents;</p>
+
+
+                <p class="line-space">1.2 Interpretation</p>
+
+                <ol type="a" class="list-with-lower-roman-brace bottom-margin-25">
+                    <li class="list">
+                         Unless the context otherwise requires, words denoting the singular shall include the plural and vice versa;
+                    </li>
+                    <li class="list">
+                        the table of contents, headings and the use of bold typeface, are inserted for ease of reference and shall be ignored in the construction and interpretation of the Agreement;
+                    </li>
+                    <li class="list">
+                        a reference to a Clause or Schedule is, unless indicated to the contrary, a reference to a Clause or Schedule to this Agreement;
+                    </li>
+                    <li class="list">
+                        references to this Agreement shall be construed as references also to any separate or independent stipulation or agreement contained in it;
+                    </li>
+                    <li class="list">
+                        references to the word ‘includes’ or ‘including’ shall be construed without limitation; and
+                    </li>
+                    <li class="list">
+                        words importing a particular gender include all genders.
+                    </li>
+                </ol>
+
+
+                <p class="line-space"><strong>2. TERMS OF THE LOAN</strong></p>
+                <ol type="a" class="list-with-sub-number bottom-margin-25">
+                    <li class="list" data-prefix="2">
+                        At the request of the Borrower, the Lender has granted/agreed to grant to the Borrower Loans more fully described and up to the amounts and periods specified in the Schedule I.
+                    </li>
+                    <li class="list" data-prefix="2">
+                        The disbursement of the Loan shall be made directly to the Borrower in one lump sum, subject to the terms and conditions contained herein. The Lender shall not in any event or circumstance be liable or be construed as being liable in case there is any delay(s) in disbursement of the Loan on account of any technical or system errors, etc. The Borrower may exit the loan during the cooling off period as mentioned in the KFS.
+                    </li>
+                    <li class="list" data-prefix="2">
+                        The Borrower(s) further declare that he/she/they read and understood the terms and conditions of sanction of the Loan as contained in this agreement and the sanction letter(s)/Terms & Conditions , and agree to abide and be bound by the same. The Borrower(s) further agree to furnish all such information as the Lender may reasonably require to the satisfaction of the Lender, as to confirm due compliance with the terms and conditions of this agreement and/or the sanction letter(s)/Terms & Conditions , or otherwise, at such time, in such form and containing such particulars as the Lender may call for or require from time to time.
+                    </li>
+                    <li class="list" data-prefix="2">
+                        The Borrower agree that the Loan shall be utilized only for the purpose described in Schedule I, which is as stated by the Borrower to the Platform, for which the Loan has been granted and further declare that the Loan shall not be utilized for any other purpose.
+                    </li>
+                </ol>
+
+                <p class="bold">3. <span >INTEREST AND FEES</span></p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-sub-number bottom-margin-25">
+                        <li class="list" data-prefix="3">
+                            The Borrower agrees to pay interest on the Loan at the interest rates stated in Schedule I, which shall be compounded at rests as specified in Schedule I. The Interest shall start accruing from the date of disbursement of the Loan or any part thereof, and shall be calculated on the daily balance outstanding in the respective Loan accounts. In the event of delay between signing of this Agreement and disbursement of the Loan which amounts to a change in the repayment schedule as annexed to this Agreement, the revised repayment schedule shall be communicated to the Borrower on their registered email id and shall also be available on the Platform.  The Borrower further agrees that the interest rates mentioned in Schedule I shall remain unchanged till the maturity of the Loan.
+                        </li>
+                        <li class="list" data-prefix="3">
+                            The Borrower further agrees that, notwithstanding anything to the contrary contained in Clause 3.1 above, the Lender is at liberty to increase the interest rates applicable to the Loan, in the event of deterioration in credit quality/ rating of the Borrower as assessed from time to time by the Lender or otherwise as decided by the Lender from time to time/ as per directives of the Reserve Bank of India and the Borrower agrees to pay the interest at such revised rates.
+                        </li>
+                        <li class="list" data-prefix="3">
+                            The Borrower further agrees and confirms that notwithstanding anything stated in the Agreement, Lender has the absolute right to revise the rates of interest (whether floating with periodic reset/ fixed) applicable to any of the Loans availed by Borrower at any time and any such revision in rates of interest shall be binding on the Borrower. Any revision in the Interest Rate shall be effective from a prospective date and the Lender shall notify the Borrower in advance to this effect and the same would be binding upon the Borrower. The Lender shall also notify any change in the Interest Rate by updating the same on its Website.
+                        </li>
+                        <li class="list" data-prefix="3">
+                            The Borrower specifically agrees that the Loan granted/agreed to be granted under this agreement shall always include and/or shall deem to include the interest calculated and debited to the loan accounts at such rests as stated in Schedule I from time to time, cumulatively.
+                        </li>
+                        <li class="list" data-prefix="3">
+                            The Borrower agrees and understands that Broken Period Interest at the applicable rate/s shall be payable in first EMI by them. The Borrower hereby authorises the Lender to debit the loan account upfront, for the Processing Fees, and the Borrower understands that the Loan amount shall be disbursed as specified in Schedule I only after deducting the amounts corresponding to Processing Fees, upfront.
+                        </li>
+                        <li class="list" data-prefix="3">
+                           The Borrower also undertake to pay penal charges at the rates mentioned in Schedule I and/or at such other rates as may be fixed by the Lender from time to time, over and above the rates mentioned in Schedule I, in case the Borrower defaults in paying the instalments, principal, interest, and/or other charges, and/or in the event of violation of any terms and conditions of this agreement and/or sanction letter on their part and/or on the loan accounts becoming irregular, without prejudice to the other rights and remedies available to the Lender. The decision of the Lender as to whether there has been any such default or violation shall be final and binding on the Borrower.
+                        </li>
+                        <li class="list" data-prefix="3">
+                            The Borrower further undertakes to pay interest tax(if any) as applicable and claimed by the Lender from time to time. The Borrower also agrees to pay processing fees at the rate specified in Schedule I.
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="bold line-space">4. REPAYMENT AND PREPAYMENT OF THE LOAN</p>
+                <ol type="a" class="list-with-sub-number bottom-margin-25">
+                    <li class="list" data-prefix="4">
+                      The Borrower agrees and undertakes to repay the Loan in the manner specified in the Schedule I, until the entire amounts outstanding under the Loan together with interest, cost, expenses, levies and other charges are repaid in full. Where the Loan is to be repaid by way of periodical installments/minimum monthly remittances, the Borrower further agrees and undertakes to make payments of such periodical installments/minimum monthly remittances on the dates specified in Schedule I.
+                    </li>
+                    <li class="list"  data-prefix="4">
+                      The Monthly Instalments shall automatically change by reason of change in any rates, taxes, charges, imposts, levies and monies whatsoever that are or may be levied on the Monthly Instalments or the transaction contemplated hereunder or may become payable by the Borrower by virtue of this Agreement. Such change in the Monthly Instalments due to change in the rates, taxes, charges, imposts, levies and monies as stated above shall be effected only prospectively and the same shall automatically form part of the Loan.
+                    </li>
+                    <li class="list" data-prefix="4">
+                      At the written request of the Borrower, the Lender may foreclose the Loan by accepting the pre-payment of the Outstanding Dues (‘Pre-Payment’). The Pre-Payment of the Outstanding Dues may be either full Pre-Payment or part Pre-Payment as described below.
+                        <ol type="a" class="list-with-lower-alpha-brace bottom-margin-25">
+                            <li class="list" >
+                              Full Pre-Payment<br>
+                              At the request of the Borrower, the Lender may accept the full Pre-Payment of the Outstanding Dues and foreclose the Loan if the Borrower has paid at least one Monthly Instalment.
+                            </li>
+                            <li class="list" >
+                              Part Pre-Payment<br>
+                              At the request of the Borrower, the Lender may accept part Pre-Payment of the Loan provided that the Borrower pays a minimum sum of one Monthly Instalment under the Loan. The Parties further agree that the Borrower should have paid at least one Monthly Instalment prior to making part Pre-Payment of the Loan. Based on the part Pre -Payment made by the Borrower, as stated herein, either the Loan Tenure shall be reduced to the extent of the part Pre-Payment made or the Monthly Instalment amount shall be reduced by maintaining the Loan Tenure with the mutual written consent of the Parties.                              
+                            </li>
+                        </ol>
+                    </li>
+                    
+                  <li class="list"  data-prefix="4">
+                    The Borrower acknowledges that any Pre-Payment shall be subject to the payment of the Pre-Payment Charges, if any. The Lender shall be entitled to recover from the Borrower the Pre-Payment Charges on the amount of the Loan, repaid by the Borrower ahead of the timeline, as mentioned in Schedule I.
+                  </li>
+                  <li class="list"  data-prefix="4">
+                    The Borrower agrees and understands that in case of loans disbursed  between the 6th day of a month to 25th day of a month, the first installment shall be payable on or before the 5th day of the succeeding month of disbursal; and that for the loans disbursed  between 26th day of a month to 5th of next month , the first installment shall be payable on or before the 5th day of the second succeeding month of disbursal. The first of such installments shall be payable on or before the date specified in Schedule I. The Borrower agrees and understands that the Loan amount together with interests, costs, expenses, levies and other charges shall be repaid in full before the Loan Expiry Date specified in Schedule I.
+                  </li>
+                  <li class="list"  data-prefix="4">
+                    The Borrower further understands and agrees that, in case of default in repayment of the loans or any of the instalments/interest/ costs/charges or any other irregularity on the part of the Borrower, the entire balance then outstanding under the loans with interest, costs, commission and charges shall, if the Lender so chooses, become payable at once and in lump. However, nothing in this provision shall preclude the Lender from granting any extension of time to the Borrower for repayment in lump or otherwise and it shall be deemed that the Lender has granted such extension of time at the request of the Borrower.
+                  </li>
+                  <li class="list"  data-prefix="4">
+                    Any dispute or difference of any nature whatsoever shall not entitle the Borrower to withhold or delay payment of any Monthly Instalments or other sum and the Lender shall be entitled to present ECS to the bank of the Borrower on the Due Dates.
+                  </li>
+                  <li class="list"  data-prefix="4">
+                    The Borrower understands, confirms and agrees that the Lender shall, at its sole discretion, at multiple occasions and on different dates, present in the Borrower’s bank account, the ECS/ NACH mandate or any other electronic or other clearing mandate (given by the Borrower in favour of the Lender covering all the Outstanding Dues) which returns unpaid, for recovering the Outstanding Dues from the Borrower and until realization of all Outstanding Dues. The Borrower agrees and undertakes that the Borrower shall not dispute, complain or object to such presentations by the Lender. Further, the Borrower understands and agrees that return of PDCs or ECS/ NACH mandate or any other electronic or other clearing mandate, will result in Bounce Charges being added to the Outstanding Dues.
+                  </li>
+                  <li class="list" data-prefix="4">
+                      Any sums received by the Lender from the Borrower shall be appropriated in the following manner:
+                      <ol type="a" class="list-with-lower-alpha-brace bottom-margin-25">
+                          <li class="list" >
+                              firstly, against interest payment;
+                          </li>
+                          <li class="list" >
+                              secondly against principal amount of Loan;;
+                          </li>
+                          <li class="list" >
+                              thirdly against Bounce Charges and any other penal charges;
+                          </li>
+                          <li class="list" >
+                              fourthly against any other fees or any other claim of the Lender on the Borrower under the Loan Documents.
+                          </li>
+                      </ol>
+                      For loans classified as NPA, sums received by the Lender from the Borrower shall be appropriated in the following manner
+                      <ol type="a" class="list-with-lower-alpha-brace bottom-margin-25">
+                          <li class="list" >
+                              firstly, against entire principal amount of Loan;
+                          </li>
+                          <li class="list" >
+                              secondly against entire interest amount of Loan;
+                          </li>
+                          <li class="list" >
+                              thirdly against Bounce Charges and any other penal charges;
+                          </li>
+                          <li class="list" >
+                              fourthly against any other fees or any other claim of the Lender on the Borrower under the Loan Documents.
+                          </li>
+                      </ol>
+                  </li>
+                </ol>
+
+                <p class="bold">5. DEFAULT</p>
+                <p class="line-space bottom-margin-25">The Borrower shall be deemed to have committed an act of default if the Borrower does not comply with his/her obligations as mentioned in this Agreement and also on the happening of any one or more of the following events, (each an ‘Event of Default’ and collectively ‘Events of Default’):</p>
+                <ol type="a" class="list-with-lower-alpha-brace bottom-margin-25">
+                    <li class="list" >
+                        The Borrower fails to pay any Monthly Instalments or the Outstanding Dues under this Agreement on or before the Due Date or commits breach of any of the terms, covenants or conditions contained in this Agreement;
+                    </li>
+                    <li class="list" >
+                        it is found that the Borrower commits a default of any of the terms and conditions in respect of any other loan or facility provided by the Lender and/or any Affiliates of the Lender;
+                    </li>
+                    <li class="list" >
+                        there exists any circumstances which in the opinion of the Lender prejudicially affects or may affect the Lender’s interest or the Borrower’s ability to repay the Loan;
+                    </li>
+                    <li class="list" >
+                        demise of the Borrower or if the Borrower compounds with his/her creditors or permits any attachment or sequestrations or other processes against any of his/her assets or properties;
+                    </li>
+                    <li class="list" >
+                        if the Borrower commits an act of insolvency or if the Borrower is declared insolvent or bankrupt or if a receiver or official assignee is appointed in respect of any property or estate of the Borrower or if the Borrower asks for any application for declaring himself an insolvent or if an application for declaring the Borrower as insolvent is made or any order is passed by any competent count or authority for taking the Borrower into insolvency; and
+                    </li>
+                    <li class="list" >
+                        if any proceedings are pending or threatened against the Borrower by any government agency or authority for any misconduct or breach/violation of any law or regulations or code of conduct, etc.
+                    </li>
+                </ol>
+
+                <p class="line-space ">Upon the occurrence of the Event of Default and at any time thereafter, if any such event shall be continuing, the Lender may:</p>
+                <ol type="a" class="list-with-lower-alpha-brace bottom-margin-25">
+                    <li class="list" >
+                        accelerate the repayment of the Loan including the Outstanding Dues;
+                    </li>
+                    <li class="list" >
+                        place the Loan on demand or declare all the Outstanding Dues payable by the Borrower in respect of the Loan to be due and payable immediately;
+                    </li>
+                    <li class="list" >
+                        recover the charges for dishonour of the Repayment Modes, Penal Charges and any other interest or charges from the Borrower as mentioned in Schedule 1;
+                    </li>
+                    <li class="list" >
+                        terminate this Agreement;
+                    </li>
+                    <li class="list" >
+                        exercise such other rights and remedies as may be available to the Lender under law during the pendency of the Loan; and/or
+                    </li>
+                    <li class="list" >
+                        stipulate such other condition(s) or take such other action(s) as the Lender deems fit.
+                    </li>
+
+                </ol>
+
+
+                <p class="bold line-space">6. COVENANT OF BORROWER</p>
+                <p><span class="line-space">6.1 </span>The Borrower hereby covenants that during the period of this Agreement:</p>
+                <div class='list-container'>
+                    <ol type="a" class="list-with-lower-roman-brace">
+                        <li class="list">
+                            The Borrower shall observe and perform all its obligations and covenants under this Agreement.
+                        </li>
+                        <li class="list">
+                            The Borrower shall ensure timely payment of the Monthly Instalments to the Lender. It is the duty of the Borrower to ensure that their  bank account has been debited towards the Monthly Instalments and in case of their account not been so debited, the Borrower shall be obliged to inform the Lender in this regard within 3 (three) Business Days from the Due Date of such Monthly Installment.
+                        </li>
+                        <li class="list">
+                            The Borrower shall promptly, but not later than 30 days,  notify the Lender of any change in the Borrower’s address, phone number, employer name, email address, as mentioned in Schedule I.
+                        </li>
+                        <li class="list">
+                            The Borrower confirms that he/she shall ensure availability of funds in the bank account from which repayments are to be made and that the Borrower will not at any time close his/her bank account until the full and final payment of the Outstanding Dues has been made to the Lender by the Borrower.
+                        </li>
+                        <li class="list">
+                            The Borrower shall not change his/her name or change his/her bank account from which repayments have to be made without prior written consent of the Lender.
+                        </li>
+                        <li class="list">
+                            The Borrower shall pay/reimburse the Lender against all expenses for any purpose relating to this Agreement including any taxes pertaining to this Agreement, or the Loan and enforcing the terms thereof.
+                        </li>
+                        <li class="list">
+                            The Borrower shall pay and bear all taxes, rates, duties, charges and other imposts and obligations, existing as well as in future, in respect of the product and the transaction hereunder.
+                        </li>
+                        <li class="list">
+                            The Borrower shall do all such things and execute all such writings as the Lender may require from time to time for duly or more perfectly securing the repayment of the Loan.
+                        </li>
+                    </ol>
+                </div>
+                <p class="line-space bold">7. OTHER GENERAL TERMS</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="i" class="list-with-sub-number">
+                        <li class="list" data-prefix="7">
+                            The Lender reserves the right to levy such fees and/or charges, from time to time, as specified in the Loan Documents. The fees and charges levied by the Lender in pursuance to the Loan Documents shall be non-refundable and non-transferable. The Lender may during the Loan Tenure and at its sole discretion, with or without any prior notice to the Borrower, amend / revise any of the terms and conditions contained in the Agreement including the repayment schedule, Interest Rate and/or any other fee, interest or charge such as Penal Charges, processing fees, annual maintenance charges, Bounce Charges, Pre-payment Charges, activation fee, service charges, other charges etc. and the Borrower acknowledges and agrees to be bound by such revised terms and conditions including repayment schedule, Interest Rate and/or such fee or charges mentioned above. The Lender shall give notice to the Borrower of any such amendment/revision/addition and shall ensure that changes in Interest Rate and other fee or charges are effected only prospectively. The Lender shall notify the Borrower of such changes by updating the same on the Website, email or through other modes of communication.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            Any statement of account furnished by the Lender regarding the Outstanding Dues payable by the Borrower under this Agreement shall be accepted by and be binding on the Borrower and shall be a conclusive proof of the correctness of the amount mentioned therein. Without prejudice to what is stated above, if the Borrower desire to question any statement or any part thereof, the Borrower shall furnish to the Lender full details of the same within 10 (ten) Business Days from the receipt of the statement by the Borrower and the Lender may consider the same and the Borrower shall not be entitled to object to the same thereafter on any ground whatsoever. It is however clarified that the Borrower shall not be entitled to default or delay the payment of Monthly Instalments on the ground of the statement of account furnished by the Lender being inaccurate or any other ground whatsoever.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower hereby agrees and confirm that the Lender shall have the right to cross sell its other products and services and the products and services of its Affiliates, to the Borrower along with the Loan.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower shall pay any and all stamp duty, stamp duty penalties, registration fees and similar taxes and duties which are or may become payable in connection with the entry into, performance or enforcement of this Agreement and/or Loan Documents whether at the time of execution or thereafter. The Borrower hereby agrees that in case the Lender is required to make any payments such as stamp duty, stamp duty penalty, registration charges and/or any other charges and/or duties on and in relation to this Agreement and/ or Loan Documents or any other underlying/associated documents, whether at the time of the execution or thereafter then the Lender shall be entitled/authorised to recover the same from the Borrower.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            Any provision of this Agreement which is prohibited or unenforceable including without limitation due to any notification, guidelines, circular issued by RBI from time to time, in any jurisdiction shall, as to such jurisdiction, be ineffective only to the extent of such prohibition or un-enforceability but that shall not invalidate or affect the remaining provisions of this Agreement nor affect such provision in any other jurisdiction.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            Any delay in exercising or omission to exercise any right, power or remedy accruing to the Lender under this Agreement or any other agreement or document shall not impair any such right, power or remedy and shall not be construed to be waiver thereof or any acquiescence in any default, nor shall the action or inaction of the Lender in respect of any default or any acquiescence by it in any default affect or impair any right, power or remedy of the Lender in respect of any other default.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            Any notice to be given to the Borrower in respect of this Agreement shall be deemed to have been validly given if email sent to the borrower or served on the Borrower or sent by courier or left at the address of the Borrower stated in Schedule I hereto or at the Borrower’s existing or last known business or private address. Any such notice sent by courier shall be deemed to have been received by the Borrower within 48 (forty-eight) hours from the time of its posting.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            Without prejudice to all other rights as the Lender or any of the third parties appointed by the Lender may have under this Agreement and under law, on the occurrence of an Event of Default, the Lender, its authorised representatives, agents, and third parties as appointed by the Lender are authorised to use the contact details provided by the Borrower to get in touch with the Borrower (including the authorised signatory(ies)/ representative(s), guarantor(s) (if any) and third parties including the family members of the Borrower) whose information the Borrower has provided to the Lender. Also, the Borrower may be sent reminders from time to time for settlement of any Outstanding Dues by post, fax, telephone, email, SMS text messaging via mobile phone or any such other medium of communication.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower further understands and agrees that notwithstanding anything contained herein, the Lender is at liberty to recall the Loan provided to the Borrower at any time during the continuance of the Loan without assigning any reason whatsoever, if the Lender considers that it is necessary for the best interest of the Lender.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower understands that the Lender may at its sole discretion avail services of recovery agency/agents of Lender’s choice for initiating and continuing the recovery proceedings against the Borrower until the full amounts due to the Lender are recovered. The Borrower further agrees to reimburse to the Lender, any fees, charges, costs or expenses paid to such recovery agency engaged by the Lender directly or by any lending service provider who is acting on behalf of the Lender, in this regard.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower agrees and confirms that the Lender shall be entitled to appoint service providers /agents and outsource any of its activities to such service providers/agents as permitted by the Reserve Bank of India and/ or as per Lender’s policy and disclose all or any information, data or documents relating to the Borrower or relating to their Loan or Loan Documents to such service providers /agents.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower understands that as a pre-condition, relating to grant of the loans/ advances/ other non-fund-based credit facilities to them, the Lender requires their consent for the disclosure by the Lender of information and data relating to them, of the credit facility availed of/ to be availed by them, obligations assumed / to be assumed by them, in relation thereto and default, if any, committed by them, in discharge thereof. Accordingly, the Borrower hereby agrees and give consent for the disclosure by the Lender of all or any such;
+                            <ol type="i" class="list-with-lower-alpha-dot">
+                                <li class="list">
+                                    information and data relating to them;
+                                </li>
+                                <li class="list">
+                                    the information or data relating to any credit facility availed of/ to be availed by them, and
+                                </li>
+                                <li class="list">
+                                    default, if any, committed by them, in discharge of their obligation, as the Lender may deem appropriate and necessary, to disclose and furnish to Credit Information Bureau (India) Ltd. and any other agency authorized in this behalf by RBI.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower hereby agrees and understands that in the event of default in the payment or repayment of any amount outstanding under the Loan, the Lender shall have an unqualified right to disclose or publish the name and other details including the photographs of the Borrower as defaulters in such manner and in such form through electronic or other media such as newspapers notices pamphlets etc as the Lender may in its absolute discretion thinks fit.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower further declares that the information and data furnished by the Borrower to the Lender is true and correct.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower agrees and understands that the Lender may also disclose any information/documents relating to the Borrower to any third party including Lender’s Affiliates for promotional purposes or any other purpose as the Lender may deem fit.
+                        </li>
+                        <li class="list" data-prefix="7">
+                            The Borrower can approach the grievance redressal officer of the Lender for any grievances pertaining to the Loan. All relevant details of the grievance redressal officer and of the framework are available on the Lender’s website (<a href="{{data.lenderDetails.website}}">{{data.lenderDetails.website}}</a>).
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="line-space bold">8. ASSIGNMENT OF RIGHTS</p>
+                <p class="line-space bottom-margin-25">The Lender shall at any time, without any consent of or notice to the Borrower be entitled to securitise, sell, assign, discount or transfer all or any part of the Lender’s right and obligations under this Agreement or other Loan Documents, to any person(s) and in such manner and on such terms as the Lender may decide. The Borrower shall not be entitled to directly or indirectly assign or in any manner transfer, whether in whole or part, any rights or obligation under this Agreement and other Loan Documents.</p>
+
+                <p class="line-space bold">9. ELECTRONIC MEDIA</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-sub-number">
+                        <li class="list" data-prefix="9">
+                            The Borrower hereby confirms, acknowledges and agrees that the online acceptance of this Agreement including any addendums hereto through the Website or Mobile Application or such other internet or web based means results in a binding contract between the Parties
+                        </li>
+                        <li class="list" data-prefix="9">
+                            The Borrower is aware that transmission of this Agreement, addendums to this Agreement, terms and conditions, instructions, acceptances and communications (<strong>‘Communications’</strong>) through electronic means such as email, facsimile, SMS text messaging, websites, online acceptance, etc. (<strong>‘Electronic Media’</strong>) involves a number of risks including fraudulent alterations and incorrect transmissions and absence of confidentiality. However, the Borrower is desirous of receiving Communications from and providing Communications to the Lender through the Electronic Media for various matters under this Agreement including in relation to the Loan and the operation thereof.
+                        </li>
+                        <li class="list" data-prefix="9">
+                            In consideration of the Lender permitting the same, the Borrower hereby irrevocably, confirms and undertakes to the Lender as under:
+                            <ol type="a" class="list-with-lower-alpha-brace">
+                                <li class="list">
+                                    The Lender shall be entitled (without being bound to do so) to rely upon the Communications provided through the Electronic Media (and believe the same to be genuine), for their requirements. In case of any question as to what were the Communications provided or received, the records of the Electronic Media received by the Lender shall be treated as final, conclusive and binding.
+                                </li>
+                                <li class="list">
+                                    The Borrower has ensured and shall ensure that the Communications provided through the Electronic Media to the Lender are provided by the Borrower and hereby agrees and confirms that the Lender shall not be responsible for conducting any verification whatsoever in this regard.
+                                </li>
+                                <li class="list">
+                                    The Borrower confirms that the Lender shall not be bound to act in accordance with whole or any part of the communications as it may appear in the Communications so conveyed and the same shall be at the sole risk of the Borrower.
+                                </li>
+                                <li class="list">
+                                    The Lender shall not be liable for the consequences of any act or any refusal or omission to act or deferment of action by the Lender on basis of the Communications through the Electronic Media.
+                                </li>
+                                <li class="list">
+                                    The Lender shall not be required to await receipt of the Communications in writing before taking any action in connection with the Communications provided through any Electronic Media and the non-delivery and non-conformity of such Communications in writing shall not in any manner prejudice the Lender’s rights under this Agreement or otherwise.
+                                </li>
+                                <li class="list">
+                                    The Lender may at any time whatsoever without assigning any reason withdraw or modify or add the facility/ies provided to the Borrower in relation to the Communications through Electronic Media.
+                                </li>
+                                <li class="list">
+                                    The Borrower is aware and confirms that the Lender is agreeing to act on any Communications provided through Electronic Media only by reason of, and relying upon the undertaking and indemnities contained in this Clause.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <p class="line-space bold">10. GOVERNING LAW & DISPUTE RESOLUTION</p>
+                <div class='list-container bottom-margin-25'>
+                    <ol type="a" class="list-with-sub-number">
+                        <li class="list" data-prefix="10">
+                            The Borrower agrees that this Agreement will be governed by and construed in accordance with the laws of the Republic of India. The Courts at Mumbai alone shall have jurisdiction to entertain and try all matters arising from and out of this Agreement.
+                        </li>
+                        <li class="list" data-prefix="10">
+                            Any dispute arising out of or in relation to the Loan, including this Agreement and/or Loan Documents shall be referred for arbitration to the sole arbitrator appointed by the Lender. The Parties agree and confirm that the arbitration proceedings shall be conducted in accordance with the Arbitration and Conciliation Act, 1996 and the rules applicable thereto. The venue of the arbitration shall be at Bengaluru or Mumbai, at the sole discretion of the Lender and the arbitration proceedings shall be conducted in the English language. The decision of the Arbitrator shall be final and binding on the Parties. Pending the passing of the final award, the Borrower shall be liable to perform all its obligations under this Agreement. Any proceedings to be initiated in any court of law in pursuance of this arbitration shall be instituted and held in the courts of competent jurisdiction situated at the place specified above.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </script>
+
+  <!-- Schedule 1 -->
+  <script id="schedule-1-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before">
+            <div class="page-cr">
+                <p class="heading">SCHEDULE 1</p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Sl.<br>No.</p>
+                      </td>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Particulars</p>
+                      </td>
+                      <td class="bold" colspan="1" rowspan="1">
+                        <p>Details</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>1</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Date of accepting the agreement</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.date}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>2</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Details of Borrower</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Name: {{data.name}}</p>
+                        <p>Age: {{data.age}}</p>
+                        <p>Permanent Address: {{data.permenantAddress}}</p>
+                        <p>Communication address: {{data.communicationAddress}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>3</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Platform</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.platform}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>4</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Details of loan</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Nature of Loan: {{data.typeofLoan}}</p>
+                        <p>Amount of the Loan: {{data.sanctionAmount}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>5</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Purpose of Loan</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.purposeOfLoan}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>6</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Period of the loan (In months)</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.termsOfCreditLineFacility.periodInMonths}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>7</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Loan expiry date</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>{{data.loanExpiryDate}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>8</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Interest rate</p>
+                      </td>
+                      <td colspan="1" rowspan="1">{{data.rateOfInterest}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>9</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Periodicity of Interest Compounding</p>
+                      </td>
+                      <td colspan="1" rowspan="1">{{data.periodicityOfInterestCompounding}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>10</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Penal charges</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td colspan="1" rowspan="1">
+                                <p>Sr.No</p>
+                              </td>
+                              <td colspan="1" rowspan="1">
+                                <p>Default category</p>
+                              </td>
+                              <td colspan="1" rowspan="1">
+                                <p>Penal charges</p>
+                              </td>
+                              <td colspan="1" rowspan="1">
+                                <p>Additional penal charges</p>
+                              </td>
+                            </tr>
+                            {{#data.penalChargesTable}}
+                                <tr>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{sno}}</p>
+                                  </td>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{defaultCategory}}</p>
+                                  </td>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{penalCharges}}</p>
+                                  </td>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{additionalPenalCharges}}</p>
+                                  </td>
+                                </tr>
+                            {{/data.penalChargesTable}}
+                          </tbody>
+                        </table>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>11</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Minimum EMIs to be paid for qualifying for pre-payment</p>
+                      </td>
+                      <td colspan="1" rowspan="1">{{data.minimumEmiForPrePaymentElibility}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>12</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Processing Fees</p>
+                      </td>
+                      <td colspan="1" rowspan="1">INR {{data.termsOfCreditLineFacility.processingFee}} (inclusive of 18% GST)</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>13</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Broken Period Interest</p>
+                      </td>
+                      <td colspan="1" rowspan="1">INR {{data.termsOfCreditLineFacility.brokenPeriodInterest}}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>14</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Repayment Terms</p>
+                      </td>
+                      <td colspan="1" rowspan="1">In {{data.termsOfCreditLineFacility.periodInMonths}} months commencing from the date of disbursal of the Facility or any part thereof by way of {{data.termsOfCreditLineFacility.numberOfInstallments}} monthly instalments of {{data.emiRepaymentAmount}}/-
+each or such other amount that the NBFC may from time to time fix, to  the  intent  that  the  entire  Facility  together  with  interest,  additional interest,  cost  and  other  expenses  shall  be  repaid  within  the  expiry  of
+the aforesaid period of {{data.termsOfCreditLineFacility.periodInMonths}} months or such other period that the NBFC may  fix.  The  interest  applied  in  the  loan  account  periodically  at
+monthly rests, shall be cleared / remitted then and there
+</td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>15</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Installments</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>First Instalment to be paid on or before {{data.emiStartDate}} or such other date prescribed by the Lender  and the remaining instalments to be paid on or before the same day of succeeding months.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>16</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Disbursement</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Account No. : {{data.bankDetails.accountNumber}}</p>
+                        <p>IFSC Code : {{data.bankDetails.ifscCode}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>17</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>SMA/NPA classification date illustration</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        If due date is {{data.emiStartDate}}
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td colspan="1" rowspan="1">
+                                <p>Default category</p>
+                              </td>
+                              <td colspan="1" rowspan="1">
+                                <p>Date for classification in any due unpaid</p>
+                              </td>
+                            </tr>
+                            {{#data.smaNpaClassificationDate}}
+                                <tr>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{defaultCategory}}</p>
+                                  </td>
+                                  <td colspan="1" rowspan="1">
+                                    <p>{{dateClassification}}</p>
+                                  </td>
+                                </tr>
+                            {{/data.smaNpaClassificationDate}}
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" rowspan="1">
+                        <p>Accepted and executed by OTP validation by the within named borrower, this personal loan</p>
+                        <p>agreement, and schedules to the Personal Loan Agreement on the date mentioned below.</p>
+                        <p>This Loan Agreement stands null and void if borrower does not avail the Loan within 30 days</p>
+                        <p>from the date of accepting the Agreement.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" rowspan="1">
+                        <p>Borrower Name: {{data.name}}</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Date: {{data.date}}</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </script>
+
+  <!-- Detailed repayment schedule -->
+  <script id="privacy-policy-of-lsp" type="x-tmpl-mustache">
+        <div class="page-outer-cr break-before">
+            <div class="page-cr">
+                <h1 class="heading">Privacy Policy of LSP</h1>
+                <p class="line-space">The Privacy Policy of the LSP affixed below is subject to change. Borrower is requested to check the policy at <a href="https://fi.money/privacy">https://fi.money/privacy</a> for any updates or revisions</p>
+                <p class="line-space">Epifi Technologies Private Limited (epiFi, we, us or Company) is a fintech company providing financial solutions and services. We believe that our customers (You) deserve a ‘no shenanigans’ approach to their Personal Data.</p>
+                <p class="line-space">By and large, this policy has minimized the usage of legal jargon – unless absolutely required on a lawful basis – and explains how we treat your information.</p>
+                <div>
+                    <p><a href="#privacy-definitions">Definitions</a></p>
+                    <p><a href="#privacy-applicability">Applicability of this policy</a></p>
+                    <p><a href="#privacy-data-collected">What data do we collect and why?</a></p>
+                    <p><a href="#privacy-data-used">How is your information used?</a></p>
+                    <p><a href="#privacy-data-shared">Who do we share your data with?</a></p>
+                    <p><a href="#privacy-data-secured">How do we secure your data?</a></p>
+                    <p><a href="#privacy-know-your-rights">Know your rights</a></p>
+                    <p><a href="#privacy-policy-changes">Policy upgrades and changes</a></p>
+                </div>
+
+                <div class="line-space">
+                    <a name="privacy-definitions" class="line-space" ><strong>Definitions 📖</strong></a>
+                    <p class="line-space">For purposes of this Policy, “Personal Data” refers to any piece of information that we, as a Company, can use to verify you as a real-life human being. For example, an e-mail ID linked to your social media accounts.</p>
+                    <p class="line-space">“Sensitive Personal Data” translates to any highly confidential information – i.e. records not available in the public domain – that you provide to us.</p>
+                    <p class="line-space">Besides these, any information that is freely available, accessible in the public domain, furnished under the Right to Information Act, 2005 or any other law for the time being in force – shall not be regarded as Sensitive Personal Data or information.</p>
+                <div>
+
+                <div class="line-space">
+                    <a name="privacy-applicability" class="line-space"><strong>Applicability of this policy ✔️</strong></a>
+                    <p class="line-space">By mere use of the website, you expressly consent to our use and disclosure of your personal information (all forms of information, physical and digital including Sensitive Personal Data) as per this Privacy Policy.</p>
+                    <p class="line-space">As it is your data, you have the right to know how this Privacy Policy applies to you. If at any point in time, an individual provides data or other information about someone other than himself or herself, the individual warrants that they have that person’s consent to provide such information for the purpose specified.</p>
+                <div>
+
+                <div class="line-space">
+                    <a name="privacy-data-collected" class="line-space"><strong>What data do we collect? 💾</strong></a>
+                    <p class="line-space">We intend to provide services and features that meet your needs. To do so, when you use our website, we collect Personal Data required by law from time to time. We would collect the following data from you –</p>
+                    <p class="line-space">Device Information: Information such as device ID, pages accessed, installed apps, IP address, mobile network, operating system or a unique identifier. We will link your mobile phone number with your device. This helps us analyse how our app works, fix any issues, keep the app safe and ensure a seamless experience for you.</p>
+                    <p class="line-space">Personal Data: Such as name, date of birth, residential status, postal address, e-mail address, mobile number, PAN details etc. This helps us fulfil our legal obligations which require us to confirm your identity.</p>
+                    <p class="line-space">Location information:  If you have authorized tracking which will help us provide you location-based services and protect you against fraud.</p>
+                    <p class="line-space">The use and transfer to any other app of information received from Google APIs will adhere to Google API Services User Data Policy, including the Limited Use requirements.</p>
+                    <p class="line-space">Cookies: Cookies aid us in recognizing you as a customer and remember your preferences so we can personalize our services. Cookies are required to prevent fraud and ensure the security of websites we control. You are free to decline our Cookies if your browser permits this. However, that may not guarantee you a seamless user experience.</p>
+                    <p class="line-space">Salary Information:So that we can provide you with a customized experience based on your financial appetite.</p>
+                    <p class="line-space">Epifi Chat conversations:Information you give us through Epifi chat so we can help you.</p>
+                    <p class="line-space">Any other information that is required to be collected as per specific mandate from any bank or as a legal requirement in India.</p>
+                <div>
+
+                <div class="line-space" >
+                    <a name="privacy-data-used" class="line-space"><strong>How is your information used? 📁</strong></a>
+                    <p class="line-space">Epifi primarily collects your Personal Data to provide you with a secure, smooth, and efficient experience on our website. Not only does this help us personalize and improve your experience, but the additional information also helps prevent misuse.</p>
+                    <p class="line-space">Wherever possible, Epifi will indicate the data fields as either required or are optional. However, if you are unable to provide the required information we need, we may not be able to provide you with the product or service you have requested.</p>
+                    <p>Provided that we get your consent, we may also use your Personal Data for other lawful purposes which we will tell you about. By way of example, some of the uses of your Personal Data would include -</p>
+                    <p>Providing additional services including customer support.</p>
+                    <p>Generating and maintaining your profile on the Epifi app.</p>
+                    <p>Contacting you through any communication channel, including but not limited to Voice Call, SMS, Email, etc. — in accordance with applicable laws.</p>
+                    <p>Processing transactions and verifying your identity (including during account creation and password reset processes).</p>
+                    <p>Remedying fraud or other potentially prohibited or illegal activities and detecting/preventing violations of policies or applicable user agreements.</p>
+                    <p>Providing you offers and customizing offers for you.</p>
+                    <p>Any data which a user provides via his/her/their email inbox (from mail provider) will be Used only to provide direct features mentioned on the app or website.</p>
+                    <p>Any further use of this data will be done only after taking consent from the user.</p>
+                <div>
+                <div class="line-space">
+                    <a name="privacy-data-shared" class="line-space"><strong>Who do we share your data with? 🔑</strong></a>
+                    <p class="line-space">Your Personal Data is only accessible to those with a legitimate need-to-know clearance. All such information remains safeguarded as per the Data Protection Rules, and applicable International Standard Organisation norms. If you would like to know more details regarding who we share your Personal Data with, please feel free to email us at <a href="mailto:privacy@fi.money">privacy@fi.money.</a></p>
+                    <p>For further insight, we will be sharing your information with the following</p>
+                    <ol type="a" class="list-with-lower-alpha-dot line-space">
+                        <li class="list">
+                            Members of epiFi (including our affiliates/subsidiaries and business partners) for services such as providing content, products, customer support etc.;
+                        </li>
+                        <li class="list">
+                            Credit bureaus (which helps us to support responsible lending and assist consumers in understanding where they stand with their credit) and collection agencies;
+                        </li>
+                        <li class="list">
+                            Where necessary to exercise, establish or defend legal rights, including to enforce our agreements and policies;
+                        </li>
+                        <li class="list">
+                            Financial institutions and partner banks;
+                        </li>
+                        <li class="list">
+                            Law enforcement, government officials, or other third parties pursuant to a subpoena/ summon, court order, or other legal process or requirement applicable to the Company or one of its affiliates/subsidiaries; when we need to do so to comply with law;
+                        </li>
+                    </ol>
+                    <p>We take care to allow your Personal Data to be accessed only by those who really need it in order to perform their tasks and duties and to third parties who have a legitimate purpose for accessing it and with your consent.</p>
+                    <p class="line-space">As a lending service provider (LSP), we may share your information we receive in the capacity of an LSP with below third parties, only to the extent required to discharge our functions as an LSP</p>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Sr.<br>No.</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Entity Name</p>
+                          </td>
+                          <td class="bold" colspan="1" rowspan="1">
+                            <p>Services provided</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>1</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Federal Bank Limited</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Lending Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>2</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>IDFC FIRST Bank Limited Lending Partner</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Lending Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>3</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Aditya Birla Finance Limited (ABFL) Lending Partner</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Lending Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>4</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Moneyview Pvt Limited</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Referral Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>5</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>LiquiLoans (NDX P2P Private Limited) Lending Partner</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Lending Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>6</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Stock Guardians(India) Pvt Ltd</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Lending Partner</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>7</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Moengage India Private Limited</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Communication Services</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>8</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Appsflyer Limited</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Marketing Support</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>9</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Goldstone Technologies Limited (Tableau)</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Analytics</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>10</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Snowflake Inc</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Analytics</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>11</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Amazon Web Services Inc</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Cloud Platform</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>12</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Scienaptic Systems Inc.</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Business Rule Engine</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1">
+                            <p>13</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Credgenics Private Limited</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Collections Services for customers of NDX P2P Pvt. Ltd. and Stock Guardians(India) Pvt Ltd</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" rowspan="1"></td>
+                          <td colspan="1" rowspan="1">
+                            <p>Freshworks Technologies Private Limited (Freshdesk)</p>
+                          </td>
+                          <td colspan="1" rowspan="1">
+                            <p>Customer support</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="line-space">Personal Data will be transferred only to a third party that ensures the same level of data protection that is mandated under the Information Technology Act 2000 (“IT Act”) and the Information Technology (Reasonable security practices and procedures and Sensitive Personal Data or information) Rules, 2011 (“Data Protection Rules”).</p>
+                    <p class="line-space">If we go through a corporate sale, merger, reorganization, dissolution or similar event, Personal Data we gather from you may get transferred in connection with such an event. Any acquirer or successor of the Company may continue to use the information described in this Privacy Policy.</p>
+                <div>
+                <div class="line-space">
+                    <a name="privacy-data-secured" class="line-space"><strong>How do we secure your data? 🔐</strong></a>
+                    <p class="line-space">We are dedicated to guarding the security of your information. We use several industry-standard security technologies and procedures devised to help protect your data from unauthorized access, use, or disclosure. For specifics, please read below –</p>
+                    <p class="line-space">We use all reasonable and appropriate technical and organizational security measures to protect the security of your Personal Data both online and offline including the implementation of access controls, implementation of firewalls, network intrusion detection and use of anti-virus software.</p>
+                    <p class="line-space">Please note that no system is completely secure. So, while we strive to protect your data, we cannot guarantee that unauthorized access, hacking, data loss or a data breach will never occur.</p>
+                </div>
+                <div class="line-space">
+                    <p name="privacy-know-your-rights" class="line-space"><strong>Know your rights 🔗</strong></p>
+                    <p class="line-space">In addition to being able to update and correct your Personal Data, you may also have other data protection rights. This revolves around what you can let us do (or not do) with your information.</p>
+                    <p class="line-space">For example, if we have collected and processed your Personal Data with your consent, then you have the right to withdraw your consent at any time stating your reasons or concerns.</p>
+                    <p class="line-space">You also have a right to ask for a copy of your personal data in a portable (machine-readable) format. You can also say no to us using your personal data for direct marketing and in certain other ‘legitimate interest’ circumstances.</p>
+                    <p class="line-space">As per the existing legal regulations, specific data fields (such as name, address etc.) would be locked once you enter that. There would be a separate procedure to modify such information, you can find out further details by contacting us through the self help tools in the app.</p>
+                    <p class="line-space">Withdrawing your consent will not affect the lawfulness of any processing we carried out before your withdrawal, nor will it affect processing of your personal data carried out in reliance on other lawful grounds other than consent.</p>
+                    <p class="line-space">We will keep your personal data for as long as it is needed to carry out the purposes we've described above, or as otherwise required by law. Generally, this means we will keep your personal data as long as your account is active or as needed to provide our services. If you cancel/ deactivate/ unsubscribe your account with us, we are not under any obligation to retain your information. However, we may retain your information for twenty-four (24) months (post cancellation/ deactivation), as our business practice.</p>
+                    <p class="line-space">you can make any of these requests by contacting us at <a href="mailto:privacy@fi.money">privacy@fi.money</a>. We will respond to all requests in accordance with the applicable laws.</p>
+                </div>
+                <div class="line-space">
+                    <p name="privacy-policy-changes" class="line-space"><strong>Policy upgrades and changes ✍</strong></p>
+                    <p class="line-space">Please note this Privacy Policy may change at any time without prior notification. To make sure that you are aware of any changes, kindly review the policy periodically. The revised version will be effective as of the published effective date. We welcome your comments or questions regarding this Privacy Policy. Please email us at <a href="mailto:privacy@fi.money">privacy@fi.money</a>.</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+  <!-- import mustache.js library -->
+  <script
+    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+  <script>
+
+    const maskedValue = '^';
+    const regex = /[^\s]/g;
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    function maskValue(value) {
+
+      if (typeof value !== 'string') {
+        return value;
+      }
+
+      return value.replace(regex, maskedValue);
+    }
+
+    function maskData(json) {
+      for (var key in json) {
+        const dataType = Object.prototype.toString.call(json[key]);
+        switch (dataType) {
+          case '[object Array]':
+            for (var index = 0; index < json[key].length; index++) {
+              if ((typeof json[key]) == 'object') {
+                maskData(json[key]);
+              } else {
+                json[key][index] = maskValue(json[key][index]);
+              }
+            }
+            break;
+          case '[object Object]':
+            maskData(json[key]);
+            break;
+          case '[object String]':
+            json[key] = maskValue(json[key]);
+            break;
+        }
+      }
+    }
+
+    function addDaysToDate(date, days) {
+      const result = new Date(date);
+      result.setDate(result.getDate() + days);
+
+      const month = monthNames[result.getMonth()];
+      const day = result.getDate();
+      const year = result.getFullYear();
+
+      return day + ' ' + month + ', ' + year;
+    }
+
+    (function () {
+      var jsonData = {
+        "loanId": "LCL03226591",
+        "date": "01 June, 2023",
+        "age": "30 Years",
+        "epiAmount": "12,000",
+        "NACHCharges": "INR 300 + 18% GST",
+        "loanExpiryDate": "01 Aug, 2023",
+        "typeofLoan": "Personal Loan",
+        "typeOfEpi": "epiType",
+        "OriginatingREName": "VALUE MISSING",
+        "PartnerREName": "VALUE MISSING",
+        "REBlendedRateOfInterest": "VALUE MISSING",
+        "RETransferPossible": "Yes",
+        "noOfEpi": "12",
+        "purposeOfLoan": "Personal Use",
+        "name": "Shaik Khaja Pasa",
+        "permenantAddress": "No.V3/3, NGEF Ancillary Industrial Estate, Mahadevapura, Bengaluru, Karnataka 560048",
+        "communicationAddress": "5C, The Address, Muthangari Drive, Westlands, Nairobi.",
+        "address": "C-234, LSJD Colony Decca Road, Bangalore - 560021",
+        "minimumEmiForPrePaymentElibility": "4",
+        "sanctionAmount": "INR 42000",
+        "RECoolingOffPeriod": "3 working days. No  extra  interest/  charges/  penalty  will  be  collected  if  the loan  is  closed  during  the  cooling  off/  free  look-up  period. However,  Processing  fees  (including  18%  GST) collected by Bank during loan disbursal will not be refunded back and  the  same  would  have  to  be  paid  by  the  borrower  for  loan closure.",
+        "REDetailsLSP": "Epifi Technologies Pvt Ltd",
+        "rateOfInterest": "Zero",
+        "typeOfInterest": "Fixed",
+        "aprFee": "1000",
+        "platform": "Fi Money (https://fi.money)",
+        "payableToRE": "VALUE MISSING",
+        "payableToTPE": "VALUE MISSING",
+        "tenure": "24 days",
+        "insuranceCharge": "Zero",
+        "emiStartDate": "05 July, 2023",
+        "emiRepaymentAmount": "INR 20001",
+        "aadharNumber": "1234 5678 9012",
+        "panNumber": "LXSX29346M",
+        "mobile": "8897724011",
+        "dueDate": "23 Sep 2024",
+        "alternateMobile": "9012345678",
+        "scheduleOfDisbursement": "100% upfront",
+        "smaNpaClassificationDate": [],
+        "email": "shaikkhajapasha2022000@gmail.com",
+        "periodicityOfInterestCompounding": "Monthly",
+        "feesAndCharges": [{
+          "sno": "(i)",
+          "title": "Processing Fees",
+          "oneTimeOrRecurring": "One time",
+          "oneTimeOrRecurringAmount": "INR 708 /-",
+          "payableToTPTOneTimeOrRecurring": "One time",
+          "payableToTPTOneTimeOrRecurringAmount": "INR 801 /-"
+        }, {
+          "sno": "(ii)",
+          "title": "Insurance Charges",
+          "oneTimeOrRecurring": "Nil 1",
+          "oneTimeOrRecurringAmount": "INR 709 /-",
+          "payableToTPTOneTimeOrRecurring": "One time 2",
+          "payableToTPTOneTimeOrRecurringAmount": "INR 802 /-"
+        }, {
+          "sno": "(iii)",
+          "title": "Valuation fees",
+          "oneTimeOrRecurring": "Nil 2",
+          "oneTimeOrRecurringAmount": "INR 710 /-",
+          "payableToTPTOneTimeOrRecurring": "One time 2",
+          "payableToTPTOneTimeOrRecurringAmount": "INR 803 /-"
+        }, {
+          "sno": "(iv)",
+          "title": "Broken Period Interest",
+          "oneTimeOrRecurring": "Nil 3",
+          "oneTimeOrRecurringAmount": "INR 711 /-",
+          "payableToTPTOneTimeOrRecurring": "One time 2",
+          "payableToTPTOneTimeOrRecurringAmount": "INR 804 /-"
+        }, {
+          "sno": "(v)",
+          "title": "NACH bounce charges",
+          "oneTimeOrRecurring": "Nil 4",
+          "oneTimeOrRecurringAmount": "INR 712 /-",
+          "payableToTPTOneTimeOrRecurring": "One time 2",
+          "payableToTPTOneTimeOrRecurringAmount": "INR 805 /-"
+        }],
+        "lenderDetails": {
+          "website": "https://www.stockguardians.in/",
+          "registeredAddress": "102/C, Mittal Tower, 210, Nariman Point, Mumbai, MH 400021 IN.",
+          "corporateAddress": "102/C, Mittal Tower, 210, Nariman Point, Mumbai, MH 400021 IN."
+        },
+        "officeAddress": "NA",
+        "bankDetails": {
+          "accountNumber": "55550110850623",
+          "accountHolderName": "SHAIK KHAJA PASHA",
+
+          "bankName": "FEDERAL BANK",
+          "bankBranch": "EPIFI FEDERAL NEO BANKING",
+          "ifscCode": "FDRL0005555"
+        },
+        "dateOfAgreement": "01 June, 2023",
+        "penalChargesPerDay": "0.1% of overdue amount, per day",
+        "otherPenalCharges": "₹300, mandate bounce charges",
+        "termsOfCreditLineFacility": {
+          "typeOfInterest": "Floating",
+          "purposeOfFacility": "Personal",
+          "loanAmount": "42000",
+          "loanAmountInWords": "Forty Two Thousand Rupees only",
+          "totalInterest": "0",
+          "processingFee": "234.5",
+          "periodInMonths": "2",
+          "netDisbursedAmount": "40000",
+          "totalAmountPaidByBorrower": "42010",
+          "APR": "12%",
+          "numberOfInstallments": "1",
+          "amountEachInstallment": "42100",
+          "coolingOffPeriod": "3 days",
+          "brokenPeriodInterest": "2000"
+        },
+        "grievanceOfficer": {
+          "name": "Mr. Saurabh S",
+          "email": "grievanceofficer@ficare.com",
+          "contact": "399939933993"
+        },
+        "repaymentSchedule": [{
+          "installmentNo": "1",
+          "outstandingPrincipal": "50,000",
+          "principal": "2000",
+          "interest": "200",
+          "installment": "2200"
+        },
+        {
+          "installmentNo": "2",
+          "outstandingPrincipal": "48 ,000",
+          "principal": "2020",
+          "interest": "180",
+          "installment": "2201"
+        }],
+        "penalChargesTable": [{
+          "sno": "1",
+          "defaultCategory": "SMA 0 (Principal Or interest payment overdue For not more than 30 days)",
+          "penalCharges": "0.1% per day on overdue amount from due date + GST",
+          "additionalPenalCharges": "Nil 1"
+        }, {
+          "sno": "2",
+          "defaultCategory": "SMA 1 (Installment or interest payment overdue Between 31-60 days)",
+          "penalCharges": "0.2% per day on overdue amount from due date + GST",
+          "additionalPenalCharges": "Nil 2"
+        }, {
+          "sno": "3",
+          "defaultCategory": "SMA 2 (Instalment or interest overdue above 60 days, Till classification as NPA)",
+          "penalCharges": "0.3% per day on overdue amount from due date + GST",
+          "additionalPenalCharges": "Nil 3"
+        }, {
+          "sno": "4",
+          "defaultCategory": "NPA (Installment or interest overdue above 90 days)",
+          "penalCharges": "0.4% per day on overdue amount from due date + GST",
+          "additionalPenalCharges": "Nil 4",
+        }],
+      };
+
+      jsonData.smaNpaClassificationDate = [
+        {
+          defaultCategory: "SMA 0 (Principal or interest payment overdue for not more than 30 days)",
+          dateClassification: addDaysToDate(jsonData.emiStartDate, 0)
+        },
+        {
+          defaultCategory: "SMA 1 (Installment or interest payment overdue Between 31-60 days)",
+          dateClassification: addDaysToDate(jsonData.emiStartDate, 30)
+        },
+        {
+          defaultCategory: "SMA 2 (Instalment or interest overdue above 60 days, Till classification as NPA ) ",
+          dateClassification: addDaysToDate(jsonData.emiStartDate, 60)
+        },
+        {
+          defaultCategory: "NPA(Installment or interest overdue above 90 days)",
+          dateClassification: addDaysToDate(jsonData.emiStartDate, 90)
+        },
+      ]
+
+      // maskData(jsonData);
+
+      var data = JSON.stringify(jsonData);
+
+      var json = JSON.parse(data);
+
+
+
+      // get static html content
+      var primaryContentTemplate = document.getElementById("first-page-template").innerHTML;
+      var termsContentTemplate = document.getElementById("personal-loan-agreement-page-template").innerHTML;
+      var schedule1Template = document.getElementById("schedule-1-template").innerHTML;
+      var privacyPolicyTemplate = document.getElementById("privacy-policy-of-lsp").innerHTML;
+
+      // insert dynamic data in html
+      var renderPrimaryContent = Mustache.render(primaryContentTemplate, { data: json });
+      var renderSecondaryContent = Mustache.render(termsContentTemplate, { data: json });
+      var renderTertiaryContent = Mustache.render(schedule1Template, { data: json });
+      var renderFifthContent = Mustache.render(privacyPolicyTemplate, { data: json });
+
+      var rendered = renderPrimaryContent + renderSecondaryContent + renderTertiaryContent + renderFifthContent;
+
+      // inject final content in html
+      document.getElementById("target").innerHTML = rendered;
+    })();
+
+  </script>
+</body>
+
+</html>

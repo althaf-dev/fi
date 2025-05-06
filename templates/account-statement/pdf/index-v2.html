@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epifi - Credit Card Statement</title>
+    <!-- <link rel="stylesheet" href="./stylesheets/index_v5.css"> -->
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css"
+        rel="preload" />
+    <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/index_v5.css"
+        rel="preload" />
+    <style type="text/css">
+        .issuer-detail.mt-80 {
+            margin-top: 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mr-15 {
+            margin-right: 15px;
+        }
+        .block {
+            display: block;
+        }
+        .hcr-r2 .cr {
+            margin-top: 8px;
+        }
+        .frccwrapper {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .frcc-items {
+            align-self: center;
+            justify-self: center;
+        }
+        .fi-logo {
+            margin-bottom: 5px;
+        }
+        .hrc-r1_v2 {
+            padding: 23px 40px 22px 52px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+    <div id="extra-page"></div>
+    <!-- <div id="debug-page"></div> -->
+
+    <!-- Primary Header Template -->
+    <script id="primary-header-template" type="x-tmpl-mustache">
+            <div class="hcr" id="user-info">
+                <div class="hcr-r1">
+                    <img
+                        class="logo"
+                        src={{{ CreditCardProgramLogo }}}
+                        alt="card-logo"
+                    />
+                    <div class="wr1">
+                        <span class="text-center">
+                            <div class="h1 block">Credit Card Statement</div>
+                            <div class="block">
+                                <span class="l3--v1">{{ FromDate.day }}</span>
+                                <span class="l3--v1">{{ FromDate.month }}</span>
+                                <span class="l3--v1">{{ FromDate.year }}</span>
+                                <span class="l3--v1">&nbsp;to&nbsp;</span>
+                                <span class="l3--v1">{{ ToDate.day }}</span>
+                                <span class="l3--v1">{{ ToDate.month }}</span>
+                                <span class="l3--v1">{{ ToDate.year }}</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="wr2 frccwrapper">
+                        <img
+                            class="fi-logo frcc-items mr-15"
+                            src={{{ FiBrandLogo }}}
+                            alt="epifi"
+                        />
+                        <img
+                            class="logo frcc-items"
+                            src={{{ PartnerBankLogo }}}
+                            alt="federal bank"
+                        />
+                    </div>
+                </div>
+                <div class="hcr-r2">
+                    <div class="h1">{{ UserDetails.Name }}</div>
+                    <div class="cr">
+                        <div class='mr-20 address-section'>
+                            <span class="h2">ADDRESS</span>
+                            <div class="l3--v1 lb line-clamp-3 he-50">{{ UserDetails.Address }}</div>
+                        </div>
+                        <div class='mr-20'>
+                            <span class="h2">PHONE NO</span>
+                            <div class="l3--v1 lb">{{ UserDetails.PhoneNumber }}</div>
+                        </div>
+                        <div class='mr-20'>
+                            <span class="h2">EMAIL</span>
+                            <div class="l3--v1 lb">{{ UserDetails.Email }}</div>
+                        </div>
+                        <div class='credit-card-number-block'>
+                            <div class="h2">CREDIT CARD NO</div>
+                            <div class="l4--v1 lb">{{ UserDetails.MaskedCreditCardNumber }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+    <!-- Secondary Header Template -->
+    <script id="secondary-header-template" type="x-tmpl-mustache">
+        <div class="hcr-r1 hrc-r1_v2">
+            <img
+                class="logo"
+                src={{{ CreditCardProgramLogo }}}
+                alt="card-logo"
+            />
+            <div class="wr1">
+                <span class="text-center">
+                    <div class="h1 block">Credit Card Statement</div>
+                    <div class="block">
+                        <span class="l3--v1">{{ FromDate.day }}</span>
+                        <span class="l3--v1">{{ FromDate.month }}</span>
+                        <span class="l3--v1">{{ FromDate.year }}</span>
+                        <span class="l3--v1">&nbsp;to&nbsp;</span>
+                        <span class="l3--v1">{{ ToDate.day }}</span>
+                        <span class="l3--v1">{{ ToDate.month }}</span>
+                        <span class="l3--v1">{{ ToDate.year }}</span>
+                    </div>
+                </span>
+            </div>
+            <div class="wr2 frccwrapper">
+                <img
+                    class="fi-logo frcc-items mr-15"
+                    src={{{ FiBrandLogo }}}
+                    alt="epifi"
+                />
+                <img
+                    class="logo frcc-items"
+                    src={{{ PartnerBankLogo }}}
+                    alt="federal bank"
+                />
+            </div>
+        </div>
+    </script>
+
+    <!-- Footer Template -->
+    <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr1">
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">5AM - 6PM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">6PM - 5AM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/debit.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Debit</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/credit.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Credit</div>
+                    </div>
+                    <div class="wr l6--v3">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/automated.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Automated</div>
+                    </div>
+                </div>
+                <div class="cr cr2" {{#lastPage}}style="max-height:38px"{{/lastPage}}>
+                    <div class="wr1">
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="l6--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="l6--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+    <!-- Content Template -->
+    <script id="content-template" type="x-tmpl-mustache">
+            <div>
+                <div class="{{ Class }}">
+                    {{#HasTxnSummaryData}}
+                    <div class='ju-sb'>
+                        <div class='wd-36_per'>
+                            <div class='mb-30'>
+                                <div class='summary-block bg--light-grey'>
+                                    <div class='card mb-20'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/statement-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>STATEMENT DATE</span>
+                                            <br />
+                                            <span class='h1--v3'>{{ TxnSummaryData.StatementDate }}</span>
+                                        </div>
+                                    </div>
+                                    <div class='card mb-20'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/payment-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>PAYMENT DUE DATE</span>
+                                            <br />
+                                            <span class='h1--v3'>{{ TxnSummaryData.PaymentDueDate }}</span>
+                                        </div>
+                                    </div>
+                                    <div class='card'>
+                                        <div class='mr-20'>
+                                            <img src='https://epifi-icons.s3.ap-south-1.amazonaws.com/assets/svgs/rupees-sign.svg' alt='statement' />
+                                        </div>
+                                        <div>
+                                            <span class='h2--v3'>AVAILABLE LIMIT</span>
+                                            <br />
+                                            <span class='h1--v3'>₹{{ TxnSummaryData.AvailableLimit.Amount.units }}.{{TxnSummaryData.AvailableLimit.Amount.decimals}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#hasRewardsSummaryData}}
+                            <div class='mb-24'>
+                                <div class='rewards-block bg--light-grey'>
+                                    <div class='h1--v1 ta-center rewards-block-title'>{{ RewardsSummaryData.title }}</div>
+                                    <div class='top-merchants-section mt-20 mb-20'>
+                                        {{#RewardsSummaryData.merchantWiseRewardInfo}}
+                                        <div class='fl ju-sb'>
+                                            <div class='fl al-ce'>
+                                                <div class='mr-8'>
+                                                    <img src={{ merchantIconUrl }} alt='rewards logo' class='rewards-logo' />
+                                                </div>
+                                                <div class='wd-80' >
+                                                    <span class='h2--v5'>{{ title }}</span>
+                                                </div>
+                                            </div>
+                                            <div class='fl al-ce'>
+                                                <img
+                                                    class="logo mr-4"
+                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                                    alt="fi coins"
+                                                />
+                                                <div class="h2--v2">{{ totalRewardCoinsEarned.units }}</div>
+                                            </div>
+                                        </div>
+                                        {{/RewardsSummaryData.merchantWiseRewardInfo}}
+                                    </div>
+                                    <div class='l6 ta-center'>{{ RewardsSummaryData.bottomText }}</div>
+                                </div>
+                            </div>
+                            {{/hasRewardsSummaryData}}
+                            <div>
+                                <div class='fi-coins-block bg--light-grey'>
+                                    <div class='ta-center h2--v3'>{{ RewardsSummaryData.rewardCoinsSummary.Title }}</div>
+                                    <div class='ju-ce al-ce mb-10 mt-6'>
+                                        <img
+                                            class="logo mr-4"
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                            alt="fi coins"
+                                        />
+                                        <div class="h2--v2">{{ RewardsSummaryData.rewardCoinsSummary.TotalRewardCoinsEarned.units }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#showProTipInReward}}
+                            <div class='pro-tip-v2 bg--light-grey'>
+                                <div>
+                                    <span class='h2--v4'>{{ TipsAndInformationData.Title }}:</span>
+                                    {{#TipsAndInformationData.InformationText}}
+                                    <span class='l6 pro-tip-subtitle'>
+                                        {{Title}}
+                                            {{#TextWithLinkAndValues}}
+                                             <a class='link' href={{Link}} > {{Title}} </a>
+                                        {{/TextWithLinkAndValues}}
+                                    </span>
+                                    <br />
+                                    <br />
+                                    {{/TipsAndInformationData.InformationText}}
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            {{/showProTipInReward}}
+                        </div>
+                        <div class='wd-62_per mb-40'>
+                            <div class="txnsmrywr">
+                                <div class='fl amount-block'>
+                                    <div class='cards mr-20'>
+                                        <div class="l6--v6">
+                                            TOTAL AMOUNT DUE
+                                            <br/>
+                                        </div>
+                                        <div class="h1--v4">₹{{ TxnSummaryData.TotalAmountDue.Amount.units }}.{{ TxnSummaryData.TotalAmountDue.Amount.decimals }}</div>
+                                    </div>
+                                    <div class='cards'>
+                                        <div class="l6--v6">
+                                            MINIMUM AMOUNT DUE
+                                            <br/>
+                                        </div>
+                                        <div class="h1--v4">₹{{ TxnSummaryData.MinAmountDue.Amount.units }}.{{ TxnSummaryData.MinAmountDue.Amount.decimals }}</div>
+                                    </div>
+                                </div>
+                                <div class="l6--v6 mb-20">
+                                    Minimum amount due is 5% of purchases + 100% of active EMIs and all card related charges including any over limit spend. Interest will be applied if your total amount due is not paid.
+                                </div>
+                                <div class='bor-grey'></div>
+                                <div class='mt-20'>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Opening Balance</div>
+                                            <div class="l6">on {{ FromDate.day }} {{ FromDate.monthShortStr }} {{ FromDate.year }}</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.OpeningBalance.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.OpeningBalance.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Spends</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.Spends.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.Spends.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Fees, Taxes and Others</div>
+                                            <div class="l6">Including taxes on fees & charges at 18%</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.Fees.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.Fees.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce mb-20'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Repayments & Refunds</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.RepaymentsAndRefunds.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.RepaymentsAndRefunds.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                    <div class='ju-sb al-ce'>
+                                        <div class='wd-200' >
+                                            <div class="h1--v3">Spend converted to EMI</div>
+                                        </div>
+                                        <div class="wr">
+                                            <div class="h2--v2">₹</div>
+                                            <div class="h2--v2">{{ TxnSummaryData.SpendsConvertedToEmi.Amount.units }}</div>
+                                            <div class="h2--v2">.{{ TxnSummaryData.SpendsConvertedToEmi.Amount.decimals }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{#hasRewardsSummaryData}}
+                            <div class='fl al-ce bg--light-grey pro-tip-box'>
+                                <div class='mr-20'>
+                                    <img src={{ TipsAndInformationData.IconUrl }} alt='suggestion' width='24px' height='24px' />
+                                </div>
+                                <div class='wd-90_per'>
+                                    <span class='h2--v4'>{{ TipsAndInformationData.Title }}:</span>
+                                    {{#TipsAndInformationData.InformationText}}
+                                    <span class='l6 pro-tip-subtitle'>
+                                        {{Title}}
+                                            {{#TextWithLinkAndValues}}
+                                             <a class='link' href={{Link}} > {{Title}} </a>
+                                        {{/TextWithLinkAndValues}}
+                                    </span>
+                                    <br />
+                                    <br />
+                                    {{/TipsAndInformationData.InformationText}}
+                                </div>
+                            </div>
+                            {{/hasRewardsSummaryData}}
+                        </div>
+                    </div>
+                    {{/HasTxnSummaryData}}
+                    {{#HasTxns}}
+                    <div id="transaction-Details" class='mb-40' >
+                        <div class="hwr">
+                            <div class="wr1">
+                                <div class="h1--v1">Date</div>
+                                <div class="l6">Day/Night</div>
+                            </div>
+                            <div class="wr2">
+                                <div class="h1--v1">Transaction Details</div>
+                                <div class="l6">Place • Payment Method • Cateogry</div>
+                            </div>
+                            <div class="wr3">
+                                <div class="h1--v1">Fi-Coins</div>
+                            </div>
+                            <div class="wr4">
+                                <div class="h1--v1">Amount</div>
+                            </div>
+                        </div>
+                        {{#RenderRewardsData}}
+                        {{#ExtraRewardsInfo}}
+                        <div class="txnwr">
+                            <div class="cl">
+                                <div class="wr1">
+                                </div>
+                                <div class="wr2">
+                                    <img
+                                        class="rewardlogo mr-4 va-middle"
+                                        src={{ RewardTypeLogo }}
+                                        alt="fi coins"
+                                    />
+                                    <span class="h2--v2 va-middle">{{ Text }}</span>
+                                </div>
+                                <div class="wr3">
+                                    <img
+                                        class="logo mr-4"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                        alt="fi coins"
+                                    />
+                                    <div class="h2--v2">{{ RewardCoinsEarned.units }}</div>
+                                </div>
+                                <div class="wr4">
+                                </div>
+                            </div>
+                        </div>
+                        {{/ExtraRewardsInfo}}
+                        {{/RenderRewardsData}}
+                        {{#firstPagefooter}}
+                          <div class='nxt-page l6--v5' >View all your transactions on the next page</div>
+                        {{/firstPagefooter}}
+                        <div>
+                            {{#TxnData}}
+                                {{^hasPageLengthOne}}
+                                <div class="cwr">
+                                    <div class="wr1 l4">
+                                        {{name}}
+                                    </div>
+                                    <div class="wr2"></div>
+                                </div>
+                                {{/hasPageLengthOne}}
+                                {{^hasPageLengthOne}}
+                                <div class="txnwr">
+                                    {{#data}}
+                                        <div class="cl">
+                                            <div class="wr1">
+                                                {{#IsDayIcon}}
+                                                    <img
+                                                        class="logo"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/day.svg"
+                                                        alt="day"
+                                                    />
+                                                {{/IsDayIcon}}
+                                                {{#IsNightIcon}}
+                                                    <img
+                                                        class="logo"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/night.svg"
+                                                        alt="night"
+                                                    />
+                                                {{/IsNightIcon}}
+                                            </div>
+                                            <div class="vertical-bar"></div>
+                                            <div class="wr2">
+                                                <div class="h1--v3">{{ MerchantName }}</div>
+                                                <div class="l6--v5 desc">
+                                                    {{ TxnDescription }}
+                                                </div>
+                                            </div>
+                                            <div class="wr3">
+                                                {{ #hasRewardCoins }}
+                                                    <img
+                                                        class="logo mr-4"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/fi-coins.svg"
+                                                        alt="fi coins"
+                                                    />
+                                                    <div class="h2--v2">{{ RewardCoins.units }}</div>
+                                                {{ /hasRewardCoins }}
+
+                                                {{ ^hasRewardCoins }}
+                                                    <div class="h2--v2 ml-4"> - </div>
+                                                {{ /hasRewardCoins }}
+                                            </div>
+
+                                            <div class="wr4">
+                                                <div class="wr">
+                                                    <div class="h2--v2">₹{{ Amount.units }}</div>
+                                                    <div class="h2--v2">.{{ Amount.decimals }}</div>
+                                                </div>
+                                                {{#IsDebit}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/debit.svg"
+                                                        alt="db"
+                                                    />
+                                                {{/IsDebit}}
+                                                {{#IsCredit}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/credit.svg"
+                                                        alt="cr"
+                                                    />
+                                                {{/IsCredit}}
+                                                {{#IsAutomated}}
+                                                    <img
+                                                        class="arrow-icon"
+                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/automated.svg"
+                                                        alt="automated"
+                                                    />
+                                                {{/IsAutomated}}
+                                            </div>
+                                        </div>
+                                    {{/data}}
+                                </div>
+                                {{/hasPageLengthOne}}
+                            {{/TxnData}}
+                        </div>
+                    </div>
+                    {{/HasTxns}}
+                    {{^HasTxns}}
+                        {{ #showNoTxnUi }}
+                            <div class="notxnwr">
+                                <div class="wr1">
+                                    <span class="h1--v3">It looks like you have not made</span>
+                                    <br />
+                                    <span class="h1--v3">any transactions on Fi between</span>
+                                    <br />
+                                    <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                                </div>
+                                <img
+                                    class="logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                                    alt="no-txns"
+                                />
+                            </div>
+                        {{ /showNoTxnUi }}
+                    {{/HasTxns}}
+                    {{#pageLength}}
+                        {{#hasEmiSummary}}
+                        <div class=''>
+                            <div class='title'>EMI Summary</div>
+                            <div class='emi-summary'>
+                                <div class='emi-due bg--light-grey p-20'>
+                                    <div class='h2--v6'>DUE THIS MONTH</div>
+                                    <div class='h1--v1 mt-6' >₹{{ EmiSummary.DueAmount.nanos }}</div>
+                                    <div class='h2--v6 mt-24'>ACTIVE EMIs</div>
+                                    <div class='h1--v1 mt-6' >{{ EmiSummary.NoOfActiveEmi }}</div>
+                                </div>
+                                <div class='emi-detail bg--light-grey p-20'>
+                                    <table class='table' >
+                                        <tr class='table-head' >
+                                            <th class='h2--v6 mt-20 mb-20'>NAME</th>
+                                            <th class='h2--v6 mt-20 mb-20'>INSTALLMENTS</th>
+                                            <th class='h2--v6 mt-20'>MONTHLY INSTALLMENTS</th>
+                                        </tr>
+                                        {{#EmiSummary.EmiDetails}}
+                                        <tr class="mb-40">
+                                            <td class='h1--v1 pt-15'>{{MerchantName}}</td>
+                                            <td class='h1--v1 pt-15'>{{ InstallmentNumber }} of {{TotalInstallment}}</td>
+                                            <td class='h1--v1 pt-15'>₹{{ Amount.nanos }}</td>
+                                        </tr>
+                                        {{/EmiSummary.EmiDetails}}
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        {{/hasEmiSummary}}
+                    {{/pageLength}}
+                </div>
+            </div>
+        </script>
+    <script id="last-page-template" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                {{#hasFeeBreakDownComponents}}
+                <div class='bor-grey mb-20' ></div>
+                <div class='mb-40'>
+                    <div class='title'>{{FeeBreakDown.Title }}</div>
+                        <div class='bg--light-grey fees-section'>
+                            <div>
+                                {{#FeeBreakDown.FeeBreakDownComponents}}
+                                <div class='fl al-ce ju-sb'>
+                                    <div class='h1--v3'>{{ FeeType }}</div>
+                                    <div class='fl al-ce'>
+                                        {{#isFeeAmountTypePlus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/plus.svg"
+                                            alt="plus minus icon"
+                                            class="plus-minus-icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypePlus}}
+                                        {{#isFeeAmountTypeMinus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/minus.svg"
+                                            alt="plus minus icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypeMinus}}
+                                        <div class='h1--v3'>₹{{ Amount.units }}</div>
+                                    </div>
+                                </div>
+                                {{/FeeBreakDown.FeeBreakDownComponents}}
+                            </div>
+                    </div>
+                </div>
+                <div class='bor-grey mb-20' ></div>
+                {{/hasFeeBreakDownComponents}}
+                <div class='mt-20'>
+                    <div><span class='recommended-block h2--v7'>{{ ContactUsDetails.Title }}</span></div>
+                    <div class='l6--v7 mt-10'>In case your credit card is lost or stolen, freeze or block your card immediately from the <a class='link' href='https://apps.fi.money/home' > Fi app</a> or contact Fi's customer care.</div>
+                    <br>
+                    {{#CustomerCareDetails}}
+                    <div class='mb-24'>
+                        <div><span class='l6--v7'>{{ Title }}</span></div>
+                        {{#TextWithLinkAndValues}}
+                        <div class='l6--v7'>{{Title}}: <a class='link' href="{{Type}}:{{Link}}">{{Value}}</a></div>
+                        {{/TextWithLinkAndValues}}
+                    </div>
+                    {{/CustomerCareDetails}}
+                </div>
+                {{#ContactUsDetails.IssuerDetails}}
+                {{#ContactUsDetails}}
+                    {{{TncSection}}}
+                {{/ContactUsDetails}}
+                <div class='bg--light-grey issuer-detail mt-80' >
+                    <div> <span class='h2--v3 issue-heading'>{{Title}}</span></div>
+                     <div class='issuer-adress' >
+                        <div class='left-issuer-adress l2--v1'>
+                            {{#LeftTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/LeftTextWithLinkAndValues}}
+                        </div>
+                        <div class='right-issuer-adress l2--v1'>
+                            {{#RightTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/RightTextWithLinkAndValues}}
+                        </div>
+                    </div>
+                </div>
+                {{/ContactUsDetails.IssuerDetails}}
+            </div>
+        </script>
+    <script id="last-page-template-overflow-one" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                {{#hasFeeBreakDownComponents}}
+                <div class='bor-grey mb-20' ></div>
+                <div class='mb-40'>
+                    <div class='title'>{{FeeBreakDown.Title }}</div>
+                        <div class='bg--light-grey fees-section'>
+                            <div>
+                                {{#FeeBreakDown.FeeBreakDownComponents}}
+                                <div class='fl al-ce ju-sb'>
+                                    <div class='h1--v3'>{{ FeeType }}</div>
+                                    <div class='fl al-ce'>
+                                        {{#isFeeAmountTypePlus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/plus.svg"
+                                            alt="plus minus icon"
+                                            class="plus-minus-icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypePlus}}
+                                        {{#isFeeAmountTypeMinus}}
+                                        <img
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/minus.svg"
+                                            alt="plus minus icon"
+                                            width="20px"
+                                            height="20px"
+                                        />
+                                        {{/isFeeAmountTypeMinus}}
+                                        <div class='h1--v3'>₹{{ Amount.units }}</div>
+                                    </div>
+                                </div>
+                                {{/FeeBreakDown.FeeBreakDownComponents}}
+                            </div>
+                    </div>
+                </div>
+            </div>
+            {{/hasFeeBreakDownComponents}}
+        </script>
+    <script id="last-page-template-overflow-two" type="x-tmpl-mustache">
+            <div class='ccr--v3' >
+                <div class='bor-grey mb-20' ></div>
+                <div class='mt-20'>
+                    <div><span class='recommended-block h2--v7'>{{ ContactUsDetails.Title }}</span></div>
+                    <div class='l6--v7 mt-10'>In case your credit card is lost or stolen, freeze or block your card immediately from the <a class='link' href='https://apps.fi.money/home' >Fi app</a> or contact Fi's customer care.</div>
+                    <br>
+                    {{#CustomerCareDetails}}
+                    <div class='mb-24'>
+                        <div><span class='l6--v7'>{{ Title }}</span></div>
+                        {{#TextWithLinkAndValues}}
+                        <div class='l6--v7'>{{Title}}: <a class='link' href="{{Type}}:{{Link}}">{{Value}}</a></div>
+                        {{/TextWithLinkAndValues}}
+                    </div>
+                    {{/CustomerCareDetails}}
+                </div>
+                {{#ContactUsDetails.IssuerDetails}}
+                {{#ContactUsDetails}}
+                    <div class='l3' >{{PostalAddress}}</div>
+                    <br>
+                    <div class='l3' >To know more, read Federal Bank's  <a class='link' href='https://fi.money/credit-card/important-T&Cs' >Most Important Terms & Conditions</a> ,<a href='https://fi.money/credit-card/key-fact-statement' class='link' > Key Fact Statement <a> and <a class='link' href='https://fi.money/credit-card/T&Cs' > Terms & Conditions </a>.</div>
+                {{/ContactUsDetails}}
+                <div class='bg--light-grey issuer-detail mt-80' >
+                    <div> <span class='h2--v3 issue-heading'>{{Title}}</span></div>
+                     <div class='issuer-adress' >
+                        <div class='left-issuer-adress l2--v1'>
+                            {{#LeftTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/LeftTextWithLinkAndValues}}
+                        </div>
+                        <div class='right-issuer-adress l2--v1'>
+                            {{#RightTextWithLinkAndValues}}
+                                <div>{{Title}} {{Value}}</div>
+                            {{/RightTextWithLinkAndValues}}
+                        </div>
+                    </div>
+                </div>
+                {{/ContactUsDetails.IssuerDetails}}
+            </div>
+        </script>
+    <script id="debug-page-template" type="x-tmpl-mustache">
+            {{#messages}}
+                <div>{{value}}</div>
+            {{/messages}}
+        </script>
+
+    <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/index-v1.js"></script>
+</body>
+
+</html>

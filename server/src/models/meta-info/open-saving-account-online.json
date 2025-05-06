@@ -1,0 +1,41 @@
+{
+    "metaTitle": "Open a Savings Account Online In India In 5 Minutes - Fi",
+    "metaDescription": "Open a savings account online in just 5 minutes with Fi. It's a zero-balance savings account that helps you get better with your money.",
+    "canonicalUrl": "/open-savings-account-online",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "open savings account online",
+                "item": "https://fi.money/open-savings-account-online"
+            }
+        ]
+    },
+    "productSchema": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "open savings account online",
+        "image": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "description": "Open a savings account online in just 5 minutes with Fi. It's a zero-balance savings account that helps you get better with your money.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Fi.Money"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "4000"
+        }
+    }
+}

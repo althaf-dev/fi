@@ -1,0 +1,760 @@
+{
+    "elements" : {
+        "banner_section": {
+            "type": "Section",
+            "variant": "BANNER__DARK_GREY",
+            "children": [
+                "a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+            ]
+        },
+        "a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+            "type": "Row",
+            "variant": "ImageTextDescription_3",
+            "children": [
+                "6e01bfa7-a456-4146-8278-732cb7321d76",
+                "6e01bfa7-a456-4146-8278-732cb7321d7a"
+            ]
+        },
+        "6e01bfa7-a456-4146-8278-732cb7321d76": {
+            "type": "Row",
+            "variant": "display__TitleAndDescription",
+            "children": [
+                "f7013ba4-dca2-4dec-a5be-1be2843405de",
+                "a3b897a8-d75e-43f8-b04d-ddd08c6b0601"
+    
+            ]
+        },
+        "f7013ba4-dca2-4dec-a5be-1be2843405de": {
+            "content" : "Invest in US Stocks",
+            "type"    : "h1",
+            "variant": "H1_WHITE_2"
+        },
+        "a3b897a8-d75e-43f8-b04d-ddd08c6b0601": {
+            "type": "Column",
+            "variant": "US_STOCK_BANNER_COLUMN",
+            "children": [
+                "logo_section",
+                "logo_section_1",
+                "logo_section_2",
+                "logo_section_3",
+                "logo_section_4"
+            ]
+        },
+        "logo_section": {
+            "type": "Row",
+            "variant": "US_STOCK_PAGE_BANNER_ROW",
+            "children": [
+                
+                "s2fae071-c430-452e-8abb-df1e4a9da24e",
+                "s921e138-fceb-4f7e-b5de-9539caad317f"
+            ]
+        },
+        "s2fae071-c430-452e-8abb-df1e4a9da24e": {
+            "content": "POWERED BY",
+            "type": "Text",
+            "variant": "pNormalVariant-GREY_6"
+        },
+        "s921e138-fceb-4f7e-b5de-9539caad317f": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/alpaca-logo.webp",
+            "variant": "IMAGE_INLINE_LOGO"
+        },
+        "logo_section_1": {
+            "type": "Row",
+            "variant": "US_STOCK_PAGE_BANNER_ROW",
+            "children": [    
+                "s921e138-fceb-4f7e-b5de-9539caad317ff",
+                "s2fae071-c430-452e-8abb-df1e4a9da24ef"
+            ]
+        },
+        "s2fae071-c430-452e-8abb-df1e4a9da24ef": {
+            "content": "Start with just ₹1,000",
+            "type": "Text",
+            "variant": "pNormalVariant-WHITE"
+        },
+        "s921e138-fceb-4f7e-b5de-9539caad317ff": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/dollar-icon.png",
+            "variant": "US_STOCK_ICON"
+        },
+        "logo_section_2": {
+            "type": "Row",
+            "variant": "US_STOCK_PAGE_BANNER_ROW",
+            "children": [ 
+                "s921e138-fceb-4f7e-b5de-9539caad317fr",
+                "s2fae071-c430-452e-8abb-df1e4a9da24er"
+            ]
+        },
+        "s2fae071-c430-452e-8abb-df1e4a9da24er": {
+            "content": "Best-in-class forex rates",
+            "type": "Text",
+            "variant": "pNormalVariant-WHITE"
+        },
+        "s921e138-fceb-4f7e-b5de-9539caad317fr": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/forex-icon.png",
+            "variant": "US_STOCK_ICON"
+        },
+        "logo_section_3": {
+            "type": "Row",
+            "variant": "US_STOCK_PAGE_BANNER_ROW",
+            "children": [
+                "s921e138-fceb-4f7e-b5de-9539caad317fg",
+                "s2fae071-c430-452e-8abb-df1e4a9da24eg"
+            ]
+        },
+        "s2fae071-c430-452e-8abb-df1e4a9da24eg": {
+            "content": "Zero brokerage, zero withdrawal fees*",
+            "type": "Text",
+            "variant": "pNormalVariant-WHITE"
+        },
+        "s921e138-fceb-4f7e-b5de-9539caad317fg": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/zero-brokerage-icon.png",
+            "variant": "US_STOCK_ICON"
+        },
+        "logo_section_4": {
+            "type": "Row",
+            "variant": "US_STOCK_PAGE_BANNER_ROW",
+            "children": [ 
+                "s921e138-fceb-4f7e-b5de-9539caad317ft",
+                "s2fae071-c430-452e-8abb-df1e4a9da24et"
+            ]
+        },
+        "s2fae071-c430-452e-8abb-df1e4a9da24et": {
+            "content": "Invest in 3,000+ stocks and ETFs",
+            "type": "Text",
+            "variant": "pNormalVariant-WHITE"
+        },
+        "s921e138-fceb-4f7e-b5de-9539caad317ft": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/popular-stocks-icon.png",
+            "variant": "US_STOCK_ICON"
+        },
+        "6e01bfa7-a456-4146-8278-732cb7321d7a": {
+            "type": "Row",
+            "variant": "",
+            "children": [
+                "c693569e-95a3-11ee-b9d1-0242ac120000",
+				"c693569e-95a3-11ee-b9d1-0242ac1200001"
+            ]
+        },
+        "c693569e-95a3-11ee-b9d1-0242ac120000": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/us-stock-poster-image-mobile.png",
+            "variant": "US_STOCK_BANNER_IMAGE"
+        },
+		"c693569e-95a3-11ee-b9d1-0242ac1200001": {
+            "type": "Image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/us-stock-poster-image.png",
+            "variant": "US_STOCK_BANNER_IMAGE_DESKTOP"
+        },
+        "aeba9406-95a3-11ee-b9d1-0242ac120002": {
+            "type": "Section",
+            "variant": "DISPLAY__TEXT_ALIGN_CENTER",
+            "children": [
+                "f7013ba4-dca2-4dec-a5be-1be2843405de"
+            ]
+        },
+        "c6935324-95a3-11ee-b9d1-0242ac120002": {
+            "type": "Section",
+            "variant": "DISPLAY__TEXT_ALIGN_CENTER",
+            "children": [
+                "92fae071-c430-452e-8abb-df1e4a9da241"
+            ]
+        },
+        "c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+            "type": "Row",
+            "variant": "display__TEXT_ALIGN_CENTER",
+            "children": [
+                "6e01bfa7-a456-4146-8278-732cb7321d76"
+            ]
+        },
+        "9921e138-fceb-4f7e-b5de-9539caad317e": {
+            "type": "Row",
+            "variant": "ImageTextDescription",
+            "children": [
+                "d924ec31-7319-4f07-9d63-77d842b29bf7",
+                "cb869a56-ee83-43a6-ac1e-77defbe1f8b5"
+            ]
+        },
+        "d924ec31-7319-4f07-9d63-77d842b29bf7": {
+            "type": "Column",
+            "variant": "display__TitleAndDescription",
+            "children": [
+                "c69363fa-95a3-11ee-b9d1-0242ac120002"
+            ]
+        },
+        "c69363fa-95a3-11ee-b9d1-0242ac120002": {
+            "content": "Big stocks. Small prices.\nStart with just ₹1000",
+            "type" : "Text",
+            "variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+        },
+        "cb869a56-ee83-43a6-ac1e-77defbe1f8b5": {
+            "type": "Column",
+            "variant": "display__TitleAndDescriptionImage",
+            "children": [
+                "8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79"
+            ]
+        },
+        "8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/uss-price-card-v1.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/curated-mutual-fund.png",
+            "type": "Image",
+            "variant": "CoverImage"
+        },
+
+        "fbcfd512-c946-4803-9935-4e7661917a36": {
+            "type": "Row",
+            "variant": "display__BlogPosts",
+            "children": [
+                "23af9e43-aee5-4628-9269-331223b62d14"
+            ]
+        },
+        "23af9e43-aee5-4628-9269-331223b62d14": {
+            "type": "Column",
+            "variant": "display__BlogPosts",
+            "children": [
+                "88a64b00-4071-4f13-8d69-1322bdf6cfcd",
+                "d0b63d07-bcd4-48e5-bf44-cc432e4414f3",
+                "58bce010-2a1b-4074-b944-f1c1eace71f5"
+            ]
+        },
+        "88a64b00-4071-4f13-8d69-1322bdf6cfcd": {
+            "type": "BlogCard",
+            "variant": "",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/blog-post_one.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_one.png",
+            "tag": "INVESTMENTS",
+            "title": "How to invest in US stocks from India?",
+            "read_length": "7 min read",
+            "blog_url": "https://fi.money/guides/money-matters/indian-stock-market-outlook-for-2024"
+        },
+        "d0b63d07-bcd4-48e5-bf44-cc432e4414f3": {
+            "type": "BlogCard",
+            "variant": "",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/blog-post_two.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_two.png",
+            "tag": "INVESTMENTS",
+            "title": "How to Invest in US Stocks with Zero Commission?",
+            "read_length": "3 min read",
+            "blog_url": "https://fi.money/blog/posts/stocks-vs-mutual-funds-whats-the-difference"
+        },
+        "58bce010-2a1b-4074-b944-f1c1eace71f5": {
+            "type": "BlogCard",
+            "variant": "",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/blog-post_three.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/blog-post_three.png",
+            "tag": "INVESTMENTS",
+            "title": "Watch out for these 10 best US Stocks in 2023",
+            "read_length": "5 min read",
+            "blog_url": "https://fi.money/guides/money-matters/indian-stock-market-outlook-for-2024"
+        },        
+        "feature_cards_section": {
+            "type": "Section",
+            "variant": "FEATURE_PAGE_CARDS_2",
+            "children": [
+                "why_invest_through_fi",
+                "feature_cards_section_row"
+            ]
+        },
+        "feature_cards_section_row": {
+            "type": "Row",
+            "variant": "FEATURE_PAGE_CARDS",
+            "children": [
+                "feature_cards_inner_card_wrapper",
+                "feature_cards_inner_card_wrapper1",
+                "feature_cards_inner_card_wrapper2",
+                "feature_cards_inner_card_wrapper3",
+                "feature_cards_inner_card_wrapper4",
+                "feature_cards_inner_card_wrapper5",
+                "feature_cards_inner_card_wrapper6",
+                "feature_cards_inner_card_wrapper7"
+            ]
+        },
+        "feature_cards_inner_card_wrapper": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image",
+                "feature_cards_innerwrapper_card_text"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text": {
+            "content": "Zero brokerage fees",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url"  : "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.png"
+        },
+        "feature_cards_inner_card_wrapper1": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image1",
+                "feature_cards_innerwrapper_card_text1"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text1": {
+            "content": "Zero withdrawal fees",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image1": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/pre-clousre-fees.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.png"
+        },
+        "feature_cards_inner_card_wrapper2": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image2",
+                "feature_cards_innerwrapper_card_text2"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text2": {
+            "content": "Free US Stocks account",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image2": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/bank.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/flexible-sip.png"
+        },
+        "feature_cards_inner_card_wrapper3": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image3",
+                "feature_cards_innerwrapper_card_text3"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text3": {
+            "content": "Start with as little as ₹1,000",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image3": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/saving-account-investment-icon.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/eye.png"
+        },
+        "feature_cards_inner_card_wrapper4": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image4",
+                "feature_cards_innerwrapper_card_text4"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text4": {
+            "content": "Zero platform fees",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image4": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/zero.svg",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.png"
+        },
+
+        "feature_cards_inner_card_wrapper5": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image5",
+                "feature_cards_innerwrapper_card_text5"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text5": {
+            "content": "Zero wire-transfer fees",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image5": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/fractional-shares-icon.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.png"
+        },
+        "feature_cards_inner_card_wrapper6": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image6",
+                "feature_cards_innerwrapper_card_text6"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text6": {
+            "content": "Unbeatable forex rates",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image6": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/forex-charges.png",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.png"
+        },"feature_cards_inner_card_wrapper7": {
+            "type": "Column",
+            "variant": "FEATURE_CARDS_ITEM_WRAPPER",
+            "children": [
+                "feature_cards_innerwrapper_card_image7",
+                "feature_cards_innerwrapper_card_text7"
+            ]
+        },
+        "feature_cards_innerwrapper_card_text7": {
+            "content": "Zero TCS up to ₹7L",
+            "type": "Text",
+            "variant": "feature_cards_innerwrapper_card_text"
+        },
+        "feature_cards_innerwrapper_card_image7": {
+            "type" : "Image",
+            "variant": "feature_cards_innerwrapper_card_image",
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/tcs.png",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.png"
+        },
+
+        "feature_page_button_primary_row_2": {
+            "type": "Row",
+            "variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+            "children": [
+                "feature_page_button_primary_button_2"
+            ]
+        },
+        "feature_page_button_primary_button_2": {
+            "type": "Button",
+            "variant": "FEATURE_PAGE_BUTTON_PRIMARY_5",
+            "content": "INVEST IN US STOCKS NOW",
+            "url": "oneLinkCommonUrl",
+            "isDynamic": true
+        },
+        "why_invest_through_fi": {
+            "type": "Text",
+            "variant": "FEATURE_PAGE_TEXT_TYPE_1",
+            "content": "Why invest on Fi?"
+        },
+        "text-have-more-question-section": {
+            "type": "Column",
+            "variant": "DISPLAY__TEXT_ALIGN_CENTER",
+            "children": [
+                "have_more_questions",
+                "text-link-check-out-our-faq"
+            ]
+        },
+        "have_more_questions": {
+            "type": "Text",
+            "variant": "FEATURE_PAGE_TEXT_TYPE_1",
+            "content": "Your money is secure"
+        },
+        "text-link-check-out-our-faq": {
+            "type": "Text",
+            "variant": "FEATURE_PAGE_TEXT_TYPE_2",
+            "content": "Fi Money works with Alpaca Securities LLC, a FINRA-registered broker based in the US that buys and holds stocks on your behalf."
+        },
+        "image_text_section": {
+            "type": "Section",
+            "variant": "ColumnFlexDirection",
+            "children": [
+                "9921e138-fceb-4f7e-b5de-9539caad317e"
+            ]
+        },
+        "related_blog_posts": {
+            "type": "Section",
+            "variant": "display_BlogPosts",
+            "children": [
+                "221ffac3-412c-4cbd-ba59-25c8f537a66b",
+                "fbcfd512-c946-4803-9935-4e7661917a36"
+            ]
+        },
+        "221ffac3-412c-4cbd-ba59-25c8f537a66b":{
+            "type": "Text",
+            "variant": "FEATURE_PAGE_TEXT_TYPE_1",
+            "content": "Doing your own research can be</br>fun too! Start here👇"
+        },
+        "FAQ": {
+            "type": "Column",
+            "variant": "OTHER_PRODUCT_SECTION",
+            "children": [
+                "aeba91e0-95a3-11ee-b9d1-0242ac1200021",
+                "aeba91e0-95a3-11ee-b9d1-0242ac1200022"
+            ]
+        },
+        "aeba91e0-95a3-11ee-b9d1-0242ac1200021" : {
+            "content" : "Why invest in the</br>US Market?",
+            "type" : "Text",
+            "variant": "FEATURE_PAGE_FAQ_TEXT"
+        },
+        "aeba91e0-95a3-11ee-b9d1-0242ac1200022" : {
+            "faqs":[ {
+                 "question": "<div style = 'color: #3a3a3a;'>Portfolio diversification 🍱</div>",
+                 "answer": "<p style = 'color: grey;'>Your portfolio shouldn’t be restricted by borders.</p>",
+                 "id": "1"
+              },
+              {
+                "question": "<div style = 'color: #3a3a3a;'>Your wealth grows as USD appreciates 🪙</div>",
+                "answer": "<p style = 'color: grey;'>Buy and sell stocks in the US market.</p>",
+                "id": "2"
+               },
+               {
+                "question": "<div style = 'color: #3a3a3a;'>Invest in the world's top companies  ✨</div>",
+                "answer": "<p style = 'color: grey;'>Grow your wealth on the back of some of the world's best-performing companies.</p>",
+                "id": "3"
+               },
+               {
+                "question": "<div style = 'color: #3a3a3a'>Large cap stocks 📈</div>",
+                "answer": "<p style = 'color: grey;'>Invest in stocks with a market capitalisation upwards of trillions of dollars.</p>",
+                "id": "4"
+               }
+               ],
+              "type": "FAQs"
+            },
+            "UsstockWebCollectionCarousel" : {
+                  "type": "UsstockWebCollectionCarousel"
+            },
+            "UssCollectionUI" : {
+                    "type": "UssCollectionUI"
+             },
+            "7921e138-fceb-4f7e-b5de-9539caad317e": {
+                "type": "Row",
+                "variant": "ImageTextDescription",
+                "children": [
+                    "d924ec31-7319-4f07-9d63-77d842b29bf1",
+                    "cb869a56-ee81-43a6-ac1e-77defbe1f8b5"
+                ]
+            },
+            "d924ec31-7319-4f07-9d63-77d842b29bf1": {
+                "type": "Column",
+                "variant": "display__TitleAndDescription",
+                "children": [
+                    "s69363fa-95a3-11ee-b9d1-0242ac120002",
+                    "personal_loan_footer"
+                ]
+            },
+            "s69363fa-95a3-11ee-b9d1-0242ac120002": {
+                "content": "Fi partners with the best to securely grow<br/>your money",
+                "type" : "Text",
+                "variant": "H4VARIANTFOUR-BLACK"
+            },
+            "personal_loan_footer":{
+                "type": "Row",
+                "variant": "",
+                "children": [
+                    "ga921e138-fceb-4f7e-b5de-9539caad317e"
+                ]
+            },
+            "ga921e138-fceb-4f7e-b5de-9539caad317e": {
+                "type": "Row",
+                "variant": "FEATURE_PAGE_LOGOS_FOOTER",
+                "children": [   
+                    "g921e138-fceb-4f7e-b5de-9539caad317f"
+                ]
+            },
+            "g921e138-fceb-4f7e-b5de-9539caad317f": {
+                "type": "Image",
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/alpaca-logo.png",
+                "variant": "IMAGE_INLINE_LOGO_US_STOCK_2"
+            },  
+            "cb869a56-ee81-43a6-ac1e-77defbe1f8b5": {
+                "type": "Column",
+                "variant": "display__TitleAndDescriptionImage",
+                "children": [
+                    "7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f",
+                    "7ca01f9f-3fb5-4ca0-bae2-bd3945e70b791"
+                ]
+            },
+            "7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f": {
+                "content": "Fi money is not a broker dealer, nor an investment advisor. Trading in US Stocks shall be facilitated through Stock Broker<br/>Alpaca LLC, 8-69928.",
+                "type" : "Text",
+                "variant": "pNormalVariant-GREY_7"
+            },
+            "7ca01f9f-3fb5-4ca0-bae2-bd3945e70b791": {
+                "content": "No information published on the website is intended to be investment advice, portfolio management or as any form of research analysis, directly or indirectly. The users of the website shall be solely responsible for any action taken by them pursuant to the information contained herein, including any investment decision with respect to transaction in securities.",
+                "type" : "Text",
+                "variant": "pNormalVariant-GREY_7"
+            },
+            "start-buying-in-four-minutes-section":{
+                "type": "Section",
+                "variant": "FEATURE_PAGE_CARDS_2",
+                "children": [
+                    "ga921e138-fceb-4f7e-b5de-9539caad317ef",
+                    "la921e138-fceb-4f7e-b5de-9539caad317e"
+                ]
+            },
+            "ga921e138-fceb-4f7e-b5de-9539caad317ef": {
+                "content": "Start buying in 4 minutes",
+                "type": "Text",
+                "variant": "FEATURE_PAGE_TEXT_TYPE_1"
+            },
+            "la921e138-fceb-4f7e-b5de-9539caad317e": {
+                "type": "Row",
+                "variant": "FEATURE_PAGE_LOGOS_NUMBERED",
+                "children": [
+                    "section_1",
+                    "section_2",
+                    "section_3"
+                ]
+            }, 
+            "section_1": {
+                "type": "Row",
+                "variant": "US_STOCK_PAGE_BANNER_ROW",
+                "children": [    
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffq",
+                    "section_row"
+                ]
+            },
+            "section_row": {
+                "type": "Column",
+                "variant": "US_STOCK_BANNER_COLUMN_2",
+                "children": [          
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffqt",
+                    "s2fae071-c430-452e-8abb-df1e4a9da24efq"
+                ]
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffqt": {
+                
+                "type": "Image",
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/3minutes.png",
+                "variant": "US_STOCK_ICON_2"
+            },
+            "s2fae071-c430-452e-8abb-df1e4a9da24efq": {
+                "content": "Sign up on Fi<br/>in 3 minutes",
+                "type": "Text",
+                "variant": "feature_cards_innerwrapper_card_text"
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffq": {
+                "content": "1",
+                "type": "Text",
+                "variant": "US_STOCK_TEXT"
+            },
+            
+            "a9854b0b-a66d-414c-abb0-638b8c16c202": {
+                "type": "Row",
+                "variant": "COLLECTION_ROW",
+                "children": [
+                    "a9854b0b-a66d-414c-abb0-638b8c16c202D",
+                    "a9854b0b-a66d-414c-abb0-638b8c16c20Df"
+                ]
+            },
+            "a9854b0b-a66d-414c-abb0-638b8c16c202D": {
+                "type": "Button",
+                "variant": "FEATURE_PAGE_BUTTON_PRIMARY_4",
+                "content": "Explore all collections here",
+                "url": "/us-stocks/collections"
+            },
+            "a9854b0b-a66d-414c-abb0-638b8c16c20Df": {
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg",
+                "fallback_url": "",
+                "type": "Image",
+                "variant": "ARROW"
+            },
+            "section_2": {
+                "type": "Row",
+                "variant": "US_STOCK_PAGE_NUMBERED_ROW",
+                "children": [ 
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffq1",
+                    "section_row_1"
+                ]
+            },
+            "section_row_1": {
+                "type": "Column",
+                "variant": "feature_numbered_card",
+                "children": [
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffqt1",
+                    "s2fae071-c430-452e-8abb-df1e4a9da24efq1"
+                ]
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffqt1": {
+                
+                "type": "Image",
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/timer-six.svg",
+                "variant": "US_STOCK_ICON_2"
+            },
+            "s2fae071-c430-452e-8abb-df1e4a9da24efq1": {
+                "content": "Set‒up your US Stock</br> account in 1 minute",
+                "type": "Text",
+                "variant": "feature_cards_innerwrapper_card_text"
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffq1": {
+                "content": "2",
+                "type": "Text",
+                "variant": "NUMBERED_TEXT"
+            },
+            "section_3": {
+                "type": "Row",
+                "variant": "US_STOCK_PAGE_BANNER_ROW",
+                "children": [
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffq3",
+                    "section_row_3"
+                ]
+            },
+            "section_row_3": {
+                "type": "Column",
+                "variant": "US_STOCK_BANNER_COLUMN_2",
+                "children": [ 
+                    "s921e138-fceb-4f7e-b5de-9539caad317ffqt3",
+                    "s2fae071-c430-452e-8abb-df1e4a9da24efq3"
+                ]
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffqt3": {
+                
+                "type": "Image",
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/10seconds.png",
+                "variant": "US_STOCK_ICON_2"
+            },
+            "s2fae071-c430-452e-8abb-df1e4a9da24efq3": {
+                "content": "Buy stocks in<br/>10 seconds",
+                "type": "Text",
+                "variant": "feature_cards_innerwrapper_card_text"
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317ffq3": {
+                "content": "3",
+                "type": "Text",
+                "variant": "US_STOCK_TEXT"
+            },
+            "logo_section_us_stocks": {
+                "type": "Row",
+                "variant": "US_STOCK_PAGE_BANNER_ROW_2",
+                "children": [
+                    "s921e138-fceb-4f7e-b5de-9539caad317fff"
+                ]
+            },
+            "s921e138-fceb-4f7e-b5de-9539caad317fff": {
+                "type": "Image",
+                "url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/us-stocks/powered-by-alpaca.webp",
+                "variant": "IMAGE_INLINE_LOGO_US_STOCK"
+            },
+        "feature_page_body_container": {
+            "type": "Section",
+            "variant": "FEATURE_PAGE_BODY_CONTAINER",
+            "children": [
+                "UsstockWebCollectionCarousel",
+                "feature_cards_section",
+                "feature_page_button_primary_row_2", 
+                "start-buying-in-four-minutes-section",  
+                "image_text_section",
+                "UssCollectionUI", 
+                "a9854b0b-a66d-414c-abb0-638b8c16c202",
+                "text-have-more-question-section",
+                "logo_section_us_stocks",
+                "FAQ",
+                "related_blog_posts",
+                "7921e138-fceb-4f7e-b5de-9539caad317e"
+            ]
+        }
+    },
+    "sections": [
+        "banner_section",
+        "feature_page_body_container"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "agreementTimestamp": {
+        "date": "31 May 2022",
+        "time": "12:12:12"
+    },
+    "deviceDetails": {
+        "deviceId": "7719bcf6-d769-11ec-9d64-0242ac120002",
+        "appVersion": "107",
+        "model": "SM-G985F",
+        "os": "31"
+    },
+    "bankDetails":{
+        "accountNumber": "********7767",
+        "accountName": "John Doe",
+        "bankName": "Federal Bank",
+        "bankBranch": "Online",
+        "ifscCode": "FDRL0001001"
+    },
+    "personalDetails": {
+        "name": "John Doe",
+        "mobileNo": "xxxxxx7800",
+        "emailId": "john.doe@example.com",
+        "dob": "01-01-2001",
+        "pan": "PPPPP0001P"
+    }
+}

@@ -1,0 +1,942 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"logo_section",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Open a Secure Digital<br/>Savings Account",
+			"type"    : "Text",
+			"variant": "H1_WHITE"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "Fi Money is a Digital Financial Service Provider, which partners with Federal Bank (a regulated entity), offering you secure and tech-savvy digital banking services to manage your monthly expenses.",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+
+		"logo_section": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_3",
+			"children": [
+				
+				"s2fae071-c430-452e-8abb-df1e4a9da24e",
+				"s921e138-fceb-4f7e-b5de-9539caad317f"
+			]
+		},
+		"s2fae071-c430-452e-8abb-df1e4a9da24e": {
+			"content": "IN PARTNERSHIP WITH",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_5"
+		},
+		"s921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-digital-savings-poster.png",
+			"variant": "Digital_Savings_Account_cards_image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c6935324-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"92fae071-c430-452e-8abb-df1e4a9da241"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"e6f90080-767f-4c5a-a8fe-299aae84f978": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"a924ec31-7319-4f07-9d63-77d842b29bf7",
+				"ab869a56-ee83-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"a924ec31-7319-4f07-9d63-77d842b29bf7": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"a69363fa-95a3-11ee-b9d1-0242ac120002",
+				"ac2e925a-6acd-4cca-9a51-bf6213912487",
+				"a9854b0b-a66d-414c-abb0-638b8c16c202"
+			]
+		},
+		"a69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "Get the AmpliFi</br>Fi-Federal Credit Card",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"ac2e925a-6acd-4cca-9a51-bf6213912487": {
+			"content": "Earn 3% returns on spends on Top 20+ brands. Enjoy 0 Forex fees & free lounge access. Get welcome vouchers worth ₹4,250 & more rewards on other milestones. <b>Joining fee: ₹2000 +GST</b>",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c202g": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_6",
+			"children": [
+				"a9854b0b-a66d-414c-abb0-638b8c16c202Dg",
+				"a9854b0b-a66d-414c-abb0-638b8c16c20Dfg"
+			]
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c202Dg": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_1",
+			"content": "APPLY NOW",
+			"url": "oneLinkCommonUrl",
+			"event": "ApplyNowSimplifi_CTAClick_SecureDigitalSA",
+			"isDynamic": true
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c20Dfg": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "ARROW"
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c202": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_6",
+			"children": [
+				"a9854b0b-a66d-414c-abb0-638b8c16c202D",
+				"a9854b0b-a66d-414c-abb0-638b8c16c20Df"
+			]
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c202D": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_1",
+			"content": "APPLY NOW",
+			"event": "ApplyNowAmplifi_CTAClick_SecureDigitalSA",
+			"url": "/credit-cards/amplifi/eligibility"
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c20Df": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "ARROW"
+		},
+		"ab869a56-ee83-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"aca01f9f-3fb5-4ca0-bae2-bd3945e70b79"
+			]
+		},
+		"aca01f9f-3fb5-4ca0-bae2-bd3945e70b79": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-amplifi-credit-card.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"e6f90080-767f-4c5b-a8fe-299aae84f978": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"d031cf4b-51cd-4743-83a5-498aa851664d",
+				"120ca5d1-12ed-4160-b2b4-28f6a6a4b1d1"
+			]
+		},
+		"120ca5d1-12ed-4160-b2b4-28f6a6a4b1d1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"6c6e626c-2064-4cd7-9c59-029ec37d7238",
+				"a9854b0b-a66d-414c-abb0-638b8c16c202g"
+			]
+		},
+		"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "Get the SimpliFi</br>Fi-Federal Credit Card",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"6c6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "Get 3x rewards on all weekend spends with this <b>lifetime free Credit Card.</b> Open a Fixed Deposit & get your card in minutes.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		
+		"d031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-simplifi-credit-card.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"c4dee63d-05af-461e-80ad-3648a4272dbc": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7",	
+				"disclaimer_text_savings"
+
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561": {
+			"content": "Earn 2% cashback* on your UPI spends",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7": {
+			"content": "Earn up to ₹500 cashback every month. Also, you get Fi-Coins on all spends. Redeem them for exclusive merchandise, offers, and gift vouchers.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"disclaimer_text_savings": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V2",
+			"content": "*T&C Apply. Valid on select Fi Plans."
+		},
+		"disclaimer_text_savings_1": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V2",
+			"content": "*T&C Apply. Logos are only for illustration purposes."
+		},
+		"disclaimer_text_savings_2": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V2",
+			"content": "Issued by Federal Bank in partnership with Fi Brand Pvt. Ltd."
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/upi-logo-large.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"e6f90080-767f-4c5c-a8fe-299aae84f978": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"b569062d-6d1c-4a4e-997b-21d7c8c11a1a",
+				"1b869f6f-3c93-455c-b6e3-76d0a8de84d5"
+			]
+		},
+		"1b869f6f-3c93-455c-b6e3-76d0a8de84d5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"6136b0f9-a498-457f-af47-66809b203c46",
+				"4e1d6c67-3bf3-4063-a9cc-cbe1c5bc25ed"
+			]
+		},
+		"6136b0f9-a498-457f-af47-66809b203c46": {
+			"content": "Grow your money with the right investments",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"logo_section_footer": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS",
+			"children": [
+				
+				"f2fae071-c430-452e-8abb-df1e4a9da24e",
+				"f921e138-fceb-4f7e-b5de-9539caad317f"
+			]
+		},
+		"f2fae071-c430-452e-8abb-df1e4a9da24e": {
+			"content": "IN PARTNERSHIP WITH",
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V3"
+		},
+		"f921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+		"4e1d6c67-3bf3-4063-a9cc-cbe1c5bc25ed": {
+			"content": "Start a Fixed Deposit & earn returns up to 7.5% p.a.  You can also start your US Stocks journey with just ₹1,000. Or try to explore Mutual Funds with 0-penalty SIPs. Fi partners with regulated entities to offer these diverse investment options.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"b569062d-6d1c-4a4e-997b-21d7c8c11a1a": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"23c8c3bc-89ad-4e2c-aacc-35c4e09aceb2"
+			]
+		},
+		"23c8c3bc-89ad-4e2c-aacc-35c4e09aceb2": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-grow-money.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d11": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"1031cf4b-51cd-4743-83a5-498aa851664d",
+				"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1a"
+			]
+		},
+		"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1a": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"1045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"1c6e626c-2064-4cd7-9c59-029ec37d7238",
+				"d924ec31-7319-4f07-9d63-77d842b29bf7kf"
+			]
+		},
+		"1045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "In need of money?",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"1c6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "Get an instant personal loan of up to ₹5,00,000 in just 5 minutes with an interest rate starting at 1% per month. Plus, enjoy the benefit of zero pre-closure fees.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7kf": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_6",
+			"children": [
+				"c9854b0b-a66d-414c-abb0-638b8c16c202f",
+				"a9854b0b-a66d-414c-abb0-638b8c16c20Dkf"
+			]
+		},
+		"c9854b0b-a66d-414c-abb0-638b8c16c202f": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_1",
+			"content": "DOWNLOAD THE FI APP",
+			"url": "oneLinkCommonUrlPL",
+			"event": "DownloadFiLoan_CTAClick_SecureDigitalSA",
+			"isDynamic": true
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c20Dkf": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "ARROW"
+		},
+		
+		"1031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"1efa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"1efa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-personal-loan.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"9921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf7",
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac120002",
+				"logo_section_2",
+				"ec2e925a-6acd-4cca-9a51-bf6213912487",
+				"d924ec31-7319-4f07-9d63-77d842b29bf7k"
+			]
+		},
+		"logo_section_2": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_4",
+			"children": [				
+				"sf2fae071-c430-452e-8abb-df1e4a9da24e",
+				"sf921e138-fceb-4f7e-b5de-9539caad317f"
+			]
+		},
+		"sf2fae071-c430-452e-8abb-df1e4a9da24e": {
+			"content": "IN PARTNERSHIP WITH",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_5"
+		},
+		"sf921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "Open a Zero Balance Savings Account<br/>through Fi",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf6213912487": {
+			"content": "It's 100% digital and takes less than 5 minutes. All you need is your PAN and Aadhaar linked to your phone number. Fi's security checks ensure the safety of your data. Any working professional aged 21 & above can access Fi.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7k": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_6",
+			"children": [
+				"c9854b0b-a66d-414c-abb0-638b8c16c202",
+				"a9854b0b-a66d-414c-abb0-638b8c16c20Dk"
+			]
+		},
+		"c9854b0b-a66d-414c-abb0-638b8c16c202": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_1",
+			"content": "DOWNLOAD THE FI APP",
+			"event": "Download Fi - Page CTA - SecureDigitalSA",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"a9854b0b-a66d-414c-abb0-638b8c16c20Dk": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/top-right-arrow-green.svg",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "ARROW"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-zero-balance.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"3b0cdb59-fae6-4971-8a38-ce35cc1e6048": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"a031cf4b-51cd-4743-83a5-498aa851664d",
+				"a20ca5d9-12ed-4160-b2b4-28f6a6a4b1d1"
+			]
+		},
+		"a20ca5d9-12ed-4160-b2b4-28f6a6a4b1d1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"a045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"ac6e626c-2064-4cd7-9c59-029ec37d7238",
+				"disclaimer_text_forex"
+			]
+		},
+		"a045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "Get a Zero Forex* International<br/>Debit Card",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"ac6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "With the Fi-Federal Debit Card, enjoy 0 Forex markup on international spends on select plans. Get rewards on domestic spends as well.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},	
+		"disclaimer_text_forex": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V2",
+			"content": "*Valid on select Fi Plans."
+		},	
+		"a031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"aefa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"aefa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/savings-int-debit-card.png",
+			"fallback_url": "",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"221ffac3-412c-4cbd-ba59-25c8f537a66b": {
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"2044708b-2487-4940-9182-fa0eba6523bf"
+			]
+		},
+		"2044708b-2487-4940-9182-fa0eba6523bf": {
+			"type": "Column",
+			"variant": "",
+			"children": [
+				"a5813ab0-d630-4fb8-be1a-601dff4ef315"
+			]
+		},
+		"a5813ab0-d630-4fb8-be1a-601dff4ef315": {
+			"content": "Blog Posts",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"fbcfd512-c946-4803-9935-4e7661917a36": {
+			"type": "Row",
+			"variant": "display__BlogPosts",
+			"children": [
+				"23af9e43-aee5-4628-9269-331223b62d14"
+			]
+		},				
+		"feature_cards_section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_CARDS",
+			"children": [
+				"why_invest_through_fi",
+				"feature_cards_section_row",
+				"disclaimer_text_saving"
+			]
+		},
+		"feature_cards_section_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS",
+			"children": [
+				"feature_cards_inner_card_wrapper",
+				"feature_cards_inner_card_wrapper1",
+				"feature_cards_inner_card_wrapper2",
+				"feature_cards_inner_card_wrapper3",
+				"feature_cards_inner_card_wrapper4",
+				"feature_cards_inner_card_wrapper5"
+			]
+		},
+		"feature_cards_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image",
+				"feature_cards_innerwrapper_card_text"
+			]
+		},
+		"feature_cards_innerwrapper_card_text": {
+			"content": "Zero-balance\nSavings Account",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/zero-commission.png"
+		},
+		"feature_cards_inner_card_wrapper1": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image1",
+				"feature_cards_innerwrapper_card_text1"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1": {
+			"content": "100% digital\n& secure",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image1": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.png"
+		},
+		"feature_cards_inner_card_wrapper2": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2": {
+			"content": "2% cashback* on\nUPI spends",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image2": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/digital-savings-account/upi-logo.png",
+            "fallback_url": ""
+		},
+		"feature_cards_inner_card_wrapper3": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image3",
+				"feature_cards_innerwrapper_card_text3"
+			]
+		},
+		"feature_cards_innerwrapper_card_text3": {
+			"content": "0 Forex* International\nDebit Card",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image3": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/webp/debit-card-spends.webp",
+            "fallback_url": ""
+		},
+		"feature_cards_inner_card_wrapper4": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image4",
+				"feature_cards_innerwrapper_card_text4"
+			]
+		},
+		"feature_cards_innerwrapper_card_text4": {
+			"content": "Instant\nPersonal Loan**",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image4": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.png"
+		},
+
+		"feature_cards_inner_card_wrapper5": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image5",
+				"feature_cards_innerwrapper_card_text5"
+			]
+		},
+		"feature_cards_innerwrapper_card_text5": {
+			"content": "0 penalty\ndaily SIPs**",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image5": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/pre-clousre-fees.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/pre-approved-loans/pre-clousre-fees.png"
+		},
+		"7921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf1",
+				"cb869a56-ee81-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"s69363fa-95a3-11ee-b9d1-0242ac120002",
+				"personal_loan_footer"
+			]
+		},
+		"s69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "Fi partners with the best to secure your money",
+			"type" : "Text",
+			"variant": "H4VARIANTFOUR-BLACK"
+		},
+		"personal_loan_footer":{
+			"type": "Row",
+			"variant": "",
+			"children": [
+				"ga921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_FOOTER",
+			"children": [	
+				"g921e138-fceb-4f7e-b5de-9539caad317f",
+				"ga921e138-fceb-4f7e-b5de-9539caad317m",
+				"ga921e138-fceb-4f7e-b5de-9539caad317k",
+				"ga921e138-fceb-4f7e-b5de-9539caad31gk",
+				"ga921e138-fceb-4f7e-b5de-9539caad317kf",
+				"ga921e138-fceb-4f7e-b5de-9539caad31gkf"
+			]
+		},
+		"g921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317m": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317k": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},"ga921e138-fceb-4f7e-b5de-9539caad31gk": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},
+		"ga921e138-fceb-4f7e-b5de-9539caad317kf": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"variant": "IMAGE_INLINE_LOGO_1"
+		},"ga921e138-fceb-4f7e-b5de-9539caad31gkf": {
+			"type": "Text",
+			"content": "ISO 27001:2013",
+			"variant": "footer_logo_text"
+		},		
+		"cb869a56-ee81-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f",
+				"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b791",
+				"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b793"
+			]
+		},
+		"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b79f": {
+			"content": "Our partner bank hosts your Savings Account and follows all security standards per applicable regulations.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_7"
+		},
+		"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b791": {
+			"content": "Your money is always safe with our banking partner - Federal Bank, is covered under the Deposit Insurance and Credit Guarantee Corporation Scheme. This insures your money up to ₹5 lakh.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_7"
+		},
+		"7ca01f9f-3fb5-4ca0-bae2-bd3945e70b793": {
+			"content": "Fi itself is not a bank and doesn’t hold or claim to have a banking license.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_7"
+		},
+
+		"disclaimer_text_saving": {
+			"type": "Text",
+			"variant": "DESCLAIMER_TEXT_V3",
+			"content": "*T&C Apply. Valid on select Fi Plans<br/>**In partnership with regulated entities"
+		},
+
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"content": "Download Fi",
+			"url": "oneLinkCommonUrl",
+			"event": "Download Fi - Page CTA - SecureDigitalSA",
+			"isDynamic": true
+		},
+		"feature_page_button_primary_row_V2": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button_V2"
+			]
+		},
+		"feature_page_button_primary_button_V2": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"content": "INVEST ON FI NOW",
+			"event": "InvestonFi_Page CTA_SecureDigitalSA",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"why_invest_through_fi": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Why Fi?"
+		},
+		"personal_loan_section":{
+			"type": "Row",
+			"variant": "ImageTextDescription_1",
+			"children": [
+				"l921e138-fceb-4f7e-b5de-9539caad317e",
+				"la921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		},
+		"l921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Get Instant Personal Loans in minutes"
+		},"la921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS",
+			"children": [	
+				"92fae071-c430-452e-8abb-df1e4a9da24e",
+				"l921e138-fceb-4f7e-b5de-9539caad317f",
+				"la921e138-fceb-4f7e-b5de-9539caad317m",
+				"la921e138-fceb-4f7e-b5de-9539caad317k"
+			]
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da24e": {
+			"content": "POWERED BY",
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_5"
+		},
+		"l921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+		"la921e138-fceb-4f7e-b5de-9539caad317m": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/liqui-loans-logo.png",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+		"la921e138-fceb-4f7e-b5de-9539caad317k": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/idfc.svg",
+			"variant": "IMAGE_INLINE_LOGO_3"
+		},
+		
+		"personal_loan_section_1":{
+			"type": "Row",
+			"variant": "ImageTextDescription_1",
+			"children": [
+				"m921e138-fceb-4f7e-b5de-9539caad317e",
+				"ma921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		},
+		"m921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Grab the most rewarding<br/>Credit Cards"
+		},"ma921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_LOGOS_5",
+			"children": [
+				"m921e138-fceb-4f7e-b5de-9539caad317f",	
+				"ma921e138-fceb-4f7e-b5de-9539caad317m"
+			]
+		},
+		"m921e138-fceb-4f7e-b5de-9539caad317f": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal-bank-logo.webp",
+			"variant": "IMAGE_INLINE_LOGO"
+		},
+		"ma921e138-fceb-4f7e-b5de-9539caad317m": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"variant": "IMAGE_INLINE_LOGO_2"
+		},	
+		"image_text_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317e",
+				"3b0cdb59-fae6-4971-8a38-ce35cc1e6048",
+				"c4dee63d-05af-461e-80ad-3648a4272dbc",
+				"e6f90080-767f-4c5c-a8fe-299aae84f978",
+				"feature_page_button_primary_row_V2",
+				"personal_loan_section_1",
+				"disclaimer_text_savings_2",
+				"e6f90080-767f-4c5a-a8fe-299aae84f978",
+				"disclaimer_text_savings_1",
+				"e6f90080-767f-4c5b-a8fe-299aae84f978",
+				"personal_loan_section",
+				"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d11"
+			]
+		},
+		"about_fi":{
+			"type": "Section",
+			"variant": "card_section",
+			"children": [
+				"heading_about_fi",
+				"about_fi_description"				
+			]
+		},
+		"heading_about_fi": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "About Fi"
+		},
+		"about_fi_description": {
+			"type": "Text",
+			"variant": "pNormalVariant-GREY_4",
+			"content": "Fi was founded in 2019 by Sujith Narayanan and Sumit Gwalani (ex-Google) who built Google Pay in India. The founding team has veterans from Google, Netflix, PayPal, Flipkart and more who came together to change the way Indian Millennials manage their money. Backed by major league investors Sequoia India and Ribbit Capital, Fi Money is based in Bangalore, and operates in over 16,000 pin codes across India."
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"feature_cards_section",
+				"feature_page_button_primary_row",		
+				"image_text_section",
+				"about_fi",
+				"7921e138-fceb-4f7e-b5de-9539caad317e"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

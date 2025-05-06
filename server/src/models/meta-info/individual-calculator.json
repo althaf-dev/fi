@@ -1,0 +1,1350 @@
+[
+    {
+        "metaTitle": "FD Calculator - Fixed Deposit Calculator Online - Fi Money",
+        "metaDescription": "Fixed Deposit Calculator helps you calculate  fixed deposit interst rate and maturity amount online you can earn on your fixed deposit investment.",
+        "canonicalUrl": "/calculators/fixed-deposit-calculator",
+        "ogTitle": "Free FD Calculator - Calculate Monthly Interest Rate, Maturity Amount Online",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/fixed-deposit-calculator",
+        "ogDescription": "Fixed Deposit Calculator helps you calculate  fixed deposit interst rate and maturity amount online you can earn on your fixed deposit investment.",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "Free FD Calculator - Calculate Monthly Interest Rate, Maturity Amount Online",
+        "twitterDescription": "Fixed Deposit Calculator helps you calculate  fixed deposit interst rate and maturity amount online you can earn on your fixed deposit investment.",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Fixed Deposit Calculator",
+                    "item": "https://fi.money/calculators/fixed-deposit-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What are Fixed Deposits?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A tax-saving FD is different from a regular FD in that your money is locked away for 5 years. You can’t take a loan using this FD as a collateral, and nor can you claim any tax deduction on the interest you earn from it.</div><br /><div>But here’s the good part - you get an FD income tax exemption under section 80C, for a limit of ₹1,50,000. Here are some other things you might want to know:</div><ul><li>The interest you earn is taxable.</li><br /><li>This sort of FD does not auto-renew at the end of 5 years.</li><br /><li>You do have flexibility in terms of interest payouts (Quarterly, monthly, and so on)</li><br /><li>The interest rates for tax-saving FDs do not change throughout the 5-year period.</li></ul>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "When do FDs help?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "There are a bunch of things an FD can do for you. If you’re someone who knows you’re going to need some extra cash in some specific time, an FD gives you the kind of predictability you’re looking for.</div><br /><div>Say, you’re looking to travel abroad in a year’s time and you’ve saved up the cash for the trip. With a Fixed Deposit, you know exactly how much your travel fund can grow to be in a year. You could also put that money into Mutual Funds or into the stock market, but there you can’t be sure of the returns."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What’s not to like about FDs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Predictability is also something that works against you here. You’re only going to make that much extra money on a Fixed Deposit, which is in the range of 4-7%. Other investment options could potentially give you twice as much. The lock-in period means your money is out of reach, and that can be a bummer too."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What kind of tax saving can you get on FDs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A tax-saving FD is different from a regular FD in that your money is locked away for 5 years. You can’t take a loan using this FD as a collateral, and nor can you claim any tax deduction on the interest you earn from it.</div><br /><div>But here’s the good part - you get an FD income tax exemption under section 80C, for a limit of ₹1,50,000. Here are some other things you might want to know:</div><ul><li>The interest you earn is taxable.</li><br /><li>This sort of FD does not auto-renew at the end of 5 years.</li><br /><li>You do have flexibility in terms of interest payouts (Quarterly, monthly, and so on)</li><br /><li>The interest rates for tax-saving FDs do not change throughout the 5-year period.</li></ul>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is a fixed deposit calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The good ol’ fixed deposit, a.ka., your parents favourite investment option. FDs are the gold standard for the Indian investor looking for safety of investment and predictability of returns. The concept is simple. You promise to keep a certain amount of money with the bank or any other deposit-taking financial institution for a fixed amount of time. In return, the bank gives you a fixed rate of interest on that amount. Now, FDs come in all shapes and sizes. You can invest crores or as little as ₹1000, depending on the bank. The period of an FD can range from anywhere between 7 days to 10 years. The interest can get compounded monthly, quarterly, half-yearly or annually. You can also choose to get the interest paid out to you at these frequencies rather than have it go back into the FD.  There are various penalties and charges for early withdrawal and some FDs are more flexible than others on such charges. But whatever type of FD you choose, they all have one thing in common. You will get back the money you’ve put in along with interest. The Fi Money fixed deposit calculator is an online tool that will show you the amount you can expect from an FD of your choice upon maturity."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How fixed deposit calculator can help you?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The humble FDs have been getting a bad rap lately for being a dated investment option. The lower rate of interest can result in negative real returns when inflation is running higher than FD rates. This means you can end up losing the value of your money instead of it appreciating over time.<br /><br /> Long-term FDs are also a losing bet when interest rates are rising since they can lock you in at a lower rate compared to the prevalent market conditions. But when it comes to safety, there’s nothing like an FD to balance a high-risk portfolio. Or you just know that you’re going to need a certain amount available to you after a couple of years like higher education, a trip abroad, marriage even.<br /><br /> FDs come in handy to ensure that you’ll have that money at maturity. But calculating the interest you will earn and the total amount you will receive at maturity can be a tedious task. Or you may want to compare your FD returns with other investment options to aid you in making an important decision.<br /><br /> This is where an FD interest calculator can help. All you need to do is fill in a few details to see the returns you can expect in a couple of seconds."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the formula to determine the FD maturity amount?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Every fixed deposit has four basic components.<br />The principal amount, is the amount you put into the FD.<br />The tenure, is the period of time your money stays locked in the FD.<br />The rate of interest and the compounding frequency, which is the frequency with which the interest amount gets compounded into the principal amount.<br />These factors will together decide the amount you will get back when the FD matures. The formula used here goes like this:</div><br /><div>A = P(1+r/n)^nt</div><br /><div>Where,<br /><div>A is the amount you get back at maturity</div><div>P is the principal amount you put into the FD</div><div>r is the rate of interest</div><div>n is the compounding frequency within a year</div><div>t is the time period of the FD</div></div><br /><div>For example, if you put is ₹1,00,00 into an FD for 3 years with a 10% interest that gets compounded quarterly, the the amount you will get at maturity is calculated as such:</div><br /><div>A = 100000(1+0.1/4)^(4*3)</div><br /><div>A = ₹1,34,489</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use this Fi Money fixed deposit calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Using the Fi.Money Fixed Deposit calculator is as simple as it gets. Most FDs are simple enough when it comes to the variables involved but calculating the returns can get a bit tedious. To take care of all the hassles of calculation, here are a few details you need to fill in to allow this FD interest calculator to help you.</div><br /><ul><li>How much do you want to put into an FD? - This is what's called the principal amount upon which the interest rate will be calculated. You can invest anything from as little as  ₹1000 to crores in FDs, depending on the bank or financial institution.</li><br /><li>What is the interest rate this FD will give you? - Different types of FDs will give different rates of interest depending on a number of factors, one of which is the time period. The longer the FD period, the higher the interest and vice versa. FD rates are decided by banks and can vary from bank to bank for the same FD period.</li><br /><li>How long are you willing to not touch this money? - Many people see FD as a form of forced savings since you cannot use the money until maturity. Maybe you know exactly when you’ll need the money in the future or maybe these are just funds you need to set aside for safety. But if you do find yourself in a situation where you have to ‘break’ the FD, it usually involves penalties and charges. Not to mention you lose out of the compounding effect of the interest.</li><br /><li>What’s the compounding frequency of this FD? - This is the frequency with which the interest generated on your FD gets accrued into the principal amount. This is the process of compounding which ensures you get a higher interest amount in successive compounding cycles since your principal amount keeps on increasing. The frequency can be monthly, quarterly, half-yearly or annually.</li></ul>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Benefits of using the Fi Money fixed deposit calculator",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Despite all the criticism, FDs have been around for a long time, are still relevant today and are likely to stand the test of time in the future. Even though you can get twice the returns or more through equity mutual funds and other investment options, Indians just can’t do without the safety and predictability of returns that FDs provide.<br /><br /> Besides, some FDs can save you tax as well. The amount you put in an FD is exempt from income tax as long as you maintain the FD for 5 years. However, the interest gained on this FD is taxable. FDs are a great option if you can plan your investments based on certain large expenditures in the future for which you will need the money to be completely safe.<br /><br /> These can be anything from education to purchasing a high-end gadget. And this is exactly the benefit the Fi Money fixed deposit calculator provides. It gives you visibility on the returns you can expect on your FDs minus the tedious calculations. It allows you to plan your investment or simply compare returns with other investment options."
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Rent Vs Buy Calculator Online - Fi Money",
+        "metaDescription": "Whether to rent or buy a home? Use our free Rent Vs Buy Calculator to choose your best option by analyzing before buying a property or renting a home.",
+        "canonicalUrl": "/calculators/rent-vs-buy-calculator",
+        "ogTitle": "Rent Vs Buy Calculator Online - Fi Money",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/rent-vs-buy-calculator",
+        "ogDescription": "Whether to rent or buy a home? Use our free Rent Vs Buy Calculator to choose your best option by analyzing before buying a property or renting a home.",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "Rent Vs Buy Calculator Online - Fi Money",
+        "twitterDescription": "Whether to rent or buy a home? Use our free Rent Vs Buy Calculator to choose your best option by analyzing before buying a property or renting a home.",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Rent vs Buy Calculator",
+                    "item": "https://fi.money/calculators/rent-vs-buy-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is a rent vs buy calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>To rent or to buy, isn’t an easy question to answer and this is an online calculator that knows that. There are a wide range of moving parts when it comes to deciding to rent or to buy a house.</div><br /><div><b>Key factors:</b></div><div>Owning a house is a major decision and involves a considerable investment of time and effort apart from money. Renting is a relatively less intimidating decision since you can always pack up and move out. But one thing that is common to both is location, location, and location. This has implications on many other factors like the price tag the house comes with or the rent. If you want to buy a house, this will also affect the loan you may need to take to finance the decision and the repayment terms. Additionally, there will be repair and maintenance costs along with other fees and charges like stamp duty and property tax to consider. None of these additional costs should matter to you if you’ve decided to go with renting out a place.</div><br /><div><b>Decision making:</b></div><div>Another factor that is highly dependent on location is how much the value of the property will appreciate over the years. Since buying a house involves a sizeable amount of investment over renting, in the short term at least, it's important to consider how the property value appreciates compared with had you decided to invest the money in other financial instruments. The amount of time you plan on staying in the house will play a big role when it comes to renting. It is assumed you will stay or hold the property for the long term if you buy a house. But if you’re paying rent, there will come a point in time when you end up paying more than the cost of the house if you stay long enough. Taking factors like these into account, the Fi Money rent vs buy calculator can help you compare the financial implications of each option so that deciding whether to rent or buy a house becomes that much easier for you.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Fi Money rent vs buy calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Deciding to rent versus buying a house is by no means a simple task. From financials to future plans to logistics, there’s certainly a lot to consider. Luckily, the Fi Money rent vs buy calculator is here to help with one of those things. Here’s a couple of things you’ll need to put down so that this online calculator can do its work.</div><br /><ul><li>Which city do you live in? - This will help us look up the real estate price projections in your city of choice. The projected value of houses is based on <a style='color: #00B899' href='https://residex.nhbonline.org.in/' target='_blank'>the RBI survey</a> conducted across Indian cities.</li><br /><li>What is the probable rent of the house you want to own? - You can look up property sites or apps to figure this out. It will be used to make a comparison against the cost of buying the house.</li><br /><li>By how much will your rent go up annually? - Just like prices, rent goes up too. Rent is usually hiked by 5% on an annual basis.</li><br /><li>What is the cost of the house you want? - You can check property listings online to fill out this one. And there’s no need to panic at the number of zeroes.</li><br /><li>What is the down payment you can afford? - This is important since it will determine terms of a potential home loan and consequently how buying that house compares to renting. Banks typically ask for 10% of the loan amount as a down payment.</li><br /><li>Housing loan interest rate - This will depend on a number of factors from your credit score to market conditions, but in general, it is lower than other types of loans. Banks decide the interest rate on loans but you can put in your best guess.</li><br /><li>What’s your loan tenure? - Home loans comparatively have a longer tenure to ease the repayment burden. This will decide your EMI amount. Higher the tenure, lower the EMIs and vice versa.</li><br /><li>How do you normally invest? - Are you all about that high-risk-high-return game? Do you like to balance the risk across your investment portfolio? Or do you prefer to keep your money safe? Why are we asking this? If you invest in buying a house, the difference between your home loan EMIs versus your monthly rent could have been invested in other financial instruments. This is the opportunity cost of buying a house which is another factor this online calculator uses to make as accurate a comparison as possible.</li><br /><li>What is your optimism level about housing prices? - One factor in your decision to buy a house could be that you're optimistic of the prices going up in the future. An indication of your optimism levels will be compared against what we know of property price projections in your city.</li></ul><br /><div>The Fi Money rent vs buy calculator will take away the tediousness of comparing all these factors against one another and give you an idea of when it is better to rent and when it is better to buy that house.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the methodology used in the Fi Money rent vs buy calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Few of us can truly factor in every aspect involved in that question to come up with a definitive answer. But we have the next best thing, the Fi Money rent vs buy calculator.</div><br /><div><b>Key factors:</b></div><div>True to its name, this online calculator can help simplify the calculations when it comes to deciding the financial aspects of renting versus buying a house. Just like the actual decision of whether to rent or buy, this calculator considers a range of inputs to come up with an estimate that will give you a better picture of renting versus buying a house.</div><br /><div>It takes into account everything from the property value projections of the city you want to live in to the cost of renting to your potential home loan EMIs and the opportunity cost of using the money for investments in other financial instruments. All this to help you decide whether you’re financially better off renting or buying that house. And even though that might seem like quite a comprehensive list, there are factors we have left out (and with good reason).</div><br /><div>This online calculator does not take into consideration inflation since it will impact both options equally and hence cancels each other out. Another factor we simply cannot estimate and compare is the emotional value in deciding to own a home. But rest assured, the Fi Money rent vs buy calculator is your best tool in helping you make this crucial decision.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use this rent vs buy calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Buying a house is a major decision and a milestone for many. But you might want to compare it with renting to see which decision leaves you better off. Now, there are a whole bunch of things you might have on your mind when weighing the pros and cons of each option.</div><br /><div>For instance, renting will give you the flexibility to move around and not be tied to a place while also being the more cost effective option, in the short term. But buying a house could be a dream you always wanted to achieve and you’re just not sure if your current financial situation stacks in your favour.</div><br /><div>The point is, it's a complex decision process that involves a lot of moving parts and you could probably use any and all the help you can get. One major part of this process is the financial aspect of the decision and that’s where the Fi Money rent vs buy calculator comes in. By taking into consideration a comprehensive set of factors impacting both buying and renting a house, this online calculator will save you loads of tedious calculations, time and effort and give you a better picture of whether you are financially better off buying or renting that house.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Mutual Fund Calculator - Calculate Mutual Funds Returns Online",
+        "metaDescription": "Fi Money's Free Mutual Fund Calculator help you calculate the expected return rate and the numer of years for which you have invested in Mutual funds.",
+        "canonicalUrl": "/calculators/mutual-fund-goal-calculator",
+        "ogTitle": "Mutual Fund Goal Calculator - Get an Idea on How Much to Invest !",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/mutual-fund-goal-calculator",
+        "ogDescription": "Fi Money's Free Mutual Fund Calculator help you calculate the expected return rate and the numer of years for which you have invested in Mutual funds.",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "Mutual Fund Goal Calculator - Get an Idea on How Much to Invest !",
+        "twitterDescription": "Fi Money's Free Mutual Fund Calculator help you calculate the expected return rate and the numer of years for which you have invested in Mutual funds.",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Mutual Fund Goal Calculator",
+                    "item": "https://fi.money/calculators/mutual-fund-goal-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is mutual funds goal calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Investing can be a daunting task full of big decisions. Where to invest? How to invest? What level of risk should I take? But you can make the process easier by taking it one step at a time. Systematic Investment Plans or SIPs are a way to invest fixed amounts in mutual funds regularly over a period of time.<br /><br />They are a great way not only to start investing but to stay invested for a while. It builds a healthy habit of saving and brings discipline to your investments. If you’re here, then it's likely that you’ve already ticked one decision off the list and are going with SIPs. The next thing you’re probably thinking about is how much you should be investing with each SIP. And that’s exactly what an SIP goal calculator is all about. Like all things in finance, there are many ways to approach this decision.<br /><br />One approach is to go bottom-up by considering an SIP figure and visualising the amount you’ll end up with after a certain amount of time. Another is a top-down approach where you consider the total amount you want after a period of time and break that down into a manageable fixed SIP amount. The Fi.Money SIP goal calculator is an online tool that takes the latter approach to simplify SIP investing, one step at a time.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does the mutual funds goal calculator help you?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Everyone has a number. By that we mean the amount of money you’d like to have after a certain period of time. The figure could represent the amount of wealth you want to own by a certain age, a retirement fund you’d be comfortable with, education or a holiday.<br /><br />Whatever the case may be, we all have a goal when it comes to our finances. No doubt this will be a substantial figure and it might seem like you’re far from achieving it. But worry not, the Fi.MoneyMutual Fund Calculator  is here to help. Investing through SIPs is a great way to achieve your goals with regular fixed mutual fund contributions.<br /><br />But there are a couple of other things to consider like the amount of time and money required and the returns and frequency of investments it will take to get there. All you need to do is think of a number and this calculator will tell you how to get there.<br /><br />In the process, it will help you visualise the answers to some important questions when deciding to invest like what’s your investment goal, how long should you keep investing, what kind of returns should you expect on your investments and at what frequency should you be investing.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use this Fi Money mutual funds goal calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The Fi.MoneyMutual Fund Calculator  takes a target approach to help you achieve your financial goals. There are four questions you need to answer and in return, this online calculator will answer the all-important question - How much should you invest in SIPs.</div><br /><ul><li>What’s your investment goal amount? - One point that should guide you while answering this question is what are you investing for. Ultimately everyone invests to build wealth but it's important to know what you are building that wealth for.  Education? Vacation? A house? Retirement fund? All of the above?</li><br /><li>How long will you be investing? - Apart from your investment goal and its purpose, you should consider at what stage you are in life while answering this question. It's usually a good idea to take a long-term horizon to take advantage of the benefits of compounding and tax breaks.</li><br /><li>What’s your investment frequency? - One of the best aspects of investing through SIPs is that you can choose a frequency you’re comfortable with. Apart from the usual monthly SIPs, Fi’s AutoInvest feature offers weekly and even daily investment frequencies. This helps in averaging out market fluctuations and protects your investments from volatility.</li><br /></ul><br /><div>Here are the past returns from a range of mutual funds:</div><br /><style>.fund-categories-section {display: flex; flex-direction: column; justify-content: space-between; width: 268px; margin: 0px auto;} @media (min-width: 768px){.fund-categories-section {flex-direction: row; width: unset;}} .fund-categories-image-one {width: 268px;} @media (min-width: 768px){.fund-categories-image-one {width: 311px;}} @media (min-width: 1290px){.fund-categories-image-one {width: 466px;}} .fund-categories-image-two {width: 268px; margin-top: 18px;} @media (min-width: 768px){.fund-categories-image-two {width: 312px; margin-top: unset;}} @media (min-width: 1290px){.fund-categories-image-two {width: 462px;}}</style><div class='fund-categories-section'><div class='fund-categories-image-one'><img style='width: 100%' src='https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/svgs/different-mutual-fund-returns-2.svg' /></div><div class='fund-categories-image-two'><img style='width: 100%' src='https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/svgs/different-mutual-fund-returns-1.svg' /></div></div><br /><ul><li>What is your expected return on investments? - While we all expect to make very high returns on our investments, it's good to have reasonable expectations in general and to use this calculator effectively to get realistic answers. Depending on the category and risk profile, different mutual funds provide various levels of returns.</li></ul>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much should I invest in SIPs every month?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>There’s no hard and fast rule to SIPs. Sure, there’s the 50-30-20 rule that says you should keep 50% of your monthly income for essentials, 30% for entertainment and the remaining 20% for investing.<br /><br /> But these are just guardrails, each of us have our own unique financial realities to consider. Some may not be able to invest 20% every month because they’re paying off a loan. Others might be able to invest more than 20% because they’re staying at home. Whatever your situation is, you should arrive at an SIP figure that you are comfortable with because while it's important to think of the future, there are needs and wants that have to be taken care of in the present.<br /><br /> So, how much should you invest in SIPs monthly? Let your financial goals and expectations guide you while taking into consideration your current income and lifestyle needs. Now, if all this seems a little vague and complicated, just use the Fi.MoneyMutual Fund Calculator  to help you simplify and visualise these as tangible numbers you can take action upon.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the minimum amount to invest in SIPs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>One of the great features of SIPs is its ability to bring the benefits of investing in financial markets to anyone, irrespective of their level of income. You can start investing in mutual funds through SIPs with as little as ₹100. With Fi, you can set up AutoInvest rules with a monthly, weekly and even daily frequency, depending on what you're comfortable with. At the other end of the spectrum, there is no upper limit on the amount of money you can invest through SIPs.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "SIP Calculator - Calculate Mutual Funds SIP Instantly ",
+        "metaDescription": "SIP Calculator is a financial tool that allows you to calculate the returns you earn on your SIP investments in mutual funs. ",
+        "canonicalUrl": "/calculators/mutual-fund-sip-calculator",
+        "ogTitle": "Free SIP Calculator - Systematic Investment Plan Calculator Online",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/mutual-fund-sip-calculator",
+        "ogDescription": "Do you want to get a fair idea on how much returns you get on your SIP investments? Use a SIP calculator. To know more about this, click here !",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "Free SIP Calculator - Systematic Investment Plan Calculator Online",
+        "twitterDescription": "Do you want to get a fair idea on how much returns you get on your SIP investments? Use a SIP calculator. To know more about this, click here !",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "SIP Calculator",
+                    "item": "https://fi.money/calculators/mutual-fund-sip-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is a mutual funds SIP calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>If you’re reading this, then you’ve probably already decided to invest in mutual funds, which is a great decision. They are a convenient way to get access and benefit from financial markets and build your wealth.<br /><br />The next decision you must make is how you will invest your money in mutual funds. At this stage, every investor is presented with one of two options - SIP or lump sum. SIP stands for Systematic Investment Plan. It’s a great way to start investing and to ensure you’re investing a fixed amount regularly. Your money is automatically invested from your savings bank account so you build a healthy saving and investment habit without having to think about it.<br /><br />SIPs also allow you to take advantage of favourable market movements while ironing out volatility. But sometimes it can get hard to see your end goal when it's so far away. The Fi Money Mutual Funds SIP calculator is an online tool that can show you what you and your SIPs are working towards.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "SIPs vs Lumpsums. What’s the difference?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>SIP stands for Systematic Investment Plan. It’s a way for you to ensure you’re investing regularly, and your money is automatically invested from your savings bank account.<br /><br />Lumpsums on the other hand, are defined as larger investments that you can make as one-offs. Since there’s no set frequency, you might feel the need to time the market right for larger amounts. This can be a tricky task that’s rarely effective.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does this `mutual funds SIP calculator` help you?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>There are many things to consider when it comes to investing in mutual funds through SIPs. While a high level of market volatility is a well-known stressor for any investor, SIPs tend to average out market volatility.<br /><br /> So, when it comes to the entire duration of investment, you need not be too worried about short-term market movements. On the other hand, you need to have a certain amount of liquidity regularly available to make SIP payments. This might not be such a problem for salaried professionals, but can be an issue if your liquidity depends on business income or profits.<br /><br /> But frequency is just one part of it. Your returns will also depend on how much you’re ready to set aside for investing, by how much you can regularly increase this figure, your expectations and  how long you plan on investing. The Fi Money mutual funds SIP calculator can help you visualise your returns by taking all these factors into account.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use this Fi Money mutual funds SIP calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>While we fret about regularly setting aside money for SIPs, it's important to remind yourself what you’re working towards. The Fi Money Mutual Funds SIP calculator visualise your returns at the end of the SIP duration. All you have to do is answer these questions.</div><br /><ul><li>What’s your SIP amount? - This decision should be based on your financial goals and your current income. Choose an amount that you would be comfortable putting aside on a regular basis while having enough money to spend on things here and now.</li><br /><li>What’s the frequency of your SIP payments? - The frequency of your SIP payments should be in line with your liquidity. It means that you should set a frequency based on how steady your sources of income are. Fi offers great flexibility for mutual fund investments with monthly, weekly and even daily AutoInvest rules.</li><br /><li>How much will you increase your SIPs every year? - Whether you are salaried or self-employed, it's most likely that your income will keep increasing as the years go by and so should your investments. Ideally, you should increase your SIP investments each year by at least 5% to keep up with inflation.</li><br /><li>What is your expected return on investments? - Everyone wants to maximise their returns, it's the name of the investing game. When it comes to financial planning, it's best to consider reasonable figures to get realistic estimates. Depending on the category and risk profile, different mutual funds provide various levels of returns.</li></ul><br /><div>Here are the past returns from a range of mutual funds:</div><br /><style>.fund-categories-section {display: flex; flex-direction: column; justify-content: space-between; width: 268px; margin: 0px auto;} @media (min-width: 768px){.fund-categories-section {flex-direction: row; width: unset;}} .fund-categories-image-one {width: 268px;} @media (min-width: 768px){.fund-categories-image-one {width: 311px;}} @media (min-width: 1290px){.fund-categories-image-one {width: 466px;}} .fund-categories-image-two {width: 268px; margin-top: 18px;} @media (min-width: 768px){.fund-categories-image-two {width: 312px; margin-top: unset;}} @media (min-width: 1290px){.fund-categories-image-two {width: 462px;}}</style><div class='fund-categories-section'><div class='fund-categories-image-one'><img style='width: 100%' src='https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/svgs/different-mutual-fund-returns-2.svg' /></div><div class='fund-categories-image-two'><img style='width: 100%' src='https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/svgs/different-mutual-fund-returns-1.svg' /></div></div><br /><ul><li>How long will you be investing? - One of the few things that are simple about investing is that when it comes to time, the longer the better. That being said, your time horizon depends on your unique financial situation and goals.</li></ul><br /><div>Taking all these into consideration, this calculator will give you the return you can expect through SIPs at the end of your investment duration.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Benefits of using the Fi Money mutual funds SIP calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Within the choice between SIPs and lump sum investing lies another choice and that is the frequency of SIP installments. SIPs are most commonly paid on a monthly basis but with Fi’s AutoInvest rules, you can invest in mutual funds weekly and even daily.<br /><br /> The advantage with more frequency is the ability to capitalise on sudden and sharp market movements while ironing out volatility at the same time. This is not an option for lump sum investments. The Fi Money Mutual Funds SIP calculator gives you the benefit of foresight with an estimate of the returns on your SIPs, allowing you to make a more informed decision. But here’s some food for thought, you can always supplement your SIPs with lump sums when the market moves in your favour.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "SIP or Lumpsums: which among these two give better returns?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>When choosing between SIPs or lump sum mutual fund investments, market conditions are an important factor to consider. In a declining market, SIPs perform better since you can purchase more units of a mutual fund with each SIP installment.<br /><br /> A lump sum investment locks you into a mutual fund at a higher price in such a situation. On the other hand, a lump sum investment can buy you more units of a mutual fund compared to SIPs when the market is on the climb. You also have the added flexibility to increase your SIP installments over time, an option which doesn’t exist for lump sum investing. Additionally, your returns also depend on the time of your exit when you withdraw the funds. Ultimately, your returns will depend on a combination of all these factors and there’s nothing to say that one will give more returns than the other. Choosing between the two all depends on the financial condition you find yourself in and your goals.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "PPF Calculator - Calculate Public Provident Fund Calculator Online",
+        "metaDescription": "Online PPF Calculator is an online financial tool that helps you calculate the maturity of funds in your PPF Account and interest earned on your PPF Investment.",
+        "canonicalUrl": "/calculators/ppf-calculator",
+        "ogTitle": "PPF Calculator - Calculate Public Provident Fund Calculator Online",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/ppf-calculator",
+        "ogDescription": "Online PPF Calculator is an online financial tool that helps you calculate the maturity of funds in your PPF Account and interest earned on your PPF Investment.",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "PPF Calculator - Calculate Public Provident Fund Calculator Online",
+        "twitterDescription": "Online PPF Calculator is an online financial tool that helps you calculate the maturity of funds in your PPF Account and interest earned on your PPF Investment.",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PPF Calculator",
+                    "item": "https://fi.money/calculators/ppf-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is meant by a PPF calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The PPF or Public Provident Fund is a government-backed investment option that has a lot going for it. The government backing is the first major advantage since not only is the amount you put in completely safe, the returns are guaranteed. The interest rate is decided by the government on a quarterly basis, which means it is not subject to market fluctuations.<br /><br /> The rate of interest is also typically in the 7-8% range, putting it ahead of fixed deposits and short-duration debt mutual funds. All this makes the PPF a great risk-free option if you’re looking for a safe bet, which is why it's been one of the most popular investment instruments for Indians over the 50 years of its existence. And we haven’t even got to taxation yet.<br /><br /> The PPF falls under the ‘EEE’ category of tax exemptions, which is the gold standard for a tax-efficient investment option. It stands for Exempt-Exempt-Exempt which means the money you put in is exempted from tax, the interest you earn while staying invested is exempted from tax and the amount you withdraw at the end of your investment duration is also tax-exempt. If you’re reading about PPF for the first time, you’re probably wondering why no one told you about this scheme sooner. But wait, there’s more.<br /><br /> You can start investing in PPF with as little as ₹500 a year and you can even take a loan against your PPF balance. So what’s not to like? Well for one, the PPF comes with a minimum 15-year lock-in period and only partial withdrawals are permitted after 5 years. A lot of things can happen in 15 years for which you may need the money. Also, this investment option comes with an upper limit of ₹1.5 lakh per year.<br /><br /> Now, with all these pros and cons, you probably want to know what your returns will look like over the years if you put your money into the PPF and that's exactly what the Fi Money PPF calculator is all about.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How can I calculate my PPF amount?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Calculating the returns on your PPF investments (or potential investments) is simply a question of compound interest. Here are a couple of things you need to know before you get your pen and paper out.<br /><br /> You’ll have to decide on the monthly or annual amount you're going to invest in the PPF. This can range from ₹500 to ₹1.5 lakh per year. The next thing is the duration of your investment. The minimum duration for this option is 15 years which can be extended by 5 years at a time. If you’ve already put in money into the PPF, then you’ll have to consider how much time you have left from when you opened the account till 15 years or till when you want to hold on to it.<br /><br /> The next thing you need is the applicable rate of interest. The government sets the PPF interest rate on a quarterly basis and it gets compounded on an annual basis. But why spend your precious time on all this when you can just use the Fi Money PPF calculator to get the job done in a matter of seconds.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does this PPF calculator work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>We get it, calculations aren’t always fun. So, let us handle the maths for you. All you need is to answer a few questions to see what you can get out of investing in PPF.</div><br /><ul><li>What is your monthly investment amount? - The PPF is one of the few investment options that have both a lower and an upper annual limit on investments along with a cap on the number of investments per year. Within a year, you can invest anywhere between ₹500 to ₹1.5 lakh. This can be done in a maximum of 12 instalments per year. That means if you plan to invest each month, you can invest a maximum of ₹12,500 per month.</li><br /><li>What’s your investment duration? - Here too, the PPF differs from other investment options with its looooong lock-in period of 15 years. That means you can only withdraw all your funds from the PPF after 15 years of opening an account. Thereafter, you can extend the duration of your PPF investments in blocks of 5 years, i.e. 20, 25, 30 and so on.</li><br /><li>What’s your current PPF balance? - If you’ve already invested in PPF then you don’t need to hear the pros and cons from us. Just enter your existing balance to help the calculator work out your returns.</li><br /><li>Rate of interest - Notice the lack of a question mark here. That’s because the government decides the rate of interest your PPF investments will get on a quarterly basis. This usually ranges between 7-8% and gets compounded annually. This calculator reflects the current PPF interest rate.</li><br /></ul><div>Taking all of this into account, the Fi Money PPF calculator will tell you the total amount you’ve invested, the interest you’ve gained and the total amount available to you at the end of your investment duration.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Benefits of using the Fi Money PPF calculator",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The PPF has remained one of India’s most popular investment options for a long time and with good reason too. The long list of pros makes it quite an effective investment avenue for the risk-averse investor or for the safe part of your portfolio.<br /><br /> Guaranteed, government-backed, non-stock market dependent, largely inflation-beating and higher-than-FD returns are just some of the reasons behind India’s affinity for the PPF. Not to mention the triple tax advantage it comes with.<br /><br /> Your investment amount, the interest on investment and the total amount at maturity are tax-exempt. But before you open your PPF account, which can be done in a matter of minutes at any bank or post office, here’s the catch. All the money you put into it isn’t going anywhere for the next 15 years from when you open an account, i.e. a lifetime of a lock-in period. Besides, there’s a cap on how much you can invest in the PPF, set at ₹1.5 lakh per year, and the number of instalments per year at 12.<br /><br /> Now, weighing all of this against each other and other investment options can be a difficult task. One way to go about it is to let the numbers speak for themselves. The Fi Money PPF calculator is an online tool that will help understand what your returns could look like at the end of your investment duration.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How can a PPF calculator help you?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>A PPF has a lot going for it. It’s a great investment tool, if you’re looking for a predictable way to stay on top of inflation over the years. But it also comes at a cost - your money is locked away for 15 years before you can actually get your hands on it.</div><br /><div>This calculator is one way to know if the time and investment is worth it. 15 years is a lifetime, after all. Interest rate aside, you make up to ₹1,50,000 of your income exempt from tax each year.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Advantages of having a PPF",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>For one, the PPF has been around for over 50 years now, and doesn’t look like it will be irrelevant anytime soon. But you can never be too sure so here are some facts:</div><br /><div>A majority of investors who rely on the Public Provident Fund as an investment option do so for its predictable nature of returns. Your returns are risk-free - this means it’s not subject to whatever state the stock market is in.</div><br /><div>You can open a PPF account in minutes from any of the major banks, and claim ₹1,50,000 of it as tax savings. Also, you could invest as little as ₹500 to begin with, and ₹1.5 lakh each year to keep the investment going over 15 years.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Personal Loan EMI Calculator - FI.Money",
+        "metaDescription": "Personal Loan EMI Calculator helps you calculate your EMI amount by entering your loan amount, rate of interest and loan tenure. Calculate now!",
+        "canonicalUrl": "/calculators/personal-loan-emi-calculator",
+        "ogTitle": "Personal Loan EMI Calculator - FI.Money",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/personal-loan-emi-calculator",
+        "ogDescription": "Personal Loan EMI Calculator helps you calculate your EMI amount by entering your loan amount, rate of interest and loan tenure. Calculate now!",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "Personal Loan EMI Calculator - FI.Money",
+        "twitterDescription": "Personal Loan EMI Calculator helps you calculate your EMI amount by entering your loan amount, rate of interest and loan tenure. Calculate now!",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Personal Loan EMI Calculator",
+                    "item": "https://fi.money/calculators/personal-loan-emi-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What are personal loans?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Personal loans, as opposed to business or commercial loans, are loans that banks or other lending institutions provide to individuals. The money from personal loans can be used for a variety of reasons, which is not the case for specific loans such as a home loan, car loan or education loan.</div><br /><div>Personal loans are also different from credit lines in the way money is lent. A personal loan is disbursed by a lender in the form of a lump sum amount that is typically deposited directly into your bank account. On the other hand, credit lines such as a credit card, represent a continuously open line of credit that can be used on a recurring basis, usually in smaller amounts than a personal loan.</div><br /><div>Furthermore, there are two types of personal loans - secured loans and unsecured loans. A secured loan is backed by an asset such as your house or car which is given as collateral. In case you default on your loan repayment, the lender can take possession of this asset to recover its dues.</div><br /><div>Unsecured loans, as the name suggests, are not backed by any collateral. Unsecured loans usually come with a higher rate of interest since they are considered riskier for a lender. Also, it might be harder for you to get an unsecured loan if you don’t have a credit history or you don’t have a strong credit score.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use personal loans?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Since personal loans are not tied to any specific use or purchase, they can be used for a number of reasons. These can include any large expenditure that you may need to undertake but don’t currently have the cash for. Maybe your house is in dire need of repairs or renovation. If you’re planning on getting married soon, there might be no getting away from that big, fat (and costly) Indian wedding.</div><br /><div>Personal loans also come in handy in the unfortunate event that you need to cover a large medical bill for which you are either uninsured or underinsured. If you’ve been waiting for too long for that foreign trip and have been unable to save up, a personal loan can help you with that well-deserved break.</div><br /><div>Another reason people may take a personal loan is to consolidate their debt. If you have a number of debts to keep up such as multiple credit card bills or other forms of credit, they each have their own EMI cycles and varying interest charges and it can be easy to lose track. To bring all these different debts, EMIs and interest charges under one loan and a single monthly payment, you can consolidate it under a personal loan.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to calculate a personal loan?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Different types of loans have a different set of considerations, yet all loans have three basic factors that interact in different ways with each other to decide how you will repay the loan.</div><br /><div>First is the loan amount that you are seeking to borrow. This has a very straightforward relation with the loan period and the repayment amount. A higher loan amount will take longer to repay and result in a higher EMI amount and vice versa.</div><br /><div>The second is the loan period. The longer the loan period the lower will be your EMI amount. Also, the longer the loan period, the higher will be the interest amount you pay on the loan.</div><br /><div>The third factor is the rate of interest. The interest rate on a personal loan is usually higher when compared to other types of loans like home loans, car loans or education loans.</div><br /><div>It also depends on a range of factors such as your credit score and whether it is a secured or unsecured loan. Unsecured loans which do not have any collateral assets backing them have a higher rate of interest. Together, these three factors decide the total amount you have to repay the lender and the EMI amount. Use the Fi Money personal loan EMI calculator to handle these calculations for you so that you can make a more informed decision when it comes to applying for a personal loan.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Components of the personal loan EMI calculator",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Personal loans come in all shapes and sizes but they will all have three basic components - the amount, rate of interest and loan period. Some of these components are in your control while others are decided by the bank or lending institution. The Fi Money personal loan EMI calculator allows you to see how each of these components interact with each other and how that might affect your EMIs. Let’s see what these components are.</div><br /><ul><li>Loan amount - This is the first thing you should consider when planning to take out any loan, be it personal or otherwise. It is one of the components that are in your control and the other two components are highly dependent on this factor. The higher the amount, the longer it will take you to repay the loan and vice versa.</li><br /><li>Loan period - This is the number of years you will repay the loan and it is another one of the components that you can control. The longer the loan period, the lower will be your personal loan EMI and vice versa. But one important point to remember is that at the same rate of interest, a longer loan period will result in a higher interest amount.</li><br /><li>Rate of interest - This is the part of the loan that is not in your control since the lender decides this. It depends on a number of factors like whether you have a credit history, your credit score and whether it's a secured or unsecured loan. Even small changes in the interest rate can have a big impact on your personal loan EMI and total repayable amount.</li></ul><br /><div>Once you decide on these three components, the Fi Money personal loan EMI calculator will show you what your EMI amount will be based on this information along with the interest amount, the total amount to be repaid and a loan repayment schedule.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is the personal loan EMI to be paid?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>When you take a loan from a bank or any lending institution, you agree to repay the borrowed amount along with interest. The total amount repayable is split into equated monthly instalments (EMIs) to be paid over a fixed period of time.<br /><br /> When these details are fixed, the lender will provide you with an amortisation schedule. If you didn’t get that, there’s no reason to panic. Amortisation is a financial term that simply refers to the process of repaying a debt. The schedule will show you all your EMIs through the entire loan term and indicate how much of the loan has been paid off and how much is left with each EMI. It will also show you what part of the total amount you are paying off - interest and borrowed amount.<br /><br /> Typically, you start off by paying more of the interest amount and move on to clear the borrowed amount by the end of the loan duration. It is important to make sure you have the capacity to pay your EMIs regularly. If you happen to miss an EMI, it gets reported to credit bureaus that maintain your credit score, which will have a negative impact on your credit score.<br /><br /> One rule of thumb is to make sure your monthly EMIs do not go over 50% of your monthly income. This can be done easily with a little bit of planning and the use of online calculators like the Fi Money personal loan EMI calculator.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "NPS Calculator - Calculate National Pension Scheme Maturity Amount",
+        "metaDescription": "NPS Calculator: Calculates the amount which you will receive after retirement under national pension scheme. Check your NPS amount today!",
+        "canonicalUrl": "/calculators/nps-calculator",
+        "ogTitle": "NPS Calculator - Calculate National Pension Scheme Maturity Amount",
+        "ogSiteName": "Fi.Money",
+        "ogUrl": "https://fi.money/calculators/nps-calculator",
+        "ogDescription": "NPS Calculator: Calculates the amount which you will receive after retirement under national pension scheme. Check your NPS amount today!",
+        "ogType": "website",
+        "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "twitterCard": "summary",
+        "twitterSite": "@Bank_on_Fi",
+        "twitterTitle": "NPS Calculator - Calculate National Pension Scheme Maturity Amount",
+        "twitterDescription": "NPS Calculator: Calculates the amount which you will receive after retirement under national pension scheme. Check your NPS amount today!",
+        "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "NPS Calculator",
+                    "item": "https://fi.money/calculators/nps-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is an NPS calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The National Pension System or NPS is part of the government’s efforts at creating a social security net for Indians post retirement. Not to mention, a great tax saving investment option as well. The NPS was established in 2004 and in many ways is an improvement over the other retirement fund options available.</div><br /><div>For one thing, it allows investors a degree of control over the way their money is invested. You can choose the level of risk you want to take on in terms of asset allocation between equity and debt investments. Or you can use the Auto choice option which lets the good folks at the NPS Trust decide for you. And the way they do that is based on your age. The idea is to allocate your investments based on your lifecycle. The younger you are the more risk-taking capacity you have and as you age, your investments are allocated more towards safer assets like government securities. And since the NPS is to a certain extent market-linked, returns can range anywhere between 5% to 20%.</div><br /><div>Besides these, there are a bunch of factors to consider if you’re thinking of opening an NPS account. For instance, it's a long term investment, and we mean looooooog term. Your money is essentially locked in until you turn 60. Although, tax-free withdrawals up to 25% of your total investment are allowed after a 3-year lock-in period. This is based on specific conditions like critical illness, skill development or a new business venture. And you won’t get your entire retirement corpus then since you have to invest at least 40% of the amount in an annuity. Annuity is the amount paid out to you every year, for the rest of your life after the NPS has matured.<br /><br />It ensures that while you get a lump sum amount, the rest will be given to you in monthly installments for the remainder of your retirement. This annuity investment again will give you returns depending on the prevailing interest rates in the future. And let’s not forget to account for inflation, which will have a profound impact on such a long term investment.</div><br /><div>The Fi Money NPS calculator is an online tool that can cut through all the clutter to give an idea of what you can expect when you exit the NPS all those years later.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does NPS withdrawal work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>NPS investments are meant for retirement, therefore they cannot be withdrawn freely, PFRDA lays down certain guidelines when withdrawal is allowed.<br /><br /><ol><li>When a subscriber reaches the age of 60 years, he or she can withdraw from the NPS scheme. However as the name suggests “National Pension Scheme”, an investor will need to subscribe to a pension with at least 40% of accumulated pension corpus. This can be done by purchasing an annuity that would provide a regular monthly pension for the user. The remaining funds can be withdrawn as a lump sum.</li><li>If the total accumulated pension corpus is less than or equal to Rs. 5 lakh, Subscriber can opt for 100% lump sum withdrawal. No annuity purchase will be required in this case.</li><li>In case of premature exit (exit before attaining the age of 60 years) from NPS, at least 80% of the accumulated pension corpus of the investor has to be utilised for purchase of an annuity that would provide a regular monthly pension. The remaining 20% can be withdrawn as a lump sum. Even for a premature exit, you need to complete at least 5 years of investment in the NPS scheme.</li></ol><br />Typically it is more efficient to limit the annuity purchase to 40% of the total corpus as one can earn a higher rate of return from senior citizen FDs and other safe investment products.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is an annuity?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Annuity refers to the monthly sum received by the NPS investor from an Annuity Service Provider (ASP). A percentage of the pension wealth as decided by the Subscribers (minimum 40% & 80% in case of premature exit) is utilised for purchase of annuity from various Annuity Service Providers.<br /><br />Annuities can be purchased by paying an upfront amount, in return the annuity guarantees a fixed rate of return for a certain time period (typically, rest of your life span).</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Who can use the Fi Money NPS calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>If you’re looking for the technical answer, then any Indian resident between the age of 18 and 60 years can open an NPS account online or offline, subject to compliance with KYC guidelines. And with that out of the way, your parents will tell you it’s never too early to start thinking about retirement. And while that might be true, there’s another major attraction that draws people to the NPS.<br /><br /> Two words, tax saving. NPS account holders can save up to ₹1.5 lakh per year on taxable income under the section 80C exemptions. Not just that, you can take advantage of an additional ₹50,000 tax deduction per year under section 80CCB over and above the usual 80C exemption.<br /><br />The point here is, your age does not matter and neither does your purpose. Whether you’re considering the NPS as a retirement fund, to save taxes or just to see what this thing is all about, the Fi Money NPS calculator will definitely be of use to you.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the features of this Fi Money NPS calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>It is important to understand the nuances of any investment option you might be considering since after all, it’s your hard-earned money that you’re putting into it. The NPS is a great option, in case you’re thinking about it, and one with many factors to consider. And one way to understand how these factors might affect you and your money is to use the Fi Money NPS calculator.<br /><br />The first thing you should be thinking about is quite simply, your age. Once you start investing in the NPS, apart from some minor exceptions, you won’t be able to access that money until you turn 60, i.e, retirement.<br /><br />Next, you’ll want to think about how much you’re ready to set aside monthly for such a long term investment. The minimum investment is ₹500 per contribution along with a minimum annual investment of ₹1000.<br /><br />Another very important factor you should give some thought to is the kind of returns you’re expecting from the NPS. You can choose the degree of risk you’re willing to take or you can set your NPS account to Auto choice. This indicates the type of asset allocation your money will be invested in and consequently the kind of returns you can expect.<br /><br />Similarly, you will have to set your expectations of returns from your annuity investment. That’s because when you exit the NPS, you must invest a minimum of 40% of your total retirement corpus in annuities while you can keep the rest as a lump sum return.<br /><br />Based on these inputs, the Fi.Money NPS calculator can tell you the indicative profits you’ve gained, your total NPS contributions, the lump sum amount you can get along with the amount you would have to put into annuities. It will also tell you the monthly pension you could receive from the annuity investment and its present value adjusted for inflation. And finally, the yearly tax amount you may save.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to use the Fi Money NPS calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Calculating your potential returns from NPS can be quite a tedious task. For starters, it's one of the few investment options where you have to compulsorily invest a (substantial) part of your returns in another instrument at maturity. And don’t forget to account for the impact of inflation over the investment period. So, why not get rid of the maths and use the Fi Money NPS calculator online to get the job done? Here’s an example for more clarity.<br /><br />Meghna is a 25-year old analyst who’s thinking of opening an NPS account. She’s heard about the great tax savings and the long term benefits. But first, she needs to see some cold hard numbers to make an informed decision, as any of us would. So, naturally, she turns to the Fi Money NPS calculator.<br /><br />Now, here’s some things Meghna already knows. She’s ready to put down about ₹5000 every month in NPS. She’s done her research and expects an average of 12% returns from this investment. She knows that she’ll have to put at least 40% of her retirement corpus into annuities and expects a 6% return from there.<br /><br />And once she ran the numbers, she was quite impressed with the comprehensive results she got. This is what it looked like.<br /><br />At the age of 60, Meghna would have made a total investment of ₹15 lakh towards NPS. On this, she would earn profits of ₹3.1 crore. Her total retirement corpus would amount to ₹3.24 crore. The amount she can withdraw as lump sum upon exiting NPS would be ₹1.94 crore. And the remaining  ₹1.3 crore would have to go towards annuities. Her monthly pension from the annuity investment would be ₹64,953, but adjusting for inflation, that would amount to ₹8,451 in present day value. And she would have saved ₹19,800 annually in income tax.<br /><br />With this newfound clarity, Meghna decided that she would go ahead and open an NPS account and use this online NPS calculator to make adjustments in her investment strategy along the way.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does the Fi Money NPS calculator work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The Fi Money NPS calculator works in mysterious ways. Just kidding, it's based on cold, hard maths. The NPS uses compound interest to calculate your gains and so does this calculator. Don’t believe us? Take a look at the Fi Money NPS calculator formula for yourself.<br /><br />One thing to note before we get to the formula. NPS returns are market-linked, which differentiates it from other retirement savings instruments that pay out a defined interest. That is why this online calculator asks for your expected return based on the NPS scheme you are likely to choose.<br /><br />Also, we assume that you would be investing a part of your salary every month and so, your investments are compounded at a monthly frequency. Now, back to the formula.<br /><br />A = P(1 + r/n)^nt<br /><br />Where,<br /><br /><div>A is your total retirement corpus<br />P is your total NPS contribution<br />r is the annual rate of interest  on your contributions<br />n is the number of times the interest gets compounded<br />t is the total duration of investment, which is the number of years till you turn 60<br /><br />Annual tax savings - ₹19,800</div></div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "HRA Calculator : Calculate Your House Rent Allowance Online",
+        "metaDescription": "HRA Calculator calculates house rate allowance from your basic salary and helps you save your tax liability. Check your HRA exemption now.",
+        "canonicalUrl": "/calculators/hra-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "HRA Calculator",
+                    "item": "https://fi.money/calculators/hra-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Understanding HRA",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>HRA refers to the Housing Rent Allowance. If you’re a salaried employee who lives in a rented house, then guess what? You can claim for HRA. Depending on several factors like your income, city of residence, etc. You’d probably see this in your salary slip as well. The amount of HRA you receive is decided by your organization. A few institutions can be an exception to HRA and may not provide HRA to their employees. However, on a wider ground, every salaried employee has access to HRA. It is primarily a component of your salary and is taxable under Section 10(13A) of Income Tax.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is an HRA Calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>HRA calculator is one digital tool that any individual can use to calculate the amount of tax that will be charged on your HRA by the government. The calculator is quite simple and easy to use. All you have to do is enter a few details, such as your basic salary, DA that you receive, HRA, the total rent you pay, city of residence, etc. Once you enter these details and click on submit, the HRA exemption calculator will show the result instantly.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What benefits do you enjoy with HRA Calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Why do you need to use the HRA calculator, and how does it benefit you? The very basic benefits you enjoy are-<br /><br /><ul><li><b>Skip the calculations</b><br />With a digital tool like the HRA calculator online, you do not have to stress your brain over calculations. The basic purpose of the HRA calculator is to cut on the manual calculation just like a regular calculator. So, enter details and stay relaxed.</li><br /><li><b>Save Time and Effort</b><br />The time you may invest in calculating HRA, and the effort you put in is relatively much more than that of an HRA calculator online. Picking up the pen and paper and calculating results can be time taking. So save your time and effort with a digital calculator.</li><br /><li><b>Under Your Comfort Zone</b><br />Mobile phones and laptops have become a part of daily life. So, you do not have to go anywhere when it is about HRA calculation for income tax.</li><br /><li><b>Accurate Result</b><br />Being a digital tool, the HRA calculator is designed in a way to provide an accurate result. Based on your input, the results will be as close to the real number as possible.</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What affects your HRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The institution you are working at considers a few things while deciding on the HRA. Check out on what basis HRA is calculated. It will also help you find out how to calculate HRA in your salary that you receive.<br /><br /><ul><li><b>City of Residence</b><br />Not every city has similar rent rates. Hence, depending on the city you are residing in, you get the HRA. For metro cities, you get an amount equal to 50% of your basic salary; for non-metro cities, the cap is 40%.</li><br /><li><b>Basic Salary</b><br />Depending on an individual's salary, the amount of the HRA received obviously varies. The higher your salary, the higher will be the HRA. You can use the HRA calculator to find out your HRA accordingly.</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the process of claiming an HRA tax deduction?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>One essential thing to acknowledge is you are eligible to receive tax benefits if you receive HRA. The amount of rent you pay to the landlord or house owner is liable to be taxed, and you are also eligible to claim tax deductions under Section 10(13A) of the Income Tax. Let's see how to do the HRA calculation for Income Tax.<br /><br /><ul><li>There are three conditions that the income tax takes into consideration while deciding your tax benefit for HRA.</li><ol type='a'><li>The actual rent that you pay is less than 10% of your basic salary</li><li>For metro cities, the HRA should be 50% of the basic salary, and for non-metro cities, it should be 40% of the basic salary</li><li>The actual HRA amount that you receive from your employer</li></ol><br /><li>Now, the least of the three situations above will be considered by the income tax, and accordingly, you will be rewarded with the tax benefit</li></ul><br />Using the HRA exemption calculator, you can have an insight into the tax benefit that you will get.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Am I eligible to receive HRA if I live with my parents?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Housing Rent Allowance, as the name suggests, is for people who live in a rented house. But as mentioned, it is a component of your salary. So, what about people who live in their parent's house? Will they receive HRA? The simple answer is yes.<br /><br />Let's understand with an example. Suppose, Sumity is living with her parents in Pathankot. Her salary includes HRA as a component. So, to use this HRA, she needs to make a rental agreement with her parents and provide the documents for the same in her company. The company will consider it as a regular rental agreement. The HRA received by Sumity must be transferred to her parent's account every month. Also, Sumity's parents need to show this rental income as their monthly income for income tax. If their income is taxable, this rent amount will also be taxable.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Documents required to claim tax deductions on HRA",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>To make a tax claim, you need to present a few documents. See the list below-<br /><br /><ul><li>Rent receipts</li><li>PAN of the house owner</li><li>If there is no PAN, the owner needs to provide a self-declaration for the same.</li></ul><br />You may be asked to provide other documents if required.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I claim a tax deduction if I don't receive an HRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>HRA tax deduction is also available for people who do not receive HRA as a part of their salary. For this, the individual has to show the proof of rent that he is paying to the land owner. HRA tax deduction for such individuals is provided under Section 80(GG) of income tax.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Who is eligible to claim a tax deduction on HRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Any individual who is living in a rented house/parent's house can claim a tax deduction under income tax.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is an HRA calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>HRA calculator is a digital tool that lets you calculate the tax deduction you are liable for. Enter details as asked, and it will show the expected tax deduction under income tax.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does the HRA calculator work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>HRA calculator asks for a few inputs like your basic salary, city of residence, HRA, email, etc., and automatically calculates the income tax benefit you are eligible to receive. It is also calculated based on your income tax slab.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you use the HRA calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>On the website, click on the HRA calculator. Enter the details and submit to receive the result.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to calculate HRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The HRA calculation formula is quite basic for employees. Here's how you can calculate-<br /><br /><ul><li>Metro city residents- 50% of their basic salary</li><li>Non-metro residents- 40% of their basic salary</li></ul><br />For instance, if you live in a metro city and your basic salary is ₹50,000/ month, then the HRA will be-<br /><br />50% of ₹50,000 = ₹25,000/ per month.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the benefits of the HRA calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Several benefits you get to enjoy with the HRA calculator are-<br /><br /><ul><li>Automatic calculation</li><li>Save time and effort</li><li>Easy-To-Use digital tool</li><li>Accuracy in result</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "If I have family living in two houses, can I claim HRA for both houses?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>No. You can claim HRA only for one rental house.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Gratuity Calculator - Calculate Gratuity Online In 2024",
+        "metaDescription": "Gratuity Calculator: Calculate online your gratuity amount that would be offered to you by your company. Specially designed for private companies employees.",
+        "canonicalUrl": "/calculators/gratuity-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Gratuity Calculator",
+                    "item": "https://fi.money/calculators/gratuity-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is gratuity? Who is eligible to receive gratuity?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>In every type of firm, the employees expect a reward in return for providing the services to the firm. The Government of India realises the hard work of each and every employee, which is why under the Payment of Gratuity Act 1972, employees are rewarded gratuity. Apart from the salary that one receives, the company and firms offer this reward in the form of gratuity. In layman's language, gratuity in employment means thanksgiving when an employee retires.<br /><br />This ‘thanksgiving’ is offered in the monetary form by the company to the employee for providing honest services to the firm. For gratuity, the institution does not demand any contribution from the employees. The employer solely pays it. With that, it is possible for you to calculate your gratuity using the gratuity calculator.<br /><br />Now, who is eligible for gratuity?<br /><br /><ul><li>Any individual working in a firm that has more than ten employees is liable to pay its employees the gratuity amount</li><li>One must have completed a minimum of 5 years in service in order to receive the gratuity</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is a gratuity calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Are you wondering how to calculate the gratuity amount? Well, we’ll do that for you with our gratuity calculator. This gratuity calculator is a simple-to-use online digital tool that helps you quickly calculate the gratuity that you will be eligible to receive.<br /><br />The gratuity calculator gives you an accurate result by providing a few details like monthly salary (Basic Salary + Dearness Allowance) and years of service.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the benefits of a gratuity calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>How can you benefit from a gratuity calculator? Is this what you are wondering about? If yes, the pointers below will give you a sneak peek into the various benefits of a gratuity calculator in India.<br /><br /><ul'><li>You get an approximate idea of the gratuity you will be rewarded</li><li>The idea of the ascertained gratuity amount gives you the power to have a rough financial plan you wish to accomplish in future</li><li>You save a lot of time and effort when you use a gratuity calculator</li><li>You do not have to stress on calculation because that's what the gratuity calculator India does for you</li><li>With a few clicks and from the comfort of your home, you can easily know the details of your gratuity</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is gratuity calculated?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>There is a gratuity calculation formula that every firm follows in order to calculate the gratuity provided to their employees. It is also essential to note down that the gratuity calculation formula for retiring employees and those who pass away during the employment tenure are a bit different. Here's how it is calculated-<br /><br />G = T x B x 15/26<br />Where:<br />G is the gratuity amount that you’re eligible for<br />T is the tenure in the company<br />B is your last salary (Basic + Dearness Allowance)<br />15/26 is the 15 wage days of the employee out of 26 days of the month</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is gratuity calculated in India for the private sector?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Government and private sector employees are eligible to receive the gratuity if the firm they work in has more than ten employees. If you are working in a private firm, don't worry; you can also calculate your gratuity in the gratuity calculator. Let's see the gratuity calculation formula for private-sector employees-</div><br /><div style='font-size: 30px;font-weight: 700;width: 150px; margin: 0px auto;'>A*B*15/26</div><br /><ul><li>A = the number of years of service</li><li>B = the last salary received (Basic Salary + Dearness allowance)</li><li><15 is the 15 days wages of the employee out of 26 days of the month/li></ul><br /><div>How to Calculate gratuity in case an employee passes away?</div><br /><style>.container {width: 268px; border-radius: 8px; overflow:hidden; border:1px solid #E7E7E7; margin: 0px auto;} @media (min-width: 768px){.container {width: 640px; border-radius: 25px;}} @media (min-width: 1290px){.container {width: 1010px;}} .table {width: 100%; border-collapse: collapse;} .tableHeadRow {background-color: #E7E7E7;} .tableHeadData {font-weight: 700; font-size: 12px; line-height: 155%; color:#494949; padding: 12px; text-align: left;} @media (min-width: 768px){.tableHeadData {font-size: 14px; line-height: 130%; padding: 20px;}} @media (min-width: 1290px){.tableHeadData {font-size: 20px; line-height: 130%; padding: 30px;}} .tableBodyRow {border-bottom: 1px solid #E7E7E7;} .tableBodyData {font-weight: 500; font-size: 12px; line-height: 155%; color:#494949; padding: 12px;} @media (min-width: 768px){.tableBodyData {font-size: 14px; line-height: 130%; padding: 20px;}} @media (min-width: 1290px){.tableBodyData {font-size: 20px; line-height: 130%; padding: 30px;}}</style><div class='container'><table class='table'><thead><tr class='tableHeadRow'><th class='tableHeadData tableHeadFirstChild'>Years of service</th><th class='tableHeadData tableHeadSecondChild'>Gratuity Rate</th></tr></thead><tbody><tr class='tableBodyRow'><td class='tableBodyData'>Less than one year</td><td class='tableBodyData'>2 X the basic pay</td></tr><tr class='tableBodyRow'><td class='tableBodyData'>1-5 years</td><td class='tableBodyData'>6</td></tr><tr class='tableBodyRow'><td class='tableBodyData'>5-11 years</td><td class='tableBodyData'>12</td></tr><tr class='tableBodyRow'><td class='tableBodyData'>11-20 years</td><td class='tableBodyData'>20</td></tr><tr><td class='tableBodyData'>20 years and more</td><td class='tableBodyData'>Half of salary for every six months completed after 20 years and a maximum of 33 times of the salary</td></tr></tbody></table></div><br /><span font-weight: 700;>Note:</span> If you complete 6 months or less, it will be rounded off to the lower value. If it exceeds 6 months, the year of service will be rounded off to the larger value."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does the employer arrange gratuity?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>In the case of gratuity, the employees are not asked to contribute. So, when an individual retires, the gratuity is solely paid from the employer's end. There are two ways in which the employer arranges the gratuity-<br /><br /><ul><li>The employer directly pays the gratuity to the employees from their end</li><li>The employer arranges for a general gratuity plan insurance. Here, the company provides the premium to the general gratuity provider. In return, the insurance company provides gratuity to the employee after they retire</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is there any tax on gratuity?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The million-dollar question we all want to know. There is a tax imposed on gratuity received but NOT for the government employees (don’t tell your parents!). So, if you are employed in a government sector, relax; you need not pay any tax on the gratuity. Check out the taxation rules for various gratuity conditions under which the employees have to pay tax:<br /><br /><ul><li>If your firm's gratuity is covered under the Gratuity Act, the last 15 days' salary withdrawn by you remains non-taxable. Other than this, the remaining amount is taxable</li><li>If your firm provides you with gratuity which is not covered under Gratuity Act, then the following three conditions are exempted from tax-<br /><ul style='list-style-type:circle; padding: 0px 40px'><li>₹10,00,000</li><li>The gratuity amount received by the employee</li><li>Half a month's salary of each of the month that the employee has completed</li></ul></li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is meant by a gratuity calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>A gratuity calculator is a digital tool where employees can calculate their gratuity based on the years of service and the basic salary (including DA) they receive.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the gratuity calculation formula?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The gratuity calculation formula is quite simple and basic. It is - N*B*15/26. Here,<br />N is the number of years of service<br />B is the basic salary, including DA<br />15/26 is the 15 days salary out of 26 days of a month.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does a gratuity calculator work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>A gratuity calculator in India is designed to automatically calculate the result based on the gratuity calculation formula. It calculates the gratuity by providing two details- years of service and the basic salary.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the advantages of using the Fi Money gratuity calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>There are several advantages of using the Fi Money gratuity calculator, like-<br /><br /><ul><li>It is 100% free to use</li><li>Fi Money gratuity calculator is simple and easy to use</li><li>You save time invested in calculating manually</li><li>Get results with a few clicks</li><li>Calculate your gratuity by sitting in your comfort zone</li></ul></div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "EPF Calculator - Employee Provident Fund Calculator Online - Fi.Money",
+        "metaDescription": "Employee Provident Fund Calculator: calculate your employers provident fund amount with our EPF calculator after your retirement.",
+        "canonicalUrl": "/calculators/epf-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "EPF Calculator",
+                    "item": "https://fi.money/calculators/epf-calculator" 
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "<div>What is an EPF?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Most of us who are part of the salaried class, are probably working in private companies and earning some decent money compared to government jobs most Indians yearn for. To help salaried employees working in these private organisations get retirement benefits, the Employees Provident Fund Organisation (EPFO) introduced the Employee Provident Fund scheme. Any organization or firm with 20 or more employees gets this benefit. Employees who fall under the EPF scheme, make a fixed contribution of their basic salary and dearness allowance. Simultaneously, the employer also makes an equal contribution to the scheme. At the time of retirement, the employee can take out a lump sum, which includes the contributions of both employee and employer with the interest payments.<br /><br />Employees under this scheme contribute 12%* of their basic salary and dearness allowance and the employer also contributes 12%*. After consulting with the Ministry of Finance, the EPFO Board of Trustees fixed the interest at 8.1% for FY2022*.<br /><br />In the case of employers, 12% is contributed which only a small part goes to the EPF account. Out of the 12%, 8.33% goes towards Employee Pension Scheme Account, and the balance of 3.67% is parked in the employee EPF account.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What are the benefits of EPF?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Apart from helping you save for retirement, the EPF comes with several additional benefits<br /><br /><ul><li>You have the option to invest more than the standard 12% of your basic salary and dearness allowance if you wish to increase your corpus at the time of retirement. This extra amount will be saved under the heading of the Voluntary Provident Fund (VPF).</li><li>You get life insurance cover under the EPF.</li><li>EPF is completely tax-free at all stages. Up to ₹1.5L, every year is exempt under 80C, any interest you earn through EPF is also tax-free for a contribution amount less than 2.5L per annum. Finally, no tax on PF if you complete a minimum of 5 years of employment overall.</li><li>You can nominate your family members as a nominee who can get the financial benefit of your corpus in case of your untimely demise.</li><li>You have the option of withdrawing the amount early in case of an emergency under certain defined circumstances like job loss, loan repayment etc.</li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How can I check my PF balance online?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>If you have past employment experience where EPF has been deducted from your salary, then you already have some money stashed up in your PF account. You can then check your current PF online using these simple steps:<br /><br /><div>Step 1: Visit the government EPF website</div><div>Step 2: Choose the location of your PF office (State, regional branch office)</div><div>Step 3: Fill out the application form provided with your personal details and your EPF number shown on your payslip.</div><div>Step 4: Submit the application after cross-verifying</div><div>Step 5: If all your details are intact, then you will receive an SMS on your registered mobile with the latest balance.</div></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How can an EPF calculator help you?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>An EPF calculator is a pretty handy tool if you’re looking to calculate an estimate of your savings. It’s only normal to be worried about how much you can save in the future, so this EPF interest calculator is here to help give you as realistic a view as possible.<br /><br />Here are some benefits we’ve chalked down of using the EPF calculator online.<br /><br /><ol type='a'><li>The math is done for you</li><li>You don’t need to worry about the interest rates changing all the time. The EPF calculator will automatically get updated.</li><li>The Fi.Money EPF calculator will give you as accurate a figure as possible. It also lets you assume a salary growth rate so your corpus amount is calculated more accurately.</li><li>The EPF calculator will automatically inform you if there is any change in interest rates  whenever you come back here to check.</li></ol></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What is the formula to determine the EPF amount?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Okay, if you’re still keen on learning how to calculate EPF manually, then here are a few things you need to know to calculate<br /><br /><ol><li>Basic salary + Dearness Allowance (DA)</li><li>Your contribution to EPF</li><li>Your employer’s contribution to EPF</li><li>Your retirement age</li><li>Your current EPF balance</li><li>The current EPF interest rate</li></ol><br />Let’s take an example to give you a better understanding of how to calculate EPF without a calculator.<br /><br /><ol><li>Employee's basic salary + dearness allowance = ₹10,000</li><li>Employees contribution towards the EPF = 12% * 10,000 = ₹1,200</li><li>Employers contribution towards the EPF = 3.67% * 10,000 = ₹367</li><li>Employers contribution towards EPS = 8.33% * 10,000 = ₹833.</li><li>The total contribution by the employer and employee towards the EPF account of the employee = ₹1,200 + ₹367 = ₹1,567.</li></ol><br />The interest rate is 8.1% for FY 2022-23.<br /><br />So the interest rate applicable monthly is 8.1%/12 = 0.675%<br /><br />Assuming the employee joined the company in April 2019, the total EPF contribution for April will be ₹1,567. The EPF scheme will not pay any interest for April.<br /><br />The total EPF contribution for the month of May = ₹3,134 (₹1,567+ ₹1,567). The employee receives an interest of ₹3,134 *0.675% = ₹21.15.<br /><br />The calculation is done for the subsequent months in a similar manner.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What are the benefits of Fi.Money EPF calculator?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Here are some benefits we’ve chalked down of using the EPF calculator online.<br /><br /><ol type='a'><li>The math is done for you</li><li>You can use the EPF interest calculator to calculate the corpus amount at different retirement ages.</li><li>You don’t need to worry about the interest rates changing all the time. The EPF calculator will automatically get updated.</li><li>You can use the Fi.Money EPF calculator to plan any extra contributions you wish to make</li><li>The Fi.Money EPF calculator will give you as accurate a figure as possible.</li><li>The EPF calculator will automatically inform you if there is any change in regulations whenever you come back here to check.</li></ol></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Is the EPF calculator free to use?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Absolutely! You can come back to the calculator anytime you want and you are free to experiment with the EPF calculator using any amounts, your contribution to the EPF and the age you wish to retire to see all possible outcomes.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Can I use the same EPF calculator even after I change my job?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Yes,  just enter the last PF balance when you left the previous job, and also enter the new basic salary to get an accurate estimate of PF corpus after your switch jobs.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Does the Fi.Money EPF calculator help monitor my EPF returns?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Not exactly. The EPF calculator only helps you determine the amount of money you will have at the time of your retirement. In case you feel that the amount is on the lower side after using the EPF calculator, you can start contributing more from now on to increase your corpus.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Does the EPF calculator get updated if the interest rate changes?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Yes! The best part about using the Fi.Money EPF interest calculator is that you don’t need to worry about the interest rate. The calculator is designed in such a way that any new regulations and changes in rates will be automatically adjusted in the EPF calculator which will be visible to you at the time of calculating. It’s all about plug and play.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "CAGR Calculator - Compound Annual Growth Rate Calculator Online",
+        "metaDescription": "CAGR Calculator: A CAGR calculator helps you determine the compounded annual growth rate of an investment over a specified time period. Calculate your CAGR now!",
+        "canonicalUrl": "/calculators/cagr-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "CAGR Calculator",
+                    "item": "https://fi.money/calculators/cagr-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "<div>What is meant by a CAGR calculator?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>CAGR stands for compound annual growth rate. It measures the annualised rate of return on an investment over a certain period of time. A CAGR calculator is a tool that allows you to determine the CAGR of an investment over a specified period of time.</div>"
+
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Why is CAGR important?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>CAGR is important because it provides a standardised way to compare the performance of different investments over time. It takes into account the effect of compounded growth, which means that the returns on an investment are reinvested and earn additional returns in the future.</p><p><br></p><p>In other words, the gains you make on the investment are added to the original principal investment.</p><p><br></p><p>This can make a significant difference in the long-term growth potential of an investment.</p><p>For example, let&rsquo;s say you have two investments with the same initial value and the same final value after a certain number of years. However, one investment has a higher CAGR than the other. This means that the investment with the higher CAGR had a higher average annual return over the time period in question, which resulted in a greater overall increase in value.</p><p><br></p><p>By comparing the CAGR of different investments, you can get a better sense of which ones may be more suitable for your investment goals. For example, if you are looking for long-term growth, you may want to choose investments with a higher CAGR. On the other hand, if you are more concerned with preserving capital, you may want to choose investments with a lower CAGR but with a lower risk profile.</p></div>"
+
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Is the CAGR Calculator free?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Yes, the Fi Money CAGR Calculator is completely free to use (& share!)</div>"
+
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What is CAGR return?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>CAGR return is the compound annual growth rate of an investment over a certain period of time. It is calculated as the annualized rate of return that would be required to grow an investment from its initial value to its final value over the specified period of time.</p><p><br></p><p>Take a look at this table, where we compare two investments of ₹10,000 at different CAGRs - one at 12%, and the other at 35%, with the investments held for 10 years.</p></div><br /><style>.container {width: 268px; border-radius: 8px; overflow:hidden; border:1px solid #E7E7E7; margin: 0px auto;} @media (min-width: 768px){.container {width: 640px; border-radius: 25px;}} @media (min-width: 1290px){.container {width: 1010px;}} .table {width: 100%; border-collapse: collapse;} .tableHeadRow {background-color: #E7E7E7;} .tableHeadData {font-weight: 700; font-size: 12px; line-height: 155%; color:#494949; padding: 12px; text-align: left;} @media (min-width: 768px){.tableHeadData {font-size: 14px; line-height: 130%; padding: 20px;}} @media (min-width: 1290px){.tableHeadData {font-size: 20px; line-height: 130%; padding: 30px;}} .tableBodyRow {border-bottom: 1px solid #E7E7E7;} .tableBodyData {font-weight: 500; font-size: 12px; line-height: 155%; color:#494949; padding: 12px;} @media (min-width: 768px){.tableBodyData {font-size: 14px; line-height: 130%; padding: 20px;}} @media (min-width: 1290px){.tableBodyData {font-size: 20px; line-height: 130%; padding: 30px;}}</style><div class='container'><table class='table'><thead><tr class='tableHeadRow'><th class='tableHeadData tableHeadFirstChild'>Initial Investment</th><th class='tableHeadData tableHeadSecondChild'>CAGR</th><th class='tableHeadData tableHeadSecondChild'>Final Amount</th></tr></thead><tbody><tr class='tableBodyRow'><td class='tableBodyData'>₹10,000</td><td class='tableBodyData'>12%</td><td class='tableBodyData'>₹31,058</td></tr><tr class='tableBodyRow'><td class='tableBodyData'>₹10,000</td><td class='tableBodyData'>35%</td><td class='tableBodyData'>₹2,01,066</td></tr></tbody></table></div><br />CAGR return is a useful measure of the long-term growth potential of an investment, and it can be helpful for comparing the performance of different investments. However, it is important to keep in mind that CAGR does not take into account the effects of volatility or changes in market conditions, so it may not accurately reflect the actual return of an investment in all cases."
+
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Does the CAGR Calculator reflect investment risks?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>CAGR does not take into account the effects of investment risks such as volatility or changes in market conditions. As a result, it may not accurately reflect an investment&apos;s actual return in all cases.</p><p><br></p><p>For example, consider two investments with the same initial value and the same final value after a certain number of years. However, one investment has a higher CAGR than the other. This does not necessarily mean that the investment with the higher CAGR is a better investment, as it could be more risky or more volatile than the other investment.</p><p><br></p><p>To get a more accurate assessment of the risk and potential return of an investment, it is important to consider other factors such as the level of volatility, the potential for loss, and the overall market conditions.</p></div>"
+
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Inflation Calculator India: Calculate Inflation Rate in 2024 ",
+        "metaDescription": "Inflation Calculator helps you determine effect of inflation on purchasing power and impact of inflation on your money, calculate your need for your future expenses now. ",
+        "canonicalUrl": "/calculators/inflation-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Inflation Calculator",
+                    "item": "https://fi.money/calculators/inflation-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "<div>What is inflation?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>Inflation is the periodic rise in costs of goods and services in any economy. It erodes your purchasing power, meaning that you get less for your money with each passing year.&nbsp;</p><p><br></p><p>It is the economic equivalent of a party guest who just won&apos;t leave. But don&apos;t worry, there are ways to fight back against inflation, like investing in assets that tend to increase in value over time.&nbsp;</p></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How to calculate inflation?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>The most common method to calculate inflation in India is by using the CPI or the consumer price index. This is provided by the NSO, or the National Statistical Office in India.</p><p><br></p><p>To calculate the inflation rate using the CPI, use the following checklist:&nbsp;</p><ul style='padding: 0px 30px'><li><p>Select a base year for the calculation. This is the year for which the inflation rate will be calculated.</p></li><li><p>Determine the inflation rate as a percentage. This is usually provided by the government every year. There are many other bureaus that also compile this information which you can aggregate.&nbsp;</p></li></ul></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What is the formula for calculating inflation?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>You can use the following formula to calculate inflation:</p><p><br></p><p>Price change = (Price in current year - Price in base year) / Price in base year x Inflation rate</p><p><br></p><p>Here&apos;s an example of how to use this formula:</p><p>Suppose you want to calculate the price change between 2022 and 2023, at an inflation rate of 6.31%. The price of a basket of goods and services was ₹100 in 2022, and it is ₹110 in 2023. The price change would be calculated as follows:</p><p><br></p><p>Price change = (110 - 100) / 100 x 6.31 = ₹6.31</p></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How does inflation affect savings?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>When it comes to savings, inflation is really Enemy Number One.</p><p>It can have a significant impact on savings because it reduces the purchasing power of money over time. This means, the same amount of money will be able to buy fewer and fewer things.&nbsp;</p><p><br></p><p>For example, let&rsquo;s suppose you have ₹10,000 saved in an FD that is earning a 6% interest rate, and the inflation rate is 7.41%. After one year, your ₹10,000 will have increased to ₹10,600 due to the interest earned.&nbsp;</p><p><br></p><p>However, the purchasing power of that money will have decreased by 7.41% due to inflation, so it will only be able to buy ₹9,259 worth of goods and services in today&apos;s prices.<br><br></p><p>Your cumulative gain is: (interest earned) - (purchasing power erosion due to inflation)</p><p>₹741 - ₹600 = -₹141</p><p>In this case, you&rsquo;ve actually lost ₹141&nbsp;</p><p>In other words, your initial investment of ₹10,000 is now worth ₹9,859</p><p><br></p><p>To maintain the purchasing power of your savings, you may need to invest in assets that give you inflation-beating returns.&nbsp;</p></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How can an inflation calculator help you?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div><p>The Fi Money inflation calculator can be used to calculate the projected cost of goods over a period of time. This in turn should help you plan your savings because it gives you an indication of how much your money should be growing to meet these costs in the future.</p><p><br></p><p>Let&rsquo;s say you current lifestyle costs you ₹25,000 per month. This cost goes up to ₹28,300 in 5 years. This is a 13.2% increase. This means, you should invest in assets that give you at least 13.2% returns (over 5 years), if not more.</p></div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "FIRE Calculator: Calculate Your Earliest Retirement Age | Fi.Money",
+        "metaDescription": "Use our Financial Independence/Retire Early Calculator to know how much money/assets you need to be financially independent!",
+        "canonicalUrl": "/calculators/fire-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Fire Calculator",
+                    "item": "https://fi.money/calculators/fire-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "<div>What is a FIRE calculator?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>A FIRE calculator is essentially a retirement savings calculator.<br/>FIRE is an acronym for Financial Independence, Retire Early. It’s a sort of lifestyle movement that has seen popularity around the world, especially over the last decade. In India, the FIRE movement is relatively more recent. In the context of the FIRE movement, early retirement could mean anything between the age of 35-50, instead of the standard age of retirement of 60.<br /><br />This FIRE calculator helps you work out how early you can actually retire, based on inputs given by you. It takes into account your age right now, your income, and the rate at which your savings are growing, to tell you approximately at what age you could expect to retire.<br /><br />Even if you’re not planning to retire as early as prescribed by followers of the FIRE movement, this calculator could give you a general idea of where you stand in terms of your retirement readiness and what steps you could take to improve your chances of a relatively early retirement.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How can a FIRE calculator help you?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The FIRE calculator is simply a tool to help you visualise an early retirement from a financial perspective. Given the current economic climate, rate of population increase, inflation and other volatilities around the world, it’s pretty likely that Millennials and GenZs will only see retirement after the age of 70 instead of the current norm of 60.<br /><br />This FIRE calculator by Fi Money factors in your present income, savings, expenses and a few other parameters to give you a projection of when you’re likely to retire. Using this output, you can fine-tune your saving strategy either by increasing your risk or diversifying your wealth to suit your end goal - which is either an early retirement or a retirement supported by passive income.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>What is the method to determine FIRE calculation?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>The Fi Money FIRE calculator calculates your retirement age based on the following factors:<ol style='padding: 0px 30px'><li>Your age</li><li>Number of years left to retire</li><li>Your current income</li><li>Your current monthly expenses</li><li>Your monthly expense growth (how much more are you likely to spend each month as the years go by)</li><li>Your projected income growth (how much more you are likely to earn year on year)</li><li>Your current savings</li><li>Your savings growth (how much more than what you’re already saving will you save each year)</li><li>Your risk appetite (to determine how much your savings are likely to grow each year)</li></ol></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Is FIRE calculator free to use?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Yes, this calculator is free to use (and share!) and requires no sign-in, membership, or any other personal information to be able to use this calculator. You can use this calculator not only to calculate your projected age of retirement, but also to generally plan your retirement based on your current income, savings, and risk appetite.</div>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "metaTitle": "Credit Card Interest Calculator Online - Fi Money",
+        "metaDescription": "Credit Card Interest Calculator helps you calclulate your credit card emi interest you have to pay on your credit card, calculate your EMI interest rate now!",
+        "canonicalUrl": "/calculators/credit-card-interest-rate-calculator",
+        "breadcrumbSchema": {
+            "@context": "https://schema.org/", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://fi.money"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculators",
+                    "item": "https://fi.money/calculators"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Credit Card Interest Rate Calculator",
+                    "item": "https://fi.money/calculators/credit-card-interest-rate-calculator"
+                }
+            ]
+        },
+        "faqsSchema": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "<div>What is a credit card interest rate calculator?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>It is a tool that allows you to determine how much interest you will be charged on your credit card balance over a specific period of time. You need to input information such as your credit limit, the amount you plan to spend, and the amount you will (hypothetically) pay while clearing the bill at the end of the billing cycle. The calculator then uses this information to calculate the total interest that you will be charged. This can help you to budget or even compare a credit card with other instruments like a personal loan. You should be able to visualise this repayment duration in the form of the graph shown here.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How to use a credit card interest rate calculator?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>This credit card interest rate calculator from Fi Money uses the following inputs:<br /><br /><ol style='padding: 0px 30px'><li>Credit limit</li><li>How much you plan to spend: This could be a big expense you’re planning to put on your credit card</li><li>How much you wish to pay at the end of the month: This could be the minimum amount or any other amount other than the whole amount.</li></ol><br/>With this, the calculator will work out the total interest charges on the credit card.This is only an estimate, and the actual amount in interest will depend on your bank or will be specific to your card. Use this calculator only to get a general idea of how much extra you will end up paying in interest.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>How can a credit card interest rate calculator help you save money?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Here are some broad use cases of a credit card interest rate calculator:<br /><br /><div><b>Budgeting</b></div><div>When you specify your credit limit, your upcoming expenses, and the amount you plan to pay at the end of the month, this calculator can show you the total interest charges you’ll have to pay at the end of a time period. This should help you decide your financing approach for any big purchase you have in mind.</div><br /><div><b>Balance repayment</b></div><div>By trying out different payment amounts, you should be able to see how they affect the total amount due at the end of a time period. This can help you do the math and see if this approach is feasible for you or not.</div><br /><div><b>Debt consolidation</b></div><div>You can compare the output given to you by this calculator with loan interest rates to see if you can take a debt consolidation approach. Debt consolidation is essentially the practice of taking a lower interest loan to pay off a higher interest loan, in effect reducing the overall debt you’re in.</br> You can read more about debt consolidation<a href='https://fi.money/blog/posts/how-personal-loans-can-help-with-debt-consolidation' target='_blank' style='color: #00B899;'> here.</a></div></div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Is it a good idea to only make minimum payments on my credit card to save on interest?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Absolutely not. Unless, of course, you have no other choice but to pay just the minimum amount each time. But otherwise, paying just the minimum amount is a sure-shot way to fall into debt trap. Credit card companies leverage this option by letting you only pay the minimum amount due, and then charging you an Annual Percentage Rate (APR) that adds up every single day that your dues aren’t paid.</div>"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "<div>Is credit card interest rate calculator free to use?</div>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<div>Yes this credit card interest rate calculator is free to use (and share!). If you are, or if you know someone, planning to pay off just the minimum amount or any other amount other than the full amount due on the credit card, then this is a good tool to calculate how much you’ll actually pay. So, go ahead and share this calculator with the world!</div>"
+                    }
+                }
+            ]
+        }
+    }
+]

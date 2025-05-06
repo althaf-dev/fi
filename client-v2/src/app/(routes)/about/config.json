@@ -1,0 +1,20 @@
+{
+  "elements": {
+    "banner_section": {
+      "type": "Section",
+      "variant": "BANNER__LIGHT_YELLOW",
+      "children": [
+       "f7013ba4-dca2-4dec-a5be-1be2843405de"
+      ]
+    },
+    "f7013ba4-dca2-4dec-a5be-1be2843405de": {
+      "content": "",
+      "type": "AboutPosterSection",
+      "variant": ""
+    }
+    
+  },
+  "sections": [
+    "banner_section"
+  ]
+}

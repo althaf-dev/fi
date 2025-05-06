@@ -1,0 +1,149 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* Base Style */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dove-gray: #646464;
+    --mine-shaft: #333333;
+    --silver: #b9b9b9;
+    --silver-chalice: #a4a4a4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.h1 {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+
+.h2 {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
+
+.h3 {
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.l1 {
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.l1--v1 {
+    font-weight: bold;
+}
+
+.l1--v2 {
+    color: #8d8d8d;
+}
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+.main-cr {
+    /* not using margin-top/margin-bottom as it is getting resetted with top/bottom flag of wkhtmltopdf */
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.signature-photograph {
+    border-radius: 28px;
+    width: 180px;
+    height: 180px;
+}
+
+.break-before {
+    page-break-before: always;
+}

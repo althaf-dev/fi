@@ -1,0 +1,7310 @@
+[
+    {
+        "canonicalUrl": "/us-stocks/msft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/googl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aapl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jnj"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shoo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/intc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/meta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvda"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abnb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uber"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qcom"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jpm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avgo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttwo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gme"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nflx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsla"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amzn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hsy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdlz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/c"
+    },
+    {
+        "canonicalUrl": "/us-stocks/k"
+    },
+    {
+        "canonicalUrl": "/us-stocks/u"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ea"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atvi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rblx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dpz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/khc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aosl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mpb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hpq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ritm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mkc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/doc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bmy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/akam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lyv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vici"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trip"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rocc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/musa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mpw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xray"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wtfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/halo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hckt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cwk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fitb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/homb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ocgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bkh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lilak"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ihrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cwen.a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rmr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/celh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/psx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cwst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhil"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ltc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gww"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wolf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hznp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/afg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zbra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/duk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tpr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/afrm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wttr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcrb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cwen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ino"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wdfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cno"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dxpe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/egp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rlj"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avav"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hstm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbux"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rhp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/odfl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pki"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jack"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qtwo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/son"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mitk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dxcm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dltr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bf.b"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wlk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tme"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hiw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nxrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amwl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/virt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bsx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gogo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/btai"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dash"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cah"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ahco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fubo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arqt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/asle"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kop"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abcl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mck"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/forg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sofi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctas"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pypl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cort"
+    },
+    {
+        "canonicalUrl": "/us-stocks/scco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccoi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dorm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/g"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wing"
+    },
+    {
+        "canonicalUrl": "/us-stocks/saft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bby"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rprx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gatx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kalu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anip"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrtn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pep"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enov"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fast"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vtnr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lgnd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dsey"
+    },
+    {
+        "canonicalUrl": "/us-stocks/usph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/azta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/step"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nfbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/expo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntla"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cake"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/laur"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pump"
+    },
+    {
+        "canonicalUrl": "/us-stocks/opch"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dei"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prvb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lamr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pxd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/achc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hbnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/auph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/efx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arlo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/akts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tnl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swav"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atge"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anss"
+    },
+    {
+        "canonicalUrl": "/us-stocks/glpi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sjw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xncr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unfi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lhx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ezpw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hone"
+    },
+    {
+        "canonicalUrl": "/us-stocks/myrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/egio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vsh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ajrd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cgem"
+    },
+    {
+        "canonicalUrl": "/us-stocks/a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cenx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kmx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xyl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/keys"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uwmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kwr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amcx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cour"
+    },
+    {
+        "canonicalUrl": "/us-stocks/supn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ias"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ilmn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pdce"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rkt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/siri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/licy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cohu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twou"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ups"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hims"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ati"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nue"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hrb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/napa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bgs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amcr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mog.a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ago"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gmre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ua"
+    },
+    {
+        "canonicalUrl": "/us-stocks/drvn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/o"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ddog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sncy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tndm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/out"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uaa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spce"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lnw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhlb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dell"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mpwr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gps"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prmw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qlys"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/den"
+    },
+    {
+        "canonicalUrl": "/us-stocks/olpx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/path"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zuo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bry"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pstg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nem"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cinf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sndr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vnda"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pltk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crai"
+    },
+    {
+        "canonicalUrl": "/us-stocks/entg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rcus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ssnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vsto"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rovr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/podd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jef"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gbio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mov"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cade"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tngx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/svc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fisv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pll"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rgen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/j"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/phr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fate"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wafd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/inbx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrcy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slgc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oprx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/glw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ko"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nke"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ambc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/reg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abbv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pwsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aso"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rjf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blde"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptgx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jeld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/go"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mntv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eols"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plug"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gmed"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vsat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hum"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sah"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ontf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/st"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qdel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ael"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dkng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fico"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vtr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sxi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/upwk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rdfn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dgx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pacb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evbg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/met"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rmax/re"
+    },
+    {
+        "canonicalUrl": "/us-stocks/azn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/colb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cim"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/regn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/docu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ostk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flyw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/matw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pru"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rivn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/envx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tnet"
+    },
+    {
+        "canonicalUrl": "/us-stocks/maxr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fivn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/peg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/carg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cto"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nnn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bsig"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wday"
+    },
+    {
+        "canonicalUrl": "/us-stocks/panw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gogl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdxs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ladr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/site"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sovo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/verv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwpx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lanc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/diod"
+    },
+    {
+        "canonicalUrl": "/us-stocks/epr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdgl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gtls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pdfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vvi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gtn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cabo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/usna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/txn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tars"
+    },
+    {
+        "canonicalUrl": "/us-stocks/njr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adtn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aten"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lbrda"
+    },
+    {
+        "canonicalUrl": "/us-stocks/caci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ava"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pbh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dks"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnsl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thrm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fhb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vmeo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/syf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bcs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aqua"
+    },
+    {
+        "canonicalUrl": "/us-stocks/din"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/l"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/are"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hcci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lcid"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nnox"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/armk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lnn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tpx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gty"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prim"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvcr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/syk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/well"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/htz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hrmy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cccc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/udr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ottr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/carr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bill"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alxo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hwkn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sigi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hsii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbht"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hcsg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smpl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hsic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pag"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ymab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cldx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cxw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tdc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cprx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ktb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hae"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tdg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sem"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wire"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvee"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ge"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/okta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ospn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chtr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/appn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/npo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mhk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nkla"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kss"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rsg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sasr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnmd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wwe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bynd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hain"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aap"
+    },
+    {
+        "canonicalUrl": "/us-stocks/al"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hban"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cffn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ceva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shak"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jrvr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chef"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brkl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/h"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wpc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shyf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bxmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mpln"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lea"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wash"
+    },
+    {
+        "canonicalUrl": "/us-stocks/incy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/schw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evgo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/comp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/saic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rezi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dish"
+    },
+    {
+        "canonicalUrl": "/us-stocks/faro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acad"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tol"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nssc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/epc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/five"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nov"
+    },
+    {
+        "canonicalUrl": "/us-stocks/algm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/z"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ui"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/argo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/f"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lite"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gdot"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ampl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hubg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ivz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/noc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lxp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hun"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/boot"
+    },
+    {
+        "canonicalUrl": "/us-stocks/invh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rlay"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrsk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lyft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chgg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hca"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ceix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbgi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/inn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/now"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bwb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/txt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tost"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lesl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ogn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/me"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ame"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fizz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ed"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cswi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/idya"
+    },
+    {
+        "canonicalUrl": "/us-stocks/srcl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pkg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plxs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/isrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/skyw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iiiv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/txg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dyn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oln"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trox"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mntk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qtrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/byd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/faf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/modn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coll"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dxc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qgen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fdp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iipr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bah"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qrvo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hayn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cano"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gldd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/reta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nmrk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lsxmk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttcf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nbr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fss"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/esi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/scsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/omcl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sgry"
+    },
+    {
+        "canonicalUrl": "/us-stocks/para"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cacc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pten"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmpr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rpay"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wso"
+    },
+    {
+        "canonicalUrl": "/us-stocks/it"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bcrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcor"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zion"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rpm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lyg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/veru"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tgh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/opk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tgtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wrk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dgii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ozk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/midd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/medp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/radi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jkhy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amed"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jamf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irbt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sptn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pool"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rvnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fnf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/umh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prdo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fybr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/indi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bpop"
+    },
+    {
+        "canonicalUrl": "/us-stocks/czr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gden"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spwh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bsy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rnr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ovv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sstk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/patk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/box"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pzza"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ni"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chrd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ida"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swks"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccrn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dhr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iff"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ayi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/elf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tru"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rexr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arvn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gtes"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jll"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xmtr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ce"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csgp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pton"
+    },
+    {
+        "canonicalUrl": "/us-stocks/v"
+    },
+    {
+        "canonicalUrl": "/us-stocks/so"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebay"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mstr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/imxi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xpo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/form"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xpof"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dnow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/upst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrrm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nbhc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msge"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lbai"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ayx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nni"
+    },
+    {
+        "canonicalUrl": "/us-stocks/grwg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/olli"
+    },
+    {
+        "canonicalUrl": "/us-stocks/usfd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/grmn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/be"
+    },
+    {
+        "canonicalUrl": "/us-stocks/batra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/key"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alhc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/klic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/asb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kymr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clfd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zeta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rga"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aple"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cstm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lad"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irdm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tree"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gnrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mfa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/elv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hcat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kros"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pins"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oge"
+    },
+    {
+        "canonicalUrl": "/us-stocks/veco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anet"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnob"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spgi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/este"
+    },
+    {
+        "canonicalUrl": "/us-stocks/see"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cyh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rol"
+    },
+    {
+        "canonicalUrl": "/us-stocks/htlf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/parr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fwrd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aca"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spot"
+    },
+    {
+        "canonicalUrl": "/us-stocks/six"
+    },
+    {
+        "canonicalUrl": "/us-stocks/voya"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtdr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lpsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atsg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twlo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snbr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/htld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tell"
+    },
+    {
+        "canonicalUrl": "/us-stocks/geo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/umbf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/civb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lrn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/strc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brk.b"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/imgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctsh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/whr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adbe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axon"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cde"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/algt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/accd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chrw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bjri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mas"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aciw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ocfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hayw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sitm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vitl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cere"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qrtea"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rmd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wbs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wynn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/manh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kim"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bxp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ftv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/appf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cien"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kbr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/law"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nabl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mur"
+    },
+    {
+        "canonicalUrl": "/us-stocks/leco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fgen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fwonk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tgi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dfin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ande"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avid"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cof"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bbwi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tvtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smtc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cubi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jazz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/om"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rcl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/band"
+    },
+    {
+        "canonicalUrl": "/us-stocks/team"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lbrdk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/expi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cstl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bdc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gbx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aig"
+    },
+    {
+        "canonicalUrl": "/us-stocks/imax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ffiv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bkng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/md"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nxst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pvh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/peco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hibb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/btu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ehc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/denn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/onb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bj"
+    },
+    {
+        "canonicalUrl": "/us-stocks/insg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amnb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hwm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/inva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gef"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rxdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/otis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/newr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crox"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lsxma"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amrk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cytk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cday"
+    },
+    {
+        "canonicalUrl": "/us-stocks/yelp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/talo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/allo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tcx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hgv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mli"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mvst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/staa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cldt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnfp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgni"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ois"
+    },
+    {
+        "canonicalUrl": "/us-stocks/skx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ful"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hei"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bfly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kmb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cube"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xhr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/comm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/low"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/modv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eeft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mth"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cert"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nrix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wrby"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mye"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cfr/cullen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bwa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dlx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wdc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/srpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ssp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pbf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tech"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spxc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kfy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ges"
+    },
+    {
+        "canonicalUrl": "/us-stocks/els"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fds"
+    },
+    {
+        "canonicalUrl": "/us-stocks/m"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcty"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ai"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sndx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvlt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/foxa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ares"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hpe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/docn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pltr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tdw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lscc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kod"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axsm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mod"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ogs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eig"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnxc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ait"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kref"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eye"
+    },
+    {
+        "canonicalUrl": "/us-stocks/olp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmhc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mchp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ohi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ggg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ugi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rgnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lmnd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cfg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oke"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hous"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sgmo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rdn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mnst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/figs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/infn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crgy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/baly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eaf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avtr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aste"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ip"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ben"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fnd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ewbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/efc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sky"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dht"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sgh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/roku"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vbtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tjx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dvax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mmsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/afl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mttr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cars"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rgld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rvlv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fsly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/syna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tpb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dnli"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nbix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gntx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vcel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fslr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/txrh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tdoc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jwn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/erii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctlt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pnm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/run"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rhi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rmbs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fele"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sqsp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dhi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/saia"
+    },
+    {
+        "canonicalUrl": "/us-stocks/titn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alle"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lbrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/med"
+    },
+    {
+        "canonicalUrl": "/us-stocks/codi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/riot"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aeis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrvl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plce"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cma"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfgc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uthr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alks"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fpi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ions"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ue"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twks"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nsit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rok"
+    },
+    {
+        "canonicalUrl": "/us-stocks/door"
+    },
+    {
+        "canonicalUrl": "/us-stocks/knx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kdp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etrn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acmr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/man"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ato"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ipgp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acet"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/docs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/strl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/t"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dino"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lrcx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cara"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/anik"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blnd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrvi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/an"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tenb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rklb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/am"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ryi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plym"
+    },
+    {
+        "canonicalUrl": "/us-stocks/indb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bcpc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dice"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/www"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cold"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msgs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/indt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alny"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/forr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chuy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ftnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pacw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ari"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nsp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/road"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lpro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/awr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nycb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bery"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lmat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/casy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/klac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jhg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/matv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/four"
+    },
+    {
+        "canonicalUrl": "/us-stocks/esrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/woof"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgpi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/yum"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rrr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/idxx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nstg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/boh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/beam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/goss"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hhc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/land"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cstr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snap"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ewcz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bird"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/expd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/becn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aep"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stag"
+    },
+    {
+        "canonicalUrl": "/us-stocks/onl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gabc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/skt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/neog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nmih"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lfst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arch"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfbs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tpic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hees"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rily"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rdnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rvmd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mnkd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lgf.b"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thff"
+    },
+    {
+        "canonicalUrl": "/us-stocks/seas"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ess"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ori"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mygn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/duol"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ppg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sats"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bldr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bzh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fbrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ir"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbss"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kmpr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ndaq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/phm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tdy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cndt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntap"
+    },
+    {
+        "canonicalUrl": "/us-stocks/civi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hon"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bkcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pipr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uve"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gxo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cuz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/de"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vxrt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/siga"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nfg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hfwa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sum"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nclh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qnst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trtn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/meg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fnb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hmst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/powi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fulc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rapt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ryam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oxm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aiv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lyb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mho/m"
+    },
+    {
+        "canonicalUrl": "/us-stocks/payo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fang"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mxct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nsa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bbby"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pinc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coty"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gddy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tile"
+    },
+    {
+        "canonicalUrl": "/us-stocks/infa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ecvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rbcaa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ulta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hnst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hpp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/morn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dnb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hurn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tpl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cop"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ameh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/silk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arwr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/all"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mlab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wrb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/maa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ste"
+    },
+    {
+        "canonicalUrl": "/us-stocks/knte"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mkl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pets"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bku"
+    },
+    {
+        "canonicalUrl": "/us-stocks/akro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/domo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hubb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blue"
+    },
+    {
+        "canonicalUrl": "/us-stocks/batrk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eme"
+    },
+    {
+        "canonicalUrl": "/us-stocks/onew"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kodk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/banc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/icfi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sxt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/artna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amot"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ffbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/epam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aeo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nyt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/intu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/two"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nati"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/inbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nktx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ppc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ncno"
+    },
+    {
+        "canonicalUrl": "/us-stocks/grc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tds"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhvn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ahh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dbrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pdm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ufpi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chdn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ht"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcbs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nwsa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bfh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wmk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtch"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tfx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bdn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ktos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aee"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blkb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ecpg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/grbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ensg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttgt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ngvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etsy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bwxt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prgs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rpd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prgo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aaon"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sjm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lkq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amswa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lind"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/si"
+    },
+    {
+        "canonicalUrl": "/us-stocks/moh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gff"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/car"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adsk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ofc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/goev"
+    },
+    {
+        "canonicalUrl": "/us-stocks/owl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/roic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/icpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uuuu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcft"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wabc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ffin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csgs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cprt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kelya"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sxc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hood"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tse"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nbtb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sibn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/env"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vvx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/boom"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iboc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvgw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/asix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ale"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mofg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aroc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/orgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pdco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sfst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uvv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lfus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exas"
+    },
+    {
+        "canonicalUrl": "/us-stocks/udmy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/npk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blfy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sgen"
+    },
+    {
+        "canonicalUrl": "/us-stocks/synh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrtv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gild"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dox"
+    },
+    {
+        "canonicalUrl": "/us-stocks/care"
+    },
+    {
+        "canonicalUrl": "/us-stocks/re"
+    },
+    {
+        "canonicalUrl": "/us-stocks/we"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mcs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/extr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/payc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zntl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hei.a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eqc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mkfg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/you"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mwa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pcvx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hafc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lasr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bfst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sanm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpor"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bbio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbgs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lnth"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uhs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ipg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/edit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bepc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/open"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rli"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ufpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/azo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/banf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ndsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ofix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lulu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lpg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wgo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/post"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ocul"
+    },
+    {
+        "canonicalUrl": "/us-stocks/utl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uvsp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mlkn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/joe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ppl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/town"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kpti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cost"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rad"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gcmg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/seic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmcsa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/play"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/psfe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ball"
+    },
+    {
+        "canonicalUrl": "/us-stocks/joby"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tap"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/elan"
+    },
+    {
+        "canonicalUrl": "/us-stocks/knsl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fisi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fosl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/base"
+    },
+    {
+        "canonicalUrl": "/us-stocks/scs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptve"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nari"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kamn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cznc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/luv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iqv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/reyn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fmbh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sava"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wmb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crbu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dov"
+    },
+    {
+        "canonicalUrl": "/us-stocks/giii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/navi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/yext"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/drh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lzb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fhn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nhi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cwt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vicr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptlo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ivr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stok"
+    },
+    {
+        "canonicalUrl": "/us-stocks/golf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/payx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/asgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cccs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ssb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/urbn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/skin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dan"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gevo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rwt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/s"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trno"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bmrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/whd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/glob"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/che"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tfsl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dri"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clov"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iova"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gdyn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tgt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rost"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nuva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agys"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brmk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/achr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hele"
+    },
+    {
+        "canonicalUrl": "/us-stocks/livn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/insm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wow"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arko"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wtm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dva"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crvl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ubsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rxrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hdsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irwd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wkhs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vsec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bbsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lxfr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/syy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ecl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bke"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zumz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hqy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xpro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/egbn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mlnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osur"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctkb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cash"
+    },
+    {
+        "canonicalUrl": "/us-stocks/omc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ese"
+    },
+    {
+        "canonicalUrl": "/us-stocks/matx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cme"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/foxf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wrld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rgp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zip"
+    },
+    {
+        "canonicalUrl": "/us-stocks/by"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/srce"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flgt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vuzi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ptct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/esmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cflt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/htbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bax"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acgl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rlmd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/veev"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fold"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iosp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pgny"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mir"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hig"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slvm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/modg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hwc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ngm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccbg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ddd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fhi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvlg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/chh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/idcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/b"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fbms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krny"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mmyt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebix"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rckt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/emn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fdmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/safe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdmo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lob"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bigc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lkfn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sybt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/awk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/psn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zws"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cass"
+    },
+    {
+        "canonicalUrl": "/us-stocks/biib"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtrn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/novt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/insp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/yorw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arcb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lcii"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alit"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lwlg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sny"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fsbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sana"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bkd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evtc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cir"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ufcs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bfam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tbbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/peak"
+    },
+    {
+        "canonicalUrl": "/us-stocks/deck"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ango"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vtrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dvn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spfi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/enfn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/azek"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wor"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/glng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dfs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lgih"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uhal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/el"
+    },
+    {
+        "canonicalUrl": "/us-stocks/swk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tgna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gib"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tyl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pubm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sui"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tcbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cers"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cent"
+    },
+    {
+        "canonicalUrl": "/us-stocks/esgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dlb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lqdt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ftdr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pycr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/focs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ally"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trgp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/scvl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nxgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/soi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/orcl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etwo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/erie"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ths"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibcp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rock"
+    },
+    {
+        "canonicalUrl": "/us-stocks/imvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ual"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fmnb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hni"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kfrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avir"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lumn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/qcrh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mxl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frme"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eprt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stkl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hmn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vir"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amal"
+    },
+    {
+        "canonicalUrl": "/us-stocks/abcb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/splk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/akr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/epac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/opy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iart"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mmm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alrm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gwre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/catc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mass"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bpmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mnro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avxl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wern"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebtc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ilpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lpx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shcr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ryn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lung"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dtm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aub"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tsco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nktr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/odp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/egle"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aes"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aptv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eras"
+    },
+    {
+        "canonicalUrl": "/us-stocks/senea"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bngo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rick"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hrl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvbf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bsrr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/on"
+    },
+    {
+        "canonicalUrl": "/us-stocks/estc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slab"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fmc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/doug"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vno"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atni"
+    },
+    {
+        "canonicalUrl": "/us-stocks/r"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hope"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shls"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amtb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wtba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/blmn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wtrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/insw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/peb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/calm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/len"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cmp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bmrn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ride"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fibk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sumo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ffic"
+    },
+    {
+        "canonicalUrl": "/us-stocks/idt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cck"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cnxn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ruth"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nuvb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/shw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aspn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sdgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ebf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/src"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/usb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bxc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aiz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brsp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/x"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dte"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zimv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/schl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nvs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vlo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/baba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kalv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tho"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ofg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nee"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alrs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/par"
+    },
+    {
+        "canonicalUrl": "/us-stocks/orc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/schn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arry"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nhc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttek"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ter"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mro"
+    },
+    {
+        "canonicalUrl": "/us-stocks/calx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wbd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/asan"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coke"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dsgn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tcbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ingr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dcom"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xom"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lpla"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbrl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/msbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/altg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/krys"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gpc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cns"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kzr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ichr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lqda"
+    },
+    {
+        "canonicalUrl": "/us-stocks/knsa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hasi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lthm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dbx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ulh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ajg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tmdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/onto"
+    },
+    {
+        "canonicalUrl": "/us-stocks/srdx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ncr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fnko"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ipi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/psa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jblu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccne"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mdrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vcyt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/brx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gbci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wtw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/slca"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ssrm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hska"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lxu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/iiin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/good"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pfc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rcm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hzo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crsr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/omi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sabr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/awi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ceg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ew"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hxl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/centa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zbh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/coop"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dnut"
+    },
+    {
+        "canonicalUrl": "/us-stocks/burl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rely"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spwr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stem"
+    },
+    {
+        "canonicalUrl": "/us-stocks/itci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bhf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ppbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/expe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/twi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/smbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kbh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mbin"
+    },
+    {
+        "canonicalUrl": "/us-stocks/algn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lth"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trmb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mara"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lstr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zts"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vsco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/frpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ulcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vtol"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bokf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irtc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vpg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ttc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pega"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bki"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/revg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntct"
+    },
+    {
+        "canonicalUrl": "/us-stocks/big"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pahc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/axta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mgee"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vrsn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cyrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oled"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atec"
+    },
+    {
+        "canonicalUrl": "/us-stocks/utmd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/isee"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gnl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hrtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pwp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trmk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ucbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cdna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gkos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bmi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlio"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mbuu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/efsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bnl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mksi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jnpr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cfb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ora"
+    },
+    {
+        "canonicalUrl": "/us-stocks/spt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dlr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ccb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsbf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/leg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/caty"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rare"
+    },
+    {
+        "canonicalUrl": "/us-stocks/htbk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thry"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xpel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/viav"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sono"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uba"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gci"
+    },
+    {
+        "canonicalUrl": "/us-stocks/altr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/holx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fbnc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hubs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tbph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wwd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/igt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/xel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ma"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/irm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/penn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jbt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apps"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sitc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cutr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/masi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lvs"
+    },
+    {
+        "canonicalUrl": "/us-stocks/apog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ash"
+    },
+    {
+        "canonicalUrl": "/us-stocks/jjsf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mtsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ke"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uht"
+    },
+    {
+        "canonicalUrl": "/us-stocks/evrg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vmw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ster"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/uctt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sho"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gco"
+    },
+    {
+        "canonicalUrl": "/us-stocks/airc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/olo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snps"
+    },
+    {
+        "canonicalUrl": "/us-stocks/res"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nws"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/crwd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lazr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kids"
+    },
+    {
+        "canonicalUrl": "/us-stocks/boc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dcph"
+    },
+    {
+        "canonicalUrl": "/us-stocks/azz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/orly"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lgf.a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stwd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oscr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbcf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rop"
+    },
+    {
+        "canonicalUrl": "/us-stocks/d"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hlmn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/praa"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alkt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/w"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amwd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/imkta"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sre"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fult"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aan"
+    },
+    {
+        "canonicalUrl": "/us-stocks/arr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/psmt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pebo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pwr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/clvt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/opi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/flng"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/csl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fsr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cgnx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hth"
+    },
+    {
+        "canonicalUrl": "/us-stocks/alx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ssd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/br"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sam"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bipc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mbwm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/por"
+    },
+    {
+        "canonicalUrl": "/us-stocks/int"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nova"
+    },
+    {
+        "canonicalUrl": "/us-stocks/etd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dea"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ens"
+    },
+    {
+        "canonicalUrl": "/us-stocks/scl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hyln"
+    },
+    {
+        "canonicalUrl": "/us-stocks/has"
+    },
+    {
+        "canonicalUrl": "/us-stocks/snv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/lope"
+    },
+    {
+        "canonicalUrl": "/us-stocks/banr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/esnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ibtx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wina"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gsbc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ldos"
+    },
+    {
+        "canonicalUrl": "/us-stocks/air"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ffwm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/atex"
+    },
+    {
+        "canonicalUrl": "/us-stocks/neo"
+    },
+    {
+        "canonicalUrl": "/us-stocks/morf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/osw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/afcg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gwh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mvis"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gshd"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fox"
+    },
+    {
+        "canonicalUrl": "/us-stocks/oxy"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mrc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nus"
+    },
+    {
+        "canonicalUrl": "/us-stocks/goog"
+    },
+    {
+        "canonicalUrl": "/us-stocks/colm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hsc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bf.a"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nrds"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cbsh"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rusha"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bkr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aort"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mktx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/laz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kura"
+    },
+    {
+        "canonicalUrl": "/us-stocks/neu"
+    },
+    {
+        "canonicalUrl": "/us-stocks/emr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/wsr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/agm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/exp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ice"
+    },
+    {
+        "canonicalUrl": "/us-stocks/stgw"
+    },
+    {
+        "canonicalUrl": "/us-stocks/thc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/save"
+    },
+    {
+        "canonicalUrl": "/us-stocks/utz"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ctbi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cag"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sig"
+    },
+    {
+        "canonicalUrl": "/us-stocks/til"
+    },
+    {
+        "canonicalUrl": "/us-stocks/eat"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ramp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/drq"
+    },
+    {
+        "canonicalUrl": "/us-stocks/zi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pch"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ntgr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/avpt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/obnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cvna"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fcnca"
+    },
+    {
+        "canonicalUrl": "/us-stocks/yeti"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ipar"
+    },
+    {
+        "canonicalUrl": "/us-stocks/app"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bmbl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/omf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/bld"
+    },
+    {
+        "canonicalUrl": "/us-stocks/gnk"
+    },
+    {
+        "canonicalUrl": "/us-stocks/icui"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hcc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/trup"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hli"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fbp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mpc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rsi"
+    },
+    {
+        "canonicalUrl": "/us-stocks/acel"
+    },
+    {
+        "canonicalUrl": "/us-stocks/buse"
+    },
+    {
+        "canonicalUrl": "/us-stocks/he"
+    },
+    {
+        "canonicalUrl": "/us-stocks/adnt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/prlb"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sage"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kai"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mei"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fwona"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/net"
+    },
+    {
+        "canonicalUrl": "/us-stocks/rnst"
+    },
+    {
+        "canonicalUrl": "/us-stocks/tup"
+    },
+    {
+        "canonicalUrl": "/us-stocks/unvr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/plmr"
+    },
+    {
+        "canonicalUrl": "/us-stocks/egrx"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cms"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ain"
+    },
+    {
+        "canonicalUrl": "/us-stocks/amsf"
+    },
+    {
+        "canonicalUrl": "/us-stocks/kdny"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cogt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ghc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/seer"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pjt"
+    },
+    {
+        "canonicalUrl": "/us-stocks/hes"
+    },
+    {
+        "canonicalUrl": "/us-stocks/dds"
+    },
+    {
+        "canonicalUrl": "/us-stocks/vvv"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbra"
+    },
+    {
+        "canonicalUrl": "/us-stocks/cpe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/sbac"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ambp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ingn"
+    },
+    {
+        "canonicalUrl": "/us-stocks/es"
+    },
+    {
+        "canonicalUrl": "/us-stocks/ha"
+    },
+    {
+        "canonicalUrl": "/us-stocks/fnlc"
+    },
+    {
+        "canonicalUrl": "/us-stocks/aon"
+    },
+    {
+        "canonicalUrl": "/us-stocks/mlm"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pmvp"
+    },
+    {
+        "canonicalUrl": "/us-stocks/repl"
+    },
+    {
+        "canonicalUrl": "/us-stocks/nfe"
+    },
+    {
+        "canonicalUrl": "/us-stocks/pntg"
+    },
+    {
+        "canonicalUrl": "/us-stocks/embc"
+    }
+]

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epifi - KYC Details</title>
+        <link rel="stylesheet" href="../../assets/fonts/font.css" />
+        <link rel="stylesheet" href="assets/stylesheets/index.css" />
+        <!-- <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/fonts/font.css" /> -->
+		<!-- <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/kyc/assets/stylesheets/index.css" /> -->
+    </head>
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Content Template -->
+        <script id="primary-content-template" type="x-tmpl-mustache">
+            <div>
+                <div class="main-cr">
+                    <div class="cr1">
+                        <div class="wr1">
+                            <div class="h2 mb4">APPLICATION TYPE</div>
+                            <div class="l1">{{ applicationDetails.type }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">KYC MODE</div>
+                            <div class="l1">{{ applicationDetails.kycMode }}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-cr">
+                    <img
+                        class="photograph mb24"
+                        src="data:image/png;base64,{{ identityDetails.photograph }}"
+                        alt="photograph"
+                    />
+                    <div class="h1 mb20">Identity Details</div>
+
+                    <div class="h2 mb8">PAN</div>
+                    <div class="l1 mb32">{{ identityDetails.pan }}</div>
+
+                    <div class="h2 mb8">NAME OF THE APPLICANT</div>
+                    <div class="l1 mb32">{{ identityDetails.name }}</div>
+
+                    <div class="h2 mb8">FATHER OR SPOUSE NAME</div>
+                    <div class="l1 mb32">{{ identityDetails.fatherOrSpouseName }}</div>
+
+                    <div class="cr1 mb32">
+                        <div class="wr1">
+                            <div class="h2 mb4">GENDER</div>
+                            <div class="l1">{{ identityDetails.gender }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">MARITAL STATUS</div>
+                            <div class="l1">{{ identityDetails.maritalStatus }}</div>
+                        </div>
+                    </div>
+
+                    <div class="cr1 mb32">
+                        <div class="wr1">
+                            <div class="h2 mb4">DATE OF BIRTH</div>
+                            <div class="l1">{{ identityDetails.dob }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">NATIONALITY</div>
+                            <div class="l1">{{ identityDetails.nationality }}</div>
+                        </div>
+                    </div>
+
+                    <div class="h2 mb8">STATUS</div>
+                    <div class="l1">{{ identityDetails.status }}</div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Secondary Content Template -->
+        <script id="secondary-content-template" type="x-tmpl-mustache">
+            <div class="break-before">
+                <div class="main-cr">
+                    <div class="h1 mb20">Address Details</div>
+
+                    <div class="h2 mb8">RESIDENCE ADDRESS</div>
+                    <div class="l1 mb32">{{ addressDetails.residenceAddress }}</div>
+
+                    <div class="h2 mb8">PERMANENT ADDRESS</div>
+                    <div class="l1 mb32">{{ addressDetails.permanentAddress }}</div>
+
+                    <div class="h2 mb8">PROOF OF RESIDENCE SUBMITTED</div>
+                    <div class="l1 mb32">{{ addressDetails.proofSubmitted }}</div>
+
+                    <div class="cr1">
+                        <div class="wr1">
+                            <div class="h2 mb4">ID NUMBER</div>
+                            <div class="l1">{{ addressDetails.proofIdNumber }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">EXPIRY DATE</div>
+                            <div class="l1">{{ addressDetails.proofExpiryDate }}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-cr">
+                    <div class="h1 mb20">Contact Details</div>
+
+                    <div class="h2 mb8">EMAIL ID</div>
+                    <div class="l1 l1--v1 mb32">{{ addressDetails.emailId }}</div>
+
+                    <div class="h2 mb8">MOBILE NUMBER</div>
+                    <div class="l1">{{ addressDetails.contactNumber }}</div>
+                </div>
+
+                <div class="break-before">
+                    <div class="main-cr">
+                        <div class="h1 mb16">Declaration</div>
+                        <div class="l2 mb24">
+                            I hereby declare that the details furnished above are true to my knowledge and
+                            I undertake to inform you any changes therein, immediately. In case any of the
+                            above information is found to be false or misleading or misrepresenting, I am
+                            aware that I may be held liable for it.
+                        </div>
+
+                        <div class="h2 mb8">DATE</div>
+                        <div class="l1 mb32">{{ declarationDetails.date }}</div>
+
+                        <div class="h2 mb8">PLACE</div>
+                        <div class="l1 mb24">{{ declarationDetails.place }}</div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Tertiary Content Template -->
+        <script id="tertiary-content-template" type="x-tmpl-mustache">
+            <div class="break-before">
+                <div class="main-cr">
+                    <img
+                        class="signature-photograph mb40"
+                        src="data:image/png;base64,{{ data.signature }}"
+                        alt="photograph"
+                    />
+                </div>
+                {{#data.additionalImages}}
+                    <div class="break-before">
+                        <div class="main-cr">
+                            <img
+                                class="additional-photograph mb40"
+                                src="data:image/png;base64,{{ . }}"
+                                alt="photograph"
+                            />
+                        </div>
+                    </div>
+                {{/data.additionalImages}}
+            </div>
+        </script>
+
+        <!-- Office Use Content Template -->
+        <script id="office-use-content-template" type="x-tmpl-mustache">
+            <div class="break-before">
+                <div class="main-cr" style="height: 100%;">
+                    <div class="h2 mb4">FOR OFFICE USE</div>
+                    <div class="h1 mb20">Verification Details</div>
+
+                    <div class="cr1 mb32">
+                        <div class="wr1">
+                            <div class="h2 mb4">IPV DATE</div>
+                            <div class="l1">{{ data.ipvDate }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">OFFICER NAME</div>
+                            <div class="l1">{{ data.officerName }}</div>
+                        </div>
+                    </div>
+
+                    <div class="cr1 mb32">
+                        <div class="wr1">
+                            <div class="h2 mb4">EMP CODE</div>
+                            <div class="l1">{{ data.empCode }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">OFFICER DESIGNATION</div>
+                            <div class="l1">{{ data.officerDesignation }}</div>
+                        </div>
+                    </div>
+
+                    <div class="cr1">
+                        <div class="wr1">
+                            <div class="h2 mb4">INTERMEDIARY CODE</div>
+                            <div class="l1">{{ data.intermediaryCode }}</div>
+                        </div>
+                        <div>
+                            <div class="h2 mb4">OFFICER SIGNATURE</div>
+                            <img
+                                class="officer-signature-photograph"
+                                src="data:image/png;base64,{{ data.officerSignature }}"
+                                alt="photograph"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js"></script>
+        <script src="assets/scripts/index.js"></script>
+    </body>
+</html>

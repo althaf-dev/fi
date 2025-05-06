@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epifi - KYC Details</title>
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+    <link rel="stylesheet" href="assets/stylesheets/index-v2.css" />
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+    
+    <!-- height to contain on one page - 1123px including top & bottom padding -->
+    <!-- Primary Content Template -->
+    <script id="first-page-template" type="x-tmpl-mustache">
+            <div class="page-outer-cr">
+                <div class="page-cr">
+                    <!-- kyc header & company logo section -->
+                    <div class="kyc-header--cr">
+                        <div class="left bg--pink">
+                            <div class="p-10">
+                                <div class="h-1 mb-10">Know Your Client (KYC)</div>
+                                <div class="h-1">Application Form (For Individuals Only)</div>
+                            </div>
+                            <div>
+                                <hr class="horiz-line0">
+                            </div>
+    
+                            <div class="p-10 fl-col ju-sb he-80">
+                                <div class="h-2">Please fill the form in ENGLISH and in BLOCK letters</div>
+                                <div class="h-2">Fields marked * are mandatory</div>
+                                <div class="h-2">Fields marked + are pertaining to CKYC and mandatory only if processing
+                                    CKYC also</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="fl cdsl-logo">
+                                <div class="left">
+                                    <div class="top">
+                                        <img
+                                            class="logo-img"
+                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/kyc/assets/images/csdl-logo.png"
+                                            alt="Logo"
+                                        />
+                                        <div class="fl-col al-fe">
+                                            <div class="h-1">CDSL VENTURES LIMITED</div>
+                                            <div class="h-2">....Exploring New Horizons</div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">Application Number:</div>
+                                </div>
+                                <div class="right">
+                                    <div class="intermediary-logo">
+                                        Intermediary
+                                        <br>
+                                        Logo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fl application-type">
+                                <div>Application Type*:</div>
+                                <div class="ml-20">
+                                    <input
+                                        type="checkbox" id="new-kyc" name="new-kyc" value="New KYC"
+                                        checked
+                                    >
+                                    <label for="new-kyc"> New KYC</label>
+                                </div>
+                                <div class="ml-20">
+                                    <input
+                                        type="checkbox" id="modification-kyc" name="modification-kyc"
+                                        value="Modification KYC"
+                                    >
+                                    <label for="modification-kyc"> Modification KYC</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <!-- kyc mode -->
+                    <div class="kyc-mode--cr section--cr">
+                        <div class="fl mb-5 wd-100">
+                            <div class="fw-bold">KYC Mode*: </div>
+                            <div class="h-2 ml-10 wd-50">Please Tick (✓)</div>
+                        </div>
+                        <div class="ju-sb">
+                            <div>
+                                <input
+                                    type="checkbox" id="normal-kyc-mode" name="normal-kyc-mode" value="Normal"
+                                >
+                                <label for="normal-kyc-mode"> Normal</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="ekyc-otp-kyc-mode" name="ekyc-otp-kyc-mode" value="EKYC OTP"
+                                >
+                                <label for="ekyc-otp-kyc-mode"> EKYC OTP</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="ekyc-biometric-kyc-mode" name="ekyc-biometric-kyc-mode"
+                                    value="EKYC Biometric"
+                                >
+                                <label for="ekyc-biometric-kyc-mode"> EKYC Biometric</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="online-kyc-mode" name="online-kyc-mode" value="Online KYC"
+                                    checked
+                                >
+                                <label for="online-kyc-mode"> Online KYC</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="offline-kyc-mode" name="offline-kyc-mode" value="Offline EKYC"
+                                >
+                                <label for="offline-kyc-mode"> Offline EKYC</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="digilocker-kyc-mode" name="digilocker-kyc-mode"
+                                    value="Digilocker"
+                                >
+                                <label for="digilocker-kyc-mode"> Digilocker</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- identity details header -->
+                    <div class="section--cr bg--pink">
+                        <div>
+                            <span class="h-1">1. Identity Details </span>
+                            <span class="h-3">(please refer guidelines overleaf)</span>
+                        </div>
+                    </div>
+    
+                    <!-- identity details body -->
+                    <div class="section--cr pb-0">
+                        <div class="item--cr ju-fs">
+                            <div>PAN*</div>
+                            <div class="ml-20">
+                                <span>{{ identity.pan }}</span>
+                                <hr class="horiz-line">
+                            </div>
+    
+                            <div class="ml-20 h-2 wd-50">Please enclose a duly attested copy of your PAN Card</div>
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="left2">Name*<span class="h-2">(same as ID proof)</span></div>
+                            <div>
+                                <span>{{ identity.name }}</span>
+                                <hr class="horiz-line right2">
+                            </div>
+    
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="left2">Maiden Name+ <span class="h-2">(if any)</span></div>
+                            <div>
+                                <span>{{ identity.maidenName }}</span>
+                                <hr class="horiz-line right2">
+                            </div>
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="left2">Fathers/Spouse’s Name*</div>
+                            <div>
+                                <span>{{ identity.fatherOrSpouseName }}</span>
+                                <hr class="horiz-line right2">
+                            </div>
+                        </div>
+                        <div class="item--cr al-fs mb-0">
+                            <!-- other details -->
+                            <div class="dob-gender--cr">
+                                <div class="item--cr">
+                                    <div class="left">Date of Birth*</div>
+                                    <div class="right">
+                                        <span>{{ identity.dob }}</span>
+                                        <hr class="horiz-line">
+                                    </div>
+                                </div>
+                                <div class="item--cr">
+                                    <div class="left">Gender*</div>
+                                    <div class="right ju-fs">
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="male-checkbox" name="male-checkbox"
+                                                value="Male"
+                                                {{#funcs.genderCheck}}MALE{{/funcs.genderCheck}}
+                                            >
+                                            <label for="male-checkbox"> Male</label>
+                                        </div>
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="female-checkbox" name="female-checkbox"
+                                                value="Female"
+                                                {{#funcs.genderCheck}}FEMALE{{/funcs.genderCheck}}
+                                            >
+                                            <label for="female-checkbox"> Female</label>
+                                        </div>
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="transgender-checkbox" name="transgender-checkbox"
+                                                value="Transgender"
+                                                {{#funcs.genderCheck}}TRANSGENDER{{/funcs.genderCheck}}
+                                            >
+                                            <label for="transgender-checkbox"> Transgender</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item--cr">
+                                    <div class="left">Marital Status*</div>
+                                    <div class="right ju-fs">
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="single-checkbox" name="single-checkbox"
+                                                value="Single"
+                                                {{#funcs.maritalCheck}}SINGLE{{/funcs.maritalCheck}}
+                                            >
+                                            <label for="single-checkbox"> Single</label>
+                                        </div>
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="married-checkbox" name="married-checkbox"
+                                                value="Married"
+                                                {{#funcs.maritalCheck}}MARRIED{{/funcs.maritalCheck}}
+                                            >
+                                            <label for="married-checkbox"> Married</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item--cr">
+                                    <div class="left">Nationality*</div>
+                                    <div class="right ju-fs al-fe">
+                                        <div class="wd-33">
+                                            <input type="checkbox" id="indian-checkbox" name="indian-checkbox"
+                                                value="Indian"
+                                                {{#funcs.nationalityCheck}}INDIAN{{/funcs.nationalityCheck}}
+                                            >
+                                            <label for="indian-checkbox"> Indian</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="other-nationality-checkbox"
+                                                name="other-nationality-checkbox" value="Other"
+                                                {{#funcs.nationalityCheck}}OTHER{{/funcs.nationalityCheck}}
+                                            >
+                                            <label for="other-nationality-checkbox"> Other</label>
+                                        </div>
+                                        <div class="wd-33 ml-20">
+                                            <span>{{ identity.nationality }}</span>
+                                            <hr class="horiz-line1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item--cr al-fs mb-0">
+                                    <div class="left">
+                                        <div>Residential Status*</div>
+                                        <div class="h-2">Please Tick (✓)</div>
+                                    </div>
+                                    <div class="right fl-col ju-fs al-fs">
+                                        <div class="wd-100 ju-sb">
+                                            <div class="wd-50 mb-10">
+                                                <input type="checkbox" id="res-indi-checkbox" name="res-indi-checkbox"
+                                                    value="Resident Individual"
+                                                    {{#funcs.resiStatusCheck}}Resident Individual{{/funcs.resiStatusCheck}}
+                                                >
+                                                <label for="res-indi-checkbox"> Resident Individual</label>
+                                            </div>
+                                            <div class="wd-50 mb-10">
+                                                <input type="checkbox" id="non-res-indi-checkbox"
+                                                    name="non-res-indi-checkbox" value="Non Resident Indian"
+                                                    {{#funcs.resiStatusCheck}}Non Resident Indian{{/funcs.resiStatusCheck}}
+                                                >
+                                                <label for="non-res-indi-checkbox"> Non Resident Indian</label>
+                                            </div>
+                                        </div>
+                                        <div class="wd-100 ju-sb">
+                                            <div class="wd-50 mb-10">
+                                                <input type="checkbox" id="foreign-nat-checkbox" name="foreign-nat-checkbox"
+                                                    value="Foreign National"
+                                                    {{#funcs.resiStatusCheck}}Foreign National{{/funcs.resiStatusCheck}}
+                                                >
+                                                <label for="foreign-nat-checkbox"> Foreign National</label>
+                                            </div>
+                                            <div class="wd-50 mb-10">
+                                                <input type="checkbox" id="person-of-io-checkbox"
+                                                    name="person-of-io-checkbox" value="Person of Indian Origin"
+                                                    {{#funcs.resiStatusCheck}}Person of Indian Origin{{/funcs.resiStatusCheck}}
+                                                >
+                                                <label for="person-of-ioy-checkbox"> Person of Indian Origin</label>
+                                            </div>
+                                        </div>
+                                        <div class="wd-100 h-2">(Passport mandatory for NRIs, PIOs and Foreign Nationals)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- applicant photo -->
+                            <div class="app-photo--cr">
+                                <div class="box">
+                                    <!-- <div>Applicant Photo</div> -->
+                                    <img
+                                        class="applicant-photograph"
+                                        src="data:image/png;base64,{{ images.photograph }}"
+                                        alt="Applicant Signature"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Proof of Identity (POI) -->
+                    <div class="poi-pan--cr">
+                        <span>Proof of Identity (POI) submitted for PAN exempted cases </span>
+                        <span class="h-2">(Please tick)</span>
+                        <div class="wd-100">
+                            <div class="wd-100 ju-fs mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="aadhar-checkbox" name="aadhar-checkbox"
+                                        value="A — Aadhaar Card">
+                                    <label for="aadhar-checkbox"> A — Aadhaar Card</label>
+                                </div>
+                                <div class="wd-33 ju-fs al-fe">
+                                    <div>XXXX XXXX</div>
+                                    <div class="text-ce">
+                                        <span></span>
+                                        <hr class="horiz-line2 ml-5">
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-sb al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="passport-num-checkbox" name="passport-num-checkbox"
+                                        value="B — Passport Number">
+                                    <label for="passport-num-checkbox-checkbox"> B — Passport Number</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33 fl ju-fe al-fe">
+                                    <div class="h-2">(Expiry Date)</div>
+                                    <hr class="horiz-line1 ml-10">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="voter-id-checkbox" name="voter-id-checkbox"
+                                        value="C — Voter ID Card">
+                                    <label for="voter-id-checkbox"> C — Voter ID Card</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-sb al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="dl-checkbox" name="dl-checkbox" value="D —Driving License">
+                                    <label for="dl-checkbox"> D —Driving License</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33 fl ju-fe al-fe">
+                                    <div class="h-2">(Expiry Date)</div>
+                                    <hr class="horiz-line1 ml-10">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="nrega-card-checkbox" name="nrega-card-checkbox"
+                                        value="E —NREGA Job Card">
+                                    <label for="nrega-card-checkbox"> E —NREGA Job Card</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="npr-checkbox" name="npr-checkbox" value="F — NPR">
+                                    <label for="npr-checkbox"> F — NPR</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="z-others-checkbox" name="z-others-checkbox"
+                                        value="Z —Others">
+                                    <label for="z-others-checkbox"> Z —Others</label>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33">
+                                    <div class="h-2">(any document notified by Central Government)</div>
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe">
+                                <div class="wd-33 ju-fe pr-10">
+                                    <div>Identification Number</div>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <!-- address details header -->
+                    <div class="section--cr bg--pink">
+                        <span class="h-1">2. Address Details* </span>
+                        <span class="h-3">(please refer guidelines overleaf)</span>
+                    </div>
+    
+                    <!-- address details body -->
+                    <div class="section--cr">
+                        <div class="item--cr fw-bold h-3">
+                            A. Correspondence/ Local Address*
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 1*</div>
+                            <div class="right1">
+                                <span>{{ residenceAddress.line1 }}</span>
+                                <hr class="horiz-line wd-100">
+                            </div>
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 2</div>
+                            <hr class="horiz-line right1">
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 3</div>
+                            <hr class="horiz-line right1">
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="wd-40 ju-sb al-fe">
+                                <div>City/Town/Village*</div>
+                                <div>
+                                    <span>{{ residenceAddress.city }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-30 ju-fs al-fe">
+                                <div>District*</div>
+                                <div class="ml-10">
+                                    <span>{{ residenceAddress.district }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-30 ju-fe al-fe">
+                                <div>Pin Code*</div>
+                                <div class="ml-10">
+                                    <span>{{ residenceAddress.pinCode }}</span>
+                                    <hr class="horiz-line3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="wd-40 ju-sb al-fe">
+                                <div>State*</div>
+                                <div>
+                                    <span>{{ residenceAddress.state }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-50 ju-fs al-fe">
+                                <div>Country*</div>
+                                <div class="ml-10">
+                                    <span>{{ residenceAddress.country }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--cr">
+                            <div>Address Type*</div>
+                            <div>
+                                <input
+                                    type="checkbox" id="resi-busi-checkbox" name="resi-busi-checkbox" value="Residential/Business"
+                                    {{#funcs.localAddressTypeCheck}}Residential/Business{{/funcs.localAddressTypeCheck}}
+                                >
+                                <label for="resi-busi-checkbox"> Residential/Business</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="resi-checkbox" name="resi-checkbox" value="Residential"
+                                    {{#funcs.localAddressTypeCheck}}Residential{{/funcs.localAddressTypeCheck}}
+                                >
+                                <label for="resi-checkbox"> Residential</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="busi-checkbox" name="busi-checkbox" value="Business"
+                                    {{#funcs.localAddressTypeCheck}}Business{{/funcs.localAddressTypeCheck}}
+                                >
+                                <label for="busi-checkbox"> Business</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="reg-off-checkbox" name="reg-off-checkbox" value="Registered Office"
+                                    {{#funcs.localAddressTypeCheck}}Registered Office{{/funcs.localAddressTypeCheck}}
+                                >
+                                <label for="reg-off-checkbox"> Registered Office</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="unsp-checkbox" name="unsp-checkbox" value="Unspecified"
+                                    {{#funcs.localAddressTypeCheck}}Unspecified{{/funcs.localAddressTypeCheck}}
+                                >
+                                <label for="unsp-checkbox"> Unspecified</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- remarks & application esign section -->
+                    <div class="signature--cr">
+                        <div class="remarks--cr"></div>
+                        <div class="sign--cr">
+                            <div class="title bg--pink fs-10">Applicant e-SIGN</div>
+                            <div class="box">
+                                <!-- <img
+                                    class="signature-photograph"
+                                    src="data:image/png;base64,{{ images.signature }}"
+                                    alt="Applicant Signature"
+                                /> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+    
+    <!-- Second page -->
+    <script id="second-page-template" type="x-tmpl-mustache">
+            <div class="break-before fl-col page-outer-cr">
+                <div class="page-cr">
+                    <!-- permanent address details -->
+                    <div class="p-10 pb-0 bor-bm">
+                        <div class="item--cr">
+                            <div>
+                                <span class="fw-bold h-3">B. Permanent residence address of applicant, if different from
+                                    above A / Overseas Address* </span>
+                                <span class="h-3">(Mandatory for NRI Applicant)</span>
+                            </div>
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 1*</div>
+                            <div class="right1">
+                                <span>{{ permanentAddress.line1 }}</span>
+                                <hr class="horiz-line wd-100">
+                            </div>
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 2</div>
+                            <hr class="horiz-line right1">
+                        </div>
+                        <div class="item--cr">
+                            <div class="left1">Line 3</div>
+                            <hr class="horiz-line right1">
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="wd-40 ju-sb al-fe">
+                                <div>City/Town/Village*</div>
+                                <div>
+                                    <span>{{ permanentAddress.city }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-30 ju-fs al-fe">
+                                <div>District*</div>
+                                <div class="ml-10">
+                                    <span>{{ permanentAddress.district }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-30 ju-fe al-fe">
+                                <div>Pin Code*</div>
+                                <div class="ml-10">
+                                    <span>{{ permanentAddress.pinCode }}</span>
+                                    <hr class="horiz-line3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="wd-40 ju-sb al-fe">
+                                <div>State*</div>
+                                <div>
+                                    <span>{{ permanentAddress.state }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                            <div class="wd-50 ju-fs al-fe">
+                                <div>Country*</div>
+                                <div class="ml-10">
+                                    <span>{{ permanentAddress.country }}</span>
+                                    <hr class="horiz-line1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item--cr">
+                            <div>Address Type*</div>
+                            <div>
+                                <input
+                                    type="checkbox" id="resi-busi-checkbox" name="resi-busi-checkbox" value="Residential/Business"
+                                    {{#funcs.permanentAddressTypeCheck}}Residential/Business{{/funcs.permanentAddressTypeCheck}}
+                                >
+                                <label for="resi-busi-checkbox"> Residential/Business</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="resi-checkbox" name="resi-checkbox" value="Residential"
+                                    {{#funcs.permanentAddressTypeCheck}}Residential{{/funcs.permanentAddressTypeCheck}}
+                                >
+                                <label for="resi-checkbox"> Residential</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="busi-checkbox" name="busi-checkbox" value="Business"
+                                    {{#funcs.permanentAddressTypeCheck}}Business{{/funcs.permanentAddressTypeCheck}}
+                                >
+                                <label for="busi-checkbox"> Business</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="reg-off-checkbox" name="reg-off-checkbox" value="Registered Office"
+                                    {{#funcs.permanentAddressTypeCheck}}Registered Office{{/funcs.permanentAddressTypeCheck}}
+                                >
+                                <label for="reg-off-checkbox"> Registered Office</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="unsp-checkbox" name="unsp-checkbox" value="Unspecified"
+                                    {{#funcs.permanentAddressTypeCheck}}Unspecified{{/funcs.permanentAddressTypeCheck}}
+                                >
+                                <label for="unsp-checkbox"> Unspecified</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Proof of Address (POI) -->
+                    <div class="poi-pan--cr">
+                        <span class="h-3 fw-bold">Proof of Address*</span>
+                        <span class="h-2">(attested copy of any one POA to be submitted) </span>
+                        <div class="wd-100">
+                            <div class="wd-100 ju-fs mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="aadhar-checkbox" name="aadhar-checkbox"
+                                        value="A — Aadhaar Card"
+                                        {{#funcs.poaTypeCheck}}Aadhaar Card{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="aadhar-checkbox"> A — Aadhaar Card</label>
+                                </div>
+                                <div class="wd-33 ju-fs al-fe">
+                                    <div>XXXX XXXX </div>
+                                    <div class="ml-10">
+                                        <span>{{#funcs.poaValue}}Aadhaar Card{{/funcs.poaValue}}</span>
+                                        <hr class="horiz-line2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-sb al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="passport-num-checkbox" name="passport-num-checkbox"
+                                        value="B — Passport Number"
+                                        {{#funcs.poaTypeCheck}}Passport Number{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="passport-num-checkbox-checkbox"> B — Passport Number</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}Passport Number{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33 fl ju-fe al-fe">
+                                    <div class="h-2">(Expiry Date)</div>
+                                    <div class="ml-10">
+                                        <span>{{#funcs.poaExpiryDate}}Passport Number{{/funcs.poaExpiryDate}}</span>
+                                        <hr class="horiz-line1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="voter-id-checkbox" name="voter-id-checkbox"
+                                        value="C — Voter ID Card"
+                                        {{#funcs.poaTypeCheck}}Voter ID Card{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="voter-id-checkbox"> C — Voter ID Card</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}Voter ID Card{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-sb al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="dl-checkbox" name="dl-checkbox" value="D —Driving License"
+                                        {{#funcs.poaTypeCheck}}Driving License{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="dl-checkbox"> D —Driving License</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}Driving License{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33 fl ju-fe al-fe">
+                                    <div class="h-2">(Expiry Date)</div>
+                                    <div class="ml-10">
+                                        <span>{{#funcs.poaExpiryDate}}Driving License{{/funcs.poaExpiryDate}}</span>
+                                        <hr class="horiz-line1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="nrega-card-checkbox" name="nrega-card-checkbox" value="E —NREGA Job Card"
+                                        {{#funcs.poaTypeCheck}}NREGA Job Card{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="nrega-card-checkbox"> E —NREGA Job Card</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}NREGA Job Card{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="npr-checkbox" name="npr-checkbox" value="F — NPR"
+                                        {{#funcs.poaTypeCheck}}NPR{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="npr-checkbox"> F — NPR</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}NPR{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe mtb-10">
+                                <div class="wd-33">
+                                    <input type="checkbox" id="z-others-checkbox" name="z-others-checkbox"
+                                        value="Z —Others"
+                                        {{#funcs.poaTypeCheck}}Others{{/funcs.poaTypeCheck}}
+                                    >
+                                    <label for="z-others-checkbox"> Z —Others</label>
+                                </div>
+                                <div class="wd-33">
+                                    <span>{{#funcs.poaValue}}Others{{/funcs.poaValue}}</span>
+                                    <hr class="horiz-line">
+                                </div>
+                                <div class="wd-33">
+                                    <div class="h-2">(any document notified by Central Government)</div>
+                                </div>
+                            </div>
+                            <div class="wd-100 ju-fs al-fe">
+                                <div class="wd-33 ju-fe pr-10">
+                                    <div>Identification Number</div>
+                                </div>
+                                <div class="wd-33">
+                                    <hr class="horiz-line">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <!-- contact details header -->
+                    <div class="section--cr bor-bm bg--pink">
+                        <div class="h-1">3. Contact Details</div>
+                    </div>
+    
+                    <!-- contact details body -->
+                    <div class="p-10 fl-col">
+                        <div class="item--cr ju-fs">
+                            <div class="left1">Email ID</div>
+                            <div class="right1">
+                                <span>{{ contactDetails.emailId }}</span>
+                                <hr class="horiz-line wd-100">
+                            </div>
+                        </div>
+                        <div class="item--cr ju-fs">
+                            <div class="left1">Mobile No</div>
+                            <div>
+                                <span>{{ contactDetails.mobileNumber }}</span>
+                                <hr class="horiz-line">
+                            </div>
+                        </div>
+                        <div class="item--cr mb-0">
+                            <div class="wd-50 ju-fs al-fe">
+                                <div class="wd-20">Tel (Off)</div>
+                                <div class="wd-70">
+                                    <span>{{ contactDetails.officeTelNumber }}</span>
+                                    <hr class="horiz-line wd-100">
+                                </div>
+                            </div>
+                            <div class="wd-50 ju-fs al-fe ml-20">
+                                <div class="wd-20">Tel (Res)</div>
+                                <div class="wd-70">
+                                    <span>{{ contactDetails.resTelNumber }}</span>
+                                    <hr class="horiz-line wd-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- application declaration header -->
+                    <div class="section--cr bg--pink">
+                        <div class="h-1">4. Applicant Declaration</div>
+                    </div>
+    
+                    <!-- application declaration body -->
+                    <div class="signature--cr he-180">
+                        <div class="remarks--cr wd-50 fl-col p-10">
+                            <div class="fs-10">I hereby declare that the details furnished above are true and correct to the
+                                best of my/our knowledge and belief and I under- take to inform you of any changes therein,
+                                immediately. In case any of the above information is found to be false or untrue or
+                                misleading or misrepresenting, I am/We are aware that I/We may be held liable for it.</div>
+                            <div class="mt-10 fs-10">I/We hereby consent to receiving information from CVL KRA through
+                                SMS/Email on the above registered number/Email address.</div>
+                            <div class="ju-fs al-fe wd-100 mt-10">
+                                <div class="wd-20 h-2">DATE:</div>
+                                <div class="wd-50">
+                                    <span>{{ appDeclaration.date }}</span>
+                                    <hr class="horiz-line wd-100">
+                                </div>
+                                <div class="h-2 ml-10">(DD-MM-YYYY)</div>
+                            </div>
+                            <div class="ju-fs al-fe wd-100 mt-10">
+                                <div class="wd-20 h-2">PLACE:</div>
+                                <div class="wd-80">
+                                    <span>{{ appDeclaration.place }}</span>
+                                    <hr class="horiz-line wd-100">
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="sign--cr wd-25_2 al-fs">
+                            <div class="title fw--450 al-ce bg--light-grey fs-10">Applicant e-SIGN</div>
+                            <div class="box">
+                                <!-- <img
+                                    class="signature-photograph"
+                                    src="data:image/png;base64,{{ images.signature }}"
+                                    alt="Applicant Signature"
+                                /> -->
+                            </div>
+                        </div>
+                        <div class="sign--cr wd-25">
+                            <div class="title fw--450 al-ce bg--light-grey fs-10">Applicant Wet Signature</div>
+                            <div class="box">
+                                <img
+                                    class="signature-photograph"
+                                    src="data:image/png;base64,{{ images.signature }}"
+                                    alt="Applicant Signature"
+                                />
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="page-cr mt-20">
+                    <!-- office use header -->
+                    <div class="p-10 bg--pink">
+                        <div class="h-1">5. For Office Use Only</div>
+                    </div>
+    
+                    <!-- office use body -->
+                    <div class="wd-100 fl bor-tp">
+                        <div class="wd-50">
+                            <div class="bg--pink text-ce bor-bm ptb-5 h-3">In-Person Verification (IPV) carried out by*
+                            </div>
+                            <div class="p-10 he-130 bor-bm">
+                                <div class="item--cr ju-fs">
+                                    <div class="wd-40">IPV Date</div>
+                                    <div>
+                                        <span>{{ verification.ipvDate }}</span>
+                                        <hr class="horiz-line">
+                                    </div>
+                                </div>
+                                <div class="item--cr ju-fs">
+                                    <div class="wd-40">Emp. Name</div>
+                                    <div>
+                                        <span>{{ verification.officerName }}</span>
+                                        <hr class="horiz-line">
+                                    </div>
+                                </div>
+                                <div class="item--cr ju-fs">
+                                    <div class="wd-40">Emp. Code</div>
+                                    <div>
+                                        <span>{{ verification.empCode }}</span>
+                                        <hr class="horiz-line">
+                                    </div>
+                                </div>
+                                <div class="item--cr ju-fs">
+                                    <div class="wd-40">Emp. Designation</div>
+                                    <div>
+                                        <span>{{ verification.officerDesignation }}</span>
+                                        <hr class="horiz-line">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="he-79 fl-col ju-sb al-ce">
+                                <img
+                                    class="officer-signature-photograph mt-10"
+                                    src="data:image/png;base64,{{ images.officerSignature }}"
+                                    alt="Officer Signature"
+                                />
+                                <div class="h-4 mb-10 wd-100 text-ce">Employee Signature and Stamp</div>
+                            </div>
+    
+                        </div>
+                        <div class="wd-50_2 bor-lf">
+                            <div class="bg--pink text-ce bor-bm ptb-5 h-3">Intermediary Details*</div>
+                            <div class="p-10 he-130 bor-bm">
+                                <div class="mb-10">
+                                    <input
+                                        type="checkbox" id="ovd-checkbox" name="ovd-checkbox" value="(OVD)"
+                                        checked
+                                    >
+                                    <label for="ovd-checkbox"> Self certified document copies received (OVD)</label>
+                                </div>
+                                <div class="mb-10">
+                                    <input type="checkbox" id="attested-checkbox" name="attested-checkbox"
+                                        value="(Attested)">
+                                    <label for="attested-checkbox"> True Copies of documents received (Attested)</label>
+                                </div>
+                                <div class="mb-10">AMC / Intermediary Name :</div>
+                                <div class="bor wd-100 he-30 ju-ce al-ce"><span>{{ verification.intermediaryCode }}</span></div>
+                            </div>
+                            <div class="he-79 fl-col ju-sb al-ce">
+                                <img
+                                    class="institution-stamp-photograph"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/kyc/assets/images/epifi-wealth-stamp.png"
+                                    alt="Institution stamp"
+                                />
+                                <div class="h-4 mb-10 wd-100 text-ce">Institution Name and Stamp</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </script>
+    
+    
+    <!-- Additional variable pages -->
+    <script id="additional-page-template" type="x-tmpl-mustache">
+            {{#images.additionalImages}}
+                <div class="break-before fl-col page-outer-cr he-1121">
+                    <div class="page-cr">
+                        <div class="wd-100 ju-ce al-ce mtb-20">
+                            <img
+                                class="additional-photograph"
+                                src="data:image/png;base64,{{ . }}"
+                                alt="additional photograph"
+                            />
+                        </div>
+                    </div>
+                </div>
+            {{/images.additionalImages}}
+    </script>
+    
+    <!-- import mustache.js library -->
+    <script
+            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+    <script src="assets/scripts/index-v2.js"></script>
+</body>
+
+</html>

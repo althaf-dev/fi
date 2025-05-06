@@ -1,0 +1,40 @@
+{
+    "metaTitle": "Ask Fi - The Coolest Financial Assistance App | Transaction Insights, Mutual Funds Investment, Opening Online Deposits, or any other query, Just Ask.Fi",
+    "metaDescription": "Get smart and quick answers to any of your finance-related queries at your fingertips within a fraction of a second. Just Ask.Fi now!",
+    "canonicalUrl": "/features/ask-fi",
+    "ogTitle": "Ask Fi - The Coolest Financial Assistance App | Transaction Insights, Mutual Funds Investment, Opening Online Deposits, or any other query, Just Ask.Fi",
+    "ogSiteName": "Fi.Money",
+    "ogUrl": "https://fi.money/features/ask-fi",
+    "ogDescription": "Get smart and quick answers to any of your finance-related queries at your fingertips within a fraction of a second. Just Ask.Fi now!",
+    "ogType": "product",
+    "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "twitterCard": "summary",
+    "twitterSite": "@Bank_on_Fi",
+    "twitterTitle": "Ask Fi - The Coolest Financial Assistance App | Transaction Insights, Mutual Funds Investment, Opening Online Deposits, or any other query, Just Ask.Fi",
+    "twitterDescription": "Get smart and quick answers to any of your finance-related queries at your fingertips within a fraction of a second. Just Ask.Fi now!",
+    "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "know your money",
+                "item": "https://fi.money/features"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ask-fi",
+                "item": "https://fi.money/features/ask-fi"
+            }
+        ]
+    }
+}

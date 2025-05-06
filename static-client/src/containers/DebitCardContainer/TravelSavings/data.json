@@ -1,0 +1,305 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "label": "Thailand",
+            "value": "Thailand"
+        },
+        {
+            "id": 2,
+            "label": "Singapore",
+            "value": "Singapore"
+        },
+        {
+            "id": 3,
+            "label": "Dubai",
+            "value": "Dubai"
+        }
+    ],
+    "budget": [
+        {
+            "id": 1,
+            "label": "100000",
+            "value": "100000"
+        },
+        {
+            "id": 2,
+            "label": "150000",
+            "value": "150000"
+        },
+        {
+            "id": 3,
+            "label": "200000",
+            "value": "200000"
+        }
+    ],
+    "savings": {
+        "Thailand": {
+            "100000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 2500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 0
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 15500
+            },
+            "150000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 0
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 18000
+            },
+            "200000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 7500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 0
+                    },
+                        {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 20500
+            }
+        },
+        "Singapore": {
+            "100000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 2500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 16000
+            },
+            "150000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 18500
+            },
+            "200000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 7500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 21000
+            }
+        },
+        "Dubai": {
+            "100000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 2500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 16000
+            },
+            "150000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 18500
+            },
+            "200000": {
+                "breakdown": [
+                    {
+                        "label": "Savings** on spends due to Zero forex markup",
+                        "value": 7500
+                    },
+                    {
+                        "label": "Savings on Cash buying/ Card loading charges",
+                        "value": 2000
+                    },
+                    {
+                        "label": "Savings on Visa Fees",
+                        "value": 500
+                    },
+                    {
+                        "label": "Savings on Flights",
+                        "value": 1000
+                    },
+                    {
+                        "label": "Savings on Hotels ",
+                        "value": 5000
+                    },
+                    {
+                        "label": "Savings on Cabs",
+                        "value": 5000
+                    }
+                ],
+                "total": 21000
+            }
+        }
+    }
+}

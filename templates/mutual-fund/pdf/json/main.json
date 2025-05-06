@@ -1,0 +1,24 @@
+{
+    "financialYear": "2022-2023",
+    "name": "Mohit",
+    "statementPeriod": "2022-2023",
+    "panNumber": "ABNO98144",
+    "investedDetails": [
+      {
+        "date": "2022-01-01",
+        "fundName": "ICICI Index",
+        "amountInvested": "1000"
+      }
+    ],
+    "upcomingInvestmentDetails": [
+      {
+        "date": "2022-01-01",
+        "fundName": "ICICI Index",
+        "amountInvested": "1000"
+      }
+    ],
+    "totalInvestedAmount": "1000",
+    "totalUpcomingInvestmentAmount": "1000",
+    "logoImageUrl": "https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg",
+    "generationDate": "11-11-2011"
+  }

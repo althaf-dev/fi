@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Stocks</title>
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+    <link rel="stylesheet" href="assets/stylesheets/index.css" />
+</head>
+
+<body>
+    <div id="target">Loading...</div>
+    
+    <!-- height to contain on one page - 1123px including top & bottom padding -->
+    <!-- Primary Content Template -->
+    <script id="first-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <!-- Dealers header and compnay logo section -->
+                <div class="dealer-header--cr">
+                    <div class="left bor">
+                        <div class="fl">
+                            <div class="bor-rt wd-20 bg--light-grey">
+                                <div>To be filled in by Authorised Dealer</div>
+                            </div>
+                            <div class="wd-80">
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        A D CODE
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ ADCode }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        BR CODE
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ BRCode }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        SOL ID
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ SolId }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        DEAL ID
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ DealId }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        FX Rate
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ FxRate }}
+                                    </div>
+                                </div>
+                                <div class="fl">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey">
+                                        FCY & Amount
+                                    </h1>
+                                    <div class="fl wd-60">
+                                        <div class="wd-50 p-10 bor-rt h-5">
+                                            {{ FCY }}
+                                        </div>
+                                        <div class="wd-50 p-10 h-5">
+                                            {{ Amount }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <img
+                                class="logo-img"
+                                src="https://dza2kd7rioahk.cloudfront.net/assets/pdf-templates/us-stocks/federal-bank.png"
+                                alt="Logo"
+                            />
+                        </div>
+                        <div class="text-ce bor-3_orange p-20">
+                            <h1 class="text-ce text-un">FORM A2<br /></h1>
+                            <span class="text-ce h-5">(For payments other than imports of goods and remittances covering intermediary trade)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Application for Remittance Abroad Start-->
+                <div class="mt-20">
+                    <div class="text-ce">
+                        <h1 class="text-ce text-un">Application for Remittance Abroad<br /></h1>
+                        <span class="text-ce h-5">(To be completed by the applicant)</span>
+                    </div>
+                    <div class="mt-20">
+                        <span class="h-5">I/We, <span class="text-un h-5 text-cap">{{ CustomerName }}</span> request <b>The Federal Bank Ltd,</b> <span class="h-5 text-cap text-un">{{ ADBranchName }}</span><span class="h-4"><b>(Name of AD Branch)</b></span> to issue me/us foreign currency notes / outward remittance as per details below. I/We enclose my/our cheque mentioned below towards equivalent INR amount and / or authorize the bank to debit my/our same account for amount / applicable bank charges and taxes.</span>
+                    </div>
+
+                    <div class="bor mt-20">
+                        <div class="fl bor-bm">
+                            <div class="wd-25 bg--light-grey bor-rt fl p-15">
+                                <div class="h-5">Remittance Details</div>
+                            </div>
+                            <div class="wd-75">
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey h-5">
+                                        Currency
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ Currency }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey h-5">
+                                        Currency Amount
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ CurrencyAmountInUSD }}
+                                    </div>
+                                </div>
+                                <div class="fl bor-bm">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey h-5">
+                                        Exchange Rate
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ ExchangeRate }}
+                                    </div>
+                                </div>
+                                <div class="fl">
+                                    <h1 class="wd-40 bor-rt p-10 bg--light-grey h-5">
+                                        INR Equivalent Amount
+                                    </h1>
+                                    <div class="wd-60 p-10 h-5">
+                                        {{ CurrencyAmountINR }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl bor-bm">
+                            <div class="wd-25 bg--light-grey bor-rt fl p-15">
+                                <div class="h-5">Applicant Name(s) & Address</div>
+                            </div>
+                            <div class="wd-75 h-5 p-15">
+                                {{ ApplicantNameAndAddress }}
+                            </div>
+                        </div>
+                        <div class="fl bor-bm">
+                            <div class="wd-25 bg--light-grey bor-rt fl p-15 h-5">
+                                <div class="h-5">Customer ID</div>
+                            </div>
+                            <div class="wd-75 h-5 p-15">
+                                {{ CustomerId }}
+                            </div>
+                        </div>
+                        <div class="fl bor-bm">
+                            <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                                <div class="h-5">PAN No.</div>
+                            </div>
+                            <div class="wd-80 h-5 p-15">
+                                {{ PanId }}
+                            </div>
+                        </div>
+                        <div class="fl bor-bm">
+                            <div class="wd-33 bg--light-grey bor-rt fl p-15">
+                                <div class="h-5">Residential Status (Tick)</div>
+                            </div>
+                            <div class="wd-33 ju-sb bor-rt al-ce p-15">
+                                <div class="h-5">
+                                    Resident Individual
+                                </div>
+                                <div>
+                                    <input
+                                        type="checkbox" id="resident-individual" name="resident-individual" value="Resident Individual"
+                                        checked
+                                    >
+                                </div>
+                            </div>
+                            <div class="wd-33 ju-sb al-ce p-15">
+                                <div class="h-5">
+                                    Resident Non-Individual
+                                </div>
+                                <div>
+                                    <input
+                                        type="checkbox" id="resident-nonIndividual" name="resident-nonIndividual" value="Resident-nonIndividual"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl">
+                            <div class="wd-33 ju-sb bor-rt al-ce p-15">
+                                <div class="h-5">
+                                    Non-Resident Indian<br />(NRI)
+                                </div>
+                                <div>
+                                    <input
+                                        type="checkbox" id="resident-individual" name="resident-individual" value="Resident Individual"
+                                    >
+                                </div>
+                            </div>
+                            <div class="wd-33 ju-sb bor-rt al-ce p-15">
+                                <div class="h-5">
+                                    Foreign National – <br />holding PIO/OCI Card
+                                </div>
+                                <div>
+                                    <input
+                                        type="checkbox" id="resident-individual" name="resident-individual" value="Resident Individual"
+                                    >
+                                </div>
+                            </div>
+                            <div class="wd-33 ju-sb al-ce p-15">
+                                <div class="h-5">
+                                    Foreign National<br /> (other than PIO/OCI)
+                                </div>
+                                <div>
+                                    <input
+                                        type="checkbox" id="resident-individual" name="resident-individual" value="Resident Individual"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl">
+                            <div class="wd-40 bg--light-grey bor-tp bor-rt fl p-15">
+                                <div class="h-5">Debit Account -Savings Bank/ NRE/ONR/Current/ RFC/ EEFC A/c. No</div>
+                            </div>
+                            <div class="wd-60 bor-tp p-15 h-5">
+                                {{ SavingsBankAccountNumber }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Second Page Template -->
+    <script id="second-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <div class="bor">
+                    <div class="fl bor-bm">
+                        <div class="wd-40 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Debit Charges from Account, if different from above</div>
+                        </div>
+                        <div class="wd-60">
+
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Cheque No.</div>
+                        </div>
+                        <div class="wd-40 bor-rt">
+
+                        </div>
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Cheque Dt</div>
+                        </div>
+                        <div class="wd-40">
+
+                        </div>
+                    </div>
+                    <div class="fl bor-bm bor-tp">
+                        <div class="wd-100 bg--light-grey fl h-5 p-15">
+                            Effect the foreign exchange remittance directly to the below mentioned beneficiary
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Beneficiary Name</div>
+                        </div>
+                        <div class="wd-80 h-5 p-15">
+                            {{ BeneficiaryName }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Address</div>
+                        </div>
+                        <div class="wd-80 h-5 p-15">
+                            {{ BeneficiaryAddress }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Beneficiary Account Number/ IBAN*</div>
+                        </div>
+                        <div class="wd-80 h-5 p-15">
+                            {{ BeneficiaryAccountNumber }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-30 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Beneficiary Bank & Branch</div>
+                        </div>
+                        <div class="wd-70 h-5 p-15">
+                            {{ BeneficiaryBankAndBranch }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-30 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Beneficiary Bank's SWIFT Code</div>
+                        </div>
+                        <div class="wd-70 h-5 p-15">
+                            {{ BeneficiarySwiftCode }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-30 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">ABA Routing No. / Sort Code/ BS / Branch & Transit Code (*)</div>
+                        </div>
+                        <div class="wd-70 h-5 p-15">
+                            {{ RoutingNumber }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-30 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Intermediary Bank & Branch</div>
+                        </div>
+                        <div class="wd-70 h-5 p-15">
+                            {{ IntermediaryBankAndBranch }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-30 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Intermediary Bank's SWIFT Code</div>
+                        </div>
+                        <div class="wd-70 h-5 p-15">
+                            {{ IntermediaryBankSwiftCode }}
+                        </div>
+                    </div>
+                    <div class="fl bor-bm">
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Foreign Bank Charges to be borne by (tick)</div>
+                        </div>
+                        <div class="wd-40 ju-sb bor-rt al-ce p-15">
+                            <div class="h-5">
+                                REMITTER/ FULL VALUE@
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="remitter-value" name="remitter-value" value="remitter-value"
+                                    checked
+                                >
+                            </div>
+                        </div>
+                        <div class="wd-40 ju-sb al-ce p-15">
+                            <div class="h-5">
+                                BENEFICIARY
+                            </div>
+                            <div>
+                                <input
+                                    type="checkbox" id="beneficiary" name="beneficiary" value="beneficiary"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="wd-6 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">(d)</div>
+                        </div>
+                        <div class="wd-20 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Issue foreign currency notes (Travel – FOCY)</div>
+                        </div>
+                        <div class="wd-10 bg--light-grey bor-rt fl p-15">
+                            <div class="h-5">Curre ncy</div>
+                        </div>
+                        <div class="wd-6 bor-rt fl p-15">
+                            
+                        </div>
+                        <div class="wd-6 bor-rt fl p-15">
+                            
+                        </div>
+                        <div class="wd-6 bor-rt fl p-15">
+                            
+                        </div>
+                        <div class="wd-15 bor-rt fl p-15">
+                            <div class="h-5">Amount</div>
+                        </div>
+                        <div class="wd-30 fl p-15">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Third Page Template -->
+    <script id="third-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <div class="h-5">
+                    (* IBAN No. for remittance to Europe, UAE, Bahrain Saudi Arabia, Turkey, Israel, Qatar , Jordan, Pakistan & Georgia. ABA Routing No. in case USD going to USA; Sort Code in case of GBP remittance to UK; BSB Code in case of AUD remittance to Australia; Branch & Transit Code in case of CAD remittances to Canada) @Full Value, if the remittance must be made to the beneficiary without any deductions, on payment of additional upfront charges
+                </div>
+
+                <div class="h-5 mt-20">
+                    <b>
+                        (2) If the remittance is made by residents under LRS mention the purpose Code/description
+                    </b>
+                </div>
+                <div class="mt-10 bor">
+                    <div class="fl">
+                        <div class="wd-10 p-10 text-ce bg--light-pink h-5 bor-rt">
+                            <b>Sr. No</b>
+                        </div>
+                        <div class="wd-20 p-10 text-ce bg--light-pink h-5 bor-rt">
+                            <b>Whether under LRS (Yes/No)</b>
+                        </div>
+                        <div class="wd-20 p-10 text-ce bg--light-pink h-5 bor-rt">
+                            <b>Purpose Code</b>
+                        </div>
+                        <div class="wd-50 p-10 text-ce bg--light-pink h-5">
+                            <b>Description</b>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="wd-10 p-10 bor-rt bor-bm h-5">
+                            {{ SrNo }}
+                        </div>
+                        <div class="wd-20 p-10 bor-rt bor-bm h-5">
+                            {{ WhetherLrs }}
+                        </div>
+                        <div class="wd-20 p-10 bor-rt bor-bm h-5">
+                            {{ PurposeCode }}
+                        </div>
+                        <div class="wd-50 p-10 bor-bm h-5">
+                            {{ Description }}
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="wd-50 p-10 bor-rt h-5 bg--light-pink">
+                            If family maintenance, relation with the beneficiary
+                        </div>
+                        <!-- <div class="wd-50 p-10">
+                            
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="h-5 mt-20">
+                    <b>
+                        (3) Payment for import of Services:
+                    </b>
+                </div>
+                <div class="mt-10 bor fl">
+                    <div class="wd-50 p-10 text-ce bg--light-grey h-5 bor-rt">
+                        <b>Payment for import of services (Purpose Group Nos. 02, 03, 05, 06, 07, 08, 09 10, 11,15,16 or 17), please indicate: # Mandatory</b>
+                    </div>
+                    <div class="wd-50 he-100">
+                        <div class="p-10 bor-bm h-5 text-ce">
+                            Name of the country providing ultimate services
+                        </div>
+                        <div class="p-10">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-5 mt-20">
+                    <b>
+                        (4)  Additional remittance information for the beneficiary to identify the transactions
+                    </b>
+                </div>
+                <div class="mt-10 mb-20 bor fl">
+                    <div class="wd-40 p-10 text-ce bg--light-grey h-5 bor-rt">
+                        <b>Invoice / Contract No./ Student ID/ Regn. No/ Application No. / etc</b>
+                    </div>
+                    <div class="wd-60 h-5 p-10">
+                        {{ AdditionalRemittanceInformation }}
+                    </div>
+                </div>
+                <div class="bor mb-20">
+                    <div class="bg--light-grey h-5 text-ce bor-bm">
+                        <b>Declaration<br />(Under FEMA 1999)</b>
+                    </div>
+                    <div class="plr-15">
+                        <div class="h-5 mt-10">
+                            1. I, <span class="text-un h-5 text-cap">{{ CustomerName }}</span>, hereby declare that the total amount of foreign exchange purchased from or remitted through,
+                            all sources in India during the financial year including this application is as per the extant FEMA Regulations and certify that
+                            the source of funds for making the said remittance belongs to me and the foreign exchange will not be used for prohibited purposes <b>/ Foreign
+                            exchange purchased from you is for the purpose indicated above.</b>
+                            <br />
+                            <br />
+                            <b>Details of the remittances made/transactions effected under the Liberalised Remittance Scheme in the current Financial Year (April-March) <span class="h-5">{{ FinancialYear }}</span> (applicable for resident individuals)</b>
+                        </div>
+                        <div class="mt-10">
+                            <div class="mb-10 bor">
+                                <div class="fl">
+                                    <div class="wd-10 p-10 text-ce bg--light-pink h-5 bor-rt">
+                                        <b>Sr. No</b>
+                                    </div>
+                                    <div class="wd-20 p-10 text-ce bg--light-pink h-5 bor-rt">
+                                        <b>Date</b>
+                                    </div>
+                                    <div class="wd-20 p-10 text-ce bg--light-pink h-5 bor-rt">
+                                        <b>Amount</b>
+                                    </div>
+                                    <div class="wd-50 p-10 text-ce bg--light-pink h-5">
+                                        <b>Name and address of AD branch/FFMC through which the transaction has been effected.</b>
+                                    </div>
+                                </div>
+                                {{ #DeclarationDetail }}
+                                <div class="fl bor-bm">
+                                    <div class="wd-10 p-10 bor-rt h-5">
+                                        {{ DeclarationSerialNumber }}
+                                    </div>
+                                    <div class="wd-20 p-10 bor-rt h-5">
+                                        {{ DeclarationDate }}
+                                    </div>
+                                    <div class="wd-20 p-10 bor-rt h-5">
+                                        {{ DeclarationAmount }}
+                                    </div>
+                                    <div class="wd-50 p-10 h-5">
+                                        {{ DeclarationNameAndAddressOfADBranch }}
+                                    </div>
+                                </div>
+                                {{ /DeclarationDetail }}
+                            </div>
+                        </div>
+                        <div class="h-5 text-end">
+                            Signature of the applicant
+                        </div>
+                        <div class="text-end h-5">
+                            {{ SignatureOfApplicant }}
+                        </div>
+                        <div class="h-5 text-end mt-10">
+                            (Name)<br />
+                            Date: {{ DateOfSigningDeclaration }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Additional Page Template -->
+    <script id="additional-page-template" type="x-tmpl-mustache">
+        <div class="page-outer-cr">
+            <div class="page-cr">
+                <div class="bor p-15">
+                    <div class="h-5 text-ce">
+                        <b>Certificate by the Authorised Dealer</b>
+                    </div>
+                    <div class="mt-10 h-5">
+                        This is to certify that the remittance is not being made by/ to ineligible entities and that the remittance is in conformity
+                        with the instructions issued by the Reserve Bank from time to time under the Scheme.
+                    </div>
+                    <div class="bor mt-10">
+                        <div class="h-5 wd-30 bor-rt">
+                            <b>SPECIAL ATTENTION</b>
+                        </div>
+                        <div class="wd-70">
+
+                        </div>
+                    </div>
+                    <div class="mt-10 h-5">
+                        Name and designation of the authorised officials:
+                    </div>
+                    <div class="bor mt-10 fl he-160">
+                        <div class="bor-rt wd-50 fl-col ju-sb p-15">
+                            <div class="h-5">
+                                Signature:
+                            </div>
+                            <div class="h-5">
+                                Date:
+                            </div>
+                        </div>
+                        <div class="wd-50 fl-col ju-sb p-15">
+                            <div class="h-5">
+                                Signature:
+                            </div>
+                            <div class="h-5">
+                                Date:
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- import mustache.js library -->
+    <script
+        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js">
+    </script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epifi - Account Statement</title>
+        <link rel="stylesheet" href="stylesheets/font.css" />
+        <link rel="stylesheet" href="stylesheets/index_v4.css" />
+        <!-- <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/font.css" /> -->
+		<!-- <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/css/index_v3.css" /> -->
+        <style>
+            .line-clamp-8 {
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+            }
+
+            .he-128 {
+                height: 128px;
+            }
+
+            .hcr--v2 {
+                background-color: #333333;
+                height: 260px; /* height of the header in case address is present */
+                overflow: hidden;
+            }
+
+            .ccr--v3 {
+                height: 701px; /* height of the content after subtracting header and footer in case address is present */
+            }
+
+            .ccr--v1 {
+                height: 881px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Header Template -->
+        <script id="primary-header-template" type="x-tmpl-mustache">
+            <!-- dynamic class assignment to accomodate cases of with and without address. Without Addesss :- hcr and With Address :- hcr--v2 -->
+            <div class="{{ Class }}">
+                <div class="hcr-r1">
+                    <div class="wr1">
+                        <span class="h1">Account Statement&nbsp;•&nbsp;</span>
+                        <span class="l3--v1">{{ FromDate.day }}</span>
+                        <span class="l3--v1">{{ FromDate.month }}</span>
+                        <span class="l3--v1">{{ FromDate.year }}</span>
+                        <span class="l3--v1">&nbsp;to&nbsp;</span>
+                        <span class="l3--v1">{{ ToDate.day }}</span>
+                        <span class="l3--v1">{{ ToDate.month }}</span>
+                        <span class="l3--v1">{{ ToDate.year }}</span>
+                    </div>
+                    <div class="wr2">
+                        <img
+                            class="bank-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/federal-logo_v2.svg"
+                            alt="federal bank"
+                        />
+                        <img
+							class="logo"
+							src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg"
+							alt="epifi"
+						/>
+                    </div>
+                </div>
+                <div class="hcr-r2">
+                    <div class="h1--v1">{{ UserDetails.Name }}</div>
+                    <div class="cr">
+                        <div class="col1">
+                            <div class="wr1">
+                                <img
+                                    class="logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/address.svg"
+                                    alt="address"
+                                />
+                                <div class="l3 lb he-128 line-clamp-8">{{ UserDetails.Address }}</div>
+                            </div>
+                            <div class="wr2">
+                                <div class="wcr1">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/phone.svg"
+                                        alt="phone"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.PhoneNumber }}</div>
+                                </div>
+                                <div class="wcr2">
+                                    <img
+                                        class="logo"
+                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/mail.svg"
+                                        alt="mail"
+                                    />
+                                    <div class="l3 lb">{{ UserDetails.Email }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="wr1">
+                                <div class="h2">SAVINGS A/C NO</div>
+                                <div class="l4 lb">{{ UserDetails.AccountNumber }}</div>
+                            </div>
+                            <div>
+                                <div class="h2">IFSC</div>
+                                <div class="l4 lb">{{ UserDetails.IFSC }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Secondary Header Template -->
+        <script id="secondary-header-template" type="x-tmpl-mustache">
+            <div class="hcr--v1">
+                <div class="wr1">
+                    <div class="col1">
+                        <span class="h1--v2">Account No.</span>
+                        <span class="l4--v1">{{ UserDetails.AccountNumber }}</span>
+                    </div>
+                    <div class="col2">
+                        <img
+                            class="bank-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/federal-logo_v2.svg"
+                            alt="federal bank"
+                        />
+                        <img
+                            class="fi-logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/svgs/logo_v2.svg"
+                            alt="epifi"
+                        />
+                    </div>
+                </div>
+                <div class="wr2">
+                    <div class="col1">
+                        <span class="h1--v2">Account Holder:</span>
+                        <span class="l4--v1">{{ UserDetails.Name }}</span>
+                    </div>
+                    <div class="col2 l3--v1">
+                        <span>{{ FromDate.day }}</span>
+                        <span>{{ FromDate.month }}</span>
+                        <span>{{ FromDate.year }}</span>
+                        <span>&nbsp;to&nbsp;</span>
+                        <span>{{ ToDate.day }}</span>
+                        <span>{{ ToDate.month }}</span>
+                        <span>{{ ToDate.year }}</span>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!-- Footer Template -->
+        <script id="footer-template" type="x-tmpl-mustache">
+            <div class="fcr">
+                <div class="cr cr1">
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="./assets/svgs/day.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">5AM - 6PM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="./assets/svgs/night.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">6PM - 5AM</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="./assets/svgs/income.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">In</div>
+                    </div>
+                    <div class="wr l6--v2">
+                        <img
+                            class="logo"
+                            src="./assets/svgs/expense.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Spent</div>
+                    </div>
+                    <div class="wr l6--v3">
+                        <img
+                            class="logo"
+                            src="./assets/svgs/saving.svg"
+                            alt="logo"
+                        />
+                        <div class="legend">Saved</div>
+                    </div>
+                </div>
+                <div class="cr cr2">
+                    <div class="wr1">
+                        <!-- <div class="h2--v1">IN PARTNERSHIP WITH</div> -->
+                        <img
+                            class="logo"
+                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/svgs/partnership-federal-logo_white.svg"
+                            alt="logo"
+                        />
+                        <div class="h2--v1 mr1">CONTACT US</div>
+                        <div class="l6--v1 mr2">080-47485490</div>
+                        <div class="h2--v1">PAGE {{ Page }} OF {{ Length }}</div>
+                    </div>
+                    <!-- <div class="wr2">
+                        <span class="h2--v1">CONTACT US</span>
+                        <span class="l6--v1 mr1">080-47485490</span>
+                        <span class="h2--v1">PAGE {{ Page }} OF {{ Length }}</span>
+                    </div> -->
+                </div>
+            </div>
+        </script>
+
+        <!-- Content Template -->
+        <script id="content-template" type="x-tmpl-mustache">
+            <div class="{{ Class }}">
+                {{#HasTxnSummaryData}}
+                <div class="txnsmrywr">
+                    <div class="cr1">
+                        <div class="l4">Opening Balance</div>
+                        <div class="l6--v4">on {{ FromDate.day }} {{ FromDate.monthShortStr }} {{ FromDate.year }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.OpeningBalance.Amount.units }}</div>
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">+</div>
+                    <div class="cr2">
+                        <div class="l4">Money In</div>
+                        <div class="l6--v4">{{ TxnSummaryData.MoneyIn.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.MoneyIn.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="./assets/svgs/income.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">-</div>
+                    <div class="cr2">
+                        <div class="l4">Spent</div>
+                        <div class="l6--v4">{{ TxnSummaryData.Spent.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.Spent.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="./assets/svgs/expense.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">=</div>
+                    <div class="cr2">
+                        <div class="l4">Saved</div>
+                        <div class="l6--v4">{{ TxnSummaryData.Saved.TransactionLabel }}</div>
+                        <div class="wr">
+                            <div class="l1--v2">₹</div>
+                            <div class="l1--v1">{{ TxnSummaryData.Saved.Amount.units }}</div>
+                            <img
+                                class="logo"
+                                src="./assets/svgs/saving.svg"
+                                alt="logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="cr3 l1--v4">+</div>
+                    <div class="cr2">
+                        <div class="l4">Closing Balance</div>
+                        <div class="l6--v4">on {{ ToDate.day }} {{ ToDate.monthShortStr }} {{ ToDate.year }}</div>
+                        <div class="wr">
+                            <div class="l1">₹</div>
+                            <div class="l1--v3">{{ TxnSummaryData.ClosingBalance.Amount.units }}</div>
+                        </div>
+                    </div>
+                </div>
+                {{/HasTxnSummaryData}}
+                {{#HasTxns}}
+                <div class="hwr">
+                    <div class="wr1">
+                        <div class="h1--v1">Date</div>
+                        <div class="l6">Day/Night</div>
+                    </div>
+                    <div class="wr2">
+                        <div class="h1--v1">Transaction Details</div>
+                        <div class="l6">Comment • Place • Payment Method</div>
+                    </div>
+                    <div class="wr3">
+                        <div class="h1--v1">Amount</div>
+                    </div>
+                    <div class="wr4">
+                        <div class="h1--v1">Balance</div>
+                    </div>
+                </div>
+                <div>
+                    {{#TxnData}}
+                        <div class="cwr">
+                            <div class="wr1 l4">
+                                {{name}}
+                            </div>
+                            <div class="wr2"></div>
+                        </div>
+                        <div class="txnwr">
+                            {{#data}}
+                                <div class="cl">
+                                    <div class="wr1">
+                                        {{#IsDayIcon}}
+                                            <img
+                                                class="logo"
+                                                src="./assets/svgs/day.svg"
+                                                alt="day"
+                                            />
+                                        {{/IsDayIcon}}
+                                        {{#IsNightIcon}}
+                                            <img
+                                                class="logo"
+                                                src="./assets/svgs/night.svg"
+                                                alt="night"
+                                            />
+                                        {{/IsNightIcon}}
+                                    </div>
+                                    <div class="wr2">
+                                        <div class="l2">{{ MerchantName }}</div>
+                                        <div class="l6--v2 desc">
+                                            {{ TxnDescription }}
+                                        </div>
+                                    </div>
+                                    <div class="wr3">
+                                        <div class="wr">
+                                            <div class="{{ AmountUnitsClass }}">{{ Amount.units }}</div>
+                                            <div class="{{ AmountDecimalsClass }}">.{{ Amount.decimals }}</div>
+                                        </div>
+                                        {{#IsExpense}}
+                                            <img
+                                                class="logo"
+                                                src="./assets/svgs/expense.svg"
+                                                alt="db"
+                                            />
+                                        {{/IsExpense}}
+                                        {{#IsIncome}}
+                                            <img
+                                                class="logo"
+                                                src="./assets/svgs/income.svg"
+                                                alt="cr"
+                                            />
+                                        {{/IsIncome}}
+                                        {{#IsSaving}}
+                                            <img
+                                                class="logo"
+                                                src="./assets/svgs/saving.svg"
+                                                alt="cr"
+                                            />
+                                        {{/IsSaving}}
+                                    </div>
+                                    <div class="wr4">
+                                        <div class="l2">{{ Balance.units }}.{{ Balance.decimals }}</div>
+                                    </div>
+                                </div>
+                            {{/data}}
+                        </div>
+                    {{/TxnData}}
+                </div>
+                {{/HasTxns}}
+                {{^HasTxns}}
+                <div class="notxnwr">
+                    <div class="wr1">
+                        <span class="h1--v3">It looks like you have not made</span>
+                        <br />
+                        <span class="h1--v3">any transactions on Fi between</span>
+						<br />
+                        <span class="h1--v1">{{ FromDate.day }} {{ FromDate.month }} {{ FromDate.year }} to {{ ToDate.day }} {{ ToDate.month }} {{ ToDate.year }}</span>
+                    </div>
+                    <img
+                        class="logo"
+                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/assets/pngs/calendar@2x.png"
+                        alt="no-txns"
+                    />
+                </div>
+                {{/HasTxns}}
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/statement/mustache.js"></script>
+        <script src="../../utils/index.js"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

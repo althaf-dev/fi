@@ -1,0 +1,23 @@
+{
+    "metaTitle": "Fees and charges on Fi Money",
+    "metaDescription": "All you need to know about the Federal Bank savings account opened through Fi Money, with no hidden charges.",
+    "canonicalUrl": "/fees",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Fees",
+                "item": "https://fi.money/fees"
+            }
+        ]
+    }
+}

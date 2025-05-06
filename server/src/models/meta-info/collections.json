@@ -1,0 +1,29 @@
+{
+    "metaTitle": "Search & Invest in US Stocks | Fi Money",
+    "metaDescription": "Explore curated collections of 3000+ US Stocks and filter by market cap, PE ratio and industry to invest from India easily. Get started now.",
+    "canonicalUrl": "/us-stocks/collections",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "US Stocks",
+                "item": "https://fi.money/us-stocks"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Collections",
+                "item": "https://fi.money/us-stocks/collections"
+            }
+        ]
+    }
+}

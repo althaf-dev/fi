@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title>Account Statement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Inter', sans-serif;
+            /* font-weight: 400; */
+        }
+
+        /* tables */
+        .main-table {
+            background-color: #e7e7e7;
+            width: 100%;
+        }
+
+        .table1 {
+            background-color: #333333;
+            width: 100%;
+        }
+
+        .table11 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 360px;
+        }
+
+        .table2 {
+            width: 100%;
+        }
+
+        .table21 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 360px;
+        }
+
+        .table3 {
+            width: 100%;
+        }
+
+        .table31 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            width: 360px;
+        }
+
+        /* logo */
+        .logo-wr {
+            text-align: center;
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            max-width: 40px;
+        }
+
+        /* body */
+        .cr {
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .cr1 {
+            border-radius: 12px 12px 0 0;
+        }
+
+        .cr2 {
+            border-radius: 0 0 12px 12px;
+        }
+
+        .btitle {
+            font-family: 'Gilroy', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 32px;
+            color: #333333;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .bdesc {
+            font-size: 14px;
+            line-height: 24px;
+            color: #8D8D8D;
+            width: 296px;
+        }
+
+        .bdesc-bd {
+            font-weight: bold;
+        }
+
+        .bdesc-mb {
+            margin-bottom: 24px;
+        }
+
+        .bimg {
+            width: 360px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .box-wr {
+            background-color: #F5F5F5;
+            border-radius: 12px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            width: 168px;
+            margin-bottom: 40px;
+        }
+
+        .box-wr--v1 {
+            margin-left: 8px;
+            margin-right: 4px;
+        }
+
+        .box-wr--v2 {
+            margin-left: 4px;
+            margin-right: 8px;
+        }
+
+        .box-wr-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .box-wr-text1 {
+            color: #333333;
+            display: table;
+            font-family: 'Gilroy', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 18px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+
+        .box-footer {
+            margin-bottom: 28px;
+        }
+
+        .bmiddle {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #8D8D8D;
+        }
+
+        .bmiddle--v1 {
+            color: #00b899;
+            cursor: pointer;
+        }
+
+        .bfooter {
+            font-size: 12px;
+            line-height: 18px;
+            color: #A4A4A4;
+            margin-bottom: 24px;
+            width: 312px;
+        }
+
+        .bfooter-bd {
+            font-weight: bold;
+        }
+
+        .separator {
+            border-top: 1px solid #e7e7e7;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            width: 296px;
+        }
+
+        /* footer */
+        .footer-wr {
+            text-align: center;
+            width: 312px;
+        }
+
+        .fdesc {
+            font-size: 12px;
+            line-height: 18px;
+            color: #A4A4A4;
+            width: 312px;
+        }
+
+        .fdesc-mb {
+            margin-bottom: 18px;
+        }
+
+        .fdesc-bd {
+            font-weight: bold;
+        }
+
+        .fimg {
+            margin-top: 24px;
+            width: 24px;
+        }
+
+        .fimg-mr {
+            margin-right: 24px;
+        }
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .link {
+            color: #00b899 !important;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cta {
+            display: table;
+            background-color: #00b899;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            color: #ffffff !important;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 16px 32px;
+        }
+
+        @media only screen and (min-width: 640px) {
+            .table11 {
+                width: 560px;
+            }
+
+            .table21 {
+                width: 260px;
+            }
+
+            .table31 {
+                margin-top: 32px;
+                margin-bottom: 32px;
+                width: 560px;
+            }
+
+            /* logo */
+            .logo-wr {
+                text-align: center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+
+            .logo {
+                width: 52px;
+                height: 52px;
+                max-width: 52px;
+            }
+
+            /* body */
+            .btitle {
+                font-size: 28px;
+                line-height: 36px;
+                margin-top: 36px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .bdesc {
+                font-size: 16px;
+                line-height: 26px;
+                width: 420px;
+            }
+
+            .bdesc-mb {
+                margin-bottom: 26px;
+            }
+
+            .bimg {
+                width: 480px;
+                margin-top: 48px;
+                margin-bottom: 40px;
+            }
+
+            .box-wr {
+                padding: 16px;
+                width: 214px;
+                margin-bottom: 48px;
+            }
+
+            .box-wr--v1 {
+                margin-left: 58px;
+                margin-right: 8px;
+            }
+
+            .box-wr--v2 {
+                margin-left: 8px;
+                margin-right: 58px;
+            }
+
+            .box-wr-img {
+                width: 48px;
+                height: 48px;
+            }
+
+            .box-wr-text1 {
+                font-size: 20px;
+                line-height: 20px;
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+
+            .box-footer {
+                margin-bottom: 40px;
+            }
+
+            .bmiddle {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .bfooter {
+                width: 400px;
+            }
+
+            .bfooter--v1 {
+                width: 280px;
+            }
+
+            .separator {
+                margin-top: 28px;
+                margin-bottom: 28px;
+                width: 360px;
+            }
+
+            /* footer */
+            .fdesc {
+                width: 460px;
+            }
+
+            .fimg {
+                margin-top: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table class="main-table" cellspacing="0" border="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="table1" cellspacing="0" border="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table11" cellspacing="0" border="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="logo-wr">
+                                                    <img src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/logo.png"
+                                                        alt="logo" class="logo">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cr cr1">
+                                                    <p class="btitle">
+                                                        Your December ‘20 savings account statement is ready
+                                                    </p>
+                                                    <p class="bdesc bdesc-mb">
+                                                        Your statement is password protected. To get your
+                                                        custom 8-digit password, club the first
+                                                        <span class="bdesc-bd">4 letters of your name in capital</span>
+                                                        and
+                                                        <span class="bdesc-bd">your birthdate</span>
+                                                        (DDMM).
+                                                    </p>
+                                                    <p class="bdesc bdesc-mb">
+                                                        For example, if your name is Om Dev & you were born
+                                                        on Jan 01, your passcode is OMDE0101.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table2" cellspacing="0" border="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table21" cellspacing="0" border="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="cr">
+                                                    <p class="box-wr box-wr--v1 bmiddle">
+                                                        <img class="box-wr-img"
+                                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/insights/median-txn.png"
+                                                            alt="median-txn" />
+                                                        <span class="box-wr-text1">₹756</span>
+                                                        <span>
+                                                            Median transaction<br />amount
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                                <td class="cr">
+                                                    <p class="box-wr box-wr--v2 bmiddle">
+                                                        <img class="box-wr-img"
+                                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/insights/txns.png"
+                                                            alt="txns" />
+                                                        <span class="box-wr-text1">37</span>
+                                                        <span>
+                                                            Total<br />transactions
+                                                        </span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="cr">
+                                                    <p class="box-footer bmiddle">
+                                                        Want to view your account statement elsewhere?
+                                                        <br />
+                                                        <span class="bmiddle--v1">Fi App</span>
+                                                        <span> • </span>
+                                                        <span class="bmiddle--v1">Excel Sheet</span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="cr cr2">
+                                                    <p class="bfooter">
+                                                        If this isn’t you, call
+                                                        <span class="bfooter-bd">080 - 47485490</span>
+                                                        & report this. We’ll sort it out 😇
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table3" cellspacing="0" border="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="table31" cellspacing="0" border="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="footer-wr">
+                                                    <p class="fdesc fdesc-mb">
+                                                        Disclaimer text dLorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim
+                                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                        ut aliquip
+                                                        ex ea commodo
+                                                    </P>
+                                                    <p class="fdesc fdesc-mb fdesc-bd">
+                                                        © 2021 epiFi Technologies Pvt. Ltd. All rights reserved
+                                                    </p>
+                                                    <p class="fdesc">
+                                                        <a class="link" href="https://www.fi.money/T&C"
+                                                            target="_blank">Terms and Conditions</a>
+                                                        <span class="fdesc-bd">&nbsp;•&nbsp;</span>
+                                                        <a class="link" href="https://www.fi.money/privacy"
+                                                            target="_blank">Privacy Policy</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="footer-wr">
+                                                    <p>
+                                                        <a href="https://www.linkedin.com/company/epifi"
+                                                            target="_blank">
+                                                            <img class="fimg fimg-mr"
+                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/linkedin-logo.png"
+                                                                alt="linkedin" />
+                                                        </a>
+                                                        <a href="https://twitter.com/Bank_on_Fi" target="_blank">
+                                                            <img class="fimg fimg-mr"
+                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/twitter-logo.png"
+                                                                alt="twitter" />
+                                                        </a>
+                                                        <a href="https://www.instagram.com/bankonfi" target="_blank">
+                                                            <img class="fimg"
+                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/instagram-logo.png"
+                                                                alt="instagram" />
+                                                        </a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

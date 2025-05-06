@@ -1,0 +1,49 @@
+{
+  "loanAgreementDetails": {
+    "place": "10.1.1.1",
+    "date": "31/07/2022 03:52:07",
+    "borrowerName": "RAM GUPTA",
+    "borrowerPhoneNumber": "9876543210",
+    "borrowerAddress": "near old gram panchayat lalpur Memana Jamnagar Gujarat 361170,,JAMNAGAR,Jam Jamnagar GJ, GJ, INJAMNAGAR GUJARAT 361170",
+    "sactionedLimit": "40000",
+    "facilityAmount": "40000",
+    "loanAmount": "40000",
+    "totalInterest": "10000",
+    "processingFees": "500",
+    "netDisbursedAmount": "40000",
+    "amountPaidByBorrower": "60000",
+    "rateOfInterest": "17",
+    "annualPercentageRate": "17",
+    "tenorOfLoan": "6 months",
+    "repaymentFrequency": "6",
+    "noOfInstallment": "6",
+    "amtOfEachInstallment": "10000",
+    "emiStartDate": "05/11/2022",
+    "activationFees": "0",
+    "contingentCharges": {
+      "bounceCharge": "500",
+      "latePaymentCharge": "500",
+      "foreclosureCharge": "500",
+      "overdueCharges": "500"
+    },
+    "cooloffPeriod": "3 days"
+  },
+  "installmentDetails": [
+    {
+      "instalmentNumber": "1",
+      "emiDueDate": "05-01-2022",
+      "outstandingPrincipal": "40000",
+      "principal": "8000",
+      "interest": "2000",
+      "installment": "10000"
+    },
+    {
+      "instalmentNumber": "1",
+      "emiDueDate": "05-01-2022",
+      "outstandingPrincipal": "40000",
+      "principal": "8000",
+      "interest": "2000",
+      "installment": "10000"
+    }
+  ]
+}

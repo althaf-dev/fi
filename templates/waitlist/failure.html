@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <title>Oops! You didn't make it on our Waitlist</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* tables */
+            .main-table {
+                background-color: #e7e7e7;
+                width: 100%;
+            }
+
+            .table1 {
+                background-color: #333333;
+                width: 100%;
+            }
+
+            .table11 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table2 {
+                width: 100%;
+            }
+
+            .table21 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table3 {
+                width: 100%;
+            }
+
+            .table31 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 24px;
+                margin-bottom: 16px;
+                width: 360px;
+            }
+
+            /* logo */
+            .logo-wr {
+                text-align: center;
+                padding-top: 24px;
+                padding-bottom: 16px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                max-width: 40px;
+            }
+
+            /* body */
+            .cr {
+                text-align: center;
+                background: #ffffff;
+            }
+
+            .cr1 {
+                border-radius: 12px 12px 0 0;
+            }
+
+            .cr2 {
+                border-radius: 0 0 12px 12px;
+            }
+
+            .btitle {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 32px;
+                color: #333333;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .bdesc {
+                font-size: 14px;
+                line-height: 24px;
+                color: #8D8D8D;
+                width: 296px;
+            }
+
+            .bdesc-mb {
+                margin-bottom: 24px;
+            }
+
+            .bimg {
+                width: 360px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .bfooter {
+                font-size: 12px;
+                line-height: 18px;
+                color: #A4A4A4;
+                margin-bottom: 24px;
+                width: 312px;
+            }
+
+            .bfooter-bd {
+                font-weight: bold;
+            }
+
+            .separator {
+                border-top: 1px solid #e7e7e7;
+                margin-top: 36px;
+                margin-bottom: 36px;
+                width: 296px;
+            }
+
+            /* footer */
+            .footer-wr {
+                text-align: center;
+                width: 312px;
+            }
+
+            .fdesc {
+                font-size: 12px;
+                line-height: 18px;
+                color: #A4A4A4;
+                width: 312px;
+            }
+
+            .fdesc-mb {
+                margin-bottom: 18px;
+            }
+
+            .fdesc-bd {
+                font-weight: bold;
+            }
+
+            .fimg {
+                margin-top: 24px;
+                width: 24px;
+            }
+
+            .fimg-mr {
+                margin-right: 24px;
+            }
+
+            p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .link {
+                color: #00b899 !important;
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .cta {
+                display: table;
+                background-color: #00b899;
+                border-radius: 10px;
+                outline: none;
+                border: none;
+                color: #ffffff !important;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 16px 32px;
+            }
+
+            @media only screen and (min-width: 640px) {
+                .table11 {
+                    width: 560px;
+                }
+
+                .table21 {
+                    width: 560px;
+                }
+
+                .table31 {
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                    width: 560px;
+                }
+
+                /* logo */
+                .logo-wr {
+                    text-align: center;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                }
+
+                .logo {
+                    width: 52px;
+                    height: 52px;
+                    max-width: 52px;
+                }
+
+                /* body */
+                .btitle {
+                    font-size: 28px;
+                    line-height: 36px;
+                    margin-top: 36px;
+                }
+
+                .bdesc {
+                    font-size: 16px;
+                    line-height: 26px;
+                    width: 360px;
+                }
+
+                .bdesc-mb {
+                    margin-bottom: 26px;
+                }
+
+                .bimg {
+                    width: 560px;
+                    margin-top: 48px;
+                    margin-bottom: 40px;
+                }
+
+                .bfooter {
+                    width: 400px;
+                }
+
+                .separator {
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    width: 360px;
+                }
+
+                /* footer */
+                .fdesc {
+                    width: 400px;
+                }
+
+                .fimg {
+                    margin-top: 32px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table class="main-table" cellspacing="0" border="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="table1" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table11" cellspacing="0" border="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="logo-wr">
+                                                        <img src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/logo.png" alt="logo" class="logo">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cr cr1">
+                                                        <p class="btitle">
+                                                            There’s no easy 
+                                                            <br>
+                                                            way to say this!
+                                                        </p>
+                                                        <p class="bdesc bdesc-mb">
+                                                            We’re not ready for you...yet.<br>
+                                                            Right now, our app’s features are tailor-made to suit
+                                                            the needs of salaried professionals.
+                                                        </p>
+                                                        <p class="bdesc">
+                                                            You (probably) dabble in other fun jobs for a
+                                                            living – like freelance gigs, business, etc. We
+                                                            aspire to match your cool quotient...soon✨
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table2" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table21" cellspacing="0" border="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="cr cr2">
+                                                        <p class="separator"></p>
+                                                        <p class="bdesc">
+                                                            If you are salaried – and your registration failed – click
+                                                            the link below for a quick fix. 
+                                                        </p>
+                                                        <a class="cta" href="https://www.fi.money/FAQs">VIEW FAQS</a>
+                                                        <img
+                                                            class="bimg"
+                                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/waitlist/failure.png"
+                                                            alt="failure"
+                                                        />
+                                                        <p class="bfooter">
+                                                            Never signed up for our waitlist? Please call
+                                                            <span class="bfooter-bd">080 - 47485490</span> & report this.
+                                                            We’ll sort it out 😇
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table3" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table31" cellspacing="0" border="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="footer-wr">
+                                                        <p class="fdesc fdesc-mb fdesc-bd">
+                                                            © 2021 epiFi Technologies Pvt. Ltd. All rights reserved
+                                                        </p>
+                                                        <p class="fdesc">
+                                                            <a class="link" href="https://demo-web.pointz.in/T&C" target="_blank">Terms and Conditions</a>
+                                                            <span class="fdesc-bd">&nbsp;•&nbsp;</span>
+                                                            <a class="link" href="https://demo-web.pointz.in/privacy" target="_blank">Privacy Policy</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="footer-wr">
+                                                        <p>
+                                                            <a href="https://www.linkedin.com/company/epifi" target="_blank">
+                                                                <img
+                                                                    class="fimg fimg-mr"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/linkedin-logo.png"
+                                                                    alt="linkedin"
+                                                                />
+                                                            </a>
+                                                            <a href="https://twitter.com/Bank_on_Fi" target="_blank">
+                                                                <img
+                                                                    class="fimg fimg-mr"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/twitter-logo.png"
+                                                                    alt="twitter"
+                                                                />
+                                                            </a>
+                                                            <a href="https://www.instagram.com/bankonfi" target="_blank">
+                                                                <img
+                                                                    class="fimg"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/instagram-logo.png"
+                                                                    alt="instagram"
+                                                                />
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>    
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+

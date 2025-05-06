@@ -1,0 +1,509 @@
+{
+	"UserDetails": {
+		"Name": "Shreya Khajanchi",
+		"PhoneNumber": 9999911111,
+		"Email": "superfian@gmail.com",
+		"Address": "2nd Floor, D406, Sector 40 NOIDA, UP",
+		"AccountNumber": "10010100466777",
+		"IFSC": "FDRL0005555"
+	},
+	"FromDate": {
+		"year": "2020",
+		"month": "10",
+		"day": "1"
+	},
+	"ToDate": {
+		"year": 2020,
+		"month": 12,
+		"day": 10
+	},
+	"TransactionDetails": [
+		{
+			"Amount": {
+				"units": 1000000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1605917420,
+				"nanos": 10
+			},
+			"MerchantName": "ATM Withdrawal",
+			"Comments": "xyz",
+			"Location": "PNB ATM",
+			"PaymentMethod": "Debit Card",
+			"TransactionType": "EXPENSE"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 0
+			},
+			"TransactionDateTime": {
+				"seconds": 1605972420,
+				"nanos": 10
+			},
+			"MerchantName": "ATM Withdrawal",
+			"TransactionType": "SAVINGS"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 250000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1605982420,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Location": "Federal ATM",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 0
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1605992420,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1606056420,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1606066420,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608501420,
+				"nanos": 10
+			},
+			"MerchantName": "ATM Withdrawal",
+			"Location": "PNB ATM",
+			"PaymentMethod": "Debit Card",
+			"TransactionType": "EXPENSE"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608512220,
+				"nanos": 10
+			},
+			"MerchantName": "ATM Withdrawal",
+			"Location": "PNB ATM",
+			"PaymentMethod": "Debit Card",
+			"TransactionType": "EXPENSE"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608526620,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608538620,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608542220,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608553020,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608601420,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608612220,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608626620,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608638620,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608642220,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653020,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653030,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653040,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653050,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653120,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653220,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653720,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653820,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608653920,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		},
+		{
+			"Amount": {
+				"units": 1000,
+				"nanos": 500000000
+			},
+			"Balance": {
+				"units": 2000,
+				"nanos": 500000000
+			},
+			"TransactionDateTime": {
+				"seconds": 1608753920,
+				"nanos": 10
+			},
+			"MerchantName": "Pankaj Khurana",
+			"PaymentMethod": "IMPS",
+			"Comments": "xyz",
+			"TransactionType": "INCOME"
+		}
+	],
+	"TransactionSummary": null
+}

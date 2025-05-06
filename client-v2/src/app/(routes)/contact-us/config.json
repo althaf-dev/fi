@@ -1,0 +1,344 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_3",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76",
+				"feature_cards_section_row_banner"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Contact the Fi Money <br> customer care at:",
+			"type"    : "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+
+		"feature_cards_section_row_banner": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_2",
+			"children": [
+				"feature_cards_inner_card_wrapper_banner",
+				"feature_cards_inner_card_wrapper1_banner",
+				"feature_cards_inner_card_wrapper2_banner"
+			]
+		},
+		"feature_cards_inner_card_wrapper_banner": {
+			"type": "Column",
+			"variant": "CONTACT_CARD_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image_banner",
+				"feature_cards_innerwrapper_card_text_banner",
+				"feature_cards_innerwrapper_card_text_banner0"
+			]
+		},
+		"feature_cards_innerwrapper_card_text_banner0": {
+			"content": "080 47485490",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_TITILE"
+		},
+		"feature_cards_innerwrapper_card_text_banner": {
+			"content": "PHONE",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_SUBTITILE"
+		},
+		"feature_cards_innerwrapper_card_image_banner": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD_BANNER",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/svgs/phone.svg",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/phone.svg"
+		},
+
+		"feature_cards_inner_card_wrapper1_banner": {
+			"type": "Column",
+			"variant": "CONTACT_CARD_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image1_banner",
+				"feature_cards_innerwrapper_card_text1_banner0",
+				"feature_cards_innerwrapper_card_text1_banner"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1_banner0": {
+			"content": "EMAIL",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_SUBTITILE"
+		},
+		"feature_cards_innerwrapper_card_text1_banner": {
+			"content": "help@fi.care",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_TITILE"
+		},
+		"feature_cards_innerwrapper_card_image1_banner": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD_BANNER",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/mail.svg"
+		},
+
+
+		"feature_cards_inner_card_wrapper2_banner": {
+			"type": "Column",
+			"variant": "CONTACT_CARD_1",
+			"children": [
+				"feature_cards_innerwrapper_card_image2_banner",
+				"feature_cards_innerwrapper_card_text2_banner0",
+				"feature_cards_innerwrapper_card_text2_banner"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2_banner0": {
+			"content": "CHAT",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_SUBTITILE"
+		},
+		"feature_cards_innerwrapper_card_text2_banner": {
+			"content": "In-app chat",
+			"type": "Text",
+			"variant": "CONTACT_BANNER_TITILE"
+		},
+		"feature_cards_innerwrapper_card_image2_banner": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD_BANNER",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/svgs/chat.svg"
+		},
+
+
+		"feature_cards_section_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS_3",
+			"children": [
+				"feature_cards_inner_card_wrapper",
+				"feature_cards2_inner_card_wrapper",
+				"feature_cards3_inner_card_wrapper"
+			]
+		},
+		"feature_cards_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "CONTACT_CARD",
+			"children": [
+				"feature_cards_innerwrapper_card_text",
+				"feature_cards_innerwrapper_card_text12",
+				"feature_cards_innerwrapper_card_image"
+			]
+		},
+		"feature_cards_innerwrapper_card_text": {
+			"content": "Press",
+			"type": "Text",
+			"variant": "CONTACT_CARD_TITLE"
+		},
+		"feature_cards_innerwrapper_card_text12": {
+			"content": "Write to us at <a style='color: #51B89A' href='mailto:press@fi.money'>press@fi.money</a> for press enquiries",
+			"type": "Text",
+			"variant": "CONTACT_CARD_DESCRIPTION"
+		},
+		"feature_cards_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/webp/press.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/webp/press.webp"
+		},
+
+		"feature_cards2_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "CONTACT_CARD",
+			"children": [
+				"feature_cards2_innerwrapper_card_text",
+				"feature_cards2_innerwrapper_card_text12",
+				"feature_cards2_innerwrapper_card_image"
+			]
+		},
+		"feature_cards2_innerwrapper_card_text": {
+			"content": "Work at Fi",
+			"type": "Text",
+			"variant": "CONTACT_CARD_TITLE"
+		},
+		"feature_cards2_innerwrapper_card_text12": {
+			"content": "Looking to build next generation financial products? <a style='color: #51B89A; word-break: break-word;' href='https://fi.money/careers' target='_blank'>Join our team</a>",
+			"type": "Text",
+			"variant": "CONTACT_CARD_DESCRIPTION"
+		},
+		"feature_cards2_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/webp/work-at-fi.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/webp/work-at-fi.webp"
+		},
+		"feature_cards3_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "CONTACT_CARD",
+			"children": [
+				"feature_cards3_innerwrapper_card_text",
+				"feature_cards3_innerwrapper_card_text12",
+				"feature_cards3_innerwrapper_card_image"
+			]
+		},
+		"feature_cards3_innerwrapper_card_text": {
+			"content": "Partner with us",
+			"type": "Text",
+			"variant": "CONTACT_CARD_TITLE"
+		},
+		"feature_cards3_innerwrapper_card_text12": {
+			"content": "For business partnerships, fill out this <a style='color: #51B89A' href='https://docs.google.com/forms/d/e/1FAIpQLSculBORMl53R1KpLdkISSz03muGZWsCKFUuDRykLOlGUHi-4g/viewform' target='_blank' rel='noreferrer'>form</a>",
+			"type": "Text",
+			"variant": "CONTACT_CARD_DESCRIPTION"
+		},
+		"feature_cards3_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "CONTACT_CARD",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/webp/partner-with-us.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/webp/partner-with-us.webp"
+		},
+
+		"feature_cards_inner_card_wrapper1": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image1",
+				"feature_cards_innerwrapper_card_text1"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1": {
+			"content": "No penalties\nfor missed payments",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image1": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/no-penalties.png"
+		},
+
+		"feature_cards_inner_card_wrapper2": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2": {
+			"content": "In-app chat",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image2": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/flexible-sip.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/flexible-sip.png"
+		},
+
+		"fi_partners_section": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561p",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561p": {
+			"content": "Fi partners with the best to secure your money",
+			"type" : "Text",
+			"variant": "H1VARIANT_BLACK"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images": {
+			"type": "Column",
+			"variant": "FOOTER_TEXT_IMAGE",
+			"children": [
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7q",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7r",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7s",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7t",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7u",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7v"
+			]
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7q": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7r": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7s": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7t": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7u": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7v": {
+			"content": "ISO 27001:2013",
+			"type" : "Text",
+			"variant": "FOOTER_LOGO_TEXT_1"
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p": {
+			"content": "Our partner bank hosts your Savings Account and follows all security standards per applicable regulations. <br> <br>Your money is always safe with our banking partner - Federal Bank, is covered under the Deposit Insurance and Credit Guarantee Corporation Scheme. This insures your money up to <b>₹5 lakh.</b> <br><br> Fi itself is not a bank and doesn’t hold or claim to have a banking license.",
+			"type" : "Text",
+			"variant": "h6VARIANT_GREY3_1"
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"feature_cards_section_row",
+				"fi_partners_section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

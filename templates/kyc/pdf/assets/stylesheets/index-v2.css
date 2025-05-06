@@ -1,0 +1,725 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-print-color-adjust: exact;
+}
+
+div,
+span {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+hr {
+    border: 0;
+}
+
+/* colors */
+:root {
+    --pink: #ff8989;
+    --light-grey: #e5e5e5;
+}
+
+.bg--pink {
+    background-color: #ff8989;
+}
+
+.bg--light-grey {
+    background-color: #e5e5e5;
+}
+
+
+/* text sizes */
+.h-1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.h-2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+}
+
+.h-3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+}
+
+.h-4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    font-style: normal;
+    color: grey;
+}
+
+.fs-10 {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fw-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* text alignment */
+.text-ce {
+    text-align: center;
+}
+
+/* border */
+.bor {
+    border: 1px solid black;
+}
+
+.bor-bm {
+    border-bottom: 1px solid black;
+}
+
+.bor-tp {
+    border-top: 1px solid black;
+}
+
+.bor-lf {
+    border-left: 1px solid black;
+}
+
+/* margin */
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mtb-20 {
+    margin: 20px 0;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mtb-10 {
+    margin: 10px 0px !important;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+/* padding */
+.p-10 {
+    padding: 10px !important;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.pb-0 {
+    padding-bottom: 0px !important;
+}
+
+.plr-10 {
+    padding: 0 10px;
+}
+
+.ptb-5 {
+    padding: 5px 0px;
+}
+
+/* height */
+.he-30 {
+    height: 30px;
+}
+
+.he-80 {
+    height: 80px;
+}
+
+.he-60 {
+    height: 60px;
+}
+
+.he-79 {
+    height: 79px;
+}
+
+.he-130 {
+    height: 130px;
+}
+
+.he-160 {
+    height: 160px;
+}
+
+.he-180 {
+    height: 180px !important;
+}
+
+.he-1121 {
+    height: 1121px !important;
+}
+
+/* width */
+.wd-15 {
+    width: 15% !important;
+}
+
+.wd-20 {
+    width: 20% !important;
+}
+
+.wd-25 {
+    width: 25% !important;
+}
+
+.wd-25_2 {
+    width: 25.2% !important;
+}
+
+.wd-30 {
+    width: 30% !important;
+}
+
+.wd-30_2 {
+    width: 30.2% !important;
+}
+
+.wd-33 {
+    width: 33.33333% !important;
+}
+
+.wd-40 {
+    width: 40% !important;
+}
+
+.wd-45 {
+    width: 45% !important;
+}
+
+.wd-50 {
+    width: 50% !important;
+}
+
+.wd-50_2 {
+    width: 50.2% !important;
+}
+
+.wd-70 {
+    width: 70% !important;
+}
+
+.wd-80 {
+    width: 80% !important;
+}
+
+.wd-100 {
+    width: 100% !important;
+}
+
+/* flex */
+.fl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fl-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.fl-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+.ju-sb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.ju-ce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.ju-fs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+}
+
+.ju-fe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.al-fs {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+}
+
+.al-ce {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.al-fe {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+
+/* horizontal line styles */
+.horiz-line {
+    width: 200px;
+    height: 0px;
+    color: black;
+    border-top: 1px solid black;
+}
+
+.horiz-line0 {
+    height: 0px;
+    width: 100%;
+    border-top: 1px solid black;
+    color: black;
+}
+
+.horiz-line1 {
+    width: 150px;
+    height: 0px;
+    color: black;
+    border-top: 1px solid black;
+}
+
+.horiz-line2 {
+    width: 100px;
+    height: 0px;
+    color: black;
+    border-top: 1px solid black;
+}
+
+.horiz-line3 {
+    width: 140px;
+    height: 0px;
+    color: black;
+    border-top: 1px solid black;
+}
+
+/* image styles */
+.signature-photograph {
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.applicant-photograph {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.additional-photograph {
+    width: 300px;
+    height: 300px;
+}
+
+.institution-stamp-photograph {
+    width: 50px;
+    height: 50px;
+}
+
+.officer-signature-photograph {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logo-img {
+    height: 80%;
+}
+
+/* general styles */
+.break-before {
+    page-break-before: always;
+}
+
+.section--cr {
+    padding: 5px 10px;
+    border-top: 1px solid black;
+}
+
+.item--cr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.item--cr>.left {
+    width: 30%;
+}
+
+.item--cr>.right {
+    width: 70%;
+}
+
+.item--cr>.left1 {
+    width: 10%;
+}
+
+.item--cr>.right1 {
+    width: 90%;
+}
+
+.item--cr > .left2 {
+    width: 24%;
+}
+
+.item--cr > .right2 {
+    width: 76%;
+}
+
+/* container styles */
+#target {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.page-outer-cr {
+    max-width: 840px;
+    padding: 50px;
+    margin: 0 auto;
+    /* width: 793px; */
+    /* height: 1123px; */
+    
+}
+
+.page-cr {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.kyc-header--cr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 140px;
+}
+
+.kyc-header--cr>.left {
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.kyc-header--cr>.right {
+    width: 60%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cdsl-logo {
+    height: 90%;
+}
+
+.cdsl-logo>.left {
+    width: 60%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.cdsl-logo>.left>.top {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cdsl-logo>.left>.bottom {
+    height: 30%;
+}
+
+.cdsl-logo>.right {
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.intermediary-logo {
+    width: 70%;
+    height: 80%;
+    border: 1px solid lightgray;
+    color: lightgray;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.application-type {
+    height: 10%;
+}
+
+.signature--cr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 105px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.remarks--cr {
+    width: 65%;
+}
+
+.sign--cr {
+    width: 35%;
+    height: 100%;
+    border-left: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.sign--cr>.title {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.sign--cr>.box {
+    height: 80%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.kyc-mode--cr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.dob-gender--cr {
+    width: 80%;
+    min-height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.app-photo--cr {
+    width: 20%;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.app-photo--cr>.box {
+    width: 90%;
+    height: 100%;
+    border: 1px solid lightgray;
+    color: lightgray;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.poi-pan--cr {
+    padding: 10px;
+    width: 100%;
+}
+
+.poi-pan--cr>.left {
+    width: 60%;
+}
+
+.poi-pan--cr>.right {
+    width: 40%;
+}

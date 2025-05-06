@@ -1,0 +1,57 @@
+{
+    "metaTitle": "Fi.money | Contact The Fi Money Customer Care",
+    "metaDescription": "Banking Made Easier and Smarter. Make banking smarter with Fi.Money digital financial app. Contact us right now for any queries!",
+    "canonicalUrl": "/contact-us",
+    "ogTitle": "Fi.money | Contact the Fi Money Customer Care",
+    "ogSiteName": "Fi.Money",
+    "ogUrl": "https://fi.money/contact-us",
+    "ogDescription": "Banking Made Easier and Smarter. Bank smarter through Fi.Money digital financial app. Contact us right now for any queries!",
+    "ogType": "website",
+    "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "twitterCard": "summary",
+    "twitterSite": "@Bank_on_Fi",
+    "twitterTitle": "Fi.money | Contact the Fi Money Customer Care",
+    "twitterDescription": "Banking Made Easier and Smarter. Bank smarter through Fi.Money digital financial app. Contact us right now for any queries!",
+    "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "orgSchema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Fi.Money",
+        "alternateName": "Bank on Fi",
+        "url": "https://fi.money/contact-us",
+        "logo": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "080-47485490",
+            "contactType": "customer service",
+            "contactOption": "TollFree",
+            "areaServed": "IN",
+            "availableLanguage": ["en","Hindi"]
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/epifi/",
+            "https://www.facebook.com/bankonfi/",
+            "https://twitter.com/Bank_on_Fi",
+            "https://www.instagram.com/bankonfi/",
+            "https://www.youtube.com/channel/UCpedM3ZjpWyT6sE8P4l1GFw"
+        ]
+    },
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact Us",
+                "item": "https://fi.money/contact-us"
+            }
+        ]
+    }
+}

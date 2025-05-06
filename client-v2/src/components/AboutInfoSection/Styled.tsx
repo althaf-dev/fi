@@ -1,0 +1,114 @@
+import styled from 'styled-components';
+import { Device } from '../../Themes/Device';
+import Font from '../Font/Font';
+
+const Section = styled.div`
+    margin-top: 40px;
+
+    @media ${Device.tab} {
+        margin-top: 80px;
+    }
+`;
+
+const PosterSection = styled.div`
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+
+    @media ${Device.tab} {
+        padding: 30px 30px 60px 30px;
+    }
+
+    @media ${Device.desktop} {
+        text-align: left;
+        padding: 60px;
+        max-width: 1290px;
+    }
+`;
+
+const ContentHolder = styled.div<{ type?: 'leftImage' | 'rightImage' }>`
+    margin: auto;
+    max-width: 320px;
+
+    @media ${Device.tab} {
+        max-width: 484px;
+    }
+
+    @media ${Device.desktop} {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: ${function (props) {
+        return props.type === 'rightImage' ? 'row' : 'row-reverse';
+    }};
+    }
+`;
+
+const Description = styled(Font)`
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    @media ${Device.tab} {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    @media ${Device.desktop} {
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        span {
+            display: block;
+        }
+    }
+`;
+
+const TextHolder = styled.div<{ isThirdCard: boolean }>`
+    margin: auto;
+    max-width: ${(props) => (props.isThirdCard ? '270px' : '100%')};
+
+    @media ${Device.tab} {
+        max-width: ${(props) => (props.isThirdCard ? '320px' : '100%')};
+    }
+
+    @media ${Device.desktop} {
+        max-width: 490px;
+        margin: 0px;
+    }
+`;
+
+const ImageHolder = styled.div`
+    width: 320px;
+    height: 268px;
+
+    @media ${Device.tab} {
+        margin: auto;
+        width: 370px;
+        height: 310px;
+    }
+
+    @media ${Device.desktop} {
+        margin: 0;
+        width: 550px;
+        height: 460px;
+    }
+`;
+
+const Title = styled(Font)`
+    @media ${Device.desktop} {
+        span {
+            display: block;
+        }
+    }
+`;
+
+export {
+    Section,
+    PosterSection,
+    ContentHolder,
+    Description,
+    TextHolder,
+    ImageHolder,
+    Title,
+};

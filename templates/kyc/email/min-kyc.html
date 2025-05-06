@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <title>Yaay! Your Fi account is ready✨</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+        /* Start reset css */
+        /* Remove space around the email design. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Stop Outlook resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Stop Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* Use a better rendering method when resizing images in Outlook IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+        /* End reset css */
+
+        /* tables */
+        .main-table {
+            background-color: #e7e7e7;
+            width: 100%;
+        }
+
+        .table1 {
+            background-color: #333333;
+            width: 100%;
+        }
+
+        .table2 {
+            width: 100%;
+        }
+
+        .table3 {
+            width: 100%;
+        }
+
+        .table11 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 560px;
+        }
+
+        .table21 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 560px;
+        }
+
+        .table31 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 560px;
+        }
+
+        /* body */
+        .cr {
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .cr1 {
+            border-radius: 12px 12px 0 0;
+        }
+
+        .cr2 {
+            border-radius: 0 0 12px 12px;
+        }
+
+        /* logo */
+        .logo-wr {
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+            max-width: 52px;
+        }
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .link {
+            color: #00b899 !important;
+            text-decoration: underline;
+        }
+
+        a {
+            color: #00b899 !important;
+            text-decoration: none;
+        }
+
+        /* body */
+        .btitle {
+            font-family: 'Gilroy', sans-serif;
+            font-weight: bold;
+            color: #333333;
+            font-size: 28px;
+            line-height: 36px;
+            margin-top: 36px;
+            margin-bottom: 32px;
+            max-width: 432px;
+            margin-left: 64px;
+            margin-right: 64px;
+            display: block;
+        }
+
+        .bdesc {
+            color: #8d8d8d;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            width: 432px;
+            margin-bottom: 48px;
+            text-align: left;
+            margin-left: 64px;
+            margin-right: 64px;
+        }
+
+        .bdesc1 {
+            color: #8d8d8d;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-bottom: 48px;
+            text-align: left;
+            width: 432px;
+        }
+
+        .bdesc2 {
+            color: #8d8d8d;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-bottom: 48px;
+            text-align: center;
+            width: 432px;
+        }
+
+        .bdesc-bd {
+            color: #333333;
+            font-family: 'Gilroy', sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 26px;
+            width: 412px;
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-bottom: 8px;
+        }
+
+        .bdesc-mb {
+            margin-bottom: 48px;
+        }
+
+        .bdesc-mb1 {
+            margin-bottom: 20px;
+        }
+
+        .bdesc-mb2 {
+            margin-bottom: 36px;
+        }
+
+        .bdesc-mb3 {
+            margin-bottom: 60px;
+        }
+
+        .bdesc-mb4 {
+            margin-bottom: 48px;
+        }
+
+        .bdesc-mb5 {
+            margin-bottom: 48px;
+        }
+
+        .bfooter {
+            font-size: 12px;
+            line-height: 18px;
+            color: #a4a4a4;
+            margin-bottom: 24px;
+            width: 400px;
+        }
+
+        .bfooter-bd {
+            font-weight: bold;
+        }
+
+        .separator {
+            border-top: 1px solid #e7e7e7;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            width: 432px;
+        }
+
+        /* footer */
+        .footer-wr {
+            text-align: center;
+        }
+
+        .fdesc-1 {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 18px;
+            color: #A4A4A4;
+            width: 400px;
+            margin-top: 32px;
+            margin-bottom: 18px;
+        }
+
+        .fdesc-2 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #A4A4A4;
+            width: 400px;
+            margin-bottom: 32px;
+        }
+
+        .fdesc-bd {
+            font-weight: bold;
+        }
+
+        .fimg1 {
+            margin-bottom: 32px;
+            text-align: right;
+            width: 244px;
+        }
+
+        .fimg2 {
+            margin-bottom: 32px;
+            text-align: center;
+            width: 72px;
+        }
+
+        .fimg3 {
+            margin-bottom: 32px;
+            text-align: left;
+            width: 244px;
+        }
+
+        .card-holder-desktop {
+            width: 432px;
+            display: block;
+        }
+
+        .card-image {
+            height: 48px;
+            width: 48px;
+            margin-right: 16px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: block;
+        }
+
+        .card-holder-text {
+            display: inline-block;
+            color: #333333;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            max-width: 125px;
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .card-holder-mt {
+            margin-top: 48px;
+        }
+
+        .card-holder-mr {
+            margin-right: 54px;
+        }
+
+        .card-holder-mt-mr {
+            margin-top: 48px;
+            margin-right: 54px;
+        }
+
+        .card-holder-mobile {
+            display: none;
+        }
+
+        .body-card-image {
+            height: 240px;
+            width: 240px;
+            display: block;
+        }
+
+        .body-card-title {
+            margin-top: 32px;
+        }
+
+        .body-card-title-mt {
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
+
+        .outlook_tag {
+            display: none;
+        }
+
+        @media only screen and (max-width: 640px) {
+            .table11 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table21 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table31 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            /* logo */
+            .logo-wr {
+                text-align: center;
+                padding-top: 24px;
+                padding-bottom: 16px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                max-width: 40px;
+            }
+
+            .btitle {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 32px;
+                margin-top: 32px;
+                margin-bottom: 20px;
+                max-width: 344px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .bdesc {
+                font-size: 14px;
+                line-height: 24px;
+                width: 296px;
+                margin-bottom: 32px;
+                margin-left: 32px;
+                margin-right: 32px;
+            }
+
+            .bdesc1 {
+                font-size: 14px;
+                line-height: 24px;
+                width: 260px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .bdesc2 {
+                font-size: 14px;
+                line-height: 24px;
+                width: 260px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .bdesc-bd {
+                font-size: 16px;
+                line-height: 20px;
+                width: 260px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .bdesc-mb {
+                margin-bottom: 24px;
+            }
+
+            .bdesc-mb1 {
+                margin-bottom: 16px;
+            }
+
+            .bdesc-mb2 {
+                margin-bottom: 32px;
+            }
+
+            .bdesc-mb3 {
+                margin-bottom: 40px;
+            }
+
+            .bdesc-mb4 {
+                margin-bottom: 40px;
+            }
+
+            .bdesc-mb5 {
+                margin-bottom: 52px;
+            }
+
+            .bfooter {
+                width: 312px;
+            }
+
+            /* footer */
+            .fdesc-1 {
+                margin-top: 24px;
+                width: 312px;
+            }
+
+            .fdesc-2 {
+                margin-bottom: 24px;
+                width: 312px;
+            }
+
+            .fimg1 {
+                margin-bottom: 16px;
+                text-align: right;
+                width: 144px;
+            }
+
+            .fimg2 {
+                margin-bottom: 16px;
+                text-align: center;
+                width: 72px;
+            }
+
+            .fimg3 {
+                margin-bottom: 16px;
+                text-align: left;
+                width: 144px;
+            }
+
+            .separator {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                width: 296px;
+            }
+
+            .card-holder-mobile {
+                width: 260px;
+                margin: auto;
+                text-align: start;
+                display: block;
+            }
+
+            .card-holder-text {
+                font-size: 14px;
+                line-height: 24px;
+                max-width: unset;
+            }
+
+            .card-image {
+                vertical-align: middle;
+            }
+
+            .card-holder-desktop {
+                display: none;
+            }
+
+            .card-holder-mt {
+                margin-top: 32px;
+            }
+
+            .body-card-image {
+                height: 210px;
+                width: 210px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .body-card-title {
+                margin-top: 24px;
+                margin-bottom: 8px;
+            }
+
+            .body-card-title-mt {
+                margin-top: 40px;
+                margin-bottom: 8px;
+            }
+        }
+        </style>
+
+        <!--[if (mso)|(IE)]>
+        <style type="text/css">
+            /* Your Outlook-specific CSS goes here. */
+            .outlook_tag {
+                display: block;
+            }
+        </style>
+        <![endif]-->
+    </head>
+    <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+        <table class="main-table" role="presentation" cellspacing="0" border="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="table1" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>
+                                            <table class="table11" cellspacing="0" role="presentation" border="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="logo-wr">
+                                                            <img
+                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/logo.png"
+                                                                alt="logo"
+                                                                class="logo"
+                                                                width="52" height="52"
+                                                            />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="cr cr1">
+                                                            <center>
+                                                                <p class="btitle">
+                                                                    Hey First Name, wish we could give you a high five for real ✋
+                                                                </p>
+                                                                <p class="bdesc">
+                                                                    Your Fi-Federal Savings Account (in partnership with Visa & Federal Bank) is ready! You can tell it’s no ordinary account by its features:
+                                                                </p>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="cr cr-2">
+                                                            <center>
+                                                                <table cellspacing="0" role="presentation" cellpadding="0" border="0" class="card-holder-desktop">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/balance.png"
+                                                                                alt="card-image"
+                                                                                class="card-image"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text card-holder-mr">
+                                                                                No minimum balance
+                                                                            </p>
+                                                                        </td>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/insurance.png"
+                                                                                alt="card-image"
+                                                                                class="card-image"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text">
+                                                                                Money insured up to ₹5 lakh
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <p class="outlook_tag">&nbsp;</p>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/forex.png"
+                                                                                alt="card-image"
+                                                                                class="card-image card-holder-mt"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="outlook_tag">&nbsp;</p>
+                                                                            <p class="card-holder-text card-holder-mt-mr">
+                                                                                Zero forex markup
+                                                                            </p>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="outlook_tag">&nbsp;</p>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/atm.png"
+                                                                                alt="card-image"
+                                                                                class="card-image card-holder-mt"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="outlook_tag">&nbsp;</p>
+                                                                            <p class="card-holder-text card-holder-mt">
+                                                                                Withdraw from any ATM
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </center>
+
+                                                            <center>
+                                                                <table cellspacing="0" role="presentation" cellpadding="0" border="0" class="card-holder-mobile">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/balance.png"
+                                                                                alt="card-image"
+                                                                                class="card-image"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text">
+                                                                                No minimum balance
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/insurance.png"
+                                                                                alt="card-image"
+                                                                                class="card-image card-holder-mt"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text card-holder-mt">
+                                                                                Money insured up to ₹5 lakh
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/forex.png"
+                                                                                alt="card-image"
+                                                                                class="card-image card-holder-mt"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text card-holder-mt">
+                                                                                Zero forex markup
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img
+                                                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/atm.png"
+                                                                                alt="card-image"
+                                                                                class="card-image card-holder-mt"
+                                                                                width="48" height="48"
+                                                                            />
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="card-holder-text card-holder-mt">
+                                                                                Withdraw from any ATM
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="cr cr-2">
+                                                            <center>
+                                                                <p class="separator"></p>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="table2" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>
+                                            <table class="table21" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cr">
+                                                            <center>
+                                                                <p class="outlook_tag">&nbsp;</p>
+                                                                <p class="bdesc-bd bdesc-mb1">
+                                                                    What comes next?
+                                                                </p>
+
+                                                                <p class="bdesc1 bdesc-mb1">
+                                                                    As of now, your Fi account has a 1 lakh deposit limit. But, once you complete a quick 3-minute video KYC verification call — we'll upgrade you to an account with no limits!
+                                                                </p>
+
+                                                                <p class="bdesc1 bdesc-mb1">
+                                                                    Despite this, you can start saving with Fi right away! Add ₹5,000 into your account and earn up to ₹250 as a cash reward in a Smart Deposit.
+                                                                </p>
+
+                                                                <p class="bdesc1">
+                                                                    You can also use your Fi-Federal co-branded Debit Card immediately for online purchases! The physical card will reach you soon.
+                                                                </p>
+
+                                                                <p class="separator"></p>
+
+                                                                <p class="bdesc-bd bdesc-mb bdesc-mb2">
+                                                                    Discover your Fi account's cool features: Take it out for a spin!
+                                                                </p>
+
+                                                                <p class="outlook_tag">&nbsp;</p>
+
+                                                                <img
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/deposits.png"
+                                                                    alt="card-image"
+                                                                    class="body-card-image"
+                                                                    width="240" height="240"
+                                                                />
+
+                                                                <p class="bdesc-bd body-card-title">Jar 🎁</p>
+                                                                <p class="bdesc2 bdesc-mb4">
+                                                                    Whether you're saving for a Rainy Day, an Apple watch, or that trip to Goa,
+                                                                    Fi's Jar lets you achieve your goals faster & with better interest rates!
+                                                                </p>
+
+                                                                <img
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/search.png"
+                                                                    alt="card-image"
+                                                                    class="body-card-image"
+                                                                    width="240" height="240"
+                                                                />
+
+                                                                <p class="bdesc-bd body-card-title">
+                                                                    Ask Fi ☝️
+                                                                </p>
+                                                                <p class="bdesc2 bdesc-mb5">
+                                                                    Want to know how much you’ve spent on Swiggy? Ask Fi. Want to send money to your sister?
+                                                                    Ask Fi to do it. It’s your very own dynamic financial assistant.
+                                                                </p>
+
+                                                                <img
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/onboarding/fitrules.png"
+                                                                    alt="card-image"
+                                                                    class="body-card-image"
+                                                                    width="240" height="240"
+                                                                />
+
+                                                                <p class="bdesc-bd body-card-title-mt">
+                                                                    FIT rule 📝
+                                                                </p>
+
+                                                                <p class="bdesc2 bdesc-mb3">
+                                                                    Want to tie a habit to a financial goal? Or set a reminder to help you save more? FIT rules make saving fun.
+                                                                </p>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="cr cr2">
+                                                            <center>
+                                                                <!-- Footer -->
+                                                                <p class="bfooter">
+                                                                    If you experience any glitches, just
+                                                                    reach out to our super-helpful
+                                                                    customer support at
+                                                                    <span class="bfooter-bd">
+                                                                        080 - 47485490
+                                                                    </span>
+                                                                    <br />
+                                                                    <br />
+                                                                    Fi or Federal Bank or any of its employees will never ask for an OTP or a password.
+                                                                </p>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="table3" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>
+                                            <table class="table31" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="footer-wr">
+                                                            <center>
+                                                                <p class="fdesc-1">
+                                                                    © 2021 epiFi Technologies Pvt. Ltd. All rights reserved  
+                                                                </p>
+                                                                <p class="fdesc-2">
+                                                                    <a class="link" href="https://fi.money/FAQs" target="_blank">FAQ</a>
+                                                                    <span class="fdesc-bd">&nbsp;•&nbsp;</span>
+                                                                    <a class="link" href="https://fi.money/T&C" target="_blank">Terms and Conditions</a>
+                                                                    <span class="fdesc-bd">&nbsp;•&nbsp;</span>
+                                                                    <a class="link" href="https://fi.money/privacy" target="_blank">Privacy Policy</a>
+                                                                </p>
+                                                            </center>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table31" role="presentation" cellspacing="0" border="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="footer-wr">
+                                                            <p class="fimg1">
+                                                                <a href="https://www.linkedin.com/company/epifi"
+                                                                    target="_blank">
+                                                                    <img
+                                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/linkedin-logo.png"
+                                                                        alt="linkedin"
+                                                                        width="24" height="24"
+                                                                    />
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                        <td class="footer-wr">
+                                                            <p class="fimg2">
+                                                                <a href="https://www.twitter.com/Bank_on_Fi" target="_blank">
+                                                                    <img
+                                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/twitter-logo.png"
+                                                                        alt="twitter"
+                                                                        width="24" height="24"
+                                                                    />
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                        <td class="footer-wr">
+                                                            <p class="fimg3">
+                                                                <a href="https://www.instagram.com/bankonfi" target="_blank">
+                                                                    <img class="fimg"
+                                                                        src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/instagram-logo.png"
+                                                                        alt="instagram"
+                                                                        width="24" height="24"
+                                                                    />
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

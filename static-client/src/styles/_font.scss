@@ -1,0 +1,96 @@
+// this variable is getting set from the webpack config so that we can load different fonts in local & non-prod/prod instances
+$image-url: #{$var1};
+
+@font-face {
+    font-family: 'Retro Gaming';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    src: url($image-url +'/assets/fonts/retro-gaming-font.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 200;
+    // Getting CORS issue in localhost
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Radomir-Tinkov-Gilroy-Regular.woff2
+    src: url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Regular.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Regular.woff') format('woff'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Radomir-Tinkov-Gilroy-Medium.woff2
+    src: url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Medium.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Medium.woff') format('woff'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: block;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Radomir-Tinkov-Gilroy-SemiBold.woff2
+    src: url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-SemiBold.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-SemiBold.woff') format('woff'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-display: block;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Radomir-Tinkov-Gilroy-Bold.woff2
+    src: url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Bold.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Bold.woff') format('woff'),
+        url($image-url + '/assets/fonts/Radomir-Tinkov-Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Inter-Regular.woff2
+    src: url($image-url + '/assets/fonts/Inter-Regular.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Inter-Regular.woff') format('woff'),
+        url($image-url + '/assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: block;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Inter-Medium.woff2
+    src: url($image-url + '/assets/fonts/Inter-Medium.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Inter-Medium.woff') format('woff'),
+        url($image-url + '/assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    // https://epifi-icons.s3.ap-south-1.amazonaws.com/web/assets/fonts/Inter-Bold.woff2
+    src: url($image-url + '/assets/fonts/Inter-Bold.woff2') format('woff2'),
+        url($image-url + '/assets/fonts/Inter-Bold.woff') format('woff'),
+        url($image-url + '/assets/fonts/Inter-Bold.ttf') format('truetype');
+}

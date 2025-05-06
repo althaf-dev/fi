@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <title>Reminder for your Video KYC call</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/fonts/font.css"
+            rel="stylesheet"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+        /> -->
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Inter', sans-serif;
+            }
+
+            /* tables */
+            .main-table {
+                background-color: #e7e7e7;
+                width: 100%;
+            }
+
+            .table1 {
+                background-color: #333333;
+                width: 100%;
+            }
+
+            .table11 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table2 {
+                width: 100%;
+            }
+
+            .table21 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 360px;
+            }
+
+            .table3 {
+                width: 100%;
+            }
+
+            .table31 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 24px;
+                margin-bottom: 16px;
+                width: 360px;
+            }
+
+            /* logo */
+            .logo-wr {
+                text-align: center;
+                padding-top: 24px;
+                padding-bottom: 16px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                max-width: 40px;
+            }
+
+            /* body */
+            .cr {
+                text-align: center;
+                background: #ffffff;
+            }
+
+            .cr1 {
+                border-radius: 12px 12px 0 0;
+            }
+
+            .cr2 {
+                border-radius: 0 0 12px 12px;
+            }
+
+            .btitle {
+                font-family: 'Gilroy', sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+                color: #333333;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                max-width: 344px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bdesc {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #8d8d8d;
+                width: 296px;
+            }
+
+            .bdesc-bd {
+                color: #333333;
+                font-family: 'Gilroy', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .bdesc-mb {
+                margin-bottom: 24px;
+            }
+
+            .bdesc-infocard {
+                margin-bottom: 40px;
+            }
+
+            .bfooter {
+                font-size: 12px;
+                line-height: 18px;
+                color: #a4a4a4;
+                margin-bottom: 24px;
+                width: 312px;
+            }
+
+            .bfooter-bd {
+                font-weight: bold;
+            }
+
+            /* footer */
+            .footer-wr {
+                text-align: center;
+                width: 312px;
+            }
+
+            .fdesc {
+                font-size: 12px;
+                line-height: 18px;
+                color: #a4a4a4;
+                width: 312px;
+            }
+
+            .fdesc-mb {
+                margin-bottom: 18px;
+            }
+
+            .fdesc-bd {
+                font-weight: bold;
+            }
+
+            .fimg {
+                margin-top: 24px;
+                width: 24px;
+            }
+
+            .fimg-mr {
+                margin-right: 24px;
+            }
+
+            p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .link {
+                color: #00b899 !important;
+                text-decoration: underline;
+            }
+
+            a {
+                color: #00b899 !important;
+                text-decoration: none;
+            }
+
+            .separator {
+                border-top: 1px solid #e7e7e7;
+                margin-top: 36px;
+                margin-bottom: 36px;
+                width: 296px;
+            }
+
+            /* Card Style */
+            .info-card {
+                width: 100%;
+                margin-bottom: 48px;
+            }
+
+            .info-card-last {
+                margin-bottom: 56px;
+            }
+
+            .info-card-img {
+                vertical-align: middle;
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .info-card p {
+                margin: 0 16px;
+            }
+
+            .info-card-p1 {
+                font-family: 'Gilroy', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #333333;
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
+
+            .info-card-p2 {
+                display: inline-block;
+                width: 260px;
+            }
+
+            /* Card Style End*/
+
+            .body-card-image {
+                height: 210px;
+                width: 210px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-top: 18px;
+            }
+
+            .body-card-title {
+                margin-top: 24px;
+                margin-bottom: 8px;
+            }
+
+            .atc-card {
+                background: #f5f5f5;
+                border-radius: 6px;
+                margin: 48px auto 40px;
+                padding: 32px 24px;
+                width: 296px;
+            }
+
+            .atc-card-a {
+                display: inline-block;
+                vertical-align: super;
+            }
+
+            .atc-card-p {
+                color: #333333;
+                display: inline-block;
+                font-family: 'Gilroy', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 40px;
+                margin: 0 50px 0 0;
+                max-width: 175px;
+                text-align: start;
+            }
+
+            .atc-card-img {
+                width: 28px;
+                height: 28px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            .app-btn {
+                font-family: 'Gilroy', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.0357143em;
+                display: inline-block;
+                padding: 16px 32px;
+                background: #00b899;
+                color: #ffffff !important;
+                border-radius: 10px;
+                margin-top: 24px;
+            }
+
+            .not-mobile {
+                display: none;
+            }
+
+            @media only screen and (min-width: 640px) {
+                .table11 {
+                    width: 560px;
+                }
+
+                .table21 {
+                    width: 560px;
+                }
+
+                .table31 {
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                    width: 560px;
+                }
+
+                /* logo */
+                .logo-wr {
+                    text-align: center;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                }
+
+                .logo {
+                    width: 52px;
+                    height: 52px;
+                    max-width: 52px;
+                }
+
+                /* body */
+                .btitle {
+                    font-size: 28px;
+                    line-height: 36px;
+                    margin-top: 36px;
+                    max-width: 432px;
+                }
+
+                .bdesc {
+                    font-size: 16px;
+                    line-height: 26px;
+                    width: 416px;
+                }
+
+                .bdesc-infocard {
+                    margin-bottom: 48px;
+                }
+
+                .bdesc-bd {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+
+                .bdesc-mb {
+                    margin-bottom: 26px;
+                }
+
+                .bdesc-mb2 {
+                    margin-bottom: 40px;
+                }
+
+                .bfooter {
+                    width: 450px;
+                }
+
+                .separator {
+                    /* margin-top: 28px;
+                    margin-bottom: 28px; */
+                    width: 395px;
+                }
+
+                /* footer */
+                .fdesc {
+                    width: 400px;
+                }
+
+                .fimg {
+                    margin-top: 32px;
+                }
+
+                .card-holder {
+                    max-width: 432px;
+                }
+
+                /* Info Card */
+                .info-card-last {
+                    margin-bottom: 40px;
+                }
+
+                .info-card p {
+                    text-align: start;
+                    max-width: 300px;
+                    display: inline-block;
+                }
+
+                .info-card-p1 {
+                    margin-top: 0;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                .info-card-p2 {
+                    width: 100%;
+                }
+
+                .info-card-img {
+                    vertical-align: top;
+                    margin-right: 40px;
+                }
+                /* Info Card End */
+
+                .body-card-image {
+                    height: 240px;
+                    width: 240px;
+                }
+
+                .body-card-title {
+                    margin-top: 32px;
+                }
+
+                .atc-card {
+                    margin: 40px auto;
+                    padding: 30px 28px;
+                    width: 464px;
+                }
+
+                .atc-card-a {
+                    vertical-align: bottom;
+                }
+
+                .atc-card-img {
+                    bottom: 35px;
+                }
+
+                .atc-card-p {
+                    font-size: 30px;
+                    line-height: 120%;
+                    margin-right: 40px;
+                    max-width: 340px;
+                }
+
+                .mobile {
+                    display: none;
+                }
+
+                .not-mobile {
+                    display: inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table class="main-table" cellspacing="0" border="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table
+                            class="table1"
+                            cellspacing="0"
+                            border="0"
+                            cellpadding="0"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table
+                                            class="table11"
+                                            cellspacing="0"
+                                            border="0"
+                                            cellpadding="0"
+                                        >
+                                            <tbody>
+                                                <tr>
+                                                    <td class="logo-wr">
+                                                        <img
+                                                            src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/logo.png"
+                                                            alt="logo"
+                                                            class="logo"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cr cr1">
+                                                        <p class="btitle">
+                                                            Your Video KYC call
+                                                            is coming up
+                                                            __NAME__!
+                                                        </p>
+                                                        <p
+                                                            class="bdesc"
+                                                        >
+                                                            Your 4-minute long
+                                                            Video KYC call has
+                                                            been scheduled
+                                                            successfully for:
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cr cr-2">
+                                                        <div class="atc-card">
+                                                            <p
+                                                                class="atc-card-p"
+                                                            >
+                                                                Mon, Jan 18
+                                                                <span class="not-mobile">•</span>
+                                                                <span class="mobile">
+                                                                    <br />
+                                                                </span>
+                                                                12:00 PM
+                                                            </p>
+
+                                                            <a
+                                                                href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210405T104500Z%2F20210405T111500Z&text=Add%20New%20Event"
+                                                                title="Add to Calendar"
+                                                                class="atc-card-a"
+                                                            >
+                                                                <img
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/vkyc/calendar-icon.png"
+                                                                    alt="card-image"
+                                                                    class="atc-card-img"
+                                                                />
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table
+                            class="table21"
+                            cellspacing="0"
+                            border="0"
+                            cellpadding="0"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td class="cr cr-2">
+                                        <p class="bdesc">
+                                            Open your Fi app to
+                                            initiate your
+                                            scheduled call.
+                                            Remember, keep your
+                                            original PAN card &
+                                            pen/paper on hand 📝
+                                        </p>
+                                        <p class="separator"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cr cr2">
+                                        <p class="bdesc bdesc-infocard">
+                                            We’ll drop a reminder notification 15 minutes
+                                            before your call. Here are some FAQs:
+                                        </p>
+
+                                        <div class="info-card">
+                                            <img
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/vkyc/video-emoji.png"
+                                                alt="card-image"
+                                                class="info-card-img"
+                                            />
+                                            <p>
+                                                <span class="info-card-p1">
+                                                    Why is Video KYC needed?
+                                                </span>
+                                                <br />
+                                                <span
+                                                    class="bdesc info-card-p2"
+                                                >
+                                                    You’ll have a Fi account
+                                                    with no deposit limit after
+                                                    completing KYC
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <div class="info-card">
+                                            <img
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/vkyc/note-emoji.png"
+                                                alt="card-image"
+                                                class="info-card-img"
+                                            />
+                                            <p>
+                                                <span class="info-card-p1">
+                                                    What do I need?
+                                                </span>
+                                                <br />
+                                                <span
+                                                    class="bdesc info-card-p2"
+                                                >
+                                                    Keep on hand your PAN card
+                                                    and a pen and paper for a
+                                                    signature
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <div class="info-card">
+                                            <img
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/vkyc/pop-emoji.png"
+                                                alt="card-image"
+                                                class="info-card-img"
+                                            />
+                                            <p>
+                                                <span class="info-card-p1">
+                                                    Where do I need to be?
+                                                </span>
+                                                <br />
+                                                <span
+                                                    class="bdesc info-card-p2"
+                                                >
+                                                    Anywhere with a stable
+                                                    connection and decent
+                                                    lighting
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <div class="info-card info-card-last">
+                                            <img
+                                                src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/vkyc/sunglasses-emoji.png"
+                                                alt="card-image"
+                                                class="info-card-img"
+                                            />
+                                            <p>
+                                                <span class="info-card-p1">
+                                                    Who will I talk to?
+                                                </span>
+                                                <br />
+                                                <span
+                                                    class="bdesc info-card-p2"
+                                                >
+                                                    You’ll be interacting with
+                                                    our Banking Partner’s
+                                                    agents, who value your time
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <!-- Footer -->
+                                        <p class="bfooter">
+                                            If this isn’t you, call
+
+                                            <span class="bfooter-bd">
+                                                080 - 47485490
+                                            </span>
+
+                                            & report this. We’ll sort it out 😇
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table
+                            class="table3"
+                            cellspacing="0"
+                            border="0"
+                            cellpadding="0"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table
+                                            class="table31"
+                                            cellspacing="0"
+                                            border="0"
+                                            cellpadding="0"
+                                        >
+                                            <tbody>
+                                                <tr>
+                                                    <td class="footer-wr">
+                                                        <p
+                                                            class="fdesc fdesc-mb fdesc-bd"
+                                                        >
+                                                            © 2021 epiFi
+                                                            Technologies Pvt.
+                                                            Ltd. All rights
+                                                            reserved
+                                                        </p>
+                                                        <p class="fdesc">
+                                                            <a
+                                                                class="link"
+                                                                href="https://fi.money/FAQs"
+                                                                target="_blank"
+                                                                >FAQ</a
+                                                            >
+                                                            <span
+                                                                class="fdesc-bd"
+                                                                >&nbsp;•&nbsp;</span
+                                                            >
+                                                            <a
+                                                                class="link"
+                                                                href="https://fi.money/T&C"
+                                                                target="_blank"
+                                                                >Terms and
+                                                                Conditions</a
+                                                            >
+                                                            <span
+                                                                class="fdesc-bd"
+                                                                >&nbsp;•&nbsp;</span
+                                                            >
+                                                            <a
+                                                                class="link"
+                                                                href="https://fi.money/privacy"
+                                                                target="_blank"
+                                                                >Privacy
+                                                                Policy</a
+                                                            >
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="footer-wr">
+                                                        <p>
+                                                            <a
+                                                                href="https://www.linkedin.com/company/epifi"
+                                                                target="_blank"
+                                                            >
+                                                                <img
+                                                                    class="fimg fimg-mr"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/linkedin-logo.png"
+                                                                    alt="linkedin"
+                                                                />
+                                                            </a>
+                                                            <a
+                                                                href="https://www.twitter.com/Bank_on_Fi"
+                                                                target="_blank"
+                                                            >
+                                                                <img
+                                                                    class="fimg fimg-mr"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/twitter-logo.png"
+                                                                    alt="twitter"
+                                                                />
+                                                            </a>
+                                                            <a
+                                                                href="https://www.instagram.com/bankonfi"
+                                                                target="_blank"
+                                                            >
+                                                                <img
+                                                                    class="fimg"
+                                                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/email-templates/instagram-logo.png"
+                                                                    alt="instagram"
+                                                                />
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

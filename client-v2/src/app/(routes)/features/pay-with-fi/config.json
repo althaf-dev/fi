@@ -1,0 +1,390 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002",
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002" : {
+			"content" : "PAY WITH FI",
+			"type" : "Text",
+			"variant": "CARD_TEXT_LIGHT_YELLOW"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Payments",
+			"type"    : "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "We’ve got a buffet of payment modes for you to choose from – this includes UPI, Direct-to-Bank, Debit Card, IMPS, and more. Best part? You get rewarded for making payments on Fi!",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/poster.webp",
+			"variant": "Feature_Page_Banner_Image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+
+		"c4dee63d-05af-461e-80ad-3648a4272dbc": {
+			"type": "Row",
+			"variant": "IMAGETEXTDESCRIPTION_3",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a": {
+			"type": "Column",
+			"variant": "DISPLAY__TITLEANDDESCRIPTION_1",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561": {
+			"type" : "Accordion",
+			"data": [
+				{
+				  "id": 1,
+				  "title": "0 FOREX charge 🌏",
+				  "subtitle": "Zero Forex on Select Plans. Enjoy international payments at no extra cost."
+				},
+				{
+					"id": 2,
+					"title": "Payments with a Tap ✨",
+					"subtitle": "Use the ‘Tap and Pay’ feature to make contactless payments."
+				},
+				{
+					"id": 3,
+					"title": "Card offers that you’ll love 💳",
+					"subtitle": "The Debit Card is a heavyweight when it comes to offers."
+				},
+				{
+					"id": 4,
+					"title": "Card controls on your phone 📱",
+					"subtitle": "Tap and freeze your card from the app, and unfreeze it just as easily. Have trouble sticking to your budget? Set transaction limits for your card from the app as well."
+				}
+			]
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/card-offers.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/card-offers.png",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"c4dee63d-05af-461e-80ad-3648a4272dbc2": {
+			"type": "Row",
+			"variant": "IMAGETEXTDESCRIPTION_3",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a2",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d3862"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a2": {
+			"type": "Column",
+			"variant": "DISPLAY__TITLEANDDESCRIPTION_1",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec5612"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec5612": {
+			"type" : "Accordion",
+			"data": [
+				{
+				  "id": 1,
+				  "title": "Wait no more ⚡️",
+				  "subtitle": "Don’t head out to a different app to look for IFSC codes, just look them up right on the bank transfer page on your Fi app."
+				},
+				{
+					"id": 2,
+					"title": "IFSC search on the app 🔎",
+					"subtitle": "Need to make a payment? Let FIT take care of it! Set a rule to 'pay Priya on the 5th' and you're sorted."
+				},
+				{
+					"id": 3,
+					"title": "NEFT, RTGS, IMPS… we’ll do that math 💪",
+					"subtitle": "Don’t try choosing the payment method. Fi works out the most efficient way of sending money for your beneficiaries."
+				}
+			]
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d3862": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a962"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a962": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/bank-transfer.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/bank-transfer.webp",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"e6f90080-767f-4c5c-a8fe-299aae84f978": {
+			"type": "Row",
+			"variant": "IMAGETEXTDESCRIPTION__REVERSE_1",
+			"children": [
+				"b569062d-6d1c-4a4e-997b-21d7c8c11a1a",
+				"1b869f6f-3c93-455c-b6e3-76d0a8de84d5"
+			]
+		},
+		"1b869f6f-3c93-455c-b6e3-76d0a8de84d5": {
+			"type": "Column",
+			"variant": "DISPLAY__TITLEANDDESCRIPTION_1",
+			"children": [
+				"6136b0f9-a498-457f-af47-66809b203c46"
+			]
+		},
+		"6136b0f9-a498-457f-af47-66809b203c46": {
+			"type" : "Accordion",
+			"data": [
+				{
+				  "id": 1,
+				  "title": "Scan and Pay ↗️",
+				  "subtitle": "Pay at stores, or send money directly to contacts by scanning and paying using the QR code scanner in your Fi app."
+				},
+				{
+					"id": 2,
+					"title": "Rewards on every spend",
+					"subtitle": "Earn cashback or Fi-Coins every time you pay using UPI on Fi."
+				}
+			]
+		},
+		"b569062d-6d1c-4a4e-997b-21d7c8c11a1a": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"23c8c3bc-89ad-4e2c-aacc-35c4e09aceb2"
+			]
+		},
+		"23c8c3bc-89ad-4e2c-aacc-35c4e09aceb2": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/scan.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/payments/scan.webp",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "Make Payments with Fi",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+
+		"text-have-more-question-section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"children": [
+				"have_more_questions",
+				"text-link-check-out-our-faq"
+			]
+		},
+		"have_more_questions": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Have more questions?"
+		},
+		"text-link-check-out-our-faq": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_2",
+			"content": "<a href='/FAQs/transactions' style='color: #00B899'>Check out our FAQs.</a>"
+		},
+		"image_text_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"accordion-title1-row",
+				"c4dee63d-05af-461e-80ad-3648a4272dbc",
+				"accordion-title2-row",
+				"e6f90080-767f-4c5c-a8fe-299aae84f978",
+				"accordion-title3-row",
+				"c4dee63d-05af-461e-80ad-3648a4272dbc2"
+			]
+		},
+		"fi_partners_section": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53ap": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561p",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561p": {
+			"content": "Fi partners with the best to secure your money",
+			"type" : "Text",
+			"variant": "H1VARIANT_BLACK"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7-images": {
+			"type": "Column",
+			"variant": "FOOTER_TEXT_IMAGE",
+			"children": [
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7q",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7r",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7s",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7t",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7u",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7v"
+			]
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7q": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/federal.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7r": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/visa.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7s": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/npci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7t": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/pci.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7u": {
+            "url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth.png",
+			"type": "Image",
+			"variant": "COVER_IMAGE_2"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7v": {
+			"content": "ISO 27001:2013",
+			"type" : "Text",
+			"variant": "FOOTER_LOGO_TEXT_1"
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386p": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96p": {
+			"content": "Our partner bank hosts your Savings Account and follows all security standards per applicable regulations. <br> <br>Your money is always safe with our banking partner - Federal Bank, is covered under the Deposit Insurance and Credit Guarantee Corporation Scheme. This insures your money up to <b>₹5 lakh.</b> <br><br> Fi itself is not a bank and doesn’t hold or claim to have a banking license.",
+			"type" : "Text",
+			"variant": "h6VARIANT_GREY3_1"
+		},
+		"accordion-title1-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_5",
+			"children": [
+				"accordion-title1"
+			]
+		},
+		"accordion-title1": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_3",
+			"content": "Debit Card"
+		},
+		"accordion-title2-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_5",
+			"children": [
+				"accordion-title2"
+			]
+		},
+		"accordion-title2": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_3",
+			"content": "Faster payments using UPI"
+		},
+		"accordion-title3-row": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_5",
+			"children": [
+				"accordion-title3"
+			]
+		},
+		"accordion-title3": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_3",
+			"content": "Bank Transfer"
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [	
+				"image_text_section",
+				"feature_page_button_primary_row",
+				"text-have-more-question-section",
+				"fi_partners_section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

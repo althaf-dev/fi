@@ -1,0 +1,447 @@
+{
+	"elements" : {
+		"banner_section": {
+			"type": "Section",
+			"variant": "BANNER__DARK_GREY",
+			"children": [
+				"a3b897a8-d75e-43f8-b04d-ddd08c6b060e"
+			]
+		},
+		"a3b897a8-d75e-43f8-b04d-ddd08c6b060e": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76": {
+			"type": "Column",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"aeba91e0-95a3-11ee-b9d1-0242ac120002",
+				"f7013ba4-dca2-4dec-a5be-1be2843405de",
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a",
+				"92fae071-c430-452e-8abb-df1e4a9da241",
+				"6e01bfa7-a456-4146-8278-732cb7321d76-image",
+				"c693569e-95a3-11ee-b9d1-0242ac120002"
+			]
+		},
+		"6e01bfa7-a456-4146-8278-732cb7321d76-image": {
+			"type": "Row",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER_4",
+			"children": [
+				"c69354dc-95a3-11ee-b9d1-0242ac120002",
+				"92fae071-c430-452e-8abb-df1e4a9da244",
+				"c69354dc-95a3-11ee-b9d1-0242ac120003",
+				"92fae071-c430-452e-8abb-df1e4a9da245",
+				"c69354dc-95a3-11ee-b9d1-0242ac120004"
+			]
+		},
+		"aeba91e0-95a3-11ee-b9d1-0242ac120002" : {
+			"content" : "KNOW YOUR MONEY",
+			"type" : "Text",
+			"variant": "PSMALLVARIANTEIGHT__VIOLET_TAG"
+		},
+		"f7013ba4-dca2-4dec-a5be-1be2843405de": {
+			"content" : "Connected accounts",
+			"type"    : "h1",
+			"variant": "H1_WHITE_1"
+		},
+		"d5d7108c-98d3-4465-a7d6-a3f85196901a": {
+			"content": "Home to all your bank accounts. Yes, all of them!",
+			"type": "Text",
+			"variant": "P_SILVER_2"
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da241": {
+			"content": "POWERED BY",
+			"type": "Text",
+			"variant": "CUSTOM_TEXT_FEATURE_PAGE_POWEREDBY_2"
+		},
+		"c69354dc-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/epifi-wealth-logo.webp",
+			"alt": "Epifi wealth",
+			"variant": "IMAGE_INLINE_2"
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da244": {
+			"content": "VIA",
+			"type": "Text",
+			"variant": "CUSTOM_TEXT_FEATURE_PAGE_POWEREDBY_1"
+		},
+		"c69354dc-95a3-11ee-b9d1-0242ac120003": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/onemoney-logo.webp",
+			"alt": "One money",
+			"variant": "IMAGE_INLINE_2"
+		},
+		"92fae071-c430-452e-8abb-df1e4a9da245": {
+			"content": "&",
+			"type": "Text",
+			"variant": "CUSTOM_TEXT_FEATURE_PAGE_POWEREDBY_1"
+		},
+		"c69354dc-95a3-11ee-b9d1-0242ac120004": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/logos/finvu-logo.webp",
+			"alt": "Finvu",
+			"variant": "IMAGE_INLINE_3"
+		},
+		"c693569e-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/poster.webp",
+			"alt": "Connected accounts",
+			"variant": "Feature_Page_Banner_Image"
+		},
+		"aeba9406-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"f7013ba4-dca2-4dec-a5be-1be2843405de"
+			]
+		},
+		"c693516c-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT",
+			"children": [
+				"d5d7108c-98d3-4465-a7d6-a3f85196901a"
+			]
+		},
+		"c6935324-95a3-11ee-b9d1-0242ac120002": {
+			"type": "Section",
+			"variant": "DISPLAY__TEXT_ALIGN_CENTER",
+			"children": [
+				"92fae071-c430-452e-8abb-df1e4a9da241"
+			]
+		},
+		"c206d3d5-b606-409f-bf35-0dcd4a2cd296": {
+			"type": "Row",
+			"variant": "display__TEXT_ALIGN_CENTER",
+			"children": [
+				"6e01bfa7-a456-4146-8278-732cb7321d76"
+			]
+		},
+		"9921e138-fceb-4f7e-b5de-9539caad317e": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"d924ec31-7319-4f07-9d63-77d842b29bf7",
+				"cb869a56-ee83-43a6-ac1e-77defbe1f8b5"
+			]
+		},
+		"d924ec31-7319-4f07-9d63-77d842b29bf7": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"c69363fa-95a3-11ee-b9d1-0242ac120002",
+				"ec2e925a-6acd-4cca-9a51-bf6213912487"
+			]
+		},
+		"c69363fa-95a3-11ee-b9d1-0242ac120002": {
+			"content": "All your info in one place",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"ec2e925a-6acd-4cca-9a51-bf6213912487": {
+			"content": "Connect all your bank accounts to Fi. Accurately view, track, and analyse your balances & spends across bank accounts.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"cb869a56-ee83-43a6-ac1e-77defbe1f8b5": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79"
+			]
+		},
+		"8ca01f9f-3fb5-4ca0-bae2-bd3945e70b79": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/accounts.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/accounts.png",
+			"alt": "Bank accounts",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+
+		"3b0cdb59-fae6-4971-8a38-ce35cc1e6048": {
+			"type": "Row",
+			"variant": "ImageTextDescription__reverse",
+			"children": [
+				"d031cf4b-51cd-4743-83a5-498aa851664d",
+				"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1"
+			]
+		},
+		"120ca5d9-12ed-4160-b2b4-28f6a6a4b1d1": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8",
+				"6c6e626c-2064-4cd7-9c59-029ec37d7238"
+			]
+		},
+		"6045dc9a-7c7a-4349-ab7e-8e75ac4389e8": {
+			"content": "Your data security is serious business",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"6c6e626c-2064-4cd7-9c59-029ec37d7238": {
+			"content": "Via the Account Aggregator framework, your data is fetched safely. Plus, all your data is end-to-end encrypted.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"d031cf4b-51cd-4743-83a5-498aa851664d": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5"
+			]
+		},
+		"8efa91ad-e7fc-4011-b7cc-011fd4c2ecc5": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/fi-secure.png",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/fi-secure.png",
+			"alt": "Fi security",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		"c4dee63d-05af-461e-80ad-3648a4272dbc": {
+			"type": "Row",
+			"variant": "ImageTextDescription",
+			"children": [
+				"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a",
+				"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386"
+			]
+		},
+		"978bd7dc-e296-43d3-9bfc-fa68c9a4f53a": {
+			"type": "Column",
+			"variant": "display__TitleAndDescription",
+			"children": [
+				"e486dc7e-cef4-4456-9143-8871a4aec561",
+				"f2f59703-dba3-4ac0-b551-9985a63ee6c7"
+			]
+		},
+		"e486dc7e-cef4-4456-9143-8871a4aec561": {
+			"content": "Informative, but make it fun",
+			"type" : "Text",
+			"variant": "CARDTITLEVARIANTFIVE-MINE_SHAFT"
+		},
+		"f2f59703-dba3-4ac0-b551-9985a63ee6c7": {
+			"content": "Food? Clothes? Home-Decor? Where do you tend to spend the most? Let our Analyser get you answers to life’s big questions.",
+			"type" : "Text",
+			"variant": "pNormalVariant-GREY_3"
+		},
+		"77e4a0d4-4fb6-4f0f-91ce-bcfe7926d386": {
+			"type": "Column",
+			"variant": "display__TitleAndDescriptionImage",
+			"children": [
+				"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96"
+			]
+		},
+		"77bdf1c6-b15d-470e-a3c0-ed29d7ac1a96": {
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/categories.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/categories.webp",
+			"alt": "Categories",
+			"type": "Image",
+			"variant": "CoverImage"
+		},
+		
+		"feature_cards_section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_CARDS_1",
+			"children": [
+				"why_invest_through_fi",
+				"feature_cards_section_row"
+			]
+		},
+		"feature_cards_section_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_CARDS",
+			"children": [
+				"feature_cards_inner_card_wrapper2",
+				"feature_cards_inner_card_wrapper",
+				"feature_cards_inner_card_wrapper1"
+			]
+		},
+		"feature_cards_inner_card_wrapper": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image",
+				"feature_cards_innerwrapper_card_text"
+			]
+		},
+		"feature_cards_innerwrapper_card_text": {
+			"content": "See all your <br> transactions on Fi",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url"  : "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/cash-with-wings.webp",
+			"fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/cash-with-wings.webp",
+			"alt": "Money"
+		},
+
+		"feature_cards_inner_card_wrapper1": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image1",
+				"feature_cards_innerwrapper_card_text1"
+			]
+		},
+		"feature_cards_innerwrapper_card_text1": {
+			"content": "Get insights to your <br> spending habits",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image1": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/magnifying-glass.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/magnifying-glass.webp",
+			"alt": "Search"
+		},
+
+
+		"feature_cards_inner_card_wrapper2": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image2",
+				"feature_cards_innerwrapper_card_text2"
+			]
+		},
+		"feature_cards_innerwrapper_card_text2": {
+			"content": "See all your bank <br> balances in one place",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image2": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"alt": "Bank",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/bank.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/connected-accounts/bank.webp"
+		},
+		"feature_cards_inner_card_wrapper3": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image3",
+				"feature_cards_innerwrapper_card_text3"
+			]
+		},
+		"feature_cards_innerwrapper_card_text3": {
+			"content": "Easy to understand\nFund information",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image3": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/eye.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/eye.png"
+		},
+
+
+		"feature_cards_inner_card_wrapper4": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image4",
+				"feature_cards_innerwrapper_card_text4"
+			]
+		},
+		"feature_cards_innerwrapper_card_text4": {
+			"content": "Daily &\nWeekly SIPs",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image4": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/calander.png"
+		},
+
+		"feature_cards_inner_card_wrapper5": {
+			"type": "Column",
+			"variant": "FEATURE_CARDS_ITEM_WRAPPER",
+			"children": [
+				"feature_cards_innerwrapper_card_image5",
+				"feature_cards_innerwrapper_card_text5"
+			]
+		},
+		"feature_cards_innerwrapper_card_text5": {
+			"content": "One-click set up from\nsavings account",
+			"type": "Text",
+			"variant": "feature_cards_innerwrapper_card_text"
+		},
+		"feature_cards_innerwrapper_card_image5": {
+			"type" : "Image",
+			"variant": "feature_cards_innerwrapper_card_image",
+			"url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.webp",
+            "fallback_url": "https://dza2kd7rioahk.cloudfront.net/assets/feature-pages/mutual-fund/one-click-setup-saving-account.png"
+		},
+
+		"feature_page_button_primary_row": {
+			"type": "Row",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY",
+			"children": [
+				"feature_page_button_primary_button"
+			]
+		},
+		"feature_page_button_primary_button": {
+			"type": "Button",
+			"variant": "FEATURE_PAGE_BUTTON_PRIMARY_3",
+			"content": "Connect your accounts to Fi",
+			"url": "oneLinkCommonUrl",
+			"isDynamic": true
+		},
+		"why_invest_through_fi": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Why connect your accounts?"
+		},
+
+		"text-have-more-question-section": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"children": [
+				"have_more_questions",
+				"text-link-check-out-our-faq"
+			]
+		},
+		"have_more_questions": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_1",
+			"content": "Have more questions?"
+		},
+		"text-link-check-out-our-faq": {
+			"type": "Text",
+			"variant": "FEATURE_PAGE_TEXT_TYPE_2",
+			"content": "<a href='/FAQs/connected-accounts' style='color: #00B899'>Check out our FAQs.</a>"
+		},
+		"image_text_section": {
+			"type": "Section",
+			"variant": "ColumnFlexDirection",
+			"children": [
+				"9921e138-fceb-4f7e-b5de-9539caad317e",
+				"3b0cdb59-fae6-4971-8a38-ce35cc1e6048",
+				"c4dee63d-05af-461e-80ad-3648a4272dbc"
+			]
+		},
+		"feature_page_body_container": {
+			"type": "Section",
+			"variant": "FEATURE_PAGE_BODY_CONTAINER",
+			"children": [
+				"feature_cards_section",	
+				"image_text_section",
+				"feature_page_button_primary_row",
+				"text-have-more-question-section"
+			]
+		}
+	},
+	"sections": [
+		"banner_section",
+		"feature_page_body_container"
+	]
+}

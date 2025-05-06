@@ -1,0 +1,52 @@
+{
+    "metaTitle": "Open Salary Account Online | A Smart Salary Account That Pays You Back | Fi.Money",
+    "metaDescription": "Experience hassle-free money management and grow your hard-earned money with this salary account. Hurry up! Open your salary account now and enjoy the additional benefits.",
+    "canonicalUrl": "/open-salary-account-online",
+    "ogTitle": "Open Salary Account Online | A Smart Salary Account That Pays You Back | Fi.Money",
+    "ogSiteName": "Fi.Money",
+    "ogUrl": "https://fi.money/open-salary-account-online",
+    "ogDescription": "Experience hassle-free money management and grow your hard-earned money with this salary account. Hurry up! Open your salary account now and enjoy the additional benefits.",
+    "ogType": "product",
+    "ogImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "twitterCard": "summary",
+    "twitterSite": "@Bank_on_Fi",
+    "twitterTitle": "Open Salary Account Online | A Smart Salary Account That Pays You Back | Fi.Money",
+    "twitterDescription": "Experience hassle-free money management and grow your hard-earned money with this salary account. Hurry up! Open your salary account now and enjoy the additional benefits.",
+    "twitterImage": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+    "breadcrumbSchema": {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fi.money"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Open salary account online",
+                "item": "https://fi.money/open-salary-account-online"
+            }
+        ]
+    },      
+    "productSchema": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Open Salary Account Online | A Smart Salary Account That Pays You Back | Fi.Money",
+        "image": "https://dza2kd7rioahk.cloudfront.net/assets/logos/fi-logo.svg",
+        "description": "Experience hassle-free money management and grow your hard-earned money with this salary account. Hurry up! Open your salary account now and enjoy the additional benefits.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Fi.Money"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "2000"
+        }      
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DigiLocker verified e-Aadhaar</title>
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/fonts/font.css" />
+        <link rel="stylesheet" href="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/wealth-onboarding/assets/stylesheets/index_digilocker.css" />
+    </head>
+    <body>
+        <div id="target">Loading...</div>
+
+        <!-- Primary Content Template -->
+        <script id="primary-content-template" type="x-tmpl-mustache">
+            <div class="main">
+                <p class="title">DigiLocker verified e-Aadhaar</p>
+                <p class="description">This document is generated from verified Aadhaar XML obtained from DigiLocker with due user consent and authentication</p>
+
+                <div class="details-box">
+                    <div class="document-type">
+                        <div class="document-type--label border">
+                            <span class="label-text">Document Type</span>
+                        </div>
+                        <div class="document-type--value-wrapper border">
+                            <div class="document-type--value">
+                                <span class="value-text">{{ applicationDetails.type }}</span>
+                            </div>
+                            <div class="verified-logo-section">
+                                <img
+                                    class="verified-logo"
+                                    src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/wealth-onboarding/assets/images/xml-verified.png"
+                                    alt="verified-logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generationDate-downloadDate">
+                        <div class="generationDate">
+                            <div class="generationDate--label"><span class="label-text">Generation date</span></div>
+                            <div class="generationDate--value"><span class="value-text">{{ applicationDetails.generationDate }}</span></div>
+                        </div>
+                        <div class="downloadDate">
+                            <div class="downloadDate--label"><span class="label-text">Download date</span></div>
+                            <div class="downloadDate--value"><span class="value-text">{{ applicationDetails.downloadDate }}</span></div>
+                        </div>
+                    </div>
+                    <div class="masked-aadhaar-number">
+                        <div class="masked-aadhaar-number--label">
+                            <span class="label-text">Masked Aadhaar number</span>
+                        </div>
+                        <div class="masked-aadhaar-number--value">
+                            <span class="masked-aadhaar-number--value-text">{{ applicationDetails.maskedAadhaarNumber }}</span>
+                        </div>
+                    </div>
+                    <div class="personal-details--wrapper">
+                        <div class="personal-details--left-section">
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Name</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.name }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Date of Birth</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.dateOfBirth }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Gender</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.gender }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">c/o , s/o</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.careOf }}</span>
+                                </div>
+                            </div>
+
+                            <div class="personal-details">
+                                <div class="personal-details--label">
+                                    <span class="label-text">Address</span>
+                                </div>
+                                <div class="personal-details--value">
+                                    <span class="value-text">{{ applicationDetails.address }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-details--right-section">
+                            <div class="image-section">
+                                <img
+                                    class="person-image"
+                                    src="data:image/png;base64,{{ applicationDetails.personImage }}"
+                                    alt="person"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landmark-locality">
+                        <div class="landmark">
+                            <div class="landmark--label"><span class="label-text">Landmark</span></div>
+                            <div class="landmark--value"><span class="value-text">{{ applicationDetails.landmark }}</span></div>
+                        </div>
+                        <div class="locality">
+                            <div class="locality--label"><span class="label-text">Locality</span></div>
+                            <div class="locality--value"><span class="value-text">{{ applicationDetails.locality }}</span></div>
+                        </div>
+                    </div>
+                    <div class="city">
+                        <div class="city--label">
+                            <span class="label-text">City / District</span>
+                        </div>
+                        <div class="city--value">
+                            <span class="value-text">{{ applicationDetails.city }}</span>
+                        </div>
+                    </div>
+                    <div class="pincode-state">
+                        <div class="pincode">
+                            <div class="pincode--label"><span class="label-text">Pin Code</span></div>
+                            <div class="pincode--value"><span class="value-text">{{ applicationDetails.pincode }}</span></div>
+                        </div>
+                        <div class="state">
+                            <div class="state--label"><span class="label-text">State</span></div>
+                            <div class="state--value"><span class="value-text">{{ applicationDetails.state }}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script src="https://epifi-icons.s3.ap-south-1.amazonaws.com/pdf-templates/assets/scripts/mustache.js/4.0.1/mustache.min.js"></script>
+        <script>
+            (function() {
+                var data = '${data}';
+
+                data = '{"DocumentType":"e-Aadhaar generated from DigiLocker verified Aadhaar XML","GenerationDate":"2021-09-28T18:25:10.916+05:30","DownloadDate":"2021-09-28118:25:10.916+05:30","MaskedAadhaarNumber":"xxxxxxxx5157","Name":"Ram Kumar Sahu","DateOfBirth":"04-01-2001","Gender": "M","CareOf":"S/O: Shri Mahendra Sahu","Address":"S/O: Shri Mahendra Jaiswal, Shri Mahendra Jaiswal, Ward No.-27, Dr. Bhim Rao Ambedkar Ward, Dubey Colony, Infront Of Bharat Gas, Daldal Seoni, Raipur, Chhattisgarh, 492014","Landmark":"Infront Of Bharat Gas","Locality":"Mowa","City":"Raipur","PinCode":"492014","State":"Chhattisgarh","Photo":"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"}'
+
+                var json = JSON.parse(data);
+                var modifiedJSON = {};
+
+                modifiedJSON.applicationDetails = {
+                    type: json.DocumentType,
+                    generationDate: json.GenerationDate,
+                    downloadDate: json.DownloadDate,
+                    maskedAadhaarNumber: json.MaskedAadhaarNumber,
+                    name: json.Name,
+                    dateOfBirth: json.DateOfBirth,
+                    gender: json.Gender,
+                    careOf: json.CareOf,
+                    address: json.Address,
+                    landmark: json.Landmark,
+                    locality: json.Locality,
+                    city: json.City,
+                    pincode: json.PinCode,
+                    state: json.State,
+                    personImage: json.Photo,
+                };
+
+                var primaryContentTemplate = document.getElementById("primary-content-template").innerHTML;
+
+                var renderPrimaryContent = Mustache.render(primaryContentTemplate, {
+                    applicationDetails: modifiedJSON.applicationDetails,
+                });
+
+                var rendered = renderPrimaryContent;
+
+                document.getElementById("target").innerHTML = rendered;
+            })();
+        </script>
+    </body>
+</html>
